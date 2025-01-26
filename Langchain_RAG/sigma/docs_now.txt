@@ -1,0 +1,15 @@
+Now
+Suggest Edits
+The Now function returns the current date and time and presents it in your Account Time Zone.
+Syntax
+Now()
+📘
+The Now function doesn't reference arguments. It can be used independently to generate the current date and time, or it can be used within another function to reference the current date and time.
+Examples
+Now()
+Returns the date and time of the moment the function was submitted or the last time the data was refreshed. 
+DateDiff(“minute”, [Invoice Date], Now())
+Returns number of minutes between the date in the Invoice Date column based on the moment the function was submitted or the last time the data was refreshed.
+RELATED RESOURCES
+Today
+Quickstart: Common date functions and use cases

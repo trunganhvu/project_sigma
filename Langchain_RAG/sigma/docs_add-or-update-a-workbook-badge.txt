@@ -1,0 +1,36 @@
+Add or update a workbook badge
+Suggest Edits
+User requirements
+The ability to add badges to workbooks requires the following:
+You must be assigned an account type with the Manage all badges permission enabled.
+You must be the workbook owner or be granted Can view, Can explore, or Can edit workbook access.
+📘
+Any member with access to a workbook can view its badge.
+Workbook and Template Badging
+Add or Update a Workbook or Template Badge
+Open the document.
+Click the caret (▼) button to the right of the document title.
+Click ADD BADGE, or the existing badge.
+From the dropdown list of options, select a badge.
+[optional] Add a note.
+Click Add.
+View an Existing Workbook or Template Badge
+Open the document.
+Click the caret (▼) button to the right of the document title. Badges are displayed in the dropdown's top left corner. Hover over the badge to see additional information.
+Dataset and CDW Table Badging
+You can also badge datasets and CDW tables.
+Add or Update a Dataset or CDW Table Badge
+Open the dataset or CDW table.
+Click the information icon in the page header. The object details appear.
+From the Badge dropdown menu, select a badge.
+[optional] Add a note to provide context for later reference or other teammates.
+Your new badge is visible from the document header.
+View an Existing Dataset or CDW TableBadge
+Open the dataset or CDW table.
+If a badge exists, its colored indicator will be displayed in the page header.
+📘
+This indicator is only visible if a badge exists.
+To view the badge note or last update time, hover over the information icon in the page header.
+RELATED RESOURCES
+Share a workbook
+User account types

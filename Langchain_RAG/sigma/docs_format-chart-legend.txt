@@ -1,0 +1,43 @@
+Format chart legend
+Suggest Edits
+Chart legends associate chart mark colors, shapes, sizes, types, and other attributes with specific groups or values. This helps users interpret data when the chart metric is distributed into categories (like regions or product types) or when a metric defines size or color scale. Most visualization types in Sigma support legends that you can format to improve chart usability and readability.
+This document explains how to change a legend’s visibility and customize its position, font size, and text color.
+User requirements
+The ability to format chart legends requires the following:
+You must be assigned an account type with the Explore workbook and/or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Show or hide the legend and header
+Change the visibility of the chart legend, and choose to display it with or without a header when applicable. The header specifies the variable categorized into groups or the metric that defines the chart’s size or color scale.
+Open a workbook in Explore or Edit mode and select the visualization element you want to modify.
+Select Element format in the side navigation, then click the Legend header to expand the section.
+To change the visibility of the chart legend (including the header and labels), configure the Show legend field:
+To show the legend, select the checkbox.
+To hide the legend, clear the checkbox.
+To change the visibility of the legend header (when the legend is displayed), configure the Show legend header field:
+To show the header, select the checkbox.
+To hide the header and display labels only, clear the checkbox.
+📘
+When you configure the Marks > Size property in a scatter plot, the visualization element supports two separate legends for color and size. You can change the visibility of the individual legends by configuring the Show color legend and Show size legend fields.
+Change the legend position
+Change the position of the legend relative to the chart.
+Open a workbook in Explore or Edit mode and select the visualization element you want to modify.
+Select Element format in the side navigation, then click the Legend header to expand the section.
+Click the Position field and select an option from the dropdown.
+
+Top Bottom Left Right
+
+Top left Top right Bottom left Bottom right
+Customize the labels
+Customize the font size and color of the legend labels. Legend headers aren’t affected by label formatting.
+Open a workbook in Explore or Edit mode and select the visualization element you want to modify.
+Select Element format in the side navigation, then click the Legend header to expand the section.
+To change the size of the labels, click the Label font size dropdown and select an option (10-48px).
+To change the font color of the labels, click Label text color field, then enter a hex value or select an option from the color palette or picker.
+RELATED RESOURCES
+Customize element background
+Customize element title
+Customize chart mark tooltip fields
+Create and format trellis charts
+Display chart data labels
+Display chart reference marks
+Add trend lines

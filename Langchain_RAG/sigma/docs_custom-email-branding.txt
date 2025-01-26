@@ -1,0 +1,36 @@
+Customize email branding
+Suggest Edits
+Custom Email Branding
+Custom email branding allows you to apply your company's brand to all data export emails sent from your Sigma organization.
+By default, all emails include Sigma branding. However, applying any subset of custom branding options will automatically remove all Sigma branding.
+Requirements
+You must be an organization Admin to use this feature; see User account types.
+Customize Your Organization's Email Branding
+Open your Admin Portal.
+At the top of the Account page, click Brand Settings.
+Find the Custom Email Branding subsection.
+Click the section's Edit.
+[optional] Click Upload Logo and follow the prompts to add an image.
+📘
+Ideally, the image should be at least 135px wide, and the width:height dimensions should be between 3:1 to 1:2.
+[optional] Add values to any combination of available fields.
+📘
+All fields are optional and can be used in any combination.
+Applying any subset of custom branding options automatically removes all Sigma branding.
+[optional] Send a preview.
+Click Send Preview Email, located in the section's top right corner. 
+Go to your email to see the preview.
+The subject line will be: [Preview] Custom Branding Test Email. 
+Click Save.
+Test Your Email Branding
+Open your Admin Portal.
+At the top of the Account page, click Brand Settings.
+Find the Custom Email Branding subsection.
+Click Send Preview Email.
+📘
+This button will only be available if custom branding is already in use.
+Go to your email to see the preview.
+The subject line will be: [Preview] Custom Branding Test Email.
+RELATED RESOURCES
+Customize Welcome and Invite Emails
+Send a workbook export to email recipients

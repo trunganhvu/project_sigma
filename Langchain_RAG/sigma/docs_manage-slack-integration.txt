@@ -1,0 +1,35 @@
+Manage Slack integration
+Suggest Edits
+Integration for Slack
+Sigma's Integration for Slack enables the members of your organization to send and schedule Sigma notifications for any channel in your connected Slack account.
+User requirements
+To add the Slack integration in Sigma, you must be assigned the Admin account type.
+Enable Slack notifications
+Open your Admin Portal by selecting Administration in the user menu at the top right of your screen.
+On the Account page, find the Integrations section.
+At the right of the Integration for Slack entry, click Add. 
+The process redirects you to Slack, to authorize the integration.
+Click Allow to complete the integration.
+To test the integration, try sending or scheduling a notification.
+Access and permissions
+When you send or schedules a notification in Sigma, you can choose to include a link to the worksheet or dashboard in Sigma. Anyone who sees the notification in Slack must have a Sigma account with access granted to view it with full details inside Sigma.
+Activating Slack for users
+After you enable an integration with Sigma, you can open a new channel from Slack.
+Follow these steps.
+Navigate to the Sigma option in the Slack app directory.
+Click Open in Slack.
+The process redirects you to Sigma. 
+You may have to authorize access, and choose the version of Slack you plan to use.
+The direct Sigma channel now appears in your organization's Slack interface.
+Adding Sigma to a private Slack channel
+To add Sigma notifications to a private Slack channel, follow these steps:
+In the channel where you plan to add Sigma, start typing @sigma.
+The system finds the match, Sigma app. Note that it is not in channel at this time.
+Select the Sigma app.
+The Slackbot dialog prompts you to add Sigma to the channel.
+Click Invite Them.
+ The system confirms that the Sigma app is now in the private channel.
+RELATED RESOURCES
+Send and schedule exports from workbooks
+Sigma's privacy policy
+Understand app permissions

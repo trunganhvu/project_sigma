@@ -1,0 +1,41 @@
+Window functions
+Suggest Edits
+Window functions perform operations across an entire table, table grouping (grouped rows), or defined window of rows. Sigma supports cumulative, moving, shifting, and ranking window functions.
+Cumulative window functions
+Cumulative window functions evaluate a specified column in a table or grouping and return the running total or cumulative value for all rows up to and including the current row. This differs from aggregate values that calculate a summary value for the entire table or grouping.
+CumulativeAvg Calculates the running average up to and including the current row.
+CumulativeCorr Calculates the correlation coefficient between dependent and independent data columns up to and including the current row.
+CumulativeCount Counts the number of non-null values up to and including the current row.
+CumeDist Calculates the cumulative distribution of values relative to the current row value.
+CumulativeMax Returns the largest value up to and including the current row.
+CumulativeMin Returns the smallest value up to and including the current row.
+CumulativeStdDev Calculates the standard deviation of values up to and including the current row.
+CumulativeSum Calculates the sum of values up to and including the current row.
+CumulativeVariance Calculates the variance of a column up to and including the current row.
+Moving window functions
+Moving window functions evaluate a specified column and return a value based on a defined window of rows that moves in relation to the current row.
+MovingAvg Calculates the numerical average of a column within a moving window.
+MovingCorr Counts the number of non-Null values in a moving window.
+MovingCount Calculates the correlation coefficient of two numerical columns within a moving window. See Pearson (bivariate) correlation coefficient.
+MovingMax Finds the maximum value of a column within a moving window.
+MovingMin Finds the minimum value of a column within a moving window.
+MovingStdDev Calculates the standard deviation of a column within a moving window.
+MovingSum Calculates the sum of a column in a moving window.
+MovingVariance Calculates the statistical variance of a column in a moving window.
+Shifting window functions
+Shifting window functions evaluate a specified column in a table or grouping and return the value from a row that shifts in relation to the current row.
+FillDown Replaces all null values in a column or grouping with the closest prior non-null value.
+First Returns the first row value of a column or grouping.
+FirstNonNull Returns the first non-null value from a column or grouping.
+Lag Returns the value from a preceding offset row in a column or grouping.
+Last Returns the last row value in a column or grouping.
+LastNonNull Returns the last non-null value in a column or grouping.
+Lead Returns the value from a subsequent offset row in a column or grouping.
+Nth Returns the value from the nth row of a column or grouping.
+Ranking window functions
+Ranking window functions evaluate a specified column in a table or grouping and assign a rank to each row.
+Ntile Assigns the specified rank, in order, to the column rows of a column, approximately equal number of rows for each rank.
+Rank Assigns ranks to unique values in a column, from rank 1 onwards. Skips duplicate values.
+RankDense Assigns ranks to all values in a column, from rank 1 onwards. Assigns the same rank to duplicate values.
+RankPercentile Ranks the rows in the table by percentile.
+RowNumber Numbers the table rows, starting with 1.

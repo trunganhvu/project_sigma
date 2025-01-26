@@ -1,0 +1,34 @@
+Ad hoc data explorations
+Suggest Edits
+Explorations are unpublished workbooks that support ad hoc data analysis.
+This documentation explains how to create a new exploration and return to an existing one to continue your analysis, share it with other organization users, or save it as a workbook.
+📘
+Sigma saves your explorations in the Recent page. You cannot delete saved explorations.
+User requirements
+To create a new exploration, you must be assigned an account type with the Create, edit, and publish workbooks permission enabled.
+Create a new exploration
+Create an exploration the same way you create a new workbook. For more information, see Create a workbook or exploration.
+Reopen a saved exploration
+Reopen a saved exploration to continue your ad hoc data analysis.
+Go to your Home page.
+In the navigation menu, select Recent.
+In the Recent page, select the Explorations tab to view a list of your past explorations.
+Click the Created on date to open a specific exploration.
+Share an exploration
+Share an exploration to allow other organization users to contribute to your ad hoc data analysis.
+Create a new exploration or reopen a saved one.
+In the exploration header, click the caret () to open the exploration menu, then select Share.
+In the Share workbook modal, click the Allow access by link toggle to the on position.
+Copy the provided URL and share with any organization user.
+Save an exploration as a workbook
+Save an exploration as a workbook to publish it to a specific folder.
+Create a new exploration or reopen a saved one.
+In the exploration header, click Save As. You can also click the caret () to open the exploration menu, then select Save.
+In the Save as modal, publish the workbook:
+In the Name field, enter a name for the workbook.
+In the Destination section, select the folder where you want to publish the workbook.
+Click Save.
+RELATED RESOURCES
+Workbook lifecycle: explore, draft, and publish
+Create a workbook
+Edit, draft, and publish a workbook

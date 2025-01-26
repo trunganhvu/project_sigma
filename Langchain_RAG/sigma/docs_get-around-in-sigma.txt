@@ -1,0 +1,29 @@
+Get around in Sigma
+Suggest Edits
+Sigma home page
+When you log in to Sigma you see your Home page. The following illustration and descriptions explain the main parts of the page. Some parts may be hidden depending on your user permissions. 
+Search: Search for content in Sigma.
+Create New: Create content, based on your role, including:
+Workbook: Analyze data using a spreadsheet-style interface and create visualizations.
+Dataset: Curate data to be shared with others.
+Custom SQL: Write SQL to run against the data warehouse.
+CSV upload: Upload a .csv file to perform analysis within a workbook.
+My Content: 
+Home: This Home page.
+My Documents: A personal folder for you to save content that you create.
+Workspaces: A way to organize and share content with specific members or teams within your organization. Items placed in workspaces can be accessed by anyone who has permission to that workspace.
+Templates: Workbook templates shared with you.
+Shared with Me: Items that others have shared directly with you.
+Favorites: Items that you have designated as a favorite. 
+Trash: Deleted items. 
+Connections (visible only to Administrators and Creators by default): The data warehouses and their tables that you can access. A single Sigma organization can have many connections, each configured with different levels of access, to be shared with members or teams.
+Recents: Items you have recently accessed.
+Explore existing documents: Sigma lists documents that are relevant to you based on popularity, data lineage relevant to your work, and items endorsed by Admins. 
+Administration: Dedicated area for user management and other common configuration settings. Only shown to users in the Admin role.
+User Profile: Your username initial that links to your Profile, where you can make changes to your preferences and sign out. Other UI options may or may not be visible to you depending on your permissions.  
+Help: Links to useful information.
+RELATED RESOURCES
+Sigma basics
+Did this page help you?
+Yes
+No

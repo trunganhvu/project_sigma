@@ -1,0 +1,17 @@
+Collaborate with Live Edit in workbooks
+Suggest Edits
+Your team can collaborate on workbook drafts in real time, with all editors sharing one live draft. The "Live Edit" feature allows you to see and contribute to other people’s drafted changes before they are published.
+Requirements
+Only users with Can Edit access to the workbook can contribute.
+Edit a workbook
+To edit the workbook, see Edit, draft, and publish a workbook.
+View other collaborators
+Sigma automatically shows the name of the user who selects an element in the top left corner of the selected element's bounding box.
+Publish while collaborating
+Sigma automatically saves all changes you make to the draft and shows the changes to all other simultaneous editors.
+When an editor clicks Publish, Sigma publishes all drafted changes, including changes drafted by all other editors.
+RELATED RESOURCES
+Edit, draft, and publish a workbook
+Workbook versions and version history
+Workbook lifecycle: explore, draft, and publish
+Workbook modes overview: View, Explore, Edit

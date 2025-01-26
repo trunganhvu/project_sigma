@@ -1,0 +1,53 @@
+Export audit log data to cloud storage
+Suggest Edits
+Sigma enables you to export your audit log data to cloud storage to comply with security, regulatory, and operational requirements.
+This document explains how to configure a recurring export to cloud storage using an existing audit log storage integration. For more information about audit logging with Sigma, see the following:
+Enable audit logging
+Access and explore audit logs
+Audit log events and metadata
+Create an audit logs storage integration
+System and user requirements
+The ability to schedule an audit log export to cloud storage requires the following:
+Your organization must have an existing audit log storage integration.
+You must be assigned the Admin account type or be granted access to the Sigma Audit Logs connection.
+Export audit log data to cloud storage
+To configure an audit log export to cloud storage, you must complete the following procedures:
+Retrieve the storage integration name
+Save the audit log data in a workbook
+Create and test a scheduled export
+📘
+If you update or delete your audit log storage integration destination, new exports will be paused by default.
+Retrieve the storage integration name
+The name of the audit logs storage integration is required when you create a scheduled export. The following steps explain how to retrieve this detail in the Administration portal.
+If you don’t have access to the Administration portal, request the integration name from a user assigned the Admin account type.
+Go to Administration > Account > General Settings.
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account, then open the General Settings tab.
+In the Audit Logging section, go to the Create an Audit Logs Storage Integration setting, then locate the applicable integration and click View credentials.
+Reference the Cloud storage credentials section and record the Integration name value.
+Save the audit log data in a workbook
+Scheduled exports can only be configured for saved workbooks. The following steps explain how to access your audit log data and save it in a workbook.
+Go to your Home page.
+In the navigation menu, select the Sigma Audit Logs connection.
+If your organization has more than three connections, Sigma consolidates them in a Connections page. In the navigation menu, first click Connections to open the page, then select the Sigma Audit Logs connection.
+In the connection browser, select the AUDIT_LOGS table, then click Explore to open the audit log data as a table element in an exploration.
+In the exploration header, click Save As to save the exploration as a workbook.
+In the Save as modal, enter a name and destination for the workbook, then click Save.
+Create and test a scheduled export
+With the storage integration name available and the audit log data saved in a workbook, you can now create a scheduled export. The following steps explain how to configure and test a recurring export using the audit log storage integration.
+Open the workbook containing the audit log data.
+In the header, click the caret () next to the workbook title to open the workbook menu, then click Schedule exports.
+In the Schedule Exports modal, click Add Schedule, then configure the recurring cloud storage export.
+In the Destination section, select the Cloud Storage option.
+In the Storage Integration field, enter the Integration name value retrieved from the integration credentials.
+In the Destination Cloud Storage URI field, enter the destination file path. This value should include the bucket or container name, the folder path prefix (if applicable), and the file name.
+In the Element dropdown, select the table element referencing the audit log data you want to export (named AUDIT_LOGS by default).
+Customize the remaining fields in the Schedule Exports modal as needed, then click Create.
+When the new schedule is successfully created, the Schedule Exports modal displays the schedule summary. To test the scheduled export, click Actions and select Send now.
+If the export succeeds, the data is uploaded to and viewable in your cloud storage console. If the export fails, Sigma sends an email notification containing the error message received from the cloud storage platform. Modify the scheduled export configurations or the storage integration as needed, then run the export test again.
+RELATED RESOURCES
+Enable audit logging
+Access and explore audit logs
+Audit log events and metadata
+Create an audit logs storage integration

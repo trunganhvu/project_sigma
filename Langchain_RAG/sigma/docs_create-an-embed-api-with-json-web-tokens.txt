@@ -1,0 +1,126 @@
+Create an embed API with JSON Web Tokens (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Sigma supports authenticating secure embeds using JSON Web Tokens (JWTs). JWTs offer a secure way to embed content that can be accessed by both external users (users who do not have a registered account in Sigma) and internal users (users who access Sigma directly through their Sigma account).
+Signing your secure URLs with JWTs has several advantages:
+JWTs are compact, URL-safe tokens that can be digitally signed, ensuring that the data they contain is tamper-proof.
+Embed developers no longer have to use the Sigma UI to generate embed paths; they may use the URL instead.
+Embedding workbooks, pages, and individual visualizations are all supported.
+JWT-signed URLs can authenticate internal Sigma users to access embedded content with the same email address they use for their Sigma account.
+When using JWT-signed URLs, you have the option to disable automatic embed user account provisioning for non-Sigma users, effectively restricting your embed content to the users you have explicitly provisioned in Sigma or your IdP.
+📘
+Existing embed customers are likely familiar with Sigma’s “signed URL” embed API, which uses a nonce to ensure that the constructed URL is one-time use only. Similarly, JWTs are one-time use. When a JWT is issued, the jti claim, a unique identifier for the token, is stored server-side. When the JWT is used to access an embedded Sigma workbook, the server checks whether the jti has already been seen. If it has, the token is rejected as a replay attempt, ensuring it cannot be reused.
+Limitations
+Most embed URL parameters are not currently supported in JWT-signed URLs. Currently, only theme, menu_position, responsive_height are supported. JWT-signed URLs do support applying control values with URL parameters. See Apply control values with URL parameters.
+Only admins are able to log in as other users (including embed users) by assigning the ownership of the client credentials they generate for the embed. Non-admins can only log in as themselves.
+Authentication flow
+JWT claims
+Claim name Required? Claim description Type
+sub Required The email address of the user logging in. string
+jti Required JWT ID. A unique ID associated with the session. string
+iat Required Issued at time, as number of seconds from epoch. number
+exp Required Expired at time, as number of seconds from epoch. Cannot exceed 30 days. number
+alg Optional Must be HS256. Must be in the header, if included. string
+kid Required The embed client ID. Must be in the header. string
+iss Optional The issuer key. Enter the embed client ID. string
+oauth_token Optional The OAuth token to use when using OAuth connections. This token must be encrypted with the embed secret. string
+eval_connection_id Optional The connection to use instead of the connection that the workbook is associated with. string
+first_name Optional, affects embed users only. First name for the embed user. string
+last_name Optional, affects embed users only. Last name for the embed user. string
+user_attributes Optional, affects embed users only. User attributes for the embed user. Pass multiple attributes in this format: {"attribute1":"value1","attribute2":"value2"}. Record<string,string>
+account_type Optional, affects embed users only. Account type for the embed user. string
+teams Optional, affects embed users only. Teams that the embed user is a part of. Pass multiple teams in this format:
+["team1", "team2"] string[]
+Example script to generate a JWT-signed secure URL
+The following script demonstrates how to programmatically generate a secure URL signed with a JWT.
+The script makes use of an environment file for some required values. In a production environment, these values would be generated dynamically by the parent application. See Generate embed client credentials for instructions on how to generate the embed client id and secret.
+# .env file
+
+# Required Embed Configuration
+BASE_URL={url path to embed}
+CLIENT_ID={your client id}
+SECRET={your embed secret}
+
+# User-Specific JWT Claims
+EMAIL={your embed user's email}
+ACCOUNT_TYPE={embed user's account type}
+TEAM={embed user's team}
+What URL to use
+This method requires a URL path to be provided in the signing process. The URL syntax varies depending on whether you are embedding a workbook, a page, or a single element.
+Workbook Navigate to the workbook that you intend to embed, ensure it is in Published mode, and copy the URL directly from the browser without altering the syntax.
+
+Example URL syntax for a workbook:
+https://app.sigmacomputing.com/{organization-name}/workbook/{workbookname}-{workbookUrlId}
+Page Select the desired workbook page, then copy the URL and edit it to follow the example syntax.
+
+Example URL syntax for a page:
+https://app.sigmacomputing.com/{organization-name}/workbook/{workbookname}-{workbookUrlId}/page/{pageId}
+Single element Select the desired workbook element, then copy the URL and edit it, following the example syntax.
+
+Example URL syntax for a single element:
+https://app.sigmacomputing.com/{organization-name}/workbook/{workbookname}-{workbookUrlId}/element/{elementId}
+Example server-side API with JWT
+Values in the .env file (except keys) are typically generated at runtime by the parent application. This example script is written in JavaScript and uses the jsonwebtoken package. Refer to the documentation for the package you use for the construction of the JWT and how to pass claims.
+JavaScript
+const jwt = require('jsonwebtoken');
+const { v4: uuid } = require('uuid');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+async function generateSignedUrl() {
+    try {
+        const time = Math.floor(Date.now() / 1000); // Current Unix timestamp
+        const expirationTime = time + Math.min(parseInt(process.env.SESSION_LENGTH) || 3600, 2592000);
+
+        // Convert TEAM into an array if it is a single value
+        const teamsArray = process.env.TEAM ? [process.env.TEAM] : [];
+
+        const token = jwt.sign({
+            sub: process.env.EMAIL,
+            iss: process.env.CLIENT_ID,
+            jti: uuid(),
+            iat: time,
+            exp: expirationTime,
+            account_type: process.env.ACCOUNT_TYPE,
+            teams: teamsArray,
+        }, process.env.SECRET, {
+            algorithm: 'HS256',
+            keyid: process.env.CLIENT_ID
+        });
+
+        // Decode the JWT to inspect its content and log it
+        const decodedToken = jwt.decode(token, { complete: true });
+        console.log('Decoded JWT:', decodedToken); // Log the decoded JWT for debugging
+        
+        const signedEmbedUrl = `${process.env.BASE_URL}?:jwt=${encodeURIComponent(token)}&:embed=true`;
+        // Log important configuration details to ensure they are correctly set
+        console.log('BASE_URL:', process.env.BASE_URL);
+        console.log('CLIENT_ID:', process.env.CLIENT_ID); // Verify the client ID
+        console.log('SESSION_LENGTH:', process.env.SESSION_LENGTH);
+        console.log('TEAMS:', teamsArray);
+        console.log('ACCOUNT_TYPE:', process.env.ACCOUNT_TYPE);
+        console.log('Signed Embed URL:', signedEmbedUrl);
+
+        return signedEmbedUrl;
+    } catch (error) {
+        console.error("Failed to generate JWT:", error);
+        throw new Error("JWT generation failed");
+    }
+}
+
+module.exports = { generateSignedUrl };  
+The resulting "signedUrl" follows this structure: https://app.sigmacomputing.com/{org-slug}/{workbook_id}?:jwt={JWT VALUE}&:embed=true
+For a detailed discussion and demonstration of using JWT when embedding Sigma, see the QuickStart: Secure Embedding with JWT. The QuickStart uses a sample project stored in GitHub.
+Configure access to your embedded content authenticated with JWTs
+When using JWT-signed URLs for your secure embeds, you have the option to disable automatic embed user account creation and update for non-Sigma users. If you choose to disable this default behavior, you can restrict your embed content to the users you have explicitly provisioned in Sigma or your IdP. By default, automatic user creation is enabled, and Sigma will automatically create embed users and assign them to the team you specify in the teams claim, and will update those embed user team assignments if new teams are passed in the teams claim.
+📘
+This setting has no effect for embedded content that is not authenticated with JWT-signed URLs.
+To disable automatic embed user account provisioning and updates, follow these steps:
+Go to Administration > Embeds.
+Click Settings.
+Turn off the Automatic user creation toggle.
+When automatic user creation is disabled, Sigma shows an error message when a user who has not explicitly been granted access to that content in Sigma attempts to access embedded content using a JWT-signed URL.
+This error message also occurs for users who have been provisioned with a Sigma account but have never logged in. To avoid this error for those users, ensure that any users who will need access to JWT-authenticated embedded content log into Sigma at least once before attempting to access the embedded content.

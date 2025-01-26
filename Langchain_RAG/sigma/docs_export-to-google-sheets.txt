@@ -1,0 +1,36 @@
+Export to Google Sheets
+Suggest Edits
+You can send one or more individual workbook elements to Google Sheets on a set schedule or an as-needed basis. When you export to Google Sheets on a schedule, the same Google Sheet is replaced (overwritten) each time the schedule runs. See Schedule an export to Google Sheets
+Sigma generates exports from the workbook's latest published version. Draft changes are not exported.
+User requirements
+The ability to export to Google Sheets requires the following:
+You must be assigned an account type with the Export to Google Sheet permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+You must be an Editor of the specified Google Sheet.
+Google account authorization
+The first time you schedule an export to Google Sheets or Google Drive, Sigma prompts you to authorize Sigma to export to your Google account:
+Click Authorize and follow the instructions on your screen. After you complete the authorization, you return to the Schedule Exports dialog.
+Schedule exports to Google Sheets
+🚩
+Exports to Google Sheets overwrite the same sheet each time the schedule runs.
+To schedule an export to Google Sheets:
+From the workbook menu , select Schedule exports....
+If this is the workbook's first schedule, click Add Schedule, otherwise click + New schedule.
+Select Google Sheets.
+If this is the first time you've created a scheduled export to Google, Sigma prompts you to enable the integration. See Google account authorization.
+For Sheets URL, enter the URL of the Google Sheet that you want to export to. Use the URL visible in your web browser when viewing the Google Sheet, not the URL you copy to share the Google Sheet.
+Select the data to export. Only workbook elements are supported.
+In the Frequency section, set the delivery schedule:
+(Optional) Select the dropdown for Daily and select Weekly, Monthly, or Custom.
+For Daily, select Once a day or Multiple times.
+For Weekly, select which days of the week to send an email, and choose between Once a day or Multiple times.
+For Monthly, select which day of the month to send an email, and the time of day.
+For Custom, specify a schedule using cron syntax. See Set up a custom delivery schedule.
+If you select Multiple times, specify the frequency. For example, every 2 hours on the :15 of the hour between 9 AM and 6 PM.
+(Optional) Adjust the default schedule time zone using the dropdown menu.
+📘
+If you don't have the option to set a specific frequency, export frequency might be restricted for your organization. For more details, see Restrict export recipients and frequency.
+(Optional) Select the checkbox for Customize control values to filter the exported data according to the value of one or more workbook controls. See Configure additional options for exports.
+Click Create.
+RELATED RESOURCES
+Send and schedule exports from workbooks

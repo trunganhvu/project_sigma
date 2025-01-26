@@ -1,0 +1,24 @@
+LastNonNull
+Suggest Edits
+The LastNotNull function returns the last non-Null value in a column or grouping.
+LastNonNull is either an aggregate function, or a window function. As a window function, it repeats the last non-Null value for every row in the column.
+This is similar to the Last function, but excludes Null values.
+Data sort order is important when using this function: Sigma applies sorting and filtering before the function. Your CDW determines the default sort order.
+Syntax
+LastNonNull([Column])
+The function has the following argument:
+Column
+The column input
+Accepts all data types
+Examples
+Window function example
+LastNonNull([Delivery Date])
+Here the calculation references a column in a lower grouping level. This example shows the oldest non-null date from the Delivery Date column for each grouping under the Order Number column.
+Delivery Date is in descending order sort. If Delivery Date is in ascending sort, the function returns the most recent non-Null date for each grouping.
+Aggregate function example
+LastNonNull([Delivery Date])
+Here the calculation references a column in the same grouping level, so the first non-Null value  returns for every row.
+Note how the resulting calculations depend on the group’s sort order. The sort on the Product Family affects the order of the Delivery Date column.
+RELATED RESOURCES
+Last
+FirstNonNull

@@ -1,0 +1,77 @@
+Embed URL parameters
+Suggest Edits
+All embed URL parameters serve a specific purpose in determining embed functionality, security, and compliance with licensing requirements. Sigma's embed URL requires a defined set of parameters and supports several optional parameters that allow you to further customize and enhance the embed user experience. For example, you can use the optional parameters to create dynamic embeds based on service tiers, roles, etc.
+This document provides an overview of all required and optional embed URL parameters. For more information about using parameters, see QuickStart - Embedding 05: Parameters and User-Attributes.
+If you want to link to a tagged version of a workbook, reference the tag in the URL. See Link to a tagged version of a workbook.
+📘
+Unless otherwise noted, each parameter needs to be prepended in code with a colon (:). For example, the parameter "nonce" should appear as ":nonce" in code. See Example embed API and URL.
+If a parameter contains multiple values, do not encode the commas separating the values. In your URL, the value of your parameter should be passed to Sigma as value1,value2 rather than value1%2Cvalue2.
+Required parameters
+The following parameters must be appended to the base URL (embed path) in the embed URL:
+Parameter Description
+nonce A unique, random string used for security purposes. The value is valid for a single request.
+client_id The ID paired with and used to define the embed secret.
+mode The embed type (must be set to userbacked for secure embeds)
+email The email address linked to the embed user's account.
+external_user_id A unique identifier for the embed user. This can be the user_id value from the host application's security system or another value associated with the individual user.
+external_user_team The Sigma team referenced to determine access and permissions.
+session_length The duration (in seconds) of the embed URL's browser session validity. Must be refreshed after expiration.
+time A UNIX timestamp used with the session_length parameter.
+signature A Hash-based Message Authentication Code (HMAC) signature produced by combining the encrypted embed secret with a hash function. Unique to the message and key, the cryptographic signature authenticates the request and protects data integrity. This ensures only parties with access to the secret key can verify the authenticity of the message.
+Optional interface parameters
+Parameter Description
+disable_mobile_view When set to true, disables automatic resizing mobile layout.
+eval_connection_id Dynamically switches the connection being used for any query in the embed.
+See Embedding 13: Connection Swapping in the QuickStarts for a walkthrough of using this parameter.
+Usage notes:
+Connection switching is not supported when using write-back features.
+Connection switching overrides any user attribute-based warehouse or role switching.
+Scheduled exports use the connection in the URL at the time the schedule was created or modified.
+Immediate exports use the connection from the current URL.
+The connection is used for any workbook opened in the embed session.
+The connection replaces all connections used in the workbook.
+lng Applies an existing translation (via localization) to the embed.
+first_name Sets the first name of the current embed user. When set, the name displays in the folder menu and system-generated emails. Must be used with the last_name parameter. When one or both is absent, a new member created in Sigma is named Embed (first) User (last).
+hide_folder_navigation When set to true, hides the folder navigation. Available with mode=userbacked only.
+hide_menu When set to true, hides the embed menu in saved workbooks.
+hide_run_as_recipient When set to true, hides the Run queries as recipient option in the Send Now and Schedule Exports modals.
+hide_schedule When set to true, hides the Schedule exports option in the embed menu in saved workbooks.
+hide_send When set to true, hides the Send now option in the embed menu in saved workbooks.
+hide_sheet_interactions When set to true, hides sort and filter options in embedded elements.
+hide_tooltip When set to true, hides chart mark tooltips.
+last_name Sets the last name of the current embed user. When set, the name displays in the folder menu and system-generated emails. Must be used with the first_name parameter. When one or both is absent, a new member created in Sigma is named Embed (first) User (last).
+loading_bg Applies a custom background color (hex code) to the loading and error screens.
+loading_text Applies a custom font color (hex code) to the loading and error text.
+menu_position Changes the toolbar position (top, bottom) or removes it (none). When no value is specified, the toolbar defaults to the bottom position.
+responsive_height When set to true, enables developer access to the JavaScript event called workbook:pageheight:onchange.
+
+For more information, see QuickStart - Embedding 10: Responsive Embeds > Responsive iframes
+show_footer When set to false, hides the file explorer, workbook page tabs, Save As and Edit options, and Sigma logo in the embed footer.
+showUnderlyingData Whether the underlying data for a chart is shown when the embed is first loaded. When set to false, hides the underlying data behind a context menu. Only applicable to embeds that contain a single visualization element.
+theme Applies a default workbook theme (Light, Dark, or Surface) or any custom theme defined for your organization. The value must be the name of the theme (case-sensitive).
+use_user_name Displays the workbook owner's name (instead of email) in the embed menu and system-generated emails.
+Optional security parameters
+Parameter Description
+account_type
+Applies the permissions granted to the specified account type.
+Recommendation: Set a value with the lowest level of permissions (for example, Viewer), unless the embed users must be granted a higher level of access.
+control_id
+control_value
+The control_id parameter identifies a specific control element in the embedded content, and the control_value parameter sets the control value to customize the content displayed to the embed user. See Apply control values with URL parameters.
+Unlike other parameters, this parameter should not be prepended with a colon.
+Optional user attribute parameters
+User attributes are variables that Admin users can create in Sigma. The host application uses the embed API to send user attribute parameters and update values at runtime for individual users, affecting all sessions for those users.
+Example use cases for user attributes:
+Enforce row-level security (see QuickStart - Embedding 06: Row Level Security > Dataset RLS with UA)
+Custom SQL WHERE clause (see QuickStart - Embedding 06: Row Level Security > Custom SQL Query)
+Dynamic warehouse role switching (see QuickStart - Embedding 09: Dynamic Role Switching with Snowflake)
+Example JavaScript for a user attribute:
+JavaScript
+//PASS THE NAME OF THE USER ATTRIBUTE THAT IS CONFIGURED IN SIGMA AND THE VALUE TO SET IT TO:
+searchParams += '&:ua_{ua name}={ua value}';
+
+// FOR EXAMPLE:
+// searchParams += '&:ua_Region=East';
+
+// or for multiple values:
+// searchParams += '&:ua_Region=East,West';

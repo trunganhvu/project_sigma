@@ -1,0 +1,19 @@
+Enable or disable CSV upload
+Suggest Edits
+Sigma's CSV Upload feature allows your team to upload and analyze CSV data in Sigma. This feature stores a copy of the CSV directly in your data warehouse. As such, it must be enabled on both your organization and individual warehouse connection by an organization admin.
+Requirements
+Sigma Admin privileges are required to enable this feature; see Account types.
+A connection with write access enabled.
+Where's my data stored?
+When a CSV file is uploaded to Sigma, its data is automatically written back to your data warehouse as a new warehouse table. If your organization has multiple warehouses with write access enabled, you will be given the option to select a single destination.
+CSV data stored in your warehouse is only accessible through through the document in which it is used. You will not see it listed as a warehouse table in the connection. 
+Note: When write access is enabled on a connection schema, the schema is hidden from the Sigma connection panel. Instead of a list of tables, you will see a note that declaring "No Accessible Data". The schema and its tables will remain available in your data warehouse.
+Enable CSV Upload
+Open your Admin Portal.
+On the Account page, find the section titled Features.
+Click the toggle switch next to CSV Upload.
+Note: This will automatically enable CSV upload for any connections with write access enabled.
+Before your team can upload CSVs, you must also enable write access on the connection(s) you wish to use for this feature. See Write access.
+RELATED RESOURCES
+Upload CSVs
+Set up write access

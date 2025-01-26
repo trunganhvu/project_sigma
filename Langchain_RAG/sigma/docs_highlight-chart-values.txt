@@ -1,0 +1,5 @@
+Highlight chart values
+Suggest Edits
+Highlight Values in a Chart
+Click any single value to highlight it.
+To select multiple values, hold ⌘ Command (Mac OS) or Ctrl (Windows) on your keyboard while clicking each value.

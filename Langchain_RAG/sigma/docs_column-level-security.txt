@@ -1,0 +1,84 @@
+Configure column-level security
+Suggest Edits
+Configure column-level security to restrict access to or mask column-level data in a data model or dataset. With CLS, your organization can manage access to data, ensuring that sensitive and confidential information is secure and accessible only to authorized users.
+Depending on how you model your data, you can enforce column-level security in different ways:
+For data models, enforce CLS with teams and users.
+For datasets, enforce CLS with user attributes.
+User requirements
+To configure user attributes and create teams, you must be assigned the Admin account type.
+To configure column-level security in a data model, you must be granted Can edit access to the data model.
+To reference existing user attributes in a dataset, you must be granted Can edit access to the dataset.
+Understanding column-level security
+In Sigma, column-level security is managed through team assignments, user attributes, and document configurations. If you use datasets, you can use column-level security to grant access to individual columns within a table for different embed clients.
+Some additional benefits of column-level security include the following:
+Data privacy: Secure columns that contain sensitive information, including personal identifiers such as Social Security Numbers, financial data, or medical records.
+Data sharing and collaboration: Enable controlled data sharing and collaboration. Organizations can share select columns with external parties or partners without exposing the entire dataset.
+Data confidentiality in multi-tenant environments: In multi-tenant systems or cloud-based environments where multiple clients or organizations share the same infrastructure, column-level security ensures that each tenant's data remains isolated and protected from other tenants.
+Data masking and anonymization: Combine with data masking and anonymization techniques to protect sensitive data while still allowing certain authorized users to work with pseudo or obfuscated values.
+Configure column-level security in a data model
+🚩
+This documentation describes a private beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, is removed. As with any beta feature, the feature described below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document. Beta features are subject to the Beta features disclaimer.
+If you are interested in joining a limited test group and enabling this feature in your Sigma organization, contact Support or reach out to your Account Executive.
+Configure column-level security for a data model by specifying whether access to a column is restricted or not for one or more users or teams using the data model table downstream. To more easily manage column-level security, Sigma recommends creating a team for each group of users to whom you want to restrict column access.
+Open a data model for editing.
+For a given table element in your data model, locate the column that you want to restrict.
+Select the caret () and select Column security....
+In the Column visibility sidebar, for Visibility rules, select the + to add a rule.
+For Restricted columns, select one or more columns to restrict access to. By default, the column from which you opened the column visibility menu is selected.
+For Criteria, choose between No one can view, to restrict access to everyone, and Specific users and teams, to create an allowlist and permit access only for the users and teams that you specify.
+If you select Specific users and teams, search for the users and teams that you want to have access to the column. Only 5 users and teams appear in the drop-down by default. After you select a user or team, they appear in the list.
+To make a column available, but not added to downstream workbooks by default, hide the column in the data model table.
+Click Publish to update the data model.
+Access to the column in the data model updates immediately.
+If a user is not granted access to the column, it is not visible or available to select when using the data model as a data source.
+📘
+If multiple access restrictions apply to one user and one column, the restrictions are applied as a union of the rules. For example, if a team is granted access to view a column, and another rule restricts access to the column to anyone (no one can view), the team members can view the column.
+Example CLS configuration with a data model
+In this example, you want to limit visibility of revenue data in the Business Forecast data model to the Sigma users in the financial leadership team.
+Start by creating a team for the users that you want to have access to the revenue data. In this example, create a Financial leadership team. Add the finance leaders as members of the team.
+Open the Business Forecast data model for editing.
+For the Revenue column, select the caret () and select Column security....
+In the Column visibility sidebar, for Visibility rules, select the + to add a rule for the Revenue column.
+For Criteria, select Specific users and teams and select the Financial leadership team.
+Click Publish to update the data model.
+Someone in the financial leadership team can then build a workbook using the data model as a data source and the data from the Revenue column. You cannot create a workbook for them because you do not have access to data in the Revenue column. If you or someone else without access to the Revenue column attempts to view a workbook with that data, you see Restricted and No access for that column.
+Child elements inherit column-level security rules
+Child elements inherit column-level security rules from parent elements. Like filters, the column-level security rules apply to the columns but cannot be viewed, modified, or managed on the child elements.
+Within a data model, if you reference a restricted column in other data model elements, the column inherits the CLS rules and is restricted. For example, if you create a lookup from one table to another within the data model, and the column that you look up is restricted by a CLS rule, the column added via the lookup is restricted by the same rule.
+Using CLS-restricted columns in formulas
+You can create metrics and calculated columns that use columns restricted with column-level security rules. The metrics and calculated columns inherit the CLS rules from referenced restricted columns.
+For example, if your data model table includes a restricted column, Email, and a metric calculates the count of email addresses for each domain, restricted users can view the metric name and definition (including the column name), but if used in a workbook, the metric is restricted (no access).
+As another example, if your data model table includes a restricted column, Name, and another column, Formatted Name uses the formula Proper([Name]), the Formatted Name column inherits the CLS rules and is also restricted.
+Configure column-level security in a dataset
+To configure column-level security in a dataset, do the following:
+In the Administration portal, create a user attribute or open an existing one to edit.
+💡
+When you create a user attribute for column-level security, ensure you define a default value. If you don't specify the default value, Sigma automatically assigns attribute value "2" as the default, which restricts column data for applicable users.
+Assign attribute values to teams using the following preexisting assigned values intended for column-level security:
+Assigned value Column-level security outcome
+0 Column data is included in workbooks by default
+1 Column data is available, but not added to workbooks by default
+2 Column data is unavailable (restricted) in workbooks
+Open the applicable dataset or create one, then grant the team permissions on the dataset. The assigned permission type does not affect the column-level security settings.
+🚧
+To prevent unintentional results or errors, avoid using user attributes in a materialized dataset.
+Select the Columns tab, then click Edit in the dataset header.
+Locate the column you want to configure for column-level security, then click the Visibility dropdown and select the applicable user attribute.
+Repeat step 5 for all columns that require column-level security, then click Publish in the dataset header to save your edits.
+You can now create a workbook that uses the dataset with column-level security as a data source. When you share the workbook with applicable teams, the data is included or restricted based on each user's team assignments, user attributes, and corresponding dataset visibility configurations.
+Example CLS configuration with a dataset
+This example demonstrates an implementation of column-level security with a dataset, using a user attribute and teams.
+A Sigma organization has two teams: Team A and Team B. Members of Team A require access to the Domain column in an existing dataset called Customer, while members of Team B need to be restricted from viewing that same data.
+Start by creating a user attribute to manage data security. In this example, create a Domain CLS user attribute.
+Assign the attribute value 0 to Team A (to access data) and the attribute value 2 to Team B (to restrict data).
+Next, verify that members of both Team A and Team B can access the dataset. Open the Customer dataset and select the Permissions tab.
+Then, update the column visibility for the dataset. To start editing the dataset, select the Columns tab and click Edit.
+In the Columns tab, find the Domain column, then click the corresponding Visibility dropdown field and select the Domain CLS user attribute.
+The values of the Domain CLS user attribute assigned to Team A and Team B are applied to the Domain column.
+Publish the changes to the dataset to save them.
+Create a workbook from the dataset, which adds a table with all dataset columns, and share the workbook with both Team A and Team B.
+When a members of Team A opens the workbook, Sigma displays all data in the Domain column.
+When a member of Team B opens the workbook, Sigma obfuscates the name of the Domain column, displaying Restricted instead. For each row in the column, the user sees "No access" because the data is restricted.
+RELATED RESOURCES
+User Attributes
+Create Models

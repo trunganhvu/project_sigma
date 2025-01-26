@@ -1,0 +1,25 @@
+Find
+Suggest Edits
+Returns the index at which a substring is first found within a given string. If the substring is not found, the result is 0.
+Usage
+Find(string, substring)
+string (required) The text to search.
+substring (required) The text to search with.
+Find is case-sensitive. To create a search that is no case sensitive, you can combine Find with Lower.
+Example
+Find("milk+cookies", "cook")
+Returns 6
+The string “cook” starts on the 6th letter.
+Find("milk+cookies", "chocolate milk")
+Returns 0 because the substring is not found.
+Find("Abe Lincoln", "lincoln") = 0
+Returns 0 because the substring is not found. Find is case-sensitive
+Find(Lower("Abe Lincoln"), "lincoln")
+Returns 5 because the substring is found in the lowercased string.
+Find(“San Francisco County”, “ “)
+Returns 4 because Find searches from left to right and returns the first instance of the substring.
+RELATED RESOURCES
+Left
+Mid
+Right
+Contains

@@ -1,0 +1,46 @@
+About materialization
+Suggest Edits
+🚩
+Materialization of datasets is generally available. Materialization of data elements in data models or workbooks is in public beta.
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in Sigma, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service may differ from the contents of this document.
+Beta features are subject to the disclaimer on Beta features.
+Materializations improve the speed and performance of your reports. You can set up materialization for data models, workbooks, and datasets.
+About materialization
+If you have data sources that use expensive or long-running queries, such as a complex join between data elements, or a dataset with high cardinality and multiple grouping levels and calculated columns, setting up materialization enhances query performance and can help reduce compute costs.
+Materialization writes a copy of a dataset or data element back to your warehouse as a table, or in some cases, a dynamic table. Materialized data is stored in your cloud data warehouse in a schema managed by the Sigma service, in the same database or catalog and schema used for all write-back data. Materialized tables are prepended by t_mat or T_ID or appended with _MAT, and do not appear in the connection explorer in Sigma.
+When materialization is used
+When you view or interact with an element that uses materialization, the Sigma query compiler automatically and transparently uses the latest materialization. Your cloud data warehouse does not recompute the query.
+If a workbook page control targets a materialized element, changing control values queries live data. Instead, target the control to child elements of the workbook or data model. See Best practices for materialization.
+If you edit a materialized dataset or materialized element in a workbook or data model, the materialized data is not used and the underlying data is queried to ensure accurate results.
+Data model and workbook materialization compared to dataset materialization
+Materialized data elements in workbooks and data models have some differences from materialized datasets:
+When you publish a dataset, the materialization runs, even if your changes do not affect the accuracy of the materialization. When you publish a workbook or data model with materialized elements, materializations only run if the published changes affect the materialization.
+If your dataset contains multiple grouping levels, you can only materialize one grouping level. If your data element in a workbook or data model contains multiple grouping levels, you can materialize each grouping level.
+Unused materializations for data elements in workbooks and data models can be automatically paused. Unused dataset materializations cannot be automatically paused. See Manage materializations for more detail on automatically paused materializations.
+If you use materialization with a Snowflake connection, materialized data elements in workbooks and data models use transient tables. For more details about transient tables, see Working with Temporary and Transient Tables in the Snowflake documentation.
+Incremental materialization with dynamic tables
+By default, materializations create a new table every time. If you use materialization with a Snowflake connection, you can set up your connection to use dynamic tables for materialization instead. In many cases, dynamic tables allow incremental updates, meaning that when a materialization runs, only changed data is updated.
+To use dynamic tables for materialization:
+Configure your connection to use dynamic tables for materialization. See Configure write access in Connect to Snowflake.
+Enable change tracking on any database tables that might be queried to build the dynamic tables used for materialization. See Enable change tracking in the Snowflake documentation about creating dynamic tables.
+After you complete these steps, materialization uses a dynamic table and uses incremental refresh if available. If incremental refresh is not available, a full refresh is performed. If a dynamic table is not available or supported, a table is used. You can review the materialization history for an element to determine which method was used. See Review the status of a materialized data element.
+For more details about when incremental refresh might not be used, or when a dynamic table might not be used, see Known limitations for dynamic tables in the Snowflake documentation.
+Existing materialization schedules attempt to use a dynamic table as part of the next scheduled run. Only data elements in workbooks and data models can use incremental materialization with dynamic tables. Materialized datasets do not use dynamic tables.
+Best practices for materialization
+Consider the data refresh time when scheduling a materialization. If data in your data warehouse is updated on a schedule, make sure the materialization schedule in Sigma starts after that data refresh completes.
+Schedule materializations to run when the data is not expected to be used, completing before users access the data. If desired, create a dedicated compute resource to use for materialization. For example, create a small compute resource that runs materializations slowly but uses fewer resources.
+If you materialize upstream elements, make sure the materialization schedule of any downstream materialized elements start after the materialization of upstream elements completes.
+Consider the limitations of materialization when setting up a data model or dataset to make sure that changes to the data structure do not cause a future materialization to fail.
+Target controls to the child elements of materialized data sources and elements to ensure reliable interactions and output.
+Consider timeout limits for long-running queries. Materialization queries do not use the Sigma query timeout configured on the connection and instead use the settings defined on the compute resource used by the data platform, such as the query timeout setting for a virtual warehouse in Snowflake.
+Materialization limitations
+Some data structures cannot be materialized. If your data contains one or more columns that use a system function, such as a dataset with row-level security, materialization fails to run.
+Because materializations reflect the fixed output of the data at the time the materialization was run, some data structures can produce unexpected results:
+If your dataset uses parameters, the materialization runs using the initial value of the parameter. Future changes to the parameter have no effect.
+If your data element in a workbook or data model is targeted by one or more controls, the materialization runs using the initial value of the control. After materialization, using the control to interact with the materialized data element does not use the materialized data and instead runs a query to retrieve the latest data. Instead, target the control to child elements.
+You can materialize data elements in workbooks or data models that reference other data elements, such as with a lookup, join, or relationship, unless one of the source data elements cannot be materialized.
+You can materialize datasets that reference other datasets, such as with a lookup, link, or join, unless one of the source datasets cannot be materialized.
+Set up materialization
+To set up materialization for elements in a data model or workbook, or a dataset:
+Schedule materialization for a data model or workbook
+Schedule materialization for a dataset

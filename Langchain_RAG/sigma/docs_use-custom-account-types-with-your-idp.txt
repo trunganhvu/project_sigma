@@ -1,0 +1,39 @@
+Use custom account types with your IdP
+Suggest Edits
+If your organization uses an identity provider (IdP) to centrally manage permissions, you must assign users to specific Sigma account types in the IdP.
+This document explains how to use and assign custom account types in your IdP.
+📘
+The procedures detailed in this document apply to Okta and Azure IdPs only.
+Requirements
+Admin access to Sigma
+Administrator access to your IdP
+SCIM configured for Sigma and your IdP; see Manage Users and Teams with SCIM.
+General Instructions
+Log in to Sigma and create a custom account type.
+Log in to your IdP.
+Create a new user type that matches your custom account type in Sigma. The identifier should be identical to its corresponding account type in Sigma.
+After saving, you should now be able to assign existing or new users to your account type.
+🚧
+The user type attribute is case-sensitive. When configuring default account types (Admin, Lite, Essential, Pro), the value indicated should be lower case (e.g. "essential"). Other account type configurations are also case-sensitive, and the value set in your IdP must match the value in Sigma exactly, or errors may occur when trying to provision users.
+Using Custom Account Types with Okta
+Log in to Sigma and create a custom account type.
+Log in to Okta and open your Sigma application.
+Open the Provisioning tab.
+Click the Go to Profile Editor button to open the Profile Editor page.
+Click the edit button for the User Type attribute.
+Under Attribute members, click Add Another.
+Enter a Display name and Value. These identifiers must match the name of the custom account type in Sigma.
+Click Save Attribute.
+You can now assign this user type to new and existing users via your application’s Assignments tab.
+Using Custom Account Types with Azure
+Log in to Sigma and create a custom account type.
+Log in to Azure and open your Sigma application.
+Azure Active Directory -> App Registrations -> All Applications -> Search for and select your application.
+Go to the App Roles page.
+Click Create app role to create a new app role.After the role is created, it should appear on the users / groups assignments page and can be assigned.
+RELATED RESOURCES
+Create and manage account types
+Use Custom Account Types with your IdP
+Manage Users and Teams with SCIM
+Manage Users and Teams with SCIM and Okta
+Configure [Azure and] Sigma Computing for automatic user provisioning (Azure documentation)

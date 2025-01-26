@@ -1,0 +1,22 @@
+MakePoint
+Suggest Edits
+The MakePoint function constructs a point from latitude and longitude data that describe a location within the Geographic Coordinate System.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+MakePoint(longitude, latitude)
+The function arguments are:
+logitude
+Required
+A valid longitude value
+latitude
+Required
+A valid latitude value
+Example
+MakePoint([Longitude],[Latitude]
+The MakePoint function constructs the following points from the Longitude and Latitude columns:
+RELATED RESOURCES
+MakeLine
+Latitude
+Longitude
+Geography functions

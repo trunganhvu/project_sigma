@@ -1,0 +1,8 @@
+Cos
+Suggest Edits
+Computes the cosine of the given angle.
+Usage
+Cos(value)
+value (required): The angle (in radians) whose cosine will be calculated.
+RELATED RESOURCES
+Acos

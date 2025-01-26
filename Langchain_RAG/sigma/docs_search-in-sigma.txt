@@ -1,0 +1,13 @@
+Search in Sigma
+Suggest Edits
+Sigma users can use Search to locate items in their Sigma organization, including:
+Workbooks
+Datasets
+Data stores
+Templates
+Folders
+Tables
+Sigma orders the search results by the most recently viewed by the searcher.
+To access search, click the Search icon at the top left of the title bar.
+If you enter a term and then press Return, the Search page opens. 
+The Search page lists the matches, and lets you filter the results by document type, badge type, and owner.

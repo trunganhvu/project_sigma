@@ -1,0 +1,49 @@
+Restrict export recipients and frequency
+Suggest Edits
+As an admin of a Sigma organization, you can configure export settings for users in your organization.
+You can restrict the available frequency options and restrict the available recipients of exports:
+Restrict the frequency of scheduled exports.
+Define authorized domains that can receive emails, Google Sheets, and Google Drive exports.
+Restrict email recipients so that users can only email exports to other members of their Sigma teams.
+If no domains are authorized, or the teams restriction is disabled, users can export reports to any recipients.
+Requirements
+Only users assigned the Admin account type can configure export settings.
+Restrict scheduled export frequency
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+To restrict the frequency options available to users when scheduling exports, do the following:
+Open the Administration portal.
+Go to Exports, then select the Settings tab.
+For Export frequency, click Edit.
+Turn on the Restrict export frequency switch, then configure the frequencies to restrict. For example:
+Choose to restrict daily exports to multiple times per day, every 30 minutes. This option prevents users from scheduling an export that runs more than once every 30 minutes per day.
+Choose to restrict daily exports to multiple times per day, every 8 hours. This option prevents users from scheduling an export that runs more than once every 8 hours per day.
+Choose to restrict daily exports to once per day. This option prevents users from scheduling an export that runs more than once per day.
+📘
+When this option is enabled, users cannot configure custom cron schedules.
+Click Save.
+📘
+Existing export schedules are unaffected by this restriction. Select the Scheduled exports tab to review existing export schedules in your organization that might be occurring more frequently than wanted. See Manage organization schedules.
+Restrict export domains
+To restrict the recipients of exports to only users and email addresses from authorized domains:
+Open the Administration portal.
+Go to Exports, then select the Settings tab.
+Review the Export authentication section for the current state:
+Authorized Domains: None means that users in your organization can export reports to any email address.
+If any domains are listed for Authorized domains, users in your organization are limited to emailing only addresses for the listed domains.
+To add new or modify existing domains, click Edit.
+Enter one or more authorized domains, separating values with a comma.
+Click Save.
+Restrict recipients to team members
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+To restrict the recipients of exports to only users on the same team as the user sending or scheduling the export:
+Open the Administration portal.
+Go to Exports, then select the Settings tab.
+In the Export authentication section, click Edit.
+To restrict recipients, turn on the Restrict recipient list to members on same team switch.
+Click Save.
+RELATED RESOURCES
+Send and schedule exports from workbooks

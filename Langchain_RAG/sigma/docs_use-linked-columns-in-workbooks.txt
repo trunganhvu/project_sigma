@@ -1,0 +1,24 @@
+Use linked columns in workbooks
+Suggest Edits
+If a dataset has links, you can use the linked columns when analyzing and exploring data in a workbook.
+User requirements
+To use linked columns in workbooks, you must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Use linked columns in workbooks
+Links are column-based relationships created between two data sources in Sigma. They allow you to access data from one data source based on a column it shares with another data source.
+Cloud Data Warehouse (CDW) tables can be linked to other CDW tables. Sigma datasets can be linked to other datasets. And CDW tables can be linked to datasets. A data source can have links to multiple other data sources.
+Link accessibility in workbooks
+Links can only be accessed in workbooks through data elements created directly from a data source containing a linked column. Child elements of a data element that inherited links from its CDW or dataset parent will not continue to inherit those links.
+This means that if you want to access linked columns from a data element, you should either (1) create that element from the original data source containing the link OR (2) add the columns you want to the parent element so they can be directly inherited by the child.
+Add columns from a link in a table element
+Linked columns in tables can be identified by the light blue background on their cell values.
+Click on a cell in the linked column to open the link popup.
+Check the box beside any column(s) you wish to display in your table.
+Add columns from a link in a visualization or pivot table
+Linked columns in visualizations and pivot tables are only accessible when an element is maximized. From there, you can access links through the underlying data table. Like in table elements, linked columns can be identified by the blue background on their cells' values.
+Maximize the element.
+In the underlying data table, click any cell in the linked column.
+This will open the link popup.
+Check the box beside any column(s) you want to display in your table.
+RELATED RESOURCES
+Intro to data elements
+Create a data element

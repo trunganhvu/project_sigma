@@ -1,0 +1,29 @@
+Within
+Suggest Edits
+The Within function determines if one geography is fully within another geography.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+Within(geography1, geography2)
+The function has these arguments:
+geography1
+Required
+The Geography value which is potentially within (inside) the other Geography value
+Can be a Point, a Line Segment, or Polygon
+geography2
+Required
+The Geography value that is potentially within (inside) the other Geography value
+Examples
+Within(Geography("POLYGON((1 1, 2 1, 2 2, 1 2, 1 1))"), Geography("POLYGON((0 0, 3 0, 3 3, 0 3, 0 0))"))
+The function returns True.
+Within([Centroid], [Coordinates])
+Within(MakePoint(-73.985428, 40.748817), [Coordinates])
+The first Within function determines if the Centroid of the polygon is within the polygon, while the second function determines if the Empire State Building ( -73.985428, 40.748817) is within the polygon.
+Within([Coordinates], [Brooklyn])
+The Within function determines if the values in the Coordinates column are within the boundaries of Brooklyn.
+RELATED RESOURCES
+Centroid
+MakePoint
+MakeLine
+Intersects
+Geography functions

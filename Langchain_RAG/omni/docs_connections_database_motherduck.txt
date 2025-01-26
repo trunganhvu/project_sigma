@@ -1,0 +1,27 @@
+Connect to DataDatabase setupMotherDuck
+On this page
+MotherDuck
+Connect to MotherDuck.
+Note: Omni supports MotherDuck Version 10.2+
+Creating the connection in Omni
+Login to your MotherDuck account.
+Copy the name of the database that you want to connect to in Omni. a. Navigate to the vertical three-dot menu, next to the database’s name and select Copy name
+In Omni, navigate to the Admin tab (top-right as an Admin user) > Connections (lower-left in left menu) > Add Connection (top-right) > Select MotherDuck.
+Use this image to follow along with the next steps:
+3.1. Display Name is a required field. This name will appear will appear in the Omni Connections list.
+3.2 Database is a required field. This should reference the default database (catalog) in MotherDuck that Omni will connect to. Paste the database name value copied from step 2.
+3.3. Include Other Catalogs is an optional field. If you want to include multiple catalogs though, simply copy those catalogs’s names into a comma-separated list in this field.
+3.4. Include Schemas is an optional field that allows you to limit which schemas to allow Omni to access.
+3.4.1. List the schemas you want included
+3.4.2. If none are listed, Omni will be able to access all schemas within the listed database(s).
+3.4.3. If you included a secondary catalog in step 3.3, be sure to reference the secondary catalog and the schema separated by a period, e.g. other_catalog.schema.
+3.5 Token is a required field.
+3.5.1. Navigate back to your MotherDuck settings.
+3.5.2. Select the Copy Token button.
+3.5.3. Navigate back to the database connection page in Omni.
+3.5.4. Paste the token you just copied.
+Select “Create Connection” and voila! You can see your new connection in action by heading over to the “Make a workbook” or “Browse Model” options in the “Woo hoo!” success modal in the top right.
+Previous
+Microsoft SQL Server
+Next
+MySQL

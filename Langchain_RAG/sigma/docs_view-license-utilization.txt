@@ -1,0 +1,12 @@
+View license utilization
+Suggest Edits
+Sigma provides information about your organization’s license utilization, which can be monitored for cost control, license allocation, and compliance purposes.
+This document explains how to view your organization’s license utilization by tier. For more information about Sigma’s licensing model, see License and account type overview.
+User requirements
+To view license usage, you must be assigned the Admin account type.
+View license utilization
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, reference the Licenses in use field to view the number of active internal and guest members in each license tier (embed members are excluded from license usage).

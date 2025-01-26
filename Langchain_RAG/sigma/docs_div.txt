@@ -1,0 +1,20 @@
+Div
+Suggest Edits
+The Div function returns the integer component of a division operation.
+Syntax
+Div(dividend, divisor)
+Function arguments:
+dividend (required) The number to be divided.
+divisor (required) The number to divide by.
+Examples
+Div(19,5)=3
+19 divided by 3 is 3.8. The integer component 3.
+Div(2,3)=0
+If there is no integer component (0.6), the result is 0.
+Div(223876005,49249113) is 4.
+Div(231411735,125057657) is 1.
+Div(231522094,129574946) is 1.
+Div(165720944,130428781) is 1.
+Div(null,95205404) is null.
+RELATED RESOURCES
+Mod

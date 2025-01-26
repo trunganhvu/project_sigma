@@ -1,0 +1,49 @@
+Guest User Accounts
+Suggest Edits
+Guest user accounts are password authenticated and allow you to enforce strictly limited access to your organization. Among other security-based limitations, guest users cannot view or request access to content outside of their Admin-assigned team(s).
+This feature is opt-in and must be enabled by an organization Admin before guest users can be invited to your organization.
+Guest user accounts are recommended when working with external vendors.
+Requirements
+You must be an organization Admin to enable and/or use this feature; see Account types.
+Guest user accounts do not work if your organization uses SCIM for team and user provisioning.
+Guest User Permissions
+Guest users can be assigned to any non-Admin account type.
+Guest accounts are unique in that they only have access to workspaces associated with teams to which they are assigned. Unlike standard users:
+they do not have access to the organization’s All Members workspace, and
+they will not automatically get access to folders and documents shared with All Members
+they cannot request access to documents
+they can only interact with organization members who are assigned to the same team(s)
+they cannot access Sigma’s developer API
+All non-Viewer guest users automatically have access to Sigma's Sample Connection.
+Guest User Authentication
+Guest user accounts are always password authenticated, regardless of whether the organization uses an identity provider (e.g. Okta, Azure) for other users.
+If your organization transitions to SCIM for team and user provisioning, guest user accounts will no longer work and they will be unable to log in to Sigma.
+Allow Guest Users Accounts in Your Organization
+Open your Admin Portal.
+Click Authentication to open the authentication page.
+Click the Authentication Method & Options section’s Edit button.
+Click the Allow Guest Access switch toggle.
+Click the section’s Save button.
+Invite a Guest User to Your Organization
+Click your profile icon, located in the top right corner of the screen, to open the user menu.
+In the menu, select Invite Users.
+You will be redirected to the Invite People to Use Sigma modal, located on the People page in your Admin Portal.
+Type the email address of the person you would like to invite under Enter Email Address.
+If you are inviting multiple users, type each address separated by commas.
+Check the Invite as Guest Users checkbox.
+Select an account type from the Select Account Type menu.
+[optional] Under Add a custom message, enter a message to include in the emailed invitation.
+Select one or more teams from the Assign Teams list.
+Note: Guest users will only have access to workspaces associated with their assigned team(s).
+Click Invite.
+Disable Guest User Accounts
+The following instructions will show you how to disable guest user accounts across your organization. If this feature is disabled, all existing guest accounts will automatically be deactivated.
+To instead disable an individual guest user’s account, visit Deactivate Users.
+Open your Admin Portal.
+Click Authentication to open the authentication page.
+Click the Authentication Method & Options section’s Edit button.
+Click the Allow Guest Access switch.
+Click the section’s Save button.
+RELATED RESOURCES
+User account types
+Manage Teams

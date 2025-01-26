@@ -1,0 +1,156 @@
+Azure Private Link Connections
+Suggest Edits
+This document explains how to connect Sigma to your data warehouse that's hosted on Azure using Azure's Private Link.  
+📘
+See Sigma's Azure Private Link lab for more information on how to establish a secure connection between Sigma and an Azure data warehouse.
+Requirements
+A Sigma organization running on Azure.
+Admin privileges in your Sigma organization; see User account types.
+Snowflake, Databricks, PostgreSQL or MySQL Admin, depending on the data warehouse.
+Be an Admin in Azure.
+Introduction 
+Sigma organizations running on Azure can securely connect to their data using Azure's Private Link, which allows Sigma to access the data warehouse hosted on Azure via a private endpoint in the virtual network. This not only enhances security during data transit but also improves performance by reducing network latency. With Private Link, Sigma connects to the data warehouse using private IP addresses, ensuring traffic never leaves the Microsoft network and data remains secure without exposure to the internet. 
+To utilize Private Link, create a private endpoint in your virtual network that maps to the data warehouse, assign it a private IP address, and connect to the warehouse using this address.
+Sigma supports connections to the following data warehouses on Azure:
+Snowflake
+Databricks
+PostgreSQL
+MySQL
+Create Private Link Connection for Your Data Warehouse
+Follow the steps below to create a Private Link connection to your data warehouse hosted in Azure.
+📘
+To initiate this process, the first step for all data warehouses is to retrieve the required information and send to your account manager.
+Snowflake 
+Provide Snowflake Info to Sigma
+Follow the steps below to provide Sigma with the requisite information to create a Private Link for your organization.  
+📘
+Your Snowflake account must be Business Critical Edition to use Private Link.
+In the Snowflake SQL console, run the following command:
+SQL
+select system$get_privatelink_config();
+Below is the output from the SQL query. In the example above, the output is highlighted in blue.
+JSON
+{"regionless-snowsight-privatelink-url":"app-br67048-sigma_azure_us_east_2.privatelink.snowflakecomputing.com",
+"privatelink-account-name":"os99982.east-us-2.privatelink",
+"snowsight-privatelink-url":"app.east-us-2.privatelink.snowflakecomputing.com",
+"privatelink-account-url":"os99982.east-us-2.privatelink.snowflakecomputing.com",
+"privatelink-pls-id":"sf-pvlinksvc-azeastus2.cf82bce2-bw2d-4dw2-92ee-3dw2fb04d191.eastus2.azure.privatelinkservice",
+"regionless-privatelink-account-url":"br67048-sigma_azure_us_east_2.snowflakecomputing.com",
+"privatelink_ocsp-url":"ocsp.os99982.east-us-2.privatelink.snowflakecomputing.com",
+"privatelink-connection-urls":"[]"}
+In the output field, copy the values for privatelink-pls-id and private-account-url. In the example above, the values are highlighted in red.
+In the example above, private-pls-id is
+sf-pvlinksvc-azeastus2.cf82bce2-bw2d-4dw2-92ee-3dw2fb04d191.eastus2.azure.privatelinkservice
+and private-account-url is
+os99982.east-us-2.privatelink.snowflakecomputing.com
+Send these two values to your Sigma account manager.
+Sigma creates a Private Link and alert you when the link is active.
+📘
+You can't configure the connection until Sigma creates the Private Link.
+Configure Snowflake Connection
+Follow the steps below to configure your Sigma Snowflake connection to use Private Link.
+After the private link is active, in Sigma, go to Admin > Connections > Snowflake.
+Click Create to create a Snowflake connection.
+In the Account field, enter the three parts of the account URL in this format: <account>.<region_id>.privatelink
+For example, if the account URL is:
+test123.west-us-2.privatelink.snowflakecomputing.com
+The Account field is test123.west-us-2.privatelink
+Under Warehouse, enter your warehouse’s name as listed in Snowflake.
+If you have OAuth enabled on your organization, and you would like to use it on the connection, switch on OAuth access; see Connect to Snowflake with OAuth.
+Please note: Steps 9 - 11 are not applicable if you choose to use OAuth without a service account.
+Under User, enter your Snowflake username.
+Under Password, enter your Snowflake password.
+[optional] For Role, you can specify a Snowflake role to be used on this connection.
+[optional] For Connection Features, you can set a connection timeout and/or enable write access.
+After completing the form, click Create.
+Databricks
+Prerequisites
+You must create an Azure Databricks workspace.
+Your Databricks workspace must be Premium tier.
+A customized networking configuration is required to support Private Link.
+Provide Databricks Resource ID to Sigma
+Follow the steps below to provide Sigma with the Resource ID to create a private link for your organization.  
+In Azure Services, hover over Azure Databricks and click Create.
+Click JSON View in the top-right corner of the databricks workspace page in Azure. 
+On the Networking tab, you must check Yes for Deploy Azure Databricks workspace in your own Virtual Network and enter pre-configured virtual network and two subnets within the virtual network CIDR range for public and private subnet fields.
+Copy the following values and send them to your Account Executive:
+Resource ID
+Region Name for the Databricks warehouse (under Location)
+URL for the Databricks service (formatted as adb-<workspace-id>.<random-number>.azuredatabricks.net)
+Private Link Approval
+Follow the steps below to approve the Private Link after Sigma notifies you. 
+In the Azure portal, go to Azure Databricks.
+Click the selected Azure Databricks workspace.
+Click Networking on the left panel.
+Click on Private endpoint connections.
+Select the newly created private endpoint. The status will be Pending. Check Approve to approve the endpoint. Copy the name of the private endpoint, it's required when you configure Sigma. 
+Configure Databricks Connection
+In the Databricks section of Azure, click on the warehouse instance > Databricks Workspace.
+Click Launch Workspace.
+In Databricks, select SQL in the Data Science & Engineering dropdown. 
+Click Review SQL Warehouses. 
+Select the warehouse. 
+Click the Connection details tab. 
+Copy the HTTP path value in Databricks as it's required in the Sigma UI. 
+Go to User Settings in Databricks by clicking on your username. 
+Click Personal access tokens tab. 
+Click Generate new token.
+In the Lifetime field, set the duration of the private link. The link will expire based on the value. 
+Enter a value in the Comment field.
+Click Generate. Copy this token as it's required in the Sigma UI.
+In Sigma, go to Admin > Connections > Databricks.
+In the Host field, enter the private endpoint you copied when you approved the endpoint, in the following format.
+<private_endpoint_name>.pl-auth.azuredatabricks.net
+For example, if the private endpoint name is databricks-endpoint, then you would enter the following in the Host field.
+databrick-endpoint.pl-auth.azuredatabricks.net
+📘
+To locate the private endpoint's name, go to your Azure portal > click the Azure Databricks Workspace > click Networking on the left panel. The private endpoint name is displayed in the Private Endpoint column in Private endpoint connections.
+Paste the HTTP path value from Azure into the HTTP path field in Sigma. 
+Paste the token you created in Azure and enter into Access token field in Sigma.  
+[optional] Under Connection Features, you can set a connection timeout and/or enable write access.
+[optional] In the Connection queue size field, define the number of interactive queries Sigma can run on this connection concurrently.
+Click Create in Sigma.
+PostgreSQL
+Private Link can be enabled for Azure Database for PostgreSQL flexible server instances that are created with public access, or single server instances.
+Prerequisites
+To add a Private Link connection, you must complete the following procedures:
+Provide your PostgreSQL Resource ID to Sigma
+Approve the Private Link in Azure
+Configure the PostgreSQL connection in Sigma
+Provide your PostgreSQL Resource ID to Sigma
+Sigma requires your Resource ID to create a Private Link for your organization. View the Azure documentation on How to get your Azure Resource ID. Copy the Resource ID from the JSON View of your server page, as well as the Region Name for the PostgreSQL warehouse. Send these to your Sigma Account Executive.
+Approve the Private Link in Azure
+Once Sigma has finished configuring the Private Link, View the Azure documentation on how to Approve private endpoint connections. Ensure the status of the private endpoint is changed from Pending to Accepted.
+Configure the PostgreSQL connection in Sigma
+Configure a new Private Link PostgreSQL connection in Sigma:
+Go to Administration > Connections.
+Select Create Connection, then select PostgreSQL. Enter a Name for your connection.
+Fill out the fields under Connection Credentials:
+Host Enter the DNS name provided by your Sigma Account Executive.
+User Enter the Admin Username found in your Azure PostgreSQL server page.
+Port Enter the PostgreSQL port number.
+Password Enter the password created to access your data warehouse.
+Database Enter the name of your database.
+Turn on the Enable TLS toggle on to enable TLS encryption for your connection.
+MySQL
+Prerequisites
+Private Link can only be enabled for Azure Database for MySQL flexible server instances that are created with public access.
+To add a Private Link connection, you must complete the following procedures:
+Provide your MySQL Resource ID to Sigma
+Approve the Private Link in Azure
+Configure the MySQL connection in Sigma
+Provide your MySQL Resource ID to Sigma
+Sigma requires your Resource ID to create a Private Link for your organization. View the Azure documentation on How to get your Azure Resource ID. Copy the Resource ID from the JSON View of your server page, as well as the Region Name for the MySQL warehouse. Send these to your Sigma Account Executive.
+Approve the Private Link in Azure
+Once Sigma has finished configuring the Private Link, View the Azure documentation on how to Approve private endpoint connections. Ensure the status of the private endpoint is changed from Pending to Accepted.
+Configure the MySQL connection in Sigma
+Configure a new Private Link MySQL connection in Sigma:
+Go to Administration > Connections.
+Select Create Connection, then select MySQL. Enter a Name for your connection.
+Fill out the fields under Connection Credentials:
+Host Enter the DNS name provided by your Sigma Account Executive.
+User Enter the Admin Username found in your MySQL server page.
+Port Enter the MySQL port number.
+Password Enter the password created to access your data warehouse.
+Database Enter the name of your database.
+Turn on the Enable TLS toggle on to enable TLS encryption for your connection.

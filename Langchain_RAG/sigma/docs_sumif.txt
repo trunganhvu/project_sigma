@@ -1,0 +1,21 @@
+SumIf
+Suggest Edits
+The SumIf function adds the numbers in a column if all the conditions are true for that row.
+Syntax
+SumIf(column, condition 1, [condition 2], ...)
+Function arguments:
+number (required) - The column of numbers to add together. Null values are skipped.
+condition 1 (required) - The logical condition that returns a result that is either True or False. If the condition is True, the number on the corresponding row is added to the sum. Note: you can use operators in conditions.
+condition 2 + (optional) - Additional conditions can be added after the first condition.
+📘
+In the case of multiple conditions the "AND" logical operator is used by default. In order to use an "OR" operator the conditions should be encapsulated in a single condition chained by an explicit "OR."
+Examples
+SumIf( [Sales], [State] = "TX" )
+Returns the sum of all the sales in Texas.
+SumIf( [Sales], [State] = "TX" OR [State] = "CA")
+Returns the sum of all the sales in Texas or California using the "OR" operator.
+SumIf( [Sales], [State] = "TX", [CustomerID] = "1234" )
+Returns the sum of all the sales in Texas for customer ID "1234"
+RELATED RESOURCES
+Sum
+If

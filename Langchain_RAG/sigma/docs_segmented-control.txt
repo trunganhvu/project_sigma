@@ -1,0 +1,85 @@
+Create and configure a segmented control
+Suggest Edits
+A segmented control has between one and seven sections that a user can select to filter data in target elements. The segments in the control are single-select, so each segment acts like a radio button, selecting the matches and excluding other data.
+You might choose to use a segmented control as an alternative to a list control to present a small set of relevant values to choose from. You can also use a segmented control like a toggle switch, to change between different views of related content. For example, if you segment your webinar registrations by customer type, you can build one workbook with all relevant data and use a segmented control to switch between relevant customer groups: new, prospect, existing, all.
+Create a segmented control
+To create a segmented control, do the following:
+In your workbook, in edit mode, click Add element.
+On the left navigation panel, scroll to Control elements and select Segmented control.
+The new segmented control appears on the canvas.
+In the Element properties panel, choose whether to use column-based or manual values for the control. See Configure the control.
+Specify what changes happen when the user interacts with the control. See Specify the target of the control.
+📘
+Before a control can filter relevant data elements, you must specify the target, and select the source of segments.
+Specify the target of the control
+Add targets to a control to specify which data elements and data sources to filter:
+Select the control, then in Element properties, click Targets.
+Click + Add filter target.
+Select one or more elements in your workbook that you want to be changed by the control.
+In this example, the data element table VIOLATION_TYPES is selected. The table is on the same page of the workbook as the control.
+
+The table appears under Targets, and the count of targets for the control increases to 1.
+As you add other targets to this control, the count increases.
+Update the column targeted by the control. By default, the control targets the first column of the table. To change the target column, click the current column and choose the new target column. In this example, the target column Risk Category is correct for the control.
+As you change the target column, the default name of the control updates to match the selected column. In this example, the name of the filter control was New Control, then it changed to Risk Category when the table was added as a target.
+Configure the control
+To configure the control behavior, click Settings, and choose the attributes of the segmented control.
+You can populate the values used by a segmented control in different ways:
+Create a manual list. For your control to work, the list must correspond in some way with the data in the target data elements.
+Create a list from a preset defined by Sigma.
+Use a column in your data. The first 7 values in the column are used for the control. You can change the sort order to modify which column values are used.
+Use a custom list
+You can create a manual (custom) list to select specific values. You still reference a data table or a data element, but you can directly name the data segments you want to use, regardless of their relative frequency in the data.
+This option lets you chose from a common set of presets: Month names, Weekday names, and Date parts. After you select one of these options, your control is a manual list. You can change it, remove values, and add new values.
+In the Element properties panel for the control, select the Settings tab.
+For Value source, select Create manual list.
+For Value type, specify the data type of the segment values that you add manually. The data type must match the data type of the columns targeted by the control. Choose between Text (default), Number, Date, and Boolean.
+For Values, enter a custom list of values to use for the control. Press enter or return to create new values.
+You can optionally specify a display value to show in the control. For example, you can create a manual list of text values that correspond to the states in the New England region of the United States: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont. You can specify the display values as the full state names, but use the state abbreviations as the data values to correspond with a column in the targeted data element.
+(Optional) To allow users of the control reset the control so nothing is selected, select the checkbox to Show clear option. By default, the label for this option is None, but you can change it.
+(Optional) To make sure that targeted data elements only load after a user makes a selection on the control, select the checkbox for Required.
+(Optional) Decide whether to update the default Control ID. See About control IDs.
+Use a list from a preset
+In the Element properties panel for the control, select the Settings tab.
+For Value source, select Create list from preset and choose one of the preset options:
+Month names
+Weekday names
+Date parts
+After selecting a preset list, the Value type and Values automatically update. The Value source changes to Create manual list to reflect that a preset list is a pre-populated manual list.
+Modify the preset list as desired, removing unneeded values and changing display values. For example, if you choose a preset list with more values than the maximum supported for a segmented control, delete the values that do not correspond to any data. To delete a value, hover over the value and select Delete ().
+(Optional) To allow users of the control reset the control so nothing is selected, select the checkbox to Show clear option. By default, the label for this option is None, but you can change it.
+(Optional) To make sure that targeted data elements only load after a user makes a selection on the control, select the checkbox for Required.
+(Optional) Decide whether to update the default Control ID. See About control IDs.
+Use a column from a data element or data source
+In the Element properties panel for the control, select the Settings tab.
+For Value source, select a data source or data element in use on the workbook.
+For Source column, the first column of the data source is shown. Select the column to open a drop-down menu and choose the column that you want to use to populate the control. By default, the top 7 most frequent values in that column are used for the control. Select Sort () to change the sort order from the default of Descending by count to Ascending by count, Ascending by alphanumeric, or Descending by alphanumeric. Custom sort orders are not supported.
+(Optional) To use a different, related column, as the display values for the data, turn on the toggle switch to Set display column and choose a display column from the same data source. For example, you might use an ID column as the data source, but a name column as the display value.
+(Optional) To allow users of the control reset the control so nothing is selected, select the checkbox to Show clear option. By default, the label for this option is None, but you can change it.
+(Optional) To make sure that targeted data elements only load after a user makes a selection on the control, select the checkbox for Required.
+(Optional) Decide whether to update the default Control ID. See About control IDs.
+About control IDs
+When you add a control to a workbook, Sigma automatically generates a control ID. You can use the ID to reference values of the control when exporting a workbook or target elements, as parameters in custom SQL, when constructing an embed URL, or when using different Sigma REST API endpoints. The ID is also used internally for references between controls and their targets.
+You can change a control ID, but doing so might break existing references to the control. You can always update the control label.
+When you duplicate a control, the new control has the same behavior and formatting as the original, but the ID is updated to be unique. See Duplicate controls.
+When you sync controls, they share the same ID. See Synced controls.
+Format and design a segmented control
+You can format and design the segmented control to match the styling of your workbook. To review and update the formatting options, click Element format.
+Update the element style
+You can customize the style of the element, such as the background. See Customize element background,
+Update the control label
+Option Description
+Show label Select the checkbox to show a label on the control. Selected by default, with a default label of New Control, or a label that matches the column name used to populate the control. You can update the label.
+Bold You can bold the label text.
+Text color You can update the color of the label text.
+Label position Choose whether to position the label at the Top of the control, or to the Left.
+Show description Select the checkbox to show a description on the control. You can provide up to 200 characters of text as a description.
+Description formatting If a description is shown, you can bold the description text and update the text color.
+Description display If a description is shown, you can choose whether to display the description as a Subtitle or Tooltip, or use the Auto setting, which defaults to a tooltip.
+Update the alignment of the control
+You can align a segmented control within the element boundaries on the workbook canvas.
+Choose from the following horizontal alignment options:
+Alignment setting Example
+Left align () (default)
+Right align ()
+Stretch ()

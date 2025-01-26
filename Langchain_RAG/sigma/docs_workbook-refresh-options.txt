@@ -1,0 +1,26 @@
+Manage workbook refresh options
+Suggest Edits
+Sigma refreshes workbook data every time an individual opens or refreshes the workbook. If you want to refresh workbook data on a set schedule, such as for a workbook displayed on a screen without user interaction, you can set a custom refresh schedule.
+Data elements can also be refreshed individually, but not on an automated schedule.
+🚩
+Sigma does not store data. Every refresh re-queries the data in the warehouse. Setting an auto-refresh can burden the connection and result in significant warehouse costs.
+Requirements
+To set up a refresh schedule, you must have Can Edit access to the individual workbook and you must be assigned an account type with the Set workbook data refresh permission enabled.
+If your workbook is embedded in a host application, the secure embed must be authenticated with JSON Web Tokens (JWTs) for a custom refresh schedule to apply to the embedded content. See Create an embed API with JSON Web Tokens (Beta).
+Set up a refresh schedule
+To set up a refresh schedule for a workbook, do the following:
+Click the caret () More options to the right of the refresh button in the workbook header.
+Select Data refresh.
+The Data refresh settings modal opens.
+For Refresh schedule, turn on the Enable toggle.
+Adjust the Query data every field to specify how often to refresh the workbook. For example, every 10 minutes.
+[optional] To limit the refresh schedule to a specific time window, enter times in the Between fields. Sigma uses the browser timezone to evaluate whether the refresh schedule should be in effect.
+Click Save.
+Refresh individual data elements
+You can manually refresh the data in an individual data element.
+Select the data element.
+In the element toolbar, click More.
+Click Refresh data.
+The data in the element refreshes.
+RELATED RESOURCES
+Set a query ID cache duration

@@ -1,0 +1,20 @@
+Set a query ID cache duration
+Suggest Edits
+Some cloud data warehouses (CDWs) have a query results cache that Sigma can use to retrieve query results without incurring additional compute costs. When available from the CDW, Sigma uses a query ID to access the cached data. This leads to better performance.
+Workbooks have a query ID cache duration setting, or time-to-live (TTL). The default duration is 10 minutes. For more detailed information see Caching and data freshness.
+The actual query results are cached in the CDW, not in Sigma. Typically, the CDW cache is in the form of a copy of results and is stored for 24 hours. 
+If the source data changes inside the TTL duration, the cached results will reflect irrelevant or inaccurate data.
+If you attempt to return the result of a query, you can use the Cache duration setting to specify that the results cache is a certain number of minutes old.
+Requirements
+This feature is only available for CDWs that support result caches, including Snowflake and BigQuery.
+To set a workbooks' query ID cache duration, you must be an organization Admin.
+Set a query cache ID duration
+Click the caret (▼) button to the right of the refresh button in your workbook's header.
+Select Data refresh.
+
+The Data Refresh Settings modal opens.
+Under Cache duration set a duration in either minutes or hours.
+Click Save.
+RELATED RESOURCES
+Workbook Refresh Options
+Caching and data freshness

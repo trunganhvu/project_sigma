@@ -1,0 +1,40 @@
+View and manage existing actions
+Suggest Edits
+Each workbook page features an overview that lists all elements containing actions. Select an element from this list (or directly on the page) to view and manage its actions.
+This document explains how to view, edit, duplicate, and delete existing actions in workbooks. For information about creating new actions, see the Related resources section at the end of this page.
+User requirements
+📘
+The following requirements apply to members who view and manage actions. Users who access and interact with a workbook can typically trigger all existing actions within it. Any restrictions are noted in this document.
+The ability to view and manage actions requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
+1
+If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
+View configured actions
+View all actions configured on a specific page in the workbook.
+Open a workbook in Explore or Edit mode, then select the page you want to view.
+Without selecting an existing element, click Actions in the side navigation.
+The Actions panel lists all page elements containing actions and displays the number of actions configured on each. Select an element to view its configured actions.
+Edit an action
+Edit the configurations of an existing action.
+Open a workbook in Explore or Edit mode.
+Select the element containing the action you want to edit, then click Actions in the side navigation.
+In the Actions panel, locate the action you want to edit, then click More and select Edit.
+In the Action modal, update the action configurations as needed.
+Duplicate an action or action sequence
+Duplicate an existing action to leverage and modify its configurations for a new action.
+Open a workbook in Explore or Edit mode.
+Select the element containing the action or sequence you want to duplicate, then click Actions in the side navigation.
+In the Actions panel, locate the action or action sequence you want to duplicate, then click More and select Duplicate.
+Delete an action or action sequence
+Delete an action or action sequence to permanently remove it from the workbook.
+Open a workbook in Explore or Edit mode.
+Select the element containing the action you want to delete, then click Actions in the side navigation.
+In the Actions panel, locate the action or sequence you want to delete, then click More and select Delete.
+RELATED RESOURCES
+Intro to actions
+Create actions that navigate to destinations
+Create actions that manage control values
+Create actions that modify or refresh elements
+Create actions that download and export data
+Make an action conditional (Beta)

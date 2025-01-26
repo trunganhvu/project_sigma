@@ -1,0 +1,8 @@
+Exp
+Suggest Edits
+Returns the mathematical constant e (2.7183…) raised to the given power.
+Usage
+Exp(number)
+number (required) The number or column of numbers that is being evaluated.
+RELATED RESOURCES
+In

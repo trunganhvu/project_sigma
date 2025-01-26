@@ -1,0 +1,43 @@
+Send or schedule workbook exports
+Suggest Edits
+Export or download workbook contents to use outside of Sigma, enabling automated reporting and workflows. You can choose from a variety of methods, formats, and destinations:
+Download workbook data on demand.
+Schedule an export to one or more destinations.
+Send a scheduled export on demand.
+You can export any of the following:
+An entire workbook
+A single page of a workbook
+A specific element of a workbook
+When you export to destinations such as email, Slack, or others, the latest published version of the workbook is exported. Depending on the destination and file format you choose, you can also export a bookmark or a tagged version. While editing a workbook, you can download the current draft workbook, page, or element.
+If you export data that uses materialization, the materialized data is not used and a new query is run.
+Available export destinations and formats
+Depending on what you want to export and where you want to send it, different data formats are available:
+Export destination Entire workbook Workbook page Workbook page element
+Download Excel, PDF Excel, PDF, PNG CSV, Excel, JSON, PDF, PNG
+Email, including email bursts Excel, PDF Excel, PDF, PNG CSV, Excel, JSON, PDF, PNG
+Slack Excel, PDF Excel, PDF, PNG CSV, Excel, PDF, PNG
+Google Sheets Unsupported Unsupported Google Sheet
+Google Drive Excel, PDF Excel, PDF, PNG CSV, Excel, Google Sheet, JSON, PDF, PNG
+Webhook Unsupported Unsupported CSV, JSON
+Cloud storage Unsupported Unsupported CSV, gzipped CSV
+🚧
+When executing a scheduled export or direct download to PDF or PNG formats, Sigma may store applicable control values as URL parameters in trace logs used for debugging and troubleshooting purposes. Exercise caution when exporting or downloading workbook content that uses controls to filter sensitive data.
+File size limits apply to the various exports. See Download and export limitations.
+Manage scheduled exports
+You can manage scheduled exports in different ways:
+Manage scheduled exports that you own or that you receive. See Manage scheduled exports.
+Manage exports scheduled for a workbook. See Manage scheduled exports.
+As an admin, manage all scheduled exports for your organization. See Manage organization schedules.
+Table and pivot table PDF export formatting
+When you export a table or pivot table to PDF, the formatting is handled differently based on the layout used by the workbook.
+For grid layouts, the formatting matches the workbook layout. See Format PDF export page layout.
+For legacy layouts, see Table and pivot table PDF export formatting (legacy layouts).
+RELATED RESOURCES
+Schedule a conditional export or alert
+Apply control values to scheduled exports
+Export to email
+Export to Slack
+Export to webhook (Beta)
+Export to cloud storage (Beta)
+Export to Google Sheets or Drive
+Download workbook data

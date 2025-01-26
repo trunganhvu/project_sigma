@@ -1,0 +1,41 @@
+Enable a custom homepage
+Suggest Edits
+Sigma Admins can designate a workbook to use as a custom homepage for an organization or team. The first page of the workbook becomes the custom homepage. An organization can have multiple custom homepages, assigned to different teams.
+A custom homepage functions as a landing page for its viewers. Use a custom homepage to educate users about your workbooks, link to content, and guide them to internal experts and other resources. You can think of a Sigma homepage as an internal wiki for your Sigma analytics.
+A custom homepage is an embedded Sigma workbook on your landing page. It can display KPIs, visualizations, images, videos, texts, links, and do anything that a workbook can do.
+The custom homepage appears in the For you section under the Recent section. Users can also hide the Recents section, as shown in the following example. The example shows a sample from the Custom Home Page Samples workbook template.
+Requirements
+A workbook whose first page is designed to be the custom homepage. 
+The workbook must be shared with the intended users.  
+Admins enable the Custom Home Pages options in the Account > General settings. 
+If you want different homepages for different groups of users, use Sigma teams. Set up the teams first, then you can assign a homepage to each team using the instructions on this page. 
+Viewers with Can View access to the workbook can see the custom homepage. If a user doesn't have Can View permission, they will see the standard Sigma homepage. 
+Tips for using a custom homepage
+Use the sample template Custom Home Page Samples and modify it to suit your needs.
+Since the homepage doesn't display the source workbook's page tabs, include links to other pages, if necessary.
+Include contact info for getting help or asking questions about your homepage.
+Make sure that the homepage you want is the first page in the homepage workbook.
+If you want to limit access, remove the Can View access to the homepage workbook for those users. 
+If a user is assigned to multiple teams, the assignment listing that has higher priority takes effect. 
+If the title name of the workbook changes, it won't affect the homepage configuration because the configuration uses the workbook ID and not the title.
+Enable and assign a custom homepage
+To enable and assign a custom homepage:
+Go to Administration > Account > General Settings.
+In the Custom Home Pages section, select Enable.
+Sigma opens the User Attributes page, set to the home_page attribute. The following example screen shows that the Customer Success team's homepage is the Plugs Electronics Sales Performance workbook. 
+Click Assign Attribute. The Assign Attribute modal opens.
+Select who will see the homepage.
+If you want to use the same homepage for the entire organization, select All members of your Sigma organization. 
+If you want to assign it to a team, choose one. 
+From the Assigned Value menu, select the workbook you want to use as the homepage for the designated users. Use Search if needed.
+(Optional) If you want a different homepage for different teams, repeat Steps 4 and 5 for each team. If All Members or a team is already assigned, it won't show up in the dropdown list of available teams. 
+(Optional) If you have users who belong to multiple teams, decide which homepage listing takes priority. Drag and drop the listing to change the priority. Sigma shows the higher priority assignment's workbook to the users. For example, say you have a homepage for one team and another for all members of the org. Put the one team in the #1 position, so they'll see their workbook. People outside that team will see the workbook assigned to All Members. 
+Change a custom homepage assignment
+To change a custom homepage setup:
+Go to Administration > Account > General Settings.
+In the Custom Home Pages section, select Edit. Sigma opens the User Attributes page, set to the home_page attribute. 
+For the relevant assignment, use the 3-dot More menu to either edit the listing or un-assign the listing.
+RELATED RESOURCES
+Get started with workbook templates
+Folder and Document Permissions
+Workbooks overview

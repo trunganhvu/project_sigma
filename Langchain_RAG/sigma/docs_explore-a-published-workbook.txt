@@ -1,0 +1,51 @@
+Explore a published workbook
+Suggest Edits
+Explore mode provides an isolated environment in which you can customize published workbook content and perform ad hoc analysis without affecting saved or shared workbook versions.
+This document explains how to access and use Explore mode directly in Sigma and embedded workbooks. For more information about workbook modes, see Workbook modes overview.
+User requirements
+The ability to access and use Explore mode requires the following:
+You must be assigned an account type with the Full explore permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Access Explore mode
+The following sections explain how to access Explore mode when the workbook is open in View or Edit mode.
+Access from View mode
+When you initially open a workbook or switch to its published version, the content displays in View mode. To access Explore mode, go to the workbook header and click the Explore toggle to the on position.
+📘
+In an embedded workbook, the Explore toggle can be in the header or footer, depending on the embed configuration.
+Access from Edit mode
+When you edit a workbook, you interact with the draft version. To access Explore mode, you must first switch to a published version.
+In the workbook header, click the version field, then select Published from the menu. You can also select and explore a tagged version.
+📘
+In an embedded workbook, click Editing in the header or footer (depending on the embed configuration), then select Go to published version.
+The published version opens in View mode. To access Explore mode, go to the workbook header and click the Explore toggle to the on position.
+📘
+In an embedded workbook, the Explore toggle can be in the header or footer, depending on the embed configuration.
+Explore a published workbook
+Explore mode enables the full scope of analytical workbook functionality, including the following interactions and customizations:
+Create new elements
+Copy and paste elements
+Edit the workbook layout
+Drill into underlying data
+View lineage
+Send or schedule exports (if granted proper account type permissions)
+For a complete list of functionality available in Explore mode, see the workbook modes accessibility comparison in Workbook modes overview.
+Reset the workbook
+To return to the original state of the workbook’s published version, click Reset in the workbook header. Sigma discards all customizations and ad hoc analysis performed in Explore mode.
+📘
+In an embedded workbook, the Reset function can be in the header or footer, depending on the embed configuration.
+Return to a recent exploration
+To return to a previous explored state of the workbook, access your history of recent explores.
+Open a workbook in View or Explore mode.
+In the workbook header, click the version field, then select Recent explores in the menu.
+Sigma opens a side panel displaying a record of past explorations. Select a record to apply the explored state to the workbook.
+Utilize the explored state
+There are several ways to utilize the explored state of a workbook, including the following:
+Share the explored state with other members of your organization
+Save the explored state as a bookmark
+Save the explored state as a new workbook
+Merge the explored state with the draft version
+Copy and paste individual explored elements to the same or different workbook
+For more information about performing these tasks, see Leverage an explored workbook.
+RELATED RESOURCES
+Workbook modes overview
+Leverage an explored workbook

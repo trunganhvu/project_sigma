@@ -1,0 +1,40 @@
+Manage materializations
+Suggest Edits
+🚩
+Materialization of datasets is generally available. Materialization of data elements in data models or workbooks is in public beta.
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in Sigma, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service may differ from the contents of this document.
+Beta features are subject to the disclaimer on Beta features.
+If you are the admin of an organization, you can manage and troubleshoot materialization activity. For more details about materialization, see About materialization (Beta).
+Requirements
+To manage and troubleshoot materializations, you must be assigned the Admin account type.
+Review scheduled materializations for your organization
+To see a list of all materializations scheduled in your Sigma organization, do the following:
+Go to the Admin Portal.
+In the left panel, click Materializations.
+Review the listed data elements and documents:
+Search for a specific materialized element or dataset by element name, data model or workbook name, or dataset name.
+Review the status column, for example to verify if a specific materialization was successful.
+Filter the table, for example by status or document type.
+Sort the table columns in ascending or descending order, for example to review schedules in time order.
+Select an element or dataset name to open the document.
+Pause scheduled materializations
+By default, Sigma pauses scheduled materializations that have not been used for 60 days or if they fail to run five times in a row. Any owner of a scheduled materialization can also manually pause a materialization. If a materialization is paused, materialized data is not used.
+As an admin, you can change the settings used to automatically pause unused materialization schedules:
+Open the Administration portal.
+In the left panel, select Materializations.
+For Pause schedule, select the option that reflects your business requirements:
+Never: Select this option if you do not want to pause materializations for any reason.
+If materialization table is not used for... days: Specify a number of days after which to pause materializations that are not in use. The default setting is 60 days.
+Changes take effect immediately.
+To resume a paused materialization schedule, locate the paused materialization schedule in the table, then select More > Resume.
+View materialization logs and statistics
+You can review logs and other usage data for your organization's materialization activity in the Usage Dashboard.
+Open the Administration portal.
+In the left panel, click Usage, then select the Materialization tab.
+Review the usage statistics and logs for all of your organization's materialization runs.
+Troubleshoot failing materializations
+Materialization can fail for a number of reasons. Depending on what is materialized, users might experience different data:
+If materialization for a dataset fails, the dataset continues to use the last successful materialization.
+If materialization for a data element in a workbook or data model fails, the element uses live data and does not use the last successful materialization.
+To troubleshoot a failed materialization, open the Materialization tab of the Usage page, you can view the logs for each materialization run, including specific error messages for failed materialization runs in the Materialization Logs table.
+When troubleshooting a failed materialization, review the materialization limitations and review the lineage for the data element, including any dataset links if relevant.

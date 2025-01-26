@@ -1,0 +1,48 @@
+Display chart data labels
+Suggest Edits
+You can display data labels for the following visualization types:
+Area charts
+Bar charts
+Box and whisker charts
+Combo charts
+Donut & pie charts
+Funnel charts
+Gauge charts
+Line charts
+Scatter plots
+Region and Point maps
+You can also format the appearance of data labels .
+Requirements
+You must have Can Edit or Can Explore access to the workbook.
+Add custom data labels to a chart or map
+By default, a chart can display data labels for the aggregate series of the chart, such as the Y-axis or X-axis values, depending on the chart and orientation. For some charts, and for region and point maps, you can specify a column to use to provide custom data labels for a chart.
+Add custom data labels to one of the following chart types:
+Bar charts
+Line charts
+Combo charts
+Area charts
+Scatter plots
+Region maps
+Point maps
+Labels display with column values split by each chart segment, such as a region or point on a map.
+To add custom data labels:
+Select the element.
+The editor panel opens to the Element properties section.
+In Marks, select Label.
+Add one or more columns whose values you want to display on the chart or map.
+[optional] Adjust the aggregation, format, or other settings of the column value so that the label appears as desired.
+Format and show data labels
+You can format and show data labels on your chart. For charts that can have more than one series, such as a bar chart, you can choose whether to apply the formatting settings to all series in the chart or a specific series.
+Before you start: This action uses the editor panel. If you have not done so already, open the editor panel from either Explore or Edit mode.
+In the editor panel, select Element format.
+Open the Data labels section.
+To show default data labels on your chart, select one of the following:
+Select the checkbox for Show series values.
+For a bar chart or combo chart with multiple series of data, leave the default of Apply to all series selected, or choose the data series that you want to display data labels for, then select the Show checkbox to show labels for that series.
+If you do not select a checkbox, any formatting options that you select apply only to custom data labels.
+Use the available options to customize your data labels.
+For example, customize the style of the labels to display minimum and maximum labels or endpoint labels, or customize the font color and size. For some charts, you can configure the orientation and position of labels, as well as whether to show an outline, or stroke, around the label text.
+📘
+Data label options vary by visualization type.
+RELATED RESOURCES
+Intro to visualizations

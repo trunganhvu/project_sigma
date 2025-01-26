@@ -1,0 +1,71 @@
+Customize element title
+Suggest Edits
+Titles allow you to identify individual data elements (visualizations, tables, and pivot tables) and input tables in workbooks. You can customize element titles to provide context, communicate insights, and improve accessibility.
+This document explains how to change title visibility and create custom titles using dynamic values, formatting tools, and descriptions.
+User requirements
+The ability to customize workbook element titles requires the following:
+You must be assigned an account type with the Edit Workbook and/or Explore Workbook permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Default element titles
+Sigma creates default element titles that depend on the element type.
+Visualizations: Titles are auto-generated based on the metric value and other data attributes applied to the chart properties. Until a user customizes a visualization element title, Sigma auto-updates it whenever chart properties are modified. Once the title is customized, auto-updates no longer apply.
+Tables: Titles reflect the data source (database table name, CSV filename, or parent element) or type of data integration (custom SQL, join, or union).
+Pivot table: Titles default to New Pivot Table.
+Input table: Titles default to New Input Table or New Linked Input Table.
+Show or hide the title
+Change the visibility of an element’s title.
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Title header to expand the section.
+To change the visibility of the element title, configure the Show title option:
+To display the title, select the checkbox.
+To hide the title, clear the checkbox.
+Edit the title text
+You can edit an element’s title text in two ways: in the Title section of the  Element format panel or directly in the element using inline editing.
+The Element format panel allows you to edit the text and format the title, while inline editing enables you to quickly update the text only—without requiring you to navigate outside of the element.
+Element format panel
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Title header to expand the section.
+In the text field, enter the preferred title, then press the Enter key or click anywhere outside the text field to apply the change.
+Inline edit
+Open a workbook in Explore or Edit mode.
+Locate the element you want to edit, then click the title to enable text editing.
+Enter the preferred title, then press the Enter key or click anywhere outside the title text field to apply the change.
+Create a dynamic title
+Use dynamic values to create a more relevant and detailed element title that adapts to selected control values. For more details about referencing control values in formulas, see Reference control values as parameters.
+Open a workbook in Explore or Edit mode.
+Access the editable text field using either method previously defined in the Edit the title text section.
+In the title text, enter = where you want to add a dynamic value. Sigma immediately displays an overlay containing a formula bar and Reference label field.
+Configure the dynamic value:
+In the formula bar, enter a control ID or element title/column enclosed in square brackets (for example, [date-range] or [Sales/Region] ).
+You can also use functions to generate custom calculations or to transform control and column values as needed.
+💡
+When referencing a date or date range control, use date functions to customize the value display.
+For example, if 01/01/2024 is the end date of the selected date range, enter DateFormat([date-range].end, “%Y-%m”) to display the dynamic title value as 2024-01.
+Alternatively, enter DateFormat([date-range].end, “%b %Y”) to display the dynamic title value as Jan 2024.
+[optional] In the Reference label field, enter a label that identifies the dynamic value. This label is used in place of the dynamic value when the element title is referenced elsewhere in the product, including in formulas, the workbook lineage, and the list of available element sources.
+Customize the title format
+Customize the title font weight, size, and color, and determine the title text alignment.
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Title header to expand the section.
+Use the formatting tools to customize the title as needed:
+Bold Change the font weight. When bold font is applied, the icon displays a gray background.
+Font color Enter a hex value or select an option from the color palette or picker.
+Font size Select a font size (10-48px).
+Alignment Select the text alignment within the element (left, center, or right).
+Add a description
+Provide extra context about the element, and display it as a subtitle or tooltip.
+💡
+Give your elements concise titles and use descriptions to convey additional details about the element contents.
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Title header to expand the section.
+Select the Show description checkbox.
+Enter a description (up to 200 characters), and use the formatting tools to customize the text as needed.
+In the Description display section, select an option to determine how the description displays within the element:
+Auto
+Displays as a subtitle or tooltip depending on the height of the element.
+When the height is 13 units or more, the element displays a subtitle.
+When the height is 12 units or fewer, the element displays a tooltip.
+Subtitle
+Displays as a subsection of text beneath the element title (see the previous screenshot).
+Subtitles wrap text in up to two lines. When the text extends beyond the second line, it's truncated with an ellipsis (...). In View mode, a user can view the full description by hovering over the truncated subtitle.
+Tooltip Displays as an information icon () tooltip next to the element title (see the following screenshot).

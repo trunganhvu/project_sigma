@@ -1,0 +1,25 @@
+Capture and annotate images in comments
+Suggest Edits
+Sigma allows you to capture images of workbook elements, which you can annotate and share in comments.
+This document explains how to capture and annotate images.
+System and user requirements
+The ability to annotate screenshots requires the following:
+You must be the workbook owner or be granted Can explore workbook permission.
+The workbook must be saved. Comments are not supported in explorations.
+Image storage and deletion
+Sigma stores annotated screenshots in its cloud storage. Sigma encrypts images on the server side with an encryption key that is unique to your organization. Access to the stored images is protected by IAM policy and requires user authentication and permission to the workbook it is from. Sigma also encrypts images during transit via TLS.
+By default, images expire after 90 days. Sigma deletes images within 24 hours of expiration. A Sigma organization’s Admin can update the expiration policy to extend it up to 2 years or reduce it down to the 1 day minimum.
+To delete all images from an organization, an Admin can set the image time out period to 1 then turn off annotations. All images will be deleted from Sigma storage within 48 hours.
+Comments with deleted annotated images show a placeholder where the images used to be. All the text in the comments remain.
+Capture and annotate an image of an element
+From the element's menu, select Comment.
+A menu opens to the right of the workbook page with options to add a comment.
+Select Capture screenshot.
+In the modal that appears, annotate the image by drawing with your cursor.
+(Optional) Change the color of the line using the color picker.
+(Optional) Use the undo/redo options.
+Add a comment to the image. Use the @username convention to mention team members in your comment.
+Click Share in comment. 
+Sigma places the annotated image in the Comments panel of the workbook and sends an email to the users mentioned in the comment.
+RELATED RESOURCES
+Workbook comments

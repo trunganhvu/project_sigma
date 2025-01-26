@@ -1,0 +1,37 @@
+SecurityAI tools & data handling
+On this page
+AI tools & data handling
+With Omni AI, you can ask questions about your data using natural language. For example, you might ask Omni AI, "How many users signed up last month?". Omni AI will attempt to answer the question by generating an Omni query and running it in the workbook. Note: AI-generated queries don't use SQL, but an abstract query format.
+Because Omni AI uses an abstract query format and not SQL to create queries, the generated query enforces the permissions set within Omni. This means it's not possible to access data outside of the topics, models, and connections you're restricted to in Omni.
+AI Integration & data privacy
+Omni's AI features are powered by OpenAI APIs. Omni AI does not share your business's private data with any third parties, including OpenAI. To reiterate, your private data stored in your database is never shared.
+Additionally, data that appears in any result sets produced by Omni is not shared with OpenAI. We have not opted to share data with OpenAI, but we have also not specifically opted into OpenAI's zero day retention policy.
+Data shared with OpenAI
+While relational data is never shared, Omni AI does share certain metadata with OpenAI to generate accurate responses. This metadata includes:
+Current query metadata
+User prompts
+Fields in a selected topic
+Current query metadata
+Current query metadata is information about the existing query in the workbook, such as field names, sorts, limits, pivots, and filters.
+Click for an example
+User prompt
+User prompt refers to the natural language question or prompt provided by the user. For example, "How many users signed up last month?" or "Filter by the last two years."
+Fields within a selected topic
+This refers to metadata about the fields exclusively within the selected Topic, including field names, types, and whether they are aggregates or dimensions.
+Model and topics: Omni's modeling design includes models with multiple topics. For example, a model might have topics like usage, products, and sales.
+Selected topic: When a user selects a topic (e.g., products), only metadata related to that topic is sent to OpenAI. If you have access to multiple Topics within a workbook, only the currently selected Topic's metadata will be accessed.
+Field details: Each field's name, type (number, string, boolean, etc.), and whether it is an aggregate (count, sum, average) or a dimension.
+fields: [
+    { name: users.created_at, type: Date, Dimension },
+    { name: users.name, type: string, Dimension },
+    { name: users.name, type: string, Count },
+    ...
+]
+Output & execution
+The output of the AI's processing is a new Omni Query, which includes a collection of field names, filters, sorts, pivots, topic name, and limit. This new query is then run within the user's current workbook to provide an answer to the user's prompt. This output is not a SQL query. It is an Omni Query, which is collection of metadata that is translated into SQL.
+Security & privacy emphasis
+The process ensures that no private, relational, or result set data is shared. Only metadata about the current query, user prompt, and selected topic fields is sent to OpenAI. This approach maintains the security and privacy of the business's data.
+Previous
+Subprocessors
+Next
+IP address allowlist

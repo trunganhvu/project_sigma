@@ -1,0 +1,40 @@
+DateFormat
+Suggest Edits
+The DateFormat function evaluates a date value and extracts datetime components (as text strings) in the specified format.
+Syntax
+DateFormat(date, format)
+Function arguments:
+date (required) The date or column of date values to evaluate.
+format (required) The datetime components (as a datetime format string) to extract.
+Compatible format specifiers
+The DateFormat function uses the datetime formatting functionality of the connected CDW or DBMS. The following format specifiers are supported by most connections and can be used to build the datetime format string.
+Format Description Example output
+(for 2018-07-08 00:34:59)
+%Y Four-digit year 2018
+%y Two-digit year 18
+%q Quarter of the year (1–4) 3
+%m Two-digit month 07
+%B Full month name July
+%b Abbreviated month name Jul
+%A Full day of week Sunday
+%a Abbreviated day of week Sun
+%d Two-digit day of month (01-31) 08
+%H Two-digit hour based on 24-hour clock (00–23) 00
+%I Two-digit hour based on 12-hour clock (01–12) 12
+%M Two-digit minutes (00–59) 34
+%S Two-digit seconds (00–59) 59
+%p AM or PM AM
+%L Three-digit milliseconds (000–999) 000
+%f Six-digit microseconds (000000–999999) 000000
+%Z Time zone offset -07:00
+%% Percent symbol %
+Examples
+Example 1
+DateFormat(Date("2018-07-23"), "%B")
+Evaluates the date value "2018-07-23" and returns the full month name, July.
+Example 2
+DateFormat(\[Date\], "%a, %B %d, %Y")
+Evaluates date values in the Date column and returns text strings formatted to include the abbreviated weekday name, full month name, two-digit day of the month, and four-digit year, with commas following the weekday name and day of the month.
+RELATED RESOURCES
+Date functions overview
+Quickstart: Common date functions and use cases

@@ -1,0 +1,18 @@
+EndsWith
+Suggest Edits
+Returns True if a string ends with a substring.
+Usage
+EndsWith(string, substring)
+string (required) The text to search.
+substring (required) The text to search with.
+📘
+EndsWith is case-sensitive. To create a search that is not case-sensitive, combine EndsWith with Lower.
+Example
+EndsWith("Jane Doe", "oe")
+Returns TRUE
+EndsWith(Lower("JANE DOE"), "oe")
+Returns TRUE
+RELATED RESOURCES
+Contains
+Find
+StartsWith

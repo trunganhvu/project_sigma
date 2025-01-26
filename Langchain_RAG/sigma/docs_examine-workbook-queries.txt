@@ -1,0 +1,55 @@
+Examine workbook queries
+Suggest Edits
+Sigma’s Query history modal is a powerful tool if you want to better understand your Sigma generated SQL queries.
+The modal displays an overview of recent queries, their runtime and current status. You can deep dive into individual queries to view their underlying SQL or investigate errors.
+View recent queries
+The query history modal displays recent queries run from your open document within the existing session.
+Your document’s individual query list will automatically show each query’s status, action type, start time and run time.
+Click the caret (▼) button next to the refresh data button in the workbook's header.
+Click Query history.
+View an individual query
+Click the caret (▼) button next to the refresh data icon button in the workbook's header.
+Click Query history....
+Click the query you plan to examine.
+Explore the query detail view:
+View and copy the Sigma generated SQL.
+If the query failed, an error will also be displayed below Query Details.
+View browser calculations
+Click the caret (▼) button next to the refresh data icon button in the workbook's header.
+Click Query history....
+Enable the View browser calculations setting at the top of the Query history modal. Browser calculations are identified in the Execution Path column.
+
+Sigma maintains a cache of recent results in the web browser. This does not apply on the initial load of the workbook since the cache is empty, however, as changes are made in the workbook, it is automatically leveraged. 
+If Sigma determines that there is enough data in the browser cache to support new visualizations and queries, Sigma does not issue a network request. In other words, Sigma leverages the browser cache to perform new calculations instead of sending new queries to the database for computation. For example, when a user creates a new calculation such as a percentage change ([column 2] - [column 1])/[column 1].
+Query status types
+These are the possible query status types within Sigma:
+   Completed
+Your query ran successfully!
+   Running
+Your query is running currently.
+By default, Sigma sets query timeouts to 120 seconds (2 minutes). Organization admins have the option to customize this per connection.
+   Errored
+Something is wrong.
+Open the query detail view to see the error message.
+   Paused
+Queries on your document are paused.
+To restart queries, click Play in your document toolbar.
+–   Canceled
+The query is canceled.
+This may happen if additional changes are made to your document before the query runs. In this situation, Sigma runs the new query only.
+Query runtime breakdown
+A detailed query runtime breakdown is available for successfully completed and timed out queries. Query runtimes can vary due to network traffic, queue delay, or data warehouse processing time. Sigma’s runtime breakdown allows you to see if and when your query encountered delays.
+The runtime is broken into three parts:
+Queue duration
+The amount of time the query sits in Sigma’s queue before being sent to the warehouse.
+Sigma runtime
+The amount of time Sigma takes to process the query, excluding queue duration and warehouse time.
+Warehouse runtime
+The amount of time between when Sigma sends a request to your data warehouse and when it gets a response back. This is roughly the amount of time the warehouse spent running your query.
+Incomplete queries do not display a detailed runtime breakdown. This feature is also not available for download/export requests.
+Pause and Resume Queries
+You can pause queries to make changes to your document without automatically running queries against your warehouse.
+Click the caret icon next to the refresh/play button all the way to the left in your dataset’s toolbar.
+Click Pause queries or Resume queries.
+RELATED RESOURCES
+Examine dataset queries

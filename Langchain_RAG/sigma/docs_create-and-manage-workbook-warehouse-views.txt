@@ -1,0 +1,59 @@
+Create and manage workbook warehouse views
+Suggest Edits
+Warehouse views are virtual tables saved to your data platform. You can create warehouse views from tables, pivot tables, input tables, and visualizations, then query them using Sigma or any other application in your data ecosystem. This simplifies queries and allows you to retrieve relevant and up-to-date subsets of data directly from your database.
+This document explains how to create and manage workbook warehouse views in Sigma. For information about the Warehouse Views page in the Administration portal, see Review warehouse view details.
+📘
+This feature isn't supported by all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+System and user requirements
+The ability to create and manage a workbook warehouse view requires the following:
+The element’s data source (for example, a dataset or connection table) must retrieve data from a connection with Write access enabled.
+You must be assigned an account type with the Create warehouse views permission enabled.
+You must be the workbook owner or be granted Can edit workbook permission.
+About warehouse views
+Instead of storing data in a database table, a warehouse view saves a SQL statement that expresses specific query logic defined by an individual data element or input table in Sigma.
+When you create a warehouse view, you establish a live link between your data platform and Sigma. The view references the data element or input table as the source of truth and automatically updates to reflect the most recent version of the element’s underlying data.
+Warehouse view considerations
+When you create a warehouse view, consider the following:
+Sigma creates warehouse views based on element data saved to a workbook's published version only. If a view is created in the workbook's draft version, one of the following outcomes occur:
+If the element only exists in the workbook's draft, Sigma creates the view when the workbook is published and the element exists in the published version.
+If the element exists in the workbook's published version but contains unsaved changes in the draft, Sigma creates the view based on the published version of the element. This might not align with the data in the draft.
+If the element exists in the workbook's published version and contains no unsaved changes in the draft, Sigma creates a view based on the published version of the element, which matches with the data in the draft.
+Due to the nature of warehouse views, the following dynamic conditions aren't supported:
+Parameters: Parameters aren't explicitly defined in an element's SQL statement because the query depends on user input. When parameters are applied, Sigma dynamically generates the SQL at the time it executes the query. Therefore, there's no predefined SQL statement to save as a warehouse view.
+Relative date filters: Relative date filters (like Last, Next, and Current) depend on current date criteria that cannot be explicitly defined in an element's SQL statement. Therefore, they are not saved to warehouse views.
+Create a view
+Open a published workbook in any mode and locate the element for which you want to create a warehouse view.
+In the element toolbar, click More to open the element menu, then select Advanced options > Create warehouse view.
+In the Create Warehouse View modal, Sigma auto-generates a name for the view. If needed, edit the name, then click Create.
+This name is also used when saving your view in the data platform.
+Sigma notifies you when it successfully creates the view (see Warehouse view statuses). You can also preview the status in the element toolbar or click View warehouse view info to see details about the view.
+📘
+After Sigma creates the view, filters and any other changes applied to the element are only saved to the view when the workbook is republished.
+Rename a view
+Open a workbook in any mode and locate the element associated with the warehouse view you want to rename.
+In the element toolbar, click More to open the element menu, then select Advanced options > Manage warehouse view.
+In the Manage Warehouse View modal, enter a new name in the Name field, then click Update. The warehouse view name and path update.
+Sigma notifies you when the view is successfully updated (see Warehouse view statuses). You can also preview the status in the element toolbar or click View warehouse view info to see details about the view.
+Delete a view
+Open a workbook in any mode and locate the element associated with the warehouse view you want to delete.
+In the element toolbar, click More to open the element menu, then select Advanced options > Manage warehouse view.
+In the Manage Warehouse View modal, click Delete.
+In the Confirm Delete modal, click Delete.
+Warehouse view statuses
+The following statuses apply to warehouse views:
+Pending Sigma will create or update the view when the workbook is published.
+Successful Sigma successfully created or updated the view.
+In Progress Sigma is currently creating or updating the view.
+Failed The view couldn’t be created or updated.1
+1
+To view the cause of a failed status, hover over the Failed status indicator in the warehouse view details.
+Frequently asked questions
+Can I create multiple warehouse views for one element in the same or different workbook versions?
+
+Can I create a warehouse view for a materialized element?
+Are warehouse view configurations saved in the workbook version history?
+Can a warehouse view be defined by a grouping level?
+Why am I unable to create a warehouse view for my element?
+RELATED RESOURCES
+Review warehouse view details
+Dataset Warehouse Views

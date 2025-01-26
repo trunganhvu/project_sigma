@@ -1,0 +1,33 @@
+Copy and paste workbook elements
+Suggest Edits
+Sigma's copy-and-paste functionality allows you to replicate elements in various locations. You can copy and paste an element within its originating workbook, or you can copy an element from one workbook and paste it in another.
+User requirements
+The ability to copy and paste elements requires the following:
+You must be assigned an account type with the Explore workbooks or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Copy and paste an element
+Copy an element, then paste it in an empty space or directly below an existing element in the destination workbook. If you copy a child element, its lineage is also copied and pasted.
+🚩
+Linked input tables don't currently support copy-and-paste functionality. However, you can copy empty input tables and all data, UI, and control elements.
+Copy the element
+Open a workbook in any mode, then select or hover over the element you want to copy.
+In the element toolbar, click More to open the element menu, then select Copy element. The original element and all applicable parent elements in its lineage are copied.
+Paste the element in an empty space
+Open the destination workbook in Explore or Edit mode, then find an empty space in the canvas.
+Right-click the empty space to open the action menu, then select Paste element.
+A replica of the original element is added to the empty space.
+Paste the element below an existing element
+Open the destination workbook in Explore or Edit mode, then select or hover over an existing element.
+In the element toolbar, click More to open the element menu, then select Paste element below.
+A replica of the original element is added below the existing element.
+Frequently asked questions
+How do the Copy/Paste element actions differ from the Duplicate action? When should I use each?
+If I copy a child element, but its parent element exists in a different page of the workbook, does Sigma still replicate the parent element in the destination?
+Can I copy an element and paste it to a workbook in a different organization?
+Are control elements copied and pasted with an element?
+Can I copy and paste a custom SQL element?
+How are permissions applied when I copy and paste an element between different workbooks? Who can view the element's data?
+Are an element's filters carried over when it's copied and pasted?
+Can I copy and paste an entire workbook page?
+RELATED RESOURCES
+Copy and paste workbook pages (Beta)

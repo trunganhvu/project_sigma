@@ -1,0 +1,43 @@
+Use variables in actions
+Suggest Edits
+Action variables allow formulas written within an action to reference values the user selected within a table or visualization. You can use action variables in any custom formula for an action, including conditions.
+When actions are triggered from a table or visualization, Sigma generates a piece of data called Selection which represents the values of the rows that the user selected in a table or the data points the user selected in a visualization. When referencing these action variables, you can perform all of the usual functions that tables support, such as aggregations, conditions, and lookups.
+📘
+Action variables persist only during the execution of the action sequence and can only be referenced inside formulas for actions or conditions for action sequences. If you want to reference a user-selected value outside an action sequence, set a control using the value the user selected and then reference the value of that control.
+User requirements
+📘
+The following requirements apply to users who configure actions. Users who access and interact with a workbook can typically trigger all existing actions within it. Any restrictions are noted in this document.
+The ability to configure actions requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
+1
+If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
+Reference a variable in a custom formula for an action
+To reference a variable in an action, do the following:
+Open a workbook in Explore or Edit mode.
+Select the table or visualization element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, add an action or edit an existing one using one of these methods:
+Click Add action within a sequence group to add an action within an existing sequence. If there were no previously configured actions on this element, add the action inside the empty sequence.
+Click Add action sequence at the top of the actions panel to add the action outside of an existing sequence.
+Hover over the name of an existing action, then click Edit to open the Action modal.
+In the Action modal, choose an action type that supports using custom formulas to set a value, such as Insert row or Set control value.
+In the Set value as or With values field, select Formula.
+In the formula bar, use the syntax [Selection/<Column Name>] to reference the the values the user selected in the element. Depending on the element type, the user may be selecting values in table cells or data points in a chart.
+[optional] If the element is a table, set the When selecting cells in field for the sequence to a specific column in the table. Setting this value restricts the actions you configure in the sequence to trigger only when the user clicks on that column.
+Reference a variable in a condition for an action
+Action variables also work in conditions. For more about configuring conditions for actions, see Make an action conditional.
+To reference a variable in an action condition, do the following:
+Open a workbook in Explore or Edit mode.
+Select the table or visualization element you want to trigger the action, then click Actions in the side navigation.
+If there is not already a condition defined, in the Actions panel, click More, then click Add condition.
+Click on the gray condition bar to open the Condition modal.
+Choose Custom formula.
+In the formula bar, use the syntax [Selection/<Column Name>] to reference the values the user selected in the element. Depending on the element type, the user may be selecting values in table cells or data points in a chart.
+Examples
+Formula with action variables Usage
+[Selection/Region] = "South" or [Selection/Region] = "East"
+This formula identifies a user's selection of a table cell or corresponding data point in a visualization that corresponds to either the value "North" or the value "East" in the Region column.
+Use this formula in a condition to limit the action execution depending on the user's selection in the data. To configure unique actions depending on the values the user selects, configure multiple action sequences, each with a condition based on an action variable.
+Lookup([Selection/Company Name], Max([Selection/Revenue]), [Selection/Revenue])
+This formula returns the value of the Company Name column that has the largest value in the Revenue column.
+Use this formula to set a control value when the user clicks in a grouped column to single out a particular value from within the grouping.

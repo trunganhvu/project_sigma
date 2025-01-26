@@ -1,0 +1,20 @@
+Rollup
+Suggest Edits
+The Rollup function aggregates and looks up data in a second workbook data element.
+To apply the Lookup and Rollup functions without directly using the formula bar, see Add Columns via Lookup.
+Syntax
+Rollup(formula, local key 1, external key 1, [local key 2], [external key 2], ...)
+Function arguments:
+formula (required) - The formula to compute (or the target column to reference) for the row in the target element.
+local key 1 (required) - The column to use as a join key in the local data element.
+external key 1 (required) - The column to use as a join key in the target data element.
+local key 2 + (optional) - An additional column to use as a join key in the local data element.
+external key 2 + (optional) - An additional to use as a join key in the target data element.
+Example
+Rollup(Sum([Sales Amounts/Sales Amount]), [Order Number], [Sales Amounts/Order Number])
+Data is inserted into the Orders table’s [Calc] column from Sales Amount table’s [Sales Amount] column.
+The function’s formula parameter uses the Sum function to aggregate values from the Sales Amount table’s [Sales Amount] column.
+These two tables are joined using a single set of join keys: Orders’ [Order Number] column is joined with Sales Amounts’ [Order Number] column.
+RELATED RESOURCES
+Lookup
+Add columns through Lookup

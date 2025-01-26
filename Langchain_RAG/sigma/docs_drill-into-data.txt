@@ -1,0 +1,31 @@
+Drill into data (Drill Anywhere)
+Suggest Edits
+Sigma supports drill paths, called the Drill Anywhere feature, for most visualization types.
+Drill paths are designed for ad-hoc data exploration, and are only available to users with Can Edit or Can Explore access to the workbook.
+If you're creating a workbook with a broader target audience such as Viewers, or want to use the same drill path across multiple target visualizations, you should instead create a drill down control.
+Requirements
+To use Drill Anywhere, you must have Can Edit or Can Explore access to the workbook.
+Default Viewer accounts do not have access to this feature.
+To customize a visualization's drill down column list, you must have Can Edit access.
+Use the Drill Anywhere drill path feature
+Right click on a value on your visualization to open its context menu.
+In this example shows opening the context menu for the bar chart's 2017 [Year] column.
+Click Drill down... to open the Drill down modal.
+Click a column to drill into it.
+This example shows drilling down into [Store Region].
+When drilling into [Store Region] for the [Year] 2019, Sigma adds a new date filter and switches the X-AXIS from [Year] to [Store Region].
+Sigma shows the sum of sales by region for the year 2019.
+In the example, the visualization is maximized so you can also see its underlying data table structure update accordingly.
+Instead of being grouped by [Year], the data is now grouped by [Store Region].
+Customize a visualization's drill down column list
+If the workbook is not already in Edit mode, click Edit in the top right corner of the page.
+Right click on a value in a visualization to open its context menu.
+Click Drill down to open the Drill down modal.
+Click Edit List. 
+Use the checkboxes to select only the columns you want available.
+Click Save.
+RELATED RESOURCES
+Intro to visualizations
+Data Element Filters
+Drill down control
+Create a drill control from an existing drill path

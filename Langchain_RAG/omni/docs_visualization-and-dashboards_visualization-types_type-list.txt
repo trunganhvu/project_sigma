@@ -1,0 +1,54 @@
+Visualization & DashboardsVisualization typesVisualization Types
+On this page
+Overview
+Omni has many visualizations types out of the box for presenting data.
+Each chart type present configuration options across the overall visualization, series, and chart facets like axes if applicable.
+Additionally, for configuration beyond the UI controls, custom visualization offers complete customization of the Vega lite spec.
+Visualization Types
+Cartesian
+Bar Charts
+Stacked Bar Charts
+Stacked 100% Bar Charts
+Line Charts
+Scatterplots
+Bubble Charts
+Area Charts
+Stacked 100% Area Charts
+Mixed Cartesian Charts (Bar + Line, etc)
+Pie and Donut
+Pie Charts
+Donut Charts
+Maps
+Interactive Map Visualizations
+Single Value, KPI and Markdown
+Single Value Tiles
+KPI Tiles
+Markdown Tiles
+Single Record Viewer
+Tables
+Table visualizations
+Single Record Viewer
+Other Chart Types
+Heatmap
+Boxplot
+Custom Visualizations
+Static Point Maps
+Zip Code Chloropleth Maps
+Radial Pie Charts
+Waterfall Charts
+Funnel Visualizations
+See more
+Visualization Configuration
+Quick links to more detail on visualization configuration controls
+Quick charts
+Series mapping
+Series configuration
+X-Axis
+Y-Axis (Left Axis, Right Axis)
+Color
+Size
+Tooltips
+Previous
+Useful query patterns
+Next
+Bar Charts

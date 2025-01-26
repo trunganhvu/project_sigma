@@ -1,0 +1,25 @@
+Perimeter
+Suggest Edits
+The Perimeter function calculates the perimeter of a geography, in specified units.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+Perimeter(units, polygon)
+The function arguments are:
+units
+Required
+The unit of measurement for the perimeter
+Valid values are "kilometers", "meters", and "miles".
+polygon
+Required
+The object for which we calculate the perimeter
+Must be in valid Geography polygon format.
+Examples
+Perimeter("meters", [Coordinates])
+Perimeter("kilometers", [Coordinates])
+Perimeter("miles", [Coordinates])
+The Perimeter function returns the following values for the Coordinates column values that define a polygon, when specifying area in meters, kilometers, or miles:
+RELATED RESOURCES
+Distance
+Area
+Geography functions

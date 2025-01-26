@@ -1,0 +1,71 @@
+Schedule materialization for a data model or workbook (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Materialize a data element in a workbook or data model by scheduling materialization. The materialization schedule that you configure affects the data freshness for elements downstream. For more details, including limitations and best practices, see About materialization.
+Requirements
+Write access must be enabled on your connection.
+To schedule materialization in a data model, you must be assigned an account type with the Schedule materializations and Create, edit, and publish datasets permissions enabled.
+To schedule materialization in a workbook, you must be assigned an account type with the Schedule materializations and Create, edit, and publish workbooks permissions enabled.
+You must have Can Edit access to the workbook or data model.
+Create a data element materialization schedule
+You can materialize specific data elements in a workbook or data model:
+📘
+A data element can only have one materialization schedule, but you can create one schedule to materialize multiple elements.
+Open a data model or workbook for editing.
+Locate the element that you want to materialize and click More to open the element menu.
+Select Advanced options > Schedule materialization....
+In the Materialization schedules modal, set up a schedule to materialize data elements:
+(Optional) Select the dropdown for Daily and select Weekly, Monthly, or Custom.
+For Daily, select Once a day or Multiple times.
+For Weekly, select which days of the week to run a materialization job, and choose between Once a day or Multiple times.
+For Monthly, select which day of the month to run a materialization job, and the time of day.
+For Custom, specify a schedule using cron syntax. See Set up a custom delivery schedule.
+If you select Multiple times, specify the frequency. For example, every 2 hours on the :15 of the hour between 9 AM and 6 PM.
+(Optional) Adjust the default schedule time zone using the dropdown menu.
+📘
+If an element contains multiple grouping levels, select a grouping level to materialize. Sigma materializes the selected grouping level and all levels above the selected grouping. It's often unnecessary and potentially costly to materialize the most granular level (All source columns) of a grouped element.
+Click Save schedules.
+The materialization run starts immediately using the latest published version of the workbook.
+🚩
+If you use OAuth to authenticate to your data platform, the materialization job runs as the user who scheduled the materialization. To use a service account to perform materialization instead, run the workbook as a service account. See Run a workbook with service account credentials.
+Review the status of a materialized data element
+You can see the status of the materialization in several places:
+When you view a data element in a workbook or data model, the status of the materialization displays on the element menu.
+When you review the lineage for the data element, the materialization status is shown.
+To review the history of materialization for a data element:
+Open a data model or workbook for editing.
+Locate the element that you want to materialize and click More to open the element menu.
+Select Advanced options > Schedule materialization....
+In the Materialization schedules modal, select History.
+Review the materialization history for all elements in the workbook or data model:
+Review the status of the materialization. For a failed materialization, you can copy the error message.
+Review the start time and runtime for a materialization.
+Review the amount of data materialized by total rows and total bytes.
+Select More to materialize an element immediately, or go to the schedule that materializes the element.
+Run a scheduled materialization for a data element
+To immediately materialize a data element with a scheduled materialization:
+Select the materialized data element.
+In the menu, select View materialization info ().
+If the option is not available, the element is not materialized. See Create a data element materialization schedule.
+In the menu that appears, click Materialize now.
+The materialization run starts immediately using the latest published version of the workbook.
+You can also run a data element materialization from the schedule, for example, if you want to immediately run a materialization for all or multiple elements in the same schedule:
+Select the materialized data element.
+Click More to open the element menu.
+Select Advanced options > Schedule materialization....
+In the Materialization schedules modal, review the elements in the schedule and choose which to materialize immediately:
+To materialize all elements in the schedule, in the header row, select More > Materialize all now.
+To materialize an individual element in the schedule, locate the element row, then select More > Materialize now.
+The materialization run starts immediately using the latest published version of the workbook.
+Manage the materialization schedule for a data element
+You can modify the materialization schedule to change the materialization frequency or which elements are materialized. You can also delete one or more elements from the schedule, or the entire schedule. When you delete an element or an entire schedule, the associated tables are deleted from the data platform within 24 hours.
+Open a data model or workbook for editing.
+Locate the element that you want to materialize and click More to open the element menu.
+Select Advanced options > Schedule materialization....
+In the Materialization schedules modal, make the desired changes:
+Modify the frequency of the schedule.
+Remove an element from the schedule. Locate the element row, then select More > Remove element.
+Delete the schedule by selecting Delete schedule.
+As an admin, to manage additional materialization functionality, see Manage materializations.

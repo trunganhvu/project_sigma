@@ -1,0 +1,60 @@
+Edit existing input table columns
+Suggest Edits
+When you add or modify values in existing input table columns, the workflow depends on the individual element’s data entry permission.
+The default permission allows you to edit input table data in the workbook’s draft version (Edit mode) only. However, authorized users can change the data entry permission and instead restrict editing to the published version (View and Explore mode).
+This document explains how to edit input table data in existing columns based on the element’s data entry permission. For more information about input tables, see Intro to input tables and Create and manage input tables.
+User requirements
+The ability to edit input table data in existing columns requires the following:
+Draft version (Edit mode)
+You must be assigned an account type with the Edit Workbook permission enabled.
+You must be the workbook owner or be granted Can edit workbook permission.
+Published version (View or Explore mode)
+You must be assigned an account type with the Explore Workbook permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+📘
+The Viewer account type license doesn't support the required Explore Workbook permission (a prerequisite for Can explore or Can edit workbook permissions). Therefore, while users assigned account types with the Viewer license can open a workbook in View mode, they cannot edit input tables that allow data entry in the published version.
+See Create and manage input tables for permissions required to create new input tables and manage table structure and advanced configurations (data validation, column protection, data entry permissions, etc.).
+Identify editable input tables
+Because data entry permission is configured at the individual input table level, a workbook may contain some input tables that allow you to edit data in the draft version and others that allow you to edit data in the published version.
+When the data entry permission restricts editing to the published version, Sigma displays an indicator in the element to signal the change from the default behavior. The indicator can help you differentiate between input table data you can and cannot edit.
+Draft version (Edit mode)
+In Edit mode, the input table displays a Data Entry tag to indicate that you cannot edit the data in the workbook’s draft version. To edit the data, you must open the published version in View or Explore mode. Alternatively, if you’re granted Can edit workbook permission, you can change the input table’s data entry permission.
+The data entry permission only affects data editing in existing columns. All other input table functionality (column management, data validation, column protection, etc.) remains limited to the workbook’s draft version.
+Draft Version
+Can edit data Cannot edit data
+Published version (View and Explore mode)
+In View and Explore mode, the input table displays an Edit Data button to indicate that you can edit the data in the workbook’s published version. For more information, see Edit data in published version in this document.
+Published Version
+Can edit data Cannot edit data
+Edit data in draft version
+Open a workbook in Edit mode and locate the input table you want to edit.
+📘
+If the element displays a Data Entry tag, you can only edit the data in the published version.
+[optional] To add a row to the bottom of the input table, click the last row.
+📘
+You can only add rows to empty input tables. Linked input table rows and row count are defined by the primary key column.
+Edit input table values:
+To enter data through keyboard entry, select a cell and enter a value.
+To paste values copied from Sigma or an external source (like a spreadsheet or text document), select a cell or range of cells, then right-click the selection and select Paste.
+💡
+You can select and paste values in up to 50,000 cells at once (2,000 rows and 25 columns), including column headers.
+To select a predefined value, click the caret () in a cell, then select an option in the dropdown.
+To save the input table edits to the workbook’s published version, click Publish in the workbook header.
+Edit data in published version
+Open a workbook in Explore mode and locate the input table you want to edit.
+Click Edit Data to enable editing.
+[optional] To add a row to the bottom of the input table, click the last row.
+📘
+You can only add rows to empty input tables. Linked input table rows and row count are defined by the primary key column.
+Edit input table values:
+To enter data through keyboard entry, select a cell and enter a value.
+To paste values copied from Sigma or an external source (like a spreadsheet or text document), select a cell or range of cells, then right-click the selection and select Paste.
+💡
+You can select and paste values in up to 50,000 cells at once (2,000 rows and 25 columns).
+This doesn’t include column headers since column naming is limited to the workbook draft version.
+To select a predefined value, click the caret () in a cell, then select an option in the dropdown.
+Sigma displays yellow markers in cells that contain unsaved changes. To manually commit your edits to the workbook’s published version, click Save.
+RELATED RESOURCES
+Intro to input tables
+Create and manage input tables
+Restore input table access for a Snowflake connection or user

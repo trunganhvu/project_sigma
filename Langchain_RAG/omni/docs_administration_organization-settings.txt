@@ -1,0 +1,45 @@
+AdministrationOrganization settings
+On this page
+Organization settings
+NOTE
+Organization Admin permissions are required to access and modify Organization settings.
+The Settings > General tab contains settings that apply to your entire Omni organization. From here, you can control user, content, and Omni support access.
+General
+Settings in the General tab control the organization's name, default timezone, user invitations, and support settings.
+Default timezone
+The Default timezone setting, used in emails sent by Omni, defines the default timezone for the organization.
+Note: This setting doesn't apply to database connections, which have their own timezone settings.
+New user invitations
+While Admin users can invite new users at any time, it may sometimes be more efficient to allow users to request access on their own. When the Allow invitation requests setting is enabled, new users can request an invitation to your Omni organization from the login page.
+Support
+Session recording
+When enabled, Omni support will have access to replays of sessions where bugs or errors were encountered.
+Automatic support user creation
+When enabled, Omni support can automatically access your instance for assistance and problem solving.
+Limit Omni support logins by region
+NOTE
+Contact Omni support for access to this feature.
+To limit logins from Omni support to a specific region, use the Allowed support region setting. When set to something other than All regions, the support user's IP address must reside in the specified region to successfully log in to your instance.
+Content permissions
+Setting in the Content permissions tab control how users in your organization access and create content.
+Default content access roles
+The Default content access setting allows you to define the default user role that all users will have for content (documents and folders) they have access to.
+Users can be granted additional permissions at the document or folder level - this setting only defines a default base role. Note: Users with Manager or Owner roles have the ability to set the organization access role higher or lower than the default role defined in this setting.
+Default document abilities
+To set default abilities for all documents in the organization, use the Document abilities settings. These settings control the abilities users can select in documents:
+Schedules (Alerts and deliveries). Note: Disabling this setting will not remove any existing alerts or deliveries.
+Downloading query results and dashboards
+Drilling
+Creating a new analysis from the document
+Allow Viewers to see the workbook when accessing the documents
+Shared content creation
+To allow users to add documents and folders to the root of your organization's Hub (shared folder), enable the Content organization > Shared "root" is open setting. Otherwise, users will be able to create content in folders they have specifically been granted access to.
+Permission boosting with AccessBoost
+The AccessBoost setting allows you to enable or disable permission boosting, which will ignore a user's database connection role. If Non-administrators can enable AccessBoost on content is also enabled, users with SQL editing permissions can also enable AccessBoost on documents.
+Refer to the Sharing content guide for more information about AccessBoost, including its security implications.
+Public content access
+The Public access setting allows users to access content without logging in to your Omni organization. If enabled, a default access role can also be set for external users who access the content.
+Previous
+Keyboard Shortcuts
+Next
+dbt Integration

@@ -1,0 +1,16 @@
+Json (geography)
+Suggest Edits
+The Json function converts the geography data type to GeoJSON.
+This is a supported geography function. For information about converting other data types to Json, see Json.
+Syntax
+Json(input)
+Function arguments:
+input
+(required) The geography data to convert to GeoJSON
+Examples
+Json([Coordinates])
+Returns GeoJSON values for the geography data in the Coordinates column.
+RELATED RESOURCES
+Geography
+Text
+Geography functions

@@ -1,0 +1,26 @@
+RankDense
+Suggest Edits
+The RankDense function assigns ranks to values in a specified column.
+Like Rank function output, the sequence begins with rank 1 and assigns the same rank to duplicate values. Unlike Rank function output, however, RankDense returns a continuous sequence that doesn't skip numbers after multiple values in the referenced column are assigned the same rank. As a result, there are no gaps in the ranking value sequence.
+Syntax
+RankDense([column], [direction])
+Function arguments:
+column [optional] The column referenced to determine rank.
+direction
+[optional] The directional order in which the referenced column's values are ranked.
+Can be "asc" or "desc":
+"asc" ranks values in ascending order with the smallest value ranked 1.
+"desc" ranks values in descending order with the largest value assigned rank 1.
+If unspecified, values rank in ascending order by default.
+Notes
+If neither argument is specified, the function assigns ascending ranks based on row order.
+Ranking is based on alphabetical, alphanumeric, numerical, or chronological order, depending on the referenced column's data type.
+After multiple values are assigned the same rank, the ranking continues with the next chronological number, leaving no gaps in the ranking value sequence.
+Example
+A table lists the female name trends in Hawaii for the year 2018. You can use the RankDense function to rank names based on their popularity, which is reflected by their values in the Name Count column.
+RankDense([Name Count], “desc”)
+With [Name Count] as the column argument and "desc" as the direction argument, the name with the largest value in the Name Count column is assigned rank 1, the name with the next largest value is assigned rank 2, and so on. 
+Note that the RankDense column assigns rank 4 to the names Mila and Olivia because they have the same Name Count value (50). The name Mia follows as the sixth value in the descending order of values, but it's assigned rank 5 to preserve the continuous sequence.
+RELATED RESOURCES
+Rank
+RankPercentile

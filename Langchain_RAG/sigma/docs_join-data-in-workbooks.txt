@@ -1,0 +1,25 @@
+Join data in workbooks
+Suggest Edits
+Joins combine data from multiple sources based on matching columns.
+This article covers how to create joins in workbooks, for example, so that you can combine data from multiple sources in a single data element.
+For details on joins and guidance choosing the join type you want to use to combine data, see Join types.
+Join data sources
+Before you start: This action is only available in edit mode. To begin editing, click Edit in the top right corner of the page.
+Select to open the workbook's ADD NEW ELEMENT panel.
+Under DATA ELEMENTS, select the type of element you want to add: TABLE, VIZ, or PIVOT TABLE.
+Select Join or Union to combine data sources.
+In the Select source dialog that appears, search for a data source or current workbook element, or browse to a workbook element, table, or dataset.
+Select a data source to preview and choose the columns to select, then click Select.
+The Create Join page opens.
+Joins require two or more sources.
+To add a second source, next to SOURCES, click +.
+Repeat steps 4 & 5.
+Select a Join type.
+Select the Join keys to use. On the right side of the page, you see the match rates for your selected join keys.
+📘
+In some cases, you might want to define multiple pairs of join keys, such as with a full outer join.
+[optional] To join an another source, repeat steps 6 – 9.
+Select Preview output.
+Review the preview of the joined data sources and make any changes to included columns.
+Select Done.
+Your new element appears in the workbook.

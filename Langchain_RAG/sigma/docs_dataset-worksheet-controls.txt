@@ -1,0 +1,16 @@
+Dataset worksheet controls
+Suggest Edits
+User requirements
+The ability to utilize dataset worksheet controls requires the following:
+You must be assigned an account type with the Create, edit, and publish datasets permission enabled.
+You must be the dataset owner or be granted Can edit dataset permission.
+Opening, closing, and resizing the control panel
+Sigma worksheet controls live in the worksheet control panel, positioned directly to the left of the worksheet table and chart area. This positioning allows you to create and modify your control values while simultaneously watching your data respond in real time.
+To open the control panel, click on the CONTROLS bar on the left side of the worksheet or the Show Controls button in the toolbar.
+The control panel can be resized and closed by dragging the blue hover bar on its right side.
+Totals
+Totals are single value column aggregates that live at the top most level of your worksheet. Calculated worksheet totals can be viewed and selected under the control panel’s TOTALS section. The TOTALS section is only visible if one or more totals exist in the worksheet. See Dataset totals.
+Filters
+Filters allow you to limit your data to show only rows that meet certain criteria. Worksheet filters can be created and managed under the control panel’s FILTERS section. See Dataset filters.
+Parameters
+A parameter is a customizable field that can be added to a worksheet and referenced in formulas. Parameters can be huge assets for What-If Analysis and User Input Analysis. Worksheet parameters can be created and managed under the control panel’s PARAMETERS section. See Dataset parameters.

@@ -1,0 +1,32 @@
+Generate a secure embed path
+Suggest Edits
+To create a secure embed within a host application, you must first generate a secure embed path (URL) that points to the specific Sigma content you want to embed (an entire workbook, a specific page, or an individual chart or table element.)
+This document provides an overview of the prerequisites and explains how to generate a secure embed path.
+System and user requirements
+The ability to create and manage embeds requires the following:
+Secure embedding must be enabled for your organization.
+You must be assigned the Admin account type or have been granted embedding credentials by an admin. See Generate embed client credentials for more information.
+Prerequisites
+Create a team for embed users
+When an embed user accesses a secure embed for the first time and is not an existing member of your Sigma organization, Sigma automatically creates a new member based on the email address used to log into the host application. This member is assigned to a specific Sigma team defined by the external_user_team parameter in the embed URL.
+Before you configure a secure embed, you must create this team and (optionally) grant team-level data permissions to determine embed user access. For more information, see Create and manage teams and Manage data permissions.
+📘
+Embed user accounts are also assigned to a specific account type defined by the account_type parameter in the embed URL. This parameter can reference a default account type, or you can create and assign a custom account type. For more information, see User account types > Custom account types.
+Create and publish a workbook containing content to embed
+To embed Sigma content in a host application, the content must be published in a workbook within your Sigma organization. You can create a workbook specifically for the embedded content, or you can use content in an existing workbook that serves other purposes.
+For more information, see Create a workbook and Edit, draft, and publish a workbook.
+Share the workbook with the embed user team
+By sharing the published workbook with an embed user team, you ensure that the users can view the embedded content as intended. You can share a workbook with multiple embed user teams and grant each team different permissions (for example, you can grant one team Can explore permission and the other Can view permission) to control access and interactions with the content in the host application.
+Generate a secure embed path
+Before you can embed Sigma content into a host application, you must generate a secure embed path within Sigma.
+Open the workbook containing the content you want to embed.
+Ensure that the version of the content you want to embed is published. If it isn't, open the workbook in Edit mode and click Publish.
+📘
+Embeds only display published content. If a workbook, page, or element is updated in the draft version and not published, the embed displays the published version.
+In the workbook header, click the caret () associated with the workbook's name.
+In the workbook menu, select Embedding.
+In the Embed workbook modal, select the Secure tab.
+In the Generate secure embed path for dropdown, select the content you want to embed. This can be the entire workbook, a specific page, or an individual chart or table element.
+Sigma immediately generates a secure embed path. Click Copy to use the URL in the host application's API.
+You can securely store the embed path for future reference, or you can return to this modal to retrieve the embed path at any time.
+To test the embed in Sigma's embed sandbox, click Test and see Test embeds in sandbox environment.

@@ -1,0 +1,45 @@
+Hierarchies (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Use hierarchies to group columns categorically and define the order of data granularity.
+Common hierarchy examples:
+Product: type, family, name
+Location: continent, country, region, state, city
+Time: year, month, week, day
+Taxonomy: kingdom, phylum, class, order, family, genus, species
+📘
+Hierarchies can be defined in tables, pivot tables, and visualization elements, but they can only be applied to pivot tables.
+Create a hierarchy
+The following steps explain how to create a hierarchy.
+Open a workbook in Edit mode.
+Select the element for which you want to create a hierarchy. You can create a hierarchy in a table or in a pivot table, but note that you can only use hierarchies in pivot tables.
+In the Columns menu, click the + icon, and choose Manage hierarchies.
+In the Manage hierarchies modal, click + New hierarchy and define hierarchy properties:
+In the Hierarchy name field, enter a name to identify the hierarchy.
+In the Columns in hierarchy section, click Add column to add a column to the hierarchy.
+When you add a column to a hierarchy, this column is labeled with a hierarchy icon in the workbook's Columns menu. Hover over the icon to view the hierarchy details.
+To create additional hierarchies, click + New hierarchy in the Manage hierarchies modal, then repeat step 4.
+Manage a hierarchy
+You can rename a hierarchy, reorder columns, add new columns, remove existing columns, or delete a hierarchy altogether.
+In the Manage hierarchies modal, select the hierarchy you want to update.
+To rename the hierarchy, edit the Hierarchy name field.
+To reorder columns, go to the Columns in hierarchy section, then drag and drop column names as needed.
+To add a new column, go to the Columns in hierarchy section and click Add column.
+To remove a column from the hierarchy, locate the column name in the Columns in hierarchy section and click Remove column.
+To delete the hierarchy, locate the hierarchy name in the left panel and click Delete hierarchy.
+Hierarchy inheritance
+Child elements inherit all hierarchies defined in a parent element. Inherited hierarchies cannot be removed or modified from child elements, but new hierarchies can be added with full editing privileges.
+When a hierarchy is selected in the Manage hierarchies modal, Sigma indicates if it's inherited from the parent element.
+Using hierarchies
+The following steps explain how to use defined hierarchies in pivot tables.
+To create a pivot row with hierarchies, go to the Pivot Rows property and click Add new column.
+In the Add new column menu, select a defined hierarchy.
+To apply a hierarchy to the pivot values, go to the Values property and click Add new column.
+In the Add new column menu, select a defined hierarchy.
+The resulting pivot table demonstrates the configured hierarchies.
+Limitations
+Hierarchies can only be used in pivot tables.
+Hierarchies exist in singular workbooks and cannot be not passed to datasets or other workbooks. 
+When you update a hierarchy, Sigma does not apply those changes to pivot tables that currently use it.

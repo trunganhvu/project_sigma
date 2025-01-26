@@ -1,0 +1,165 @@
+Keyboard shortcuts: Microsoft Windows
+Suggest Edits
+This document provides an overview of Microsoft Windows keyboard shortcuts. For shortcuts specific to Mac OS, see Keyboard shortcuts: Mac OS.
+You can also view keyboard shortcuts within Sigma by pressing ctrl + /. 
+General
+Open search
+/
+Open help
+⇧ + /
+Show shortcuts
+ctrl + /
+Common
+Undo
+ctrl + Z
+Redo
+ctrl + ⇧ + Z
+Refresh data
+ctrl + ⇧ + R
+Query history
+ctrl + ⇧ + H
+Clear selection
+Esc
+Workbook
+Edit column formula
+=
+Select multiple values in an object
+ctrl
+Add column
+⇧ + ＋
+Hide column
+⇧ + H
+Rename column
+⇧ + R
+Delete column
+Del
+Toggle column grouping
+⇧ + G
+Add column filter
+⇧ + F
+Show column details
+ctrl + I
+Toggle maximize
+space
+Toggle table
+⇧ + T
+Next element
+tab
+Previous element
+⇧ + tab
+Add element
+ctrl + ⇧ + ＋
+Delete element
+ctrl + Del
+Duplicate element
+ctrl + D
+Sort ascending
+S + A
+Sort descending
+S + D
+Copy format
+ctrl + alt + C
+Paste format
+ctrl + alt + V
+Create container from selection
+ctrl + G
+Remove container from selection
+ctrl + ⇧ + G
+Column formats
+Format: auto
+!
+Format: number
+#
+Format: currency
+$
+Format: percent
+%
+Format: scientific
+^
+Decrease precision
+<
+Increase precision
+>
+Formula editing
+Open formula bar
+=
+Move up
+ctrl + ↑
+Move down
+ctrl + ↓
+Submit query
+ctrl + enter
+Open autocomplete
+ctrl + space
+Toggle comments
+ctrl + /
+Start of the line
+ctrl + ←
+Indent line
+tab
+Indent less
+⇧ + tab
+Delete current line
+⇧ + alt + K
+Select line
+ctrl + L
+Shift line up
+ctrl + alt + ↑
+Shift line down
+ctrl + alt + ↓
+Join lines
+ctrl + J
+Duplicate line
+⇧ + ⌘ + D
+Text editing
+Bold
+ctrl + B
+Italic
+ctrl + I
+Create link
+ctrl + K
+Toggle bullet list
+ctrl + ⇧ + 8
+Toggle ordered list
+ctrl + ⇧ + 7
+Align left
+ctrl + alt + L
+Align center
+ctrl + alt + T
+Align right
+ctrl + alt + R
+Open formula bar
+=
+Input tables
+Fill down
+ctrl + d
+Fill right
+ctrl + r
+Select cell on right
+tab
+Expand selection right
+⇧ + →
+Select cell on left
+⇧ + tab
+Expand selection left
+⇧ + ←
+Select cell down
+enter
+Expand selection down
+⇧ + ↓
+Select cell up
+⇧ + enter
+Expand selection up
+⇧ + ↑
+Select row
+⇧ + space
+Add row
+⌘ + ⌥ + =
+Cut and copy
+ctrl + x
+Paste
+ctrl + v
+Undo
+ctrl + z
+Redo
+ctrl + ⇧ + z

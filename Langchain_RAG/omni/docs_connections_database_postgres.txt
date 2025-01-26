@@ -1,0 +1,29 @@
+Connect to DataDatabase setupPostgres
+On this page
+Postgres
+Connecting to Postgres
+Create Postgres User
+Create Omni user
+CREATE USER omni WITH ENCRYPTED PASSWORD 'some_password_here';
+GRANT CONNECT ON DATABASE database_name to omni;
+\c database_name
+GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO omni;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO omni;
+If you are using a schema other than public grant usage to Omni:
+GRANT USAGE ON SCHEMA schema_name TO omni
+Make sure future tables will be accessible:
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON tables TO omni;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON sequences TO omni;
+Create the connection in Omni
+Name: <CONNECTION_NAME>
+Dialect: Postgres
+Host: <YOUR_ACCOUNT>
+Port: 5432
+Database: <YOUR_DATABASE>
+Default Schema <YOUR_SCHEMA>
+User: omni (if you created a user above)
+Password: <YOUR_PASSWORD>
+Previous
+MySQL
+Next
+Redshift

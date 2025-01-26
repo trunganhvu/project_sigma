@@ -1,0 +1,178 @@
+ModelingModel files
+On this page
+Model files
+Model files are used to define configuration for the analytical environment (topics, views, and so on) associated with a specific connection.
+The following example is a high-level look at the possible parameters in a model file. Refer to individual sections for more information about each parameter's uses and accepted values.
+# Limits access to specific fields through user attributes
+access_grants:
+  <access_grant_name>:
+    user_attribute: <user_attribute>
+    allowed_values: ["value_1", "value_2"]
+
+# Forces all queries using the connection to require a run click to return new results
+auto_run: true
+
+# Sets a fiscal calendar in Omni
+fiscal_month_offset: 11
+
+# Defines number formatting in the model
+default_numeric_locale: en_US
+
+# Defines a list of default timeframes for date and time fields in the model
+default_timeframes: [date, week, month]
+
+# Defines the day that weeks start on
+week_start_day: Sunday
+
+# For Embed usage. Creates a copy of a schema as a virtual schema.
+dynamic_schemas:
+  <dynamic_schema_name>:
+    from_schema: <canonical_schema_name>
+    user_attribute: <user_attribute_name>
+
+# If true, all filter suggestions in the workbook will be faceted to current filter selections
+facet_workbook_filters: true
+
+# Excludes a list of schemas from use in workbooks
+ignored_schemas:
+  - <ignored_schema_1>
+  - <ignored_schema_2>
+
+# Includes a list of schemas for use in workbooks
+included_schemas:
+  - <included_schema_1>
+  - <included_schema_2>
+
+# Excludes a list of views from use in workbooks
+ignored_views:
+  - <ignored_view_1>
+  - <schema>.<ignored_view_2>
+  - <schema>__<ignored_view_3>
+
+# Defines a list of views from the database schema to include in the model
+included_views: [<included_view_1>, <included_view_2>, <included_view_2>]
+
+# Creates cache policies for the model
+cache_policies:
+  <cache_policy_name>:
+    max_cache_age: "2 hours"
+
+# Sets a default cache policy for the model
+default_cache_policy: <cache_policy_name>
+access_grants:
+ACCESS GRANTS FOR TOPICS AND FIELDS
+Access grants can be set for topics and fields (dimensions and measures) using the required_access_grants setting. Refer to the Topics, Dimensions, and Measures documentation for more information.
+Limits user access to a particular field (dimension or measure) through user attributes. Each grant targets a user attribute. Users will be granted access if their corresponding user attribute has any of the values specified in the grant.
+Access grants are only applied to direct access and queries, meaning they don't impact references within the model. For example, if a user can't see field a but can see field b, and b references a, the user can still access and query using field b.
+access_grants:
+  region_access:                                # String that uniquely identifies the grant
+    user_attribute: "Region"                    # Required. The user attribute the grant targets.
+    allowed_values: ["California", "Hawaii"]    # Required. List of values the user attribute must have to grant access.
+auto_run:
+Forces all queries using the connection to require a run click to return new results. This may be a good option if there are cost concerns on running queries as they are built, but it will reduce UI interactivity.
+auto_run: false
+cache_policies:
+Defines cache policies for the model. Omni's default cache policy is 6 hours. Each policy must have a max_cache_age parameter that defines the time limit for the policy.
+Note: This setting sets defaults for the model, but caching policies can also be set at the dashboard level. Editing cache policies in a workbook model or query model effectively applies the policy to the associated dashboard.
+Refer to the Topics documentation for information about setting topic-level cache policies.
+cache_policies:       
+  seconds_cache_policy:             # String identifier for the cache policy
+    max_cache_age: 59 seconds       # Required. Defines the policy's time limit.
+  daily_cache_policy:
+    max_cache_age: 24 hours
+default_cache_policy:
+Defines a default cache policy for the model. If set, the cache policy will be applied to all topics in the model and override Omni's default cache policy. Refer to the Topics documentation for information about setting topic-level cache policies.
+cache_policies:
+  daily_cache_policy: 
+    max_cache_age: 24 hours
+
+default_cache_policy: daily_cache_policy
+default_numeric_locale:
+Defines global number formatting in the model.
+default_numeric_locale: fr_FR
+Accepted values:
+en_US - Default. Comma-delimited thousands, period-delimited decimals, dollar default currency
+fr_FR - Space-delimited thousands, comma-delimited decimals, Euro default currency
+nl_NL - Dot-delimited thousands, comma-delimited decimals, Euro default currency
+default_topic_access_filters:
+Refer to the default_topic_access_filters example in the Data Access Control documentation.
+default_topic_required_access_grants:
+Refer to the default_topic_required_access_grants example in the Data Access Control documentation.
+dynamic_schemas:
+Creates a copy of the specified schema as a virtual schema. The views in the dynamic schema are generated from the schema specified in from_schema. When generating SQL against dynamic schema views, the user_attribute assigned to the user running the query is used to scope table references.
+If you're using embedding, you can use this setting to partition customer data into separate, but identical schemas.
+All modeling will reference views in the dynamic schema with this naming convention: dynamic_schema_name__view_name
+dynamic_schemas:
+  <dynamic_schema_name>:                    # Name of the new dynamic schema
+    from_schema: <canonical_schema_name>    # Required. The name of the schema to copy.
+    user_attribute: <user_attribute_name>   # Required. User attribute to use to scope table references.
+extends:
+Enables extending a model. Check out this community post for more information.
+facet_workbook_filters:
+Facets all filter suggestions in the workbook to the current filter selections. This may result in filter suggestions taking more time to run complex queries with less caching. Additionally, results may not be returned when suggestions are expected.
+Defaults to false, meaning one filter won't facet another filter. For example, when selecting state = California, country would still suggest US and UK.
+facet_workbook_filters: true
+fiscal_month_offset:
+Sets a fiscal calendar in Omni and enables adding fiscal time metrics to time dimension groups and filters in the UI. A positive month offset will set the fiscal calendar in front of the Gregorian calendar date.
+Note that fiscal_quarter and fiscal_year timeframes will not work without a fiscal_month_offset
+Examples:
+Feb 1 start - fiscal_month_offset: 11 (ie. FY Month 1 of 2025 = Feb 2024)
+March 1 start - fiscal_month_offset: 10
+Feb 1 start but FY Month 1 of 2024 = Feb 2024 - fiscal_month_offset: -1
+fiscal_month_offset: 11 
+ignored_views:
+Excludes specific views from use in workbooks. Wildcard syntax (\*) may be used to match multiple views within a schema. Note: Listed views will still be available for use in SQL queries.
+This parameter can't be used if included_views is in use.
+# Values can be provided as an indented list
+ignored_views:
+  - users
+  - main.products        # Schema and view separated by .
+  - main__customers      # Schema and view separated by __
+
+# Or as a comma-delimited list
+ignored_views: [users, products]
+ignored_schemas:
+Excludes a list of schemas from workbooks. Note: Listed schemas will still be available for use in SQL queries.
+This parameter can't be used if included_schemas is in use.
+# Values can be provided as an indented list
+ignored_schemas:
+  - dbt_test1
+  - dbt_test2
+
+# Or as a comma-delimited list
+ignored_schemas: ["dbt_test1", "dbt_test2"]
+included_schemas:
+Includes only the listed schemas for use in workbooks. Note: Schemas that aren't included will still be available for use in SQL queries.
+This parameter can't be used if ignored_schemas is in use.
+# Values can be provided as an indented list
+included_schemas:
+  - public
+  - core_data
+
+# Or as a comma-delimited list
+included_schemas: [public, core_data]
+included_views:
+Defines a list of views from the database schema to include in the model. Views that aren't included can't be referenced when modeling.
+This parameter can't be used if ignored_views is in use.
+included_views: [products, users, orders]
+max_cache_age:
+Required for use with cache_policies. Defines the time limit for the cache policy.
+cache_policies:
+  daily_cache_policy: 
+    max_cache_age: 24 hours         # Must be between 0 seconds and 24 hours
+  minutes_cache_policy:
+    max_cache_age: 5 minutes
+Accepted values must be between 0 seconds and 24 hours. If a value exceeding 24 hours is entered Omni will default to the model's specified default_cache_policy. If a default policy isn't set, Omni's default policy of 6 hours will be used.
+template:
+Details coming soon.
+week_start_day:
+Defines the day that all weeks start on. Defaults to Monday. Note: OMNI_WEEK() and OMNI_DAY_OF_WEEK_NUMBER() SQL operators are impacted by this setting.
+week_start_day: Sunday
+topics:
+DEPRECATED
+On December 10, 2024, we deprecated this field in favor of giving topics their own file. Model files that contain this field will continue to function as they always have, but going forward you'll encounter an error if you attempt to add topics: to a model file.
+Refer to the Topics documentation for more information.
+Previous
+Overview
+Next
+Topics

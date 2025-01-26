@@ -1,0 +1,25 @@
+Create a button element
+Suggest Edits
+A button is a UI element that allows you to create a one-click action in a workbook. You can customize how a button is displayed and configure it to navigate to specific destinations, manage control values, modify or refresh elements, or download and export data.
+This document explains how to create a button element and configure an action triggered by user clicks.
+User requirements
+The ability to create elements in a workbook requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Create a button element
+In the navigation menu, click Add element to open the Add new element panel.
+In the UI Elements section, select Button.
+In the Element properties panel, configure the display-related fields:
+Appearance: Select a button style (filled, outline, or text only).
+Text: Add a label or call to action (CTA) to display in the button. Enter = to include a dynamic value defined by a formula expression.
+Style: Customize the font weight, font color, and fill color.
+Alignment
+Horizontal: Align or stretch the button relative to the total element width.
+Vertical: Align the button relative to the total element height.
+Shape: Select a button shape (square, round, or pill).
+Size: Select a button size (small, medium, or large).
+In the side navigation, click Actions.
+In the Actions panel, click Add action
+In the On click modal, configure the fields to define the effect. For information about available actions and how to configure them, see Action effects and the documentation linked in the table.
+RELATED RESOURCES
+Intro to UI Elements

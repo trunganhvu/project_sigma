@@ -1,0 +1,9 @@
+Acos
+Suggest Edits
+The Acos function computes the arccosine of the given angle.
+Syntax
+Acos(value)
+Function arguments:
+value (required) - The angle (in radians) whose arccosine will be calculated.
+RELATED RESOURCES
+Cos

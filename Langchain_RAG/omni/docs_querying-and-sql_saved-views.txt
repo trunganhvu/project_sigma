@@ -1,0 +1,12 @@
+Querying & SQLSaved views
+Saved Views
+Saved views allow for quickly building and joining in subqueries. Let's walk through an example.
+Start by building a query, in this case we'll build up a table about user facts that consists of user_id, first_order_date, lifetime_orders, and lifetime_revenue.
+Next, select the 'Model > Save Query as View' in the menu and give the view a name. In this case, we've named it user_order_facts.
+Once a view is saved, it will appear as a new view in the field picker. It can be joined in to any other tables by right clicking the view name and adding a join path.
+This view can be queried just as any other view in the database, see how it gets written as a subquery in the SQL here:
+The saved view is now available on any tab within the workbook. It can also be promoted to the Shared Model by selecting the Promote from the workbook changes menu.
+Previous
+Excel functions & formulas
+Next
+Writing SQL

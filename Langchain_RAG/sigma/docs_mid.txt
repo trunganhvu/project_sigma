@@ -1,0 +1,19 @@
+Mid
+Suggest Edits
+Returns a substring defined by offset and length.
+Usage
+Mid(string, start, [length])
+string (required) The string to extract a substring from.
+start (required) The index of the first letter of the extracted substring. The first character of the given string is treated as having index 1.
+length (optional) The length of the segment to extract. If length is not given, or if the provided length is longer than the remaining source string, the total remaining string will be returned.
+Example
+Mid(“John Doe”, 4, 10)
+Returns “n Doe”
+Mid(“John Doe”, 2, 2)
+Returns “oh”
+Mid(“Mia”, 4)
+Returns “”, an empty string.
+RELATED RESOURCES
+Find
+Left
+Right

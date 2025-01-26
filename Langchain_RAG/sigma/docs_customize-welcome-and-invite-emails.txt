@@ -1,0 +1,56 @@
+Customize welcome and invite emails
+Suggest Edits
+When you invite a user to join Sigma, they receive an email with a sign up link. Each user receives a welcome email after they create a Sigma account.
+With email customization, organization admins can add their own content to two types of emails:
+Invite emails: When a user is invited to Sigma through Sigma’s invite modal, the default invite message will appear and the user sending the invite will have the opportunity to change the invite message from the default.
+Welcome emails: Every user who joins Sigma will get the Welcome email with the default message.
+Some information that you might add to your default messages includes:
+How your organization is using Sigma
+What data is available in your cloud data warehouse
+Links to internal resources like a data dictionary or getting started guide
+Links to dashboards you think all users should know about
+Information on who to reach out to with questions about Sigma
+Customize default invite emails
+Open your Admin Portal by selecting Administration in the user menu at the top right of your screen.
+Go to People in the left hand panel.
+Select the Invite Customization tab.
+Next to Default Invite Email Message, click Add.
+Enter your message.
+To preview what your message will look like to users, click Send Preview.
+Click Save to save your message.
+Customize welcome emails
+In the Admin Portal, click the Administration tab.
+Go to People in the left hand panel.
+Select the Invite Customization tab.
+Next to Default Welcome Email Message, click Add.
+Enter in your message.
+To preview what your message will look like to users, click Send Preview.
+Click Save to save your message.
+Custom SMTP server
+Configuring a Custom SMTP server lets you send Sigma emails from your own SMTP server. When you use your own SMTP server, Sigma-generated emails are sent from an email address within your domain. You can customize the branding of Sigma-generated emails, including the sender & reply-to address and sender name. The branding options provide the capacity for you to create a consistent user experience that enhances your organization's image.
+📘
+Sigma can't monitor email deliverability if you configure your own SMTP server.
+Custom SMTP also offers the following benefits:
+Email Deliverability: The ability to configure your email server settings, which are optimized for your org's email infrastructure, can improve email deliverability.
+Security Improvement: You control the security of all email data and communications. 
+Security Improvement: Consistent branding combined with a trusted sender increases security as end users can more easily identify phishing vs. authentic emails.
+Flexibility: Increases your flexibility & control over your email infrastructure. You can easily modify your email settings and troubleshoot issues as needed.
+Configure a Custom SMTP Server
+Follow the steps below to set your own SMTP server. 
+📘
+You must add Sigma's egress IP addresses to your SMTP server and/or firewall allowlist. To view those IP addresses, see Adding Sigma IPs to the allowlist.
+In the Admin Portal, click on the Administration tab.
+On the Account page, click on the Branding Settings tab.
+Scroll down to Set your own SMTP server and click Edit.
+In the Host field, enter the hostname or IP address of your SMTP server.
+[optional] In the Port field, change the default port of 587. Do not change this port to 25, because port 25 is not supported by Sigma.
+In the Username field, enter your SMTP username.
+In the Password field, enter the password for your SMTP server.
+In the Sender Email field, specify an email address to use as the sender of the email.
+In the Sender Name field, specify a name to display as the sender of the email.
+[optional] In the Reply-to Email address field, specify an email address to receive replies to the email.
+🚧
+If you enter a value in this field, the Reply-to Email address in the Edit your email branding field changes to match.
+Click Send email preview to test your custom SMTP server configuration.  
+RELATED RESOURCES
+Custom Email Branding

@@ -1,0 +1,14 @@
+Json
+Suggest Edits
+The Json function converts a value to JSON (or GeoJSON when converting geography data ).
+For more information about converting the geography data type to GeoJSON, see Json (geography).
+Syntax
+Json(input)
+Function arguments:
+input
+(required) The data to convert to JSON
+Example
+Json([Cust JSON as Text])
+Returns Json values for the variant data in the Cust JSON as Text column.
+RELATED RESOURCES
+Variant

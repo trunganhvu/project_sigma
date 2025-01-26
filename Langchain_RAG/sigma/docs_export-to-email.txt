@@ -1,0 +1,85 @@
+Export to email
+Suggest Edits
+You can send workbooks, their pages, and individual elements to email recipients on a set schedule or as-needed basis. For example, you can email an executive team member a PDF file of the team's KPIs on a regular basis.
+You can set multiple export schedules for a workbook. Each email that you send can include multiple attachments as long as the total attachment size is below the export limit.
+Sigma generates exports from the workbook's latest published version. You can also choose to export a tagged version of the workbook. Depending on the file format you choose, you can also export a bookmark. Changes you make to a workbook draft or exploration cannot be exported unless you publish the changes.
+Requirements
+To export data to email, you must:
+Be assigned an account type with the Export to email permission enabled.
+Have Can Edit or Can Explore access to the individual workbook.
+To set up an email export to run queries as the recipients, your account type must also have the Run exports as recipient permission enabled.
+To send a version-tagged workbook, the version tag must exist and be applied to the workbook. Admins can create a version tag, and workbook creators can tag a version of a workbook. For more information, see Version tagging.
+📘
+If your organization restricts email traffic sent from specific IP addresses, add 198.37.153.185 to the allowlist. Alternatively, you can configure a custom SMTP server to use instead. See Custom SMTP server.
+Export limit
+The size limit for emailed exports is 30MB. This is the total limit for all attachments when combined.
+If an export exceeds this limit, the entire export fails and the owner of the scheduled export is notified. Scheduled exports that repeatedly exceed this limit are automatically paused and their owner notified.
+See Download, export, and upload limitations.
+Export to email as needed
+To send an ad hoc email export:
+From the workbook menu (), select Export.
+📘
+If the export to email option is not available, the workbook is in Edit mode. Either publish your draft or return to the latest published or tagged version of the workbook before attempting to export to email.
+In the Recipient field, enter one or more comma-separated Sigma teams, Sigma users, or email addresses. You can email up to 1,000 recipients.
+📘
+If export authentication is configured for your organization, you can only send the export to email addresses associated with an authorized domain. When you attempt to send the export, Sigma notifies you if an email address contains a domain that is not allowed. An admin can change this setting. See Restrict export recipients.
+(Optional) In the Subject field, enter a subject line.
+(Optional) In the Email Body field, enter a message.
+If the workbook has version tags or bookmarks, select which one you want to send.
+In the Attachment section, choose what you want to export as an attachment. You can export:
+An Entire workbook and export all workbook pages.
+A specific workbook page, by navigating to the workbook page and choosing Entire page.
+An element on a specific workbook page, by navigating to the workbook page and choosing the name of the element.
+Select + Add to add more attachments.
+For each attachment, select a supported file format. For a matrix of supported file formats, see Available export destinations and formats.
+(Optional) By default, Sigma includes a link to the workbook in the email body. If you don't want to include a link, deselect the Include workbook link checkbox.
+(Optional) By default, an export captures data accessible to the export creator. To limit the export to only what the recipient has permission to access, select the checkbox for Run queries as recipient. If you do not see the checkbox, your account type might not be assigned the Run exports as recipient permission.
+🚩
+Run queries as recipient only succeeds if you email 300 or fewer recipients and all of the recipients are Sigma users. If you enable this option and not all recipients are Sigma users, the email fails to send. The sender of the export receives a failure notification email with the error message: "No users found in organization for the provided email recipients".
+💡
+When an export is run as recipient, each query runs separately per recipient. Larger recipient lists result in more queries sent to the database and longer processing times.
+(Optional) Depending on the attachment formats that you select, you can configure more options like combining attachments, sending attachments in a zip file, and more, See Configure additional options for exports.
+Click Export.
+Schedule an emailed export
+Scheduled emails send the latest published version of the workbook, unless you select a tagged version.
+To schedule an emailed report:
+From the workbook menu (), select Schedule exports....
+If this is the first schedule for the workbook, click Add Schedule, otherwise click + New schedule.
+(Optional) You can define conditions for when Sigma sends the export. To turn on conditions, click the Condition toggle. For more information, see Schedule exports using conditions.
+In the Recipient field, enter one or more comma-separated Sigma teams, Sigma users, or email addresses. You can email up to 1,000 recipients.
+📘
+If export authentication is configured for your organization, you can only send the export to email addresses associated with an authorized domain. When you attempt to create the schedule, Sigma notifies you if an email address contains a domain that's not allowed. An admin can change this setting. See Restrict export recipients.
+(Optional) In the Subject field, enter a subject line.
+(Optional) In the Email Body field, enter a message.
+If the workbook has tagged versions or bookmarks, select which one you want to send.
+In the Attachment section, choose what you want to export as an attachment. You can export:
+An Entire workbook and export all workbook pages.
+A specific workbook page, by navigating to the workbook page and choosing Entire page.
+An element on a specific workbook page, by navigating to the workbook page and choosing the name of the element.
+Select + Add to add more attachments.
+For each attachment, select a supported file format. For a matrix of supported file formats, see Available export destinations and formats.
+🚧
+When executing a scheduled export or direct download to PDF or PNG formats, Sigma may store applicable control values as URL parameters in trace logs used for debugging and troubleshooting purposes. Exercise caution when exporting or downloading workbook content that uses controls to filter sensitive data.
+In the Frequency section, set the delivery schedule:
+(Optional) Select the dropdown for Daily and select Weekly, Monthly, or Custom.
+For Daily, select Once a day or Multiple times.
+For Weekly, select which days of the week to send an email, and choose between Once a day or Multiple times.
+For Monthly, select which day of the month to send an email, and the time of day.
+For Custom, specify a schedule using cron syntax. See Set up a custom delivery schedule.
+If you select Multiple times, specify the frequency. For example, every 2 hours on the :15 of the hour between 9 AM and 6 PM.
+(Optional) Adjust the default schedule time zone using the dropdown menu.
+📘
+If you don't have the option to set a specific frequency, export frequency might be restricted for your organization. For more details, see Restrict export recipients and frequency.
+(Optional) By default, Sigma includes a link to the workbook in the email body. If you don't want to include a link, deselect the checkbox for Include workbook link.
+(Optional) By default, an export captures data accessible to the export creator. To limit the export to only what the recipient has permission to access, select the checkbox for Run queries as recipient. If you do not see the checkbox, your account type might not be assigned the Run exports as recipient permission.
+🚩
+Run queries as recipient only succeeds if you email 300 or fewer recipients and all of the recipients are Sigma users. If you enable this option and not all recipients are Sigma users, the email fails to send. The sender of the export receives a failure notification email with the error message: "No users found in organization for the provided email recipients".
+(Optional) Depending on the attachment formats that you select, you can configure more options like combining attachments, sending attachments in a zip file, and more, See Configure additional options for exports.
+(Optional) Select the checkbox for Customize control values to filter the exported data according to the value of one or more workbook controls. See Configure additional options for exports.
+Click Create.
+RELATED RESOURCES
+Manage Your Schedules
+Send a workbook export to email recipients
+Send Slack notifications
+Schedule a conditional export or alert
+Apply control values to scheduled exports

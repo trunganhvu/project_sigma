@@ -1,0 +1,19 @@
+CallGeography
+Suggest Edits
+The CallGeography function calls a warehouse function that returns a Geography data type. 
+You can use the Geography function on Snowflake and BigQuery connections.
+CallGeography is one of Sigma's Passthrough functions.
+Syntax
+CallGeography(function_name, argument1, ...)
+The function has these arguments:
+function_name
+Required
+The name of the warehouse function that Sigma invokes
+argument1 ...
+Optional
+The arguments of the invoked function
+Functions may have 0 or more arguments
+RELATED RESOURCES
+AggGeography
+Geography
+Geography functions

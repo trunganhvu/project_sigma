@@ -1,0 +1,24 @@
+MovingSum
+Suggest Edits
+The MovingSum functions calculates the sum of a column in a moving window.
+Syntax
+MovingSum([column], above, below)
+Function Arguments:
+[column] (required) - The column of numbers to sum.
+above (required) - The first row to include, counting backwards from the current row.
+below (optional) - The last row to include, counting forward from the current row. Defaults to 0 (current row will be the last row included).
+📘
+When using this function without a sort enforced, there can be unexpected results. In order to ensure that the values are stable, verify that there is a sorted column within the table.
+Example
+The following table lists the weekly sales for the past year. The table is sorted ascending by the week. The MovingSum function can be utilized in order to calculate the sum of weekly sales within specific windows.
+MovingSum([Weekly Sales], 4)
+With [Weekly Sales] as the column argument and 4 as the above argument, the sum of weekly sales is calculated for each week along with the four previous weeks. Since the below argument is not specified, it defaults to 0.  
+MovingSum([Weekly Sales], 0, 4)
+Here, the above argument is 0, so there will not be any previous weeks included in the sum calculation. The below average is 4, so the sum of weekly sales will be computed for each week along with the next 4 weeks.
+MovingSum([Weekly Sales], 2, 2)
+Here, the above argument is 2, so the previous two weeks are included in the sum calculation. In addition, the below argument is 2, so the following two weeks are included as well.
+MovingSum([Weekly Sales], 8, -4)
+Here is an example where the below parameter is negative. The below parameter can be negative as long as the value is less than that of the above parameter. In this example, each window begins 8 weeks before the current week and ends 4 weeks before the current week, inclusive.
+RELATED RESOURCES
+Sum
+CumulativeSum

@@ -1,0 +1,5 @@
+Right Outer Join
+Suggest Edits
+Right Outer Join returns all of the rows from the joined data and the data from the matching rows in the current data, adding rows when there is more than one match. When the current data has more than one row that matches to joined data, all of the matches rows are retained.
+In the example below, we are using Right Join to join a customer information table with an order information table. We are using Customer ID, shown in columns CUST ID, as the Join Key. All of the data from the joined order table is preserved. All data from the customer information table that cannot be joined to the order table is removed.
+Rows that show customer information for Customer ID 2 and 4 are removed because they do not have corresponding data in the order information table. Order information for Customer ID 6 is added to the table because it exists in the order table, even though it does not exist in the customer information table.

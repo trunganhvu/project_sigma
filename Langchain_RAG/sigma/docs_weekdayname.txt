@@ -1,0 +1,16 @@
+WeekdayName
+Suggest Edits
+The WeekdayName function evaluates a specified date and returns the day of the week by name (Sunday, Monday, Tuesday, etc.).
+Usage
+WeekdayName(date)
+Function arguments:
+date (required) - a date or a column containing date values from which the weekday name is determined
+Examples
+WeekdayName(Date("2007-08-14"))
+Evaluates the specified date and returns Tuesday to represent the day of the week.
+WeekdayName([Date])
+Evaluates the date values in the Date column and returns the weekday name for each date.
+RELATED RESOURCES
+DatePart
+Weekday
+Quickstart: Common date functions and use cases

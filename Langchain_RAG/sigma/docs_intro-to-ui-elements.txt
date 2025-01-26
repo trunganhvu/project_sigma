@@ -1,0 +1,26 @@
+Intro to UI elements
+Suggest Edits
+UI elements add additional context, styling, and navigation to workbook pages. They include buttons, dividers, images, spacers, embeds, and text.
+Requirement
+To create and edit UI elements, you must have Can Edit access to the individual workbook.
+Create a UI Element
+If you are not already in Edit mode, click Edit.
+In the editor panel's sidebar, click + ADD NEW.
+The ADD NEW panel opens.
+Under UI ELEMENTS, select one.The new element appears on the page.
+Use your cursor to drag and drop the element anywhere on the page canvas.
+Use the editor panel to configure your new element.
+Element Types
+Text
+Text UI elements allow you to add titles and captions to your workbook pages. You can choose the size, style, and font. The text can include dynamic content from formulas. For more information see Text Elements.
+Image
+Add an image to your workbook page by uploading or referencing a URL. Go to images settings to change how images fit within the dashboard container. You can reference control variables within the image embed URL to customize images on a per-dashboard basis.
+Button
+A button directs users to an external website URL or a different Sigma page. You can choose whether the link opens in a new browser tab, and you can optionally add control values. There are also customization options for button title and style.
+Divider
+A Horizontal divider visually partition elements or groups of elements on a page.
+Embed Element
+An embed element adds a webpage, video, or other Sigma workbook to a page. Any iFrame-enabled URL can be embedded. Use control variables within your embed URL to customize what content is displayed according to different inputs.
+RELATED RESOURCES
+Workbooks overview
+Intro to Element Types

@@ -1,0 +1,389 @@
+ModelingTopicsParameters
+On this page
+Topic file parameters
+Topic files are used to define configuration for individual topics.
+The following example is a high-level look at the possible parameters in a topic file. Refer to individual sections for more information about each parameter's uses and accepted values.
+# Defines the base view for the topic
+base_view: <view_name>
+
+# Defines the workbook display name of the base view when it's accessed from the topic 
+base_view_label: <Some Display Name>
+
+# Limits access to rows based on user attributes
+access_filters:
+  - field: <view_name>.<field_name>
+    user_attribute: <user_attribute>
+    values_for_unfiltered: [<value_1>, <value_2>, ...]
+
+# Information that provides context to the AI Query Helper
+ai_context: <some information>
+
+# Inserts a non-removable filter into the WHERE clause of the generated SQL block of all queries in the topic
+always_where_sql: ${<view_name>.<field_name>} <condition>
+
+# Forces all queries using the topic to require a run click to return new results
+auto_run: true
+
+# Defines the cache policy for the topic
+cache_policy: <cache_policy>
+
+# Defines a removable filter that's applied to all rows in a topic
+default_filters:
+  <view_name>.<field_name>:
+    <filter_conditions>
+
+# Description of the topic, which will display in the workbook
+description: <brief summary>
+
+# Determines the order in which the topic displays
+display_order: <integer>
+
+# Curates the fields available in the topic
+fields: [all_views.*]
+
+# Defines the group the topic belongs to; useful for organizing multiple topics in a model
+group_label: <group name>
+
+# Removes the topic from the workbook
+hidden: false
+
+# Declares other views as part of the topic
+joins:
+  <view_name>: {}
+
+# Defines a display name for the topic, which will be visible in the workbook
+label: <topic display name>
+
+# Defines a list of topic-level joins
+relationships:
+  - join_from_view: <view_one>
+    join_to_view: <view_two>
+    join_to_view_as: <name_of_view>
+    join_type: always_left
+    on_sql: ${<name_of_view>.id} = ${<view_one>.some_id}
+    relationship_type: many_to_one
+
+# Defines a list of access grants to apply to the topic
+required_access_grants: <access_grant_name>
+
+# Allows customization of views only in the context of the topic
+views:
+  <view_name>:
+    <customization>
+access_filters:
+Limits access to rows based on user attributes. When enabled, users will be limited to rows in the topic that match their user attribute value.
+To allow specific users to access all data for a field, add the values_for_unfiltered parameter. Users with this user attribute value will not have the access filter applied, allowing them to access all data for the specified field.
+Note: Omni expects every user to have a non-null value for any assigned access filter. Errors will arise if the user attribute value is null.
+access_filters:
+  - field: products.brand                    # Required. Defines the field to use as a filter.
+    user_attribute: brand_id                 # Required. The user attribute to filter on.
+    values_for_unfiltered: [is_admin]        # Optional. User attribute value to allow unrestricted access.
+ai_context:
+Free text that can provide context to the AI Query Helper. This could include:
+Behavioral prompting:
+ai_context: |
+  you are the head of finance. you are concerned with the status of customer payments. you often need to project into the future how many invoices are due and for how much. you also need to know if any invoices are late so you can reach out to those customers.
+Example queries and structured Omni query results:
+ai_context: |
+   question: which customers are behind due on payment?
+   
+   answer: 
+   
+   {
+     "limit": 1000,
+     "sorts": [
+       {
+         "column_name": "share_rillet_omni_omni__invoices.due_date",
+         "sort_descending": true,
+         "is_column_sort": false,
+         "null_sort": "OMNI_DEFAULT"
+       }
+     ],
+     "table": "share_rillet_omni_omni__invoices",
+     "fields": [
+       "share_rillet_omni_omni__invoices.customer_id",
+       "share_rillet_omni_omni__invoices.customer_name",
+       "share_rillet_omni_omni__invoices.invoice_number",
+       "share_rillet_omni_omni__invoices.due_date",
+       "share_rillet_omni_omni__invoices.total_amount"
+     ],
+     "pivots": [],
+     "dbtMode": false,
+     "filters": {
+       "share_rillet_omni_omni__invoices.due_date": {
+         "is_negative": false,
+         "kind": "BEFORE",
+         "right_side": "today",
+         "type": "date",
+         "ui_type": "BEFORE"
+       },
+       "share_rillet_omni_omni__invoices.status": {
+         "type": "string",
+         "kind": "EQUALS",
+         "values": [
+           "unpaid"
+         ],
+         "is_negative": false,
+         "case_insensitive": true
+       }
+     },
+     "modelId": "aeb6f3f4-b0e5-4abb-97eb-eaeb42a16944",
+     "version": 5,
+     "rewriteSql": true,
+     "row_totals": {},
+     "fill_fields": [],
+     "calculations": [],
+     "column_limit": 50,
+     "join_via_map": {},
+     "column_totals": {},
+     "userEditedSQL": "",
+     "dimensionIndex": 0,
+     "default_group_by": true,
+     "join_paths_from_topic_name": "invoices"
+   }
+always_where_sql:
+Inserts a filter into the WHERE clause of the generated SQL block of all queries in the topic. Users with the Querier role can't change this filter and it will be visible only in the underlying SQL of any queries. This filter is additive to any filters specified in the workbook. For optional filter conditions, use default_filters.
+This parameter is useful for removing invalid data from the topic, such as deleted records or internal testing.
+Conditions should be written using mustache (${}) syntax.
+DID YOU KNOW?
+You can generate a syntactically correct condition using the workbook:
+In a workbook, add the filter using the UI.
+Click the SQL button near the top-right corner of the page.
+Copy the content of the WHERE clause.
+Then, you can paste it right into the always_where_sql parameter!
+base_view: order_items
+always_where_sql: ${order_items.sale_price} != 0
+auto_run:
+Forces all queries using the topic to require a run click to return new results. Note: This will override the model-level auto_run parameter.
+auto_run: false # Accepted values are true or false
+base_view:
+Defines the base view for the topic. Values should be unquoted. Quotes will be removed/ignored upon saving.
+base_view: users
+
+# Use <schema>__<view> to specify a schema
+base_view: main__users
+base_view_label:
+Defines the display name of the table in the workbook when it is accessed from the topic. This can be helpful for conveying the table's meaning in a specific context.
+For example, the order_items view can be referred to as Sold Items in a financial context, which could help a Finance team understand that the table contains sale records.
+base_view: order_items
+base_view_label: Sold Items  # Values should be unquoted. Quotes will be removed/ignored upon saving.
+cache_policy:
+Defines the cache policy for the topic. The value should be a cache policy defined in the topic's model (cache_policies).
+cache_policy: daily_cache_policy 
+default_filters:
+Applies a filter to all rows in a topic. Filters created using this parameter are visible in workbooks and can be removed by users. For required filter conditions, use always_where_sql.
+Refer to the Filters documentation for filter examples and syntax details.
+default_filters:
+  users.state:
+    is: California
+description:
+Free text that describes the table. For example, you could add copy that describes the type of analyses users can create using the topic.
+Descriptions are visible in the workbook, specifically in the topic switcher of the Fields & Topics panel.
+Values should be unquoted. Quotes will be removed/ignored upon saving.
+# Single line description
+description: All transactions related to orders from the online store.
+
+# Multi-line description
+# Use this approach to include colons ( : )
+description: |
+  Transactions from: California, Washington, and Oregon
+display_order:
+Defines the order that topics display in the field picker. By default, topics are sorted alphabetically. Defining a display_order will override this default for the topic.
+The value must be a whole number, such as 1, 2, and so on.
+display_order: 3
+extends:
+Coming soon.
+fields:
+Curates the fields available in the topic. By default, all fields from the base view and joined views are included in the topic.
+This parameter supports the following operators:
+Operator Description Order of operations
+all_views.* Targets all fields from all views in the topic 1
+view.* Targets all fields in a view 2
+tag:<value> Targets fields and views with the specified tag 3
+view.field Targets a specific field 4
+Omni will evaluate the operators according to the Order of operations value in the above table. This means all views is evaluated first, then specific views, and so on. This allows you to exclude views and then add specific fields back in.
+To exclude a view, tag, or field, prefix the clause with a -. For example: -users.*
+# Include only the users view
+fields: [users.*]
+
+# Exclude the users view
+fields: [all_views.*, -users.*]
+
+# Exclude only the users.id field
+fields: [all_views.*, -users.id]
+
+# Exclude fields with the `pii` tag
+fields: [all_views.*, -tag:pii]
+
+# Add the user_facts.lifetime_value back in after excluding the user_facts view
+fields: [all_views.*, -user_facts.*, user_facts.lifetime_value]
+
+# Remove the users.acquisition_cost field from the fields targeted by the marketing tag
+fields: [-all_views.*, tag:marketing, -users.acquisition_cost]
+group_label:
+Defines the group the topic belongs to. This is useful for improving the organization and navigation of topics in workbooks or the IDE. For example, you could create group topics together by dataset (Salesforce), team (Marketing), or analytical area (Product usage).
+Note: Topics without a group_label will display as 'ungrouped' below topic groups in the topic switcher.
+group_label: Marketing # Values should be unquoted. Quotes will be removed/ignored upon saving.
+hidden:
+Removes the topic from the workbook. The topic can still be referenced in the model.
+hidden: true  # Value must be true or false
+joins:
+Declares other views as part of the topic. To include multiple tables, nest the table under the table it joins through.
+Note: The final table in each node - specifically, those without children - requires an empty bracket pair {}
+joins:
+  inventory_items:                  # Includes inventory_items in the topic
+    products:                       # Joins products to inventory_items
+      distribution_centers: {}      # Joins distribution_centers to products
+  users: {}                         # Includes users in the topic
+label:
+Defines a display name for the topic. This will override the topic's name as it displays in the workbook.
+Values should be unquoted. Quotes will be removed/ignored upon saving.
+label: California
+relationships:
+Defines a list of topic-level joins. Joins defined using this parameter will only be available to the topic where they are declared. This can be useful for one-off use cases, rare aliasing, or utilizing different join organization schemes. Refer to the Relationships & Joins documentation for more information about top-level and global relationships.
+The syntax for this parameter is identical to that of the relationships file.
+topics:
+  order_items:
+    joins:
+      buyers: {}
+      sellers: {}
+  relationships:
+  # Join order_items to users as buyers using order_items.buyer_id
+    - join_from_view: order_items
+      join_to_view: users
+      join_to_view_as: buyers
+      join_type: always_left
+      on_sql: ${buyers.id} = ${order_items.buyer_id}
+      relationship_type: many_to_one
+
+  # Uses user attributes ({{ omni_attributes.<user_attribute> }}) to create an access filtered join
+  # This can be useful when you want to keep all rows in the data set but permiss the metadata
+  
+  # This example will only return data for the specific seller_org_id associated with each user
+    - join_from_view: order_items
+      join_to_view: users
+      join_to_view_as: sellers
+      join_type: always_left
+      on_sql: ${sellers.id} = ${order_items.seller_id} AND ${sellers.organization_id} = {{ omni_attributes.seller_org_id }}
+      relationship_type: many_to_one
+
+  # Another single-use example
+  # Note this from is not aliased in the context of the join,
+  # but connection is implied by nesting in topic above
+  relationships:
+    - join_from_view: users
+      join_to_view: user_attributes
+      join_to_view_as: seller_attributes
+      join_type: always_left
+      on_sql: ${users.id} = ${seller_attributes.user_id}
+      relationship_type: one_to_one
+required_access_grants:
+Defines a list of access grants to apply to the topic. This setting is used to restrict access to the topic.
+The values of this parameter must match the name of an access grant in the model file. For example, this defines a region_access policy in a model file:
+Model file
+access_grants:
+  region_access:
+    user_attribute: "Region"
+    allowed_values: ["California", "Hawaii"]
+Then, in the topic file, required_access_grants is used to apply the access grant:
+Topic file
+required_access_grants: [region_access]
+Refer to the Data access control guide for more information and examples.
+template:
+Coming soon.
+views:
+Allows customization of views only in the context of the topic. For example, you can use this parameter to:
+Create aliases for joins between tables in the topic. When aliasing a join for a specific topic, often topic-specific relationships are the best way to model, field names may also be adjusted or renamed or relabeled (see above).
+Define topic-specific drilling
+Define topic-specific aggregate awareness
+# Defines the order in which views in the topic display
+views:
+  order_items:
+    display_order: 1
+  users:
+    display_order: 2
+  products:
+    display_order: 3
+Extended example
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Previous
+Topics
+Next
+Relationships & Joins

@@ -1,0 +1,15 @@
+AggNumber
+Suggest Edits
+The AggNumber function calls a warehouse aggregate function that returns a Number data type. This function is the aggregate version of CallNumber and can be applied to identify the set of values that appear the most often from the base, row level data in the parent/higher level grouping of a table.
+Syntax
+AggNumber(function name, arguments...)
+Function arguments:
+function name (required)- The name of an aggregate function supported by your data warehouse.
+arguments (required)- One or more arguments to be passed to the warehouse function. All arguments must meet the warehouse function’s input requirements.
+Example
+A table contains a Cust Key (row) column that contains the customer ID of each item that was purchased for each Store Region. You can pass Snowflake's MODE function to the AggNumber function to identify the customer who made the most purchases within a specific timeframe by Store Region.
+The Items Purchased column in the lower grouped level of the table confirms that the most frequent Cust Key is returned by the AggNumber function.
+AggNumber("MODE", [Cust Key (row)])
+Return the most frequent Cust Key value for the values within the Cust Key (row) column.
+RELATED RESOURCES
+CallNumber

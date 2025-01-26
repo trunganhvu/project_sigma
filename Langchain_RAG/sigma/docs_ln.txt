@@ -1,0 +1,8 @@
+Ln
+Suggest Edits
+Compute the natural logarithm of a number.
+Usage
+Ln(number)
+number (required) Number or column of numbers to compute the natural logarithm of.
+RELATED RESOURCES
+Exp

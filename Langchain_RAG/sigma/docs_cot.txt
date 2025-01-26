@@ -1,0 +1,10 @@
+Cot
+Suggest Edits
+Computes the cotangent of the given angle.
+Usage
+Cot(value)
+value (required): The angle (in radians) whose cotangent will be calculated.
+RELATED RESOURCES
+Tan
+Atan
+Atan2

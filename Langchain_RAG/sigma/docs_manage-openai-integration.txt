@@ -1,0 +1,94 @@
+Manage OpenAI integration (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+The OpenAI integration allows users of the Sigma Service to access and use OpenAI language models (including GPT-4 and embedding models) for features like visualization explanations and the formula assistant.1 You can integrate with OpenAI directly or through Azure OpenAI Service.
+1
+Sigma Computing is continuously working to improve and expand on existing functionality. This document will be updated as new AI features become available.
+🚩
+The use of AI features is subject to the following disclaimer.
+User requirements
+The ability to configure the OpenAI integration in Sigma requires the following:
+You must be assigned the Admin account type.
+You must be able to provide the required authentication credentials.
+Prerequisites
+Before configuring the OpenAI integration, retrieve the authentication credentials from OpenAI or Azure, depending on your chosen integration method (direct or through Azure OpenAI Service).
+OpenAI credentials (direct)
+To integrate with OpenAI directly, your company must obtain, manage, and secure an OpenAI API key. You can retrieve the API key in the API keys section of the OpenAI developer platform.
+For more information about your API key, see Best Practices for API Key Safety in the OpenAI documentation.
+Azure OpenAI credentials
+To integrate with OpenAI through Azure OpenAI Service, your company must have an Azure subscription with access to Azure OpenAI. For each language model, you must also provide the endpoint URL, model deployment name, and API key, which you can retrieve from your Azure portal or Azure OpenAI Studio (see the following table for guidance).
+Sigma credential Azure location
+Endpoint URL In the Azure portal, open the applicable resource page, then go to Resource Management > Keys and Endpoint and copy the URL in the Endpoint field.
+
+You can also find this value in Azure OpenAI Studio > Playground > Code View.
+Deployment ID
+(model deployment name) In the Azure portal, open the applicable resource page, then go to Resource Management > Deployments and copy the model deployment name. This must be gpt-4-turbo or later (for a GPT-4 model) or text-embedding-3-small (for an Embeddings model).
+
+You can also find this value in Azure OpenAI Studio > Management > Deployments.
+API Key In the Azure portal, open the applicable resource page, then go to Resource Management > Keys and Endpoint and copy the value in the KEY1 or KEY2 field.
+Add the OpenAI integration
+If you’ve retrieved the required credentials, you can quickly authenticate the OpenAI integration to enable AI functionality in Sigma. Refer to one of the following sections based on your chosen integration method.
+Open AI integration (direct)
+Azure OpenAI integration
+OpenAI integration (direct)
+Go to Administration > AI Settings:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select AI Settings.
+Locate the OpenAI setting and click Add.
+In the Edit OpenAI Integration modal, configure the integration:
+In the Provider field, select OpenAI.
+In the API Key field, enter the OpenAI API key.
+Click Save to authenticate.
+When the integration is successfully authenticated, the OpenAI setting displays Remove and Edit buttons, and AI functionality is enabled for your organization.
+For more information about Sigma’s AI features, see the related resources at the end of this page.
+Azure OpenAI integration
+When you integrate with Azure OpenAI, you can specify different model endpoints. The Sigma service supports the following models:
+GPT 4 turbo or later for a language model.
+The text-embedding-3-small embedding model.
+To integrate Azure OpenAI models with the Sigma service, do the following:
+Go to Administration > AI Settings:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select AI Settings.
+Locate the OpenAI setting and click Add.
+In the Edit OpenAI Integration modal, configure the integration:
+For Provider, select Azure OpenAI.
+For each language model, provide the required credentials:
+In the Endpoint URL field, enter the endpoint URL.
+In the Deployment ID field, enter the model deployment name.
+In the API Key field, enter the Azure API key.
+[optional] You can choose to use the same endpoint URL and API key for both the language model and the embeddings model.
+Click Save to authenticate.
+When the integration is successfully authenticated, the OpenAI setting displays Remove and Edit buttons, and AI functionality is enabled for your organization.
+For more information about AI features in Sigma, see the related resources at the end of this page.
+Edit the OpenAI integration
+You can edit the OpenAI integration at any time to update the credentials.
+Go to Administration > AI Settings.
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select AI Settings.
+Locate the OpenAI setting and click Edit.
+In the Edit OpenAI Integration modal, edit the credentials as needed, then click Save.
+Remove the OpenAI integration
+You can remove the OpenAI integration at any time to disable AI functionality within Sigma.
+Go to Administration > AI Settings.
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select AI Settings.
+Locate the OpenAI setting and click Remove.
+In the Remove OpenAI Integration modal, click Remove to confirm.
+After the integration is successfully removed, the OpenAI setting displays the Add button, and AI functionality is disabled for your organization.
+Frequently Asked Questions
+How do I request an OpenAI API key from Sigma?
+How does Sigma secure the OpenAI integration?
+Is my workbook data used for generative AI features in the Sigma service?
+Does OpenAI store my data or use it to train the AI language model?
+Can Sigma’s AI capabilities handle large-scale datasets from my warehouse?
+Can I restrict access to Sigma’s AI capabilities and limit use to specific users?
+RELATED RESOURCES
+Explain visualizations with AI (Beta)
+Use AI with formulas (Beta)
+Import data from an image (Beta)

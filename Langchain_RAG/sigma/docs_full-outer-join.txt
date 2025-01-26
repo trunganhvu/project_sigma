@@ -1,0 +1,6 @@
+Full Outer Join
+Suggest Edits
+A Full Outer Join returns all of the rows from the current data and all of the rows in the joined data, making matches where possible.
+In the example below, we are using Outer Join to join a customer information table with an order information table. We are using [Cust ID], shown in columns [CUST ID], as the Join Key. All of the rows from both tables are added to the joined table. When possible, the rows are joined. When that isn’t possible, null values are added to the row.
+‍
+An additional row of Customer 1 data is added to accommodate multiple orders in the joined order table. Customer 2 and Customer 4 have NULL values for order data, as there was no data for them in the order table. Customer 6 has NULL values for First and Last as the original data had no information for Customer 6.

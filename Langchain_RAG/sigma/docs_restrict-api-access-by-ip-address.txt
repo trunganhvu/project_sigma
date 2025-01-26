@@ -1,0 +1,28 @@
+Restrict API access by IP address (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Restrict access to the Sigma API for your organization by adding IP addresses to an allowlist. When you enable the allowlist and add IP addresses or IP address ranges using CIDR notation, only users making requests from allowed IP addresses can make successful API requests.
+📘
+If you use a proxy server or VPN to access the internet, talk to your network team before adding IP addresses.
+Requirements
+You must be assigned the Admin account type.
+Add IP addresses to the allowlist
+Open the Admin Portal by selecting Administration in the user menu at the top right of your screen.
+In the left panel, select Authentication.
+In the IP address section, turn on the Restrict switch to enable the allowlist.
+Select Enable to confirm that you want to start using the allowlist.
+📘
+By default, the allowlist includes an IPv4 address and an IPv6 range to permit access from the public internet: 0.0.0.0 and ::/0.
+Add an IP address or range:
+In the IP address section, select Add.
+In the Add IP modal, add one or more IP addresses or ranges at a time:
+To add one IP address or IP address range using CIDR notation to the allowlist, for IP address or CIDR range, enter the IP or range. Optionally add a description.
+To add a comma-separated or space-separated list of IP addresses or IP address ranges using CIDR notation, turn on the Bulk add IPs switch and enter the list in the text box.
+Click Save.
+To add more IP addresses or ranges, select Add. You can add up to 200 addresses or CIDR ranges in total.
+After you finish adding IP addresses and ranges to the allowlist, remove the default IP address and range:
+Search for 0 or locate the default IP address and range in the list.
+For each IP that you want to remove, select More > Remove.
+The allowlist takes effect within a few minutes. Any new IP address added after enabling the allowlist also takes effect within a few minutes.

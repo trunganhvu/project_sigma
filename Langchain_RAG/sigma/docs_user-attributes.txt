@@ -1,0 +1,70 @@
+User Attributes
+Suggest Edits
+User Attributes can be used to provide a customized experience for your Sigma teams, org members, and embedded users. They can be assigned as a function in a dataset to provide row-level security.
+Requirements
+You must be an organization Admin to configure User Attributes; see Account types.
+Users with Can edit or Can explore access to a workbook or dataset can reference existing user attributes in functions.
+You should not use User Attributes in a Materialized Dataset as this can cause undesirable results or errors.
+Create User Attributes
+Follow the steps below to create a User Attribute.
+In your Sigma Admin portal, go to User Attributes and click Create Attribute.
+In the New Attribute section, enter a unique name in the Name field.
+In the Description field, describe the attribute. Optional.
+In the Default Value field, enter a default value. Sigma will use the value defined here if no value is set for a team. Optional.
+Click Create.
+After you click Create, the attribute appears under User Attributes.
+Assign User Attributes
+Follow the steps below to assign a team or org member to a User Attribute.
+In the Teams Assigned section, click Assign Attribute to assign teams or members to this attribute.
+In the search bar, search for teams or members to assign this attribute to, or click in the search bar to view a list of your organization's teams and members.
+Add a value in the Assigned Value field. 
+In the example below, West was added.
+Click Assign. Your teams and members are now listed under Teams Assigned and Members Assigned sections.
+To reorder the priority of teams, go to Teams Assigned, place your cursor over the drag handle under the Priority column, and drag and drop the team to the desired priority. Values assigned to users always override values assigned to teams.
+📘
+Teams are prioritized based on their order in the list. The team at the top of the list is used first.
+Edit or Delete Attributes & Teams
+Attributes
+To edit or delete an attribute click on an existing attribute.  On the right, you can click Edit to edit the attribute, or click Delete Attribute to delete it.
+In this example, we chose Region Attribute.
+Teams and Members
+To edit or unassign a team or member, click on the 3 dots to the right. Click Edit Value to change the attribute and Unassign to dissociate the team or member from the attribute.
+Delete user attributes in bulk
+In the admin portal, go to the User Attributes tab.
+To bulk delete user attributes, click the box next to each attribute you want to delete. To select all, click the box next to Name.
+Click the trash can icon to delete the selected attributes.
+Click Confirm.
+Row-Level Security with User Attributes
+Once you create and assign a user attribute to teams, you can use this functionality in a dataset to enforce row-level security using the function CurrentUserAttributeText in a formula.
+CurrentUserAttributeText(“attributeName”) = [column]
+This example uses the configuration above. An admin adds a column named [Region] to a table, creates a user attribute called Region Attribute, and assigns the attribute to a team containing the users listed below. A value is added for each team in the Assigned Value field.
+In the example configuration above, there are two different teams assigned to the same attribute. A different value for the region attribute is assigned to each team:
+Sales US-West is assigned the value West
+abc is assigned the value Midwest
+After you create a calculated column in the dataset as follows and add a filter on this column with only True selected, team members will only see the rows that correspond to their value in the Region column.
+In our example, Sales US-West can see rows with West value in the Region column because we defined Assigned Value as West.
+CurrentUserAttributeText(“Region Attribute”) = [Region]
+The value entered in Assigned Value for a team limits what they see based on that value.
+In our example, the rows that members of team Sales US-West can view are limited to the rows with the value West in the Region column. If the value in the Region column is Midwest, then members of Sales US-West can't see these rows.
+Note:The CurrentUserAttributeText function returns the corresponding attribute value as a Text data type. The attrName argument passed to the function must also be a Text data type.
+Embed parameters
+The following parameters can be used to pass user attributes in the embed URL:
+<user_attribute> [optional] - A user attribute {key: value} pair to be applied for RLS. In the URL, include an independent :ua_<attribute> parameter for each attribute you want to use. The value for this parameter is not case sensitive. See CurrentUserAttributeText.
+For more information, see Embed URL parameters.
+Custom SQL
+After you successfully configure User Attributes, you can use them in a Custom SQL dataset to provide security. For instance, assume that data for each customer is present in a separate schema. You can leverage custom SQL to filter the results based on the user attribute.
+For example:
+SQL
+SELECT
+  *
+FROM
+  EXAMPLES.PLUGS_ELECTRONICS.PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA
+WHERE 
+  {{system::CurrentUserAttributeText::store_region}} = STORE_REGION
+This query uses the CurrentUserAttributeText function to retrieve the assigned value of the user attribute for the user running the query. The function requires a parameter that references the user attribute name.
+📘
+If the user attribute name has spaces, use double quotes. For example:
+{{system::CurrentUserAttributeText::"Store Region"}} = STORE_REGION
+For more details, see Write custom SQL.
+RELATED RESOURCES
+Dataset Row-Level Security

@@ -1,0 +1,15 @@
+Day
+Suggest Edits
+Returns the day of the month of a date value as a number.
+Usage
+Day(date, [timezone])
+date (required) The date from which to extract the day component.
+timezone (optional) Name of IANA time zone to get the date part at (e.g., “America/Los_Angeles”). When calculating a time zone, input dates are treated as UTC.
+Example
+Day(Date("2007-08-14"))
+Returns 14.
+Day([Date])
+Returns the day of the month of each date value in the [Date] column as a number.
+RELATED RESOURCES
+DatePart
+Quickstart: Common date functions and use cases

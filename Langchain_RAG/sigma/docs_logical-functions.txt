@@ -1,0 +1,12 @@
+Logical functions
+Suggest Edits
+Logical functions perform logical operations or evaluate conditional statements and typically return boolean (true or false) output.
+Between Determines if a value is within the specified range; True or False.
+Choose Given a specified index number, returns the matching value from a list.
+Coalesce Returns the first non-Null value from a list.
+If Evaluates if one or more conditions are true or false and returns the corresponding value.
+In Determines if a specified value matches any candidate values; True or False.
+IsNotNull Determines if the cell has a value; True or False.
+IsNull Determines if the cell is Null; True or False.
+Switch Using the SWITCH paradigm, tests the specified value against a list of conditions, and returns the matching response.
+Zn Returns non-Null values, or 0 (zero) instead of Null values.

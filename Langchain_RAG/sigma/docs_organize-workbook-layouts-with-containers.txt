@@ -1,0 +1,31 @@
+Organize workbook layouts with containers
+Suggest Edits
+Add containers to your workbook pages to organize elements on the canvas and visually group elements together. With containers, you can more easily manage layouts and style elements as a group.
+Prerequisites
+You must be the owner or have Can Edit or Can Explore permissions on the workbook.
+Add a container to a workbook
+You can add an empty container or add a container around existing elements:
+Add an empty container
+Add a container around existing elements
+Add an empty container
+Select Add element…, then in the Containers section, select a container and drag it onto the workbook canvas.
+Select Add element…, then drag elements into the container.
+Add a container around existing elements
+To add a container around existing elements, drag or ctrl/cmd+click to select multiple elements, then click Create container () or press ctrl/cmd+g.
+The container is created on the canvas and selected by default.
+Move a container
+To change the location of a container and its elements, select the edge of the container to select the container, then drag the container to the new location.
+Resize a container
+You can drag the edges of a container to resize it. When you resize a container, the grid size inside the container changes and the elements inside the container are resized to fit.
+Resizing a container horizontally does not remove empty space inside the container. You cannot resize a container smaller than the elements inside of it.
+Style a container
+Select Element properties to style your container:
+Style Details
+Padding Adds padding to the container. Selected by default. Deselect the checkbox to remove padding between elements and the container.
+Background color Select a background color for the container.
+Border Specify a border for the container. Defaults to none, but can be set to 1, 2, or 3 pixels. You can also choose a color for the border.
+Corner Choose a corner shape for the container. Choose between square, round, and pill. Defaults to round.
+Element gap Adds padding between elements in the container. Selected by default. Deselect the checkbox to remove padding between elements.
+Remove or delete a container
+To remove a container around elements, select the enclosing container, then select More > Remove container. The container is removed and any elements inside the container are placed on the canvas. Elements keep the same formatting.
+You can also delete a container and all elements inside the container. To do so, select the enclosing container, then select More > Delete container. The container and all elements inside are deleted.

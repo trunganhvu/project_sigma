@@ -1,0 +1,84 @@
+Create and manage metrics
+Suggest Edits
+A metric is a custom aggregate calculation that can be reused across data elements that share a data source. If you define metrics in data models, datasets, or tables from a connected database or catalog, you can help users perform calculations in a consistent way both easily and efficiently.
+This document explains how to create and manage metrics for improved metrics governance. For information about using metrics in workbook data elements, see Use metrics in a workbook.
+For more details about metrics, see About metrics.
+🚩
+Metrics for datasets are generally available.
+Metrics for data models are in private beta. The documentation that describes a private beta feature is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in Sigma, is removed. As with any beta feature, the feature described below is subject to quick, iterative changes. The latest experience in the Sigma service may differ from the contents of this document. Beta features are subject to the disclaimer on Beta features.
+If you are interested in joining a limited test group and enabling this feature in your Sigma organization, contact Support or reach out to your Account Executive.
+User requirements
+The ability to create and manage metrics in data models requires the following:
+You must be assigned an account type with the Create, edit, and publish datasets permission enabled.
+You must be the dataset owner or be granted Can edit permission on the data model.
+The ability to create and manage metrics in datasets requires the following:
+You must be assigned an account type with the Create, edit, and publish datasets permission enabled.
+You must be the dataset owner or be granted Can edit permission on the dataset.
+The ability to create and manage metrics in database or catalog tables requires the following:
+You must be be granted Can use & annotate data permission for the specific table, or you must inherit the permission granted at the applicable connection, database or catalog, or schema level.
+Work with metrics in data models
+🚩
+This documentation describes a private beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, is removed. As with any beta feature, the feature described below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document. Beta features are subject to the Beta features disclaimer.
+If you are interested in joining a limited test group and enabling this feature in your Sigma organization, contact Support or reach out to your Account Executive.
+Create a metric in a data model
+Open the data model for editing.
+In the Element Properties for a data model table, select the Metrics tab.
+Select + (Add metric...) to add a metric.
+The Metric modal appears.
+In the Name field, enter a name to use for the metric.
+In the Description field, enter a description about what the metric does. The description appears when a user hovers over the metric.
+In the Formula field, define the metric logic. You can use Sigma functions and reference any column in the data model table.
+Review the Preview for your metric and optionally define a format for the output of the metric. For example, you can specify the formula result as a currency or a percentage, set the number of decimal places, or select options from the full format menu by clicking the number format menu ().
+📘
+Metrics define aggregate calculations. If the preview displays a null value, your formula might be missing an aggregate function, such as Sum(), Avg(), or Count().
+Publish the data model to make the changes available downstream.
+Edit a metric in a data model
+Open the data model for editing.
+Select the table on which the metric is defined.
+In the Element properties, select the Metrics tab, then select the metric.
+Click the caret, then select Edit.
+Make any desired changes, then click Save.
+Publish the data model to make the changes available downstream.
+Columns and metrics that use the metric update to use the revised metric.
+Delete a metric in a data model
+Open the data model for editing.
+Select the table on which the metric is defined.
+In the Element properties, select the Metrics tab, then select the metric.
+Click the caret, then select Delete.
+Publish the data model to make the changes available downstream.
+Any columns that rely on the deleted metric display an error.
+Work with metrics in datasets
+Datasets and metrics in datasets are generally available.
+Create a metric in a dataset
+Follow these steps to create a metric:
+Open a dataset or database table.
+In the header, click Edit.
+Select the Metrics tab, then click Create Metric to open the metric builder.
+In the Name field, enter the name of the metric.
+In the Description field, enter details about the metric.
+This information displays when users apply metrics to a workbook element.
+In the Formula field, define the metric logic.
+You can use Sigma functions, and reference any column in the open dataset or database table.
+You can also use an existing metric of the dataset; this is a very powerful practice to build reusable calculation components in your dataset.
+Use the quick formatting tools and preview to customize the metric output.
+For example, you can specify the formula result as a currency or a percentage, set the number of decimal places, or select options from the full format menu by clicking the number format menu ().
+Metrics define aggregate calculations. If the metric builder preview returns a null value, your formula might be missing an aggregate function, such as Sum(), Avg(), Count(), and so on.
+In the header, click Publish to save the metric.
+Edit a metric in a dataset
+When you edit a metric, Sigma reflects your changes in workbook elements that link to the specific dataset or database table. All workbook references to the metric include name and description changes, and Sigma recalculates metric results based on formula updates.
+To edit a metric, follow these steps:
+Open the dataset or database table that contains the metric that you plan to edit.
+Click Edit.
+Select the Metrics tab.
+Locate the metric in the list, and click its name to open the metric in the metric builder.
+Edit the metric name, description, formula, and formatting as needed, then click Publish to update the metric.
+Delete a metric in a dataset
+When you delete a metric, its calculation becomes invalid in workbook elements. Tables display error messages in columns that previously included metric output. Visualizations and pivot tables display an error message instead of the element.
+Open the dataset or database table that contains the metric you plan to delete.
+Click Edit.
+Select the Metrics tab.
+In the list of metrics, find the metric that you plan to delete.
+For the metric, click More (), then select Delete.
+Alternatively, select the metric to open the metrics builder and locate the metric in the side panel. Next to the name of the metric, click Delete metric ().
+RELATED RESOURCES
+Use metrics in a workbook

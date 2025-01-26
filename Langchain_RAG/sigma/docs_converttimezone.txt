@@ -1,0 +1,21 @@
+ConvertTimezone
+Suggest Edits
+The ConvertTimezone function converts datetime values to the specified time zone.
+Syntax
+ConvertTimezone(date, timezone, [from_timezone])
+Function arguments:
+date (required) The datetime value to convert.
+timezone (required) The name of the IANA time zone to which the datetime value is converted.
+from_timezone
+(optional) The name of the IANA time zone from which the datetime value is converted.
+Defaults to the organization account time zone when the argument is unspecified.
+Examples
+ConvertTimezone([Date], "America/Los_Angeles")
+Interprets values in the Date column as datetime values in the organization account time zone, then converts them to the equivalent datetime values in America/Los_Angeles (Pacific) time.
+ConvertTimezone(Date("2014-07-18 10:58:00"), "America/Los_Angeles", "America/New_York")
+Interprets 2014-07-18 10:58:00 in America/New_York (Eastern) time and converts it to 2014-07-18 07:58:00 in America/Los_Angeles (Pacific) time.
+RELATED RESOURCES
+Date
+DateParse
+DateTime
+Quickstart: Common date functions and use cases

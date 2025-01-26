@@ -1,0 +1,14 @@
+BitOr
+Suggest Edits
+Returns the bitwise OR of two numbers.
+Usage
+BitOr(number1, number2)
+number1 [required] A decimal number greater than or equal to 0.
+number2 [required] A decimal number greater than or equal to 0.
+Example
+(1) Returns 6
+BitOr(2, 4)
+(2) Returns 31.
+BitOr(12, 23)
+RELATED RESOURCES
+BitAnd

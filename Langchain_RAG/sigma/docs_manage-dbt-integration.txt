@@ -1,0 +1,34 @@
+Manage dbt Integration
+Suggest Edits
+This article provides instructions on how to integrate dbt jobs with Sigma. You can access the docs and metadata generated from dbt jobs directly in Sigma.
+Some of the benefits of this integration with Sigma are:
+Data freshness: The dbt job execution data is displayed in Sigma which allows you to verify the freshness of the data. 
+Data quality: You can view dbt quality tests on columns and models in Sigma, which provides a greater degree of transparency into data quality issues. 
+Data cataloging: The dbt table and column descriptions are displayed in Sigma, providing users with additional insights into the data they will explore.
+To configure or query a dbt Semantic Layer integration, see Configure a dbt Semantic Layer integration and Query a dbt Semantic Layer integration.
+dbt Data
+The dbt metadata available in Sigma is:  
+Table Description: Provides dbt-source information about the table view. 
+Column Description: Provides dbt-source information about the column views.
+Last Refresh Time: You can view the Last Modified date to verify when that model ran, which is when the data was last updated.
+Tests: Tests are assertions made about your models and other resources in your dbt project (e.g. sources, seeds and snapshots).
+📘
+To see column descriptions and other details persisted to the information schema in Sigma data models and workbooks, you must enable the persist_docs configuration option in dbt. See persist_docs in the dbt documentation. If you do not enable this option, the information schema metadata is only visible when browsing the connection tables.
+After you enable this option in dbt, sync the table in Sigma to get the column descriptions to appear. See Sync your data.
+Requirements
+To configure and manage a dbt integration, you must be assigned the Admin account type.
+Before you start, you need a dbt Service Token. See the dbt documentation on Service account tokens. The Service Token must have at least read access to the dbt account. For example, Read-Only for Team plans and account viewer for Enterprise plans.
+Configure dbt integration
+Complete the steps below to create and configure a connection to dbt.
+Open the Admin Portal by selecting Administration in the user menu at the top right of your screen.
+On the Account tab, scroll down to the Integrations section. To the right of dbt, click Add.
+Under dbt Integration, enter your Service Token and API Host:
+Service Token: View the dbt documentation on Service account tokens.
+API Host: Enter your specific API host. View the dbt documentation on on API access URLs.
+Click Save.
+On the dbt tab, you can view the metadata for the dbt job, columns, and tables.
+📘
+The dbt tab does not show up in the connections view until a job is run in dbt for Sigma to fetch data.
+In the Details section, you can view the metadata for the dbt model you integrated. The Last Modified field lets you verify the freshness of the dbt job. 
+Remove dbt
+After you have successfully integrated your dbt jobs with Sigma, you see the option to Remove the integration.

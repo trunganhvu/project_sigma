@@ -1,0 +1,17 @@
+BinFixed
+Suggest Edits
+The BinFixed function computes the bin for a value among the specified number of identically sized bins within the given bounds.
+Syntax
+BinFixed(value, min, max, bins)
+Function arguments:
+value (required): The value for which the bin is computed.
+min (required): The lower bound. If the value is less than min, the bin will be 0.
+max (required): If the value is greater than or equal to max, the bin will be bins + 1.
+bins (required): The number of bins within the interval. Bins are numbered 1 through bins. If bins is less than 1, all values will treated as belonging to bin 1.
+Example
+The values in the Days Since Signup column are assigned to one of 5 bins:
+BinFixed([Days Since Signup], 0, 90, 3)
+This function places all numbers less than 0 in bin 0, all numbers 90 or greater in bin 4, and all numbers between 0 and 90 are assigned one of 3 equally sized bins. 
+Using bins helps simplify a column to show the duration since the last signup:
+RELATED RESOURCES
+BinRange

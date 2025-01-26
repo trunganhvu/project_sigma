@@ -1,0 +1,143 @@
+License and account type overview
+Suggest Edits
+Sigma’s licensing model includes three tiers that define the usage terms of your organization members: Lite, Essential, and Pro. Each license tier establishes a different set of available permissions that enable access to Sigma’s features and capabilities. These permissions are managed at a granular level using account types. For information about using account types, see Create and manage account types.
+License tiers
+The three license tiers provide different levels of service to accommodate your organization’s diverse user requirements and access control policies.
+Lite license
+The Lite license is suitable for report consumers who require access to prepared data and insights. This license tier allows members to view shared datasets, explorations, and workbooks. Lite-licensed members also have access to baseline interactions in explorations and workbooks, including the ability to update control values, sort column data, view aggregated underlying data, and create bookmarks.
+Essential license
+The Essential license is ideal for decision-making data consumers who require more deep-dive capabilities in published workbooks but don’t need to build workbooks themselves. This license tier includes all Lite license capabilities while also allowing members to drill into unaggregated underlying data, contribute to input tables, download workbook content, and schedule exports and alerts.
+Pro license
+The Pro license is designed for data architects, BI analysts, and report builders who model, transform, and analyze data. This license tier offers the full range of Sigma features and capabilities, including the ability to create and manage datasets, data models, and workbooks. The Pro license also supports system administrators who manage organization settings and members.
+Account types
+While license tiers establish the maximum range of available permissions that enable access to features and capabilities, account types determine the actual permissions and access your organization members are granted. Sigma provides four default account types (Admin, Pro, Essential, and Lite) and supports custom account types that enable or disable any combination of permissions within the constraints of the license tiers.
+Sigma’s customizable account types add flexibility and scalability to the access control model by enabling your organization to manage license permissions at a granular level. This allows your organization to easily modify member access and adapt to the changes in your licensed user base and user requirements.
+Account type permission availability matrix
+The following table compares available account type permissions by license tier.
+  Lite Essential Pro
+Data warehouse
+Connections
+View connections
+Browse connections, schemas, and database tables
+Manage connections1
+Create new connections and manage existing ones
+(Automatically enables the View connections permission)
+Tables
+Annotate tables1
+Annotate database tables (edit column details, metrics, and links)
+Writeback
+Input tables
+Create input tables2
+Create and edit input tables in workbooks
+Materialization
+Schedule materializations2
+Create and edit materialization schedules
+CSV
+Upload CSV
+Upload and analyze CSV data
+Warehouse views
+Create warehouse views2
+Create warehouse views based on datasets and workbook elements
+Data modeling
+Datasets
+View datasets2
+View existing datasets and data models
+Create, edit, and publish datasets2
+Create and manage datasets and data models
+(Automatically enables the View datasets permission)
+Features
+Write SQL
+Query a connected CDW or DBMS directly with SQL
+Documents
+Workbooks
+View workbooks2
+View and interact with explorations and published workbooks
+Can comment on workbooks4
+View and add comments on workbooks
+Basic explore2,3
+View and interact with explorations and published workbooks with added ability to drill into data, filter columns, enter input table data, and more
+(Automatically enables the View workbooks permission)
+Full explore2,3
+Modify workbook elements to create custom views of published workbooks
+(Automatically enables the Basic explore and View workbooks permissions)
+Create, edit, and publish workbooks2
+Create new workbooks and manage existing ones
+(Automatically enables the Full explore, Basic explore, and View workbooks permissions)
+Set workbook data refresh2
+Set an automatic data refresh schedule for a workbook
+(Automatically enables the Create, edit, and publish workbooks permission)
+Version tags
+Apply tag2
+Apply version tags to workbooks or data models
+AI
+Use AI features
+Access AI functionality, including the formula assistant and Explain visualization feature
+Org management
+Usage dashboard
+View usage dashboard
+View the organization dashboard
+View SQL in usage dashboard
+View raw SQL in the organization usage dashboard
+(Automatically enables the View usage dashboard permission)
+Customization
+Manage all workbook themes and fonts
+Create, edit, and delete workbook themes and custom fonts
+Admin
+Manage branding settings
+Manage organization branding settings, including workbook themes, custom fonts, and system emails
+Plugins
+Manage plugins
+Access plugin development features and manage custom plugins
+Badges
+Manage all badges
+Add, change, and remove workbook badges (Endorsed, Warning, or Deprecated)
+Sharing / folders
+Sharing and exports
+Download2
+Immediately download entire workbooks, specific pages, and individual elements
+Export to email2
+Export entire workbooks, specific pages, and individual elements by email
+(Automatically enables the Download permission)
+Run exports as recipient2
+Choose to run exports as the recipients.
+(Automatically enables the Download and Export to Email permissions)
+Export to Google Sheet2
+Export data to Google Sheets spreadsheets
+(Automatically enables the Download permission)
+Export to Google Drive2
+Export data to Google Drive folders
+(Automatically enables the Download permission)
+Export to Slack2
+Export data to Slack channels
+(Automatically enables the Download permission)
+Schedule export2
+Create, edit, and delete scheduled exports and alerts to send entire workbooks, specific pages, and individual elements
+(Automatically enables the Download and Export to Email permissions)
+Share documents2
+Share folders and documents with organization members
+Export to cloud2
+Export data to Google Cloud Storage (GCS) or Amazon S3
+(Automatically enables the Download permission)
+Export to webhook2
+Export data to webhook endpoints
+(Automatically enables the Download permission)
+Folders
+Create new folders2
+Create new personal, workspace, and shared folders
+Contribute to shared folders2
+Create new documents in workspaces and shared folders
+Create new workspace
+Create new organization workspaces
+(Automatically enables the Contribute to shared folders and Share documents permissions)
+1
+Access to individual connections are determined by data permissions.
+2
+Access to individual datasets, data models, and workbooks are determined by folder and document permissions.
+3
+For a comprehensive comparison of user capabilities, see Basic explore vs. Full explore.
+4
+Enables the ability to add and view comments for all license tiers. Also enables screenshot capture and annotation in comments for Essential and Pro licenses only.
+RELATED RESOURCES
+Create and manage account types
+View license utilization
+Basic explore vs. Full explore

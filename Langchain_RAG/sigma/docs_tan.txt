@@ -1,0 +1,10 @@
+Tan
+Suggest Edits
+Computes the tangent of the given angle.
+Usage
+Tan(value)
+value (required): The angle (in radians) whose tangent will be calculated.
+RELATED RESOURCES
+Atan
+Atan2
+Cot

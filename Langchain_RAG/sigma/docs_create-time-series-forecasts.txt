@@ -1,0 +1,37 @@
+Create time series forecasts with ML Forecasting (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+This document explains how to create and update time series forecasts using ML Forecasting in Sigma.
+In a Sigma workbook, you can use historical time series data to predict and visualize future values and trends. This feature enables Sigma users to use Snowflake’s forecasting ML function without requiring prior SQL knowledge. Common use cases for performing time series forecasts can include forecasting revenue metrics, support issue volume, or customer engagement.
+System and user requirements
+You must have a Snowflake connection with write access enabled.
+You must be assigned a Sigma account type with the Create, edit and publish workbook permission enabled. See Account types.
+The Snowflake role used by your Sigma account must be granted privileges to create forecast objects. See Granting privileges to create forecast objects in the Snowflake documentation.
+You must create forecasts within a previously published Sigma workbook. Forecasts cannot be created in an exploration.
+Create a forecast
+From the data table you want to forecast with, select Add child element, then select Forecast.
+Fill out the fields under Create forecast:
+Name: Enter a name for your forecast.
+Timestamp column: Select the column with dates/times you want to use for training. The most recent 500,000 rows will be used for training.
+📘
+You might want to create a filter on your timestamp column to ensure only complete time periods are used for training. For example, if your timestamp column contains an incomplete week (in which only 1 day of data is available for that week), the data from that week will have an outsized impact. This might result in a less accurate forecast.
+Target column: Select the column you want to generate a forecast for. The data in this column must be numeric.
+Forecasting periods: Enter the number of future time periods you want to forecast for. This column follows the same date unit as your Timestamp column. For example, if the intervals in the Timestamp column are in days, entering “5” in this column will forecast values for the next 5 days.
+Output type: Select your desired output type (Line chart visualization or Table).
+Select Create forecast.
+📘
+It is expected that there will be a small gap between the end of training data and start of forecast points where there is limited data available.
+Update a forecast
+To view a different number of forecast periods without retraining the model:
+Select View model info from the from the output chart/table and input the number of forecast periods you want to view.
+To make other updates to your forecasts, including retraining the model to accommodate training data changes:
+Ensure you are in Edit mode. Select View model info from the parent data table:
+Manage: Select Manage to update the Name, Timestamp column, Target column or Forecasting periods. Select Update forecast once you have made the desired changes.
+Retrain: If you make changes to the historical training data, you must select Retrain to update your forecast results.
+Add child element: To add another model output element, select Add child element, then select your desired output type.
+Limitations
+The ML model used for forecasting does not automatically retrain if the underlying data changes. If the data in the parent element changes, you must select View model info from the source data table, then select Retrain for all the listed output elements.
+Forecasting outputs cannot be version tagged.
+The maximum model training time is equal to the query timeout limit configured in your connection. The default limit is 2 minutes. For more details, see query timeouts.

@@ -1,0 +1,16 @@
+CumulativeMin
+Suggest Edits
+The CumulativeMin function identifies the minimum value of a column up to and including the current row value.
+Syntax
+CumulativeMin(column)
+Function Arguments:
+column The column to reference when evaluating the cumulative minimum.
+🚧
+Cumulative functions depend on the order of the referenced column. When you change the column's sort order, the function output may change.
+Example
+CumulativeMin([Sales])
+A table contains the monthly sales for a store. The CumulativeMin function can be used to find the minimum monthly sales amount up to and including the current month.
+RELATED RESOURCES
+CumulativeMin
+Min
+MovingMin

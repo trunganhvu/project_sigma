@@ -1,0 +1,55 @@
+Leverage an explored workbook
+Suggest Edits
+When you interact with a workbook in Explore mode, there are several ways to utilize the resulting explored state.
+This document explains how to perform the following tasks to leverage an explored workbook:
+Share the explored state with other members of your organization
+Save the explored state as a bookmark
+Save the explored state as a new workbook
+Merge the explored state with the draft version
+Copy and paste individual explored elements to the same or different workbook
+User requirements
+To share the explored state with other members of your organization, you must be assigned an account type with the Share documents permission enabled.
+To save the explored state as a bookmark, you must be assigned an account type with the View workbooks permission enabled
+To save the explored state as a new workbook, you must be assigned an account type with the Create, edit, and publish workbooks permission enabled.
+To merge the explored state with the published version of the workbook, you must be assigned an account type with the Create, edit, and publish workbooks permission enabled, and you must be the workbook owner or be granted Can edit workbook permission.
+To copy and paste explored elements, you must be assigned an account type with the Full explore permission enabled. Depending on the paste destination, you may also be required to be the workbook owner or be granted Can explore or Can edit workbook permission.
+Share the explored state with other members
+Create a URL that links to the explored state of a workbook, then share it with other members of your organization. The URL allows recipients to view the explored workbook with your customizations and ad hoc analysis. If granted appropriate account type and workbook permissions, they can also continue exploring the workbook on their own.
+Open a published workbook in Explore mode, then customize the workbook content and perform ad hoc analysis as needed.
+In the workbook header, click the caret () associated with the workbook’s name, then select Share from the menu.
+In the Share Workbook modal, select the Link to current exploration checkbox. This prompts the Copy Link button to generate a URL that navigates to the explored state of the workbook instead of the published version.
+[optional] To allow access to any member of your organization who has the link, click the Allow general sharing by link toggle to the on position. Otherwise, only members explicitly granted workbook permission can access the exploration.
+Click Copy Link, then share the URL with other members.
+Save the explored state as a bookmark
+Bookmark the explored state of a workbook to return to it at another time. You can update the bookmark with additional customizations and ad hoc analysis as needed, all while maintaining connections to real-time underlying data in the workbook’s published version.
+For information about accessing and managing saved bookmarks, see Create and manage bookmarks. The document also includes information about using bookmarks in embedded workbooks.
+Open a published workbook in Explore mode, then customize the workbook content and perform ad hoc analysis as needed.
+In the workbook header, click the Published tag, then select Save as new bookmark from the menu.
+In the Save Bookmark modal, configure the bookmark:
+In the Name field, enter a unique name to identify the bookmark.
+[optional] Select the Always view bookmark… checkbox to default to the bookmark when you open the workbook.
+📘
+This behavior only applies to you. Other members with access to the workbook are not affected by this setting.
+[optional] Select the Share bookmark… checkbox to allow all members (who have access to the workbook) to view the bookmark.
+Click Save.
+Save the explored state as a new workbook
+Save the explored state of a workbook as a new workbook. The explored state becomes the published version of the new workbook, which doesn’t affect or maintain connection to the original workbook’s underlying data.
+Open a published workbook in Explore mode, then customize the workbook content and perform ad hoc analysis as needed.
+In the workbook header, click the caret () associated with the workbook’s name, then select Save as from the menu.
+In the Save a Copy modal, specify the name and destination of the new workbook, then click Save.
+Merge the explored state with the draft version
+Open Edit mode and apply the explored state to the workbook’s draft version, then publish the workbook to save your customizations and ad hoc analysis to the published version.
+Open a published workbook in Explore mode, then customize the workbook content and perform ad hoc analysis as needed.
+In the workbook header, click Edit.
+In the Keep explored changes modal, review the list of changes applied in Explore mode, then click Keep changes to proceed to Edit mode.
+📘
+If you choose to discard your changes in this step, you can return to the explored state at a later time by accessing your record of recent explorations. For more information, see the Return to a recent exploration section in Explore a published workbook.
+Continue editing the workbook as needed, then click Publish to save all changes to the workbook’s published version, including the applied explorations.
+Copy and paste an explored element
+Use the copy and paste functionality to add a copy of an explored element to another page in the same or different workbook.
+Open a published workbook in Explore mode, then customize the workbook content and perform ad hoc analysis as needed.
+Hover over or select the element you want to copy, then click More and select Copy/paste > Copy element from the menu.
+Go to the workbook page where you want to add a copy. Right-click empty space within the page, then select Paste from the menu.
+Sigma adds a copy of the original element and all parent elements in its lineage.
+RELATED RESOURCES
+Explore a published workbook

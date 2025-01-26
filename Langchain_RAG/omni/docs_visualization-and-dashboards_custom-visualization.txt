@@ -1,0 +1,2711 @@
+Visualization & DashboardsCustom visualizations
+On this page
+Custom Visualizations
+Omni supports the most common visualization types and settings out of the box. However, if your business needs customizations, there are a few ways to do this.
+Vega-Lite Visualizations
+Many of our charts use Vega-Lite under the hood (bar, columnm, line, area, heatmap, boxplot, etc.). These charts are defined in JSON and Omni allows you to directly edit that code to customize a chart beyond what the Omni interaface provides. If you are unfamiliar with Vega-Lite, check out the full Vega-Lite documentation and examples.
+Accessing the Vega-Lite JSON
+For any chart that is powered by Vega-Lite, View Source menu at the top of the editor with the following options:
+View source... opens a dialog to see the JSON with an option to copy the code to the clipboard
+Open in advanced editor copies the current code and opens it in the Vega code editor
+In the Chart selector, there is an option for Vega code. Selecting this option takes you directly to the Vega code editor, but without any pre-populated code. This is useful if you want to start completely from scratch, say with an example chart.
+Referencing data in the Vega Code Editor
+To use data from the results query, you will need to reference the field by its view and field name as they are defined in the model. This will look like view_name\\.field_name in the editor. Note that periods and brackets need to be escaped. This requires a double forward-slash as follows:
+Omni object --> Vega object
+users.id --> users\\.id
+users.age --> users\\.age
+users.created_at --> users\\.created_at
+users.created_at[date] --> users\\.created_at\\[date\\]
+users.created_at[month] --> users\\.created_at\\[month\\]
+id --> id note 'id' would only occur from a raw SQL query, as Omni will alias with the view
+Saving Your Visualization
+While the visualization will automatically update as you edit the code, the code is not auto-saved. Custom visualizations need to be explicitly saved; they will not auto-save. Simply click Save to preserve your code changes. Reset will remove all edits you made to the original code, if you arrived in the editor from another Omni visualization.
+iframe Custom Visualizations
+Another way to create a custom visualization is leveraging an iframe tag in the markdown tiles. The data in results + postMessages will render your custom iframes and provide a ton of flexibility.
+The pattern is:
+  <iframe scr = "https://example.html"> </iframe>
+Some current limitations: these images won't render if they are scheduled and the creator must host the file somewhere outside Omni.
+Examples
+Below, we've included several custom examples of Vega specs in Omni.
+US Map Example (State)
+WARNING
+It's recommended to use native map visualization for this.
+Query Fields:
+users.state Note: full-length state names are required for this visualization. To remove the legend from this visualization, add "legend":null within color{...
+users.user_count
+
+{
+  "layer": [
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "fill": "lightgray",
+        "type": "geoshape",
+        "stroke": "black"
+      }
+    },
+    {
+      "mark": "geoshape",
+      "width": "container",
+      "height": "container",
+      "encoding": {
+        "href": {
+          "type": "nominal",
+          "field": "url"
+        },
+        "color": {
+          "type": "quantitative",
+          "field": "COLOR"
+        },
+        "shape": {
+          "type": "geojson",
+          "field": "geo"
+        },
+        "tooltip": [
+          {
+            "field": "STATE",
+            "title": "State"
+          },
+          {
+            "type": "quantitative",
+            "field": "COLOR",
+            "title": "User Count"
+          }
+        ]
+      }
+    }
+  ],
+  "width": "container",
+  "height": "container",
+  "transform": [
+        {
+          "as": "STATE",
+          "calculate": "datum['your_view.your_state']"
+        },
+        {
+          "as": "COLOR",
+          "calculate": "datum['your_view.your_measure']"
+        },
+    {
+      "as": "geo",
+      "from": {
+        "key": "properties.name",
+        "data": {
+          "url": "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json",
+          "format": {
+            "type": "topojson",
+            "feature": "states"
+          }
+        }
+      },
+      "lookup": "STATE"
+    },
+    {
+      "as": "url",
+      "calculate": "'https://sandbox.proto.exploreomni.com/w/0a494c7e-3d8a-4f31-aa53-cb8d1e62f4fa/drill?ephemeral=DyXjRBEJ%2CRveZe1I6%2CZUK24UVr%2CHehug3WH%2CbuG0igrs%2CcNuuSY8a%2CnOHD__EL%2C3Dgpwy5c%2C0ta1FE8v%2CSsbC6Jdf&field=users.count&filters=%7B%7D&miniUuid=ZUK24UVr&row=%7B%22users.state%22%3A%22' + datum['users\\.state'] + '%22%2C%22state_id.state_id%22%3A%221%22%2C%22users.count%22%3A%221625%22%7D' "
+    }
+  ],
+  "projection": {
+    "type": "albersUsa"
+  }
+}
+
+US Map Example (Lat, Long)
+WARNING
+It's recommended to use native map visualization for this.
+Query Fields:
+users.zip
+users.zip_first_digit
+users.latitude_average
+users.longitude_average
+users.user_count
+{
+  "layer": [
+    {
+      "data": {
+        "url": "https://vega.github.io/editor/data/us-10m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "fill": "lightgray",
+        "type": "geoshape",
+        "stroke": "white"
+      }
+    },
+    {
+      "transform": [
+        {
+          "as": "LATITUDE",
+          "calculate": "datum['users\\.latitude_average']"
+        },
+        {
+          "as": "LONGITUDE",
+          "calculate": "datum['users\\.longitude_average']"
+        },
+        {
+          "as": "COLOR",
+          "calculate": "datum['calc_1']"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "tooltip": true
+      },
+      "encoding": {
+        "size": {
+          "value": 5
+        },
+        "color": {
+          "type": "nominal",
+          "field": "COLOR",
+          "scale": {
+            "scheme": "magma"
+          },
+          "legend": null
+        },
+        "latitude": {
+          "type": "quantitative",
+          "field": "LATITUDE"
+        },
+        "longitude": {
+          "type": "quantitative",
+          "field": "LONGITUDE"
+        }
+      }
+    }
+  ],
+  "width": "container",
+  "height": "container",
+  "projection": {
+    "type": "albersUsa"
+  }
+}
+US Map Example (Zip Code Chloropleth)
+WARNING
+It's recommended to use native map visualization for this.
+Query Fields:
+users.zip
+users.user_count
+{
+  "layer": [
+    {
+      "data": {
+        "url": "https://vega.github.io/editor/data/us-10m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "fill": "white",
+        "type": "geoshape",
+        "stroke": "black"
+      }
+    },
+    {
+      "mark": "geoshape",
+      "width": "container",
+      "height": "container",
+      "encoding": {
+        "color": {
+          "type": "quantitative",
+          "field": "users\\.count",
+          "scale": {
+            "domain": [
+              0,
+              20
+            ],
+            "scheme": "blues"
+          },
+          "legend": null
+        },
+        "shape": {
+          "type": "geojson",
+          "field": "geo"
+        },
+        "tooltip": [
+          {
+            "field": "ZIP"
+          },
+          {
+            "type": "quantitative",
+            "field": "COLOR",
+            "title": "Users Count"
+          }
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+          "as": "ZIP",
+          "calculate": "datum['users.zip']"
+        },
+        {
+          "as": "COLOR",
+          "calculate": "datum['users.count']"
+        },
+
+    {
+      "as": "geo",
+      "from": {
+        "key": "properties.zip",
+        "data": {
+          "url": "https://gist.githubusercontent.com/jefffriesen/6892860/raw/e1f82336dde8de0539a7bac7b8bc60a23d0ad788/zips_us_topo.json",
+          "format": {
+            "type": "topojson",
+            "feature": "zip_codes_for_the_usa"
+          }
+        }
+      },
+      "lookup": "ZIP"
+    }
+  ],
+  "projection": {
+    "type": "albersUsa"
+  }
+}
+Map Example (Zip Code Chloropleth, Washington DC)
+Query Fields:
+users.zip
+users.user_count
+{
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/dc_district_of_columbia_zip_codes_geo.min.json",
+        "format": {
+          "property": "features"
+        }
+      },
+      "mark": {
+        "fill": "white",
+        "type": "geoshape",
+        "stroke": "black"
+      }
+    },
+    {
+      "mark": "geoshape",
+      "width": "container",
+      "height": "container",
+      "encoding": {
+        "color": {
+          "type": "quantitative",
+          "field": "users\\.count",
+          "scale": {
+            "domain": [
+              0,
+              20
+            ],
+            "scheme": "blues"
+          },
+          "legend": null
+        },
+        "shape": {
+          "type": "geojson",
+          "field": "geo"
+        },
+        "tooltip": [
+          {
+            "field": "users\\.zip"
+          },
+          {
+            "type": "quantitative",
+            "field": "users\\.count",
+            "title": "Users Count"
+          }
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "as": "geo",
+      "from": {
+        "key": "properties.ZCTA5CE10",
+        "data": {
+          "url": "https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/dc_district_of_columbia_zip_codes_geo.min.json",
+          "format": {
+            "property": "features"
+          }
+        }
+      },
+      "lookup": "users\\.zip"
+    }
+  ],
+  "projection": {
+    "type": "albersUsa"
+  }
+}
+Sankey Chart
+This shows the flow of users through two or more stages. The data set requires values for the start and end stack portions (start_at, end_at), stages of the flow (start_stack), and the size of the flow (size). The field mapping has been pulled into a pair of calculate areas to map fields to the spec.
+Query Fields:
+start_at
+end_at
+size
+start_stack
+Example data set:
+{
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "stroke": "white",
+            "tooltip": true
+          },
+          "encoding": {
+            "y": {
+              "type": "quantitative",
+              "field": "stack"
+            },
+            "y2": {
+              "field": "stack_end"
+            },
+            "color": {
+              "field": "block",
+              "scale": {
+                "scheme": "tableau10"
+              },
+              "legend": null
+            }
+          }
+        },
+        {
+          "mark": {
+            "y": {
+              "expr": "scale('y', datum.stack + datum.SIZE / 2)"
+            },
+            "dx": {
+              "expr": "bandwidth('x') / 2 + 2"
+            },
+            "dy": -2,
+            "type": "text",
+            "align": "left"
+          },
+          "encoding": {
+            "text": {
+              "value": {
+                "expr": "[datum.block, format(datum.SIZE, ',.0d') + ' (' + format(datum.percentage,',.1%') + ')']"
+              }
+            }
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "type": "nominal",
+          "field": "x"
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "block"
+          },
+          {
+            "type": "quantitative",
+            "field": "SIZE"
+          },
+          {
+            "type": "quantitative",
+            "field": "percentage",
+            "format": ".1%"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "as": "START_AT",
+          "calculate": "datum['your_view.your_start_at']"
+        },
+        {
+          "as": "END_AT",
+          "calculate": "datum['your_view.your_end_at']"
+        },
+        {
+          "as": "SIZE",
+          "calculate": "datum['your_view.your_size']"
+        },
+        {
+          "as": "START_STACK",
+          "calculate": "datum['your_view.your_start_stack']"
+        },
+        {
+          "as": "x",
+          "calculate": "[datum.START_STACK, datum.START_STACK + 1]"
+        },
+        {
+          "as": "block",
+          "calculate": "[datum.START_AT, datum.END_AT]"
+        },
+        {
+          "as": [
+            "x",
+            "block"
+          ],
+          "flatten": [
+            "x",
+            "block"
+          ]
+        },
+        {
+          "groupby": [
+            "x",
+            "block",
+            "START_STACK"
+          ],
+          "aggregate": [
+            {
+              "as": "SIZE",
+              "op": "sum",
+              "field": "SIZE"
+            }
+          ]
+        },
+        {
+          "groupby": [
+            "x",
+            "block"
+          ],
+          "aggregate": [
+            {
+              "as": "SIZE",
+              "op": "max",
+              "field": "SIZE"
+            }
+          ]
+        },
+        {
+          "as": "key",
+          "calculate": "datum.block + '@' + datum.x"
+        },
+        {
+          "as": "stack",
+          "sort": [
+            {
+              "field": "block",
+              "order": "ascending"
+            }
+          ],
+          "stack": "SIZE",
+          "groupby": [
+            "x"
+          ]
+        },
+        {
+          "groupby": [
+            "x"
+          ],
+          "joinaggregate": [
+            {
+              "as": "total_size",
+              "op": "sum",
+              "field": "SIZE"
+            }
+          ]
+        },
+        {
+          "as": "percentage",
+          "calculate": "datum.SIZE/datum.total_size"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "x": {
+          "expr": "scale('x', datum.offset.stack) + bandwidth('x') * datum.offset.shift"
+        },
+        "line": false,
+        "type": "area",
+        "stroke": "lightgrey",
+        "opacity": 0.25,
+        "tooltip": true,
+        "interpolate": "basis"
+      },
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "offset.y"
+        },
+        "y2": {
+          "field": "offset.y2"
+        },
+        "color": {
+          "field": "START_AT",
+          "scale": {
+            "scheme": "tableau10"
+          },
+          "legend": null
+        },
+        "detail": {
+          "field": "key"
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "START_AT",
+            "title": "from"
+          },
+          {
+            "type": "nominal",
+            "field": "END_AT",
+            "title": "to"
+          },
+          {
+            "type": "quantitative",
+            "field": "SIZE"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "as": "START_AT",
+          "calculate": "datum['your_view.your_start_at']"
+        },
+        {
+          "as": "END_AT",
+          "calculate": "datum['your_view.your_end_at']"
+        },
+        {
+          "as": "SIZE",
+          "calculate": "datum['your_view.your_size']"
+        },
+        {
+          "as": "START_STACK",
+          "calculate": "datum['your_view.your_start_stack']"
+        },
+        {
+          "as": "key",
+          "calculate": "datum.START_AT + ' ' + datum.END_AT + ' ' + datum.START_STACK"
+        },
+        {
+          "as": "end_stack",
+          "calculate": "datum.START_STACK + 1"
+        },
+        {
+          "as": "start_block_offset",
+          "calculate": "pluck(data('data_1'), 'stack')[indexof(pluck(data('data_1'), 'key'), datum.START_AT + '@' + datum.START_STACK)]"
+        },
+        {
+          "as": "end_block_offset",
+          "calculate": "pluck(data('data_1'), 'stack')[indexof(pluck(data('data_1'), 'key'), datum.END_AT + '@' + datum.end_stack)]"
+        },
+        {
+          "as": "start_stack_size",
+          "sort": [
+            {
+              "field": "END_AT",
+              "order": "ascending"
+            }
+          ],
+          "stack": "SIZE",
+          "groupby": [
+            "START_STACK",
+            "START_AT"
+          ]
+        },
+        {
+          "as": "end_stack_size",
+          "sort": [
+            {
+              "field": "START_AT",
+              "order": "ascending"
+            }
+          ],
+          "stack": "SIZE",
+          "groupby": [
+            "end_stack",
+            "END_AT"
+          ]
+        },
+        {
+          "as": "offsets",
+          "calculate": "[{'order': 1, 'stack': datum.START_STACK, 'shift': 1, 'y': datum.start_block_offset + datum.start_stack_size, 'y2': datum.start_block_offset + datum.start_stack_size_end}, {'order': 2, 'stack': datum.START_STACK, 'shift': 1.5, 'y': datum.start_block_offset + datum.start_stack_size, 'y2': datum.start_block_offset + datum.start_stack_size_end}, {'order': 3, 'stack': datum.end_stack, 'shift': -0.5, 'y': datum.end_block_offset + datum.end_stack_size, 'y2': datum.end_block_offset + datum.end_stack_size_end}, {'order': 4, 'stack': datum.end_stack, 'shift': 0, 'y': datum.end_block_offset + datum.end_stack_size, 'y2': datum.end_block_offset + datum.end_stack_size_end}]"
+        },
+        {
+          "as": [
+            "offset"
+          ],
+          "flatten": [
+            "offsets"
+          ]
+        }
+      ]
+    }
+  ],
+  "width": "container",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axisX": {
+      "disable": true
+    },
+    "axisY": {
+      "disable": true
+    },
+    "scale": {
+      "bandPaddingInner": 0.7,
+      "bandPaddingOuter": 0.2
+    }
+  },
+  "height": "container",
+  "resolve": {
+    "scale": {
+      "x": "shared",
+      "y": "shared",
+      "color": "shared"
+    }
+  }
+}
+Radial Chart
+This layers in exploding pie slices using the square root of the value. Mostly of aesthetic style.
+Query Fields:
+products.category
+order_items.sale_price_sum
+{
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "stroke": "#fff",
+        "innerRadius": 30
+      }
+    },
+    {
+      "mark": {
+        "dx": 4,
+        "type": "text",
+        "align": "center",
+        "radiusOffset": 30
+      },
+      "encoding": {
+        "text": {
+          "type": "nominal",
+          "field": "COLOR"
+        }
+      }
+    }
+  ],
+  "height": "container",
+  "width": "container",
+  "encoding": {
+    "color": {
+      "type": "nominal",
+      "field": "SIZE",
+      "legend": null
+    },
+    "theta": {
+      "type": "quantitative",
+      "field": "SIZE",
+      "stack": true
+    },
+    "radius": {
+      "field": "SIZE",
+      "scale": {
+        "type": "sqrt",
+        "zero": true,
+        "rangeMin": 20
+      }
+    },
+    "tooltip": [
+      {
+        "type": "nominal",
+        "field": "COLOR",
+        "title": "Category"
+      },
+      {
+        "type": "quantitative",
+        "field": "SIZE",
+        "title": "Sales",
+        "format": ",.2f"
+      }
+    ]
+  },
+      "transform": [
+        {
+          "as": "COLOR",
+          "calculate": "datum['products.category']"
+        },
+        {
+          "as": "SIZE",
+          "calculate": "datum['order_items.sale_price_sum']"
+        }
+      ]
+}
+Cross Filtered Chart Pair
+The visualization aggregates the top visualization over the highlight selection. Mainly a proof of concept for highly interactive vis. We essentially build two charts from the data table, stack them, and wire them together. Note also this vis uses pixel sizing, which is not ideal for use on dashboards (where "container" should be used for sizing).
+Query Fields:
+order_items.created_at[date] filtered to 2021, the x-axis
+products.category filtered to five products, forming the color facets
+order_items.sale_price_sum the y-axis
+order_items.count the bubble size
+{
+  "vconcat": [
+    {
+      "mark": "point",
+      "width": 600,
+      "height": 300,
+      "params": [
+        {
+          "name": "brush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "type": "temporal",
+          "field": "X_AXIS",
+          "title": "Date"
+        },
+        "y": {
+          "type": "quantitative",
+          "field": "TOP_Y",
+          "title": "Total Sales"
+        },
+        "size": {
+          "type": "quantitative",
+          "field": "BOTTOM_Y",
+          "title": "Count of Sales"
+        },
+        "color": {
+          "value": "lightgray",
+          "condition": {
+            "type": "nominal",
+            "field": "COLOR",
+            "param": "brush",
+            "title": "Category"
+          }
+        }
+      },
+      "transform": [
+        {
+          "as": "X_AXIS",
+          "calculate": "datum['order_items.created_at[date]']"
+        },
+        {
+          "as": "TOP_Y",
+          "calculate": "datum['order_items.sale_price_sum']"
+        },
+        {
+          "as": "BOTTOM_Y",
+          "calculate": "datum['order_items.order_count']"
+        },
+        {
+          "as": "COLOR",
+          "calculate": "datum['products.category']"
+        },
+        {
+          "filter": {
+            "param": "click"
+          }
+        }
+      ]
+    },
+    {
+      "mark": "bar",
+      "width": 600,
+      "params": [
+        {
+          "name": "click",
+          "select": {
+            "type": "point",
+            "encodings": [
+              "color"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "TOP_Y",
+          "title": "Sales",
+          "aggregate": "sum"
+        },
+        "y": {
+          "field": "COLOR",
+          "title": "Category"
+        },
+        "color": {
+          "value": "lightgray",
+          "condition": {
+            "field": "COLOR",
+            "param": "click"
+          }
+        }
+      },
+      "transform": [
+        {
+          "as": "X_AXIS",
+          "calculate": "datum['order_items.created_at[date]']"
+        },
+        {
+          "as": "TOP_Y",
+          "calculate": "datum['order_items.sale_price_sum']"
+        },
+        {
+          "as": "BOTTOM_Y",
+          "calculate": "datum['order_items.order_count']"
+        },
+        {
+          "as": "COLOR",
+          "calculate": "datum['products.category']"
+        },
+        {
+          "filter": {
+            "param": "brush"
+          }
+        }
+      ]
+    }
+  ]
+}
+Flag Marks Scatterplot
+CAREFUL
+This will not render through the scheduler
+The chart uses data about each country's economy, along with emojis representing the flag. There are several other measures available that are not visualized in the chart. Here we are simply swapping the mark for text (the emoji), and created a normal scatterplot otherwise. We also have some small transformations on the axes to use log-scale.
+Query Fields:
+flag
+name (country name)
+rank
+gdp
+growth
+population
+gdp_per_capita
+gdp_percent_share
+{
+  "mark": {
+    "type": "text",
+    "fontSize": 30
+  },
+  "width": "container",
+  "height": "container",
+  "transform": [
+    {
+      "as": "COUNTRY",
+      "calculate": "datum['users.country']"
+    },
+    {
+      "as": "X_AXIS",
+      "calculate": "datum['users.count']"
+    },
+    {
+      "as": "Y_AXIS",
+      "calculate": "datum['order_items.sale_price_sum']"
+    },
+    {
+      "as": "ICON",
+      "calculate": "datum['calc_1']"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "type": "quantitative",
+      "field": "X_AXIS",
+      "scale": {
+        "type": "log"
+      }
+    },
+    "y": {
+      "axis": {
+        "labelOverlap": true
+      },
+      "type": "quantitative",
+      "field": "Y_AXIS",
+      "scale": {
+        "type": "log"
+      }
+    },
+    "text": {
+      "type": "nominal",
+      "field": "ICON"
+    },
+    "tooltip": [
+      {
+        "sort": null,
+        "type": "nominal",
+        "field": "ICON"
+      },
+      {
+        "sort": null,
+        "type": "nominal",
+        "field": "name",
+        "title": "COUNTRY"
+      },
+      {
+        "sort": null,
+        "type": "quantitative",
+        "field": "X_AXIS"
+      },
+      {
+        "type": "quantitative",
+        "field": "Y_AXIS"
+      }
+    ]
+  }
+}
+Waterfall
+This chart requires both a custom visualization spec and some query munging. We can probably make this a bit simpler, but it's instructive for now on how flexible querying plus custom vis can be. Here we simulate some change data state by state and then append special bars for the start and finish values. This can probably become dynamic in the future. The data is mashed together via a simple SQL union. Note there is also quite a bit of calculation in the Vega spec, showing the ability to extend the basic data set to enhance the vis.
+Query Fields:
+label
+value
+Unioned Queries
+Begin row: start value, must be named 'Begin' for label, this can be replaced with the first value from the data set in the future
+Waterfall data set: usually easiest to build with UI and drop in the SQL or via a SQL block
+End row: value must be 0, must be named 'End', this can be replaced in the future since it's all implied
+{
+  "layer": [
+    {
+      "mark": {
+        "size": 45,
+        "type": "bar"
+      },
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "previous_sum",
+          "title": "Amount"
+        },
+        "y2": {
+          "field": "sum"
+        },
+        "color": {
+          "value": "#93c4aa",
+          "condition": [
+            {
+              "test": "datum.LABEL === 'Begin' || datum.LABEL === 'End'",
+              "value": "#f7e0b6"
+            },
+            {
+              "test": "datum.sum < datum.previous_sum",
+              "value": "#f78a64"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#404040",
+        "opacity": 1,
+        "xOffset": -22.5,
+        "x2Offset": 22.5,
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "sum"
+        },
+        "x2": {
+          "field": "lead"
+        }
+      }
+    },
+    {
+      "mark": {
+        "dy": -4,
+        "type": "text",
+        "baseline": "bottom"
+      },
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "sum_inc"
+        },
+        "text": {
+          "type": "nominal",
+          "field": "sum_inc",
+          "format": "bigusdcurrency_2",
+          "formatType": "omniNumberFormat"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['sum_inc'] == 0",
+            "value": "0"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "dy": 4,
+        "type": "text",
+        "baseline": "top"
+      },
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "sum_dec"
+        },
+        "text": {
+          "type": "nominal",
+          "field": "sum_dec",
+          "format": "bigusdcurrency_2",
+          "formatType": "omniNumberFormat"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['sum_dec'] == 0",
+            "value": "0"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "y": {
+          "type": "quantitative",
+          "field": "center"
+        },
+        "text": {
+          "type": "nominal",
+          "field": "AMOUNT",
+          "format": "bigusdcurrency_2",
+          "formatType": "omniNumberFormat"
+        },
+        "color": {
+          "value": "white",
+          "condition": [
+            {
+              "test": "datum.LABEL === 'Begin' || datum.LABEL === 'End'",
+              "value": "#725a30"
+            }
+          ]
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['amount_percent'] < 0.07",
+            "value": "0"
+          }
+        }
+      }
+    }
+  ],
+  "width": "container",
+  "config": {
+    "text": {
+      "color": "#404040",
+      "fontWeight": "bold"
+    }
+  },
+  "height": "container",
+  "encoding": {
+    "x": {
+      "axis": {
+        "title": "Months",
+        "labelAngle": 0
+      },
+      "sort": null,
+      "type": "ordinal",
+      "field": "LABEL"
+    }
+  },
+  "transform": [
+    {
+      "as": "LABEL",
+      "calculate": "datum['label_test']"
+    },
+    {
+      "as": "AMOUNT",
+      "calculate": "datum['amount_test']"
+    },
+    {
+      "window": [
+        {
+          "as": "sum",
+          "op": "sum",
+          "field": "AMOUNT"
+        }
+      ]
+    },
+    {
+      "window": [
+        {
+          "as": "lead",
+          "op": "lead",
+          "field": "LABEL"
+        }
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "as": "total",
+          "op": "sum",
+          "field": "AMOUNT"
+        }
+      ]
+    },
+    {
+      "as": "lead",
+      "calculate": "datum.lead === null ? datum.LABEL : datum.lead"
+    },
+    {
+      "as": "previous_sum",
+      "calculate": "datum.LABEL === 'End' ? 0 : datum.sum - datum.AMOUNT"
+    },
+    {
+      "as": "amount",
+      "calculate": "datum.LABEL === 'End' ? datum.sum : datum.AMOUNT"
+    },
+    {
+      "as": "text_amount",
+      "calculate": "(datum.LABEL !== 'Begin' && datum.LABEL !== 'End' && datum.AMOUNT > 0 ? '+' : '') + datum.AMOUNT"
+    },
+    {
+      "as": "amount_percent",
+      "calculate": "abs(datum.AMOUNT) / datum.total"
+    },
+    {
+      "as": "center",
+      "calculate": "(datum.sum + datum.previous_sum) / 2"
+    },
+    {
+      "as": "sum_dec",
+      "calculate": "datum.sum < datum.previous_sum ? datum.sum : ''"
+    },
+    {
+      "as": "sum_inc",
+      "calculate": "datum.sum > datum.previous_sum ? datum.sum : ''"
+    }
+  ]
+}
+Tapered Funnel
+This chart is for measuring a funnel with several filtered measures. It calculates both overall drop-off and step-by-step dropoff. The vis can be tweaked to more or fewer stages by editing the fold section and then the subsequent steps below, removing the backticks - ie. users\\.count then "measurename": "users.count".
+Query Fields:
+users.count
+users.count_california_seniors
+users.count_minors
+users.count_california_minors
+{
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "transparent"
+      },
+      "encoding": {
+        "x": {
+          "axis": "",
+          "type": "quantitative",
+          "field": "stagePos"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "axis": "",
+          "type": "quantitative",
+          "field": "negCount"
+        },
+        "color": {
+          "field": "stage",
+          "scale": {
+            "scheme": {
+              "name": "oranges",
+              "extent": [
+                0.8,
+                0
+              ]
+            }
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "stage",
+            "title": "Stage"
+          },
+          {
+            "type": "quantitative",
+            "field": "count",
+            "title": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "dx": {
+          "expr": "datum.labelLeft ? -4 : 4"
+        },
+        "type": "text",
+        "align": {
+          "expr": "datum.labelLeft ? 'right' : 'left'"
+        }
+      },
+      "encoding": {
+        "x": {
+          "axis": "",
+          "type": "quantitative",
+          "field": "negCount"
+        },
+        "text": {
+          "field": "count"
+        }
+      }
+    },
+    {
+      "mark": {
+        "dx": 4,
+        "type": "text",
+        "align": "left"
+      },
+      "encoding": {
+        "x": {
+          "axis": "",
+          "type": "quantitative",
+          "field": "stagePos"
+        },
+        "text": {
+          "field": "stage"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "x": {
+          "axis": "",
+          "type": "quantitative",
+          "field": "cumulativePos"
+        },
+        "text": {
+          "field": "cumulativePct",
+          "format": ".1%"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "x": {
+          "axis": "",
+          "type": "quantitative",
+          "field": "conversionPos"
+        },
+        "text": {
+          "field": "conversionPct",
+          "format": ".1%"
+        }
+      },
+      "transform": [
+        {
+          "filter": "isValid(datum.previousCount)"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "dx": {
+          "expr": "datum.dx"
+        },
+        "type": "text",
+        "align": {
+          "expr": "datum.align"
+        }
+      },
+      "encoding": {
+        "x": {
+          "axis": "",
+          "type": "quantitative",
+          "field": "pos"
+        },
+        "y": {
+          "axis": null,
+          "type": "nominal",
+          "datum": "0. Titles"
+        },
+        "text": {
+          "field": "caption"
+        }
+      },
+      "transform": [
+        {
+          "filter": "!isValid(datum.previousCount)"
+        },
+        {
+          "as": "zero",
+          "calculate": "0"
+        },
+        {
+          "as": [
+            "column",
+            "pos"
+          ],
+          "fold": [
+            "stagePos",
+            "zero",
+            "cumulativePos",
+            "conversionPos"
+          ]
+        },
+        {
+          "from": {
+            "key": "column",
+            "data": {
+              "values": [
+                {
+                  "dx": 4,
+                  "align": "left",
+                  "column": "stagePos",
+                  "caption": "Stage"
+                },
+                {
+                  "dx": -4,
+                  "align": "right",
+                  "column": "zero",
+                  "caption": "Count"
+                },
+                {
+                  "dx": 0,
+                  "align": "center",
+                  "column": "cumulativePos",
+                  "caption": "Overall"
+                },
+                {
+                  "dx": 0,
+                  "align": "center",
+                  "column": "conversionPos",
+                  "caption": "Previous"
+                }
+              ]
+            },
+            "fields": [
+              "caption",
+              "align",
+              "dx"
+            ]
+          },
+          "lookup": "column"
+        }
+      ]
+    }
+  ],
+  "width": "container",
+  "height": "container",
+  "encoding": {
+    "y": {
+      "axis": "",
+      "type": "nominal",
+      "field": "stage"
+    }
+  },
+  "transform": [
+    {
+      "as": [
+        "measurename",
+        "count"
+      ],
+      "fold": [
+        "users\\.count",
+        "users\\.count_california_seniors",
+        "users\\.count_minors",
+        "users\\.count_california_minors"
+      ]
+    },
+    {
+      "from": {
+        "key": "measurename",
+        "data": {
+          "values": [
+            {
+              "stage": "1. Users",
+              "measurename": "users.count"
+            },
+            {
+              "stage": "2. California ",
+              "measurename": "users.count_california_seniors"
+            },
+            {
+              "stage": "3. Minors",
+              "measurename": "users.count_minors"
+            },
+            {
+              "stage": "4. California Minors",
+              "measurename": "users.count_california_minors"
+            }
+          ]
+        },
+        "fields": [
+          "stage"
+        ]
+      },
+      "lookup": "measurename"
+    },
+    {
+      "joinaggregate": [
+        {
+          "as": "maxCount",
+          "op": "max",
+          "field": "count"
+        }
+      ]
+    },
+    {
+      "sort": [
+        {
+          "field": "stage",
+          "order": "ascending"
+        }
+      ],
+      "window": [
+        {
+          "as": "previousCount",
+          "op": "lag",
+          "field": "count"
+        }
+      ]
+    },
+    {
+      "as": "cumulativePct",
+      "calculate": "datum.count / datum.maxCount"
+    },
+    {
+      "as": "conversionPct",
+      "calculate": "datum.count / datum.previousCount"
+    },
+    {
+      "as": "countPos",
+      "calculate": "datum.maxCount * 0.5"
+    },
+    {
+      "as": "cumulativePos",
+      "calculate": "datum.maxCount * 0.08"
+    },
+    {
+      "as": "conversionPos",
+      "calculate": "datum.maxCount * 0.16"
+    },
+    {
+      "as": "stagePos",
+      "calculate": "datum.maxCount * -1.2"
+    },
+    {
+      "as": "negCount",
+      "calculate": "-datum.count"
+    },
+    {
+      "as": "labelLeft",
+      "calculate": "datum.count < 0.1 * datum.maxCount"
+    }
+  ]
+}
+Centered Funnel
+Funnel with Currency
+Funnel with 1 Dimensions & 1 Measure
+Funnel with 3 Measures
+Table Results:
+Code example:
+{
+"layer": [
+  {
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "axis": false,
+        "type": "quantitative",
+        "field": "AMOUNT",
+        "stack": "center"
+      },
+      "color": {
+        "type": "nominal",
+        "field": "COLOR",
+        "legend": null
+      }
+    }
+  },
+  {
+    "layer": [
+      {
+        "mark": {
+          "dx": 0,
+          "type": "text",
+          "align": "right"
+        },
+        "encoding": {
+          "text": {
+            "type": "quantitative",
+            "field": "AMOUNT",
+            "format": "USDCURRENCY",
+            "formatType": "omniNumberFormat"
+          }
+        }
+      },
+      {
+        "mark": {
+          "dx": 10,
+          "type": "text",
+          "align": "left"
+        },
+        "encoding": {
+          "text": {
+            "type": "quantitative",
+            "field": "PERCENT",
+            "format": "PERCENT",
+            "formatType": "omniNumberFormat",
+            "condition": {
+              "test": "datum['PERCENT'] > 1",
+              "value": "N/A"
+            }
+          }
+        }
+      }
+    ]
+  }
+],
+"transform": [
+  {
+    "as": "COLOR",
+    "calculate": "datum['events.event_type']"
+  },
+  {
+    "as": "AMOUNT",
+    "calculate": "datum['events.count']"
+  },
+  {
+    "window": [
+      {
+        "field": "AMOUNT",
+        "op": "lag",
+        "as": "PREVIOUS_AMOUNT"
+      }
+    ]
+  },
+  {
+    "as": "PERCENT",
+    "calculate": "datum.AMOUNT/datum.PREVIOUS_AMOUNT"
+  }
+],
+"width": "container",
+"height": "container",
+"encoding": {
+  "y": {
+    "axis": {
+      "title": false
+    },
+    "sort": null,
+    "type": "nominal",
+    "field": "events\\.event_type"
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gantt Charts (Timeline Charts)
+This chart takes advantage of x, x2 in Vega to create a start and end point for bars along a timeline for each user. It also includes a small bit of config to improve the axis labels. Color could be including in an additional facet, using one more dimension to group different users together.
+Query Fields:
+users.full_name
+users.created_at[date]
+order_items.created_at[date]
+{
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "DIM",
+      "type": "ordinal",
+      "axis": {
+        "title": "Name"
+      }
+    },
+    "x": {
+      "field": "START",
+      "type": "temporal",
+      "axis": {
+        "title": "Date"
+      }
+    },
+    "x2": {
+      "field": "END",
+      "type": "temporal"
+    }
+  },
+  "transform": [
+    {
+      "as": "DIM",
+      "calculate": "datum['users.full_name']"
+    },
+    {
+      "as": "START",
+      "calculate": "datum['users.created_at[date]']"
+    },
+    {
+      "as": "END",
+      "calculate": "datum['order_items.created_at[date]']"
+    }
+  ]
+}
+Isotope (Stacked Icons)
+This chart is a bit different than most because it needs the full granularity in the data set to create the stacked icons. There are likely more intelligent ways to build this on top of grouped data, but out of scope with this example. This example is also contrived and grouped email domains with icons. The core technique is mapping the repeated values into icons, then stacking them. Note that users.id is included in order to create one entry per row.
+Query Fields:
+users.email_domain
+users.id
+{
+  "mark": {
+    "type": "text",
+    "baseline": "middle"
+  },
+  "width": "container",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
+  "height": "container",
+  "encoding": {
+    "x": {
+      "axis": null,
+      "type": "ordinal",
+      "field": "rank"
+    },
+    "y": {
+      "type": "nominal",
+      "field": "DIM",
+      "title": null
+    },
+    "size": {
+      "value": 40
+    },
+    "text": {
+      "type": "nominal",
+      "field": "emoji"
+    }
+  },
+  "transform": [
+    {
+      "as": "DIM",
+      "calculate": "datum['users\\.traffic_source']"
+    },
+    {
+      "as": "COUNTER",
+      "calculate": "datum['users.id']"
+    },
+    {
+      "as": "emoji",
+      "calculate": "{'Search': '🐄', 'Display': '🐏', 'Organic': '🐖', 'Facebook': '🐢', 'Email': '🐢'}[datum.DIM]]"
+    },
+    {
+      "window": [
+        {
+          "as": "rank",
+          "op": "rank"
+        }
+      ],
+      "groupby": [
+        "DIM"
+      ]
+    }
+  ]
+}
+Gauge
+Example Results tab:
+Example code:
+{
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "color": "lightgrey",
+        "theta": {
+          "expr": "datum['_arc_start_radians']"
+        },
+        "radius": {
+          "expr": "ring1_outer"
+        },
+        "theta2": {
+          "expr": "datum['_arc_end_radians']"
+        },
+        "radius2": {
+          "expr": "ring1_inner"
+        },
+        "cornerRadius": 10
+      }
+    },
+    {
+      "mark": {
+        "type": "arc",
+        "theta": {
+          "expr": "datum['_ring_start_radians']"
+        },
+        "radius": {
+          "expr": "ring1_outer"
+        },
+        "theta2": {
+          "expr": "datum['_ring_end_radians']"
+        },
+        "radius2": {
+          "expr": "ring1_inner"
+        },
+        "cornerRadius": 10
+      },
+      "name": "RING",
+      "encoding": {
+        "color": {
+          "value": "#307E31",
+          "condition": [
+            {
+              "test": "datum['ratio'] < 0.33",
+              "value": "#880808"
+            },
+            {
+              "test": "datum['ratio'] < 0.66",
+              "value": "#E49B0F"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 40
+      },
+      "encoding": {
+        "text": {
+          "field": "users\\.count",
+          "format": "number",
+          "formatType": "omniNumberFormat"
+        },
+        "color": {
+          "value": "#307E31",
+          "condition": [
+            {
+              "test": "datum['ratio'] < 0.33",
+              "value": "#880808"
+            },
+            {
+              "test": "datum['ratio'] < 0.66",
+              "value": "#E49B0F"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "width": "container",
+  "config": {
+    "concat": {
+      "spacing": 0
+    },
+    "autosize": {
+      "type": "fit",
+      "resize": true,
+      "contains": "padding"
+    }
+  },
+  "height": "container",
+  "params": [
+    {
+      "name": "ring_max",
+      "value": 160
+    },
+    {
+      "name": "ring_width",
+      "value": 20
+    },
+    {
+      "name": "ring_gap",
+      "value": 5
+    },
+    {
+      "name": "label_color",
+      "value": "#000000"
+    },
+    {
+      "name": "ring_background_opacity",
+      "value": 0.3
+    },
+    {
+      "name": "ring0_percent",
+      "value": 100
+    },
+    {
+      "expr": "ring_max+2",
+      "name": "ring0_outer"
+    },
+    {
+      "expr": "ring_max+1",
+      "name": "ring0_inner"
+    },
+    {
+      "expr": "ring0_inner-ring_gap",
+      "name": "ring1_outer"
+    },
+    {
+      "expr": "ring1_outer-ring_width",
+      "name": "ring1_inner"
+    },
+    {
+      "expr": "(ring1_outer+ring1_inner)/2",
+      "name": "ring1_middle"
+    },
+    {
+      "expr": "220",
+      "name": "arc_size"
+    }
+  ],
+  "transform": [
+    {
+      "as": "ratio",
+      "calculate": "datum['users\\.count'] / ( datum['calc_1'] )"
+    },
+    {
+      "as": "_arc_start_degrees",
+      "calculate": "360 - ( arc_size / 2 )"
+    },
+    {
+      "as": "_arc_end_degrees",
+      "calculate": "0 + ( arc_size / 2 )"
+    },
+    {
+      "as": "_arc_start_radians",
+      "calculate": "2 * 3.14 * ( datum['_arc_start_degrees'] - 360 ) / 360"
+    },
+    {
+      "as": "_arc_end_radians",
+      "calculate": "2 * 3.14 * datum['_arc_end_degrees'] / 360"
+    },
+    {
+      "as": "_arc_total_radians",
+      "calculate": "datum['_arc_end_radians'] - datum['_arc_start_radians']"
+    },
+    {
+      "as": "_ring_start_radians",
+      "calculate": "datum['_arc_start_radians']"
+    },
+    {
+      "as": "_ring_end_radians",
+      "calculate": "datum['_arc_start_radians'] + ( datum['_arc_total_radians'] * datum['ratio'] )"
+    }
+  ]
+}
+Sunburst Chart
+Note for this chart the inner slices are colored explicitly by order. There are likely far better ways to do this using domain and values.
+Example Query:
+users.gender
+users.traffic_source
+users.count
+Example code:
+{
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "tooltip": true,
+        "innerRadius": {
+          "expr": "min(width, height)/9"
+        },
+        "outerRadius": {
+          "expr": "min(width, height)/3"
+        }
+      },
+      "encoding": {
+        "color": {
+          "sort": "ascending",
+          "type": "ordinal",
+          "field": "OUT_IN",
+          "scale": {
+            "range": [
+              "#1DF9B9",
+              "#1DE5B9",
+              "#1DD1B9",
+              "#1DBDB9",
+              "#1DA9B9",
+              "#3DF23B",
+              "#3DDA3B",
+              "#3DC23B",
+              "#3DAA3B",
+              "#3D923B"
+            ]
+          },
+          "title": "Inner Grouping"
+        },
+        "order": {
+          "sort": "ascending",
+          "field": "OUT_IN"
+        },
+        "theta": {
+          "type": "quantitative",
+          "field": "SIZE",
+          "stack": true
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "OUTSIDE",
+            "title": [
+              "Outer Grouping"
+            ]
+          },
+          {
+            "type": "nominal",
+            "field": "INSIDE",
+            "title": [
+              "Inner Grouping"
+            ]
+          },
+          {
+            "type": "quantitative",
+            "field": "SIZE",
+            "title": [
+              "Count"
+            ],
+            "format": "NUMBER",
+            "formatType": "omniNumberFormat"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "arc",
+        "tooltip": true,
+        "innerRadius": {
+          "expr": "min(width, height)/3"
+        }
+      },
+      "encoding": {
+        "color": {
+          "sort": "ascending",
+          "type": "ordinal",
+          "field": "OUTSIDE",
+          "scale": {
+            "range": [
+              "#1DD1B9",
+              "#3DC23B"
+            ]
+          },
+          "title": "Outer Grouping"
+        },
+        "order": {
+          "sort": "ascending",
+          "field": "OUTSIDE"
+        },
+        "theta": {
+          "sort": "ascending",
+          "type": "quantitative",
+          "field": "total_users",
+          "stack": true,
+          "title": [
+            "Users Count"
+          ]
+        },
+        "tooltip": [
+          {
+            "type": "nominal",
+            "field": "OUTSIDE",
+            "title": [
+              "Outer Grouping"
+            ]
+          },
+          {
+            "type": "quantitative",
+            "field": "total_users",
+            "title": [
+              "Count"
+            ],
+            "format": "NUMBER",
+            "formatType": "omniNumberFormat"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "groupby": [
+            "OUTSIDE"
+          ],
+          "aggregate": [
+            {
+              "as": "total_users",
+              "op": "sum",
+              "field": "SIZE"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transform": [
+    {
+      "as": "OUTSIDE",
+      "calculate": "datum['users.gender']"
+    },
+    {
+      "as": "INSIDE",
+      "calculate": "datum['users.traffic_source']"
+    },
+    {
+      "as": "OUT_IN",
+      "calculate": "datum.OUTSIDE + '-' + datum.INSIDE"
+    },
+    {
+      "as": "SIZE",
+      "calculate": "datum['users.count']"
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    },
+    "legend": {
+      "color": "independent"
+    }
+  }
+}
+Word Cloud
+Change the following values in the custom visualization code:
+"field" values should match the values in the table
+adjust the "range" to fit your query
+adjust the "domain" to fit your query
+Results tab example:
+Example SQL:
+SELECT category, department, count(*) AS frequency
+FROM products
+GROUP BY 1,2
+ORDER BY 3 DESC
+LIMIT 25;
+Example code:
+{
+  "mark": "text",
+  "width": "container",
+  "height": "container",
+  "transform": [
+    {
+      "as": "DIM",
+      "calculate": "datum['category']"
+    },
+    {
+      "as": "SIZE",
+      "calculate": "datum['frequency']"
+    },
+    {
+      "as": "COLOR",
+      "calculate": "datum['department']"
+    },
+    {
+      "as": "X",
+      "calculate": "random() * (0.9 - 0.1) + 0.1"
+    },
+    {
+      "as": "Y",
+      "calculate": "random()"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "axis": null,
+      "field": "X"
+    },
+    "y": {
+      "axis": null,
+      "field": "Y"
+    },
+    "size": {
+      "field": "SIZE",
+      "legend": null
+    },
+    "text": {
+      "field": "DIM"
+    },
+    "color": {
+      "field": "COLOR",
+      "scale": {
+        "scheme": "tableau20"
+      },
+      "legend": null
+    }
+  }
+}
+Symmetric Funnel (Fixed Size) -- Markdown Visualization
+Results tab example:
+Example SQL:
+This visualization is built on having multiple measures, which are then swapped rows and columns, with a calculation built to get stage by stage conversion metrics (e.g. in Cell C2, put the formula =B2/B1.
+Example code:
+<style>
+
+.parentView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trapezoid {
+  background: #ff6666;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.trapezoid2 {
+  background: #ee6021;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.trapezoid3 {
+  background: #f6c62d;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.trapezoid4 {
+  background: #9de24f;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+  
+.text {
+  color: white;
+  display: flex;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.conv{
+  font-size: 15px;
+  line-height: 3;
+  font-weight: bold;
+}
+</style>
+<div class = "parentView">
+  <div class="trapezoid">
+    <h1 class="text"> {{result.0.measure_value.value}} Stage 1 </h1>
+  </div>
+  <div class="conv"> ↓ {{result.1.calc_1.value}} </div>
+  <div class="trapezoid2">
+    <h1 class="text"> {{result.1.measure_value.value}} Stage 2 </h1>
+  </div>
+  <div class="conv"> ↓ {{result.2.calc_1.value}} </div>
+  <div class="trapezoid3">
+    <h1 class="text"> {{result.2.measure_value.value}} Stage 3 </h1>
+  </div>
+  <div class="conv"> ↓ {{result.3.calc_1.value}} </div>
+  <div class="trapezoid4">
+    <h1 class="text"> {{result.3.measure_value.value}} Stage 4 </h1>
+</div>
+Image Grid Card Layout
+Hat tip to the fine folks at Incident for this one. This lays out a wide table with several metrics into a responsive card layout including images.
+Example data:
+Example code:
+# Top Products
+Highest revenue generating products and associated details 💰
+
+<style>
+  /* https://play.tailwindcss.com/vHqt0FBGy8 */
+ .deals-container {
+  display: grid;
+  padding: 1.5rem; 
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+  column-gap: 1.5rem; 
+  row-gap: 2rem; 
+  list-style: none;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+      @media (min-width: 1024px) { 
+   grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  }
+  @media (min-width: 1280px) { 
+   grid-template-columns: repeat(2, minmax(0, 1fr)); 
+   column-gap: 2rem; 
+  }
+  @media (min-width: 1536px) { 
+   grid-template-columns: repeat(3, minmax(0, 1fr)); 
+   column-gap: 2rem; 
+  }
+  @media (min-width: 1960px) { 
+   grid-template-columns: repeat(3, minmax(0, 1fr)); 
+   column-gap: 2rem; 
+  }
+  
+ }
+
+ .deal-container {
+  overflow: hidden; 
+  border-radius: 0.75rem; 
+  border: 1px solid #E5E7EB;
+  list-style: none;
+ }
+
+ .deal-header {
+  display: flex; 
+  padding: 1.5rem; 
+  column-gap: 1rem; 
+  align-items: center; 
+  border-bottom: 1px solid rgb(17 24 39 / 0.05); 
+  background-color: #F9FAFB; 
+ }
+
+ .deal-logo {
+  object-fit: cover; 
+  flex: none; 
+  border-radius: 0.5rem;
+        border: 1px solid rgb(229 231 235);
+  box-shadow: 0 0 0 0 calc(1px) rgb(229 231 235); 
+  width: 4rem; 
+  height: 4rem; 
+  background-color: #ffffff; 
+ }
+
+ .deal-name {
+  font-size: 1rem;
+  line-height: 1.25rem; 
+  font-weight: 500; 
+  line-height: 1.5rem; 
+  color: #111827; 
+ }
+
+ .deal-details {
+      padding-top: 1rem;
+      padding-bottom: 1rem; 
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; 
+      margin-top: -0.75rem;
+      margin-bottom: -0.75rem; 
+      border-top-width: 1px; 
+      border-color: #F3F4F6; 
+      font-size: 0.875rem;
+      line-height: 1.25rem; 
+      line-height: 1.5rem; 
+ }
+
+ .deal-details-inner {
+      display: flex; 
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem; 
+      column-gap: 1rem; 
+      justify-content: space-between; 
+ }
+
+   /* Tailwind Helpers */
+   .-my-3 {
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+.h-12 {
+  height: 3rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.flex-none {
+  flex: none;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-x-2 {
+  column-gap: 0.5rem;
+}
+.gap-x-4 {
+  column-gap: 1rem;
+}
+.gap-x-6 {
+  column-gap: 1.5rem;
+}
+.gap-y-8 {
+  row-gap: 2rem;
+}
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  border:0;
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+.divide-y > div.deal-details-inner:last-of-type {
+  border-bottom-width: 0px;
+}
+.divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(243 244 246);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.border {
+  border-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-gray-200 {
+  border-color: rgb(229 231 235);
+}
+.border-gray-900\/5 {
+  border-color: rgb(17 24 39 / 0.05);
+}
+.bg-gray-50 {
+  background-color: rgb(249 250 251);
+}
+.bg-red-50 {
+  background-color: rgb(254 242 242);
+}
+.bg-white {
+  background-color: rgb(255 255 255);
+}
+.object-cover {
+  object-fit: cover;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.font-medium {
+  font-weight: 500;
+}
+.leading-6 {
+  line-height: 1.5rem;
+}
+.text-gray-500 {
+  color: rgb(107 114 128);
+}
+.text-gray-700 {
+  color: rgb(55 65 81);
+}
+.text-gray-900 {
+  color: rgb(17 24 39);
+}
+.text-red-700 {
+  color: rgb(185 28 28);
+}
+  .px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem; 
+  }
+  .pl-1 {
+    padding-left: 0.25rem;
+  }
+  .pr-1 {
+padding-right: 0.25rem; 
+  }
+  .px-2 {
+    padding-left: 0.50rem;
+    padding-right: 0.50rem; 
+  }
+  .pl-2 {
+    padding-left: 0.50rem;
+  }
+  .pr-2 {
+padding-right: 0.50rem; 
+  }
+  
+.text-sky-700 {
+  color: rgb(3 105 161);
+}
+  .ring-sky-600\/10 {
+  border: 1px solid rgb(2 132 199 / 0.1);
+  }
+  .bg-sky-50 {
+  background-color: rgb(240 249 255);
+}
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  .bg-green-50 {
+  background-color: rgb(240 253 244);
+}
+  .text-green-700 {
+  color: rgb(21 128 61);
+}
+  .ring-green-600\/10 {
+  border: 1px solid rgb(22 163 74 / 0.1);;
+  }
+</style>
+
+<ul class="deals-container">
+  
+{{#result}}
+
+<li class="deal-container">
+<div class="deal-header">
+<img src="https://{{omni_dbt__product_images.image.value_static}}?size=512" class="deal-logo">
+<section class="deal-name flex flex-col" style="justify-content: start;">
+
+  <div class="flex flex-row" style="align-items: center;">{{omni_dbt__products.name.value}}
+</div>
+</div>
+
+</section>
+</div>
+
+<dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6">
+
+<div class="deal-details-inner" style="border-bottom: none;">
+<dt class="text-gray-500">Revenue</dt>
+<dd class="flex items-start gap-x-2">
+<section class="rounded-md ml-2 font-medium ring-1 ring-inset text-green-700 bg-green-50 ring-green-600/10" style="padding: 2px 6px">{{omni_dbt__order_items.total_sale_price.value}}</section>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Brand</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__products.brand.value}}</div>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Category</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__products.category.value}}</div>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Total Items Sold</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__order_items.count.value}}</div>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Retail Price</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__products.retail_price.value}}</div>
+</dd>
+</div>
+
+</dd>
+</div>
+
+
+
+</dl>
+</li>
+
+{{/result}}
+</ul>
+Previous
+Tooltips
+Next
+Dashboards

@@ -1,0 +1,19 @@
+StdDev
+Suggest Edits
+The StdDev function computes the standard deviation of a column or group. It measures the spread of a set of observations (numbers) around the mean and is calculated as the square root of the variance. A low standard deviation suggests data points are clustered near the mean, whereas a high standard deviation suggests data points are generally far from the mean.
+Standard deviation is a useful measure of spread for symmetrical distributions with no outliers. It is expressed in the same units of measurement as the data and can help determine the statistical distribution of a dataset.
+Sigma calls the underlying Cloud Data Warehouse's Standard Deviation function that uses the statistical sample definition. Check the documentation of the database you use for details on the function called.
+Syntax
+StdDev(column)
+Function arguments:
+column (required) - The column of numbers to be measured.
+The underlying formula is as follows:
+√(x_i-x)^2/n-1
+where x_i is the value of one observation, x is the mean value of all observations, and n is the number of observations (sample size). 
+Example
+StdDev([x])
+Return the sample standard deviation of non-null records in the x column for each group K.
+RELATED RESOURCES
+CumulativeStdDev
+Variance
+MovingStddev

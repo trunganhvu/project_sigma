@@ -1,0 +1,30 @@
+Distance
+Suggest Edits
+The Distance function calculates the minimum distance between two geographies, in specified units.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+Distance(units, geog1, geog2)
+The function arguments are:
+units
+Required
+The unit of measurement for the distance
+Valid values are "kilometers", "meters", and "miles".
+geog1
+Required
+First geography of the pair between which we calculate the distance
+Must be in valid Geography format.
+To work from known latitude and longitude values, use the [MakePoint]() or [MakeLine]() functions.
+geog2
+Required
+Second geography of the pair between which we calculate the distance
+Must be in valid Geography format.
+To work from known latitude and longitude values, use the [MakePoint]() or [MakeLine]() functions.
+Examples
+Distance("kilometers", [Coordinates], MakePoint(0, 0))
+Distance("miles", [Coordinates], MakePoint(0, 0))
+The Distance function returns the following values for the Coordinates column, when specifying distance in either kilometers or miles from coordinates (0, 0):
+RELATED RESOURCES
+Area
+Perimeter
+Geography functions

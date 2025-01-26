@@ -1,0 +1,877 @@
+Visualization & DashboardsVisualization typesMarkdown Visualizations
+On this page
+Markdown visualizations
+Markdown visualizations allow for a combination of Markdown elements and query variables. You can use it to create a visualization that includes text, images, links, data, iframes, and more!
+Best practices
+The Markdown editor interprets Markdown first and foremost, so think of these more as text documents than true HTML files. For example, when using indentation, it will be interpreted as a code block because that's how Markdown interprets that formatting.
+Odd behavior may also arise from empty lines, because those are paragraph indicators in Markdown. This occurs because the div is included in a code block as plain text, which will strand its closing tag.
+Some tips for successful implementations in Markdown:
+Use HTML sparingly. Using only Markdown will simplify things.
+If you do need to use HTML elements:
+Try to limit the depth of div nesting, as it increases the likelihood of conflicts between the Markdown and HTML parsing.
+Use supported semantic HTML elements where possible, such as article or section. Large numbers of divs in a row can cause parsing issues.
+Don't indent the HTML - keep everything left-aligned. As Markdown relies on whitespace for formatting, indentation can cause issues.
+Inlne style tags can be used for custom CSS, but using a <style></style> declaration and making CSS classes works best.
+Generated PDFs can sometimes render differently than what you see in a browser:
+Directly referencing native HTML tags (e.g. h3 { font-size: 18px; }) may not always work
+Some characters in CSS can not be parsed and will cause those style declarations to be ignored (e.g. the quotation marks needed for content: "foo"; will not work )
+Invalid HTML or CSS syntax may render ok in the browser, but will not in PNGs or PDFs
+Reference
+Standard Markdown syntax is accepted. Refer to this Markdown cheatsheet for more information.
+Query elements
+Data and other elements from the query can also be exposed using Mustache syntax - {{query_element}}. To reference query elements, you can:
+Use the query details drop-down menu inside the vis editor:
+Click any cell in the data table to copy the Markdown syntax:
+Write the syntax directly:
+Fields: {{fields.view_name.field_name.property}}
+Filters: {{filters.view_name.field_name.property}}
+Example query:
+Markdown syntax reference
+NOTE
+There are two options for returning field values:
+.value returns an interactive value where drilling is enabled
+.value_static returns only the raw value with no interactivity
+Query part Element Example Syntax Example Output
+Field View name {{fields.order_items.sale_price_sum.view_label}} Order Items
+Field Field name {{fields.order_items.sale_price_sum.label}} Sale Price Sum
+Field First row value {{result._first.Female.order_items.sale_price_sum.value}} $21.60K
+Field Last row value {{result._last.Female.order_items.sale_price_sum.value}} $28.82K
+Field Any row value (array syntax starting with 0) {{result.5.Female.order_items.sale_price_sum.value}} $31.29K
+Field Column total {{result.totals._first.Female.order_items.sale_price_sum.value}} $870.97K
+Field Row total (array syntax starting with 0) {{result.5.row_total.order_items.sale_price_sum.value}} $62.87K
+Field Grand total {{result.totals._first.row_total.order_items.sale_price_sum.value}} $1.63M
+Filters Label {{filters.users.state.label}} users.state
+Filters Summary {{filters.users.state.summary}} is: California,Virginia
+Visual components
+Some special components are also available to help visualize the data.
+Change arrow
+Adds an arrow icon indicating the type of change between two data points. If the change is a positive number, the arrow will be green. If negative, it will be red.
+<ChangeArrow current="{{result.0.users.count.value_static}}" comparison="{{result.1.users.count.value_static}}"></ChangeArrow>
+Requirements
+Requires two data points to calculate a change.
+Properties
+Name Value Notes
+current result.0.view_name.field_name.value_static Use value_static instead of value, since the value and not the drillable element is needed
+comparison result.1.view_name.field_name.value_static
+Sparkline
+Adds a sparkline. Useful for seeing the shape in variation in a simple, condensed way.
+<Sparkline field="users.count" color="cornflowerblue"></Sparkline>
+Requirements
+Requires more than one row of data and a field name.
+Properties
+Name Value Notes
+color CSS color, ex: cornflowerblue
+field view_name.field_name
+height Integer, ex: 4
+width Integer, ex: 4
+reverse true Remove property for false
+type line (default) or bar
+iframes
+Using iframes is also supported. You can optionally parameterize them with query elements.
+By default, Omni applies restrictions (sandboxing) when rendering iframes. This means that some website features, such as popups, may be unavailable or incompatible.
+Use the following tabs to check out some iframe examples.
+Google Docs
+Google News
+Google Maps
+Twitter / X
+Windy
+YouTube
+Google Docs
+NOTE
+Before embedding in Omni, publish the doc and retrieve its embed link.
+Code:
+<iframe width="650" height="450" src="https://docs.google.com/document/d/id"></iframe>
+Result:
+
+
+
+
+
+Example gallery
+Data readout
+Example:
+Code:
+In the past 12 months, Acme Corp has had **{{result._totals._first.order_items.order_count.value}}** orders made by **{{result._totals._first.users.count.value}}** users, resulting in **{{result._totals._first.order_items.sale_price_sum.value}}** total revenue.
+<br><br>
+<Sparkline field="order_items.order_count" color="#ED6C91" height=70% width=100% reverse=true></Sparkline>
+KPI with Sparkline
+Example:
+Code:
+<div style="display:flex; align-items: center; justify-content:center; flex-direction: column;">
+<div style="display:flex; align-items: center;flex-direction:column;">
+###**{{result._first.users.count.value}}** Users this Month
+
+<p style="font-size: var(--font-sm);"> <ChangeArrow current="{{result.0.users.count.value_static}}" comparison="{{result.1.users.count.value_static}}"></ChangeArrow> last month from {{result.1.users.count.value}}
+</p>
+</div>
+<Sparkline field="users.count" color="#4889DE" height=50% width=70% reverse=true></Sparkline>
+</div>
+KPI table
+Example:
+Code:
+<table>
+<thead>
+<tr>
+<th>Display</th>
+<th>Email</th>
+<th>Facebook</th>
+<th>Organic</th>
+<th>Search</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>**{{result.0.Display.users.count.value}} Users**<br>
+<ChangeArrow current="{{result.0.Display.users.count.value_static}}" comparison="{{result.1.Display.users.count.value_static}}"></ChangeArrow> (last month {{result.1.Display.users.count.value}})</td>
+<td>**{{result.0.Email.users.count.value}} Users**<br>
+<ChangeArrow current="{{result.0.Email.users.count.value_static}}" comparison="{{result.1.Email.users.count.value_static}}"></ChangeArrow> (last month {{result.1.Email.users.count.value_static}})</td>
+<td>**{{result.0.Facebook.users.count.value}} Users**<br>
+<ChangeArrow current="{{result.0.Facebook.users.count.value_static}}" comparison="{{result.1.Facebook.users.count.value_static}}"></ChangeArrow> (last month {{result.1.Facebook.users.count.value_static}})</td>
+<td>**{{result.0.Organic.users.count.value}} Users**<br>
+<ChangeArrow current="{{result.0.Organic.users.count.value_static}}" comparison="{{result.1.Organic.users.count.value_static}}"></ChangeArrow> (last month {{result.1.Organic.users.count.value}})</td>
+<td>**{{result.0.Search.users.count.value}} Users**<br>
+<ChangeArrow current="{{result.0.Search.users.count.value_static}}" comparison="{{result.1.Search.users.count.value_static}}"></changearrow> (last month {{result.1.Search.users.count.value}})</td>
+</tr>
+<tr>
+<td><Sparkline field="Display.users.count" color="cornflowerblue" reverse="true" height="80%"></Sparkline></td>
+<td> <Sparkline field="Email.users.count" color="MediumSeaGreen" reverse="true" height="80%"/></td>
+<td> <Sparkline field="Facebook.users.count" color="gold" reverse="true" height="80%"/></td>
+<td> <Sparkline field="Organic.users.count" color="darkorange" reverse="true" height="80%"/></td>
+<td> <Sparkline field="Search.users.count" color="crimson" reverse="true" height="80%"/></td>
+</tr>
+</tbody>
+</table>
+Record lookup
+Example:
+Code:
+<style>
+.md-card {
+  display: grid;
+  gap: 0 var(--size6);
+  grid-template-columns: max-content 1fr;
+}
+
+.md-card-info {
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+  font-size: 14px;
+}
+
+.md-card-info h4 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.md-card-info p {
+  margin: 0;
+}
+
+.md-profile {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+}
+
+.md-profile img {
+  display: block;
+  width: 200px;
+  border-radius: 12px;
+}
+
+.md-profile p {
+  text-align: center;
+  font-size: 8px;
+  color: var(--color-text1);
+  margin: 0;
+}
+
+.md-card-metrics {
+  grid-row: 2 / 2;
+  display: flex;
+  gap: var(--size4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.md-card-metrics li {
+  padding-block: var(--size4);
+}
+
+.divider {
+  background-color: var(--color-border2);
+  width: 1px;
+  margin-inline: var(--size2);
+  margin-block: var(--size4);
+}
+
+.md-metric-label {
+  font-size: 14px;
+  color: var(--color-text2);
+}
+.md-metric-value {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+</style>
+
+<div class="md-card">
+<div class="md-card-info">
+<h4>{{result.0.users.full_name.value}}</h4>
+<p><a href="mailto:{{result.0.users.email.value_static}}">{{result.0.users.email.value}}</a></p>
+<p>{{result.0.users.city.value}}, {{result.0.users.state.value}} {{result.0.users.zip.value}}
+<a href="http://www.google.com/maps/search/?api=1&query={{result.0.users.zip.value_static}}" target="_blank">view map</a>
+</p>
+</div>
+
+<div class="md-profile">
+<img src="https://robohash.org/{{result.0.users.email.value_static}}" />
+<p>Robots lovingly delivered by Robohash.org</p>
+</div>
+
+<ul class="md-card-metrics">
+<li>
+<div class="md-metric-value">{{result.0.users.age.value}}</div>
+<div class="md-metric-label">{{fields.users.age.label}}</div>
+</li>
+<li class="divider"></li>
+<li>
+<div class="md-metric-value">{{result.0.order_items.order_count.value}}</div>
+<div class="md-metric-label">{{fields.order_items.order_count.label}}</div>
+</li>
+<li class="divider"></li>
+<li>
+<div class="md-metric-value">{{result.0.order_items.sale_price_sum.value}}</div>
+<div class="md-metric-label">{{fields.order_items.sale_price_sum.label}}</div>
+</li>
+
+</ul>
+</div><!-- card -->
+Invoice report
+Example:
+Code:
+# Invoice
+<img src="https://i.etsystatic.com/21003174/r/il/a9dfd6/4600341262/il_fullxfull.4600341262_kno3.jpg" style="width: 100px"/>
+
+
+---------------------------------------
+
+    Invoice Number: {{result.0.order_items.user_id.value_static}}
+    Name: {{result.0.users.full_name.value_static}}
+    Contact: {{result.0.users.full_name.value_static}} • {{result.0.users.email.value_static}}
+
+
+### Order Summary
+
+<table>
+<thead>
+<tr>
+<th>Order ID</th>
+<th>Order Date</th>
+<th>Item Count</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+{{#result}}
+<tr>
+<td> {{order_items.order_id.value}} </td>
+<td> {{order_items.created_at[date].value}} </td>
+<td> {{order_items.count.value}} </td>
+<td> {{order_items.sale_price_sum.value}} </td>
+</tr>
+{{/result}}
+</tbody>
+</table>
+
+
+**Grand Total**: {{result.totals.first.order_items.sale_price_sum.value}} (no tax)
+<br><br>
+### Terms
+
++ Payments are to be made payable to Initech via Paypal[^1] or Direct Deposit[^2].
++ Grand Total must be paid by the end of [DATE] (30 days).
++ If Grand Total is not paid by the end of [DATE], an late-fee[^3] will be applied to the Grand Total.
+
+[^1]: Paypal e-mail address for payments is <payments@initech.com>.
+[^2]: Please contact if you wish to do a Direct Deposit.
+[^3]: Late-fee of *2%* interest per-day until paid.
+Gradient card
+Example:
+Code:
+<style>
+.md-card {
+  display: flex;
+  background: linear-gradient(
+    132deg,
+    #8eecd5 2.13%,
+    #9DAAF4 67.53%,
+    #F7A8CB 90%
+  );;
+  padding: var(--size4);
+  border-radius: var(--radius-md);
+  color: var(--color-text-inverse);
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.md-card-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-card-metrics li {
+  padding-block: var(--size4);
+  padding-inline: var(--size6);
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  width: 100%;
+}
+
+@media (width >= 769px) {
+  .md-card-metrics {
+    flex-direction: row;
+  }
+  .md-card-metrics li {
+    max-width: calc(4px * 70);
+  }
+}
+
+.md-metric-emoji {
+  font-size: 52px;
+  color: var(--color-text-inverse);
+  margin: 0;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+  padding-inline: 0 var(--size4);
+}
+.md-metric-label {
+  font-size: 14px;
+  color: var(--color-text-inverse);
+  opacity: 0.66
+}
+.md-metric-value {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+}
+</style>
+
+<div class="md-card">
+<ul class="md-card-metrics">
+<li>
+<div class="md-metric-emoji">
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.75736 5.75736C10.8826 4.63214 12.4087 4 14 4C15.5913 4 17.1174 4.63214 18.2426 5.75736C19.3679 6.88258 20 8.4087 20 10C20 11.5913 19.3679 13.1174 18.2426 14.2426C17.1174 15.3679 15.5913 16 14 16C12.4087 16 10.8826 15.3679 9.75736 14.2426C8.63214 13.1174 8 11.5913 8 10C8 8.4087 8.63214 6.88258 9.75736 5.75736ZM14 8C13.4696 8 12.9609 8.21071 12.5858 8.58579C12.2107 8.96086 12 9.46957 12 10C12 10.5304 12.2107 11.0391 12.5858 11.4142C12.9609 11.7893 13.4696 12 14 12C14.5304 12 15.0391 11.7893 15.4142 11.4142C15.7893 11.0391 16 10.5304 16 10C16 9.46957 15.7893 8.96086 15.4142 8.58579C15.0391 8.21071 14.5304 8 14 8ZM29.7574 5.75736C30.8826 4.63214 32.4087 4 34 4C35.5913 4 37.1174 4.63214 38.2426 5.75736C39.3679 6.88258 40 8.4087 40 10C40 11.5913 39.3679 13.1174 38.2426 14.2426C37.1174 15.3679 35.5913 16 34 16C32.4087 16 30.8826 15.3679 29.7574 14.2426C28.6321 13.1174 28 11.5913 28 10C28 8.4087 28.6321 6.88258 29.7574 5.75736ZM34 8C33.4696 8 32.9609 8.21071 32.5858 8.58579C32.2107 8.96086 32 9.46957 32 10C32 10.5304 32.2107 11.0391 32.5858 11.4142C32.9609 11.7893 33.4696 12 34 12C34.5304 12 35.0391 11.7893 35.4142 11.4142C35.7893 11.0391 36 10.5304 36 10C36 9.46957 35.7893 8.96086 35.4142 8.58579C35.0391 8.21071 34.5304 8 34 8ZM10 22C9.46957 22 8.96086 22.2107 8.58579 22.5858C8.21071 22.9609 8 23.4696 8 24V26C8 27.1046 7.10457 28 6 28C4.89543 28 4 27.1046 4 26V24C4 22.4087 4.63214 20.8826 5.75736 19.7574C6.88258 18.6321 8.4087 18 10 18H14C15.1046 18 16 18.8954 16 20C16 21.1046 15.1046 22 14 22H10ZM32 20C32 18.8954 32.8954 18 34 18H38C39.5913 18 41.1174 18.6321 42.2426 19.7574C43.3679 20.8826 44 22.4087 44 24V26C44 27.1046 43.1046 28 42 28C40.8954 28 40 27.1046 40 26V24C40 23.4696 39.7893 22.9609 39.4142 22.5858C39.0391 22.2107 38.5304 22 38 22H34C32.8954 22 32 21.1046 32 20ZM19.7574 21.7574C20.8826 20.6321 22.4087 20 24 20C25.5913 20 27.1174 20.6321 28.2426 21.7574C29.3679 22.8826 30 24.4087 30 26C30 27.5913 29.3679 29.1174 28.2426 30.2426C27.1174 31.3679 25.5913 32 24 32C22.4087 32 20.8826 31.3679 19.7574 30.2426C18.6321 29.1174 18 27.5913 18 26C18 24.4087 18.6321 22.8826 19.7574 21.7574ZM24 24C23.4696 24 22.9609 24.2107 22.5858 24.5858C22.2107 24.9609 22 25.4696 22 26C22 26.5304 22.2107 27.0391 22.5858 27.4142C22.9609 27.7893 23.4696 28 24 28C24.5304 28 25.0391 27.7893 25.4142 27.4142C25.7893 27.0391 26 26.5304 26 26C26 25.4696 25.7893 24.9609 25.4142 24.5858C25.0391 24.2107 24.5304 24 24 24ZM20 38C19.4696 38 18.9609 38.2107 18.5858 38.5858C18.2107 38.9609 18 39.4696 18 40V42C18 43.1046 17.1046 44 16 44C14.8954 44 14 43.1046 14 42V40C14 38.4087 14.6321 36.8826 15.7574 35.7574C16.8826 34.6321 18.4087 34 20 34H28C29.5913 34 31.1174 34.6321 32.2426 35.7574C33.3679 36.8826 34 38.4087 34 40V42C34 43.1046 33.1046 44 32 44C30.8954 44 30 43.1046 30 42V40C30 39.4696 29.7893 38.9609 29.4142 38.5858C29.0391 38.2107 28.5304 38 28 38H20Z" fill="currentColor"/>
+</svg>
+</div>
+<div class="md-metric-value">{{result.0.dbt_czima__users.count.value}}</div>
+<div class="md-metric-label">People using data better</div>
+</li>
+<li>
+<div class="md-metric-emoji">
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 4C25.1046 4 26 4.89543 26 6V8C26 9.10457 25.1046 10 24 10C22.8954 10 22 9.10457 22 8V6C22 4.89543 22.8954 4 24 4ZM9.78579 9.78579C10.5668 9.00474 11.8332 9.00474 12.6142 9.78579L14.0142 11.1858C14.7953 11.9668 14.7953 13.2332 14.0142 14.0142C13.2332 14.7953 11.9668 14.7953 11.1858 14.0142L9.78579 12.6142C9.00474 11.8332 9.00474 10.5668 9.78579 9.78579ZM38.2142 9.78578C38.9953 10.5668 38.9953 11.8332 38.2142 12.6142L36.8142 14.0142C36.0332 14.7953 34.7668 14.7953 33.9858 14.0142C33.2047 13.2332 33.2047 11.9668 33.9858 11.1858L35.3858 9.78579C36.1668 9.00474 37.4332 9.00474 38.2142 9.78578ZM24 16C22.3209 16 20.6844 16.5283 19.3223 17.5101C17.9602 18.4918 16.9415 19.8773 16.4105 21.4702C15.8796 23.0631 15.8633 24.7827 16.3639 26.3853C16.8645 27.988 17.8568 29.3926 19.2 30.4C19.273 30.4547 19.3422 30.5144 19.407 30.5786C19.8455 31.0127 20.2368 31.4892 20.5755 32H27.4245C27.7632 31.4892 28.1545 31.0127 28.593 30.5786C28.6578 30.5144 28.727 30.4547 28.8 30.4C30.1432 29.3926 31.1355 27.988 31.6361 26.3853C32.1367 24.7827 32.1204 23.0631 31.5895 21.4702C31.0585 19.8773 30.0398 18.4918 28.6777 17.5101C27.3156 16.5283 25.6791 16 24 16ZM30.3316 34.9988C30.3871 34.9027 30.4348 34.8016 30.4739 34.6962C30.6967 34.2612 30.9826 33.86 31.3232 33.5063C33.2756 32.0024 34.7186 29.9328 35.4542 27.578C36.2051 25.174 36.1806 22.5946 35.3842 20.2053C34.5878 17.8159 33.0597 15.7377 31.0165 14.2651C28.9733 12.7924 26.5186 12 24 12C21.4814 12 19.0267 12.7924 16.9835 14.2651C14.9403 15.7377 13.4122 17.8159 12.6158 20.2053C11.8194 22.5946 11.7949 25.174 12.5458 27.578C13.2814 29.9328 14.7244 32.0024 16.6768 33.5063C17.012 33.8544 17.2942 34.2483 17.5153 34.6753C17.5584 34.7955 17.6127 34.9104 17.6769 35.0186C17.7291 35.1415 17.7765 35.2666 17.8189 35.3937C18.0671 36.1382 18.1365 36.9307 18.0216 37.7071C18.0072 37.8041 18 37.902 18 38C18 39.5913 18.6321 41.1174 19.7574 42.2426C20.8826 43.3679 22.4087 44 24 44C25.5913 44 27.1174 43.3679 28.2426 42.2426C29.3679 41.1174 30 39.5913 30 38C30 37.902 29.9928 37.8041 29.9784 37.7071C29.8635 36.9307 29.9329 36.1382 30.1811 35.3937C30.2258 35.2597 30.276 35.128 30.3316 34.9988ZM25.9775 36H22.0225C22.0989 36.7007 22.0929 37.41 22.0032 38.1131C22.0309 38.6023 22.2375 39.0659 22.5858 39.4142C22.9609 39.7893 23.4696 40 24 40C24.5304 40 25.0391 39.7893 25.4142 39.4142C25.7625 39.0659 25.9691 38.6023 25.9968 38.1131C25.9071 37.41 25.9011 36.7007 25.9775 36ZM4 24C4 22.8954 4.89543 22 6 22H8C9.10457 22 10 22.8954 10 24C10 25.1046 9.10457 26 8 26H6C4.89543 26 4 25.1046 4 24ZM38 24C38 22.8954 38.8954 22 40 22H42C43.1046 22 44 22.8954 44 24C44 25.1046 43.1046 26 42 26H40C38.8954 26 38 25.1046 38 24Z" fill="currentColor"/>
+</svg>
+</div>
+<div class="md-metric-value">{{result.0.dbt_czima__query_history.count.value}}</div>
+<div class="md-metric-label">Questions asked</div>
+</li>
+<li>
+<div class="md-metric-emoji">
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.85786 9.85786C13.6086 6.10714 18.6957 4 24 4C29.3043 4 34.3914 6.10714 38.1421 9.85786C41.8929 13.6086 44 18.6957 44 24C44 26.6264 43.4827 29.2272 42.4776 31.6537C41.4725 34.0802 39.9993 36.285 38.1421 38.1421C36.285 39.9993 34.0802 41.4725 31.6537 42.4776C29.2272 43.4827 26.6264 44 24 44C21.3736 44 18.7728 43.4827 16.3463 42.4776C13.9198 41.4725 11.715 39.9993 9.85786 38.1421C8.00069 36.285 6.5275 34.0802 5.52241 31.6537C4.51732 29.2272 4 26.6264 4 24C4 18.6957 6.10714 13.6086 9.85786 9.85786ZM24 8C19.7565 8 15.6869 9.68571 12.6863 12.6863C9.68571 15.6869 8 19.7565 8 24C8 26.1012 8.41385 28.1817 9.21793 30.1229C10.022 32.0641 11.2006 33.828 12.6863 35.3137C14.172 36.7994 15.9359 37.978 17.8771 38.7821C19.8183 39.5861 21.8988 40 24 40C26.1012 40 28.1817 39.5861 30.1229 38.7821C32.0641 37.978 33.828 36.7994 35.3137 35.3137C36.7994 33.828 37.978 32.0641 38.7821 30.1229C39.5861 28.1817 40 26.1012 40 24C40 19.7565 38.3143 15.6869 35.3137 12.6863C32.3131 9.68571 28.2435 8 24 8ZM24 12C25.1046 12 26 12.8954 26 14V23.1716L31.4142 28.5858C32.1953 29.3668 32.1953 30.6332 31.4142 31.4142C30.6332 32.1953 29.3668 32.1953 28.5858 31.4142L22.5858 25.4142C22.2107 25.0391 22 24.5304 22 24V14C22 12.8954 22.8954 12 24 12Z" fill="currentColor"/>
+</svg>
+</div>
+<div class="md-metric-value">{{result.0.dbt_czima__query_history.minutes_of_usage.value}}</div>
+<div class="md-metric-label">Minutes spent analyzing</div>
+</li>
+</ul>
+</div><!-- card -->
+Image grid
+Example:
+Code:
+<style>
+  .product-image-grid {
+      display: grid;
+        grid-template-columns: repeat(3, 98px);
+    gap: 7px;
+  }
+
+  .product-image-item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .product-image {
+    background-size: cover;
+      background-position: center;
+    height: 100px;
+      position: relative;
+  }
+
+
+  .product-rank-number {
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-surface-invert);
+    color: var(--color-text-inverse);
+  }
+
+  .product-name {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .product-compare {
+      align-items: center;
+      display: flex;
+    font-size: 11px;
+    gap: 8px;
+      font-weight: 500;
+  }
+</style>
+
+### Top Products This Month
+<div class="product-image-grid">
+
+{{#result}}
+
+<div class="product-image-item">
+<section class="product-image" style="background-image: url(https://{{product_images.image.value_static}})">
+<p class="product-rank-number">
+{{sale_price_sum_rank.value}}
+</p>
+</section>
+
+<section class="product-compare"> {{order_items.sale_price_sum.value_static}}
+<ChangeArrow current="{{order_items.sale_price_sum.value_static}}" comparison="{{order_items.sale_price_sum_1.value_static}}"></ChangeArrow></section>
+<p class="product-name">{{products.name.value_static}}</p>
+
+</div>
+{{/result}}
+
+</div>
+Card grid
+Example:
+Code:
+<style>
+  /* https://play.tailwindcss.com/vHqt0FBGy8 */
+ .deals-container {
+  display: grid;
+  padding: 1.5rem; 
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+  column-gap: 1.5rem; 
+  row-gap: 2rem; 
+  list-style: none;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+      @media (min-width: 1024px) { 
+   grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  }
+  @media (min-width: 1280px) { 
+   grid-template-columns: repeat(2, minmax(0, 1fr)); 
+   column-gap: 2rem; 
+  }
+  @media (min-width: 1536px) { 
+   grid-template-columns: repeat(3, minmax(0, 1fr)); 
+   column-gap: 2rem; 
+  }
+  @media (min-width: 1960px) { 
+   grid-template-columns: repeat(3, minmax(0, 1fr)); 
+   column-gap: 2rem; 
+  }
+  
+ }
+
+ .deal-container {
+  overflow: hidden; 
+  border-radius: 0.75rem; 
+  border: 1px solid #E5E7EB;
+  list-style: none;
+ }
+
+ .deal-header {
+  display: flex; 
+  padding: 1.5rem; 
+  column-gap: 1rem; 
+  align-items: center; 
+  border-bottom: 1px solid rgb(17 24 39 / 0.05); 
+  background-color: #F9FAFB; 
+ }
+
+ .deal-logo {
+  object-fit: cover; 
+  flex: none; 
+  border-radius: 0.5rem;
+        border: 1px solid rgb(229 231 235);
+  box-shadow: 0 0 0 0 calc(1px) rgb(229 231 235); 
+  width: 4rem; 
+  height: 4rem; 
+  background-color: #ffffff; 
+ }
+
+ .deal-name {
+  font-size: 1rem;
+  line-height: 1.25rem; 
+  font-weight: 500; 
+  line-height: 1.5rem; 
+  color: #111827; 
+ }
+
+ .deal-details {
+      padding-top: 1rem;
+      padding-bottom: 1rem; 
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; 
+      margin-top: -0.75rem;
+      margin-bottom: -0.75rem; 
+      border-top-width: 1px; 
+      border-color: #F3F4F6; 
+      font-size: 0.875rem;
+      line-height: 1.25rem; 
+      line-height: 1.5rem; 
+ }
+
+ .deal-details-inner {
+      display: flex; 
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem; 
+      column-gap: 1rem; 
+      justify-content: space-between; 
+ }
+
+   /* Tailwind Helpers */
+   .-my-3 {
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+.h-12 {
+  height: 3rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.flex-none {
+  flex: none;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-x-2 {
+  column-gap: 0.5rem;
+}
+.gap-x-4 {
+  column-gap: 1rem;
+}
+.gap-x-6 {
+  column-gap: 1.5rem;
+}
+.gap-y-8 {
+  row-gap: 2rem;
+}
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  border:0;
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+.divide-y > div.deal-details-inner:last-of-type {
+  border-bottom-width: 0px;
+}
+.divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(243 244 246);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.border {
+  border-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-gray-200 {
+  border-color: rgb(229 231 235);
+}
+.border-gray-900\/5 {
+  border-color: rgb(17 24 39 / 0.05);
+}
+.bg-gray-50 {
+  background-color: rgb(249 250 251);
+}
+.bg-red-50 {
+  background-color: rgb(254 242 242);
+}
+.bg-white {
+  background-color: rgb(255 255 255);
+}
+.object-cover {
+  object-fit: cover;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.font-medium {
+  font-weight: 500;
+}
+.leading-6 {
+  line-height: 1.5rem;
+}
+.text-gray-500 {
+  color: rgb(107 114 128);
+}
+.text-gray-700 {
+  color: rgb(55 65 81);
+}
+.text-gray-900 {
+  color: rgb(17 24 39);
+}
+.text-red-700 {
+  color: rgb(185 28 28);
+}
+  .px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem; 
+  }
+  .pl-1 {
+    padding-left: 0.25rem;
+  }
+  .pr-1 {
+padding-right: 0.25rem; 
+  }
+  .px-2 {
+    padding-left: 0.50rem;
+    padding-right: 0.50rem; 
+  }
+  .pl-2 {
+    padding-left: 0.50rem;
+  }
+  .pr-2 {
+padding-right: 0.50rem; 
+  }
+  
+.text-sky-700 {
+  color: rgb(3 105 161);
+}
+  .ring-sky-600\/10 {
+  border: 1px solid rgb(2 132 199 / 0.1);
+  }
+  .bg-sky-50 {
+  background-color: rgb(240 249 255);
+}
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  .bg-green-50 {
+  background-color: rgb(240 253 244);
+}
+  .text-green-700 {
+  color: rgb(21 128 61);
+}
+  .ring-green-600\/10 {
+  border: 1px solid rgb(22 163 74 / 0.1);;
+  }
+</style>
+
+<ul class="deals-container">
+  
+{{#result}}
+
+<li class="deal-container">
+<div class="deal-header">
+<img src="https://{{omni_dbt__product_images.image.value_static}}?size=512" class="deal-logo">
+<section class="deal-name flex flex-col" style="justify-content: start;">
+<div class="flex flex-row" style="align-items: center;">{{omni_dbt__products.name.value}}
+</div>
+</div>
+</section>
+</div>
+
+<dl class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6">
+
+<div class="deal-details-inner" style="border-bottom: none;">
+<dt class="text-gray-500">Revenue</dt>
+<dd class="flex items-start gap-x-2">
+<section class="rounded-md ml-2 font-medium ring-1 ring-inset text-green-700 bg-green-50 ring-green-600/10" style="padding: 2px 6px">{{omni_dbt__order_items.total_sale_price.value}}</section>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Brand</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__products.brand.value}}</div>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Category</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__products.category.value}}</div>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Total Items Sold</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__order_items.count.value}}</div>
+</dd>
+</div>
+
+<div class="deal-details-inner">
+<dt class="text-gray-500">Retail Price</dt>
+<dd class="flex items-start gap-x-2">
+<div class="font-medium text-gray-900">{{omni_dbt__products.retail_price.value}}</div>
+</dd>
+</div>
+
+</dd>
+</div>
+</dl>
+</li>
+
+{{/result}}
+</ul>
+Dashboard tile anchors (table of contents)
+Reference individual tiles as anchors to create a table of content for a dashboard. Best practice dictates using lowercase references. Pro-tip: Use markdown query tiles (from the workbook) instead of dashboard text tiles to build these anchors.
+Anchor/header tiles
+Table of contents example
+<style>
+.md-card { 
+  display: flex;
+  background: linear-gradient(
+    132deg,
+    #8eecd5 2.13%,
+    #9DAAF4 67.53%,
+    #F7A8CB 90%
+  );;
+  padding: var(--size4);
+  border-radius: var(--radius-md);
+  color: var(--color-text-inverse);
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  margin-block: 0;
+}
+</style>
+<h1 class="md-card">Overview</h1>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dashboard tabs
+Markdown tiles can also be used to create tabs in dashboards, allowing users to jump from one dashboard to another in internal or embedded scenarios. The links can be exact, or relative references (e.g. /dashboards/<dashboard-id>) and are contained in the href field of an <a> tag as seen below.
+<div style="display: flex; flex-direction: row; justify-content: center; width: 100%;">
+  <div style="background-color: transparent; padding: 20px; display: flex; justify-content: center; align-items: center; width: 48%; border: 1.5px solid #ddd; border-bottom: none; border-radius: 4px 4px 0 0;">
+    <a href="https://www.google.com" style="display: block; width: 100%; text-align: center; text-decoration: none; color: inherit;">
+      <h3>Dash One</h3>
+    </a>
+  </div>
+
+  <div style="background-color: #f5f5f5; color: #666; padding: 20px; display: flex; justify-content: center; align-items: center; width: 48%;">
+    <a href="https://www.google.com" style="display: block; width: 100%; text-align: center; text-decoration: none; color: inherit;">
+      <h4 style="font-weight: 400;">Dash Two</h4>
+    </a>
+  </div>
+</div>
+Related
+Markdown syntax cheatsheet
+Mustache syntax reference
+Previous
+KPI
+Next
+Single record tables

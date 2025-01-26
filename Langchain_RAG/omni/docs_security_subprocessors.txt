@@ -1,0 +1,9 @@
+SecuritySubprocessors
+Omni subprocessors
+Omni uses certain third parties to assist in providing the Omni services, and those that have access to Customer Data are considered subprocessors.
+Name Nature of Processing Territories
+Amazon Web Services Cloud infrastructure US, Ireland, Australia
+Previous
+Overview
+Next
+AI tools & data handling

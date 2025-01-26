@@ -1,0 +1,94 @@
+Create and manage dataset parameters
+Suggest Edits
+A dataset parameter is a customizable field that you can add to a dataset worksheet and reference in formulas and in custom SQL. Creating dataset parameters and referencing them allows you to dynamically replace values used in calculations.
+Use a parameter instead of a constant value for what-if and user input analysis. Using a parameter lets users change its value very quickly. For example, you might want to compare product sales growth by a variable 2%, 5%, and 10% percent. A parameter can quickly inject this variable value into a formula.
+Dataset parameters can also improve performance for expensive workbook queries. Use dataset parameters to filter the data down to only what is needed.
+User requirements
+The ability to create, edit, delete, and use parameters in datasets requires the following:
+You must be assigned an account type with the Create, edit, and publish datasets permission enabled.
+You must be the the dataset owner or be granted Can edit dataset permissions.
+The ability to view parameters in a dataset, requires the following:
+You must be assigned an account type with the View datasets permission enabled.
+You must be the the dataset owner or be granted Can view dataset permissions.
+View dataset parameters in a dataset worksheet
+From the Sigma Home page, select an existing dataset or create a new one. See Create Datasets.
+When viewing a dataset, access dataset parameters when viewing the Worksheet tab for the dataset, in the left panel:
+In the left panel, all existing dataset parameters are shown under Parameters. For each parameter, you can see:
+Data type: Represents the value type of the parameter, such as text (abc), number (123), or date (calendar). For more information see Supported data types and formats.
+Parameter name: The name of the parameter.
+Parameter value: The current value of the parameter. When editing the dataset, you can input a new parameter value. Depending on the parameter settings, you might choose a value from a list, input text, input a number, or select a date.
+Parameter menu: Menu to edit, duplicate, or delete the parameter. Select the to open the menu. This menu is only available when editing the dataset.
+Create a dataset parameter
+Open a dataset, then open the Worksheet tab for the dataset.
+Click Edit.
+If the left control panel is not already open, expand it by clicking Show Controls in the toolbar, or by selecting the Controls bar.
+In the Parameters section, click Add Parameter.
+The Add Parameter modal opens.
+For Parameter Name, enter a name for the parameter.
+(Optional) Add a description.
+Select the Data Type (Text, Number, or Date) for the parameter.
+The Suggested Values option determines the parameter’s input type. Select either:
+All: Depending on the data type, can be a text, number, or date value.
+List: A custom set of value options. Users can select any value in the list. See Use a list of values in a dataset parameter.
+(Optional) Specify a Default Value for the parameter.
+(Optional) For date or number data types, specify a Format for the parameter value.
+Click Save.
+After creating a parameter, you can use it in one of the following ways:
+In the dataset worksheet left Controls panel, change the value.
+Reference the parameter in a formula, such as in a new dataset column. See Reference a dataset parameter in a formula in a dataset worksheet.
+Update the value of the parameter based on the selection in a workbook control. See Parameters in Workbooks.
+Use a list of values in a dataset parameter
+Follow the steps to create a dataset parameter, then for Suggested Values, select List.
+(Optional) For a date or number data type, specify a Format for the parameter value. For example, format a Number value as currency.
+In the Values List, add each value. If you defined a display format, the Display Value reflects the formatting.
+(Optional) In the Default Value dropdown menu, select one of the values from the list.
+Click Save.
+Reference a dataset parameter in a formula in a dataset worksheet
+You can reference a dataset parameter by name in a worksheet column formula. The formula uses the value of the parameter and automatically updates when the parameter value is changed.
+For example, for a dataset with a Revenue column, you might create a Min Sales Amount parameter, then calculate a formula to evaluate whether the sales revenue is greater than the minimum sales amount:
+Add a new column to the dataset.
+In the formula bar for the new column, enter the name of the dataset parameter surrounded by square brackets. For example, [Min Sales Amount].
+Rename the column to reflect the formula. For example, Min Sales Param.
+In the parameter list, update the value of the parameter and observe the changes to the column.
+Modify the column formula to use the parameter in a calculation. For example, evaluate whether the Revenue for each row in the column is greater than the Min Sales Amount parameter value using the formula: [Revenue] > [Min Sales Amount]
+Sigma automatically calculates a Boolean (logical) value for the column.
+In the parameter list, change the value of the parameter and observe the changes to the true/false values in the column.
+The calculated column automatically updates when you enter a new parameter value.
+Filter a dataset worksheet with a dataset parameter
+To filter a dataset worksheet based on a dataset parameter:
+Create a parameter. See Create a dataset parameter.
+Reference the parameter in a column formula. See Reference a dataset parameter in a formula in a dataset worksheet.
+Create a filter for that column:
+From the column menu, select Add Filter.
+In the Add Filter modal, select the filter type and the filter value(s) to filter in the dataset. For example, choose to display only True values.
+Click Save.
+The filter appears in the side panel in the Filters section. You can update the parameter and the filter from the panel.
+Reference a dataset parameter in SQL
+You can create a dataset or populate a workbook element by writing a SQL query against a connected data platform. You can use dataset parameters in your SQL query by wrapping the name of the parameter in curly brackets:
+{{<dataset-parameter-name>}}
+After you update a SQL statement to reference a parameter, changes to the parameter value propagate to the SQL source and refresh the data.
+To reference a dataset parameter in SQL:
+Create a parameter.
+In a workbook, create a data element from SQL. See Create a data element.
+When writing the SQL, add the parameter by referencing its name in double curly brackets, replacing any spaces in the name with hyphens:
+{{<parameter-name>}}
+For example:
+SQL
+select * from EXAMPLES.PLUGS_ELECTRONICS.F_POINT_OF_SALE
+  where SALES_AMOUNT > {{min-sales-amount)}
+If the parameter value is passed into the SQL with single quotation marks, you can remove these quotation marks by prepending the special keyword "#raw" before the parameter name:
+{{#raw <parameter name>}}
+🚩
+If you use the #raw configuration value, row-level security can be bypassed, creating a security vulnerability.
+After saving the SQL, test the results by inputting a value in the parameter and review the output of the data element.
+For more examples and details, see Write custom SQL and Create a dataset from SQL.
+Delete a dataset parameter
+To permanently delete a dataset parameter:
+Go to a dataset's worksheet tab.
+Click Edit.
+If the left control panel is not already open, expand it by clicking Show Controls in the toolbar, or by selecting the Controls bar.
+In the Parameters list, hover over the parameter that you want to delete, then click the caret to open the dropdown menu.
+Click Delete.
+RELATED RESOURCES
+Parameters in Workbooks
+Create datasets

@@ -1,0 +1,106 @@
+Create and manage account types
+Suggest Edits
+Account types enable you to manage member access to specific features and capabilities available through each license tier. Default and custom account types add flexibility and scalability to Sigma’s access control methodology, allowing your organization to adapt to ongoing changes in your licensed user base and user requirements.
+This document introduces default and custom account types and explains how to create, manage, and assign account types to organization members. For more information about account types as they relate to the licensing model, see License and account type overview.
+User requirements
+To create and manage account types and member assignments, you must be assigned the Admin account type.
+Default and custom account types
+Sigma supports default and custom account types that allow you to enable or disable any combination of permissions within the constraints of your organization’s license tiers.
+For a comparison of available account type permissions by tier, see Account type permission availability matrix.
+Default account types
+There are four default account types built into your organization: Lite, Essential, Pro, and Admin. These account types reflect Sigma's license tiers and support four standard roles or levels of access.
+Default account type Description
+Lite
+(Lite license)
+Enables all permissions available through the Lite license tier.
+Recommended for members who require access to prepared data and insights.
+Essential
+(Essential license)
+Enables all permissions available through the Essential license tier.
+Recommended for members who require more deep-dive capabilities in published workbooks but don’t need to build workbooks themselves.
+Pro
+(Pro license)
+Enables a selection of permissions available through the Pro license tier.
+Recommended for members who model, transform, and analyze data.
+Admin
+(Pro license)
+Enables all permissions available through the Pro license tier and administrative privileges.
+Recommended for system administrators who manage organization settings and members.
+Custom account types
+Custom account types allow you to create additional roles and variations of access within any license tier. You can enable or disable individual permissions for granular access control that suits any member of your organization.
+Create and manage account types
+The following procedures demonstrate how to create, edit, and delete account types. These tasks involve the account type details and permissions only. For information about account type assignments, see View and manage account type assignments in this document.
+Create a new custom account type
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, click Create New Account Type.
+In the New Account Type page, configure the custom account type:
+In the Name field, enter a unique name to identify the account type.
+In the Description field, enter a description about the account type (for example, context about its permissions or member role).
+In the permissions table, select the checkbox for each permission you want to enable, and clear the checkbox for each permission you want to disable.
+💡
+To select all permissions available through the Lite, Essential, or Pro license tier, select the checkbox in the applicable column header.
+Click Create to save the new account type.
+Edit an existing account type
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, search or browse the list of account types and select the one you want to edit.
+📘
+You cannot edit details and permissions of the default Admin account type.
+In the account type’s overview, click Edit.
+In the Edit Account Type page, edit the account type details and permissions as needed, then click Save to update the account type.
+Delete an existing account type
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, search or browse the list of account types to locate the one you want to delete, then click More and select Delete.
+📘
+You can only delete custom account types. You cannot delete the default Admin, Pro, Essential, or Lite account types.
+In the Delete Account Type modal, select an account type to reassign members to, then click Delete.
+View and manage account type assignments
+There are several ways to view and manage account type assignments in Sigma. The following procedures highlight the methods available within the Administration > Account Types page.
+View members assigned a specific account type
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, search or browse the list of account types and select the one you want to view.
+In the account type’s overview, go to the Members Assigned this Account Type section to view a list of members currently assigned the account type. You can search the list and filter it by date joined, member status, and user type.
+Add members to a specific account type
+📘
+If your organization uses an identity provider (IdP) to manage permissions, you must assign users to Sigma account types in the IdP.
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, search or browse the list of account types and select the one you want to assign.
+In the account type’s overview, go to the Members Assigned this Account Type section and click Add members.
+In the Assign Account Type to Existing Members modal, search for and select one or more members to assign the account type, then click Confirm.
+Sigma immediately updates the account type assignment and sends an email to the added members to notify them of the change.
+Reassign members from a specific account type
+📘
+If your organization uses an identity provider (IdP) to manage permissions, you must reassign Sigma account types in the IdP.
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, search or browse the list of account types and select the one with members you want to reassign.
+In the account type’s overview, go to the Members Assigned this Account Type section, locate the member you want to reassign, then click More and select Reassign account type.
+Alternatively, to bulk reassign members, select the checkbox of each member you want to reassign, then click Reassign account type.
+In the Reassign Account Type modal, select the account type you want to reassign to the members, then click Confirm.
+Sigma immediately updates the account type assignment and sends an email to the members to notify them of the change.
+Manage default invitation account type
+When you invite a new member to your organization, you can select the account type to assign. If you don’t manually select one, Sigma applies the default account type, which you can designate in the Account Types page.
+📘
+The default invitation account type only applies to password-authenticated members invited directly from the Administration portal. It doesn't apply when your organization uses SAML or OAuth authentication methods.
+Go to Administration > Account Types:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account Types.
+In the Account Types page, select an option in the Invitation Default field.
+Sigma immediately applies the update to the invitation form fields.

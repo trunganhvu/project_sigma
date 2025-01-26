@@ -1,0 +1,60 @@
+Folder and Document Permissions
+Suggest Edits
+Who manages permissions?
+Access for each Sigma document can be shared, modified or revoked by either the individual document’s owner or an organization Admin.
+The document owner is initially its the member who created it. However, admins do have the ability to reassign ownership when managing content permissions (note the new owner must be shared the document first before they can be assigned ownership).  Ownership may also be transferred to an admin if the original owner’s account has been deactivated.
+Permission Types
+Permissions can be granted to users, teams, and/or to all organization members. Workspace and folder permission options vary from document permission options.
+Folder Permissions
+Permissions set at the folder level apply to all documents within the particular workspace or folder.
+Permission Folder access and capabilities
+Can view - View-only access to documents and folders in the shared space
+Can explore - Explore access to workbooks in the shared space
+- View-only access to all datasets in the shared space
+Can contribute - Create and edit their own docs and folders
+- View and explore others users’ documents and folders in the shared space
+- Manage anything they create. Includes deletion, renaming, moving of their own documents and folders
+
+A user with Can Contribute access to a workspace automatically gets Can Edit access to all documents that they’ve personally created in that workspace. They also get Can View access to datasets in the workspace and Can Explore access to workbooks in the workspace.
+Can manage - Create and edit their own documents and folders
+- Edit other’s documents and folders in the shared space
+- Manage anything in the shared space. Includes access management, sharing, deletion, renaming, and moving of anyone’s documents and folders
+
+Can Manage in a workspace or folder grants Can Edit on any docs within that folder.
+Document Permissions
+Permissions set at the document level apply to the particular workbook or dataset.
+Permission Document access and capabilities
+Can view - View and copy the document
+- Send and schedule exports
+- Use datasets as data sources for workbooks or other datasets
+Can explore (Only available for workbooks)
+
+- All Can view privileges
+- Perform analysis in existing workbooks
+Can edit - All Can view and Can explore privileges
+- Edit, publish, and share 
+- Can manage content, including the ability to delete, move, or rename.
+Permission Inheritance
+Permissions are Additive
+It is possible that a user or team can be granted multiple permissions on content.
+For example, a user may be granted Can View access on a folder and Can Edit access on a specific document in that folder. In such a scenario, Can Edit permission will be recognized for that specific document. However, the user will only have Can View permission on all other content in the folder.
+Inherited permissions also cannot be downgraded. For example, if a user is granted Can Manage access on a folder, they automatically inherit the same permissions for all content in that folder. Assigning them to Can View access on a document in that folder will not override the inherited higher-level Can Manage access.
+Upstream Access is Not Inherited
+When a team or user is given access to content in Sigma, that access is NOT passed to upstream sources.
+Grant and Manage Permissions
+Permissions are managed directly on each individual folder or document. Use the instructions linked to below for the content type you wish to share.
+Share a Workbook
+Share a Dataset
+Share a Folder
+Access Shared Content
+When content is shared with you, whoever shared it will be given the option to send an email notifying you that you now have access. To find content that has been shared with you:
+Open Sigma’s left hand navigation panel.
+Click to open your Shared With Me page.
+Request Permissions to Access Content
+If you do not have permissions to access specific content (such as, a workspace, folder, dashboard, dataset, or workbook), you'll receive an Access Denied error page. 
+However, you can request access by clicking the Request Access button. Once clicked, the button will change to Request Sent. The owner of the content will review the request.
+RELATED RESOURCES
+Share a workbook
+Share datasets
+Share a Folder
+Manage Workspaces

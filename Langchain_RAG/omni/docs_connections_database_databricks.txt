@@ -1,0 +1,19 @@
+Connect to DataDatabase setupDatabricks
+On this page
+Databricks
+Connecting to Databricks
+Generate a personal access token (PAT)
+Omni uses personal access tokens to authenticate to Databricks. Follow the instructions in databricks to generate an Access Token for a service principal.
+Retrieve the HTTP Path and Host Name
+Gather the HTTP Path and Server Hostname from the Connection Details page in Databricks. You can get there by navigating to SQL > SQL Warehouse > Click on <Your_Warehouse_Name> > Connection Details.
+Creating the connection in Omni
+Display Name: <CONNECTION_NAME>
+Host: <YOUR_HOSTNAME> (from previous step)
+HTTPPath <YOUR_HTTP_PATH> (from previous step)
+Default Catalog: <YOUR_CATALOG>
+User: leave blank
+Password: <YOUR_PAT> (from previous step)
+Previous
+ClickHouse
+Next
+Microsoft SQL Server

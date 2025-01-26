@@ -1,0 +1,17 @@
+AvgIf
+Suggest Edits
+The AvgIf function finds the average value for a column or group for entries that the condition is true.  This equals the to the sum of the values that meet the condition divided by the number of values that meet the condition.
+Syntax
+AvgIf(field, condition)
+Function arguments:
+field (required) - The of numbers column to be averaged.
+condition (required) - The condition to test. If the condition is True, then the row will be factored into the aggregate.  You can use operators in conditions.
+Example
+AvgIf([Sale], [State] = "TX")
+Finds the average Sale value for entries where the State indicated is Texas.
+AvgIf([Sales], [Region] = "East" AND [Status] = "Complete")
+Finds the average Sale value for entries in the "East" Region that are marked as "Complete".
+RELATED RESOURCES
+Avg
+MaxIf
+MinIf

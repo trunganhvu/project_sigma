@@ -1,0 +1,8 @@
+EmbeddingOverview
+Embedding
+Everyone wants data, but not everyone wants to log into a BI tool to get it. The Omni platform powers embedded dashboards and workbooks for internal use (wikis, Salesforce, Notion, etc) or external consumption (directly in your product with SSO).
+Whether internally embedding or externally embedding data, establishing the right infrastructure is key to success.
+Previous
+Settings
+Next
+Overview

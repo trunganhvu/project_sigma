@@ -1,0 +1,64 @@
+Content ManagementSharing content
+On this page
+Content sharing
+Content can be shared directly from the content itself or by navigating to the folder the content is saved to.
+To access sharing settings for content:
+Open the document or folder and click the Share button near the top right corner of the page, or
+On a page like the shared Hub or My Documents, use the Options (three dots) menu next to the content and click Share:
+Note: Publishing a document using the draft/publish workflow doesn't inherently grant document access. The document's folder location and document-level permissions determine who can access it. Refer to the Editing & publishing guide for more information.
+Controlling user access
+When sharing content, you can determine how other users interact with the content in two ways: the access role of the user/group and the ability to interact with the content.
+Managing access with access roles
+The user access role assigned to the folder acts as the base role for the folder's contents. The base role is the minimum access role required for all documents inside the folder.
+Documents may be assigned more permissive roles than the folder base role, but a document can't have a less permissive role than the folder that contains the document.
+You can assign access roles to users and groups in the Share modal by:
+Clicking the Share with users or groups field
+Selecting the users or groups you want to grant access to
+Selecting an access role using the dropdown and clicking Share:
+Organization default access roles
+Admins can set default content access roles for the organization, which will be automatically applied when content is added to the organization's Shared space.
+Content owners can select more permissive roles than the organization default. For example, if the organization default is Viewer, the owner of a document can select the Editor or Manager access roles for their content.
+Managing access with folders
+You can also control content access by assigning rules in various folders and then adding content to those folders. For example, a user shares content to the organization’s Shared folder to make content accessible to the entire organization or save the content to your Personal folder.
+TIP
+When moving a document from your personal folder to a shared folder or from one shared folder to another shared folder, note that the document's owner will change to the new folder's content manager.
+Controlling interactivity with document abilities
+You can also choose what users who access your content can do by enabling or disabling different abilities, like scheduling. You can access these settings by:
+Clicking Settings in the Share modal, or
+Clicking File > Document Settings in a dashboard or workbook
+Admins can control the available abilities for all documents in the organization using the Document abilities setting. If an ability isn't available in a document, it may be disabled at the organization level.
+Document identifier
+Under the document settings, users can also change the unique slug for this document. Changing this can give you a more readable name in the URL, but it must be unique. Updating this is reflected in real time. This could also be used for updates to an embedded dashboard without requiring an engineer to point from one identifier to another, by instead pointing to a fixed, immutable URL.
+Sharing with your organization
+All Omni organizations have a Shared folder, which contains all content that has been shared with the organization. Admins can allow users to add documents and folders to the Shared folder with the Content organization setting.
+If this setting is disabled, users can only add content to folders that they have been specifically granted access to.
+Using AccessBoost to boost permissions
+AccessBoost allows content managers to enable permission boosting. AccessBoost ignores an Omni user's database connection role. When enabled, the user can run a dashboard and view all of the data that dashboard shows even if they typically would not be able to see content built by SQL. AccessBoost only alters the access to the data on a dashboard. AccessBoost still respects a user's connection role when the user runs a query at the workbook level.
+AccessBoost may be useful in scenarios where users with connection roles of Querier and Admins that want to share dashboard content with users that have lower level connection roles like Restricted Querier, Viewer and No Access.
+AccessBoost does not allow users to bypass access_filters.
+ACCESSBOOST 🔥 TIPS
+Admin Restrictions
+Embed Considerations
+Only users with an Admin connection role can enable AccessBoost on content unless an Admin user enables the setting Non-administrators can enable AccessBoost on content in the Admin > Content Permissions settings.
+AccessBoost is enabled using the AccessBoost setting in Settings > Content Permissions > AccessBoost.
+When enabled at the organization level, you can set AccessBoost:
+For your organization's Default access role in Settings > Content Permissions > Default Content Access
+At the content level, in the document or folder's Share modal
+AccessBoost scenarios by level
+Level Description Enabled Disabled
+Organization An admin user can enable or disable AccessBoost at the organization level in the Admin settings under Administration > Content Permissions Allows users who manage content to enable AccessBoost at the folder and document levels Prevents any users who manage content from enabling AccessBoost on the folder or document levels
+Folder Once an admin user has enabled AccessBoost in the Admin settings for Content Permissions the content manager users can choose to enable AccessBoost at the folder level. Allows users with access to a folder to open any dashboards in that folder, view the content of those dashboards even if the user's connection role would prevent them from viewing that content. i.e. a dashboard built with SQL requires the user opening that dashboard to have a connection role of Querier or higher. A user must have a viewer connection role or higher for dashboards built off of modeled topics. Any content on a dashboard built with SQL requires users to have a connection role of Querier or higher.
+Document A user managing their content can choose to enable AccessBoost at the document level Allows users with access to the document to open and view the content of the document even if the user's connection role would prevent them from viewing that content. i.e. a dashboard built with SQL requires the user opening that dashboard to have a connection role of Querier or higher. Without AccessBoost, a user must have a viewer connection role or higher for dashboards built off of modeled topics. Any content on a dashboard built with SQL requires users to have a connection role of Querier or higher.
+Sharing content externally
+Omni has robust sharing functionality through Delivery and Embedding which allows users and organizations to securely share the data in a variety of forms.
+Access warnings
+Access warnings will appear as a yellow asterisk (*) on a dashboard or a tile that contains content that may not be accessible to certain users. These warnings provide context that help make the dashboard viewing experience consistent for all users.
+Generally, access warnings will appear when a change is made that escapes a topic:
+Queries built outside of a topic (All Views and Fields) or from raw SQL
+Relationship changes in the workbook model that include new joins not present in the shared model
+access_filters or access_grants
+Changes to Dynamic Schemas
+Previous
+Editing & publishing content
+Next
+Workbooks

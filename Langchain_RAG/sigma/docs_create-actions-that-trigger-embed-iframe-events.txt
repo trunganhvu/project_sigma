@@ -1,0 +1,33 @@
+Create actions that trigger embed iframe events
+Suggest Edits
+Workbook actions configured in an embedded workbook support interaction with host applications. You can configure an action to send an iframe event from your embedded content to your host application, which can then react to this event with some outcome. For example, you can use these events to add custom tracking, change the UI of your application, or trigger your own application APIs.
+This document explains how to configure the Generate iframe event action in an embedded workbook. For more information about actions in Sigma, see Intro to actions. For more information about embedding, see Intro to embedded analytics.
+System and user requirements
+📘
+The following requirements apply to users who configure actions. Users who access and interact with a workbook can typically trigger all existing actions within it. Any restrictions are noted in this document.
+The ability to configure actions requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
+1
+If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
+This workbook action is only relevant for embedded workbooks. See Intro to embedded analytics for specific requirements for public and secure embedding.
+Prerequisites
+Configure an event listener and an action:outbound event in your application to receive messages about the user interactions in the embedded workbook. You can then develop custom logic in your host application to respond to these events.
+See Implement inbound and outbound events in embeds for information about about how to send and receive events between a parent application and Sigma.
+See the configuration instructions for the action:outbound event to configure the outbound event required for this workbook action to take effect.
+Generate an outbound iframe event
+Create an action that generates an outbound iframe event.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Generate iframe event.
+Event name Enter the name of the event configured in the name property in the action:outbound event in your host application.
+Event key and Key value Enter the key names and values configured in the values property in the action:outbound event in your host application.
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.

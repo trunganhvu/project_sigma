@@ -1,0 +1,11 @@
+Type functions
+Suggest Edits
+Type functions perform type casting or type conversion operations that transform values from one data type to another.
+Date Converts text or number values to the date data type in ISO datetime format.
+JSON Converts values to the variant data type in JSON format.
+Logical Converts values to the logical data type in boolean format (true or false).
+Number Converts values to the number data type.
+Text Converts values to the text data type.
+Variant Converts text values to the variant data type.
+The following geography function also transform values from one data type to another:
+Geography Converts GeoJSON or WKT formats to the geography data type.

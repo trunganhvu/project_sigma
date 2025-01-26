@@ -1,0 +1,5 @@
+Join functions
+Suggest Edits
+Join functions retrieve data from target elements based on related columns in the local and target elements.
+Lookup Finds a value in a specified target element column and returns the corresponding row value from another column in that element.
+Rollup Finds a value in a specified target element column and aggregates all corresponding row values from another column in that element.

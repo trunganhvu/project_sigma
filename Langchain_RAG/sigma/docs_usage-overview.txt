@@ -1,0 +1,56 @@
+Usage overview
+Suggest Edits
+All organizations in Sigma automatically receive a set of Sigma-built Usage workbooks. They provide measurable insight into how your organization uses Sigma. The Admins of your Sigma organization can see this information from the Usage page in Administration.
+When you click the Usage tab, it defaults to the Users dashboard.
+Requirements
+You must be an organization Admin, or have a custom account type that grants View Usage Dashboard permissions. For more information, see User Account Types.
+Usage reports
+Users
+Explore user status, activity and licensing. Filter by date range and/or query text.
+Teams
+Explore your organization’s teams, users on each team, and teams for each user. Filter by user email and/or team name.
+User Leaderboard
+Discover your most active and most recent users. Filter by date range, Top N, and/or query text.
+Engagement
+Track user engagement over the last 14 days. View trends for Daily Active Users (DAU) and Monthly Active Users (MAU).
+Document Activity
+Discover your organization’s most commonly used documents and your top documents users. Filter by date range, Top N, and the number of days since the dashboards were last opened. These insights can assist organizations to audit unused documents and identify documents that drive the most user engagement.
+Document Permissions
+Discover who has permissions for a document, the origin of the permissions, access ype, and who granted permission. These insights can help organizations to improvevsecurity.
+Schedule Exports
+View data on your organization's export tasks and Sendgrid email events.
+Query Summary
+View a summary of your queries. Available data includes total queries run, queries over 10s, median query time, average query duration, queries by user type, query status, and timeouts. Filter by date range and/or query text.
+Queries by Day
+Explore query success and timeout rates, runtimes, and the number of users running queries. Filter by date range and/or query text.
+Query Performance
+Investigate query performance trends. Filter by date range and/or query text.
+Query Details
+View a detailed query list of your organization's queries. This includes information such as the user who ran the query, the document URL, query duration and status, and the full query text. Filter by date range, user email, query text, request id, Top N, query status, and total query duration. Results can be sorted by timestamp and total duration.
+Embedding
+View application embedding (legacy) and public embedding usage for your organization. Secure embeds are not tracked. Each embed URL must include an external_user_id for tracking purposes.
+Access your usage information
+Open your Admin Portal by selecting Administration in the user menu at the top right of your screen.
+Select the Usage tab from the left hand panel.
+Select a dashboard from the dropdown in the upper left.
+Controls
+All Usage Dashboards are pre-built with one or more controls. Explore your data by inputting different values into these controls.
+Download visualizations
+Hover your cursor over the visualization you would like to download. A menu appears in the top right corner of the visualization element area.
+Click the ••• icon to open the visualization dropdown menu.
+Hover over Download and select an export type from the submenu.
+Data update intervals
+Users
+Hourly
+Queries
+Hourly
+Materializations
+Hourly
+Scheduled Exports
+Hourly
+Embedding
+Hourly
+Document Activity
+Every 4 hours
+Document Permissions
+Nightly (Between 2-3am PT)

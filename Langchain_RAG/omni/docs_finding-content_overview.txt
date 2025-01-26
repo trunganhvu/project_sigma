@@ -1,0 +1,17 @@
+Content ManagementOverview
+Overview
+Omni’s content organization and permissions dictate access levels to various resources such as Shared Folders, Personal Folders, My Documents, and documents shared with users. The primary components include roles (Viewer, Editor, Manager), the ability to set permissions for individual users or groups, and the permissions configurations at the organization level, permission defaults, folder permissions, and individual document permissions. Explore our documentation on content navigation, sharing and permissions:
+📄️ Overview
+Omni’s content organization and permissions dictate access levels to various resources such as Shared Folders, Personal Folders, My Documents, and documents shared with users. The primary components include roles (Viewer, Editor, Manager), the ability to set permissions for individual users or groups, and the permissions configurations at the organization level, permission defaults, folder permissions, and individual document permissions. Explore our documentation on content navigation, sharing and permissions:
+📄️ Navigating content
+Learn to navigate Omni's content system.
+📄️ Organizing content
+Organize your Omni content with labels.
+📄️ Editing & publishing content
+Iterate and collaborate on changes in your Omni documents using a draft and publish workflow.
+📄️ Sharing content
+Share documents with other users in your Omni organization.
+Previous
+Timezone settings
+Next
+Navigating content

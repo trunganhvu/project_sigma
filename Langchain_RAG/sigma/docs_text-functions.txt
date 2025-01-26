@@ -1,0 +1,32 @@
+Text functions
+Suggest Edits
+Text functions evaluate or manipulate string data to perform operations like text modification, formatting, and extraction.
+Concat Combines multiple strings into a single text value.
+Contains Searches for a specified substring in a text value. If the substring is found, the function returns True, otherwise it returns False.
+EndsWith Determines if a text value ends with a specified substring. If the substring is found at the end of the text value, the function returns True, otherwise it returns False.
+Find Returns the index where it first finds the specified substring within a string. Returns 0 if not found.
+ILike Returns True if the string matches the pattern. Case insensitive.
+Left Returns the left portion of the string (the beginning), up to specified number of characters.
+Len Returns the number of characters in a string, including spaces.
+Like Returns True if the string value matches the pattern. Case sensitive.
+LPad Sets the string to a desired length by adding or removing characters at the front. Uses an optional fill character or defaults to extra spaces.
+Lower Converts a string to all lower case.
+LTrim Removes leading spaces from a string.
+MD5 Calculates the hash value of a string for the MD5 message-digest algorithm (hashing function).
+Mid Returns a substring from a string, defined by offset and length. Same as Substring.
+Proper Converts text to proper case, capitalizing the first letter of each word.
+RegexpExtract Returns the substring that matches a regular expression within a string.
+RegexpMatch Returns True if a string matches a regular expression.
+RegexpReplace Returns a string for a pattern and replaces it with a specified string.
+Repeat Returns the result of repeating the string a specified number of times.
+Replace Replaces every instance of a specified string with a replacement string.
+Reverse Reverses the order of characters in a string.
+Right Returns the right portion of a string (the end), up to the specified number of characters.
+RPad Sets the string to a desired length by adding or removing characters at the end. Uses an optional fill character, or defaults to extra spaces.
+RTrim Removes trailing spaces from the end of a string.
+SHA256 Transforms text input into a 256-bit hash value.
+SplitPart Splits the string into multiple parts at the positions of each appearance of the delimiter and returns the nth part of the string at the specified position.
+StartsWith Determines if a string starts with the specified substring. Returns True or False.
+Substring Returns a substring from a string, defined by offset and length. Same as Mid.
+Trim Removes both leading and trailing spaces from a string.
+Upper Converts a string to upper case (all capital letters).

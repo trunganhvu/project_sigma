@@ -1,0 +1,105 @@
+Reference workbook control values in SQL statements
+Suggest Edits
+When you write SQL statements in Sigma, you can reference the value of a control in your SQL statement by wrapping the control ID in curly brackets:
+{{my-control-id}}
+You can find the control ID in the Settings tab for a control. For more details about control IDs, see Reference control values in a formula.
+The exact syntax depends on the output type of the control:
+Single value (Most control types)
+Min/max values (Number range or range slider)
+Start/end values (Date range control)
+Multiple values (Multi-select list control)
+Limitations and warnings
+If changing the value of a control results in a statement that queries a table with a different schema, the query produces different columns than expected, resulting in errors.
+If you use the #raw configuration value, row-level security can be bypassed in the workbook or worksheet, creating a security vulnerability.
+Reference single value control output in SQL
+You can reference the selected or specified value in a specific control (the output) in a SQL statement. For a control that outputs a single value, use the syntax as follows.
+Supported control types
+Single select list
+Text input
+Text area
+Number input
+Date
+Segmented
+Drilldown
+Slider
+Checkbox
+Switch
+Top N
+Syntax
+To reference the control value in a formula, enclose the control ID in double curly brackets and use the following syntax:
+{{New-Control-ID}}
+Reference number range or range slider control values in SQL
+You can reference the selected or specified values in a specific control (the output) in a SQL statement. For a control that outputs a range of numeric values, use the syntax as follows.
+Supported control types
+Number range
+Range slider
+Syntax
+To retrieve the minimum value, use the following syntax:
+{{Range-Control-ID}}:min
+To retrieve the maximum value, use the following syntax:
+{{Range-Control-ID}}:max
+Reference date range control values in SQL
+You can reference the selected or specified values in a specific control (the output) in a SQL statement. For a control that outputs a range of date values, use the syntax as follows.
+Supported control types
+Date range
+Syntax
+The exact syntax might be different for your connection depending on how your particular data platform interprets the control.
+For example, to extract the start date of the date range control in custom SQL:
+In Snowflake, the control is a VARIANT data type, so you can use the following syntax:
+to_timestamp({{Date-Range-Control}}:start)
+In BigQuery or Databricks, the control is a STRUCT data type, so you can use the following syntax:
+{{Date-Range-Control}}.start
+In Amazon Redshift, the control is a SUPER data type, so you can use the following syntax:
+select date_range.start start from (select {{Date-Range-Control}} date_range)
+In PostgreSQL, the control is a JSONB data type, so you can use the following syntax:
+({{Date-Range-Control}}->>‘start’)::timestamptz
+To reference the end date of the range, reference end instead of start.
+Return output for a specific date range control
+To return rows in Snowflake only when a date column matches the value specified in a date range control, refer to the following example SQL:
+SQL
+SELECT * FROM table
+WHERE
+CASE WHEN date({{Date-Range-Control}}:start) IS NULL
+THEN DATE <= date({{Date-Range-Control}}:end)
+WHEN date({{Date-Range-Control}}:end) IS NULL
+THEN DATE >= date({{Date-Range-Control}}:start)
+ELSE DATE BETWEEN date({{Date-Range-Control}}:start) AND date({{Date-Range-Control}}:end)
+END
+This SQL returns all rows where the DATE column matches the value specified in Date-Range-Control.
+Reference multiple values from a multi-select list in SQL
+You can reference the selected or specified values in a specific control (the output) in a SQL statement. The values in a multi-select list are outputted as an array. For example:
+('apples','bananas','oranges')
+If the control value is output with single quotation marks, you can remove these quotation marks by prepending the keyword #raw before the control ID:
+{{#raw my-control-id}}
+🚧
+If you use the #raw configuration value, row-level security can be bypassed in the workbook or worksheet, creating a security vulnerability.
+Supported control types
+List
+Syntax
+The exact syntax might be different for your connection depending on how your particular cloud data warehouse (CDW) interprets an array data type.
+For Snowflake, see Array in Semi-structured data types in the official Snowflake Documentation.
+For Databricks, see ARRAY type in the official Databricks documentation.
+For BigQuery, see Work with arrays in the official Google Cloud BigQuery documentation.
+For Amazon Redshift, see SUPER type in the official Amazon Redshift Database Developer Guide.
+For example:
+SQL
+select
+  *
+FROM
+  APPLICATIONS.GOOGLE_ANALYTICS.EVENTS
+WHERE
+  TRAFFIC_SOURCE IN {{TRAFFIC_SOURCE}}
+limit
+  10
+For a more detailed example, see Return rows depending on the value of a multi-select control.
+Return rows depending on the value of a multi-select control
+If you have a multi-select control called City and you run this SQL on a Snowflake connection, the following example query returns all rows where the CITY column value is listed in the selection for the City control. If there are no cities selected in the City control, all rows are returned:
+SQL
+SELECT *  
+FROM EXAMPLES.BIKES.STATIONS  
+WHERE  
+CASE WHEN  
+LEN(ARRAY_TO_STRING(ARRAY_CONSTRUCT{{City}},',') ) = 0  
+THEN True  
+ELSE CITY in {{City}} END
+For more examples, see Injecting multi-select parameters in Custom SQL article in the Sigma Community.

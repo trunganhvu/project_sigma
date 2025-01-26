@@ -1,0 +1,33 @@
+Configure OAuth
+Suggest Edits
+You can use OAuth for centralized permission management between your cloud data warehouse (CDW) and your Sigma organization. Using OAuth has several advantages:
+Authenticating Sigma users with OAuth minimizes the risk of password leaks or misuse, which is crucial for maintaining data security and privacy.
+Connections authenticated with OAuth allow your users to read data and use write-back features like input tables, warehouse views, materializations, and CSV uploads with their own individual credentials instead of a service account.
+Admins have the option to configure individual workbooks to run queries using the service account instead of each user’s OAuth credentials. See Run a workbook with service account credentials.
+Requirements
+You must be assigned the Admin account type to manage authentication for your Sigma organization.
+About OAuth for permissions management
+OAuth is a single sign-on (SSO) authorization framework that allows your users to securely log in to applications without the need for a username and password. This authorization happens between a client (you and your users) and one or more resources (i.e. Sigma and your CDW) via your Identity Provider (IdP).
+Your IdP uses an authorization server and short-lived tokens to authenticate your application’s users.
+Configuring OAuth allows your users to see only the data that they are permitted to see in the CDW. This is accomplished by establishing a chain of trust between your IdP, your CDW, and Sigma.
+After you configure these three entities, you can enable OAuth on a per-connection basis in Sigma for any of your connections that support OAuth.
+For an end-to-end walkthrough of an OAuth configuration using Snowflake and Okta, see the Open Authorization (OAuth) QuickStart.
+Limitations of using OAuth in Sigma
+OAuth is only supported for the following connection types:
+Snowflake
+Databricks
+OAuth tokens can expire if the owner goes a significant amount of time without logging in to Sigma. If this happens, scheduled exports and other schedules fail. This limitation can be avoided by running the workbook as a service account. See Run a workbook with service account credentials.
+When users configured in your IdP do not already have a Sigma account associated with their email address, Sigma auto-provisions them with a Sigma account with a Lite account type upon their first login. To change the account type for these users, an admin needs to manually adjust the account type assignments in Sigma. See Reassign members from a specific account type. This manual reassignment of account types is not required if you use SCIM for user and account management. See Manage users and teams with SCIM.
+If you enable guest users in your Sigma organization, those guest users need to be provisioned with an account in your IdP in order to log into Sigma.
+Plan your OAuth configuration
+Your OAuth configuration differs depending on whether you use Snowflake or Databricks as your CDW. Select the configuration path that matches your environment:
+Steps for configuring OAuth with Snowflake
+Steps for configuring OAuth with Databricks
+Steps for configuring OAuth with Snowflake
+Follow the documentation for your IdP to create a Sigma OAuth application to enable authentication via your IdP, then connect to that OAuth application from Sigma. See Configure OAuth with Snowflake.
+If you require write-back features in OAuth enabled connections, prepare your schema in Snowflake. See Configure OAuth with write access.
+Update existing Snowflake connections to use OAuth, or create new ones. See Connect to Snowflake.
+Steps for configuring OAuth with Databricks
+Use Databricks as your IdP and set up a Sigma OAuth application to enable authentication through Databricks, then connect to that OAuth application from Sigma. See Configure OAuth with Databricks.
+If you require write-back features in OAuth enabled connections, prepare your schema in Databricks. See Configure OAuth with write access.
+Update existing Databricks connections to use OAuth, or create new ones. See Connect to Databricks.

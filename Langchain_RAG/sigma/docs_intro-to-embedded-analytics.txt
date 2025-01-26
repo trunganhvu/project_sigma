@@ -1,0 +1,22 @@
+Intro to embedded analytics
+Suggest Edits
+Sigma offers flexible embedding options that enable you to seamlessly integrate comprehensive analytics into various web applications and workflows. You can deliver Sigma content and capabilities directly to your own end users to enhance the user experience in existing systems.
+Embedding methods
+Sigma supports two embedding methods: public and secure.
+Public embedding provides open access to embedded content and is typically used to distribute non-sensitive information. For example, you could utilize public embedding to display a specific chart on a monitor mounted in your office lobby.
+Secure embedding (formerly called "user-backed embedding") offers flexible security options that adopt the host application's user security at runtime. A server-side API (embed API) generates a one-time-use, signed URL to pass user details and other parameters to Sigma, which allows you to control what a user can view in the embed and how they can interact with it.
+Advanced data security in embeds
+When you create a secure embed, you can leverage advanced security features to ensure your embedded solutions meet all data access and security requirements. The following options can be implemented individually or collectively based on your existing system and security practices:
+Column-level security
+Row-level security
+Dynamic connection and role switching
+OAuth
+Additional embedding configurations
+Sigma's embedded analytics accommodate a variety of unique embedding use cases and requirements. The following features are supported to enhance the embed user experience:
+JavaScript actions and events
+Static and responsive design solutions
+Embedding feature support
+Embedded solutions support much of Sigma's native application functionality, including the following features:
+Version tagging
+Localization
+Bookmarks

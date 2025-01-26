@@ -1,0 +1,29 @@
+Substring
+Suggest Edits
+The Substring function is an alias of Mid.
+Returns a substring defined by offset and length.
+Usage
+Substring(string, start, [length])
+string (required) The string to extract a substring from.
+start (required) The index of the first letter of the extracted substring. The first character of the given string is treated as having index 1.
+length (optional) The length of the segment to extract. If length is not given, or if the provided length is longer than the remaining source string, the total remaining string will be returned.
+Example
+You can use this function in combination with the Find function to identify mentions of a given word in a transcript and output the surrounding text.
+For example, given a column Transcript, retrieve 200 characters of text after the word "Sigma":
+Substring([Transcript], (Find([Transcript], "Sigma"), 200)
+Returns a string of text excerpted from the transcript, starting from the word Sigma.
+To retrieve the text in the transcript before and after the given word, you can use this function twice and concatenate the results with the Concat function or the & character. For example, given a column Transcript, retrieve 200 characters before and 200 characters of text after the word "Sigma":
+(Substring([Transcript], (Find([Transcript], "Sigma") - 200), 200)) 
+& (Substring([Transcript], Find([Transcript], "Sigma"), 200))
+Returns a string of text excerpted from the transcript, starting 200 characters before the word Sigma, and ending 200 characters after the word Sigma.
+For example, extract 10 characters from a given string, starting at index 4:
+Substring(“John Doe”, 4, 10)
+Returns "n Doe".
+As another example, extracting data at index 4 for a string length of 3 characters returns an empty string:
+Substring(“Mia”, 4)
+Returns "", an empty string.
+RELATED RESOURCES
+Mid
+Find
+Left
+Right

@@ -1,0 +1,32 @@
+Document Activity Dashboard
+Suggest Edits
+This document explains how to use the Document Activity Dashboard to gain insights into user activity for documents.  
+Requirements
+You must be an organization admin or assigned a custom account type that grants View Usage Dashboard permissions; see User account types.
+Access the Document Activity Dashboard
+Follow the steps below to access the Document Activity Dashboard: 
+Open your Admin Portal by selecting Administration in the user menu at the top right of your screen.
+Select the Usage tab from the left-hand panel.
+Select Document Activity from the dropdown in the upper left.
+Use the Document Activity Dashboard
+The Document Activity Dashboard provides filters to return user activities in relation to documents. This dashboard is based on user actions like opening a doc. It isn't based on query activity.
+It can be used to solve business problems such as:
+To identify old and unused docs that admins may want to delete.
+To discover successful docs that drive a lot of user engagement.
+The term document refers to any of the following: workbook, dataset, worksheet, dashboard, table, template, and sql.
+📘
+Data is refreshed daily between 5 - 6 AM EST.
+Document Activity
+The first section provides numerous filters to return different permutations about user activity and documents. 
+Filters
+Created On: This filter returns all documents created within the defined timespan that were opened by a user.
+Created By: Select who created the document that was opened.  
+Type: Select a specific document type to filter on: **workbook, dataset, worksheet, dashboard, table, template, or sql.
+Last Opened: This filter returns all documents opened within the defined timespan. This timespan can differ from Created On. 
+Opened By: Filter document activity by specific users. 
+Document Name: Filter user activity for a specific document. 
+Days Since Last Opened: Define the number of days since the document has been opened. This filter can be used with Last Opened to add further granularity. For example, you can set Last Opened to 180 days ago, and Days Since Last Opened to 90 days to see docs that were opened in past 180 days, but not in the past 90 days.
+Badge: Select documents with specific Badges.
+Top N: Define the number of rows that are returned.
+Exploration Workbooks  These are created when a user explores data, but hasn't saved it. This field defaults to Exclude explorations. You can select Include or Only Show data explorations in your filtered results. 
+The bottom row displays totals based on the values you filtered against. In this example, 12 documents were created and opened 81 times, by 2 users, and the docs were created by 2 users.

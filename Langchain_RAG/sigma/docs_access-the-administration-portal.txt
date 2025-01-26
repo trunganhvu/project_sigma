@@ -1,0 +1,44 @@
+Access the Administration portal
+Suggest Edits
+The Administration portal contains configurations for your Sigma organization. Users assigned the Admin account type are granted full access to the Administration portal to customize branding, set up user authentication, create connections, invite users, create teams, manage version tags, and more. Other organization members can have partial access to the portal based on specific account type permissions.
+This document describes the Administration portal and how to access it.
+User requirements
+To access and manage all configurations in the Administration portal, you must be assigned the Admin account type.
+Users assigned to account types with the following permissions are granted partial access to the Administration portal:
+Org Management > Usage Dashboard permission: Enables access to all usage dashboards in the Usage page.
+Org Management > Customization permission: Enables the ability to customize fonts and manage workbook themes in the Account page.
+Org Management > Admin permission: Enables the ability to customize fonts, manage workbook themes, customizing email branding, and set up a custom SMTP server in the Account page.
+Data Warehouse > Connections: Enables the ability to manage CDW/DBMS connections in the Connections page.
+Access the Administration portal
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+Click the tabs in the side panel to navigate the portal pages.
+Administration portal pages
+Account
+Manage general account settings, including organization name, time zone, integrations, and so on. For more information, see Account management.
+Authentication
+Manage authentication methods, set custom session timeouts, and restrict email export recipients. For more information, see Manage authentication.
+Connections
+Connect to your Cloud Data Warehouse. For more information, see Connect to data sources.
+Usage
+Understand your organization's Sigma usage through our dashboards. For more information, see Usage overview.
+People
+Add and manage organization members. For more information, see Manage people.
+Teams
+Create and manage teams and workspaces. For more information, see Manage teams.
+Account Types
+Manage user account types, create custom account types, and check license type usage. For more information, see User account types.
+User Attributes
+Create and assign user attributes. For more information, see User attributes.
+Embeds
+View details about your organization's embedded workbooks. For more information, see Workbook embedding overview.
+Tags
+Create and view workbook version tags to streamline your workbook development lifecycle. For more information, see Version tagging.
+Scheduled Exports
+View details about your organization's scheduled exports. For more information, see Manage organization schedules.
+Materializations
+View details about your organizations materialized datasets. For more information, see Materialization.
+Warehouse Views
+View details your organization's warehouse views. For more information, see Review warehouse view details.
+APIs and Embed Secrets
+Create and view details about your organization's API tokens and embed secrets. For more information, see Get started with Sigma's API.

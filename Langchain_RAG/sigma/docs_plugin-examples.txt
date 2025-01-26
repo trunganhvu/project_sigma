@@ -1,0 +1,38 @@
+Plugin examples
+Suggest Edits
+Sigma’s development team has created a set of example plugins, listed below.
+All of our example plugins are hosted and can be added to your organization. To view / add an example plugin to your organization, follow the steps to register a plugin using its Production URL, listed below.
+You can also visit Sigma’s Sample Plugin repository directly on Github.
+Use an Example in Your Organization
+The following examples can be viewed when added to your organization. 
+To add an example plugin to your organization, follow the steps to register a plugin using its Production URL listed below.
+Recharts Bar Chart
+A basic bar chart built with the Recharts library.
+Source code |     Production URL: https://sigma-sample-bar-chart-54049.netlify.app/
+D3 Candlestick
+A candlestick visualization built with D3.
+Source code |     Production URL: https://sigma-sample-candlestick-chart-1664e5.netlify.app/
+Narrative Science Quill
+Demonstrates secure text entry.
+Source code |    Production URL: https://narrativescience-quill-3ee312.netlify.app/
+D3 Graph
+Demonstrates usage of multiple data sources and in-memory joins.
+Source code |    Production URL: https://d3-graph-3a0d0f.netlify.app/
+D3 Sunburst
+A sunburst visualization built with D3.
+Source code |    Production URL: https://d3-sunburst-b97c7c.netlify.app/
+Frappe Heatmap
+A basic Frappe visualization example.
+Source code |    Production URL: https://frappe-heatmap-9a4163.netlify.app/
+Run an Example Locally
+Open your terminal, and navigate to the directory you want to save the example’s in.
+Clone Sigma’s Sample Plugin repository.
+git clone https://github.com/sigmacomputing/sigma-sample-plugins.git
+Navigate to the plugin you would like to try.
+cd sigma-sample-plugins/<plugin-name>
+Run the plugin.
+yarn && yarn start
+Note: For additional instructions, visit the README file located in the main directory of any given example plugin.
+RELATED RESOURCES
+Get Started with Custom Plugins
+Register a Plugin with your Sigma Organization

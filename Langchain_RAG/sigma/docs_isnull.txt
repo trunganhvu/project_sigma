@@ -1,0 +1,30 @@
+IsNull
+Suggest Edits
+The IsNull function returns True if the argument contains missing data values, and False if the argument is not Null (i.e., does not contain missing data values). This function is often applied to a column of data to test for Null values.
+Syntax
+IsNull(argument)
+Function arguments:
+argument (required)- Any argument can be provided. The function can analyze one argument at a time. IsNull is often applied to column of data to test for Null values.
+📘
+The function can analyze one argument at a time.
+📘
+The function does not work with Multi-Select List and Switch type parameters. To check if a Multi-Select List parameter is empty, see ArrayLength.
+Example
+IsNull([Sales])
+Returns False for rows where sales data exists and True for rows where there is no data.
+IsNull([prm-date-range].start) and IsNull([prm-date-range].end)
+Returns True when no start and end date is provided in a Date Range parameter. 
+This can be used to return all data in a table by default when no date range is provided.
+If you want a report that lists Product Types and their respective Product Family:
+If(IsNull([Product Type (Null)]) and IsNull([Product Family (Null)]), [Sku Number],
+IsNull([Product Type (Null)]) and IsNotNull([Product Family (Null)]), [Product Family], 
+Concat([Product Type (Null)], " - ", [Product Family (Null)]))
+Return SKU Number if both Product Type and Product Family are Null. If the Product Type is Null, return Product Family. If both Product Type and Family exists, concatenate Product Type and Product Family with a "-" separator.
+📘
+The Product Type (Null) and Product Family (Null) columns are imputed with Nulls for this example. Product Family is the original column.
+The Product Type - Family column contains the output of the formula above.
+📘
+You can use Coalesce in place of a series of If(IsNull(...)) statements to return the first non-Null value across multiple columns.
+RELATED RESOURCES
+Coalesce
+IsNotNull

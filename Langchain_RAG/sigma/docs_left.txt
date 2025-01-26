@@ -1,0 +1,19 @@
+Left
+Suggest Edits
+Returns a substring that begins at the start of a given string.
+Usage
+Left(string, number)
+string (required) The string from which a left substring will be returned.
+number (required) The desired length of the returned substring. A negative number removes the number of characters from the end of the string.
+Example
+Left("Dec. 12, 1950", 3)
+Returns “Dec”
+Left("St. Louis", 20)
+Returns “St. Louis”
+If number is greater than the length of string, the result is the original string.
+Left("San Francisco", -5)
+Returns “San Fran” because it is the result of removing 5 letters from the end.
+RELATED RESOURCES
+Find
+Mid
+Right

@@ -1,0 +1,66 @@
+Data permissions overview
+Suggest Edits
+Sigma facilitates additive data permissions to support granular data security and flexible access control at any level of the data architecture and organizational structure.
+This document describes the additive data permissions model and provides details about the available permission types. For information about viewing, adding, editing, and revoking grants, see Manage data permissions.
+🚩
+Data permission grants only affect members assigned account types (default or custom) using the Pro license.
+Members assigned account types using Lite or Essential licenses can only view datasets and applicable workbooks (and only when the View datasets and View workbooks account type permissions are enabled).
+Data permissions model
+Data permissions are additive, meaning Sigma provides access and capabilities based on a cumulative set of permissions inherited or granted at different levels of the data architecture (connection, database, schema, database table) and organizational structure (organization, team, user).
+In the data architecture, connection-level grants can be inherited at the database level, database-level grants can be inherited at the schema level, and schema-level grants can be inherited at the database table level. Likewise, in the organizational structure, group-level grants (for the entire organization or a configured team) can be inherited at the user level.
+However, when admins grant permissions directly at the lower levels of the data architecture and organizational structure, Sigma applies the permission (inherited or granted) with the most privileges.
+Example 1:
+John is a member of an organization that connects to a single CDW database containing multiple schemas and database tables. An admin grants John Can use permission at the connection level, which allows him to use all databases, schemas, and database tables within the connection. The admin later grants John Can use & annotate permission for a specific schema, which enables him to use and annotate any database table within that particular schema. The schema-level grant overrides the inherited connection-level grant because the Can use & annotate permission allows more privileges. However, John maintains the inherited Can use permission for all other schemas and database tables that don’t have lower-level grants.
+Example 2:
+In the organization described in the previous example, Amy isn’t yet a Sales team member. At the connection level, an admin grants Can use & annotate permission for the Sales team and Can use permission for Amy as an individual user. At the moment, Amy can use the connection, schemas, and database tables, but she cannot annotate them. However, if the admin later adds her to the Sales team, Amy inherits the team-level grant and can then annotate any table in the connection. The inherited team-level grant overrides Amy’s user-level grant because the Can use & annotate permission allows more privileges.
+In both examples, the additive permissions model applies the cumulative set of permissions inherited or granted at any given level and cannot restrict or revoke access and capabilities inherited by upper-level grants.
+Data permission types
+Sigma supports four permission types that grant various access and capabilities to connections, databases, schemas, and database tables: Can write only, Can use, Can use & annotate, and Can admin.
+The following sections summarize each permission type. For a detailed permissions breakdown, see Data permissions matrix in this document.
+📘
+Admins can grant permissions to groups, regardless of whether all members qualify for the grant. However, individual users only inherit group-level grants if assigned the required account type permissions listed in the following sections.
+Can write only
+The Can write only permission restricts access to data while enabling users to create input tables and CSV upload that write data to the connection’s write-back destination. This permission type is ideal for enabling input tables and CSV uploads in embedded workbooks with restricted data access.
+Permission granularity: Granted at the connection level only
+Minimum required account type permission: Create input tables or Upload CSV
+Can use
+The Can use permission allows users to view connection details, explore the data, and use it to build datasets and workbooks.
+Permission granularity: Granted at the connection, database, schema, or database table level
+Minimum required account type permissions:
+View connections to browse the connection
+Create, edit, and publish datasets to use the connection as a data source for datasets
+Create, edit, and publish workbooks to explore the connection data and use it as a data source for workbook elements
+📘
+Any user can be granted Can use data permission. However, the extent of access and capabilities depends on each individual user’s account type permissions.
+Can use & annotate
+The Can use & annotate permission enables all Can use permissions and allows users to annotate database table details. Table annotations include changes that apply in Sigma only (not written to the database).
+Permission granularity: Granted at the connection, database, schema, or database table level
+Minimum required account type permission: Manage connections or Annotate tables
+Can admin
+The Can admin permission gives full access to the connection data, including the ability to set data permissions for other users or groups.
+Permission granularity: Granted at the connection level only
+Minimum required account type permission: Manage connections
+Data permissions matrix
+The following table indicates user capabilities based on data permission type.
+Can write
+only Can use Can use &
+annotate Can
+admin
+Write data to the connection’s write-back destination1
+Browse connection2
+Explore data
+Use as data sources for datasets and workbook elements
+Edit column details in Sigma3
+Manage metrics
+Manage links to other sources
+Set data permissions
+View and manage connection in the Administration portal
+1
+Create input tables and CSV uploads that write data to the connection’s write-back destination.
+2
+View underlying database table overviews, column details, metrics, links, and lineage (Sigma datasets and workbooks referencing the database table).
+3
+Edit the column name in Sigma (“friendly name”), change column visibility, set column format, and add column description.
+RELATED RESOURCES
+Manage data permissions
+User account types

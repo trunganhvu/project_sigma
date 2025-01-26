@@ -1,0 +1,16 @@
+Text (geography)
+Suggest Edits
+The Text function converts the geography data type into a Well-known text (WKT) representation of geometry format.
+This is a supported geography function. For information about converting other data types to text, see Text.
+Syntax
+Text(input)
+Function arguments:
+input
+(required) The geography data value to convert to WKT format
+Examples
+Text([Coordinates])
+Returns the WKT values for the geography values in the Coordinates column.
+RELATED RESOURCES
+Geography
+Json
+Geography functions

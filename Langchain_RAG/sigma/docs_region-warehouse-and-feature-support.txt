@@ -1,0 +1,129 @@
+Supported regions, data platforms, and features
+Suggest Edits
+Supported cloud platforms and regions
+Your Sigma organization is hosted on one of the following cloud platforms:
+Amazon Web Services (AWS)
+Microsoft Azure
+Google Cloud (GCP)
+💡
+If you're unsure which cloud platform hosts your organization, you can reference it in the Administration portal (if you're assigned the Admin account type). Go to Administration > Account > General Settings, then locate the Site section. The Cloud field identifies the platform hosting your organization.
+Cloud platform Location Supported region API endpoint
+United States West us-west-2 (primary)
+us-east-1 (disaster recovery) aws-api.sigmacomputing.com/v2
+United States East us-east-1 (primary)
+us-west-2 (disaster recovery) api.us-a.aws.sigmacomputing.com
+Canada ca-central-1 api.ca.aws.sigmacomputing.com
+Europe1 eu-central-1 (primary)
+eu-north-1 (disaster recovery) api.eu.aws.sigmacomputing.com
+Australia and APAC1 ap-southeast-2 api.au.aws.sigmacomputing.com
+United Kingdom1 eu-west-2 (primary)
+eu-west-1 (disaster recovery) api.uk.aws.sigmacomputing.com
+United States eastus2 (primary)
+southcentralus (disaster recovery) api.us.azure.sigmacomputing.com
+Europe westeurope (primary)
+northeurope (disaster recovery) api.eu.azure.sigmacomputing.com
+United States2 us-central-1 api.sigmacomputing.com/v2
+1
+Sigma users of AWS-hosted organizations in the UK and US (East) are not granted access to audit logs.
+2Sigma users of Azure-hosted organizations in the EU are not granted access to audit logs.
+3
+GCP-hosted organizations don't support private connections.
+Supported data platforms and feature compatibility
+Sigma connects to the following data platforms:
+AlloyDB
+Amazon Redshift
+Databricks
+Google BigQuery
+MySQL
+PostgreSQL
+Snowflake
+Starburst Galaxy
+Connections support most Sigma features; however, due to technical variations (like SQL dialects, architecture, and security) some features are not currently compatible with all data platforms. The following table lists current feature limitations for each connection type.
+CDW/DBMS Feature limitations
+AlloyDB connections don't support the following features:
+Dataset warehouse views created in Sigma
+Input tables
+Private link
+Export to cloud storage
+OAuth connections
+Sigma result IDs cache
+Geography data type
+The following Array functions: Array, ArrayDistinct, ArrayIntersection, ArrayJoin, ArraySlice
+All Geography functions: Area, Centroid, Distance, Geography, Intersects, Json, Latitude, Longitude, MakeLine, MakePoint, Perimeter, Text, Within
+The following Passthrough functions: AggGeography, CallGeography
+Amazon Redshift connections don't support the following features:
+Dataset warehouse views created in Sigma
+Private link on GCP platform
+Export to cloud storage
+OAuth connections
+Sigma result IDs cache
+Geography data type
+The following Array functions: ArrayContains, ArrayDistinct, ArrayJoin, ArraySlice, Sequence
+The following Aggregate functions: ArrayAgg, ArrayDistinct, ArrayIntersection, Corr
+All Geography functions: Area, Centroid, Distance, Geography, Intersects, Json, Latitude, Longitude, MakeLine, MakePoint, Perimeter, Text, Within
+The following Passthrough functions: AggGeography, CallGeography
+The following Window functions: CumulativeCorr, MovingCorr
+Databricks connections don't support the following features:
+Private link on GCP platform
+Export to cloud storage
+Sigma result IDs cache
+Geography data type
+The following Array functions: Array, ArrayDistinct, ArrayIntersection, ArraySlice
+All Geography functions: Area, Centroid, Distance, Geography, Intersects, Json, Latitude, Longitude, MakeLine, MakePoint, Perimeter, Text, Within
+The following Passthrough functions: AggGeography, CallGeography
+Google BigQuery connections don't support the following features:
+Input tables
+Private link
+Export to cloud storage
+OAuth connections
+The following Array functions: Sequence
+MySQL connections don't support the following features:
+Dataset warehouse views created in Sigma
+Input tables
+Private link on GCP platform
+Export to cloud storage
+OAuth connections
+Sigma result IDs cache
+Geography data type
+The following Array functions: ArrayAgg, ArrayAggDistinct, ArrayDistinct, ArrayIntersection, ArrayJoin
+The following Aggregate functions: Corr
+All Geography functions: Area, Centroid, Distance, Geography, Intersects, Json, Latitude, Longitude, MakeLine, MakePoint, Perimeter, Text, Within
+The following Passthrough functions: AggGeography, CallGeography
+The following Window functions: CumulativeCorr, MovingCorr
+PostgreSQL connections don't support the following features:
+Dataset warehouse views created in Sigma
+Input tables
+Private link on GCP platform
+Export to cloud storage
+OAuth connections
+Sigma result IDs cache
+Geography data type
+The following Array functions: Sequence
+The following Text functions: SHA256
+All Geography functions: Area, Centroid, Distance, Geography, Intersects, Json, Latitude, Longitude, MakeLine, MakePoint, Perimeter, Text, Within
+The following Passthrough functions: AggGeography, CallGeography
+Snowflake connections don't support the following features:
+Private link on GCP platform
+The following Window functions: CumulativeCorr, MovingCorr
+Starburst Galaxy connections don't support the following features:
+Dataset warehouse views created in Sigma
+Workbook warehouse views
+Write-back features: Input tables, CSV upload, and Materialization
+Private link
+Export to cloud storage
+OAuth connections
+Sigma result IDs cache
+The following Array functions: Array, ArrayDistinct, ArrayIntersection, ArraySlice
+The following Geography functions: Centroid, Within, Intersects, Perimeter
+The following Passthrough functions: AggGeography, CallGeography
+Supported web browsers
+Sigma supports the following web browsers:
+Google Chrome (recommended): latest version
+Safari: latest version
+Mozilla Firefox: latest version
+Microsoft Edge: latest version
+Opera: latest version
+Supported authentication methods
+Sigma supports the following authentication methods:
+Security Assertion Markup Language 2.0 (SAML 2.0)
+OAuth

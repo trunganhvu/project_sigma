@@ -1,0 +1,13 @@
+Upper
+Suggest Edits
+Converts a given string to uppercase.
+Along with Lower, this is useful for eliminating case-sensitivity in other Text functions.
+Usage
+Upper(text)
+text (required) Text or a column of text.
+Example
+Upper("Warning")
+Returns “WARNING”
+RELATED RESOURCES
+Lower
+Proper

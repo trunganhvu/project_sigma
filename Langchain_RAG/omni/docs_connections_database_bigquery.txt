@@ -1,0 +1,55 @@
+Connect to DataDatabase setupBigQuery
+On this page
+BigQuery
+Connect to BigQuery.
+Creating a BigQuery Service Account
+You must have Google Cloud admin permissions to create a service account. Google has documentation on creating a service account and generating a private key.
+Open the credentials page in the Google Cloud Platform API Manager and, if necessary, select your project:
+Click CREATE CREDENTIALS and choose Service account:
+Enter a name [Omni BigQuery Service Account] and a description [Omni BigQuery Connection] for the new service account, and click CREATE AND CONTINUE:
+Your service account requires two Google BigQuery predefined roles:
+BigQuery > BigQuery Job User
+BigQuery > BigQuery Data Viewer
+Select the first role in the Select a role field, then click ADD ANOTHER ROLE and select the second role:
+After selecting both roles, click CONTINUE:
+Select Done
+Select the Service Account in actions Edit service account
+Select KEYS
+Click ADD KEY:
+Select JSON and click CREATE:
+The JSON key will be saved to your computer. NOTE WHERE IT IS SAVED. After noting the download location, click CLOSE:
+Creating the Connection in Omni
+In Omni, to add BigQuery as a connection:
+Navigate to the Admin tab.
+Select Connections menu option on the left hand panel
+Select the Add Connection button in the top right
+Select the BigQuery button
+Use this image to follow along with the next steps:
+Display Name is a required field. This name will appear will appear in the Omni Connections list.
+Default Dataset is a required field. This should reference the default dataset in your BigQuery database that Omni will connect to.
+To find a dataset name in the BigQuery console...
+Navigate to your BigQuery console
+Select the Project your dataset resides in - you can toggle between Projects in the top middle drop-down menu
+Select a dataset and the info will appear in the “Dataset info” menu. In this example, the name is products1
+Include Other Projects is an optional field. If you want to include multiple projects, input each additional project’s name into a comma-separated list in this field.
+Include Schemas is an optional field that allows you to limit which datasets to allow Omni to access within the BigQuery project.
+List the datasets you want included in a comma-separated list.
+If none are listed, Omni will be able to access all schemas within the listed dataset(s).
+If you included a secondary project in step 3, be sure to reference the secondary project and the dataset separated by a period, e.g. other_project.dataset.
+Service Account JSON is a required field.
+Upload the JSON file that was downloaded at the end of the Creating a BigQuery Service Account section above.
+Region and Database Timezone are required fields. To find these in BigQuery…
+Navigate to your BigQuery console
+Select the Project your dataset resides in
+Select your dataset
+Navigate to the “DETAILS” tab
+“Data Location” shows the dataset’s region
+“Last modified” shows the the dataset’s timezone
+Query Timezone is a required field.
+The default value is “Do not convert”
+Otherwise, select the Timezone you want queries to be converted to.
+Select “Create Connection” and voila! You can see your new connection in action by heading over to the “Make a workbook” or “Browse Model” options in the “Woo hoo!” success modal in the top right.
+Previous
+Overview
+Next
+ClickHouse

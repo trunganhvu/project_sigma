@@ -1,0 +1,34 @@
+AdministrationKeyboard Shortcuts
+On this page
+Keyboard Shortcuts
+A compiled list of shortcuts throughout the app.
+Workbook shortcuts
+Action Mac Windows
+New workbook tab option + T alt + T
+Save workbook command + S control + S
+Edit workbook (transition from View) command + E control + E
+Toggle between results table / chart option + 1 alt + 1
+Toggle filters open / closed option + 2 alt + 2
+Toggle SQL block open / closed option + 3 alt + 3
+Toggle field picker open / closed option + 4 alt + 4
+Toggle options config open / closed option + 5 alt + 5
+Toggle inspector panel open / closed option + 9 alt + 9
+Toggle chart to full screen mode option + . alt + .
+Run query command + Return control + Enter
+Run query w/o cache shift + command + Return shift + control + Enter
+Clear query command + K control + K
+Clear field from query shift + command + K shift + control + K
+Clear filters from query option + command + K alt + control + K
+Duplicate tab command + D control + D
+IDE shortcuts
+Action Mac Windows
+Save file command + S command + S
+Find / search option + command + F alt + control + F
+Toggle file list open / closed option + 1 alt + 1
+Toggle model validation list open / closed option + 9 alt + 9
+Fold all sections in a file command + K, command + 0 command + K, command + 0
+Unfold all sections in a file command + K, command + J command + K, command + J
+Previous
+Chart Palettes
+Next
+Organization settings

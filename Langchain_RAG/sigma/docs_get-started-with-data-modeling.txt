@@ -1,0 +1,36 @@
+Get started with data modeling (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Data models provide a semantic layer for your data, letting you organize and store data in a structured governed way without modifying raw data. Most importantly, data models are reusable. When you create a data model, you can centralize business logic and metrics, minimizing repeated work like writing joins or long formulas.
+Build data models with reusable data source elements.
+Define relationships between related data sources instead of building bespoke joins at analysis-time.
+Define metrics to improve the consistency of aggregated analysis.
+Data models make it easier to work with data and increase user confidence in the results of their analysis. You don't need to use a data model to work with data in Sigma, but data models let you enable business users performing analysis or exploration with governed, curated, and frequently revisited data.
+About data models
+A data model is a type of Sigma document that provides the framework for creating and managing a collection of reusable data source elements. You can curate focused views of data from your connected platform which users can then use as sources in workbooks or other data models.
+Data models offer a comprehensive, dynamic platform to consolidate, transform, and share related data that your organization members can reuse in workbooks and other data models. A single data model serves as a container for a collection of reusable elements that can offer different subsets, perspectives, or evaluations of the data model’s broader data context. This cumulative data representation facilitates a convenient, structured foundation for building relevant, detailed workbook analyses.
+Data models also provide the following benefits:
+Centralized permissions: Grant permissions at the data model level for consistent, streamlined access control.
+Efficient data handling: Enhance reusable elements with controls to easily filter and refine data segments.
+Flexible reusability: Quickly enable or disable elements for reuse as data sources.
+With a well-designed data model, users can easily access the data they need for analysis, reducing the time and effort required to analyze data.
+Data models and datasets
+Data models support, or will support, most of the same functionality as datasets:
+Metrics
+Relationships
+Column-level security
+Row-level security
+Materializations
+Warehouse views
+Parameters
+URL parameters
+Data models and reusable elements are designed to replace the existing dataset functionality. Sigma will eventually deprecate datasets but will continue to support them until data models are fully developed and can facilitate a seamless transition. Prior to this deprecation, Sigma will notify all customers and implement an automated migration path to convert all datasets to data models.
+Best practices for data modeling
+When building a data model, start with the most granular data and build relationships and metrics as relevant to develop the reusable data source elements.
+Avoid circular schemas where relationships reference upstream tables.
+Apply filters to data to provide only the most relevant data downstream of the data model.
+Add descriptive titles and include a description to help users decide if the data source fits their use case.
+Materialize your data to improve performance, and schedule materialization to occur after database updates to ensure the latest data is always available.
+For more details, see Modeling data in Sigma and your Warehouse in Sigma Community.

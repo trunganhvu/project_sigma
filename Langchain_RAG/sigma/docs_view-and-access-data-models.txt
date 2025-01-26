@@ -1,0 +1,40 @@
+View and access data models (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Each data model consists of two pages for ease of use: an overview page and a workbook page. The overview page provides reusable element previews, metadata, and key insights into data model usage across your organization, while the workbook page allows you to create and transform reusable elements.
+The following sections explain the two main components of a data model: the overview page and the workbook page.
+Data model overview page
+The overview page provides details of each reusable element in the data model for improved data visibility and management. It also features metadata about the model itself and each reusable element it contains, revealing insights into how and where the reusable data is used across the organization.
+a
+Data model details Displays the data model description and identifies the model owner, location, relative time stamp of the last update, and number of reusable elements the model contains.
+b
+Expanded element overview Displays the reusable element’s connection, relative time stamp of the last materialization, top three documents referencing it as a data source, top three organization members utilizing it, and the published state of the element’s data table.
+c
+Collapsed element overviews Displays the reusable element’s title, number of documents referencing it as a data source, and number of rows and columns in its data table.
+d
+View details button
+Opens a modal containing column and lineage details.
+The Columns tab displays details for each column in the reusable element, including data type, description, top values, and statistics.
+The Lineage tab displays details about the reusable element’s data sources and downstream documents referencing it as a data source.
+e
+Explore button Opens the reusable element in a new exploration.
+f
+Edit button Opens the data model workbook page.
+Data model workbook page
+The workbook view allows you to create and manage multiple tables and input tables as reusable elements within a single data model. This format brings the ease and flexibility of workbooks to data model development. Consolidate and transform your data as you would in a workbook analysis, and control which elements are reusable as data sources across your organization.
+a
+Add element button Opens the Add new element panel and allows you to add a new table, input table, text, or control element.
+b
+Control element
+Filters the data in one or more elements.
+When a reusable element is filtered, documents that reference it can only access data included in the published filtered state. For more information about using controls, see Intro to control elements.
+c
+Reusable element Available as a data source (indicated by the icon).
+d
+Disabled element Not available as a data source (indicated by the icon).
+e
+Publish button
+Saves edits applied to the data model.
+Documents that reference the data model reflect the published state of its reusable elements. Drafted edits don't apply.

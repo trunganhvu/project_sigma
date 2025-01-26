@@ -1,0 +1,37 @@
+Troubleshoot your connection
+Suggest Edits
+Add Sigma IPs to the allowlist
+In some cases, you may need to add Sigma's IP addresses to the allowlist, so you can successfully connect to your data. This is a necessary step when your warehouse is closed to external connections due to firewalls, security groups, or other IP-based security policies.
+Sigma' lists its egress IP addresses on all individual Connection page. To see them, follow these steps:
+Open the Administration > Connections page.
+Select the relevant connection. 
+If you don't have a connection to the data source, click Create Connection.
+In the Connection Credentials section, see the IPs listed under the Host field.
+📘
+The IP addresses listed on the connections summary are not applicable to connections over Private Link. If you need the IP addresses for a Private Link connection, contact Sigma Support.
+PostgreSQL
+Sigma must be authenticated either at the Network level, or through 
+Client Authentication.
+Redshift
+See Amazon Redshift cluster security groups.
+Snowflake
+See Network Policies.
+Permissions for the Snowflake user role
+Sigma uses the Snowflake user role specified on the connection.
+Unless you have the correct permission grants to the user in Snowflake, you cannot see the data in Sigma.
+If the connection uses OAuth, it inherits the permissions for each member of the organization directly from Snowflake. To troubleshoot permissions for an individual user or a service account user, confirm that they:
+Have access permissions on your Snowflake warehouse
+Inherit the intended role through your OAuth provider
+Sync your data
+Sigma automatically (and periodically) syncs your connection's metadata.
+When you make changes in your cloud data warehouse, such as updating the schema for a table, you must perform a manual sync so these changes are reflected in Sigma.
+Syncs can be performed at the connection, database, schema, or table level. As syncing only occurs at the level selected, to see your changes appear, you must perform a manual sync at all four of these levels.
+To make the manual sync, follow these steps:
+Navigate to Administration > Connections.
+Select the relevant connection from the list.
+Click Browse connection.
+To sync the connection, which will discover updates to the databases available on that connection, click the sync icon, , on the connection.
+To sync an individual database or schema, expand the connection, find the container, and click the action icon, , next to the name of the database or schema. Alternatively, you can find the database or schema by name by searching for it.
+From the drop-down menu, select Sync now.
+To sync an individual table, expand the connection, find the database that contains the table, expand that database, find the table, and then click the action icon, , next to the name of the table. Alternatively, you can find the table by name by searching for it.
+From the drop-down menu, select Sync now.

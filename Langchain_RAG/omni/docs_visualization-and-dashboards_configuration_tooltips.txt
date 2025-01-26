@@ -1,0 +1,10 @@
+Visualization & DashboardsConfigurationTooltips
+On this page
+Tooltips
+Tooltips can be adjusted by dragging series from 'Available Fields' into the tooltip section. They are not required to be visualized to show in the tooltip, and will display in the order added. For control over formatting, the series can be adjusted in the table view. If no series are present in the tooltip area, tooltips will be inactive.
+Other Notes
+Tooltips can also be significantly adjusted in advanced mode using the Vega lite spec.
+Previous
+Size By
+Next
+Custom visualizations

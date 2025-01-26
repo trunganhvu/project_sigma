@@ -1,0 +1,49 @@
+Invite new organization members
+Suggest Edits
+You can invite new members to your organization from the Administration portal. This document explains how to invite new members and resend or delete pending invitations.
+System and user requirements
+The ability to invite new password-authenticated members to your Sigma organization requires the following:
+You must be assigned the Admin account type.
+🚧
+If your organization uses only SAML or OAuth to authenticate members, you must first assign new members in the IdP or authorization server. If a member receives an invite before this step is complete, they see an IdP error and will be unable to log in to Sigma.
+Invite a new member
+To invite a new user to your Sigma organization:
+Go to Administration > People:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select People.
+In the People page, click Invite people.
+In the Invite people to use Sigma modal, set up and send the invitation:
+In the Enter email addresses... field, enter the email address of one or more members to invite.
+📘
+Sigma recommends inviting no more than 1,000 members at a time.
+[optional] In the Guest users section, select the Invite as guest users checkbox to limit user interactions to content explicitly shared with them or their assigned teams.
+[optional] In the Select account type dropdown, select an account type to assign the new members. You can change the account type assigned by default. See Manage default invitation account type.
+[optional] In the Add a custom message field, enter a message to include in the invitation email. You can set up a default email message. See Customize welcome and invite emails to set up a default email message.
+[optional] In the Assign team(s) section, select the teams to assign the new members.
+Click Invite to send an invitation to the email addresses provided.
+Sigma sends an invitation to the provided email addresses. You can track invite details in the People > Pending invitations tab until members set up their accounts.
+Resend a pending invitation
+To resend a pending invitation to a user:
+Go to Administration > People:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select People.
+In the People page, select the Pending invitations tab.
+Resend an invitation to one or more members:
+To resend an invitation to an individual member, locate their email address, then click More and select Resend invite.
+To resend invitations to multiple members, select the checkbox next to each applicable email address, then click Resend invites.
+When the invite is successfully sent, Sigma displays an "Invites re-sent" confirmation message at the bottom of the page.
+Revoke a pending invitation
+Go to Administration > People:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select People.
+In the People page, select the Pending invitations tab.
+Revoke an invitation sent to one or more members:
+To revoke an invitation sent to an individual member, locate their email address, then click More and select Revoke invite.
+To revoke invitations sent to multiple members, select the checkbox next to each applicable email address, then click Revoke invites.
+Sigma removes the revoked invitations from the list, and the Set up your account link in any previously sent emails are invalidated.
+RELATED RESOURCES
+User account types
+Manage Authentication

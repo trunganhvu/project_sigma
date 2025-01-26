@@ -1,0 +1,40 @@
+Math functions
+Suggest Edits
+Math functions perform mathematical operations, including arithmetic, trigonometric, rounding, statistical, and logarithmic calculations.
+Abs Returns the absolute value of a number.
+Acos Returns the arccosine of an angle.
+Asin Returns the arcsine of an angle.
+Atan Returns the arctangent of an angle.
+Atan2 Returns the arctangent of a coordinate pair.
+BinFixed Calculates the bin of a value among the specified number of identically-sized bins.
+BinRange Calculates the bin for a value using the specified lower bounds.
+BitAnd Calculates the bitwise AND of two numbers.
+BitOr Calculates the bitwise OR of two numbers.
+Ceiling Rounds the number up to the closest multiple of equal or greater value.
+Cos Returns the cosine of an angle.
+Cot Returns the cotangent of an angle.
+Degrees Converts the angle measurement from radians to degrees.
+DistanceGlobe Calculates the distance between two points on the globe, in kilometers.
+DistancePlane Calculates the distance between two points on a plane.
+Div Returns the integer component of a division.
+Exp Returns the mathematical constant e, or 2.71828.
+Floor Rounds the number down to the closest multiple of equal or lesser value.
+Greatest Returns the largest value from a list.
+Int Rounds the integer down to the largest integer of lesser or equal value.
+Least Returns the smallest value from a list.
+Ln Calculates the natural logarithm of a number, log_e(n).
+Log Calculates the logarithm of a number. Defaults to log_10(n).
+Mod Returns the remainder component of a division.
+MRound Rounds the number down to the closest multiple of the specified number.
+Pi Returns the mathematical constant π, or 3.14159....
+Power Calculates the result of a number raised to the specified power.
+Radians Converts the angle measurement from degrees to radians.
+Round Calculates the number to the specified number of digits.
+RoundDown Rounds a number down to the specified number of digits or decimal places.
+RoundUp Rounds a number up to the specified number of digits or decimal places.
+RowAvg Calculates the average value of a list of numbers.
+Sign Calculates the sign of a number. Returns -1 if negative, 1 if positive, or 0 if zero.
+Sin Calculates the sine of an angle.
+Sqrt Calculates the square root of a number.
+Tan Calculates the tangent of an angle.
+Trunc Truncates a number to the specified number of digits or decimal places.

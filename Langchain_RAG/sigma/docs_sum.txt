@@ -1,0 +1,17 @@
+Sum
+Suggest Edits
+The Sum function adds the numerical values in a column or group.
+Syntax
+Sum(column)
+Function arguments:
+column (required) - The column of numbers to add together. Any Null or empty values are skipped.
+Example
+Sum([Price]) - Sum([Cost])
+Finds the total Profit by finding the sum of the Prices and subtracting the sum of the Costs.
+📘
+When performing numeric operations on values, such as using the addition operator + to sum together values, if one value is Null then the result of the entire numeric operation will be Null.
+RELATED RESOURCES
+SumIf
+MovingSum
+CumulativeSum
+SumProduct

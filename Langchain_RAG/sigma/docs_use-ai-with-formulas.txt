@@ -1,0 +1,48 @@
+Use AI with formulas (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Sigma’s formula assistant uses AI to write new formulas, correct formula errors, and explain existing formulas applied to elements in workbooks and data models. These AI capabilities can help enhance productivity and accuracy, ensuring you get the most out of custom calculations and available functions.
+This document explains how to use the formula assistant to write, correct, and explain formulas.
+🚩
+The use of AI features is subject to the following disclaimer.
+System and user requirements
+The ability to use AI with formulas requires the following:
+The OpenAI integration must be configured for your organization.
+If using Azure OpenAI, the Embeddings model (text-embedding-3-small) must be configured in the OpenAI integration.
+You must be the workbook or data model owner or be granted Can explore or Can edit document permission.
+You must be assigned an account type with the Use AI features permission enabled. See Account types.
+Write a formula with AI
+The formula assistant evaluates your description of calculations, data references, manipulations, and other context, then suggests a formula to achieve the desired output.
+To use the formula assistant in a workbook, open the workbook in Explore or Edit mode. To use the formula assistant in a data model, open the data model's workbook page.
+In the element you want to update, select an existing column or create one to access the formula bar.
+📘
+For tables, pivot tables, and input tables, you can select or create a column in the Element properties > Columns list or directly within the element. For visualizations, you can accomplish this in the Element properties > Columns list or in the underlying data table.
+In the formula bar, click Formula assistant to open the menu, then select Write a new formula.
+In the AI write formula modal, generate and apply a formula suggestion:
+In the Description field, describe the formula or desired output.
+Click Write formula to submit the prompt.
+In the AI response field, review the formula suggestion:
+To generate a different formula, repeat the previous steps (4a and 4b) with a modified description.
+To apply the suggested formula to the column, click Use formula.
+The column immediately reflects the output of the applied formula.
+Correct a formula with AI
+When Sigma detects a formula error, the formula assistant interprets the intent of your original formula and either suggests valid formulas or provides information about the error and how to correct it. This can be used to correct formulas in existing columns (typically indicated by Incomplete formula, Invalid Query, or Unknown column cell values) or to help you correct a manually entered formula when adding a new column.
+To use the formula assistant in a workbook, open the workbook in Explore or Edit mode. To use the formula assistant in a data model, open the data model's workbook page.
+In the element you want to update, select an existing column containing a formula error, or create a new column and manually enter a formula. If your formula contains an error, Sigma highlights the formula bar with an orange border and displays a warning icon ().
+📘
+For tables, pivot tables, and input tables, you can select or create a column in the Element properties > Columns list or directly within the element. For visualizations, you can accomplish this in the Element properties > Columns list or in the underlying data table.
+In the formula bar, click Formula assistant to open the menu, then select Correct this formula.
+In the AI correct formula modal, the formula assistant suggests valid formulas or explains how to correct the existing formula. To replace the invalid formula with a suggestion, click Apply.
+The column immediately reflects the output of the applied formula.
+Explain a formula with AI
+The formula assistant evaluates an existing formula and explains what it accomplishes. Details can include columns referenced, transformations applied to the data, and other information about the formula output.
+To use the formula assistant in a workbook, open the workbook in Explore or Edit mode. To use the formula assistant in a data model, open the data model's workbook page.
+In the element containing the formula you want to explain, select the applicable column to access the formula bar.
+📘
+For tables, pivot tables, and input tables, you can select a column in the Element properties > Columns list or directly within the element. For visualizations, you can accomplish this in the Element properties > Columns list or in the underlying data table.
+In the formula bar, click Formula assistant to open the menu, then select Explain this formula.
+In the AI explain formula modal, the formula assistant displays the AI-generated explanation. To view an alternative explanation, repeat the previous step.
+RELATED RESOURCES
+Manage OpenAI integration

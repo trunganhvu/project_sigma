@@ -1,0 +1,37 @@
+Export to Google Drive
+Suggest Edits
+You can send individual workbook elements, workbook pages, or an entire workbook to Google Drive on a set schedule or an as-needed basis. Depending on what you send to Google Drive, you can export data in different file formats. For details on supported file formats, see Send or schedule workbook exports.
+To export directly to Google Sheets, see Export to Google Sheets.
+Sigma generates exports from the workbook's latest published version. Draft changes are not exported.
+User requirements
+The ability to export to Google Drive requires the following:
+You must be assigned an account type with the Export to Google Drive permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+You must be a Manager, Content manager, or Contributor of the specified Google Drive folder.
+Google account authorization
+The first time you schedule an export to Google Sheets or Google Drive, Sigma prompts you to authorize Sigma to export to your Google account:
+Click Authorize and follow the instructions on your screen. After you complete the authorization, you return to the Schedule Exports dialog.
+Schedule an export to Google Drive
+To schedule an export to Google Drive:
+From the workbook menu (), select Schedule exports....
+If this is the first schedule for the workbook, click Add Schedule, otherwise click + New schedule.
+Select Google Drive.
+If this is the first time you've created a scheduled export to Google, Sigma prompts you to enable the integration. See Google account authorization.
+(Optional) You can define conditions for when Sigma sends the export. To turn on conditions, click the Condition toggle. For more information, see Schedule exports using conditions.
+For Drive folder, enter a name for a new folder to contain the export. You cannot use an existing folder. Every export creates a Google Sheet in the destination folder with a name that matches the following structure:
+<Workbook Name>_<Element Name>_<Timestamp>.
+Click Create Folder.
+Sigma creates the folder for you and displays the URL to the folder.
+For Attachments, select the data and file formats that you want to export.
+In the Frequency section, set the delivery schedule:
+(Optional) Select the dropdown for Daily and select Weekly, Monthly, or Custom.
+For Daily, select Once a day or Multiple times.
+For Weekly, select which days of the week to send an email, and choose between Once a day or Multiple times.
+For Monthly, select which day of the month to send an email, and the time of day.
+For Custom, specify a schedule using cron syntax. See Set up a custom delivery schedule.
+If you select Multiple times, specify the frequency. For example, every 2 hours on the :15 of the hour between 9 AM and 6 PM.
+(Optional) Adjust the default schedule time zone using the dropdown menu.
+📘
+If you don't have the option to set a specific frequency, export frequency might be restricted for your organization. For more details, see Restrict export recipients and frequency.
+(Optional) Select the checkbox for Customize control values to filter the exported data according to the value of one or more workbook controls. See Configure additional options for exports.
+Click Create.

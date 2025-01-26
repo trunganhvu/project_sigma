@@ -1,0 +1,23 @@
+Ceiling
+Suggest Edits
+Rounds the input number up to the closest multiple of equal or greater value.
+Usage
+Ceiling(number, factor)
+number (required) The number to be rounded.
+factor [optional] The multiple to which the number will be rounded. The direction of rounding aligns with the positive or negative sign of the factor. The factor cannot be 0. Its default value is 1.
+Examples
+(1) Returns 4.
+Ceiling(3.2)
+(2) Returns -3.
+Ceiling(-3.6)
+(3) Returns the Ceiling for each row in the input column. 
+Ceiling([Cost])
+(4) Returns the Ceiling at a factor of 0.5 for each row in the input column.
+Ceiling([Cost], 0.5)
+(5) Returns the Ceiling at a factor of -0.25 for each row in the input column.
+Ceiling([Cost], -0.25)
+(6) Returns the Ceiling at a factor of 2 for each row in the input column.
+Ceiling([Cost], 2)
+RELATED RESOURCES
+Floor
+Round

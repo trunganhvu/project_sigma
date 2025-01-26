@@ -1,0 +1,38 @@
+MovingCorr
+Suggest Edits
+The MovingCorr function calculates the Pearson correlation coefficient, also known as the bivariate correlation, of two numerical columns within a moving window.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+MovingCorr([Number Column 1], [Number Column 2], above, below)
+Function Arguments:
+[Number Column 1] (required) - The column representing the dependent data.
+[Number Column 2] (required) - The column representing the independent data.
+above (required) - The first row to include, counting backward from the current row.
+below (optional) - The last row to include, counting forward from the current row. Defaults to 0 (current row will be the last row included).
+📘
+When using this function without a sort enforced, there can be unexpected results. In order to ensure that the values are stable, verify that there is a sorted column within the table.
+Example
+A table of sales data lists quantity sold and total sales by day. You can use the MovingCorr function to find the relationship between the total sales of an item and the amount of an item that's purchased within several types of moving windows.
+`‍``
+MovingCorr([Weekly Quantity Sold], [Total Weekly Sales], 4)
+Here, the **above** argument is 4, so the correlation between [Total Weekly Sales] and [Total Quantity Sold] is computed for the previous 4 weeks. Because the **below** argument is not specified, it defaults to 0 and no future weeks are considered.
+
+![](https://files.readme.io/ac06c4f-1.png)
+
+
+‍```
+MovingCorr([Weekly Quantity Sold], [Total Weekly Sales], 0, 4)
+Here, the above argument is 0, so no previous weeks are included in the calculations. The below average is 4, therefore the moving correlation is computed for each week along with the next 4 weeks.
+‍```
+MovingCorr([Weekly Quantity Sold], [Total Weekly Sales], 2, 2)
+Here, the **above** argument is 2, so the previous two weeks are included in the calculation. In addition, the **below** argument is 2, so the following two weeks are included as well.
+
+![](https://files.readme.io/f969622-3.png)
+
+‍```
+MovingCorr([Weekly Quantity Sold], [Total Weekly Sales], 8, -4)
+Here is an example where the below parameter is negative. The below parameter can be negative as long as the value is less than that of the above parameter. In this example, each window begins 8 weeks before the current week and ends 4 weeks before the current week, inclusive.
+RELATED RESOURCES
+Corr
+CumulativeCorr

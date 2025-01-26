@@ -1,0 +1,16 @@
+Visualization & DashboardsVisualization typesHeatmap Charts
+On this page
+Heatmap Charts
+Examples
+Heatmap:
+Data Structures
+Bar charts can work with pivoted or unpivoted data, using 2 dimensions and one measure, or with all dimensions where there is a numeric available for the color facet. They often use two time facets, for example:
+date & hour_of_day
+week & day_of_week
+month & year
+Configuration
+The is no heatmap specific configuration, but color and tooltip controls may be relevant.
+Previous
+Table Visualizations
+Next
+Boxplot

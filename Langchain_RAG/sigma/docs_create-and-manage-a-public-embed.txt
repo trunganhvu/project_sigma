@@ -1,0 +1,68 @@
+Create and manage a public embed
+Suggest Edits
+Public embedding allows you to share publicly accessible Sigma content (an entire workbook, a specific page, or an individual chart or table element) and is typically used to display non-sensitive information. Public embeds reflect real-time data in your CDW or DBMS in addition to any changes published in the embedded workbook.
+This document provides an overview of public embed access and explains how to create and manage a public embed.
+System and user requirements
+The ability to create and manage public embeds requires the following:
+Public embedding must be enabled for your organization. See Enable or disable public embeds.
+You must be assigned the Admin account type.
+Public embed access
+Who can access a public embed?
+Public embeds are accessible to anyone with the public URL or access to the host application in which the content is embedded.
+What data can users access in a public embed?
+Embed users can only view and interact with the data presented in the embedded content. This includes the ability to set the value of any control element included in the embed.
+Additional data can only be accessed by members of your Sigma organization with the required workbook permissions.
+What can users export from a public embed?
+Public embeds limit users to PNG export. Data cannot be exported to Excel, CSV, or PDF. This applies to all export functionality, including download buttons within the embed.
+Generate a public URL
+Before you can embed workbook content, you must generate a public URL. You can then share this URL as a direct link or use it in an <iframe> tag to integrate the content into an application outside of Sigma.
+Open an existing workbook or create a new one.
+In the workbook header, click the caret () associated with the workbook's name.
+In the workbook menu, select Embedding.
+In the Embed workbook modal, select the Public tab.
+In the Generate public URL for dropdown, select the content you want to embed. This can be the entire workbook, a specific page, or an individual chart or table element.
+Sigma immediately generates a public link and embed code. To direct users to the selected content as a web page, copy and share the public link. To integrate the selected content within an application outside of Sigma, copy the embed code and see Display the public embed in a host application for more information.
+Display the public embed in a host application
+Use the embed code in an HTML document to integrate the selected Sigma content directly into another application.
+In the HTML document, paste the embed code copied in the previous section (step 5).
+Example HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Public Embed Sample</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        iframe {
+            border: none;
+            width: 80%; /* Adjust width as needed */
+            height: 80%; /* Adjust height as needed */
+            max-width: 1000px; /* Max width limit */
+        }
+    </style>
+</head>
+<body>
+    <h2>Sigma - Public Embed Sample</h2>
+    <iframe src="https://app.sigmacomputing.com/embed/1-3UYrtvMY7HQPQgtIxBizvJ"></iframe>
+</body>
+</html>
+Preview the HTML document in a browser to ensure the embedded content displays as expected.
+Delete a public URL
+Delete a public URL to prevent the content from being shared publicly. This action permanently removes the URL from the corresponding workbook and breaks existing links and embeds that reference it.
+Open the workbook containing the embed you want to delete.
+In the workbook header, click the caret () associated with the workbook's name.
+In the workbook menu, select Embedding.
+In the Embed workbook modal, select the Public tab.
+Locate the public URL you want to delete, then click Remove embed. Sigma immediately deletes and deactivates the public URL.
+💡
+If you previously used the embed code to integrate the Sigma content into another application, ensure you delete it from the applicable HTML document.
+RELATED RESOURCES
+Enable or disable public embeds

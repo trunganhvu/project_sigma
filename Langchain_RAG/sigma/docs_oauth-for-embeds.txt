@@ -1,0 +1,8 @@
+Enable OAuth for embeds
+Suggest Edits
+This feature allows embedding customers to enhance authentication security using OAuth. See Configure OAuth.
+Secure tokens are passed, as an Embed API parameter, to Sigma. This authenticates users into Sigma's embedded analytics to drive granular user permissions.
+To use OAuth for embeds:
+In your CDW, leverage row-access policies that are defined for individual embedded users.
+Encrypt the token using AES with the same embed secret string that you generated for this embed in Sigma's admin portal.
+Enter the <oauth_token> parameter into the embed URL.

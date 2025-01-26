@@ -1,0 +1,21 @@
+BinRange
+Suggest Edits
+Computes the bin for a value using the provided lower bounds.
+Usage
+BinRange(input value, cutoff1, ... )
+input value (required) The value to place into the defined bins. Input values can be a number, date or string.
+cutoff 1 (required) The lower bounds to compare the value against. Cutoff values must be of the same type as the input value. The first cutoff entered indicates the lower bounds of bin 2. Any value lower than cutoff 1 is placed in bin 1. Bin 2 is inclusive of the entered cutoff.
+cutoff 2+ (optional) Additional cutoffs create additional bins. The total number of bins is one more than the number of provided lower bounds.
+📘
+To get the expected results, list cutoffs sequentially.
+Examples
+BinRange(25, 50) = 1
+Evaluates which bin to place the number 25 in. Bins are defined by the cutoff value 50. All numbers lower than 50 are placed in bin 1 and all numbers 50 and greater are placed in bin 2.
+BinRange([Income], 100000, 500000)
+Evaluates all values in the column income, and categorizes them based on the provided lower bounds. Incomes less than 100,000 are placed in bin 1; incomes 100,000 – 499,999 are placed in bin 2; incomes 500,000 and greater are placed in bin 3.
+Choose(BinRange([Cost], 50, 100, 200, 500, 1000),
+  "under $50", "$50 +", "$100 +", "$200 +", "$500 +", "over $1,000")
+The BinFunction divides the Category column values into 6 bins, while the wrapping Choose function names the bins.
+RELATED RESOURCES
+BinFixed
+Choose

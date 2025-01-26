@@ -1,0 +1,21 @@
+Quarter
+Suggest Edits
+The Quarter function returns an integer representing the quarter in which a specified date and time occurs.
+Syntax
+Quarter(date)
+Function arguments:
+date (required) - the date or column containing date values from which the quarter is determined
+📘
+Sigma evaluates quarters based on the calendar year. The first quarter begins January 1, the second quarter begins April 1, the third quarter begins July 1, and the fourth quarter begins October 1.
+Example
+Quarter([Date])
+Evaluates the month and day of each value in the Date column and returns an integer representing the quarter in which each date occurs.
+Quarter(Date("2007-08-14 07:11:05"))
+Evaluates the month and day of the specified date (August 14, 2007) and returns 3 to represent the third quarter of the calendar year.
+RELATED RESOURCES
+DatePart
+Second
+Minute
+Month
+Year
+Quickstart: Common date functions and use cases

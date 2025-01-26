@@ -1,0 +1,10 @@
+
+docker run -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=password -e POSTGRES_DB=mydatabase --name my_postgres -p 5432:5432 -d ankane/pgvector
+psql -h localhost -U myuser -d mydatabase -p 5432
+docker run -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=password -e POSTGRES_DB=mydatabase -e POSTGRES_INITDB_ARGS="--data-checksums" --name my_postgres1 -v ./init.sql:/docker-entrypoint-initdb.d/init.sql -p 5432:5432 -d ankane/pgvector
+
+docker run -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=password -e POSTGRES_DB=mydatabase --name my_postgres -p 5432:5432 -d pgvector/pgvector:pg17
+docker run -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=password -e POSTGRES_DB=mydatabase --name my_postgres2 -p 5432:5432 -d myuser/pgvector
+docker run -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=password -e POSTGRES_DB=mydatabase --name my_postgres2 -p 5432:5432 -d jayachandhar/postgres:16.3
+docker run -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=password -e POSTGRES_DB=mydatabase --name my_postgres2 -p 5432:5432 -d 1b310560241aa5d10129cf31c1250a49c41131a4266f09ec4566cf3ec58070cc
+docker exec -it my_postgres2 psql -U myuser -d mydatabase

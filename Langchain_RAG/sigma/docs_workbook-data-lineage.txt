@@ -1,0 +1,44 @@
+View workbook data lineage
+Suggest Edits
+Workbook lineage refers to the ancestry and relationships between data elements in a workbook. All workbooks contain a lineage display, allowing you to oversee and navigate these relationships.
+A few use cases for data lineage include:
+Determining how changes to a data element will affect any child elements
+Determining the location from where unexpected data is coming / being calculated
+Cleaning up existing workbooks to remove unused or redundant elements or calculations
+Diagnosing the source of data and/or permission errors
+This article covers how to view and navigate any workbook’s lineage display.
+Requirements
+To view a workbook's lineage, you must have Can Edit access to the individual workbook.
+View Workbook Lineage
+Before you start: This action is only available in edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Click the lineage icon (), located near the bottom of the workbook’s sidebar.
+
+This will open the workbook’s lineage display.
+Now what?
+Zoom in and out using the plus (+) and minus (-) icons near the top of the page. 
+Move around the screen using your cursor to grab and drag.
+Improve visibility of densely packed sections by dragging element indicators around on the screen using your cursor.
+Note: This will be reset each time you close and revisit the lineage display.
+View lineage by workbook page.
+Navigate to a specific workbook element directly from its lineage indicator.
+View Lineage by Workbook Page
+Before you start: This action is only available in edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Open the workbook’s lineage display from the workbook’s sidebar.
+Click the dropdown menu located in the top right corner of the page.
+By default, it is set to Show all elements.
+Select a workbook page from the menu.
+
+The display will then show only elements of the selected page.
+Open Lineage for a Specific Element
+Before you start: This action is only available in edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Hover your cursor over the element.
+Click the vertical ••• icon button in the element’s inline toolbar.
+Select View lineage.
+Navigate to a Workbook Element from its Lineage
+Before you start: This action is only available in edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Open the workbook’s lineage display from the workbook’s sidebar.
+Click the element’s indicator.
+When selected, an indicator is highlighted. It’s also displayed on the right side of the screen.
+On the right side of the page click View element.
+RELATED RESOURCES
+Intro to data elements

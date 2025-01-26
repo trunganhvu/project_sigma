@@ -1,0 +1,36 @@
+Manage organization locale
+Suggest Edits
+Admins can specify an organization’s locale by going to Administration > Account > General Settings > Locale.
+Setting the locale allows you to serve the Sigma users in your organization and consumers of embedded analytics with content in their preferred language.
+Requirements
+You must be assigned the Admin account type.
+Set the organization locale
+Sigma supports two locales that you can set as the base locale for your Sigma organization:
+English (en)
+English (Great Britain) (en-gb)
+The default locale is English (en). When you switch to the English (United Kingdom) (en-gb) locale, dates display as DD/MM/YYYY or Day Month Year, and time displays in the 24-hour format.
+To change the organization locale:
+Go to the Administration > Account > General Settings tab.
+Under Locale, click Edit.
+Use the drop-down menu under Account Locale to select your preferred locale.
+Click Save.
+Supported languages
+Sigma supports the following languages and locales that can be applied to previews and embedded dashboards:
+Language Locale
+Chinese (Simplified) zh-cn
+English (United States) en
+English (United Kingdom) en-gb
+French fr
+French (Canada) fr-ca
+German de
+Italian it
+Japanese ja
+Korean ko-kr
+Polish pl
+Portuguese pt
+Portuguese (Brazil) pt-br
+Russian ru
+Spanish es
+Swedish sv-se
+Thai th
+To apply a locale to an embed or preview of a workbook, see Apply locales and translations to embeds or previews.

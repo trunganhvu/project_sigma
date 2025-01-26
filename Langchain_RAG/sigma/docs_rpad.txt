@@ -1,0 +1,19 @@
+RPad
+Suggest Edits
+The RPad function makes a string a desired length by either adding or removing characters at the end of the string. If the string is too long, the string will be truncated by removing characters. If the string is too short, the string will be padded by adding fill characters.
+It's useful for standardizing the length of strings as inputs for other text functions dependent on length, such as Mid. It's also useful for standardizing text to be more readable.
+Usage
+RPad (text, length, [fill])
+text (required)- The string to pad to the desired length.
+length (required)- The length of the returned string.
+fill (optional)- The fill character with which to pad strings shorter than the length. Defaults to space.
+Example
+RPad("sigma", 10, "-")
+Returns: "sigma-----"
+Rpad("Sigma Computing", 10)
+Returns: "Sigma Comp"
+[Full Name Standard] = Concat(RPad([First Name], 15, " "), RPad([Last Name], 10))
+[Initials] = Concat(Mid([Full Name Standard], 1, 1), Mid([Full Name Standard], 16, 1))
+Returns:
+RELATED RESOURCES
+LPad

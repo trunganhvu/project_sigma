@@ -1,0 +1,30 @@
+Change the account time zone
+Suggest Edits
+Sigma displays all data in UTC. You can change this, if needed, to display all time-based data values in your organization's preferred time zone.
+If you have Admin permissions, you can specify your organization’s time zone by going to Administration > Account > General Settings > Time.
+Requirements
+Only organization Admins can define the account time zone for their organization.
+Select a time zone
+Go to the Administration > Account > General Settings tab.
+Find the Time section and click Edit.
+In the Account Timezone dropdown, select your time zone from the menu.
+📘
+If your time zone is not listed, contact your Account Manager or Support.
+Click Save.
+What to expect if you change the time zone
+Review this list carefully, especially if you are switching from the UTC time zone. After you change the time zone, you can expect the following:
+Existing absolute date filters are not affected, but start showing the date range in the new time zone. For example, after switching from UTC to Americas/Los_Angeles, an absolute period originally defined as starting at 1/1/2021 0:00:00 is displayed as starting at 12/31/2020 15:00:00.
+Existing relative date filters defined in days or less-granular units reflect the new time zone. The values for the date filters are shown the same way (e.g. 30 days ago), but the meaning changes (e.g. from midnight UTC 30 days ago to midnight Pacific Time 30 days ago).
+Date values passed in to Workbook control values via the URL are parsed according to your account time zone. You can override this default behavior so that Sigma parses the date values as being in the UTC +0 time zone.
+Materialized datasets do not update to the new time zone until refreshed. If you use materialized datasets, changing your account time zone might lead to temporary inconsistencies until all materializations are refreshed.
+Data stored in time zone aware columns can be interpreted differently. For example, if you insert “1/1/2021” into the TIMESTAMP_TZ column in Snowflake using the UTC session time zone:
+If your organization time zone is set to UTC, Sigma displays it as 1/1/2021 00:00:00.
+If your time zone is Americas/Los_Angeles, the same timestamp displays as 12/31/2020 15:00:00.
+Due to this potential inconsistency, avoid using time zone aware columns for storing date values.
+🚧
+CSVs uploaded to Sigma use a time zone aware column to store time and date values. If you have previously uploaded a CSV file with a date column, upload it again after changing your organization's time zone to prevent dates from being incorrectly interpreted in the new time zone.
+If a timestamp source does not include information about the time zone, Sigma automatically applies your account time zone, not UTC.
+RELATED RESOURCES
+CurrentTimezone
+ConvertTimezone
+Account Time Zone

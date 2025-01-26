@@ -1,0 +1,50 @@
+DateParse
+Suggest Edits
+The DateParse function parses a text string representing a date in the specified format and returns the equivalent ISO datetime value (YYYY-MM-DD HH:MM:SS).
+💡
+If the input is a text or number value that reflects ISO (YYYY-MM-DD or YYYY-MM-DD HH:MM:SS) or Unix time format, you can use the Date function, which doesn't require you to specify the input format.
+Syntax
+DateParse(text, format)
+Function arguments
+text (required) The text string or column of text strings to parse.
+format (required) The datetime format of the text string.
+Compatible format specifiers
+The DateParse function uses the datetime formatting functionality of the connected CDW or DBMS. The following format specifiers are supported by most connections and can be used to build the datetime format string.
+🚧
+BigQuery doesn't support the %L and %f specifiers.
+Format Description Example output
+(for 2018-07-08 00:34:59)
+%Y Four-digit year 2018
+%y Two-digit year 18
+%m Two-digit month 07
+%B Full month name July
+%b Abbreviated month name Jul
+%A Full day of week Sunday
+%a Abbreviated day of week Sun
+%d Two-digit day of month (01-31) 08
+%H Two-digit hour based on 24-hour clock (00–23) 00
+%I Two-digit hour based on 12-hour clock (01–12) 12
+%M Two-digit minutes (00–59) 34
+%S Two-digit seconds (00–59) 59
+%p AM or PM AM
+%L Three-digit milliseconds (000–999) 000
+%f Six-digit microseconds (000000–999999) 000000
+%Z Time zone offset -07:00
+%% Percent symbol %
+📘
+Because two-digit years converted with the %y conversion are ambiguous, dates with a %y of 00–69 convert to 2000–2069 and dates with a %y of 70–99 convert to 1970–1999.
+Examples
+Example 1
+DateParse("03-Sep-2020:03:05:13", "%d-%b-%Y:%H:%M:%S")
+Parses the text string "03-Sep-2020:03:05:13" and returns the equivalent ISO datetime value 2020-09-03 03:05:13.
+Example 2
+DateParse([Text Date], "%d/%b/%Y:%H:%M:%S")
+Parses text strings in the Text Date column using the specified format (%d/%b/%Y:%H:%M:%S) and returns equivalent values in ISO datetime format.
+Example 3
+DateParse([Text Date], "%d/%b/%Y")
+Parses text strings in the Text Date column using the specified format (%d/%b/%Y)and returns the equivalent values in ISO date time format.
+RELATED RESOURCES
+Date functions overview
+Data types and formats
+Date
+Quickstart: Common date functions and use cases

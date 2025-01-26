@@ -1,0 +1,44 @@
+PV
+Suggest Edits
+The PV function returns the present value of a loan or an investment, when using constant and regular periodic payments.
+Examples of PV are calculations of for mortgage or other loans, or future values towards investment goals.
+PV is part of the set of financial functions that Sigma supports.
+Syntax
+PV(rate, nperiods, pmt, [fv], [type])
+The PV function syntax has the following arguments:
+rate
+Required
+The interest rate per period.
+To use 7%, use the value 0.07.
+nperiods
+Required
+Number of payment periods
+pmt
+Required
+The payment for each period
+fv
+Optional
+The future value, or a cash balance after the last payment.
+Defaults to 0.
+type
+Optional
+Due date of the payment.
+0
+End of the period
+1
+Beginning of the period
+Default is 0.
+Notes
+Be consistent with the units for rate and nperiods arguments. If you make monthly payments on a two-year loan at an annual interest rate of 7%, use the rate calculation of 0.07/12 and nperiods calculation of 2*12. For annual payments on the same loan, use the rate of 0.07 and nperiods of 2.
+Examples
+PV(.1,5,12000)
+The annual payment of $12,000 towards an investment, over 5 years, with an annual interest rate of 10% has a present value of - $45,489.44.
+PV(.1/4,5*4,3000)
+The quarterly payment of $3,000 towards an investment, over 5 years, with an annual interest rate of 10% has a present value of - $46,767.49.
+PV(.1/12,5*12,1000)
+The monthly payment of $1,000 towards an investment, over 5 years, with an annual interest rate of 10%, has a present value of -$47,065.37.
+RELATED RESOURCES
+Pmt
+FV
+NPer
+PV function in Microsoft documentation

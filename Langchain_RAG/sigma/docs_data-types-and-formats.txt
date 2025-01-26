@@ -1,0 +1,114 @@
+Supported data types and formats
+Suggest Edits
+Sigma supports various data types and formats to facilitate effective analysis and reporting. Data types apply to retrieved1 and direct input2 data to determine how Sigma structures, interprets, and manipulates your data. Data formats enable you to display the data in a clear and meaningful way.
+This document defines the supported data types and provides an overview of data type formats and constraints.
+1
+Retrieved data refers to data that Sigma sources from your connected cloud data warehouse (CDW) or database management system (DBMS). Sigma retrieves and transforms data to a type corresponding to the native CDW or DBMS data type. When native data type support doesn’t exist, Sigma transforms the data to text.
+2
+Direct input data refers to data uploaded through CSV or manually entered into input tables.
+Sigma data types
+Sigma supports the following data types:
+Text Strings of characters that represent textual information
+Number Numerical digits that represent numeric values or quantitative information
+Date Date values that represents specific periods or points in time
+Logical Boolean values (true or false) that represent binary or conditional states
+Variant Semi-structured data that represents one or more values of other data types
+Geography Spatial data that represents geographic locations or features
+You can identify column data types in workbooks by referencing the icons in the Element properties > Columns list or the Column details modal.
+Text
+The text data type supports unstructured strings of characters (letters, numbers, symbols, and spaces) that represent textual information.
+When Sigma retrieves data represented by a CDW or DBMS data type that isn’t supported, the data is transformed to text by default.
+For a list of functions provided to operate on text data, see Text functions overview.
+Number
+The number data type supports structured numeric digits that represent numeric values or quantitative information.
+All data represented as integers, fixed-point decimals, or floating-point numbers in your connected CDW or DBMS map to Sigma's number data type. Integers cast to int64 and can present up to 19 digits of precision, while fixed-point decimals and floating-point numbers cast to float64 and present 15-17 significant digits. Sigma also supports direct input values using input tables with up to 19 digits both before and after the decimal point.
+💡
+If you need to display precise number values that exceed the maximum number of digits and don't require mathematical operations (for example, account numbers, serial numbers, or other identifiers), convert the column values to text strings using the Text function.
+Number formats
+Number data can be displayed in the following formats:
+Format Example
+Plain text 1234.56
+Number 1,234.56
+Percent 12.34%
+Scientific 1.23e4
+SI units 1.2k
+Currency $1234.56
+Financial (1,234.56)
+Whole number 1,234
+Custom number format
+In addition to the default number format options, you can configure a custom number format for your data.
+To configure a custom number format for a specific numeric column:
+Select your desired column, select Format (), then select Custom Number.
+Fill in the relevant fields to configure your custom format. The Examples section will provide you a preview of what your configurations might look like.
+Format string Define a format string. For syntax information, see the D3 documentation on formatLocale.
+
+For example:
+.2s to display SI notation and two significant digits 1.2k
+.0% to display a rounded percentage: 123456%
+#x to display prefixed hexadecimal: 0x4d3
+Currency symbol The currency unit.
+Decimal symbol The separator between the integer and fractional parts of a number.
+Digit grouping symbol The delimiter between groups of numbers.
+Digit grouping size The desired number of digits between grouping symbols. For example, a number with digit grouping size of 3, 2, 4 is 123, 45, 6789.
+Prefix Standard number appended to the front of the data.
+Suffix Standard number appended to the back of the data.
+Display null as A constant to display null values as.
+Select Apply.
+Date
+The date data type supports structured date values that represent specific points in time.
+Sigma presents date and time relative to your organization’s default time zone. To display the data in a different time zone, use the ConvertTimezone function.
+For a list of functions provided to operate on date data, see Date functions overview.
+Date formats
+Date data can be displayed in the following formats:
+Format Example
+Date 01/31/2023
+ISO date 2023-01-31
+Long date January 31, 2023
+Month year Jan 2023
+Date time 01/31/2023 03:04:05 PM
+ISO date time 2023-01-31 15:05:05
+Time 03:04 PM
+You can also configure custom date formats. For more information, see Define custom date formats.
+Logical
+The logical data type supports structured Boolean values (true or false) that represent binary or conditional states.
+Logical formats
+Logical data can be displayed in the following formats:
+Format Example
+Boolean true
+
+false
+Variant
+The variant data type supports semi-structured data that represents one or more values of other data types, including text, number, and date.
+All semi-structured data (including variant, array, and object types) in your connected CDW or DBMS map to Sigma’s variant data type.
+Variant formats
+Variant data can be displayed in the following formats:
+Format Example
+JSON {"name":"Alex Lee","age":30,"email":"alex@example.com"}
+GeoJSON {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.98, 40.74]},"properties":{"name":"Empire State Building","category":"Landmark"}}
+Geography
+The geography data type supports structured spatial data that represents geographic locations or features.
+You can perform geospatial joins on geography data using the "intersect" and "within" operators:
+Intersect
+Returns rows from both datasets where geospatial objects intersect or overlap
+Within
+Returns rows where geospatial objects in one dataset are contained entirely within geospatial objects of the other
+📘
+The geography data type is available with Snowflake and BigQuery connections only. Sigma retrieves WKT data and other geospatial formats (excluding GeoJSON) from other CDW or DBMS connections, but it's presented as the text data type.
+For a list of functions provided to operate on geography data, see Geography functions overview.
+Geography formats
+Geography data can be displayed in the following formats:
+Format Example
+Well-known text
+(WKT) POINT (10 20)
+
+LINESTRING (30 40, 50 60, 70 80)
+
+POLYGON ((0 0, 10 0, 10 10, 0 10, 0 0))
+
+MULTIPOINT (10 20, 30 40, 50 60)
+
+MULTILINESTRING ((0 0, 10 10, 20 20), (30 30, 40 40, 50 50))
+
+MULTIPOLYGON (((0 0, 10 0, 10 10, 0 10, 0 0)), ((20 20, 30 20, 30 30, 20 30, 20 20)))
+RELATED RESOURCES
+Define custom date formats

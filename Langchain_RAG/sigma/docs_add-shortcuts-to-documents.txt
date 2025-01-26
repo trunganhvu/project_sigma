@@ -1,0 +1,42 @@
+Add shortcuts to documents (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+If you want to save links to documents in more than one location, you can add a shortcut.
+Use shortcuts to make specific data sources easier to find in the source picker, or to organize documents to make key workbooks and data models easier to access.
+For example, you can add a shortcut to the "Quarterly Sales Targets" workbook in the "Sales" workspace to your personal "My Documents" folder to more easily access the workbook.
+As another example, you can add a shortcut to the "Google Analytics" data model (or data warehouse table) to the "Marketing" workspace. The next time someone in the Marketing workspace goes to add a new element to a workbook, the canonical data model is easily accessible.
+Supported shortcut documents
+Save links to any of the following files, folders, and other objects as shortcuts in a Sigma workspace or folder:
+Workbooks
+Folders, excluding "My Documents"
+Workspaces
+Data models, including visible elements within data models
+Datasets
+Tables, views, schemas, catalogs, and databases from your data warehouse
+You cannot add a shortcut to a shortcut, and you cannot add a shortcut to your "My Documents" folder to another folder or workspace.
+Shortcut permissions
+To add a shortcut to a document, you must be the owner, or have Can Explore or Can Edit permissions on the document.
+When you create a shortcut to a workbook, folder, workspace, data model, or dataset, the permissions to that file or folder do not change. Anyone with access to the folder or workspace can view the shortcut, but only users granted access to the document (workspace, workbook, folder, data model, dataset) can open the document.
+Add a shortcut to a document
+You can add a shortcut to a supported document to another folder or a workspace. You cannot add a shortcut to a version tagged workbook, data model, or dataset.
+Open the parent folder or workspace containing the document to which you want to add a shortcut. For example, open My Documents to add a shortcut to a subfolder in your My Documents folder.
+Select More > Add shortcut….
+Search or browse to the folder or workspace where you want to add the shortcut, then click Add.
+A shortcut to the document is available in the folder or workspace.
+You can also add a shortcut when viewing a workbook, data model, or dataset:
+In the header, next to the title of the workbook, data model, or dataset, select the caret () to open the menu.
+Select Add shortcut….
+Search or browse to the folder or workspace in which you want to add a shortcut, then click Add.
+
+A shortcut to the workbook is available in the folder or workspace.
+Add a shortcut to a data warehouse object
+To add a shortcut to a table, view, schema, catalog, or database in your data warehouse:
+From Sigma Home, select Connections.
+Select the connection and search or browse to the object that you want to add a shortcut to.
+Hover over the object, then select More > Add shortcut….
+Search or browse to the folder or workspace where you want to add the shortcut, then click Add.
+A shortcut to the object is available in the folder or workspace.
+You can then use the shortcut to more easily find the database object when adding a data source:
+If you have a shortcut to a document that gets deleted, you're prompted to remove the shortcut. Clicking the shortcut prompts you to restore the deleted document, if you have access to it.

@@ -1,0 +1,29 @@
+Access and explore audit logs
+Suggest Edits
+Sigma's audit log feature is facilitated by a Sigma-managed connection that provides data related to user-initiated events that occur within your Sigma organization. Access the audit log to troubleshoot issues or monitor user activity for security and compliance purposes. You can also explore the audit log in a workbook to analyze how users across your organization utilize Sigma.
+This document explains how to access the Sigma Audit Logs connection and open the data in a workbook. For more information about audit logging with Sigma, see the following:
+Enable audit logging
+Audit log events and metadata
+Create an audit logs storage integration
+Export audit log data to cloud storage
+User requirements
+By default, the Sigma Audit Logs connection is accessible to Admin users only. If you're assigned a different account type, you must be granted access in the connection's Permission tab.
+Access and explore the audit log
+Go to your Home page.
+In the navigation menu, select the Sigma Audit Logs connection.
+If your organization has more than three connections, Sigma consolidates them in a Connections page. In the navigation menu, first click Connections to open the page, then select the Sigma Audit Logs connection.
+In the connection browser, select the AUDIT_LOGS table to view all audit log entries.
+🚧
+Real-time user events may take several minutes (up to 1 hour) to appear in the audit log.
+To open the audit log data in a workbook, click Explore in the connection header.
+A new workbook opens with an AUDIT_LOGS table containing all entries and metadata. You can now explore, analyze, and share audit log data as needed.
+
+Service Level Indicators
+Freshness: Fresh event data is available within an hour 99.9% of the time.
+Delivery: New audit log events are available at least once 99.9% of the time.
+Frequently Asked Questions
+How much historical data is stored in the audit log?
+My organization just enabled the audit log, but we want data from the past several months. Can the audit log retroactively record events that predate enablement?
+My business requires more than 30 days of audit log data. Can it be customized to store entries for a longer period of time?
+RELATED RESOURCES
+Audit log events and metadata

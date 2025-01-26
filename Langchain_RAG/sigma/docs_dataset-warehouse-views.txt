@@ -1,0 +1,29 @@
+Create and manage dataset warehouse views
+Suggest Edits
+Warehouse views are virtual tables in Snowflake and BigQuery that you can query using Sigma or any other application in your data ecosystem. Create warehouse views based on the data you model in Sigma to simplify queries and retrieve relevant and up-to-date datasets directly from your database.
+This document describes dataset warehouse views and how to utilize them.
+System requirements
+To utilize dataset warehouse views, your organization must configure a Snowflake or BigQuery connection with write access enabled.
+About dataset warehouse views
+When write access is enabled for your Snowflake or BigQuery connection, Sigma automatically creates a warehouse view for any dataset using the connection's data. Instead of storing the dataset as a database table, a warehouse view saves a SQL statement that expresses specific query logic defined by the dataset.
+When Sigma creates a warehouse view, it establishes a live link between the CDW/DBMS and Sigma. The view references the dataset as the source of truth and automatically updates to reflect the most recent version of the data.
+Dataset warehouse views vs. materializations
+For any dataset, Sigma can create up to two views:
+A warehouse view that allows you to access the dataset's generated SQL.
+A materialized view that allows you to access the Sigma-generated materialization (if materializations are configured and scheduled for the dataset).
+Sigma saves warehouse views every time dataset changes are published. Therefore, when you query a warehouse view, you retrieve live data from the data sources. When you query a materialized view, however, you retrieve data from the last scheduled materialized table, which means the retrieved data may differ from the live data.
+Query a dataset warehouse view
+To reference a dataset warehouse view in a SQL query, use the view path.
+Open the dataset in Sigma.
+Click the info icon to view the dataset details.
+In the Warehouse views section, click More in the Dataset field and select Copy path. Use this path to access the dataset's modeled data from Sigma or any application in your data ecosystem that supports SQL.
+Limitations
+If a parameter is used in your dataset, the warehouse view will only reflect the parameter’s default value.
+If a SQL dataset uses non-qualified SQL (where the SQL paths are not explicitly defined), the view will show an error for that dataset and any dataset that references it.
+Insufficient database grants
+If write access is enabled for the connection but you're shown an Insufficient permissions warning in Sigma’s warehouse views details, you may have insufficient permissions in Snowflake or BigQuery.
+In addition to USAGE grants to access the destination database, you must have USAGE, CREATE TABLE, CREATE VIEW, and CREATE STAGE grants to the write destination schema.
+To ensure all appropriate grants have been set, see the instructions and commands outlined in Set up write access.
+RELATED RESOURCES
+Materialization
+Create and manage workbook warehouse views

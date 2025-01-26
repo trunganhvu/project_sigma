@@ -1,0 +1,26 @@
+RoundDown
+Suggest Edits
+The RoundDown function rounds a number down to the specified number of digits. When digits is not specified, the number is rounded to the nearest whole number by default.
+Usage
+RoundDown(number, [digits])
+Function arguments:
+number (required) - The number to be rounded.
+digits (optional) - The number of decimal places to which to round. If not provided, defaults to 0.
+If the digits value is negative, the function will return an integer with that many least-significant digits zeroed (see the example using RoundDown(\[Cost\], -2) below).
+Example
+RoundDown(3.141, 2)
+Returns 3.14
+RoundDown(-6.25417, 3)
+Returns -6.255.
+RoundDown(149.25)
+Returns 149.
+RoundDown([Cost], 2)
+Rounds the value for each row in the input column down. Numbers are rounded by 2 digits.
+RoundDown([Cost], -2)
+Rounds the input number down and replaces its last 2 digits with 0s.  A negative "digits" value returns an integer with that many least-significant digits zeroed.
+RELATED RESOURCES
+Floor
+Round
+RoundUp
+MRound
+Ceiling

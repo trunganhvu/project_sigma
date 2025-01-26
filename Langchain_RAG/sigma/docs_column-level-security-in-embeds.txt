@@ -1,0 +1,45 @@
+Implement column-level security in embeds
+Suggest Edits
+Column-level security provides admins with the flexibility to restrict or grant access to column-level data. This granular control over data access allows your organization to secure sensitive or confidential information, ensuring it’s accessible to authorized users only.
+To implement column-level security in a secure embed, you must configure the embed API to pass the applicable user attribute at runtime.
+This document explains how to implement column-level security in a secure embed. For more information about column-level security, see Configure column-level security > Understanding column-level security.
+User requirements
+To implement column-level security in a secure embed, you must have access to the host application and the ability to create or edit the server-side API.
+You may also need specific permissions within Sigma if you're the user who must complete the prerequisites. System and user requirements are detailed in the referenced documents.
+Prerequisites
+Before you can implement column-level security in a secure embed, you or another user in your organization must complete the following tasks within Sigma:
+Prepare a secure embed
+Create a user attribute
+To simplify the embed API code, avoid spaces and special characters in the user attribute name. Do not prepend the user attribute name with ua_, as this is used when the embed API passes the user attribute value.
+While teams and members can be assigned to user attributes in Sigma, you can manage user assignments in the embed API.
+Configure column-level security
+Configure the API with column-level-security
+Configure the embed API to pass the applicable user attribute at runtime.
+Example JavaScript for a user attribute parameter:
+JavaScript
+searchParams += '&:ua_{ua name}={ua value}';
+When the embedded content renders, the host application passes the user attribute's value, which determines the visibility of a specific column.
+Example use case
+In the following example, the data source of the embedded table contains sales order data, including a Customer Name column. We want to display customer names for sales managers and restrict them for all other users.
+To configure column-level security in Sigma, we created a CustomerName user attribute and selected it as the Visibility setting for the Customer Name column in the applicable dataset.
+In the embed API, we add the CustomerName user attribute as a parameter using the following code:
+JavaScript
+searchParams += '&:ua_CustomerName={ua value}';
+There are three possible outputs for the embedded content, depending on the user attribute value specified, demonstrated in the following sections.
+Display the column
+When the user attribute value is set to 0, the column displays in the embed by default.
+JavaScript
+searchParams += '&:ua_CustomerName=0';
+Hide the column
+When the user attribute value is set to 1, the column is available but can be hidden. This means users with the ability to modify embedded elements can unhide the column to view customer names. However, embed users assigned an account type limited to viewing permission cannot unhide the column to view its data.
+To accomplish this, we hid the Customer Name column in the workbook (within Sigma) and modified the embed API to send a user with permission to modify embedded elements.
+JavaScript
+searchParams += `&:email=Sales_Manager@sigmacomputing.com`;
+searchParams += `&:external_user_id=sales_managers_123`;
+searchParams += `&:external_user_team=Sales_Managers`;
+searchParams += `&:account_type=Creator`;
+searchParams += '&:ua_CustomerName=1';
+Restrict the column
+When the user attribute value is set to 2, the column is restricted in the embed. The embed user can see that the column exists, but the column name and data are censored.
+JavaScript
+searchParams += '&:ua_CustomerName=2';

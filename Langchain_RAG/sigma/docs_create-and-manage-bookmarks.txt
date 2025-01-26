@@ -1,0 +1,55 @@
+Create and manage bookmarks
+Suggest Edits
+Sigma supports personal bookmarks for individual use.
+Personal bookmarks
+Personal bookmarks allow you to save the state of a published workbook in Explore or View mode. In a published workbook, you can make changes to the filters, controls, and other elements, and save the changes as a personal bookmark.
+All user interactions persist in the bookmark. Some common things you might want to bookmark include:
+Saving a control or filter value
+Adjusting the formula for a column (such as a mapping column)
+Adding a new visualization
+Adding descriptive information in a text element
+Renaming elements or pages
+For example, say your team uses a standard workbook that you regularly modify for your own purposes. Instead of making a copy, you set the filters or controls that you want and save it as a personal bookmark. Then you can set your bookmark as your default view of the workbook. When the underlying data updates, your personal bookmark updates as well. This saves you a lot of time compared to copying, and keeps the context of the standard workbook.
+In short, you don’t need to make your changes to a static copy of a workbook. The bookmark keeps its connection to the original published workbook, so if the original published workbook changes, the changes become available in the bookmark. This also applies to a URL you may copy from a saved bookmark; the URL won’t become stale.
+Create a personal bookmark
+Requirements
+Your user account must have Viewer, Creator, or Admin privileges. For more information see User account types.
+Access to the published workbook. Workbook owners can share published workbooks. For more information see Share a workbook.
+Steps to create a personal bookmark
+Go to the workbook and make changes, such as selecting a filter value or adding a new element. What you can change in a workbook depends upon your user account and the workbook's permissions. For more information see Workbook modes overview: View, Explore, Edit.
+From the Published menu, select Bookmark your changes.
+
+The Save Bookmark modal opens. 
+Name your bookmark.
+(Optional) If you want the bookmark to be your default view of the workbook, check Always view bookmark by default.
+Click Save.
+Access and manage a personal bookmark
+After you add a bookmark, the Personal bookmarks menu becomes active. Use it to select your saved bookmarks.
+To rename, set as default view, or delete a bookmark use the Manage bookmarks menu and modal.
+Tip: If you forget to save a bookmark, use the Published > Recent explores menu to display your recent explorations, find the one you want, and bookmark it.
+Workbook changes that affect bookmarks
+Sometimes a workbook changes in such a way as to make its bookmarks out-of-date or even irrelevant. This can happen when the bookmark includes:
+A filter whose value was changed, and the workbook deletes or updates the filter. 
+A filter on an element that was later deleted in the workbook. 
+An element that was later deleted in the workbook.
+In cases like these, Sigma alerts you with a modal prompting you to either delete the bookmark or update it.
+Simple changes to the workbook that do not relate to edits you make for a bookmark do not prompt an alert. Simple changes, such as updated titles, appear when you open the bookmark. 
+The following example shows changes to a workbook and creating a personal bookmark, as well as the Manage Bookmarks modal. 
+Bookmarks in embedded workbooks
+📘
+Sigma supports bookmarks in embedded analytics when the entire workbook is embedded. This feature isn't available in individual page or element embeds.
+In embedded workbooks, you can access bookmark options in the header or footer (depending on the embed configuration).
+Click the bookmark icon, then select an option from the menu:
+Save as new bookmark
+Saves the current explored state as a new personal bookmark.
+Available when viewing an explored state that isn't saved as a bookmark.
+Manage bookmarks Opens the Bookmarks tab in the side panel, where you can view and edit saved personal bookmarks.
+Personal bookmarks
+Opens a submenu that allows you to select and view any saved personal bookmark.
+Available when you have one or more saved personal bookmarks.
+Clear bookmark
+Resets the workbook to the published version.
+Available when viewing a saved bookmark.
+RELATED RESOURCES
+Use a workbook in Explore mode
+Workbook modes overview: View, Explore, Edit

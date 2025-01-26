@@ -1,0 +1,72 @@
+Build a geography map
+Suggest Edits
+Geography maps (Map - Geography chart type) support datasets with geography data (WKT format) or variant data (GeoJSON format) and are typically used to illustrate geospatial objects on a map. Create a connection map to display spatial networks, correlations, and relationships, or build a choropleth map to identify variability and patterns across distinct geographic areas.
+💡
+Example use cases:
+Land use analytics: Represent land parcels by zoning code to identify land use patterns and conflicts with proximal areas
+Marketing analytics: Quantify customers across specific regions to analyze customer distribution and understand market reach.
+Environmental analytics: Map oil and gas pipelines to assess proximity to residential areas and natural resources.
+User requirements
+The ability to create geography maps and other charts requires the following:
+You must be assigned an account type with the Create, edit, and publish workbooks and/or Explore workbooks permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+If you’re granted Can explore access to the workbook, you can create and modify chart properties and formatting in Explore mode, but you cannot publish your changes.
+Data prerequisites
+A geography map requires one of the following data types:
+Geography data (WKT)1
+Variant data (GeoJSON)
+If your dataset isn’t compatible, you might be able to use functions (such as type or geography functions) to convert data to a supported type. Alternatively, when building a choropleth map, you can also use the Map - Region chart.
+1
+The geography data type is available with Snowflake and BigQuery connections only.
+Geography map variations
+Connection (link) map
+Connect geographic locations (cities, landmarks, points of interest, and more) to illustrate spatial networks, correlations, and relationships.
+Choropleth map
+Define regions and compare values to identify variability and patterns across distinct geographic areas.
+🚩
+The Map - Geography chart doesn't support point (link) maps. However, you can build point maps using the Map - Point chart if your dataset contains geospatial data that represents points.
+If points are represented by the geography data type, use the Latitude and Longitude functions to extract the coordinates from the WKT format. If points are represented by the variant data type, select the Extract columns option in the column menu to extract the coordinates from the GeoJSON format. You can then plot the extracted data in the Map - Point chart.
+Basic geography map configurations
+Geography maps require the following element properties:
+Chart: chart type used to illustrate the data
+Geography: source column that defines the geospatial objects
+📘
+At the core of every chart is an underlying data table (derived from the data source) that supplies the information visualized by the chart. As you build a geography map, Sigma automatically calculates and structures the data to map the element properties to source columns in the underlying data table. For information about how to view the underlying data while you configure the chart, see Maximize or Minimize a Data Element.
+Add a geography map
+Add a new chart element and designate it as a geography map.
+Open a workbook in Explore or Edit mode and add a new chart element.
+In the new element’s Chart property, click the dropdown field and select Map - Geography from the list.
+Define the geospatial objects
+Configure a source column that defines the geospatial objects (lines or polygons) representing landmarks, routes, regions, or other features. The column must contain geography data in WKT format or variant data in GeoJSON format.
+In the Geography property, click Add column and select an option from the menu:
+To map objects from an existing column, search or scroll the Select geography/variant column list and select the column name.
+To create a new column using a custom formula, select Add new column and enter the formula or value in the toolbar.
+💡
+You can also select or replace an existing column by dragging and dropping a column name from the Columns list to the Geography property.
+When the Geography property is configured, the map illustrates the geospatial objects represented by the source column data.
+Advanced geography map properties and formatting
+Configure mark colors
+Configure the line or polygon mark colors in the Element properties > Marks > Color tab to visualize patterns, highlight variations, improve readability, and more.
+Color
+Single color Enter a hex code or select an option from the color palette or color picker.
+By scale Select a source column to define the color scale, then select a color range to apply to the marks.
+
+Column values associated with color scale are automatically included in the mark tooltips. For more information, see Customize tooltip fields.
+Customize tooltip fields
+Configure source columns in the Element properties > Marks > Tooltip property to add fields to the map tooltips.
+If a source column is configured in the Marks > Color property, its values are automatically displayed in the tooltips. For information about changing tooltip defaults and adding fields, see Customize chart mark tooltips fields.
+Change map style
+Change the base style of your map in the Element format > Map style section.
+Base style
+Light
+Dark
+Streets
+Satellite
+Custom (example)
+All geography map format options
+Title
+Map style
+Legend
+RELATED RESOURCES
+Intro to charts
+Create a data element

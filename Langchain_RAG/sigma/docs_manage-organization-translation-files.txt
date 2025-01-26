@@ -1,0 +1,75 @@
+Manage organization translation files
+Suggest Edits
+Creating organization translation files allow you to serve the Sigma users in your organization and consumers of embedded analytics with custom workbook text in their preferred language. Custom workbook text includes any customizable workbook element titles and user-defined strings, including column names from source data.
+Admins can manage organization translations by going to Administration > Account > General Settings > Locale or by using the API.
+Organization translations are centrally managed translation files that translate commonly-used terms across all workbooks. As a result, workbook owners do not need to translate those common terms in each individual workbook.
+Workbook owners can also manage translations for their workbooks on a per-workbook basis. A translated string in a workbook-level translation file takes precedence over a translation of the same string in an organization-level translation file.
+For example, if you have hundreds of workbooks in your organization that use the term "Quantity" in data column names, you can upload a translation file for Spanish to specify that "Quantity" should appear as "Cantidad" for any users with their locale set to Spanish. If the owner of an individual workbook does not specify a translation for "Quantity" in their workbook-level translation file, Sigma applies the translation from the organization-level translation file and "Cantidad" will appear. If that workbook owner uploads a different translation for the term, Sigma uses the translation from the workbook-level translation file.
+See Manage workbook localization for details on how workbook-level and organization-level translation files interact.
+📘
+Organization translations affect version-tagged workbooks.
+If an organization translation exists for a language, any version-tagged workbooks viewed in that language use the translations. If you want to control how a translation appears in a version-tagged workbook, apply a workbook-level translation file to that workbook.
+Supported languages
+Sigma supports the following languages and locales:
+Language Locale
+Chinese (Simplified) zh-cn
+English (United States) en
+English (United Kingdom) en-gb
+English (Australia) en-au
+French fr
+French (Canada) fr-ca
+German de
+Italian it
+Japanese ja
+Korean ko-kr
+Polish pl
+Portuguese pt
+Portuguese (Brazil) pt-br
+Russian ru
+Spanish es
+Swedish sv-se
+Thai th
+Requirements
+You must be assigned the Admin account type.
+Add a translation file
+Go to the Administration > Account > General Settings tab.
+In the Locale section, click Add next to Organization translations.
+Choose the language for which you would like to create an organization-wide translation file.
+📘
+To maintain multiple unique translation files for the same language, choose Add custom translations. Adding a custom translation for a language allows you to translate common strings differently for different consumers of embedded dashboards, for example.
+Click the download icon in the Actions column to download the json file.
+Open the file with a text editor. The default file contains an example to demonstrate the required syntax.
+JSON
+{
+  "This is an example": "This is an example",
+  "This is a second example": "This is a second example"
+}
+Replace the example key-value pairs with valid json that represents the common phrases used in workbooks across your organization, and their translated values. For example:
+JSON
+{
+   "Date": "Fecha",
+   "Quantity": "Cantidad",
+   "Cost": "Costs",
+   "Price": "Precio",
+   "Product Type": "Tipo de Producto"
+}
+Save the json file. Do not change the file name.
+In the Actions column, click the upload icon to upload the file you just edited.
+The translations you provided in the file apply immediately to the corresponding locale version of any workbook in the organization that uses those phrases, provided the workbook does not already provide a translation file that contains different translations for those phrases.
+Preview organization translations in a workbook
+To preview the results of translations, go to a workbook that uses the phrases you translated.
+Click Edit.
+Click the Manage settings icon (), located in the workbook’s left sidebar, to open your workbook’s settings panel.
+Click Manage locales.
+Preview the translation:
+If a workbook-level translation for the language already exists, click the More icon (), then click Preview to open the workbook with that locale applied.
+If no translation exists at the workbook level, click the plus icon (+) next to Available locales to add a new locale, and select the language. Then, click the More icon (), then click Preview to open the workbook with that locale applied.
+Update an organization translation file
+To update an organization translation file:
+Go to the Administration > Account > General Settings tab.
+Click the download icon () in the Actions column to download the json file.
+Open the file with a text editor.
+Update the json file to edit existing key-value pairs or add new ones.
+Save the file. Do not change the file name.
+In the Actions column, click the upload icon () to upload the file you just edited.
+The translations you provided in the file apply immediately to the corresponding locale version of any workbook in the organization that uses those phrases, provided the workbook does not already provide a translation file that contains different translations for those phrases.

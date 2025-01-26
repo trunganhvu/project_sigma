@@ -1,0 +1,62 @@
+Create a data element
+Suggest Edits
+Workbooks support many element types. Data elements are elements built directly from a data source and include tables, pivot tables, and charts.
+Although each type of data element displays data in a different way, the underlying data is always tabular and column-based. To understand the structure of visualized or pivoted data, view the underlying data for the data element. See View underlying data.
+Data sources for data elements
+When you create a workbook, you can add elements from a variety of data sources. You can add new sources at any time, and you are not restricted to a single source per workbook or workbook page.
+Available data sources include tables from connected cloud data warehouses (CDW), Sigma data models or datasets, CSV-formatted files that you upload, SQL commands, other workbook data elements, and more.
+You can create a data element from several different sources:
+A new source.
+A source already in use in the workbook.
+An existing data element. To create an element from another element, see Create a data element from an existing element on the canvas.
+Effects of upstream changes
+Changes made to a data source might affect child elements that depend on that data source. For example, if a bar chart element depends on a table element as a data source, deleting a column from the table element makes the column inaccessible to the bar chart element. Hiding the column makes the column unavailable by default, accessible to the bar chart as a source column.
+Consider reusability of a data source when building a workbook and creating data elements:
+Convert data elements to data models to reuse them across workbooks.
+Create calculated columns and filters in source tables.
+Review element lineage when troubleshooting unexpected data changes.
+Requirements
+To create a data element, you must have Can Edit access to the individual workbook.
+The workbook must be in either Edit mode or Explore mode. See Workbook modes overview.
+To upload CSVs or write custom SQL, you must be assigned an account type with the Upload CSV or Write SQL permission enabled. See Account types.
+Add a data element to a workbook page
+To add a data element to your workbook page, do the following:
+Select Add element.
+Under Data elements, select the type of element you want to add: Table, Chart, or Pivot table.
+Review the available data sources:
+You can search for a data source or workbook element, select Elements to review data elements from the current workbook, or select Tables and Datasets to browse to a table or dataset to which you have access.
+Hover over an available data source and select Preview to open the data source columns and values.
+Sources already in use in the workbook or in other workbooks that you have access to appear with different icons., Hover over the to identify sources in use by the current workbook.
+Select a data source. You can add a data source immediately, or preview it and select specific columns to add:
+Select a data source from search results, browsing the Elements from the current workbook, or selecting a table or dataset from Tables and Datasets.
+If you preview a data source, you can select or deselect different columns in the data source and then select Add to add the data source.
+Select CSV to upload a CSV-formatted file.
+Select SQL to write custom SQL to retrieve data from a CDW. See Write custom SQL.
+Select Join or Union to combine data sources. See Join data in workbooks.
+After you select the data source for the element, the new element appears on the page with the editor panel open for the element.
+Create a data element from an existing element on the canvas
+You can create a child data element from a table, pivot table, or input table on a workbook page. For example, create a chart from a table element.
+Hover over the element that you want to use as a data source.
+Select Create child element to create a dependent element based on the selected element.
+Select an element type: Chart, Table, or Pivot table.
+The new element appears on the page with the editor panel open for the element.
+📘
+If you want to create a data element by querying an existing workbook element with SQL, you can create a warehouse view for the element and reference the path to the view in your SQL syntax. Your connection must be configured with write access. For more information about SQL-sourced tables, see the Reference existing Sigma workbook elements section in Write custom SQL.
+Identify and edit an element's data source
+To identify and make changes to the data source of a data element, review the Element properties panel.
+Before you start: This action uses the editor panel. If you have not done so already, open the editor panel from either Explore or Edit mode.
+Select an element on the workbook canvas, then select the Element properties.
+At the bottom of the editor panel, identify the data source:
+To view, change, or transform a data source for a selected element, select the caret () next to the data source name. See Change the data source for a workbook or element.
+Change the granularity of a grouped element data source
+When you create a child element from a grouped table, the top-most grouping level of the table is used as the data source by default. To change which columns are available to your table, change the granularity of the source table:
+Select the Element properties for the table.
+At the bottom of the editor panel, review the source table and the Grouping option.
+Open the column name to review the granularity options available and choose the columns that you want to include. Any lower-level grouping options include the columns from higher-level grouping options. If you want to view all columns, choose All source columns.
+
+Your child element updates to include the additional columns.
+RELATED RESOURCES
+Create and manage tables
+Working with pivot tables
+Intro to charts
+Send or schedule workbook exports

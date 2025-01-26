@@ -1,0 +1,131 @@
+Plugin development API
+Suggest Edits
+The PluginConfigOptions Object
+Arguments
+name string
+An identifier and label for the individual configuration option.
+type string
+The configuration option’s input type:
+element: Allows users to reference a data element in the workbook. Typically used for data source selection.
+column: Allows users to select data element columns. PluginConfigOptions assigned this type must also include source and allowMultiple arguments.
+text: Allows users to input text into a text box. PluginConfigOptions assigned this type must also include secure, multiline, placeholder, and default value arguments.
+group: Allows users to group multiple PluginConfigOptions. This configuration type can only contain “text” type objects.
+toggle: Allows users to choose between two boolean values.
+checkbox: Allows users to select options.
+source string (ignored if type does not equal “column”)
+The name argument of the PluginConfigOptions object (type “element”) that stores the data element to be used as a data source.
+allowMultiple boolean (ignored if type does not equal “column”)
+True allows users to select multiple values.
+allowTypes string | undefined (ignored if type does not equal “column”)
+A list if any or all column types you want to prevent users from inputting.
+Options: 'boolean', 'datetime', 'number', 'integer', 'text', 'variant', 'link', 'error'
+secure boolean | undefined (ignored if type does not equal “text”)
+If true:
+A password input type is applied to the text box
+The input value is not passed as plaintext through the query string (for pre-hydrated configs). The value is only made available once a secure connection between the plugin and workbook has been established.
+If false:
+Default text input is used.
+The input value is passed as plaintext through the query string, allowing the value to be accessed immediately in the plugin.
+Multiline boolean | undefined (ignored if type does not equal “text”)
+Uses <textarea /> instead of <input />.
+Note: Can still be set as secure but will no longer use the password type.
+placeholder string | undefined (ignored if type does not equal “text”)
+Placeholder text for the text input.
+defaultValue string | undefined (ignored if type does not equal “text”)
+A value to use as the default in a text input if no value is set.
+Examples
+Example #1
+The object below displays a select menu. The menu includes all data elements in the workbook. Users will select an element from this list to be used as the data source for their plugin-based element.
+{ name: 'data source', type: 'element' }
+Example #2
+The object below displays a select menu. The menu that lists every column in the data element the user selected as a data source in the “data source” input (see Example #1 above). Because allowMultiple is true, the user can select multiple columns from the list.
+{ name: 'dimension', type: 'column', source: 'data source', allowMultiple: **true** }
+Configuration API
+client.config.configureEditorPanel(editorPanelConfiguration)
+Configures the workbook’s editor panel for the plugin.
+Arguments
+editorPanelConfiguration array<{PluginConfigOptions}>
+A list of PluginConfigOptions objects that define the inputs available in the plugin element’s editor panel.
+Example
+JavaScript
+client.config.configureEditorPanel([
+  { name: 'data source', type: 'element' },
+  { 
+    name: 'dimension',
+    type: 'column',
+    source: 'data source',
+    allowMultiple: true
+  },
+  { name: 'measures', type: 'column', source: 'data source', allowMultiple: true },
+  { name: 'a group of values', type: 'group' },
+  { name: 'text input #1', source: 'a group of values', type: 'text' },
+  { name: 'text input #2', source: 'a group of values', type: 'text' },
+  { name: 'apiKey', type: 'text', secure: true },
+]);
+client.config.get()
+Returns the array of PluginConfigOptions.
+Arguments
+none
+client.config.getKey(key)
+Returns a specific PluginConfigOptions object based on the input string.
+Arguments
+key string
+The name of the target PluginConfigOptions object
+client.config.set(config)
+Updates the plugin configuration for one or more key/value pairs and saves it to the workbook.
+Arguments
+config array<{key: string, value: string}>
+The key / value pair to save, where key is the name of the PluginConfigOptions object and value is the user’s input value.
+client.config.setKey(key, value)
+Updates the input value associated with a specific PluginConfigOptions object and saves it to the workbook.
+Note: To set multiple values at once, use client.config.set(config).
+Arguments
+key string
+The name of the associated PluginConfigOptions object
+value any
+The user’s input value.
+client.config.subscribe(listener)
+Subscribes to configuration changes.
+Arguments
+listener config => void
+A function to be invoked when changes are made to the configuration.
+Standard Javascript API
+client.config.getElementColumns(elementId)
+Returns a Promise that resolves to the column information from the specified element.
+Arguments
+elementId string
+A workbook element’s unique identifier.
+client.elements.subscribeToElementColumns(elementId, listener)
+Subscribes to changes in a specific element’s column information.
+Arguments
+elementId string
+A workbook element’s unique identifier.
+listener function
+A callback function to be invoked
+client.elements.subscribeToElementData(elementId, listener)
+Subscribes to changes in a specific element’s data rows. The shape of the data is a dictionary of cell data keyed by its columnId: Dictionary<ColumnId, CellValue[]>.
+Arguments
+elementId string
+A workbook element’s unique identifier.
+listener function
+A callback function to be invoked
+Hooks API
+The Hooks API, built using React Hooks, is included in the Sigma plugin client package.
+useElementColumns(elementId)
+Returns the column information from the specified element.
+Arguments
+elementId string
+A workbook element’s unique identifier.
+useElementData(elementId)
+Returns the row data from the specified element. The shape of the data is a dictionary of cell data keyed by its columnId: Dictionary<ColumnId, CellValue[]>.
+Arguments
+elementId string
+A workbook element’s unique identifier.
+useConfig(key)
+Returns the workbook element’s current configuration. If a key is provided, only the associated configuration is returned.
+Arguments
+key string [optional]
+The name of the associated PluginConfigOptions object.
+RELATED RESOURCES
+Get Started with Custom Plugins
+Develop plugins for Sigma

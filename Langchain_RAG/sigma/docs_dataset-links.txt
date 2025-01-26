@@ -1,0 +1,20 @@
+Dataset Links
+Suggest Edits
+Links create a pre-defined join pathway between two data sources. When you define a link, users can easily add columns from the linked data sources to workbooks, based on the dataset. Sigma pulls in data relationships that already exist in your database. If you have foreign keys set up in your warehouse, you should automatically see those relationships in the Links tab.
+Data added through links always appear in a Left Join. Links only support Many-to-One or One-to-One relationships. Each row in your source object should have at most one possible result in your target object; otherwise, incorrect results can be introduced into workbooks that use the link, affecting subsequent calculations and charts.
+The power of Sigma’s links is that you can do more than create links between tables. You can create a link between any two data sources in Sigma. You can create a dataset that defines Metrics, then link it to a warehouse table so that users can pull in additional customer information. You can create a link between two datasets, two warehouse tables, or any other combination. Links allow you to create pathways of exploration, without limiting your users.
+Additionally, Sigma preserves the work you’ve already done to set up relationships between your database tables.
+When running Sigma over multiple linked tables, you must ensure that the underlying tables with links have their relationship already defined in the primary data source. After creating links, all linked columns appear in the Worksheet tab in Datasets, and you can create the necessary calculated columns. See Use linked columns in workbooks.
+Create Links
+Use the left-hand navigation menu to navigate to the dataset or table you would like to create a Link for.
+Open to the Links tab.
+Click the Edit button in the top right.
+Click Add Link to other sources.
+Use the left-hand menu to choose the data source you would like to connect to. Ensure that your source data has a one-to-one or many-to-one relationship with the target data.
+Once you select the data source, a preview will appear.
+Click Next in the page header.
+Preview your join column and the join results on the right hand side of the screen.
+Click Accept in the page header.
+You will now see your new Link listed on the Links tab.
+Click Publish to save and publish your new Link.
+For details on using links, see Use linked columns in workbooks.

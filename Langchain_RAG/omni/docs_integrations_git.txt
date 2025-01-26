@@ -1,0 +1,40 @@
+Integrationsgit for version control
+On this page
+Integrate git for model version control
+Omni’s git integration allows you to sync an Omni model to a git repository (GitHub, GitLab, and Azure DevOps Server are currently supported). This is done on the model level.
+Using a git integration provides added development benefits of storing backups of model files and using pull requests to create collaborative and peer reviewed changes. Additionally, it's possible to require pull requests, for those that want a more structured development lifecycle.
+Enabling the git integration requires the use of Branch Mode for modifications to the Shared model, ensuring a structured and organized development process.
+Tips
+Pull requests are optional by default. To require them, enable the Require Pull Requests setting.
+Limitations
+A git repository and base branch can be linked to one model at a time.
+Editing model files directly within external platforms is not yet supported.
+Set up
+NOTE
+Some steps will differ depending on the git provider you're using.
+Step 1: Retrieve the repository's SSH URL
+GitHub & GitLab
+Azure DevOps
+Step 2: Connect the repository to Omni
+In Omni, click Develop.
+Click the model you want to connect to git.
+In the model IDE, click Model > Git settings.
+You'll be prompted to enter connection details for the repository:
+SSH URL - Copy and paste the repository's SSH URL from Step 1
+Base Branch - Enter the name of default branch for the repository. Omni will default to main unless a different name is specified.
+Click Configure Git.
+The page will update to display additional git settings, along with information for deploy keys and webhooks. Keep this page handy and proceed to Step 3.
+Step 3: Add a repository deploy key
+GitHub
+GitLab
+Azure DevOps
+Step 4: Add repository webhooks
+GitHub
+GitLab
+Azure DevOps
+Step 5: Test the connection
+To verify the set up, navigate back to the Git settings page in Omni. Click the Test git connection button near the top of the page to test the connection.
+Previous
+dbt Integration
+Next
+Overview

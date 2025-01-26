@@ -1,0 +1,114 @@
+Create new input tables
+Suggest Edits
+Create input tables to integrate new data points into your analysis and augment existing data. Manage table structure, enter cell values, and configure advanced options, including data validation, column protection, data entry permission, and row edit history.
+This document explains how to create and build empty, CSV, and linked input tables. For an overview of input table features and how to configure them, see Intro to input tables and Configure data governance options in input tables. For information about editing input table data, see Edit existing input table columns.
+📘
+This feature isn't supported by all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+System and user requirements
+The ability to create new input tables requires the following:
+You must be granted Can use data permission on a connection that supports input tables and has write access enabled.
+If using input tables on an OAuth-enabled connection, see Configure OAuth with write access for additional requirements.
+If using input tables on an Amazon Redshift connection, the enable_case_sensitive_identifier configuration value in Redshift must be set to false. If set to true, attempts to create new input tables will fail.
+You must be assigned an account type with the Create input tables and Create, edit, and publish workbooks permissions enabled.
+You must be the workbook owner or be granted Can edit workbook permission. Unlike other workbook elements, input tables cannot be created in Explore mode.
+For information about permissions required to edit input table data, see Edit existing input table columns.
+Create a new input table
+Sigma features multiple types of input tables to support a variety of use cases for ad hoc data entry. The following subsections explain how to create the following input table types:
+Empty input tables
+CSV input tables
+Linked input tables
+Create an empty input table
+Create an empty input table to support data entry independent of existing data.
+Open a workbook in Edit mode.
+In the navigation menu, click Add element to open the Add new element panel.
+In the Input Tables section, select Empty.
+Select the connection and write destination for the input table data:
+In the Select a connection dropdown, select the connection Sigma will use to write the input table data to your data platform. Sigma only allows the selection of connections with write access enabled.
+In the Destination dropdown, select a write-back schema.
+Click Create.
+If you only have permission to write to one connection or one write-back schema within the selected connection, Sigma automatically applies that option and doesn’t require you to make a selection.
+Sigma adds an empty, single-column input table to the workbook. See Customize input table structure in this document to continue building your input table.
+Create a CSV input table
+Create a CSV input table to support data entry with pre-populate editable data from a CSV upload.
+Open a workbook in Edit mode.
+In the navigation menu, click Add element to open the Add new element panel.
+In the Input Tables section, select CSV.
+In the Upload CSV page, drag and drop a CSV file into the specified area, or click Browse and select it in the file dialog.
+📘
+The CSV file cannot exceed 200 MB in size and must use UTF-8 encoding.
+Review the parsed data and warnings, if applicable, then update the parsing options and column types as needed.
+Click Save to apply the CSV data to the input table.
+Sigma adds the pre-populated CSV input table to the workbook. See Customize input table structure in this document to continue building your input table.
+Create a linked input table
+Create a linked input table to support data entry alongside existing data from other elements in the same workbook.
+Open a workbook in Edit mode.
+In the navigation menu, click Add element to open the Add New panel.
+In the Input tables section, select Linked.
+In the Select source modal, select an element in the workbook to use as the input table’s data source.
+In the Create linked input table modal, select source columns to link in the input table:
+📘
+Linked columns, including the primary key, aren’t editable at the cell level in the input table. Values are inherited from the source element and continually reflect live data as that element updates.
+Select at least one column to populate row identifiers in the primary key column.
+💡
+Row identifiers in the input table’s primary key column are based on unique values in the selected source column. To ensure consistent and reliable row identifiers, choose a source column containing unchanging values (like static IDs, product names, or regions). Dynamic values in the primary key column can lead to the loss of row data when a row identifier changes.
+Select additional columns to populate other source data in the input table.
+Click Create input table.
+Sigma adds the linked input table to the workbook. By default, it includes the selected source columns and a single data entry column. See Customize input table structure in this document to continue building your input table.
+Customize input table structure
+Sigma enables you to customize the structure of an input table to optimize your analysis and reporting. The following subsections explain how to complete the following tasks:
+Insert rows
+Add columns
+Move columns
+Rename columns
+Change column types
+Insert rows
+Insert new rows into empty or CSV input tables to create new data records for your analysis. Linked input tables don’t support the manual addition of rows since row count and granularity are defined by the primary key column.
+To insert a new row, right-click anywhere in an existing row, then select Insert 1 row above or Insert 1 row below.
+To insert multiple new rows, multi-select consecutive rows, right-click the selection, then select Insert [#] rows above or Insert [#] rows below.
+To add a row to the bottom of the input table, click the last row containing a plus (+) in the header column.
+📘
+You cannot insert rows when column protection is applied to one or more columns in the input table.
+Add columns
+Add columns to any type of input table to add data dimensions, calculations, and measures to your analysis.
+Click the caret () in any column header (or the caret associated with any column name in the Columns panel).
+In the column menu, hover over Add new column, then select a column option:
+Text, Number, Date, or Checkbox Data entry columns that enable cell-level user input.
+Calculation or Via lookup Computed columns that generate data based on a formula or lookup.
+Last updated at or Last updated by Row edit history columns that display metadata related to row edits. For more information see Add row edit history.
+Row ID System column that generates unique IDs for each row. For more information, see Add row ID.
+Sigma adds an empty column following the column referenced in the previous step.
+Move columns
+Move columns to reorganize the input table.
+To move a single column, click and hold the column header (or the column name in the Columns panel), then drag and drop the column to the preferred position.
+To move multiple columns, select multiple column names in the Columns panel, then drag and drop the selection to the preferred position.
+To move one or more columns to the beginning or end of the table, select the columns directly in the table (or in the Columns panel). Right-click the selection to open the column menu, then hover over Move to and select Start or End.
+Rename columns
+Rename columns to reflect the context of the column data.
+Click the caret () in any column header (or the caret associated with any column name in the Columns panel).
+In the column menu, select Rename column to enable in-place editing.
+Edit the column name, then press the Enter key.
+💡
+You can also double-click the column header or name to enable in-place editing.
+Change column types
+Change column types (text, number, date, or checkbox) to optimize storage, query performance, and your overall analysis.
+Click the caret () in a column header (or the caret associated with any column name in the Columns panel).
+In the column menu, hover over Change column type, then select Text, Number, Date, or Checkbox. If the column contains data, Sigma automatically removes values that don’t correspond with the selected data type.
+📘
+You cannot change the data type if data validation or column protection is applied to the specific column.
+Enter table data
+Enter cell-level data in input tables through keyboard entry, copy/paste, checkbox toggle, or dropdown selection. You can also define cell values in calculation columns using custom formulas.
+For information about the ongoing data entry workflow in a workbook draft versus a published version, see Edit existing input table columns and Configure data governance options in input tables.
+📘
+Input table cells only accept values that align with the column’s data type. If you enter an invalid value, the cell clears the data.
+To enter data through keyboard entry, select a cell and enter a value.
+To paste copied values, select a cell or range of cells, then right-click the selection and select Paste.
+💡
+You can select and paste values in up to 50,000 cells at once (2,000 rows and 25 columns, including the header). When you copy multiple rows of data and select a column header or a range of cells that include a header in the input table, the first row of the copied data is pasted in the header.
+To change a cell value in a checkbox column, click the checkbox to toggle between true (selected) and false (cleared). You can also press the Delete key to remove the checkbox and generate a null value.
+To select a predefined dropdown value in a column containing data validation, click the caret () in a cell (or double-click the cell), then select an option.
+To define values in a calculation column, click the column header or any cell in the column, then enter an expression in the formula bar.
+RELATED RESOURCES
+Intro to input tables
+Edit existing input table columns
+Configure data governance options in input tables
+Restore input table access for a Snowflake connection or user

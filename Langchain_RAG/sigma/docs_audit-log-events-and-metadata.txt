@@ -1,0 +1,38 @@
+Audit log events and metadata
+Suggest Edits
+The Sigma Audit Log is a connection that provides metadata related to user-initiated events that occur within your Sigma organization.
+This document details audit log event categories, event types, and entry metadata. For more information about audit logging with Sigma, see the following:
+Enable audit logging
+Access and explore audit logs
+Create an audit logs storage integration
+Export audit log data to cloud storage
+Documentation memo
+This document references the audit log with its default column settings and connection configurations. If settings and configurations were customized by an Admin user, column visibility and naming in your audit log may differ.
+To confirm column visibility and identify the default columns defined in this document, refer to the Column tab in your audit log. If necessary, you can cross-reference your audit log's custom “friendly names” with cloud data warehouse (CDW) or database management system (DBMS) column IDs provided in the event metadata tables throughout this document.
+Event categories
+The audit log records user events in the following categories:
+Category Description
+ACCESS_SIGMA User access entries record events related to user access and configurations in the Admin > Authentication page.
+USER_ACCOUNT User account entries record events related to admin interactions with member accounts and user invitations.
+ACCOUNT_TYPE Account type entries record events related to admin interactions with account type configurations and member assignments.
+TEAMS Team entries record events related to admin interactions with team settings and member assignments.
+CONNECTION Connection entries record events related to admin interactions with the CDW or DBMS connection configurations.
+OBJECT_INTERACTION Object interaction entries record events related to user interactions with workbooks, data models, datasets, and workspaces.
+QUERY_EXECUTIONS Query execution entries record events related to user interactions that trigger queries to the CDW.
+PUBLIC_API Public API entries record events related to user interactions with Sigma's API endpoints.
+EXPORTS Exports entries record events related to user interactions with on-demand export functionality.
+PERMISSIONS Permissions entries record events related to user interactions with permissions grants on folders and documents.
+SCHEDULES Schedules entries record events related to user interactions with scheduled export functionality.
+MATERIALIZATIONS Materializations entries record events related to user interactions with materializations.
+Event types and metadata
+Base entry metadata (all entries)
+All audit entries—regardless of event category or type—include the following base metadata:
+Audit events reference
+Select an event category to browse the available audit log events in that category.
+Sigma Shared metadata reference
+Select a table name to view the columns available in the SIGMA_SHARED audit tables.
+RELATED RESOURCES
+Access and explore audit logs
+Did this page help you?
+Yes
+No

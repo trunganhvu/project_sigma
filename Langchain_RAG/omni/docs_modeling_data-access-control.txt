@@ -1,0 +1,147 @@
+ModelingData Access Control
+On this page
+Data Access Control
+Managing Permissions in Model Files
+Follow this comprehensive guide on managing data access within a model. Access Grants enable users to control access to topics and columns based on attributes, offering finer control over topics and limiting access to sensitive data. Access Filters allow for row-level permissions based on user attributes, useful for scenarios where users should only see their own data. The document includes syntax examples and implementation details for both mechanisms, along with practical examples and considerations for special user cases like administrators needing access to all data.
+Access Grants
+Access grants allow users to control access to a model’s topics and/or columns by utilizing user attributes. A user must have the necessary value assigned to their user attribute in order to gain access to the particular topic or field. Default access grants can also be applied to a model, allowing for users to ensure all new topics have an access grant applied to them unless explicitly excluded. Use case examples for implementing an access grant:
+Finer control over access to topics.
+Access to topics based on team assignment, i.e. the marketing team only sees the marketing topic and the finance team only sees finance topics.
+Finer grain control over topics that present simpler data versus more granular and complicated data. This could be to provide a different level of access for Restricted Querier users vs Querier users.
+Access based on regions, for example, limiting customer data access to regional sales teams.
+Finer control over access to specific columns (fields).
+Limiting access to Personally Identifiable Information (PII) fields.
+Limiting access to financial fields.
+Limiting access to other types of sensitive information.
+Topic and Column level permissions can be controlled by creating an access_grant: in the model file, see this access grant documentation for more details. Omni will map user-specific variables, user_attributes, to a corresponding allowed value defined in the the topic or field definition. Based on the listed allowed values and the user querying that topic Omni will determine if the user has the necessary permissions to access that topic.
+Access Permissions Examples
+Defining access_grants: in the model
+Model file
+access_grants:
+  nw_region:
+    user_attribute: region
+    allowed_values: [washington, idaho, oregon, wyoming, alaska]
+  # User groups can also be leveraged here through the omni_user_groups attribute
+  finance:
+    user_attribute: omni_user_groups
+    allowed_values: [Finance]
+  marketing:
+    user_attribute: omni_user_groups
+    allowed_values: [Marketing]
+Defining access_grants: using Omni's default user attributes
+This example uses the Omni system attribute omni_is_org_admin to control which topics are limited to only Admin users. It also uses the default_topic_required_access_grants: to apply the access grant to all topics within that model. To learn about other system default user attributes and their accepted values, refer to the User attributes documentation.
+Model File
+access_grants:
+  omni_admin:
+    user_attribute: omni_is_org_admin
+    allowed_values: [ "true" ]
+
+default_topic_required_access_grants: [ omni_admin ]
+Implementing required_access_grants: on topics
+Topic file
+joins:
+  distribution_centers: {}
+required_access_grants: [ marketing, finance ]
+Implementing required_access_grants: columns (field)
+margin:
+  sql: ${order_items.sale_price} - ${products.cost}
+  format: CURRENCY
+  description: margin = sale price - cost
+  required_access_grants: [ finance ]
+  
+revenue:
+  label: Gross Receipts
+  extends: [ order_items.sale_price ]
+  required_access_grants: [ finance ]
+Defining default_topic_required_access_grants: in the model
+This example will enforce finance to be the default required access grant for all topics in the model, unless others are applied.
+Model file
+default_topic_required_access_grants: [finance]
+
+access_grants:
+  nw_region:
+    user_attribute: region
+    allowed_values: [washington, idaho, oregon, wyoming, alaska]
+  finance:
+    user_attribute: omni_user_groups
+    allowed_values: [Finance]
+  marketing:
+    user_attribute: omni_user_groups
+    allowed_values: [Marketing]
+Implementing no required access grant on a topic when a default is in place:
+The order_items topic has a blank required_access_grants parameter, meaning all users will be allowed to see it:
+order_items topic
+label: Transactional
+joins:
+  inventory_items:
+    products:
+      distribution_centers: {}
+  users: {}
+required_access_grants: [ ]
+Because the products topic doesn't define a required_access_grants parameter, the topic will use the default (finance) declared in the model:
+products topic
+joins:
+  distribution_centers: {}
+Because the users topic specifies an access grant, the model default of finance will be overridden to use marketing:
+users topic
+joins: {}
+required_access_grants: [ marketing ]
+Access filters
+Access Filters allow developers to control row-level permissions on a field. For example, different users may have access to only their own fields within the underlying schema, this may happen when building customer facing applications and transactions are collected across customers in a single table vs a schema per table. Use case examples for implementing access filters:
+Only showing a client the data related to their own brand
+A doctor in a hospital system only seeing their own patient data
+Row level permissions can be controlled via the access_filter: in Omni. By mapping user-specific variables, user_attributes, to a corresponding field, Omni can limit all exploration inside a given topic to only rows that match the user's associated value. Default access filters can also be controlled in Omni with default_topic_access_filters:.
+Refer to the Topic file parameter reference for more information.
+PERMITTING ACCESS FOR SELECT USERS
+Users may want to implement restrictions to data with access filters but still allow specific users (i.e. an admin) to access all data for that field. In this case, you can set a special value on those particular users' user attribute and add it to the parameter values_for_unfiltered which would not apply the access filter to these users. In the following example, all users that have a value of is_admin for the user attribute, Region, would not see any filtered results.
+Users with no value in the associated user_attribute, in this case region = null will error as Omni expects a value for any assigned access_filters.
+Example
+The following example will filter the order_items topic so that each brand can only see their own transactions and the associated metadata for each transaction.
+order_items topic
+joins:
+  orders:
+    user: {}
+  inventory_items:
+    products: {}
+access_filters:
+  - field: products.brand
+    user_attribute: customer
+    values_for_unfiltered: [is_admin]
+Here any query would require a join to order > inventory_items > products, and then the query would be filtered using:
+WHERE products.brand = <the_value_in_user_attribute_brand>
+Limiting access to only data that has that brand. This can be particularly useful in only allowing clients to see their own specific data related to their brand.
+Example with default_topic_access_filters
+In this example, the model defines default access filters:
+Model file
+default_topic_access_filters:
+  - field: products.brand
+    user_attribute: customer
+    values_for_unfiltered: [is_admin]
+And in the order_items topic, no specific access filter is declared:
+order_items topic
+joins:
+  orders:
+    user: {}
+  inventory_items:
+    products: {}
+Which means the topic will inherit the default access filter from the model. If a default access filter cannot map to a given topic, it will throw an error. The proper approach would be to apply an access_filter: [] to the topic.
+default_topic_access_filters can also be applied with an unscoped table reference, allowing for a common field across multiple tables to be applied universally with ease. The following example demonstrates how to apply an access_filter for the user_id field to both the order_items and the users topics, allowing for a more generalized approach:
+Model file
+default_topic_access_filters:
+  - field: user_id
+    user_attribute: user_id
+    values_for_unfiltered: [is_admin]
+order_items topic
+joins:
+  orders:
+    user: {}
+  inventory_items:
+    products: {}
+users topic
+joins:
+  orders:
+    user: {}
+Previous
+Parameters reference
+Next
+Okta

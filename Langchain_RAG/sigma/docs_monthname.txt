@@ -1,0 +1,20 @@
+MonthName
+Suggest Edits
+The MonthName function returns the name of the month component from a specified datetime value.
+Syntax
+MonthName(date)
+Function arguments:
+date
+The value or column to reference when evaluating the month component.
+Must be a datetime value or column containing date data.
+Notes
+If the date argument references text or number data, use the Date function to convert the value or column to the date data type.
+Examples
+Example 1
+MonthName(Date("2023-05-04"))
+Evaluates 2023-05-04 as a datetime value and returns May as the name of the month component.
+Example 2
+MonthName([Order Date])
+References the Order Date column and returns the name of the corresponding month component for each row.
+RELATED RESOURCES
+Month

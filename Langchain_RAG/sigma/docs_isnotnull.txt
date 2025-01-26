@@ -1,0 +1,19 @@
+IsNotNull
+Suggest Edits
+The IsNotNull function returns True if the argument does not contain missing data values, and False if the argument is Null (i.e., contains missing data values). This function is often applied to a column of data to test for non-Null values.
+Syntax
+IsNotNull(argument)
+Function arguments:
+argument (required) The value, column, or parameter to be evaluated.
+📘
+The function can analyze one argument at a time.
+The function does not work with Multi-Select List and Switch type parameters. To check if a Multi-Select List parameter isn't empty, see ArrayLength.
+Example
+IsNotNull([Sales])
+Returns True for rows where sales data exists and False for rows where there is no data.
+IsNotNull([prm-date-range].start) and IsNotNull([prm-date-range].end)
+Returns True when a start and end date is provided in a Date Range parameter.
+IsNotNull([prm-text-box])
+Returns True when no value is provided in a text box parameter.
+RELATED RESOURCES
+IsNull

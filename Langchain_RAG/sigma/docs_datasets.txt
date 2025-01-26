@@ -1,0 +1,31 @@
+Datasets
+Suggest Edits
+Model your data in Sigma using datasets, or collections of data based on tables in your CDW or DBMS.
+Datasets function as centralized, shareable data definitions and can include aggregations and other data manipulations. Admins define datasets that are used in workbook analyses as sources for visualizations, tables, and pivot tables.
+Workbooks inherit all changes applied to underlying datasets, ensuring consistent, reliable metric calculations. When metric logic requires an update, you can apply the change in one location (the dataset), and all applicable workbooks automatically inherit and reflect the updated calculations.
+Modeling data
+Best practices
+Annotate tables
+Create datasets
+Configure columns
+Add links
+The dataset worksheet
+Join data
+Sharing and permissions
+Permission types
+Share a dataset
+Modify or revoke access
+Respond to a request for access to content
+Advanced modeling
+Examine dataset queries
+Dataset lineage
+Edit warehouse data from Sigma
+Dataset warehouse views
+Dataset materialization
+Modeling Best Practices
+RELATED RESOURCES
+Examine dataset queries
+Dataset Lineage
+Edit Warehouse Data from Sigma (Deprecated)
+Dataset warehouse views
+Dataset Materialization API

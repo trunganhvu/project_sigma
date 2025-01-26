@@ -1,0 +1,22 @@
+SplitPart
+Suggest Edits
+The SplitPart function splits the string into multiple parts at the positions of each appearance of the delimiter in the string ... then returns a single part of the string. Specifically, it returns the nth part, where n is the position.
+SplitPart is useful for extracting portions of a string defined by a repeating pattern, such as spaces between words or delimiters in an array.
+Usage
+SplitPart(string, delimiter, position)
+string (required)- The source string to be split.
+delimiter (required)- The string to split with.
+position (required)- The index of the part to return. When searching the string for the delimiter, the string is broken into parts each time the delimiter is found. These parts are numbered from left to right, starting with 1. Negative numbers for the index will start counting the index from the right.
+Example
+SplitPart("{index1, index2, index3, index4"}, ",", 3)
+Returns: “ index3”
+SplitPart("quick brown fox", " ", 1)
+Returns: “quick”
+SplitPart("quick brown fox", " ", -1)
+Returns: “fox”
+A negative position starts counting the index from the right.
+SplitPart(SplitPart(Text([CustomerJSON]), ",", 3), ":", 2)
+RELATED RESOURCES
+Find
+Replace
+RegexpExtract

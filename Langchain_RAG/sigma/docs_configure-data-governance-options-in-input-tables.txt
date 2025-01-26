@@ -1,0 +1,56 @@
+Configure data governance options in input tables
+Suggest Edits
+Sigma allows you to preserve data integrity and enhance security in input tables through data validation, column protection, and customizable data entry permissions. You can also include row edit history (user and timestamp metadata) and system columns (row ID) for auditing and other data management purposes.
+This document explains how to implement these data governance options in empty, CSV, and linked input tables.
+System and user requirements
+The ability to configure data governance options in input tables requires the following:
+You must be using a data platform for which Sigma supports input tables.
+📘
+For information about Sigma feature compatibility with data platforms, see Region, warehouse, and feature support.
+You must be granted Can use data permission for a connection with write access enabled. If using an OAuth-enabled connection, see Configure OAuth with write access for additional requirements.
+You must be assigned an account type with the Create input tables and Create, edit, and publish workbooks permissions enabled.
+You must be the workbook owner or be granted Can edit workbook permission.
+Apply data validation
+Apply data validation to individual columns to ensure data accuracy and consistency. Data validation verifies existing values and restricts new inputs to predefined values.
+📘
+Sigma only supports data validation for text, number, and date columns. Data validation doesn’t apply to checkbox data columns because Sigma already restricts the values to true (selected) or false (cleared).
+Click the caret () in a column header to open the column menu, then select Data validation.
+In the Data Validation modal, create a manual list of predefined values, or apply the values from a column in an existing data source or element in the workbook:
+Create a manual list of values:
+In the Value source dropdown, select Create manual list.
+In the Define values field, enter values that align with the column’s data type.
+💡
+Enter individual values, or paste multiple values copied from Sigma or an external source (like a spreadsheet or text document).
+Click Save.
+Apply values from a column in an existing data source or element:
+In the Value source dropdown, select a data source or element.
+In the secondary dropdown, select a source column to define the values.
+Review the column values, then click Save to proceed.
+Sigma checks existing data against the defined values and displays red indicators in cells that contain invalid data.
+To replace invalid data, manually enter valid values, or click the caret () in the cell and select a predefined value from the dropdown.
+Add/remove column protection
+Protect individual columns to prevent edits, like adding data validation, changing the column type, or deleting the column. You cannot insert or delete rows in an input table when column protection is applied to one or more of its columns.
+To add column protection, click the caret () in a column header to open the column menu, then select Protect column.
+To remove column protection (indicated by a lock icon () in the column header), return to the column menu and select Unprotect column.
+Set data entry permission
+Set the data entry permission to determine which workbook version (draft or published) allows users to add rows or edit table values.
+The ability to create and configure input tables remains limited to the workbook’s draft version (Edit mode). By default, data entry is also restricted to the draft, meaning only users granted Can edit workbook permission can enter and edit input table data. However, Sigma allows you to extend this functionality to users granted Can explore workbook permission by enabling data entry in the workbook’s published version (View and Explore mode).
+For information about the data entry workflow in a workbook draft versus a published version, see Edit existing input table columns.
+In the element toolbar, click More to open the element menu, then select Set data-entry permission.
+In the Set data-entry permission modal, select a permission option, then click Save. You can toggle data entry between the draft and published versions as needed, but they cannot support data entry simultaneously.
+Only in Draft version Allows users to edit input table data in Edit mode if they’re granted Can edit workbook permission.
+Only on Published version Allows users to edit input table data in View and Explore mode if they’re granted Can explore or Can edit workbook permission.
+
+🚧
+Data entry permission updates aren't applied to the input table until the workbook is published.
+Add row edit history
+Add columns containing row edit history to provide transparency and promote accountability by timestamping edits and identifying users responsible for the changes.
+Click the caret () in a column header, then hover over Add new column and select a Row Edit History option:
+Last updated by Identifies the user responsible for the latest row-level edit.
+Last updated at Records the date and time the row was last edited.
+Add row ID
+Add a column containing system-generated row IDs to establish unique identifiers that support data management and referential integrity.
+Click the caret () in a column header, then hover over Add new column and select Row ID.
+📘
+System-generated row IDs are only available for empty and CSV input tables, as they are not relevant for linked input tables.
+When you duplicate an input table, Sigma duplicates the row IDs for existing rows. This results in identical IDs in the original and copy. However, Sigma generates unique IDs for all new rows added to either table after duplication.

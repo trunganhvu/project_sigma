@@ -1,0 +1,13 @@
+Join Data in Datasets
+Suggest Edits
+When creating a join between warehouse tables or datasets, there are times where you need to make changes to the data in the input columns to make the join work. In those cases, you can add a formula to your input columns while creating a join.
+You can define you join key with a scalar formula, using any of the functions available in Sigma. The formula can be as simple as a Type Change function, or a complex If statement.
+Add a Formula to a Join Input Column
+Go to the Data Sources tab on the right hand side of your worksheet.
+Click the + to add a new join.
+Choose a data source.
+Choose your join type.
+Under join keys, open the drop down menu and click + Add Formula for the join key you would like to modify.
+Enter your formula.
+Wait for the preview to load to ensure that your chosen join keys are joining your data as expected.
+Click Done to finish creating the join.

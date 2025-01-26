@@ -1,0 +1,14 @@
+Variant
+Suggest Edits
+The Variant function converts the input value to a variant type.
+Currently, all variant type data will be interpreted as JSON.
+Converts the input value's data type, but does not otherwise change the input value.
+Does not apply JSON formatting.
+Usage
+Variant(input)
+input (required) The input you would like to be interpreted as a variant.
+Example
+Variant([Cust Json as Text])
+Returns:
+RELATED RESOURCES
+Json

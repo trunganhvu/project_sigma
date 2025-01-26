@@ -1,0 +1,14 @@
+Trim
+Suggest Edits
+Removes leading and trailing spaces from a given string.
+Usage
+Trim(text)
+text (required) Text or a column of text.
+Example
+Trim(" John Doe ")
+Returns “John Doe”
+Trim([First Name])
+Returns:
+RELATED RESOURCES
+LTrim
+RTrim

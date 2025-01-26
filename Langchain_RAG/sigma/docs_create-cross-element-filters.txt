@@ -1,0 +1,66 @@
+Create cross-element filters
+Suggest Edits
+Actions support dynamic cross-element filtering, which enables user interactions with one element to filter the data of other elements in the same workbook. For example, when a user clicks a data point in one chart (the trigger element), Sigma automatically applies a filter to another chart (the target element) using the dimension value of the clicked data point.
+This document explains how to configure cross-element filtering using control elements and actions. For more information about actions, see Intro to actions.
+User requirements
+The ability to configure cross-element filtering for workbook elements requires the following:
+You must be assigned an account type with the Explore workbooks or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+📘
+These requirements only apply to users who configure cross-element filters. Configured cross-element filters are applied to the interactions of any user who can view the workbook.
+Configure a cross-element filter
+In Sigma, a cross-element filter consists of at least three workbook elements: a trigger element, a control element, and a target element.
+The trigger element in a cross-element filter is typically a table, pivot table, input table, or visualization. When a user interacts with the trigger element by clicking a table cell in a specific column or any data point on the chart, a workbook action (configured on the trigger element) updates the value of the control element, which subsequently filters the target element.
+To configure this cross-element interactivity, you must complete the following:
+Create a control that filters the target element
+Create a workbook action to set the control value
+💡
+The workflows demonstrated in this document are used to configure a cross-element filter for a single dimension on one target element.
+To filter multiple dimensions on the same target element, create a separate control and action for each dimension.
+To filter a single dimension on multiple target elements, create one control, then add all target elements as filter targets in the control element properties.
+To filter multiple dimensions on multiple target elements, create a separate control and action for each dimension, then add all target elements as filter targets in each control element’s properties.
+Create a control that filters the target element
+The following steps explain how to create an element filter and quickly convert it to a preconfigured list or date control element. If you want to filter the target element using a different control type, see Intro to control elements for information about creating a new control from the ground up.
+Open a workbook in Explore or Edit mode and add at least one trigger element and one target element.
+Hover over or select the target element and click Filters in the element menu.
+In the Filters & controls modal, create a filter and convert it to a control element:
+Click Add filter, then select the underlying data column you want to filter. You don’t need to choose filter values at this time.
+Click More to open the filter menu, then select Convert to page control.
+Sigma adds a preconfigured control element that aligns with the filter you converted. The control’s value source, source column, and filter target are automatically set to filter the target element.
+Create a workbook action to set the control value
+The following steps explain how to configure a workbook action on the trigger element to set the value of the control element created in the previous section.
+Select the trigger element, then click Actions in the side navigation.
+In the Actions panel, click Add action.
+In the On cell click or On click modal (depending on the trigger element type), configure the workbook action to define the response:
+If the trigger element is a table, pivot table, or input table, select a column in the When clicking cells in field. Sigma only initiates the cross-element filter when a user clicks a cell in this column.
+If the trigger element is a visualization, button, image, or control, skip this step and proceed to step 3b.
+[optional] Configure a condition that should be met for the action sequence to take effect. To add a condition, click More, then click Add condition.
+Configure the remaining fields based on the type of response you want to initiate:
+Action
+Select Set control value.
+This particular action type enables the cross-element filter.
+Update control value
+Select the control element created in the previous section, Create a control that filters the target element.
+Sigma sets the value of this specific control, which is preconfigured to filter the target element.
+Set value as
+Option 1: Select Specific values to always set the control to one or more fixed values, then choose the values.
+Option 2: Select Values from a specific column to set the control to a value from a particular column, then choose the column. The control is dynamically set based on the column value from the same row as the clicked cell or data point.
+For the cross-element filter to function correctly, the selected values or column must align with the values in the control element’s filter target. The filter target is configured in the control’s Element properties > Targets tab and is the column selected in step 3a of the previous section, Create a control that filters the target element.
+With the workbook action configured, user interaction with the trigger element initiates a workflow that immediately updates the control value and filters the target element. For a real-time demonstration of this cross-element filter, see the interactive demo.
+Interactive demo
+In the following embedded example, click any slice in the pie chart to set the State control value and filter the map by state. You can then drill into the population data by state county.
+💡
+When the trigger element is a visualization, the cross-element filter also supports the following interactions:
+To set multiple control values, hold ⌘ Command (Mac OS) or Ctrl (Windows) while clicking data points (for example, pie slices) in the chart.
+To clear the selection in the trigger element and reset the control value and filter, click any blank space in the trigger element.
+When the trigger element is a table, pivot table, or input table, you cannot set multiple control values. If you select multiple cells, the last cell you click determines the control value.
+RELATED RESOURCES
+Intro to actions
+Create actions that navigate to destinations
+Create actions that manage control values
+Create actions that modify or refresh elements
+Create actions that download and export data
+View and manage existing actions
+Did this page help you?
+Yes
+No

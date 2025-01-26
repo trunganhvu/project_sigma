@@ -1,0 +1,65 @@
+Develop plugins for Sigma
+Suggest Edits
+Plugins
+Plugins are third-party applications built to add additional functionality into an existing product. Sigma supports plugins for workbooks. Developers build plugins using Sigma’s Plugin API, which communicates data and interaction events between a Sigma workbook and the plugin. Developers host these plugins, embed them in an iframe element in Sigma.
+User requirements
+The ability to develop and test your plugin in your Sigma Plugin Dev Playground requires the following:
+You must have access to a Sigma Plugin Dev Playground, created by an organization Admin.
+You must be assigned an account type with the Manage plugins permission enabled.
+You must be the workbook owner or be granted Can edit workbook permission.
+You must develop the plugin using JavaScript, and it must be designed to execute in a web browser environment.
+Create a development project
+At Sigma, we use the React libraries for front-end development. We recommend that you use the same environment to develop custom plugins for your organization in Sigma. If you choose to use a different method, ensure that you use JavaScript. Sigma supports both standard JavaScript API and React Hooks API.
+Create a project with React
+Open your terminal and navigate to the directory where you plan to create your project.
+Create a new project.
+We recommend using Facebook’s Create React App.
+npx create-react-app <my-cool-plugin>
+Navigate to the project's main directory.
+cd <my-cool-plugin>
+Use your package manager to install Sigma’s plugin library.
+We recommend yarn.
+yarn add @sigmacomputing/plugin
+Spin up your local host.
+yarn && yarn start
+Start developing:
+Get started with Plugin Development API.
+Test your plugin directly in a Sigma workbook using the Sigma Plugin Dev Playground.
+By default, the Create React App development servers spin up instances in the following location: http://localhost:3000.
+Plugin Development API
+To view API documentation for this feature, see Plugin development API.
+Plugin developers need access to a special plugin called Sigma Plugin Dev Playground. Once registered, this plugin points to http://localhost:3000. For more information, see Register a Sigma Plugin Dev Playground.
+If you cannot find this plugin or would like a development playground with an alternative default host, please contact your Organization Admin with a request to Register a Plugin with your Sigma organization with its production URL set to your preferred development URL.
+Use the development playground
+Set your plugin’s development URL to http://localhost:3000.
+Run your plugin remotely.
+If you followed our recommendations under Create a Development Project, enter the following command in your terminal.
+yarn && yarn start
+Create/open a workbook.
+In the workbook header, click Edit.
+Click the + button in the sidebar to open the workbook’s ADD NEW panel.
+Select the PLUGINS element type, located under UI ELEMENTS.
+The editor panel will show you a list of available plugins. Select Sigma Plugin Dev Playground.
+Your new plugin element appears on the page. The editor panel will only display content if you have configured your plugin using Sigma’s plugin Configuration API. Likewise, the element will only display content if your plugin is configured to display content. If you change a plugin's configuration options, input values will need to be re-added in the editor panel.
+Next steps:
+You can refresh your plugin as you make changes to its code. This option is available from the element’s menu.
+You are responsible for hosting your plugin. When you’re ready to register your plugin, visit Register a Plugin with Sigma.
+Test the plugin in development
+Start up your development server. If you followed our recommendations under Create a Development Project, enter the following command in your terminal:
+yarn && yarn start
+Create or open a workbook.
+If you want to work with an existing element using the plugin, select that element. Otherwise, create a new plugin-based element.
+Hover over the element and click the vertical ••• icon button in its top right corner.
+Select Point to Development URL.
+In the Configure Dev Server modal, enter your development URL.
+Click Confirm.
+Next steps
+Your Sigma plugin element will automatically update to reflect saved changes to your code. There is no need to refresh the Sigma page.
+You can switch back to the production URL at any time, from the same element menu you used to set your temporary development URL (see steps above).
+If you change a plugin's configuration options, input values will need to be re-added in the editor panel.
+Host your plugin
+As a plugin developer, you are responsible for hosting your plugin. If you’re new to hosting your projects, we recommend these popular hosting platforms: Heroku and Netlify.
+RELATED RESOURCES
+Get Started with Custom Plugins
+Plugin Development API
+Register a Plugin with your Sigma Organization

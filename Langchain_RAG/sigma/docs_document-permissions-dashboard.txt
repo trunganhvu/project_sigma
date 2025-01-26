@@ -1,0 +1,47 @@
+Document Permissions Dashboard
+Suggest Edits
+This document explains how to use the Document Permissions Dashboard to gain insights into what users or teams can access a document and to view documents that are shared with All Members. 
+Requirements
+You must be an organization admin or assigned a custom account type that grants View Usage Dashboard permissions; see User account types.
+Access the Document Permissions Dashboard
+Follow the steps below to access the Document Permissions Dashboard: 
+Open your Admin Portal by selecting Administration in the user menu at the top right of your screen.
+Select the Usage tab from the left-hand panel.
+Select Document Permissions from the dropdown in the upper left.
+Use the Document Permissions Dashboard
+The Document Permissions Dashboard provides insights into which users and teams have access to a doc, what docs a user or team has access to, and how access was granted.
+This dashboard can be used in three ways. You can view document permissions, view the documents a user can access, or return a list of documents that are Shared with All.  
+Note: Data is refreshed daily between 5 - 6 AM EST.
+View Document Permissions
+Follow the steps below to view what users and teams can access a specific document.
+Select a document from the dropdown, or search, under the Document Name field. In this example, we chose the View Modes document. The row below displays the totals for that document. 11 users have access to this doc, 1 team, and was shared with all. 
+Note: Document names in Sigma aren't unique. If a document contains a number at the end, then there are multiple docs with that name. Documents are ordered by creation date. For example, Test Doc(1) means there are two versions of the doc and Test Doc(1) is the first version of the doc.
+Scroll down to view User Permissions. This table provides a complete list of users who can access this document. 
+Scroll down to view Team Permissions. This table provides you with a list of all teams that can access this document. 
+Scroll down to view a list of the Document Permissions. 
+Scroll down to view All Granular Permissions. This table provides you with and exhaustive list of all the different permissions associated with this document. 
+Note: A user can inherit permissions from a folder, team, or both.
+View the Documents a User Can Access
+You can also use the filters in this dashboard to drill into what documents a specific user has access to. A common use case for this report is to audit user access with the goal of only granting a user access to the documents they need. You may find that users are gaining access to documents by inheriting permissions through teams or folders.
+Follow the steps below to view the documents that a user can access.
+Select a user from the dropdown, or search, under the User with Access field. In this example, we chose the user Diana. The row below displays the totals for that document. We selected 1 user, who is on 4 teams, with access to 95 documents.
+Scroll down to the User Permissions section. This table provides granular details about the documents that a user can access.
+Document Type and number of documents of that type
+Document Name and Folder Path
+Access Type and Method
+If access is inherited from a team or folder
+Who granted access and when
+Scroll down to the Team Permissions section. This table provides the teams the user is a member of that have granted access to documents. In this example, All Members denotes that the documents were Shared With All. 
+Scroll down to the Document Permissions section and click the + sign on a value under the Document Type column to view docs associated with that type.  
+Scroll down to the All Granular Permissions section. This table provides an exhaustive list with granular details about the documents that a user can access.
+View the Documents that Are Shared With All 
+You can also use the filters in this dashboard to return the documents in your organization that are Shared With All.  A common use case for this report is to identify docs that are Shared With All with the goal of limiting access to documents to those who need the information.
+Note: Every user in your org are automatically added All Members, which gives them access to docs that are Shared With All.
+Follow the steps below to view the documents that are Shared With All.
+In the Inherited from Team dropdown, select All Members.
+Scroll down to the User Permissions section. This table provides the users who can access documents Shared With All. Click on the + for a user to open up the data under the right-hand columns. 
+Scroll down to the Document Permissions section. This table provides a list of the documents that are Shared With All. the users who can access documents Shared With All. Click on the + for a user to open up the data under the right-hand columns.
+Download Visualizations
+Hover your cursor over the visualization you would like to download. A menu will appear in the top right corner of the visualization element area.
+Click the ••• icon to open the visualization dropdown menu.
+Hover over Download and select an export type from the submenu.

@@ -1,0 +1,14 @@
+CumulativeSum
+Suggest Edits
+The CumulativeSum function calculates the sum of the input column up to and including the current row value.
+Syntax
+CumulativeSum([Column])
+Function Arguments:
+[Column] (required) - The column of numbers to evaluate the cumulative sum.
+Cumulative functions depend on the order of the given column. If you change the sorting you will change the result.
+Example
+CumulativeSum([Monthly Revenue])
+A table contains the monthly revenue of a store for the year 2022. The CumulativeSum function can be used to find the total yearly revenue up to and including that month. 
+RELATED RESOURCES
+Sum
+MovingSum

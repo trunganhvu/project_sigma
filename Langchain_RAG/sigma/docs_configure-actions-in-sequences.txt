@@ -1,0 +1,38 @@
+Configure an action sequence
+Suggest Edits
+Configure an action sequence to run a set of workbook actions in a specific order.
+Action sequences ensure user interactions trigger multiple actions in the order necessary to achieve a particular workbook response. Sigma allows you to add and reorder actions within a sequence, move actions between different sequences, and duplicate an existing sequence. You can also configure a condition that determines whether or not a sequence executes.
+This document explains how to create and manage an action sequence. For more information about available workbook actions, see Intro to actions.
+📘
+An action sequence only defines the order in which actions are executed within that sequence. Actions in different sequences run concurrently and may not finish in the order the sequences are configured and displayed in the action panel.
+User requirements
+📘
+The following requirements apply to users who configure actions. Users who access and interact with a workbook can typically trigger all existing actions within it. Any restrictions are noted in this document.
+The ability to configure actions requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
+1
+If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
+Limitations
+The Trigger plugin action is not guaranteed to execute in sequence. In cases where you use an action to set or clear a control and expect your plugin to read the updated value, the plugin may read the original value instead.
+Create an action sequence
+To create a new action sequence, follow these steps:
+Open a workbook in Explore or Edit mode.
+Select an element that you want to trigger a set of actions, then click Actions in the side navigation.
+In the Actions panel, add an action using one of these methods:
+Click Add action within an existing sequence. If there were no previously configured actions on this element, add the action inside the empty sequence group.
+Click Add action sequence at the top of the actions panel to add the action outside of an existing sequence. Choosing this option creates a new action sequence group positioned below any previously existing ones.
+Configure your action.
+Click Add action to add another action to your sequence. Sigma duplicates the immediately previous action in the sequence, which you can then modify.
+Continue adding and configuring actions in your sequence until you achieve the behavior you wanted for that element. You can drag and drop the actions within the sequence to change their order.
+[optional] If you want the sequence to execute only in certain circumstances, click More, then click Add condition. See Make an action conditional for more information about action conditions.
+[optional] Rename the sequence and individual actions within the sequence by double-clicking on the sequence or action names. Giving your actions and the sequences more meaningful names can help you quickly differentiate them when you have a large number of actions triggering from a single element.
+Organize multiple actions into a sequence
+If an element has multiple actions configured, each action runs in parallel by default. If you want to control the order in which multiple actions on an element execute, move them into the same sequence and arrange them in the order that you want.
+Open a workbook in Explore or Edit mode.
+Select an element that has multiple actions configured on it, then click Actions in the side navigation.
+In the Actions panel, review the actions that you have and decide which ones to organize in a sequence.
+If the actions have different conditions that determine whether or not they run, place them in different sequences. Each sequence can only have a single condition. See Make an action conditional for more information about action conditions.
+If the order of execution matters for the actions, place them in the same sequence.
+Drag and drop your actions to move them between sequences and to change the order within sequences.
+Save the workbook, then test your action in the workbook to ensure the execution logic matches your intentions.

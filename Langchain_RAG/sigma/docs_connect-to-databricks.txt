@@ -1,0 +1,91 @@
+Connect to Databricks
+Suggest Edits
+Sigma supports secure connections to Databricks.
+This document explains how to connect your organization to a Databricks warehouse.
+📘
+For information about Sigma feature compatibility with Databricks connections, see Region, warehouse, and feature support.
+Requirements
+In your Sigma organization:
+You must be assigned the Admin account type.
+In Databricks:
+You must have access to a Databricks workspace with Databricks SQL access enabled. See Manage entitlements in the Databricks documentation.
+You must have access to a Databricks SQL warehouse or have the ability to create one by either being an Admin or having the Allow unrestricted cluster creation user entitlement. See Requirements in the Databricks documentation.
+You must be able to either use your own personal access token (PAT) or one attached to a user or service principal who has permissions. See Monitor and manage access to personal access tokens in the Databricks documentation.
+Configure Databricks
+Complete the following steps in Databricks before you add a Databricks connection to Sigma.
+Create a Databricks SQL warehouse if one doesn't already exist. See Create a SQL warehouse in the Databricks documentation.
+Confirm that the user or service principal you will use to connect to this SQL warehouse has Can use or Can manage permissions for the compute resource, and that all workspace users have Can use permissions.
+Configure your Auto stop setting. For information on this setting, see Configure SQL warehouse settings in the Databricks documentation.
+If you are running a Serverless SQL warehouse, Sigma recommends that you enable Auto stop and setting it to 10 or 15 minutes.
+If you are running a Pro or Classic SQL warehouse, disable Auto stop on your Databricks endpoint so that your first query does not time out or run slowly when the SQL endpoint is in a suspended state.
+Configure data access to the SQL warehouse. In order to query data using the Databricks SQL warehouse, the user, group, or service principal that you use to connect Databricks to Sigma needs underlying access to the data. For instructions on how to set these permissions in Unity Catalog, see Manage privileges in Unity Catalog in the Databricks documentation.
+At the catalog level, grant all account users USE CATALOG and USE SCHEMA privileges.
+At the schema level, grant all account users BROWSE, EXECUTE, READ VOLUME, and SELECT privileges.
+If you plan to enable write-access features on this connection, also grant all account users MODIFY and CREATE TABLE privileges at the schema level on the dedicated databases and schemas you've defined for write access.
+For details on these privileges, see Unity Catalog privileges and securable objects in the Databricks documentation.
+📘
+If you are using the legacy Hive metastore to manage permissions, the permissions model is different. To set up equivalent permissions with the legacy Hive metastore, see Hive metastore privileges and securable objects (legacy) in the Databricks documentation. If you want to sync data from your hive_metastore catalog, the tables in that catalog require READ_METADATA privileges.
+Obtain the Server hostname and HTTP path from your SQL warehouse’s Connection details screen. You need these values in the next step when you configure the Databricks connection in Sigma.
+Create an access token for the user or service principal to use to connect to this SQL warehouse. The type of token you create depends on the authentication method you use when configuring the Databricks connection in Sigma. For token creation instructions, see Authentication for Databricks tools and APIs in the Databricks documentation.
+Create a Databricks connection in Sigma
+To create a Databricks connection, perform the following steps in Sigma:
+Add a connection and specify connection details
+Specify your connection credentials
+Configure write access
+Configure connection features
+Add a connection and specify connection details
+Click the user icon at the top right of your screen.
+The user icon is usually composed of your initials.
+In the drop-down menu, select Add connection. The Add new connection page appears.
+In the Connection Details section, specify the following:
+Name Enter a Name for the new connection. Sigma displays this name in the connection list.
+Type Select the Databricks tile.
+Specify your connection credentials
+In the Connection Credentials section, fill out the required fields:
+In the Host field, enter the value of the Server hostname field in the Connection details screen of your SQL warehouse.
+In the HTTP path field, enter the value of the HTTP path field in the Connection details screen of your SQL warehouse.
+Click the caret () next to Authentication, then choose your authentication method.
+If you have OAuth enabled for your organization and you want to use it for the connection, select OAuth. See Configure OAuth with Databricks for all prerequisite steps.
+Otherwise, select Basic Auth.
+If you selected Basic Auth, generate a token in Databricks to authenticate the Sigma connection. For instructions, see Databricks personal access tokens for service principals in the Databricks documentation.
+If you selected OAuth:
+Determine whether you will need a Service Account. There are three reasons to configure a service account:
+If you enable write access on this connection, a service account is required. Sigma uses the service account to log all edits made to all input tables on this connection.
+If you use Sigma’s public embedding features, a service account is required. Service account credentials are used to run queries on publicly embedded dashboards.
+If you want admins to be able to configure individual workbooks to run using a service account rather than each individual’s OAuth credentials, a service account is required. See Run a workbook with service account credentials.
+If you need a service account, enable the toggle for Service Account and enter an Access token for that service account. For instructions, Databricks personal access tokens for service principals in the Databricks documentation.
+Next, see Configure write access and Configure connection features for additional options. Or, if you are finished configuring your connection, click Create at the top right to create your connection.
+Configure write access
+Write access is necessary for the following features:
+CSV upload
+Materialization
+Input tables
+Warehouse views
+The steps to configure write access differ depending on whether you are using OAuth or basic authentication for the connection. Follow the instructions that match your authentication option:
+Configure write access on a connection with basic authentication
+Configure write access on a connection with OAuth
+Configure write access on a connection with basic authentication
+Configuring write access requires you to set up dedicated catalogs and schemas in Databricks that Sigma can use to write data and grant MODIFY and CREATE TABLE privileges on those schemas to the service account.
+Turn on the switch next to Enable write access. Then, configure the following fields:
+In the Write catalog field, enter the name of the catalog where Sigma should store write-back data.
+In the Write schema field, enter the schema where Sigma should store write-back data.
+Configure write access on a connection with OAuth
+Configuring write access requires setting up dedicated databases and schemas in Databricks granting the necessary permissions. See Configure OAuth with write access for all prerequisite steps.
+Turn on the switch next to Enable write access.
+Provide at least one Destination where Databricks should store write-back data from Sigma. Use the format CATALOG.SCHEMA.
+[optional] Enter additional destinations as needed, depending on how you want to partition the data that Sigma writes back to your data warehouse. For example, you might create separate destinations for different teams and set up your team and schema permissions to ensure that each team has access to write to their designated destinations.
+In the Input table edit log destination field, provide an additional CATALOG.SCHEMA destination to log all edits made to input tables on this connection. This CATALOG.SCHEMA should be used only for this purpose. Only your service account should have access to write to this schema.
+Configure connection features
+In the Connection Features section, specify the following:
+In the Connection timeout field, specify the amount of time, in seconds, that Sigma should wait for the query to return results before timing out. The default in 120 seconds. The maximum is 600 seconds (10 minutes).
+[optional] If you do not want Sigma to automatically make column names from the data source more readable, turn off the Use friendly names switch. For example, with Use friendly names turned on, a database column ORDER_NUMBER appears as Order Number.
+[optional] If you want to see and use your hive_metastore catalog in Sigma, turn on the Enable Hive metastore switch . Turned off by default.
+Finish creating your connection
+After you specify all the parameters of the connection, click Create.
+Click Create at the top right of the screen to create your connection. Sigma displays a connection summary on the screen.
+Click Browse Connection, then click Add permission to grant connection access for users in your organization. See Data permissions.
+Use the navigation in the left panel to explore the schemas and tables in your connection.
+Databricks Partner Connect
+Databricks is one of Sigma's partners, so you can quickly establish a connection through the interface. See What is Databricks Partner Connect? in the Databricks documentation.
+RELATED RESOURCES
+Databricks Partner Connect

@@ -1,0 +1,65 @@
+Connect to DataDatabase setupSnowflake
+On this page
+Snowflake
+Connecting to Snowflake
+Create Snowflake User
+Login to Snowflake
+Create a new Worksheet
+Enter, fill in and run following commands to create a new user: omni_user and role: omni_role with permission to query.
+use role ACCOUNTADMIN;
+create role if not exists omni_role;
+create user if not exists omni_user
+password = '<YOUR_PASSWORD>';
+grant role omni_role to user omni_user;
+alter user omni_user
+set default_role = omni_role
+default_warehouse = '<warehouse>';
+
+-- grant read only database access (repeat for all database/schemas)
+grant usage, monitor on database <database> to role omni_role;
+grant usage, monitor on schema <database>.<schema> to role omni_role;
+grant usage, monitor on warehouse <warehouse> to role omni_role;
+
+-- alternatively can grant read only database access across all schemas
+grant usage, monitor on database <database> to role omni_role;
+grant usage, monitor on ALL SCHEMAS IN DATABASE <database> to role omni_role;
+grant usage, monitor on FUTURE SCHEMAS IN DATABASE <database> to role omni_role;
+grant usage, monitor on warehouse <warehouse> to role omni_role;
+
+-- grant access to all tables in the schema to omni_role
+grant select on all tables in schema <database>.<schema> to role omni_role;
+grant select on future tables in schema <database>.<schema> to role omni_role;
+
+-- grant access to all views in the schema to omni_role
+grant select on all views in schema <database>.<schema> to role omni_role;
+grant select on future views in schema <database>.<schema> to role omni_role;
+
+Create Snowflake Connection
+Navigate to Settings > Connections select Add Connection Connection
+https://yourinstance.omniapp.com/connections/new
+Finding your Account Indentifier
+In Snowflake, your account identifier is your account locator, qualified by platform and region if your Snowflake is not hosted on AWS in US West (Oregon) (i.e. may be account_name or account_name.us-central1.gcp). More information in the snowflake docs can be found here.
+To find your locator, region, and platform, click on your user in the bottom left of the snowflake console and hover over account.
+NOTE
+Snowflake connection parameters can be case sensitve, and are often capitalized. If you see errors on connection, confirm your connection parameters match your Snowflake environment exactly.
+Name: <PREFERRED_OMNI_CONNECTION_NAME>
+Account: YOUR_ACCOUNT_ID> (see instructions above)
+Username: omni_user (if you created a user above)
+Password: <YOUR_PASSWORD>
+Warehouse: <YOUR_WAREHOUSE>
+Default Schema: <YOUR_SCHEMA>
+Use Keypair Authentication
+Keypair authentication is recommended for service accounts like the one Omni uses. To set it up, you'll create a keypair in Omni, and then assign the public key from the keypair to your Omni user in Snowflake by following these steps:
+Navigate to the Connections section of the Omni settings page, and select your Snowflake connection.
+Generate a new keypair in Omni by selecting the Keypairs tab and pressing the Generate key-pair button
+Copy the public key
+Run the following statement in Snowflake:
+alter user omni_user set RSA_PUBLIC_KEY='<COPIED PUBLIC KEY>';
+Return to the keypair configuration page in Omni and enable the keypair.
+Confirm this user isn't used by any other Omni connections or connections outside of Omni, and then remove the user's password:
+alter user omni_user unset password;
+Note: every Omni connection must use a different keypair. We recommend using a different Snowflake user for each connection, but these users can use the same Snowflake role to simplify permissions administration.
+Previous
+Redshift
+Next
+SSH tunnels

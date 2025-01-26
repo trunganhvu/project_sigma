@@ -1,0 +1,10 @@
+Atan
+Suggest Edits
+The Atan function computes the arctangent of the given angle.
+Syntax
+Atan(value)
+Function arguments:
+value (required) - The angle (in radians) whose arctangent will be calculated.
+RELATED RESOURCES
+Atan2
+Tan

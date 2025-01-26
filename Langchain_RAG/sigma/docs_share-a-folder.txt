@@ -1,0 +1,61 @@
+Share a folder
+Suggest Edits
+You can categorize and share documents with people using folders. You share folders  with other users and teams using permission grants. Folders support three permission types:
+Can view
+Can contribute
+Can manage
+This document describes folder permissions and how to share folders; see folder and document permissions.
+Permission Types
+Permission options are the same for folders and workspaces. Permissions set at the folder or workspace level apply to all documents within that workspace or folder.
+Permission
+Granted privileges in shared workspaces and folders
+Can View
+View-only access to documents and folders in the shared folder.
+Can Explore
+Explore access to workbooks in the shared folder.
+View-only access to all other document types (worksheets, dashboards and datasets) in the shared folder.
+Can Contribute
+Create and edit their own docs and folders.
+View and explore others users’ documents and folders in the shared space.
+Manage anything they create. Includes deletion, renaming, moving of their own documents and folders.
+A user with Can Contribute access to a workspace automatically gets Can Edit access to all documents that they’ve personally created in that workspace. They also get Can View access to worksheets, dashboards, and datasets in the workspace and Can Explore access to workbooks in the workspace.
+Can Manage
+Create and edit their own documents and folders.
+Edit other’s documents and folders in the shared space.
+Manage anything in the shared space. Includes access management, sharing, deletion, renaming, and moving of anyone’s documents and folders.
+Can Manage in a workspace or folder grants Can Edit on any docs within that folder.
+Share a Folder
+Share from within the Folder
+Open the folder.
+Click the Share button located in the top right corner of the screen. The share modal opens.
+Type to add teams and/or individual members.
+Select a permission type for each team and/or member.
+(Optional) Enter an email notification under Add a Message or uncheck Send an email notification.
+Click Save.
+Share from a Navigation Page
+Open the folder's parent folder.
+Click the More ••• menu next to the folder you wish to share.
+Click Share to open the share modal.
+Type to add teams and/or individual members.
+Select a permission type for each team and/or member.
+(Optional) Enter an email notification under Add a Message or uncheck Send an email notification.
+Click Save.
+Modify or Revoke Access to a Folder
+Open the folder's Share modal from either it’s More ••• menu on the a parent folder's page or from the Share button on the individual workspace’s page.
+Click to open the Who has Access tab.
+(Optional) To select a new access/grant type, use the Access Type dropdown menu to the right of the team or member.
+(Optional) To revoke access completely, hover over the team or member. Then click the trash can icon that appears on the right side of the modal.
+Click Save.
+Respond to Request for Access to Content
+If a user attempts to access your content and doesn't have permissions to do so, they can request access through the error page blocking their immediate access. This triggers a Request to Access email notification.
+To respond to the Request for Access, do the following:
+In the email notification, click the Respond to the Request button.
+Sigma opens the Share folder modal, allowing you to view the current access requests. Optionally, click the permission drop-down menu to select the level of access the user should have.
+Note: The user cannot be granted access higher than what their account type allows.
+If desired, click Approve. If Approve is selected, the request is removed from the Share folder modal, and the user is listed in the Who has access tab.
+
+Or, click Deny. If Deny is selected, the request is removed from the Share folder modal. 
+Click Save or close the Share folder modal. Your decision on the Request for Access to Content will save either way.
+RELATED RESOURCES
+Folder and Document Permissions
+Share a workbook

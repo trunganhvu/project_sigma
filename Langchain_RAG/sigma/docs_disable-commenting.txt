@@ -1,0 +1,12 @@
+Enable or disable comments
+Suggest Edits
+Commenting is enabled by default and available for all workbooks. See Workbook comments.
+If you disable commenting, Sigma also disables its image annotation feature. 
+Requirements
+You must be an organization admin to disable comments across your organization.  
+Disable comments
+Open your Admin Portal.
+On the Account page, find the Features section, and click the toggle switch located to the right of Comments.
+RELATED RESOURCES
+Workbook comments
+Manage annotated images in comments

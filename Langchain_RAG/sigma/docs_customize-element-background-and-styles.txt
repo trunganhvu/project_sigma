@@ -1,0 +1,45 @@
+Customize element background and styles (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+You can customize the styles of all data elements (visualizations, tables, and pivot tables), input tables, and text elements to add a background color, border, padding, and change the corner shapes.
+Styles can be set as part of the workbook theme, but you can customize individual elements to improve accessibility, create a visual hierarchy, and ensure alignment with company branding.
+User requirements
+The ability to customize the style of workbook elements requires the following:
+You must be assigned an account type with the Explore workbook and/or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Add padding to an element
+You can add padding to most elements. You cannot add padding to map visualizations or image elements.
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Element style header to expand the section.
+Select the Padding checkbox to add padding around the element. To remove padding, deselect the checkbox.
+The element updates to reflect the style change.
+Add or change a custom background color
+You can add a background color to most elements. You cannot add a background color to map visualizations or image elements.
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Element style header to expand the section.
+Click the Background color dropdown, then enter a hex value or select an option from the color palette or picker.
+The element updates to use the custom background color.
+Remove a custom background color
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Element style header to expand the section.
+Click the Background color dropdown, then select None.
+The element updates to use a transparent background color.
+Add a border to an element
+You can add a border to most elements. You can always add a border to map visualizations and image elements, but other elements require padding to add a border. See Add padding to an element .
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Element style header to expand the section.
+For Border, leave the default of None, or open the drop-down menu to select a border that is 1, 2, or 3 pixels wide. When you select a border, you can also choose a color. To remove the border, select the drop-down menu and choose None.
+The element updates to reflect the style change.
+Change the corner shape of an element
+You can change the corner shape of any element.
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Element style header to expand the section.
+For Corner, select whether to have square, round, or pill shaped corners for your element.
+The element updates to reflect the style change.
+Change the alignment of a text element
+Open a workbook in Explore or Edit mode and select the element you want to modify.
+Select Element format in the side navigation, then click the Element style header to expand the section.
+For Alignment, select whether to top align , center align , or bottom align the text in the element.
+The element updates to reflect the style change.

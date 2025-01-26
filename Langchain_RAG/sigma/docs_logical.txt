@@ -1,0 +1,10 @@
+Logical
+Suggest Edits
+The Logical function converts the input value into a Boolean type, with a logical value of either True or False.
+Usage
+Logical(input)
+input (required) The input that you would like to be interpreted as a logical operator. Input can be of text or number type.
+When inputting text, “True” and “False” in any capitalization will be converted into the logical values True and False respectively. All other text will result in null.
+When inputting a number, 0 is interpreted as False and all other numbers are interpreted as True.
+📘
+The Logical function can be used within other functions to ensure that an input is being read as a logical input.

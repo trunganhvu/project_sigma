@@ -1,0 +1,20 @@
+Centroid
+Suggest Edits
+The Centroid function calculates the geographic center of a polygon. It returns a single point.
+You could use the Centroid function to determine the practical distance between two polygons.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+Centroid(polygon)
+The function argument is:
+polygon
+Required
+The object for which we calculate the geometric center
+Must be in valid Geography polygon format.
+Examples
+Centroid([Coordinates])
+Calculates the exact center of a polygon in column Coordinates:
+RELATED RESOURCES
+Within
+Intersects
+Geography functions

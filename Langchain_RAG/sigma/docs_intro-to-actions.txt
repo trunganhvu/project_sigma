@@ -1,0 +1,52 @@
+Intro to actions
+Suggest Edits
+Actions are user-defined interactivity that you can configure within and across workbook elements. By automating responses to specific user interactions, you can create efficient workbook workflows that produce quick and relevant data insights.
+This document introduces action conditions, triggers, and effects. For information about using actions, see the Related resources section at the end of this page.
+Understanding actions
+An individual action consists of a condition (optional), a trigger, and an effect.
+Condition (optional) A rule that determines when an action or sequence of actions1 executes.
+Trigger A user interaction with a specific element (the trigger element) that initiates the response of one or more actions or sequences of actions.
+Effect The defined response to the user interaction.
+1
+You can configure a single action on a workbook element or a sequence of multiple actions that execute in a specified order.
+Action conditions
+You can define an optional condition for any action sequence. The condition can be a custom formula or, if you are configuring an action for a control, the condition can be the value of the control.
+For more information, see Make an action conditional.
+Action triggers
+Most element types can be configured as action triggers. The following table describes the user interaction that can trigger an effect for each element type.
+Element type Interaction
+Table, pivot table, or input table User selects a cell in a specific column. This trigger can use action variables to reference values the user selected within a table.
+Visualization User selects a data point or category on the chart. This trigger can use action variables to reference values the user selected within a visualization.
+UI element
+(button or image only) User clicks the element.
+Control element User changes the control value.
+Action effects
+The following table lists the types of actions you can configure on a trigger element and describes the corresponding effect.
+Type Action Effect
+Navigation Open URL Navigates to an external link or destination within Sigma.
+Open Sigma doc Navigates to a different Sigma workbook.
+Navigate in this workbook Shifts the focus to the top of a specific page or an individual element in the current workbook.
+Control value management Set control value Sets the value of a specific control element in the current workbook.
+Clear control Clears the values of a specific control element in the current workbook.
+Element modification Modify element Modifies an element's columns, groupings, properties, or axis scale.
+Refresh element
+Refreshes the data of a specific element in the current workbook.
+This action doesn’t apply to materialized elements.
+Input table modification Insert rows in input tables Inserts a new row in an existing input table.
+Data transfer Download and export Initiates a direct download or an export to email, Slack, webhook, or cloud storage.
+Embedding Generate outbound embed iframe event Triggers an embed iframe event.
+Action configurations
+Actions feature versatile configurations to support responses that are highly relevant to your specific needs and preferences.
+Examples:
+Configure the Open URL action to open a static link, or utilize dynamic text to generate URLs that adjust to control or column values in the current workbook.
+Configure the Set control value action to filter the trigger element itself, or create a cross-element action that filters a child element.
+Configure the Open Sigma doc action to open another workbook in its published state, or pass values to control elements in the destination workbook to open a custom, drilled-down view.
+For detailed information about configuring the different types of actions, see the Related resources section at the end of this page.
+RELATED RESOURCES
+Create actions that navigate to destinations
+Create actions that manage control values
+Create actions that modify or refresh elements
+Create actions that download and export data
+View and manage existing actions
+Make an action conditional
+Use variables in actions

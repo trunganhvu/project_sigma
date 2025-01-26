@@ -1,0 +1,14 @@
+Set up inactivity timeouts
+Suggest Edits
+Sigma allows you to configure inactivity timeouts. These timeouts ensure users are automatically logged out after a certain length of inactivity in the product. This can help protect sensitive information and prevent unauthorized access to confidential data.
+Activity in the product includes any mouse movement or keystroke input on Sigma tabs. Activity in other tabs is not registered.
+User requirements
+You must be assigned the Admin account type to set up inactivity timeouts for your organization.
+Set up inactivity timeouts
+Go to Administration > Authentication.
+In Authentication Method & Options, select Edit.
+Turn the Enforce Inactivity Timeouts toggle on.
+Enter your desired time interval before users are logged out in the Inactivity Timeout in Seconds field. The minimum time interval you can enter is 5 minutes (300 seconds), and the maximum is 12 hours (43,200 seconds).
+Select Save.
+Limitations
+Inactivity timeouts will not apply to embeds.

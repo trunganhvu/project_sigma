@@ -1,0 +1,40 @@
+Add a custom color scale
+Suggest Edits
+When you format a visualization, or conditionally format a table column, you can apply a single color or a color scale, among other options. Sigma includes several predefined color palettes, but you can also create your own:
+Choose a predefined color scale palette
+Set a custom color scale palette
+You can add a color scale palette at the organization level as part of a theme, at the workbook level in the workbook settings, or at the element level for a specific data element. The following elements support color scales:
+Bar chart
+Funnel chart
+Gauge chart
+Geography map
+Scatter plot
+Tables, pivot tables, and input tables with conditional formatting.
+Choose a predefined color scale palette
+Open the color options for the chart, or open conditional formatting options for a table and choose color scale.
+2.Select the dropdown menu for the color palette to review other color choices.
+For the selected Palette radio button, use the dropdown menu to choose between Sequential (default) or Diverging palettes.
+Select a palette.
+(Optional) To reverse the default colors, turn on the switch to Reverse color scale.
+(Optional) To customize the color at specific data values, turn on the switch for Customize domain, then specify a Minimum value, Middle value, and Maximum value in the data.
+(Optional) To use distinct colors instead of a gradient color scale, specify a number of steps to use with the color palette, from None to use a color gradient, to 5 steps. You can use this option with the color domain settings to granularly define the color settings for specific data values.
+To create a custom color palette to use for sequential or diverging scales, see Set a custom color scale palette.
+For conditional formatting only, to apply formatting to null values, you can turn on the switch to Format null values as zero. The data value does not update but cells with null values reflect conditional formatting.
+Set a custom color scale palette (Beta)
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+To set a custom color scale palette for a data element or conditional formatting of table cells, do the following:
+Open the color options for the chart, or open conditional formatting options for a table and choose color scale.
+Select the dropdown menu for the color palette to review other color choices.
+(Optional) Select a default palette.
+Select Custom to configure a custom color palette. The default colors match the default palette selected when you opened the custom option, or the default palette set in the selected workbook theme.
+For each color that you want to customize, select the color block, then choose a new color:
+Select a standard color.
+Enter a hex code for the color.
+Use the eyedropper.
+Choose a color with the color picker.
+(Optional) To reverse the colors, turn on the switch to Reverse color scale.
+(Optional) To customize the color at specific data values, turn on the switch for Customize domain, then specify a Minimum value, Middle value, and Maximum value in the data.
+(Optional) To use distinct colors instead of a gradient color scale, specify a number of steps to use with the color palette, Choose None to use a color gradient, or choose up to 5 steps, depending on your data values. You can use this option with the color domain settings to more granularly define the color settings for specific data values.
+To make a custom color scale available to other elements in the workbook, set a custom scale of sequential colors or diverging colors in the workbook settings. This sets a default custom color scale. You can override it on a specific element. After overriding a workbook-level or theme-level custom color scale, you can choose Revert to default to use the workbook-level or theme-level custom color scale again.

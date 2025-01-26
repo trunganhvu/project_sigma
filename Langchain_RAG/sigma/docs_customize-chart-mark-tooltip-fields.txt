@@ -1,0 +1,44 @@
+Customize chart mark tooltip fields
+Suggest Edits
+Chart mark tooltips appear when you hover over individual data points in a visualization. Sigma auto-selects default tooltip fields, but you can customize them to display the metrics and data attributes most relevant to your use case.
+📘
+Tooltips are featured in all visualization types but are not customizable in gauge charts and Sankey diagrams.
+This document explains how to manage default and custom tooltip fields.
+User requirements
+The ability to customize chart mark tooltip fields requires the following:
+You must be assigned an account type with the Edit Workbook and/or Explore Workbook permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Show or hide default tooltip fields
+By default, tooltips typically display fields corresponding to source columns configured in the chart properties (for example, the columns defining axes, values, stages, and mark colors). You can show or hide these fields as needed.
+Open a workbook in Explore or Edit mode and select the visualization element you want to modify. If needed, hover over the data points to view the existing tooltip fields.
+In the Element properties panel, hover over the relevant property source column, then click the caret () to open the column menu.
+Select Show in tooltip to change the tooltip visibility.
+If the menu item displays a checkmark (✓), the corresponding tooltip field is currently shown. Click to hide the tooltip field.
+If the menu item displays no checkmark, the corresponding tooltip field is currently hidden. Click to show the tooltip field.
+The tooltip change is immediately reflected when you hover over individual data points in the chart.
+💡
+When you apply chart stacking in bar charts, you can also customize tooltips in the Element format > Tooltip section to display the variable value as a percentage of the cumulative stack. See Customize tooltip fields and values in Build a bar chart.
+Display additional tooltip fields
+To enhance your chart tooltips with additional fields, add new or existing columns to the Tooltip property.
+Open a workbook in Explore or Edit mode and select the visualization element you want to modify. If needed, hover over the data points to view the existing tooltip fields.
+In the Element properties panel, select the Marks > Tooltip tab.
+In the Select column field, click Add calculation and configure a source column for the new tooltip field:
+To reference or aggregate data from an existing column, search or scroll the Select column or Aggregate column list and select a column name. You can change or remove the aggregation if needed.
+To create a new column based on a custom formula, select Add new column, then enter the formula or value in the toolbar.
+To create a new column based on the number of aggregated rows, select Row count.
+The new tooltip field is immediately displayed when you hover over individual data points in the chart.
+Remove added tooltip fields
+To remove fields added to tooltips, remove columns configured in the Tooltip property.
+Open a workbook in Explore or Edit mode and select the visualization element you want to modify.
+In the Element properties panel, select the Marks > Tooltips tab.
+Hover over the name of the column you want to remove, then click the caret () to open the column menu.
+Select Remove from Tooltip to remove the corresponding tooltip field.
+The tooltip change is immediately reflected when you hover over individual data points in the chart.
+RELATED RESOURCES
+Customize element background
+Customize element title
+Format chart legend
+Create and format trellis charts
+Display chart data labels
+Display chart reference marks
+Add trend lines

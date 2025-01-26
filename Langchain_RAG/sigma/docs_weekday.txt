@@ -1,0 +1,14 @@
+Weekday
+Suggest Edits
+The Weekday function evaluates a specified date and returns an integer representing the day of the week (with 1 representing Sunday, 2 representing Monday, 3 representing Tuesday, and so on).
+Syntax
+Weekday(date, [timezone])
+Function arguments:
+date (required) - the date or column containing date values from which the weekday is determined
+timezone (optional) - the IANA time zone (e.g., “America/Los_Angeles”) to convert the date value to before evaluating the weekday
+Example
+Weekday(Date("2017-12-01"))
+Evaluates the specified date (December 1, 2017) to determine the day of the week and returns 6 to represent Friday, the sixth day of the week.
+RELATED RESOURCES
+DatePart
+Sigma Quickstart: Common date functions and use cases

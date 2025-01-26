@@ -1,0 +1,52 @@
+AWS PrivateLink Connections
+Suggest Edits
+If your Sigma organization runs on AWS, you can securely connect to your data using AWS PrivateLink. AWS PrivateLink is a security feature available for AWS users. It will allow you to create connections between your AWS Virtual Private Cloud (VPC) without sending traffic over the public internet.
+Sigma can connect to customer CDW via AWS PrivateLink at all Amazon regions with PrivateLink support.
+See AWS documentation on AWS PrivateLink to understand the security advantages and internals of this approach.
+Requirements
+A Sigma organization running on AWS.
+Admin privileges in your Sigma organization; see User account types.
+An Amazon VPC-deployed Snowflake (self-managed or VPS), Redshift, MySQL, or Postgres data warehouse, or custom proxy server in any AWS region.
+📘
+This feature does not support BigQuery warehouses or self-managed warehouses running on Azure, GCP, or VMWare clouds.
+Connecting to your Data with PrivateLink
+PrivateLink Connection Methods
+The process you follow to connect your data to Sigma with PrivateLink is determined by your warehouse connection.
+If you are a Snowflake customer, not using VPS or a proxy server, you can connect to PrivateLink using Snowflake's PrivateLink integration. Please follow the instructions under Connect to PrivateLink with Snowflake’s PrivateLink Integration.
+If you manage your own Redshift, MySQL, or Postgres warehouse, use Snowflake’s VPS, or connect to your warehouse using a proxy server (eg SecuPi), please follow the instructions under Connect to PrivateLink using your own VPC.
+Connect to PrivateLink with Snowflake’s PrivateLink Integration
+How does it work?
+When this feature is configured, Sigma will create a secure connection over PrivateLink directly to the Snowflake Virtual Private Cloud (VPC) that is housing your data. Once this secure tunnel exists, you may add and/or update your associated connections in your Sigma Admin Portal. Traffic between Sigma and your Snowflake warehouse will travel exclusively on the AWS backbone.
+You do not need an Amazon account or VPC of your own; only the warehouse managed by Snowflake must reside in AWS VPC.
+Eligibility
+Snowflake requires Business Critical Edition for PrivateLink support.
+📘
+If your Snowflake account uses VPS or you connect Sigma to Snowflake with a proxy server, you need to use your own VPC Endpoint Service.
+Confirm your Sigma organization’s PrivateLink eligibility with your Sigma Account Executive.
+Set up PrivateLink for your Snowflake Connection
+Contact Snowflake to request access to your data over PrivateLink. You will need to provide them with Sigma’s AWS PrivateLink account number: 1854-9775-9670.
+Snowflake will then provide you with a VPC Endpoint Service name. This may take one or two business days.
+Once you have received your VPC Endpoint Service name from Snowflake, please contact your Sigma Account Executive to install your PrivateLink connection with Sigma.
+Installation may take up to a few days. You will be contacted once installation is complete; however, please don't hesitate to contact your Account Executive if you have any questions.
+After installation is complete, you must include PrivateLink in your connection(s) Account field in Sigma. Existing connections will continue to work, but will not use PrivateLink until this step has been completed.
+If you are updating an existing Snowflake connection, visit the connection page in your organization’s Admin Portal and set the Host field to <your-account-name>.<aws-region>.privatelink.
+Creating a new connection? See Connect to Snowflake and set the Account to <your-account-name>.<aws-region>.privatelink.
+Connect to PrivateLink using your own VPC
+The choice to connect through PrivateLink depends on your warehouse. If you are a Business Critical Snowflake customer, you may connect to PrivateLink using Snowflake’s PrivateLink integration and Sigma. However, if your store your data in Redshift, MySQL, PostgreSQL, VPS, or if you are use a proxy server, you must set up your own VPC Endpoint Service.
+How does it work?
+When this feature is configured, Sigma creates a secure connection over PrivateLink directly to the Virtual Private Cloud (VPC) that you have deployed to house your data warehouse. Once this secure tunnel exists, you may add and/or update your associated connections in your Sigma Admin Portal. Traffic between Sigma and your warehouse travel exclusively on the AWS backbone between your VPC and Sigma’s.
+Eligibility
+You must have an AWS account with a warehouse instance or another addressable service that houses your data warehouse.
+You must confirm your Sigma organization’s PrivateLink eligibility with your Sigma Account Executive.
+Setting up PrivateLink for your Connection
+Create a VPC Endpoint Service using the Amazon VPC console or the command line. See AWS documentation on Create a service powered by AWS PrivateLink.
+Authorize Sigma to connect to the VPC Endpoint Service. See AWS documentation on Configure an endpoint service.
+In this step, you will need to provide Sigma’s Amazon Resource Name (ARN). The ARN for our AWS account principal is arn:aws:iam::185497759670:root.
+Please contact your Sigma Account Executive to install your PrivateLink connection. They will need the VPC Endpoint Service name of your new service.
+Installation may take up to a few days. You will be contacted once installation is complete and provided a host name for your connection (step 6). Please don't hesitate to contact your Account Executive if you have any questions during this waiting period.
+If your VPC Endpoint Service requires acceptance of new connections, you will now need to accept Sigma’s new endpoint connection.
+After installation is complete, you will need to include PrivateLink in your connection(s) Host field in Sigma. Existing connections will continue to work, but will not use PrivateLink until this step has been completed.
+If you are updating an existing connection, visit the connection page in your organization’s Admin Portal, and set the Host field to the host name provided to you by Sigma.
+Creating a new connection? See Connect to Snowflake to set up the Host field to the host name provided to you by Sigma.
+RELATED RESOURCES
+Connect to data sources

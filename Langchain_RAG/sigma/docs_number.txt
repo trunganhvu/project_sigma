@@ -1,0 +1,38 @@
+Number
+Suggest Edits
+The Number function converts the input value into a number type. If the input number isn't numerical, the function returns Null.
+The function returns Null if conversion is not possible.
+The Number function can be used within other functions to ensure that an input is being read as a number.
+Syntax
+Number(input)
+Function argument:
+input
+Required
+The text, date, or number to convert to number
+Sigma interprets Dates that are converted to numbers as Unix-style timestamps or the number of seconds after January 1st, 1970.
+Examples
+Number("15.25") Number(15.25)
+Both forms return 15.25.
+Number("5.073456E10") Number(5.073456E10)
+Both forms return 50734560000, because it interprets E as exponent notation.
+Number("22253908723450973459872359073459073459073549734597")
+Returns 2.2253908723450973e+49, compacting the number into exponent notation.
+Number("953,486")
+Returns Null, because it does not interpret the comma as a thousands separator.
+Number("75%")
+Returns Null, because it does not interpret the % as a percentage
+Number("$75.347")
+Returns Null
+Number("#876")
+Returns Null, because it does not interpret the # as hexadecimal indicator.
+Number("N") Number("True") Number("False")
+All these return Null, because the arguments are not numeric.
+Number(2023-07-12 22:58:26)
+Returns 1689202706 or the number of seconds between January 1st, 1970 and the date value.
+RELATED RESOURCES
+Date
+Day
+Month
+Weekday
+Year
+Text

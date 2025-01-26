@@ -1,0 +1,14 @@
+FAQFrequently Asked Questions
+On this page
+Frequently Asked Questions
+What happened to the list of helpful FAQ on this page?
+We wanted to build a more collaborative questions and knowledge repository so we moved them all to our Community site. This is where we will post cool patterns, workarounds and other neat Omni things that don't exactly fit within our documentation pages.
+How do I get help from Omni support?
+Reach out via your #omni-company_name Slack channel
+Ask a question through our Community site
+How can I collaborate with other Omni customers or users?
+We recommend posting in our Community site and one of our team members or another community member will reach out.
+Previous
+IP address allowlist
+Next
+Overview

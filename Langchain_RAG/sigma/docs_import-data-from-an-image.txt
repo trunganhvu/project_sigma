@@ -1,0 +1,32 @@
+Import data from an image (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+With Sigma AI features, you can import data from an image of a table or a chart. Sigma uses your OpenAI connection to parse the data in the image and store it as a table.
+Requirements
+To upload an image as a CSV file, you must be assigned an account type with the Use AI features and Upload CSV permissions enabled.
+In addition, the following must be set up for your organization:
+The OpenAI integration must be configured.
+CSV upload must be enabled.
+Limitations
+The image file size must be 20MB or less.
+Supported file formats include JPEG, PNG, and WEBP. TIFF and HEIF formats are not supported.
+Import data from an image
+To import data from an image using AI, do the following:
+Go to your Home page.
+Select Create New > Import Data via Image.
+Drag and drop or browse to an image file.
+After uploading an image, OpenAI extracts data from the image. Parsed data displays in the Results tab. Review the parsed data and data formats and correct any data types as needed.
+🚩
+You cannot correct any inaccurate data when you import it from an image. Instead, after selecting Explore, consider copying the data to an input table for correction.
+Select Explore to open a new draft workbook with the data as a table element. The processed data is stored as a table in the connection you selected to write back to.
+Recommendations
+Images of only one simple table or chart import best. Images with rows partially cut off can still be imported. Carefully review the data interpreted for partial rows for accuracy.
+Charts with data labels import most accurately.
+More complex images, such as those containing the following, might fail to import or fail to import as desired:
+Images with multiple tables or charts.
+Images of pivot tables or tables with merged cells.
+Images with stacked bar charts or multi-series data points.
+Images with pie charts.
+If your image cannot be parsed, you see an error message: OpenAI is unable to recognize the data table or chart in the provided image. Please try again..

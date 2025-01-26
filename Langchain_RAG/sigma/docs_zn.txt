@@ -1,0 +1,22 @@
+Zn
+Suggest Edits
+Zn
+The function Zn returns the argument if it is not Null, otherwise returns zero. Zn allows the convenient use of zero values in place of Null values. 
+Syntax
+Zn(argument)
+argument (required) The number value to be checked.
+📘
+The argument must be a Number data type.
+📘
+The function can analyze one argument at a time.
+Example
+Zn(3)
+Returns 3
+Zn(Null)
+Returns 0
+Zn([Quantity])
+Returns 0 for every row in the column that is Null.
+RELATED RESOURCES
+Coalesce
+IsNull
+IsNotNull

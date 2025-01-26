@@ -1,0 +1,15 @@
+Sigma's sample connection
+Suggest Edits
+When you create your Sigma organization, we automatically connect you to our sample Snowflake or Databricks warehouse. This connection, named Sigma sample connection, aims to provide you and organization members with a variety of accessible data to jumpstart your first time Sigma experience.
+Example workbooks
+Every Sigma user is provided a set of example workbook templates upon signup. All examples are built on data in the Sigma sample connection.  You can view these examples in your Templates gallery. See Create workbooks from templates.
+Create a workbook from sample data
+Creating a workbook from Sigma’s sample connection will give you a taste of what it will be like to use your own data in Sigma; see Create a workbook.
+Hide the sample connection
+Organization admins can hide the Sigma sample connection for their organization. Organization members will not see it listed in the connection list. However, content built on top of the sample connection will still be visible and usable.
+Access your Administration Portal.
+In the side panel of the Administration Portal, select Account.
+Under the Features section, turn on the toggle next to Sample connection.
+RELATED RESOURCES
+Create a workbook
+Connect to data sources

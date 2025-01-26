@@ -1,0 +1,19 @@
+ArrayDistinct
+Suggest Edits
+The ArrayDistinct function returns the input array without duplicate values and including null values.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+ArrayDistinct(array)
+The ArrayDistinct function has the following argument:
+array
+Required.
+The input array that Sigma parses to find and remove duplicates,
+Must be an array structure; to create single array from a column, use the ArrayAgg function,
+Example
+ArrayDistinct([Open prices array])
+The ArrayDistinct function returns the following values for the Open prices array column as Distinct open prices array; note the differences in array length for each column:
+RELATED RESOURCES
+ArrayLength
+ArrayContains
+ArraySlice

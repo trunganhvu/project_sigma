@@ -1,0 +1,25 @@
+Repeat
+Suggest Edits
+The Repeat function returns the results of repeating a string a specified number of times.
+Repeat is one of the Text functions supported by Sigma.
+Syntax
+Repeat(string, number)
+Repeat has the following arguments:
+string
+Required
+The string that the function repeats
+number
+Required
+The number of times the string repeats.
+The zero, 0, and negative values both return a NULL string.
+Examples
+Text
+Text
+Text
+Text
+Text
+Repeat([Product Type],0)
+The Repeat function returns the following values for the Product Type column:
+RELATED RESOURCES
+Contains
+Substring

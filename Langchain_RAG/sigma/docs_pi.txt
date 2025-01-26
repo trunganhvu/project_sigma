@@ -1,0 +1,8 @@
+Pi
+Suggest Edits
+Returns the mathematical constant π = 3.14159…
+Usage
+Pi()
+Example
+Pi() * [Radius]^2
+Find the area of circles indicated in the [Radius] column

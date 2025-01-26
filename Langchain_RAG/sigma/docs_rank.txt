@@ -1,0 +1,28 @@
+Rank
+Suggest Edits
+The Rank function assigns ranks to values in a specified column. The sequence begins with rank "1", and duplicate values are assigned the same rank. Identical values get the same rank, with gaps in the sequence in order to compensate for the multiple identical values. In the presence of duplicates, the sequence is not continuous.
+Rank output assigns ranks based on date, time, numeric, alphabetic, or alphanumeric order, depending on the type of data in the referenced column.
+If you call the function without arguments, it assigns ascending rank based on the sort order. In some cases, therefore, all ranks are 1.
+Syntax
+Rank([column], [direction])
+These are the function arguments:
+column
+Optional
+The column referenced to determine rank
+direction
+Optional
+The directional order of column's values:
+“asc”
+Ranks in ascending order, where the smallest values get rank "1"
+Default, when not specified.
+“desc”
+Ranks in descending order, where the largest values get rank "1"
+Example
+Rank([Name Count], "desc")
+In the table of female names in Hawaii for the year 2018, you can use the Rank function to rank names based on their popularity; the number of instances are in the Name Count column, sorted from greatest to least.
+With [Name Count] as the column argument and "desc" as the direction argument, the name with the largest value in the Name Count column has the rank of 1, the next most popular name has a rank of 2, and so on.
+Duplicate values have the same rank, and after a gap equal to the number of duplicates, the ranking continues. For example, the Rank has a rank of 4 for the "Mila" and "Olivia" because they have the same Name Count value of 50. There is no rank "5", and the next popular name "Mia" has the rank "6".
+RELATED RESOURCES
+RankDense
+RankPercentile
+RowNumber

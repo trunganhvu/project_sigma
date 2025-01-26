@@ -1,0 +1,27 @@
+Enable audit logging
+Suggest Edits
+Sigma facilitates audit logging through the Sigma Audit Logs connection, which records data related to user-initiated events that occur within your Sigma organization. The connection is disabled by default, but an Admin user can enable it in the Administration portal.
+This document explains how to enable the Sigma Audit Logs connection. For more information about audit logging with Sigma, see the following:
+Access and explore audit logs
+Audit log events and metadata
+Create an audit logs storage integration
+Export audit log data to cloud storage
+User requirements
+📘
+This feature isn't supported in all regions. To check if it is supported in your region, see Supported data platforms and feature compatibility.
+
+To enable the Sigma Audit Logs connection, you must be assigned the Admin account type.
+Enable the Sigma Audit Log connection
+Go to Administration > Account > General Settings.
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account, then open the General Settings tab.
+In the Audit Logging section, locate the Sigma Audit Logs setting and click Enable. The setting displays a Feature Pending tag while the audit log connection activates.
+📘
+If the General Settings tab doesn’t include an Audit Logging section, contact Support or your Sigma Account Executive to enable it for your organization.
+The connection typically activates within a few minutes, and Sigma sends a confirmation email when the connection is successfully enabled. Click Open in Sigma in the email or refresh the Administration portal, then click Browse Connection in the Sigma Audit Logs setting to view the connection data.
+RELATED RESOURCES
+Access and explore audit logs
+Audit log events and metadata
+Create an audit logs storage integration
+Export audit log data to cloud storage

@@ -1,0 +1,42 @@
+Manage team members
+Suggest Edits
+When a user is a member of a Sigma team, they automatically inherit all access and permissions granted to that team.
+This document explains how to add, remove, and transfer members to and from teams in Sigma. For information about creating teams and assigning team admins, see Create and manage teams and Manage team admins.
+User requirements
+To manage team members, you must be assigned the Admin account type or be assigned Team Admin status.
+Add team members
+Go to Administration > Teams:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Teams.
+In the list of teams, select the team you want to update.
+In the team details page, click Add members.
+In the Add people to your team modal, search for and select the users you want to add as team members, then click Add.
+Remove team members
+Remove an individual team member
+Go to Administration > Teams:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Teams.
+In the list of teams, select the team you want to update.
+In the team details page, locate the team member you want to remove, then click More and select Remove from team.
+Remove team members in bulk
+Go to Administration > Teams:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Teams.
+In the list of teams, select the team you want to update.
+In the team details page, select the checkbox associated with each team member you want to remove.
+Click Remove from team to remove the selected members.
+Transfer team members
+Go to Administration > Teams:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Teams.
+In the list of teams, select the team you want to update.
+In the team details page, select the checkbox associated with each team member you want to transfer.
+Click Transfer to a different team.
+In the Transfer to a different team modal, select a team, then click Confirm to transfer the members.
+RELATED RESOURCES
+Create and manage teams
+Manage team admins

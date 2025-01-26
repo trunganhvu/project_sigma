@@ -1,0 +1,59 @@
+Add a modal to a workbook
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+To simplify design and build an app-like experience in a workbook, add one or more modals. When open, a modal overlays a workbook page, obscuring the background page and enabling a workbook viewer or explorer to focus on specific elements.
+You can use a modal for a number of use cases, including the following:
+Reduce visual clutter by presenting controls and filters in a dedicated modal.
+Provide instructions and other information in a modal.
+Customize a chart or table drilldown by opening a modal with a filtered table with more details.
+You must add an action to your workbook to make the modal accessible to viewers and explorers of the workbook. See Create actions that navigate to destinations.
+Requirements
+To create and modify modals, the following requirements apply:
+You must be assigned an account type with the Create, edit, and publish workbooks permission enabled.
+You must have Can edit access to the workbook.
+Add a modal to your workbook
+You can add a modal to your workbook in many different ways.
+Add a modal from by selecting ( Add element, then in the Layout section, select Modal.
+Add a modal from the page menu by selecting the caret () > Add modal.
+Move an existing element, such as a container, to a modal by selecting () More > Move to > New modal.
+Configure a workbook action to open a modal, then select New modal. See Create actions that navigate to destinations.
+A modal appears as a new hidden page tab for the workbook, with a predefined size. Add elements and customize the modal just like a workbook page. All element types are supported, but consider the modal size and layout when adding elements.
+By default, a modal includes a default title and primary and secondary buttons. To customize the appearance of the modal, see Design a modal.
+You can optionally rename the modal to keep your workbook organized. Select the caret () > Rename or double-click the modal tab to rename it. The modal name is separate from the title that appears on the modal.
+Design a modal
+Customize the appearance of a modal to match the use case. For example, a modal that displays documentation might not need buttons, and a modal that modifies a workbook page might benefit from dynamic text formatting in the title.
+By default, a modal includes a header with a title and a close icon, and a footer with two buttons. You cannot place additional elements in the header or footer, but you can customize the display and hide both the header and the footer, including the buttons.
+Customize modal appearance
+You can customize the width of the modal and the spacing of elements on the modal. You can also choose to show padding and a gap between elements. If desired, add a background color to the modal. The background color does not apply to the footer of the modal.
+To customize the width of the modal:
+Select the modal tab.
+In the Modal properties in the editor panel, select a Width. By default, the modal width is Small.
+To customize the appearance of the modal, including elements added to it:
+With the modal tab selected, select Element format.
+Select Container style to open the style options:
+Style Details
+Spacing Manage the space around the outside of the modal and between rows. Choose between Small, Medium (default), and Large.
+Padding Adds padding to the modal. Selected by default. Deselect the checkbox to remove padding between elements and the modal.
+Background color Select a background color for the modal. Does not apply to the footer.
+Element gap Adds padding between elements. Selected by default. Deselect the checkbox to remove all space between elements.
+Add a title to the modal
+By default, a modal includes a header with a default title, New Modal, and a close icon. To hide or modify the title or close icon for the modal:
+With the modal tab selected, select Element format.
+Select Header to expand the header formatting options.
+(Optional) Deselect the checkbox for Show title to hide the title.
+If the title is shown, update the title in the text box. Enter an equals sign (=) to use a dynamic text formula. See Add dynamic text based on your data.
+(Optional) Format the title text. Add bold, change the text color, or change the text size.
+To hide or show the close icon, select Header to expand the header formatting options, then select or deselect the Show close icon checkbox.
+Hiding both the title and the close icon hides the header.
+Customize the footer and buttons on the modal
+By default, and two buttons in the footer, labeled Primary and Secondary to align with the color styling.
+To customize the primary or secondary buttons:
+With the modal tab selected, select Element format.
+Select Footer to expand the footer formatting options.
+(Optional) To hide the primary button, deselect the checkbox for Primary button.
+For Text, update the placeholder text to a specific call to action. For example, Submit or Acknowledge.
+(Optional) To hide the secondary button, deselect the checkbox for Secondary button.
+For Text, update the placeholder text to a secondary call to action. For example, Cancel or Clear.
+Hiding both buttons hides the footer.

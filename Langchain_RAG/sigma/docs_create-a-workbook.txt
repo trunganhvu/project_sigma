@@ -1,0 +1,36 @@
+Create a workbook
+Suggest Edits
+Workbooks are a Sigma document type designed to support both ad hoc data exploration and complex long-term reporting. The collaborative interface and visual approach to data interaction make live data accessible to everyone in your organization.
+Unsaved workbooks are referred to as explorations and are available in the Recents page for 30 days.
+This document shows how to create a new workbook. For more information see Workbooks overview.
+Requirement
+To create new workbooks and explorations, you must be assigned the Creator, Admin, or custom account type with the appropriate permissions.
+Create a workbook or exploration
+... from the navigation panel
+To create a workbook or exploration from the navigation panel:
+In the left navigation panel, click + Create New.
+Select Workbook from the dropdown menu. Sigma creates and redirects you to a blank new workbook. 
+Explore your data in the workbook. You can add data elements, calculations, controls, etc.
+In the workbook header, click Save As to save your exploration as a workbook for later use.
+... from a data source
+To create a workbook or exploration from a data source (warehouse table or Sigma dataset):
+Open the data source.
+In the workbook header, click Explore. Sigma creates and redirects you to a new workbook with a default table element connected to the data source.
+Explore your data using the workbook interface. You can add data elements, calculations, controls, and more.
+In the workbook header, click Save As to save your exploration as a workbook for later use.
+... from a template
+A workbook template is a Sigma document type that allows you to use, reuse, and share specific workbook structures for quick and consistent exploration and reporting. For more information see Create workbooks from templates.
+... from an existing workbook
+To create a copy of an existing workbook:
+Click the caret button to the right of the workbook title in the header.
+Select Save as.
+Sigma opens the Save a Copy modal.
+(Optional) Enter a new Name.
+(Optional) Select a Destination.
+Click Save.
+RELATED RESOURCES
+Workbooks overview
+Intro to Element Types
+Intro to data elements
+Workbook lifecycle: explore, draft, and publish
+Workbook example templates

@@ -1,0 +1,131 @@
+Tutorial: Data modeling with datasets
+Suggest Edits
+Data teams often create datasets to enable data exploration by business users, but datasets can be created for many reasons, including:
+Joining and flattening dimensional models
+Masking sensitive data
+Materializing data to improve performance
+Ensuring common calculations and Key Performance Indicators (KPIs) are consistent
+This step-by-step guide walks you through creating a dataset that flattens out a dimensional model.
+Requirements
+You must be assigned the Creator account type or have a custom account type that includes modeling permissions.
+Create Datasets
+At the top of the home page, click Create New and select Dataset.
+On the Select a Data Source page, choose the Table option.
+Find the Connections section in the In the left panel and select Sigma Sample Database.
+Locate the Examples database and the PLUGS_ELECTRONICS schema.
+Click on the F_POINT_OF_SALE table to see a preview of the data.
+Click Get Started at the top right corner of the page header.
+Modeling Data
+Create Calculations
+Now that you have located the table from which to build your dataset, its time to add additional columns with calculations. Adding calculated columns in the dataset ensures consistency in the way metrics and KPIs are computed by your organization. Calculated columns are a valuable time-saver - as analysts do not need to add common calculations to their workbooks every time.
+Click the Worksheet tab at the top of the screen.
+Click the caret icon () on the Sales Amount column.
+Click Add New Column.
+In the formula bar, enter [Sales Amount] * [Sales Quantity].
+**
+Click Enter on your keyboard.
+Double click the new column's name and rename it to Revenue. 
+Click the caret icon () on the Revenue column.
+Select Format.
+Select Currency.
+Repeat steps 1-5 to add another column called COGS (Cost of Goods Sold).
+In the formula bar enter [Cost Amount] * [Sales Quantity].
+Click Enter on your keyboard.
+Click the caret icon ()on the COGS column select Format
+Select Currency.
+Joining additional tables 
+Let's join this dataset to additional tables to add more context to the dataset we created above.
+Sigma supports left, right, full, and inner join types, and lookups. You may also join more than one column as well as define arbitrary functions within the join (e.g. truncate date); see Join types.
+With the dataset in Edit mode, click the database icon to open its tab. This is located in the right-side panel.
+Click on the plus icon () located below the database icon. This will open the Add Source page.
+Select Table as data source type.
+On the left side of the page, under Connections, select Sigma Sample Database.
+Locate the Examples database and the PLUGS_ELECTRONICS schema.
+Click the F_SALES table to see a preview of the data.
+Click Next at the top right corner of the page header.
+Under Join Type, use the default Left Join.
+Set the left join key selector to the ORDER_NUMBER column.
+Set the right join key selector to the ORDER_NUMBER column.
+
+Note: Sigma populates these fields automatically if it finds identically-named columns in both tables.
+Click Done to go back to the dataset worksheet.
+Note: If you look in the left-side panel, you will see that the columns from F_SALES are present in the worksheet, and the F_SALES table is listed as a data source.
+Repeat steps 2 to 5 for each of the following tables:
+D_STORE
+Join Key: STORE_KEY
+Columns: STORE_NAME, STORE_CITY, STORE_STATE, STORE_JSON_FIELD
+D_CUSTOMER
+Join Key: CUST_KEY
+Columns: CUST_NAME, CUST_JSON_FIELD
+Note: All columns added via joins will have the table name appended to the column in parentheses. Double click on column names to rename them. Move columns by dragging them to a new position in the worksheet.
+Extracting JSON
+Sigma gives you the ability to extract JSON.
+Click the caret icon () on the Cust Json Field (D_CUSTOMER) column.
+Select Extract Columns.
+On the Extract Fields modal, select the AGE_GROUP and LOYALTY_PROGRAM fields.
+Click the caret icon () on the LOYALTY_PROGRAM
+Select Logical.
+Click the Confirm button.
+Filter Your Data
+Filtering datasets limits the volume of data available to analysts during data exploration.
+Add Relative Date Filters
+Click the caret icon () on the [Date (F_SALES)].
+Select Add Filter.
+Select Date Range as the Filter Type.
+Click the Select Date Range field to bring up the date selector menu.
+On the left side of the modal, select Relative.
+Enter 1 in the text entry field.
+In the ... menu, select Weeks.
+Note: This filter ensures the data is always filtered for the most recent week.
+Click Save.
+Add Text Filters
+Click the down arrow on the Store State column and select Add Filter.
+Click the Filter Values dropdown menu.
+Check the boxes for California, Texas, and Michigan.
+Click Save.
+Link Tables
+By defining links in datasets, users have to option to add joined data to their workbook. In addition, Sigma automatically links tables that have relational metadata (foreign keys) defined in Snowflake.
+Click the Links tab at the top of the screen.
+Click Add links to other source.
+Click Connections at the bottom of the left panel.
+Select Sigma Sample Database.
+Locate the Examples and PLUGS_ELECTRONICS folders.
+Click on the D_PRODUCT table to see a preview of the data.
+Click Next.
+Locate the Join Type selection and select Left Join.
+Set the left join key selector to PRODUCT KEY Link (F_POINT_OF_SALE).
+Set the right join key selector to PRODUCT KEY.
+Click Save
+Click the Publish button at the top of the screen to save all your dataset changes.
+Badging Datasets
+Add badges to datasets to indicate whether the content is Endorsed, has a Warning, or has been Deprecated.  Optional badge notes can be used to provide additional context for all organization members.
+Add or Update a Badge
+Click the information icon () in the page header. This will open the page's info popup.
+Select the Endorsed badge type from the dropdown list.
+Setting Permissions & Sharing Datasets
+Once your modeling is complete, the dataset can be shared. You may do so by direct share to a team of users or individuals or more broadly to a workspace. Once permissions have been granted, people may use the dataset as the basis for their analysis. See Data permissions.
+Direct Share
+Click the Permissions tab at the top of the screen.
+Click Add Permission.
+Search for a member email address or a team name.
+Select the type of permission you would like to give the selected member or team.
+
+Note: users will be able to access the dataset from the “Shared with Me” tab on the home page.
+Move to Workspace
+Click More in the dataset header.
+Click Move.
+Click the Workspaces tab.
+Select the workspace to which you would like to move the dataset.
+Click Move.
+Materialization
+Materialization allows you to write datasets back to your warehouse as tables. These tables act as simplified versions of the complex SQL queries you build in Sigma and can improve the speed and performance of your downstream reports. Each table will be written and rewritten to your warehouse on the schedule that you set. Sigma writes a view on top of the table so that other apps outside of Sigma can access the prepared/transformed data that Sigma creates.
+Requirements
+Write access must be enabled on your dataset’s connection.
+You must be an organization Admin.
+Adding Materialization to Datasets
+Click the Materialization tab at the top of the screen.
+Click Create Schedule.
+Select the frequency to materialize the data.
+Click Save.
+After you save the materialization schedule, Sigma runs the first materialization.
+View all scheduled materializations on the dataset's Materialization tab.

@@ -1,0 +1,57 @@
+Intro to input tables
+Suggest Edits
+🚩
+Input tables are generally available on Snowflake and Databricks connections with write-access enabled.
+On Amazon Redshift connections, input tables are in public beta.
+When applied to input tables on an Amazon Redshift connection, this documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in Sigma, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service may differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Input tables are dynamic workbook elements that support structured data entry. They allow you to integrate new data points into your analysis and augment existing data from your data platform to facilitate rapid prototyping, advanced modeling, forecasting, what-if analysis, and more—without overwriting source data.
+Use input tables as sources for tables, pivot tables, and visualizations, or incorporate the data using lookups and joins. And when you create warehouse views for input tables, you can reuse the manually entered data across your broader data ecosystem.
+This document introduces the fundamentals of input tables (functionality, types, and columns), and explains how Sigma handles the data.
+Input table functionality
+Input tables enable you to do the following:
+Add new rows (empty and CSV input tables only)
+Add new columns (including data entry, computed, row edit history, and system columns)
+Upload and edit CSV data (max 200 MB, UTF-8 only)
+Input values through keyboard entry
+Paste up to 50,000 cells at once (2,000 rows and 25 columns) from your clipboard
+Configure data entry permissions
+Configure data validation
+Protect columns to prevent edits
+For information about using this functionality, see Create new input tables, Configure data governance options in input tables, and Edit existing input table columns.
+Types of input tables
+Sigma offers three types of input tables:
+Empty input tables
+CSV input tables
+Linked input tables
+Empty input tables
+Empty input tables are blank tables that support data entry in standalone tables independent of existing data. You can edit data at the cell level and add editable rows and columns to construct your table as you see fit.
+CSV input tables
+CSV input tables also support data entry in standalone tables; however, they allow you to pre-populate the table with uploaded CSV data (max 200 MB, UTF-8 only). You can then edit the uploaded data at the cell level and add other editable rows and columns to construct your table as you see fit.
+Linked input tables
+Linked input tables support data entry alongside existing data from other elements in the same workbook.
+As a child element, a linked input table includes one or more linked columns that reference data in the parent element. This includes a primary key column containing row identifiers that establish the table’s granularity. You can then add other columns to augment the linked data sourced from the parent element.
+To maintain the data relationship between the input table rows and source data in the parent element, the primary key column must reference static values. All other linked columns can reference variable data, which is continually updated in the input table to reflect live data from the source.
+Types of input table columns
+Input tables support the following types of columns:
+Type Description Available columns
+Data entry column Supports direct user input at the individual cell level Text, Number, Date, Checkbox
+Computed column Generates values based on a user-defined formula or lookup Calculation, Via lookup
+Row edit history column Displays system-generated metadata related to row edits Last updated at (timestamp), Last updated by (user)
+System column Displays system-generated metadata related to table components
+Row ID
+Available for empty or CSV input tables only
+How input table data is handled
+Sigma handles input tables in a distinct manner due to the ad hoc nature of the data. The following information explains how input table data is stored, retrieved, and removed.
+Storage
+Sigma writes input table data to tables in a designated write-back schema in your data platform. This destination schema, identified in the connection's details (Admin > Connections), stores input table data separate from existing source data that Sigma cannot overwrite.
+In addition to creating tables that store input table data, Sigma creates an edit log (also known as a write-ahead log or WAL) that contains a sequential record of all input table changes, including information related to user activity and resulting system operations. Tables containing input table data have object names prepended with SIGDS, and the table containing the edit log is prepended with SIGDS_WAL.
+Retrieval
+Since Sigma writes input table data to a write-back schema optimized for storage, you cannot query the resulting tables directly. To access input table data in an indirect but query-friendly format, create warehouse views for individual input tables, then retrieve the data from the views using the SQL FROM clause.
+Removal
+You can delete input table elements in workbooks, but Sigma does not delete the corresponding input table data written to your data platform. To remove this data, you must delete it directly in the data platform.
+RELATED RESOURCES
+Create and manage input tables
+Edit existing input table columns
+Configure data governance options in input tables
+Restore input table access for a Snowflake connection or user

@@ -1,0 +1,17 @@
+Configure Dataset Columns
+Suggest Edits
+Begin by clicking the Edit button in the Dataset header. Next, click on the Columns tab.
+Set Column Visibility
+Select the column’s default visibility:
+Included columns are added by default to workbooks.
+Available columns are not added by default to workbooks.
+Restricted columns are not available in workbooks.
+Click Publish to save your changes.
+Format Columns
+Find the column that you would like to format, and click the arrow next to the column name to open the column menu.
+Click Publish to save your changes.
+Column Descriptions
+Click the Edit button in the dataset header.
+Click to open the Column tab.
+Enter a new description in the column's description input field.
+Click Publish to save the changes

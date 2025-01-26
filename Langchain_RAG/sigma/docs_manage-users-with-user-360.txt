@@ -1,0 +1,28 @@
+Manage Users with User 360
+Suggest Edits
+User 360 allows admins to access individual user profiles from the People tab. The user profile is a single source of truth for every user in your organization. From the user profile, admins can take actions on a user, such as:
+View and edit a user's account type
+View and edit a user's member type
+View user attributes assigned to a user
+View, edit, or add a user to teams
+Convert users from Embed to Standard or vice versa
+Upload a profile image
+Requirements
+You must be an organization Admin to view or edit fields on a user profile; see Account types.
+Access a User Profile
+To access a user profile as an admin, go to the admin portal > People tab > and click on any user.
+In the example below, click on the edit icon () to edit the account type, teams, or view assigned user attributes. 
+Account Type
+To edit a user's account type, click the edit icon () to launch the Account type field, and select the appropriate value. See Account types.
+📘
+Admins can't edit their own account type.
+Convert Users
+In the Account Type field, admins can convert Embed users to Standard, or vice versa. If you convert an Embed user to Standard, you must define their Account Type. See Account types.
+Member Type
+This capability is only available in the user interface for organizations that have Guest User Accounts enabled and that are using these Authentication Methods: Password, SAML or SAML or password. More more information, see Guest user accounts.
+To edit a user's member type, click the edit icon () to launch the Member field, and select the appropriate value. 
+Teams
+To edit a user's team, click the edit icon () to launch the All Teams field, and search or select the appropriate team. For more information, see Teams. 
+User Attributes
+To view the attributes assigned to a user, click the edit icon (). 
+See User attributes.

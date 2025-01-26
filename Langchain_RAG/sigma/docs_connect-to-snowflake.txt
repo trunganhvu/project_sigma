@@ -1,0 +1,123 @@
+Connect to Snowflake
+Suggest Edits
+Sigma supports secure connections to Snowflake.
+📘
+For information about Sigma feature compatibility with Snowflake connections, see Region, warehouse, and feature support.
+This document explains how to connect your organization to a Snowflake warehouse from Sigma.
+📘
+If you do not already have a Sigma Organization created, you can use Snowflake Partner Connect to create an organization and connect your Snowflake database with just a few clicks. You must have the ACCOUNTADMIN role in Snowflake to use Snowflake Partner Connect. To sign up with Snowflake Partner Connect, select Sigma from the Partner Connect list, then click Connect in the Connect to Sigma modal.
+For an end-to-end walkthrough of an OAuth configuration using Snowflake and Okta, see the Open Authorization (OAuth) QuickStart.
+Requirements
+You must be assigned the Admin account type.
+You must be able to provide the credentials for a Snowflake user in a role that has USAGE privileges to the necessary databases and schemas, and SELECT privileges to the necessary tables.
+Sigma queries the Snowflake connection every 24 hours to index the catalogs, schemas, tables, and views. This process is automated, and reads from the Snowflake metadata in the cloud services layer. Under normal usage, this process results in 0 credit consumption; however in cases where there is minimal usage in a 24 hour period, credit consumption may occur. See Understanding overall cost in the Snowflake documentation.
+Create a Snowflake connection in Sigma
+To create a Snowflake connection, perform the following steps in Sigma:
+Add a connection and specify connection details
+Specify your connection credentials
+Configure an authentication method:
+Connect to Snowflake with key pair authentication
+Connect to Snowflake with OAuth
+Connect to Snowflake with basic authentication
+Configure write access
+Configure connection features
+Add a connection and specify connection details
+Click the user icon at the top right of your screen.
+The user icon is usually composed of your initials.
+In the drop-down menu, select Add connection. The Add new connection page appears.
+In the Connection details, specify the following:
+Name Enter a Name for the new connection. Sigma displays this name in the connection list.
+Type Select the Snowflake tile.
+Specify your connection credentials
+In the Connection Credentials section, fill out the required fields:
+[optional] If you access Snowflake using a proxy server, turn on the Use Custom Host toggle, then enter the Snowflake Custom Host name.
+In the Account field, enter the Snowflake account name. For details on how to format your account name, see Using an account name as an identifier in the Snowflake documentation.
+In the Warehouse field, enter your warehouse’s name as listed in Snowflake.
+📘
+To set the warehouse using user attributes, click Set by user attributes in the Warehouse field . See Configure user attributes on a Snowflake connection.
+If you set your Warehouse field using user attributes and you plan to use input tables on this connection, provide a warehouse name in the Service Account Warehouse field that the service account can use in cases of dynamic warehouse switching. See Warehouse Switching in the Dynamic Role Switching with Snowflake QuickStart.
+Click the caret () next to Authentication, choose your authentication method, then fill in the required fields for the method you select:
+Connect to Snowflake with key pair authentication
+Connect to Snowflake with OAuth
+Connect to Snowflake with basic authentication
+🚩
+Snowflake recommends using key pair authentication or OAuth for programmatic service users, and you can enforce that with authentication policies. See Snowflake Strengthens Security with Default Multi-Factor Authentication and Stronger Password Policies in the Snowflake blog.
+Connect to Snowflake with key pair authentication
+To authenticate the connection using a combination of public and private RSA key pairs, select Key Pair as your authentication method.
+This method requires that you have a public and private key already created, and a Snowflake user configured with the public key. See Key-pair authentication and key-pair rotation in the Snowflake documentation. If you have a multi-factor authentication (MFA) policy applied, exclude this user from the MFA policy. For a full walkthrough of all prerequisite steps as well as detailed steps on how to rotate your keys, see the Snowflake Key-pair Auth QuickStart.
+In the User field, enter the Snowflake username that is configured with the public key.
+In the Private Key field, paste the private key text, including the header.
+[optional] If you configured one, enter the Private Key Passphrase.
+[optional] Enter a Snowflake Role to be used on this connection. If no role is provided, the user's default role in Snowflake is used.
+📘
+To set the role using user attributes, click Set by user attributes in the Role field. See Configure user attributes on a Snowflake connection.
+If you set your Role field using user attributes and you plan to use input tables on this connection, provide a Service Account Role that the service account can use in cases of dynamic role switching. If not set, the service account's role will be the default role set for the user in Snowflake. See the Dynamic Role Switching with Snowflake QuickStart.
+Next, see Configure write access and Configure connection features for additional options. Or, if you are finished configuring your connection, click Create at the top right to create your connection.
+Connect to Snowflake with OAuth
+If you have OAuth enabled on your organization and you want to use it on the connection select OAuth as your authentication method. See Configure OAuth with Snowflake for all prerequisite steps.
+Determine whether you need a Service Account. There are three reasons to configure a service account:
+If you enable write access on this connection, a service account is required. Sigma uses the service account to log all edits made to all input tables on this connection.
+If you use Sigma’s public embedding features, a service account is required. Service account credentials are used to run queries on publicly embedded dashboards.
+If you want admins to be able to configure individual workbooks to run using a service account rather than each individual’s OAuth credentials, a service account is required. See Run a workbook with service account credentials.
+If you determine that you need a service account, turn on the Service Account switch, then enter a User and Password for the Snowflake service account.
+📘
+A service account is a Snowflake user created for administrative purposes in Sigma. It is the same as any other Snowflake user. The user must be granted the role you want to use for your connection, and that role must be granted USAGE privilege on the warehouse. If you have a multi-factor authentication (MFA) policy applied, exclude the service account from this policy. Your service account must be added to the OAuth user list like all other OAuth accounts on the connection. See Configure OAuth with Snowflake.
+[optional] Enter a Snowflake Role to be used on this connection. If no role is provided, the user's default role in Snowflake is used.
+Next, see Configure write access and Configure connection features for additional options. Or, if you are finished configuring your connection, click Create at the top right to create your connection.
+Connect to Snowflake with basic authentication
+To connect with a username and password, select Basic Auth as your authentication method.
+🚩
+Sigma Computing recommends transitioning away from using basic authentication when connecting to Snowflake. For improved security, use key pair or OAuth authentication instead.
+If you have a multi-factor authentication (MFA) policy applied, exclude this user from the MFA policy.
+In the User field, enter a Snowflake username.
+In the Password field, enter a Snowflake password.
+[optional] Enter a Snowflake Role to be used on this connection. If no role is provided, the user’s default role in Snowflake is used.
+📘
+To set the role using user attributes, click Set by user attributes in the Role field. See Configure user attributes on a Snowflake connection.
+If you set your Role field using user attributes and you plan to use input tables on this connection, provide a Service Account Role that the service account can use in cases of dynamic role switching. If not set, the service account's role will be the default role set for the user in Snowflake. See the Dynamic Role Switching with Snowflake QuickStart.
+Next, see Configure write access and Configure connection features for additional options. Or, if you are finished configuring your connection, click Create at the top right to create your connection.
+Configure write access
+Write access is necessary for the following features:
+CSV upload
+Materialization
+Input tables
+Warehouse views
+The steps to configure write access differ depending on the authentication method used for the connection. Follow the instructions that match your authentication option:
+Configure write access on a connection with Basic Auth or Key Pair Auth
+Configure write access on a connection with OAuth
+Configure write access on a connection with Basic Auth or Key Pair Auth
+Configuring write access requires setting up a dedicated database and schema in Snowflake and granting the necessary privileges. To enable write access, grant the Snowflake user that you use to configure the Sigma connection a role with the following privileges:
+Object Privilege
+Database USAGE
+Schema USAGE, CREATE TABLE, CREATE VIEW, CREATE STAGE
+Turn on the switch next to Enable write access. Then, configure these fields:
+In the Write database field, enter the name of the database where Sigma should store write-back data.
+In the Write schema field, enter the database schema where Sigma should store write-back data.
+[optional] In the Materialization warehouse field, enter a separate warehouse to run queries that perform materialization. If you don't specify a materialization warehouse, Sigma uses the primary warehouse for this connection.
+[optional] By default, Sigma uses dynamic tables for incremental materialization. If you do not want to use dynamic tables, turn off the Use dynamic tables switch. See About materialization (Beta) for more details.
+Next, see Configure connection features for additional options. Or, if you are finished configuring your connection, click Create at the top right to create your connection.
+Configure write access on a connection with OAuth
+Configuration of write access requires setting up dedicated databases and schemas in Snowflake granting the necessary permissions. See Configure OAuth with write access for all prerequisite steps.
+Enable the toggle next to Enable write access. Then, configure these fields:
+Provide at least one Destination where Snowflake should store write back data from Sigma. Use the format DATABASE.SCHEMA.
+[optional] Enter additional destinations as needed, depending on how you want to partition the data that Sigma writes back to your data warehouse. For example, you might create separate destinations for different teams and set up your team and schema permissions to ensure that each team has access to their designated destinations.
+In the Input table edit log destination field, provide an additional DATABASE.SCHEMA destination specifically to log all edits made to input tables on this connection. This DATABASE.SCHEMA should be used only for this purpose. Only your service account should have access to write to this schema.
+[optional] In the Materialization warehouse field, enter a separate warehouse to run queries that perform materialization. If you don't specify a materialization warehouse, Sigma uses the primary warehouse for this connection.
+[optional] By default, Sigma uses dynamic tables for incremental materialization. If you do not want to use dynamic tables, turn off the Use dynamic tables switch. See About materialization (Beta) for more details.
+Next, see Configure connection features for additional options. Or, if you are finished configuring your connection, click Create at the top right to create your connection.
+Configure connection features
+In the Connection Features section, specify the following:
+In the Connection timeout field, specify the amount of time, in seconds, that Sigma should wait for the query to return results before timing out. The default in 120 seconds. The maximum is 600 seconds (10 minutes).
+[optional] If you do not want Sigma to automatically make column names from the data source more readable, turn off the Use friendly names switch. For example, with Use friendly names enabled, a database column ORDER_NUMBER appears as Order Number.
+[optional] In the Export warehouse field, enter the name of the virtual warehouse created for export queries. For more details, see Configure an export warehouse.
+Finish creating your connection
+After you specify all the parameters of the connection, click Create.
+Click Create at the top right of the screen to create your connection. Sigma displays a connection summary on the screen.
+Click Browse Connection, then click Add permission to grant data access for users in your organization. See Data permissions.
+Use the navigation in the left panel to explore the schemas and tables in your connection.
+RELATED RESOURCES
+Snowflake usage templates
+Troubleshoot your connection
+Set up write access
+Configure OAuth with write access
+Configure user attributes on a Snowflake connection

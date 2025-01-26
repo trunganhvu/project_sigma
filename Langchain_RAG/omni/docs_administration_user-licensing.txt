@@ -1,0 +1,21 @@
+AdministrationUser licenses
+On this page
+User licenses
+A user's license type can be viewed on the analytics dashboard within your environment.
+License types
+Omni user licensing is broken down across three tiers:
+Viewers
+Creators
+Administrators
+Determining license type
+A user's license type is determined as a composite of their maximum connection permissions, as well as if they are an organizational administrator.
+Connection permissions can be elevated beyond the base connection role, at both an individual and group level. The maximum of these permissions will determine their connection permission, and in turn, license type, when viewed across all connections in the environment. Additionally, if a user is an organizational administrator, they will have an Administrator license by default.
+A user's content permissions has no bearing on their license type.
+License type Connection permission
+Viewer Viewer
+Creator Restricted Querier, Querier
+Administrator Connection Admin, Organizational Admin
+Previous
+Query cancellation
+Next
+User groups

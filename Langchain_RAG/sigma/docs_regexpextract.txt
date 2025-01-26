@@ -1,0 +1,28 @@
+RegexpExtract
+Suggest Edits
+The RegexpExtract function returns the substring that matches a regular expression within a string.
+If the regular expression contains a capture group ((...)) and there are one or more matches for that capture group, Sigma returns the first capture group across all matches. Otherwise, Sigma returns the full regular expression.
+Usage
+RegexpExtract(string, substring, [position])
+Function arguments:
+string (required): The string to search
+substring (required): The substring to extract with.
+position (optional): The index of the match to return.
+📘
+When the regular expression contains a slash, quotation or other special character, use a backslash (\) to escape the special character. Regexp can vary based on the database. Check the documentation of the database you use to find the correct syntax.
+Examples
+Example 1:
+RegexpExtract([Address], "[0-9]+")
+Extracts the first match of numeric characters in the string. No position is specified so position defaults to 1. 
+Example 2:
+RegexpExtract([Address], "[0-9]+", 2)
+Extracts the second match of numeric characters in the string. 
+Example 3:
+RegexpExtract([Address], "\\s*([a-zA-Z]+)", 2)
+Extracts the second match of alphabetical characters in the string.
+Example 4:
+RegexpExtract([Date], "(\\d{2})", 2)
+Extracts the second match, day of date, of the 2-digit character group in the date.
+RELATED RESOURCES
+RegexpMatch
+RegexpReplace

@@ -1,0 +1,118 @@
+Visualization & DashboardsDashboards
+On this page
+Dashboards
+Create a Dashboard
+Workbooks can be presented as dashboards, displaying many queries at once with interactive filters. To build a dashboard, select the + Dashboard button in the upper right corner of the workbook page. Each workbook query will be tiled onto a unified piece of content:
+Edit a Dashboard
+Toggle view mode to edit mode in the top right corner of the dashboard or by going to the Edit menu tab and choosing Edit Dashboard
+WARNING
+Changes are saved automatically while in edit mode.
+Tiles can be rearranged by dragging them into the desired placement
+Rename a dashboard from the dashboard's file menu by selecting Rename.
+Edit a dashboard tile
+The vertical three-dot menu in the top right corner of a tile when you hover over the tile is how you can edit the content or the appearance of a tile.
+Edit tile content
+Choose the View in workbook option
+Once in the workbook view of the dashboard, edit the tile by modifying the query or the visualization options.
+To save, navigate to the workbook file menu and click Save or on the keyboard, click control (or command) + S.
+Edit tile appearance
+Choose Hide Chart to hide the tile from the dashboard. Perhaps the underlying data is important to the workbook, but you don't want to have end users be able to interact with the data on a dashboard level. Note: Other queries on the dashboard can still access hidden tiles (via XLOOKUP), if you need to filter a hidden tile you can map the filter before hiding the tile and it will update with the filter selection.
+Choose Remove Background to make the background of a tile be transparent.
+Markdown (Text) Tiles
+To add text to the dashboard, go into edit mode and select Add Text. Text tiles support markdown so you can add styling, images, links, and more. See a markdown syntax reference here.
+See more examples of how the Text tiles can make dashboards dynamic with mustache syntax and markdown.
+Excluding Tiles (Workbook Tabs)
+You may have queries in the workbook that aren't intended for dashboard consumption (intermediate query-views or debug queries, for example). To exclude queries from the dashboard, simple uncheck the corresponding workbook tab from edit mode on the dashboard:
+Filters
+Add Filters
+Add a filter to the dashboard, go into edit mode and select Add Filter. Choose the field you want to filter on. If you want to set a default value for the filter, you need to configure the values in the left pane during edit mode (note that filters done in the page in edit mode will not change the default filter experience). This value will be pre-loaded anytime the Dashboard is opened. Filters can be disconnected from specific dashboard tiles by clicking the blue filter button in the top right corner of a tile.
+If a tile is hidden, but still needs to have the filter applied, first un-hide the tile, then add the filter, and then re-hide the tile.
+TIP
+Filters will not automatically apply to custom-written SQL queries. Learn more about dynamic filtering in SQL.
+Filter Controls
+Omni has two filter control types:
+Advanced: the default filters which allows users to select multiple options
+Single select: a filter control that only allows the user to put in one option into the filter.
+When creating or editing a filter the options are available in the filter panel.
+Hide Filters
+Users can hide filters on a dashboard. The value will still be applied in the background to whichever tiles the filter is applied to. The value of the filter can also be manipulated via the dashboard's URL, but ultimately the control is hidden from the user.
+TIP
+Hiding dashboard filters may seem like a quick fix for restricting user access to sensitive data, but it's not a foolproof security measure. Instead, we strongly advise implementing access filters as a more robust solution. These filters provide a structured approach to control data access, preventing users from altering filters to access unauthorized information.
+Map Filters to Different Fields Per Dashboard Tile
+Filters can optionally be mapped to different fields on each tile. A common example is when you have a dashboard date filter, but want it to update a different date field on each tile (e.g. the users tile uses user_created_at and the orders tile uses orders_created_at). To configure, select the 'customize the field for update each connected tile' option in the edit panel. Then on the top right of each tile, select the field you want to map the filter to.
+Filtering by a User Attribute
+Filter values can be set to a user attribute so that the default filter value changes based on the user accessing the content. This is useful for when you want to create a single dashboard and have it dynamically filter the information to the end user. One example is a sales dashboard with a filter set to an attribute on Account Executives name, so when that user views the dashboard it is automatically narrowed to their own deals.
+Mobile Layout
+Omni auto creates a stacked-layout when the screen size shrinks horizontally (often most obvious on mobile devices). This layout can be edited/re-arranged independently from the standard tiled layout, and will not impact the standard unstacked layout. To do so, shrink the window of the dashboard on the web until you see the stacked layout, and make layout edits in the order you'd like.
+Controls / Parameters / Timeframe Selectors / Dynamic Fields
+To add a control to the dashboard, go into edit mode and select Add Control. Controls allow you to swap out one field for another within a tile on a dashboard. To use a control, simply add it to the dashboard and select which tiles you want it to apply to by selecting the top right corner to enable or disable a control for that tile. At least one of the underlying fields being controlled must be a part of that tile to have a swapping impact (e.g. adding a metric swapper between order volume and total sales to a tile that is showing user count will have no impact). There are four main types of controls:
+Time
+Field
+Parent
+Period over Period
+Time Controls
+These controls will allow you to swap the time frame within the underlying query. This provides an easy UI based mechanism to swap from daily to weekly to monthly and back again, all without any underlying work needing to be done to facilitate it from an administrative perspective. From the control edit menu, you can also choose what time frame parts are offered within the filter.
+Field Controls
+These controls will allow you to swap dimensions or measures within the underlying query. This will let you swap from things like country to state to city. From the control edit menu, you can select what dimensions are available within the swapper. Formatting and other metadata for a given dimension will carry over when selected by the control as well.
+Parent Controls
+These controls will allow you to coordinate the toggling of multiple controls at once from a single point and click UI. A common example here is for a dashboard that has a timeseries with a created_at date, another timeseries with a recieved_at date, and lastly a timeseries with a returned_at date.
+Currently, timeframe parameter swappers are limited to just one timestamp field per control. So in this case, we would need three separate time controls to be able to adjust the timeframe in these visualizations. However, a parent control lets us have a single control that can update all of these simultaneously, making it much easier for an end user to interact with. We can then hide the child controls for each individual time field to reduce confusion.
+Period over Period Controls
+These controls allow users to compare two time periods. From the control menu, choose a time dimension that you want to compare and set the default period you'd like to compare. The control will appear on the dashboard wth the option to also select a default timeframe you'd like to 'Compare to".
+Dashboard Settings
+There are two Dashboard settings available under the Edit menu: Auto-refresh and Faceted filters.
+Dashboard Auto-refresh
+Auto-refresh functionality proves invaluable for dynamic data environments, such as medical or financial sectors, where real-time updates are essential. Conversely, for more static data, users can extend the auto-refresh timeframe, opting to rely on cached data rather than reloading from the database as frequently, thus optimizing resource utilization.
+Faceted Filters
+When toggled on, this dashboard setting automatically links filters so that one filter will limit the results of another. For instance a State filter will reduce the city options to only cities that are in that State. Faceted filters will also work in combination with access filters.
+The feature is turned off by default, in order to enable it, go to Edit and then Dashboard Settings and turn on the toggle.
+Theming
+Omni Admins can create dashboard themes to customize the look and feel of dashboards. Once a theme is created, it can be reused on any dashboard. For internal dashboards it is available under File > Theming and for embedded dashboards it is available as a url parameter.
+Create a new theme
+There are four main areas that can be controlled by themes: background, titles, borders, and elements. Changes are automatically applied when a user interacts with the theme builder, but are only saved by pressing the Save button in the bottom right-hand corner of the panel.
+What is possible to theme today?
+Omni leverages the power of CSS in themes. For example themable items that use CSS <color> value syntax support and valid css color value:
+Named colors salmon
+Hex codes #ff4794
+Color functions rgb(255 71 148) or hsl(334.89deg 100% 63.92%)
+Background colors can also accept css <gradient> values:
+Gradients linear-gradient (#ff4794, #faaa6f)
+This table highlights the elements currently available (and some sneak peaks for what is going to be available soon). For a visual example, you can toggle between light and dark mode to see how the different elements are impacted by themes and how that lines up with the CSS.
+Category Element Sub-element Default light Default Dark Accepts
+Page Dashboard Background #fafafa #262b36 CSS <color> value
+Padding (coming soon) 16px 16px CSS <length> value [Shorthand or individual side]
+Tiles Background #ffffff #161a22 CSS <color> value
+Titles Color #373d48 #ccd0d7 CSS <color> value
+Font Size 20px 20px CSS <length> value
+Font Weight 500 500 CSS <number> value
+Font Family system system URL to remote woff2 file
+Text Color #373d48 #ccd0d7 CSS <color> value
+Secondary Color #b7bdc8 #b7bdc8 CSS <color> value
+Body Font Family system system URL to remote woff2 file
+Code Font Family JetBrains Mono JetBrains Mono URL to remote woff2 file
+Borders Color #eaecf1 #2d343e CSS <color> value
+Radius 5px 5px CSS <length> value [Shorthand or individual side]
+Style Solid Solid CSS <line-style> value
+Width 1px 1px CSS <length> value
+Elements Key Color #ff4794 #f787ad CSS <color> value
+Text on Key Color #ffffff #080808 CSS <color> value
+Control Background #ffffff #161a22 CSS <color> value
+Control Border Color (coming soon) #eaecf1 #2d343e CSS <color> value
+Control Text Color (coming soon) #070808 #ebedef CSS <color> value
+Control Popover Background #ffffff #22252a CSS <color> value
+The table also matches the order of the Theming Panel. It will automatically refresh as you make changes, but don't forget to press Save to make it available to apply.
+Once a theme is saved, it will appear in the Theming panel and the Admin can use 1. the three dot menu 2. apply the theme to individual dashboards.
+There is not a global theme setting for internal dashboards. It is done on a one off basis for now.
+Import a theme
+If you’ve already created a theme for your embedded dashboards you can import the theme by pasting the JSON into the Import **modal.
+Edit a theme
+To make changes to the theme, use the three dot menu to select Edit. Any changes made to the theme will impact other internal dashboards that are using the theme.
+Appearance settings
+Themes are not designed to work with the Appearance settings for individuals. For instance if an individual user has selected dark mode, for their appearance settings, some themes might look a little off.
+Downloading Dashboards
+If given the ability, users can download dashboards by going to File > Download. Currently the supported formats are: CSV, XLSX, PNG, and PDF.
+Dashboard themes will be applied when downloaded. It is also possible to schedule a recurring download or set an alert on dashboards.
+Previous
+Custom visualizations
+Next
+Dynamic variables

@@ -1,0 +1,37 @@
+Connect to DataDatabase setupOverview
+Setting up database connections
+The steps to connect a database to Omni will differ depending on the type of database. Generally, you'll need to:
+Create an Omni database user
+Create the connection in Omni
+Define user access
+Configure schema refresh and environment settings
+Requirements
+Organization Admin permissions are required to add database connections.
+Setup guides
+FIREWALLS & SSH TUNNELS
+If your database is in a private network, you may need to whitelist Omni's IP addresses or work with support to set up an SSH tunnel.
+Refer to the guide for your database type to get up and running.
+📄️ Overview
+The steps to connect a database to Omni will differ depending on the type of database. Generally, you'll need to:
+📄️ BigQuery
+Connect to BigQuery.
+📄️ ClickHouse
+Connecting to ClickHouse
+📄️ Databricks
+Connecting to Databricks
+📄️ Microsoft SQL Server
+Connect to your Microsoft SQL Server.
+📄️ MotherDuck
+Connect to MotherDuck.
+📄️ MySQL
+Connecting to MySQL
+📄️ Postgres
+Connecting to Postgres
+📄️ Redshift
+Connecting to Redshift
+📄️ Snowflake
+Connecting to Snowflake
+Previous
+Overview
+Next
+BigQuery

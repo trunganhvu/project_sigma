@@ -1,0 +1,15 @@
+LTrim
+Suggest Edits
+Removes leading spaces from the beginning of a given string.
+Usage
+LTrim(text)
+text (required)- A string or column where each row contains a string.
+Example
+LTrim(" John Doe ")
+Returns  “John Doe "
+Spaces on the right side are not removed
+[LTrim of Names] = LTrim([Names])
+Returns:
+RELATED RESOURCES
+RTrim
+Trim

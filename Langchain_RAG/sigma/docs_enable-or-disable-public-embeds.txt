@@ -1,0 +1,16 @@
+Enable or disable public embeds
+Suggest Edits
+Public embedding allows you to display workbooks and data elements in other internal- or external-facing applications. Public embeds are enabled for your organization by default, but you can disable them in the Administration portal.
+This document explains how to enable or disable public embeds for your organization. For information about using public embeds, see Create a public embed.
+📘
+The organization setting for public embeds doesn't affect secure embed capabilities. For more information, see Secure embedding.
+User requirements
+To enable or disable public embedding, you must be assigned the Admin account type.
+Enable or disable public embeds
+Go to Administration > Account > General Settings.
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account, then open the General Settings tab.
+In the Features section, locate the Public embeds setting. Click the toggle to the on position to enable public embedding or to the off position to disable it.
+📘
+When you disable public embeds for your organization, users cannot generate new public embed URLs, and all existing public embed URLs are broken. Secure embeds, however, aren't affected by this setting.

@@ -1,0 +1,23 @@
+API docsModels
+On this page
+Models APIs
+The model APIs allow you to interact with models in Omni.
+Refresh a schema
+Refreshes the schema of the specified model. This will cause the model to reflect the latest changes to schemas, views, and fields from the data source. Note: This will remove structures that are no longer present in the source, but not anything created by users.
+POST /v0/model/:id/refresh
+curl POST 'https://myorg.omniapp.co/api/v0/model/bc1f9c9f-208d-48a2-9ae3-ff80f2c79fed/refresh' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer TOKEN'
+Parameters
+Name Type Required Description
+id URL parameter ✓ The ID of the model to be refreshed.
+Returns
+Returns an object with a status of running to indicate the refresh has started.
+{
+    "modelId": "bc1f9c9f-208d-48a2-9ae3-ff80f2c79fed",
+    "status": "running"
+}
+Previous
+Overview
+Next
+Queries

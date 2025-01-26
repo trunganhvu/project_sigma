@@ -1,0 +1,48 @@
+Sequence
+Suggest Edits
+The Sequence function returns an arithmetic sequence as an array of integers based on a specified range and increment.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+Sequence(start, end, [step])
+Function arguments:
+start
+A number or column of numbers that defines the start of the sequence range.
+Can be a positive or negative value.
+If a decimal value, Sigma rounds it to the nearest integer before generating the function output.
+end
+A number or column of numbers that defines the end of the sequence range.
+Can be a positive or negative value.
+If a decimal value, Sigma rounds it to the nearest integer before generating the function output.
+step
+[optional] An increment (fixed constant) added to or subtracted from each integer in the sequence to determine the next element in the array.
+Can be a positive or negative value.
+If a decimal value, Sigma rounds it to the nearest integer before generating the function output.
+If 0, the function returns an empty array.
+If undefined, Sigma applies a default increment of 1.
+Notes
+If any argument is null, the function returns null.
+The sequence range can be increasing (starts with a lower value and ends with a higher value) or decreasing (starts with a higher value and ends with a lower value).
+The sequence range includes the start and end integers.
+The first element in the array is always the start integer.
+The last element in the array is the end integer only when it’s part of the sequence. Otherwise, the array ends with the last integer in the sequence that falls within the range. This can be the largest sequential value in an increasing range or the smallest sequential value in a decreasing range.
+The following scenarios return an empty array because they don't generate a sequence:
+The step argument is 0.
+The start and end arguments generate an increasing range, but the step argument is a negative integer.
+The start and end arguments generate a decreasing range, but the step argument is a positive integer.
+Examples
+Example 1
+Sequence(1, 7, 2)
+Returns [1,3,5,7].
+The array begins with 1 (the start integer), and each subsequent element increases by 2 (the step increment). Since 7 (the end integer) is part of the sequence, the last element in the array is 7.
+Example 2
+Sequence(-3, 10, 3)
+Returns [-3,0,3,6,9].
+The array begins with -3 (the start integer), and each subsequent element increases by 3 (the step increment). Since 10 (the end integer) isn’t part of the sequence, the last element in the array is 9, the largest sequential value within the range.
+Example 3
+Sequence(0,4)
+Returns [0, 1, 2, 3, 4].
+Since the step argument is undefined, Sigma applies a default increment of 1.
+Example 4
+Sequence([Start], [End], [Step])
+Returns an array based on values in the Start, End, and Step columns.

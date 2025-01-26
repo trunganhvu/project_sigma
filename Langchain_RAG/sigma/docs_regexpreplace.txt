@@ -1,0 +1,30 @@
+RegexpReplace
+Suggest Edits
+The RegexpReplace function searches a string for a pattern and replaces all matches with the replacement string. If no matches are found, the original string is returned.
+Syntax
+RegexpReplace(string, pattern, replacement)
+Function arguments:
+string (required): The string to search.
+pattern (required): The pattern to extract with.
+replacement (required): String to replace the sought pattern.
+📘
+When the regular expression you want to use contains a slash, quotation or other special character, you will need to use a backslash (\) to escape the special character. Regexp can vary based on the databases. Check the documentation of your database to find the correct syntax.
+Examples
+Example 1:
+RegexpReplace([Product Name], "(\\d+) (\\d+mm)", "\\1-\\2")
+Replaces every space between digits and digits preceding "mm" with a dash to indicate the range of camera lenses.
+Example 2:
+RegexpReplace([Phone Number], "(\\d{3})(\\d{3})(\\d{4})", "(\\1) \\2-\\3")
+Transforms a phone number to (xxx) xxx-xxxx formatting.
+Example 3:
+RegexpReplace([City], "^(.*?),", "San Francisco,")
+Replaces every character before the comma with the city in proper form.
+Example 4:
+RegexpReplace([Team], "[^a-zA-Z0-9\\s]", "")
+Removes all punctuation marks in a string.
+Example 5:
+RegexpReplace([Text], "\\/", "&")
+Replaces the slash with "&".
+RELATED RESOURCES
+RegexpMatch
+RegexpExtract

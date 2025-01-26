@@ -1,0 +1,87 @@
+Configure OAuth with Snowflake
+Suggest Edits
+This document guides you through steps to create a Sigma OAuth application to first enable authentication via your Identity Provider (IdP), then connect to that OAuth application from Sigma.
+This documentation applies to organizations using Snowflake for their CDW. If you are using Databricks, see Configure OAuth with Databricks.
+For an end-to-end walkthrough of an OAuth configuration using Snowflake and Okta, see the Open Authorization (OAuth) QuickStart.
+Requirements
+You must be assigned the Admin account type to manage authentication for your Sigma organization.
+A Snowflake user with the ACCOUNTADMIN role. See Roles in the Snowflake documentation.
+Okta, Azure AD, or Ping as your Identity Provider (IdP).
+Configure OAuth for Snowflake and Sigma
+Snowflake with OAuth requires configuration between an IdP, Snowflake, and Sigma. This feature uses Snowflake’s External OAuth capabilities. See External OAuth overview in the Snowflake documentation.
+High-level overview
+Create an app for Sigma in your IdP
+Add OAuth users to your app
+Create an OAuth authorization server
+Add an access policy for the authorization server
+Create a security integration in Snowflake
+Configure OAuth in Sigma
+The exact implementation of steps 1-3 varies depending on your IdP. Visit your IdP’s documentation for detailed instructions.
+Step 1: Create an app for Sigma in your IdP
+First, create a Web OpenID Connect app within your IdP for Sigma. Within the app, do the following:
+Enable the authorization code grant type.
+Enable the refresh token grant type.
+Set the login redirect URL that matches your deployment:
+Deployment Login redirect URL
+GCP https://api.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-US (West) https://aws-api.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-US (East) https://api.us-a.aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-CA https://api.ca.aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-EU https://api.eu.aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-UK https://api.uk.aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-AU https://api.au.aws.sigmacomputing.com/api/v2/oauth/1/authcode
+Azure-US https://api.us.azure.sigmacomputing.com/api/v2/oauth/1/authcode
+Azure-EU https://api.eu.azure.sigmacomputing.com/api/v2/oauth/1/authcode
+Creating your Sigma OAuth app generates a Client ID and Client Secret. Both fields are used for configuration in Sigma (Step 6).
+Step 2: Add OAuth users to your app
+After creating your OAuth app, add a list of your OAuth users. These users are mapped to both Sigma and Snowflake. Access to Snowflake roles is defined on the authorization server (Step 3).
+All users must be granted a role with the USAGE privilege granted on the warehouse that you want to use to run queries from Sigma.
+Step 3: Create an authorization server
+An authorization server is used to connect your users to Snowflake roles. Create an authorization server in your IdP.
+Configuring the authorization server requires the following values:
+Field
+Value
+Audience
+https://<your-snowflake-account>.snowflakecomputing.com
+Scopes
+session:role-any - requests that the Snowflake access tokens received by Sigma have permission to assume any Snowflake role the user has been granted
+offline_access - requests a refresh token that can be used to get new access tokens "offline" (without asking a human user to re-authenticate with the IdP)
+openid - requests an OpenID token that can be used to authenticate the user to Sigma
+email - requests that the OpenID token include the user's email
+profile - requests that the OpenID token include other information from the user's profile (including the user's full name)
+Claims
+snowflake_username = <username>
+Claims allow you to connect your OAuth users to user roles in your Snowflake warehouse. Claim definitions are IdP dependent.
+The authorization server provides a metadata URI. The metadata URI is needed for OAuth configuration within Sigma (step 6). The server also provides an issuer url and jws keys url, both of which are needed for the Snowflake security integration (step 5).
+Okta requires Okta API Access Management to be enabled in your Okta instance to create an authorization server.
+Step 4: Add an access policy for the authorization server
+Create and/or assign an access policy to your new app (created in step 1). Access policies define rules for access and token lifetimes on an individual app.
+Within the access policy, define access and refresh token lifetimes as desired for all grant types, users, and scopes.
+Step 5: Create a security integration in Snowflake
+Creating a security integration allows Snowflake to trust your IdP. See the CREATE SECURITY INTEGRATION command reference in the Snowflake documentation. When creating the security integration, you need to provide the issuer url and jws keys url (created in step 3).
+The following is an example of the SQL statement you run in Snowflake if Okta is your IdP, with placeholder values in angle brackets. The values vary depending on your IdP.
+SQL
+create security integration <name>
+   type = external_oauth
+   enabled = true
+   external_oauth_type = okta
+   external_oauth_issuer = 'https://<COMPANY>.okta.com/oauth2/<ID>'
+   external_oauth_jws_keys_url = 'https://<COMPANY>.okta.com/oauth2/<ID>/v1/keys'
+   external_oauth_token_user_mapping_claim = 'snowflake_username'
+   external_oauth_snowflake_user_mapping_attribute = 'login_name'
+   external_oauth_any_role_mode = 'ENABLE';
+Step 6: Configure OAuth in Sigma
+In Sigma, configure your organization to use OAuth as the authentication method. You will need the Client ID and Client Secret (created in step 1) and the Metadata URI from your authorization server (created in step 3).
+Go to Administration > Authentication.
+In the Authentication Method and Options section, locate the Authentication Method setting and click Edit.
+In the Authentication Method & Options page, configure OAuth authentication:
+In the Authentication Method dropdown, select the OAuth or OAuth or password option.
+To enable guest users to access permitted content, turn on the Allow Guest Access switch. Guest users must be Snowflake users and be added as OAuth users in your IdP in order to access Sigma.
+In the Metadata URI field, enter the OAuth metadata URI from your authorization server, (created in step 3).
+In the Client ID field, enter the client ID from your OAuth application, (created in step 1).
+In the Client Secret field, enter the client secret from your OAuth application, (created in step 1). After you enter and save this value, Sigma does not display it.
+Click Save to apply the changes.
+Test your OAuth configuration by logging out and logging back into Sigma. Your organization’s login page should now display a "Log in with SSO" prompt.
+Now that you have OAuth enabled on your Sigma account, you can configure your Snowflake connections to use OAuth. See Connect to Snowflake.
+RELATED RESOURCES
+Configure OAuth with write access

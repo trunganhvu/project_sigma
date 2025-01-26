@@ -1,0 +1,9 @@
+AdministrationQuery cancellation
+Query cancellation
+At times, administrators may need to remove long running or hanging queries.
+Navigate to Settings > Jobs to view a list of all active queries in Omni. Queries can be stopped by clicking Cancel.
+By default, admins will see all users' queries, while members will only see their own queries.
+Previous
+Audit logs
+Next
+User licenses

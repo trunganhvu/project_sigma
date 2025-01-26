@@ -1,0 +1,27 @@
+Between
+Suggest Edits
+The Between function checks whether a value lies within a given range. If the value is within the specified lower and upper bound, the function returns True, otherwise it returns False.  
+Syntax
+Between(value, lower bound, upper bound)
+Function arguments:
+value (required)  The input value or column containing the values to check.
+lower bound (required) The lower bound of the range to check.
+upper bound (required) The upper bound of the range to check.
+📘
+The Between function is inclusive, so it includes the beginning and end values of the range.
+Example
+Between([Invoice Date], MakeDate(2015, 1, 1), MakeDate(2020, 1, 1))
+Returns True if a date value is between January 1, 2015 and January 1, 2020. 
+📘
+If Invoice Date is a timestamp, the Between function considers the range between January 1st, 2015 00:00:00 to January 1st, 2020 00:00:00. Any timestamp after 12 am is NOT considered.
+Returns True if an event occurred between 4AM and 6AM on July 25th, 2024.
+Between([Sale Date], DateAdd("day", -7, Now()), Now())
+Returns True if a sale happened in the last 7 days.
+Between([Date], [date-range-param].start, [date-range-param].end)
+Returns True if a date value is within the date range selected in the Date Range parameter (parameter returns start and end date as a JSON object).
+Between([Order Count], [number-range-param].min, [number-range-param].max)
+Returns True if a number is within the number range specified in the Number Range parameter. 
+(Between(Day([Week]), 7, 14) and Month([Week]) = 3) or (Between(Day([Week]), 1, 7) and Month([Week]) = 11)
+Returns True if a date value belongs to the week where Day of March is between 7 and 14 OR if a date value belongs to the week where Day of November is between 1 and 7.
+📘
+In Sigma, weeks begin on Sunday. See Sigma's Weekday function for more about day of the week.

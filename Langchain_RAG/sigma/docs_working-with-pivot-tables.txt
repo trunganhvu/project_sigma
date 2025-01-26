@@ -1,0 +1,128 @@
+Working with pivot tables
+Suggest Edits
+With Sigma, you can create a pivot table to group and summarize your data in a particular way. Use a pivot table to present your data in two dimensions, automatically summarize your data based on groups, and view your data in various hierarchies.
+You can group columns in a table to approximate some functionality in pivot tables, such as aggregating data for specific groups. See Create and manage tables.
+Requirements
+To create or edit a data element, you must have Can Edit access to the individual workbook.
+Some exploratory actions are also supported with Can Explore access.
+For more details, see Folder and Document Permissions.
+Create a pivot table
+You can create a pivot table from an existing data element, or by selecting Add element. For more details, see Create a data element.
+A pivot table does not display data until you define the table columns to use as pivot rows and/or pivot columns. Configure the following properties in the Element properties tab:
+Pivot rows: Select one or more columns from your table to appear as rows in the pivot table. For example, to summarize total cost for product type, add the product type column as a Pivot row.
+Pivot columns: Optional if you define one or more pivot rows. Select one or more columns to split the values in each row. For example, to summarize the total cost for each product type in each store region, add the store region column as a pivot column.
+Values: Select one or more columns to display the values for each pivot row and column. Columns added to Values are aggregated by default and the type of aggregation used depends on the data type of the original column. For example, add the cost column as a value, and leave the default aggregation of Sum, or adjust it by rounding. See Change the aggregation of values.
+Pivot table formatting and customization options
+You can customize the formatting and presentation of a pivot table in many ways. To show or hide totals in a pivot table, see Pivot table totals and subtotals.
+Before you start: This task requires editing elements. You can edit an element from either Explore or Edit mode. See Workbook modes.
+Select Element format in the side navigation.
+Click a format category to view and edit its settings.
+The following format categories are available for pivot tables:
+Element Style: See Customize element background and styles (Beta).
+Title: See Customize element title.
+Table style: See Format and customize a table.
+Totals: See Format pivot table totals.
+Format: See Specify empty cell display value and Repeat row labels.
+You can also format pivot table columns. See Format pivot table columns.
+Empty cell display value
+If you have empty values in a pivot table, you can specify a value to fill the empty cells.
+Select a pivot table element while in Edit or Explore mode.
+Select Element format in the side navigation.
+Click Format.
+For Empty cell display value, enter a value.
+Selected option Example
+Default
+Empty cell display value
+Repeat row labels
+If you have multiple pivot rows defined, and you choose to display the pivot row groupings as separate columns, you can repeat the row labels:
+Select a pivot table element while in Edit or Explore mode.
+Select Element format in the side navigation.
+Click Format.
+For Repeat row labels, select the checkbox.
+Selected option Example
+Default
+Repeat row labels
+Format pivot table columns
+The following column formatting options are available:
+Alignment
+Font color
+Background color
+Conditional formatting
+Apply basic visual column formatting
+To change the alignment, font color, or background color of values in a column:
+Select the column or cell that you want to format.
+To set the background color, select Fill color in the formula bar.
+To set the font color, select Text color in the formula bar.
+To set the alignment of the data, select Alignment in the formula bar.
+Apply conditional formatting
+You can apply conditional formatting to the columns, rows, and values in a pivot table.
+📘
+Conditional formatting takes precedence over toolbar column formatting options.
+Before you start: This task requires editing elements. You can edit an element from either Explore or Edit mode. See Workbook modes.
+Select the element.
+Select Element format in the side navigation.
+Click Conditional formatting.
+Click + Add rule.
+Customize the rule:
+Choose a column to apply the formatting to
+Choose whether to use a single color, color scale, or add data bars to cells
+Select checkboxes to apply the formatting to values, subtotals, or grand totals.
+Change data presentation in a pivot table
+While most complex data transformations for a pivot table should occur in the flattened source table, you can manipulate the presentation of data in a pivot table in several ways:
+Change the aggregation of values
+Add a calculated column to a pivot table
+Swap pivot columns and rows
+Display multiple pivot rows as separate columns
+Sort columns
+📘
+These tasks requires editing elements. You can edit an element from either Explore or Edit mode. See Workbook modes.
+Change the aggregation of values
+When you add a data column to a pivot table’s Values field, the values are automatically aggregated according to the data type. Numeric columns are aggregated by Sum, while text and date columns are aggregated by Count.
+To change a column's aggregation:
+In the editor panel, hover over the column, and click its caret ().
+The column menu opens.
+From the Set aggregate submenu, select a new aggregate.
+Add a calculated column to a pivot table
+Add a calculated column to a pivot table to perform a calculation that repeats across the pivot, such as a percentage of total or a period-over-period analysis.
+Select the pivot table element.
+In the Values section, select + > Add new column.
+A new column titled Calc appears and the focus changes to the formula bar.
+Enter a formula for the calculated column, then press Enter on your keyboard or select the checkmark to save.
+For guidance working with pivot table totals in calculated columns, see Pivot table totals and subtotals.
+Swap pivot columns and rows
+You can change the layout of your pivot table and swap rows with columns:
+Select the pivot table element.
+In the editor panel, next to the Pivot rows header, click Swap rows with columns.
+Pivot table rows are swapped with columns.
+Display multiple pivot rows as separate columns
+When you have multiple pivot rows, you can choose to display the data combined in one column, or as separate columns.
+After adding a second data column as a pivot row, select Display as separate columns. To change the display back, select Display as a single column:
+Selected option Example
+Display as a single column
+Display as separate columns
+Collapse grouped rows and columns
+If your pivot table has at least two data columns added as Pivot rows or Pivot columns, you can expand and collapse the rows and columns. To do so, click + or - next to the value of a pivot table row, column, or cell header.
+Define values hierarchy in a pivot table
+If you have multiple values in your pivot table, you can define the hierarchy and groupings of data columns, values, and rows to reflect the data summaries that you want to display.
+To structure the hierarchy of values in your pivot table:
+Select the pivot table element.
+Add at least two columns as Values.
+A box labeled Values appears under Pivot columns:
+To change the default hierarchy, drag and drop the Values box to another position under Pivot columns or to Pivot rows.
+The data presentation changes based on the location of the values:
+Values location Example
+Default, below pivot columns.
+Above pivot columns.
+Below pivot rows.
+Above pivot rows.
+Maximize a pivot table to view the flattened table
+When viewing, exploring, or editing a workbook, all data elements are minimized by default to display multiple elements in the canvas. You can maximize any data element to focus on its details and explore the underlying data.
+Select Maximize element, or press the space bar on your keyboard with an element selected, to view the underlying data.
+When you maximize a pivot table, it expands to the full width of the workbook page and displays the underlying flattened data table. You can use this view to explore the grouping levels of the pivot table. Because the element and underlying data are inherently linked, changes applied to one are automatically reflected in the other.
+📘
+Data elements can be maximized in any workbook mode (View, Explore, or Edit), but changes can be made in Explore and Edit modes only.
+RELATED RESOURCES
+Workbooks overview
+Intro to data elements
+Create and manage tables
+Data Element Filters

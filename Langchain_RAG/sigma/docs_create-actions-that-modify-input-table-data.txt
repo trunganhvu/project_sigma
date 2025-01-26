@@ -1,0 +1,35 @@
+Create actions that modify input table data
+Suggest Edits
+Workbooks support actions that modify data in input tables.
+This document explains how to configure actions to insert rows. For more information about actions in Sigma, see Intro to actions.
+User requirements
+📘
+The following requirements apply to users who configure actions. Users who access and interact with a workbook can typically trigger all existing actions within it. Any restrictions are noted in this document.
+The ability to configure actions requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
+1
+If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
+Add a row
+Create an action that adds a new row in the target input table.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Insert row.
+Into Select the existing input table to update with the added row.
+With values
+For each column of your input table, select an option to determine the type of value Sigma passes to the inserted row, then define the value. The available options depend on the elements in the workbook.
+Static values: Passes a specified (fixed) value.
+Column: Passes the value of the specified table column.
+Control: Passes the value of the specified control element.
+Formula: Passes a value based on the defined formula.
+To leave a column blank, select Static values and leave the value unset.
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
+Confirm that the data entry permissions on the input table are set to accept edits in Published mode. See Set data entry permission for more information.

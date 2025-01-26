@@ -1,0 +1,16 @@
+Intro to Element Types
+Suggest Edits
+Workbooks typically contain a collection of elements on a single page and/or distributed across multiple pages.
+There are three element types: data elements, UI elements, and control elements. Each has a unique function, and they collectively allow you to display, interact with, and provide additional context to your data.
+Workbook editors define elements and can individually configure them for viewer interaction.
+Data Elements
+Data elements include tables, pivot tables, and visualizations built directly from a data source. A workbook can contain a variety of data elements derived from multiple data sources. For more information see Intro to Data Elements.
+UI Elements
+UI elements include buttons, dividers, images, spacers, embeds, and text used to add context and/or workbook styling. For more information see Intro to UI Elements.
+Control Elements
+Control elements include data filters and parameters used to manipulate data elements in the workbook. For more information see Intro to Control Elements.
+RELATED RESOURCES
+Intro to data elements
+Intro to visualizations
+Intro to UI Elements
+Intro to Control Elements

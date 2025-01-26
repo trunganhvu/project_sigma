@@ -1,0 +1,50 @@
+Synced controls
+Suggest Edits
+Synced controls are workbook control elements that have identical, synchronized copies. Both filter controls and parameters support synced copies. Here we explain how synced controls work, how to create and identify synced controls, and how to unsync controls.
+Synced copies can help maintain context when a control affects elements across several workbook pages. For example, you may want to track your organization's high-level sales data on one page and drill into region-specific data on another. If the same filter control targets elements on both pages, we recommend that you display the control on both pages; this enables you and your workbook's viewers to edit the control value from either page, instead of switching back and forth. See Example #2: Maintain context across pages.
+You can also use synced controls to encourage pre-selection of control values before the data loads on other pages. Place copies of the controls on the landing page that the viewer sees before the data display pages. Queries run against your CDW after a page opens, so preselecting filter values  increases performance and reduce CDW compute costs. See Example #3: Preselect control values.
+Requirements
+You must have Can Edit access to the individual workbook, and be in Edit mode.
+Create synced copies directly from existing controls. You must have a working control before making a copy.
+It is not possible to sync two pre-existing controls.
+Synced copies vs. duplicates
+Synced copies are not the same as duplicates.
+Duplicates
+Independently operating controls.
+Edits to a control's settings or values do not transfer to duplicate copies. The first of the duplicate filter controls that gets edited has precedence, and behaves as the primary control. The other copies of the control only display values that are not filtered out by the first control.
+Duplicate controls have different control IDs.
+Synced copies
+Fully identical and synchronized controls.
+A synced copy is automatically synchronized with all other synced copies. Edits to one of the settings or values updates the state of all synced copies.
+There is no precedence among synced copies. Deleting or unsyncing any of the copies or the original control does not affect other copies.
+Synced controls share the same control ID.
+Create a synced copy of a control
+Synced controls are created directly from existing controls. You must have a control before you can create a synced copy of it. When a synced copy is made, the copy is automatically synced to all other synced copies.
+It is not possible to sync two pre-existing controls. Duplicating a control or a page with controls does not result in synced copies.
+To create a synced control, change to Edit mode, and then complete the following steps:
+Hover over the element and open its more () menu.
+Click Create a synced copy.
+
+A synced copy appears on the page. 
+To move the control to a new page, open its More () menu and select a page from the Move to menu.
+Identify synced controls
+To identify a control's synced copies, enter Edit mode, then:
+Select the control.
+In the editor panel, open the SYNCED COPIES tab.
+The tab lists all synced copies, including the version you selected.
+Click on a copy to navigate to it.
+Unsync controls
+When you unsync control is unsynced, it remains on the page as an independently operating duplicate.
+To unsync a control, perform these steps in Edit mode:
+Hover over the element and open its more () menu.
+Click Unsync control.
+Synced control examples
+Example #1: Two controls, one target
+Example #2: Maintain context across pages
+Example #3: Preselect control values
+RELATED RESOURCES
+Intro to control elements
+Create and manage a control element
+Did this page help you?
+Yes
+No

@@ -1,0 +1,10 @@
+Omni Documentation
+Omni Documentation
+What is Omni?
+Omni is the business intelligence platform that combines the consistency of a shared data model with the freedom of SQL.
+You don’t have to choose between a governed model and agile analysis. Focus on answering data questions, and Omni will build a data model as you go, allowing for reusability, governance, and performance optimization.
+Getting Started Resources
+Here's a few resources to help get you started:
+Check out the example model we've added into your instance called Omni E-commerce Demo. This is a great way to try out Omni on sample data.
+Get connected to your own data so you can run queries, create workbooks and dashboards, and share with your team.
+Don't hesitate to reach out to support@omni.co for any questions!

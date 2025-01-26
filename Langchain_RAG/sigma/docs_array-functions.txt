@@ -1,0 +1,17 @@
+Array functions
+Suggest Edits
+Array functions create, manage, and manipulate arrays (lists of indexed values).
+Array Returns an array containing specified values.
+ArrayContains Searches for a specific value in an array. If the value is found, the function returns True, otherwise it returns False.
+ArrayDistinct Returns the array without duplicate values.
+ArrayIntersection Compares two arrays and returns an array of all overlapping elements, without duplicates.
+ArrayJoin Joins elements of an array into a single text string.
+ArrayLength Determines the number of entries in an array, or list.
+ArraySlice Returns a portion of an array, defined by the starting index and length.
+Sequence Returns an arithmetic sequence as an array of integers based on a specified range and increment
+The following aggregate functions also create arrays:
+ArrayAgg Identifies non-null row values in a column or group and aggregates them into a single array.
+ArrayAggDistinct Identifies distinct non-null row values in a column or group and aggregates them into a single array.
+Did this page help you?
+Yes
+No

@@ -1,0 +1,21 @@
+Recover deleted documents
+Suggest Edits
+When a user deletes a document (workbook, data model, or dataset), Sigma removes it from its organization workspace and folder, and users can no longer access its contents. If the deleted document must be accessed at a later time, you can easily recover it for continued use.
+This document explains how to recover a deleted document.
+User requirements
+Any user can recover their own deleted documents.
+To recover a deleted document that you are not the owner of, you must be assigned the Admin account type.
+📘
+If you need to recover a document that you are not the owner of, you can share the document URL with an organization admin and request document recovery.
+Recover a document in the Trash page
+Search for and recover a deleted document in the Trash page.
+Go to your Home page.
+In the navigation menu, select Trash.
+In the Trash page, search the list of deleted documents and click the one you want to recover. You can sort the Name, Deleted on, or Deleted by columns to help identify the applicable document.
+In the Document has been deleted modal, select the folder in which you want to save the document. This option is only visible if you have the Admin account type.
+Click Recover. Sigma immediately opens the recovered document.
+Recover a document using its URL
+Recover a deleted document by opening its URL. This is the same URL used before the document was deleted.
+Open the document URL.
+In the Document has been deleted modal, select the folder in which you want to save the document. This option is only visible if you have the Admin account type.
+Click Recover. Sigma immediately opens the recovered document.

@@ -1,0 +1,27 @@
+About metrics
+Suggest Edits
+Metrics are dynamic and reusable calculations that are specific to a data source. As such, metrics usually reference specific columns. You can create a metric to provide reliable and efficient aggregate calculations, abstracting complex formulas away from business users.
+For example, you might calculate any of these example metrics:
+Annual recurring revenue (ARR), net dollar retention (NDR), and churn rate for a revenue data source.
+Total customers, engaged customers, and active customers for a customer data source.
+Monthly active users for a product telemetry data source.
+Total page views, unique users, and total sessions for a website analytics data source.
+Some of these are repetitive to calculate, others are complex and could be built with different interpretations, so you don't want individual business users to calculate them independently as calculated columns. Metrics help ensure consistent and accurate calculations across your organization.
+If you want to create reusable calculations that can take any column of a specific data type as an argument, make a custom function instead. You can use a custom function in a formula.
+Choosing between metrics and calculated columns
+Metrics are dynamic and reusable calculations that are data source-specific and therefore associated with specific data source columns. A metric provides aggregated values at any grouping level.
+Calculated columns are static and specific to the data element on which they are created. A calculated column uses calculations to produce static unaggregated values for individual (ungrouped) table rows, or aggregated values at specific static grouping levels.
+When you add a calculated column to a data element, you define its calculation logic. Metric logic definition resides in the data source and you can reuse it in any element that references the data model, dataset, or database table.
+If the logic for a calculation changes, you must individually edit calculated columns in all applicable elements. If you use a metric instead, you can update the metric formula once in the data source and automatically recalculate the metric results in all elements that use the metric.
+You can add metrics or calculated columns to a data model or dataset. You can also add metrics to a database or catalog table from a connection.
+Limitations
+Metrics do not propagate through joins or unions, or to child elements that are based on a grouping level instead of all source columns. To make a metric available to child elements of a joined table, define the metric on the output of the join.
+You can only define metrics in one data source. If the same metric logic applies across your organization, or across multiple data sources, you must define the metric in each applicable data model, dataset, or database table.
+Metric formulas do not support window functions or join functions.
+Dataset-specific limitations
+If you make a dataset based on a dataset or database table with metrics, the metrics are not inherited. Instead, you must recreate the metrics.
+Data model-specific limitations
+You cannot nest or stack metrics in data models.
+If you add, edit, or delete a metric on a data model that is materialized, or that has materialized child elements, the materialized data is not used until a new materialization job runs. The materialized data is used if the new or updated metric meets the following conditions:
+The columns used by the metric are in use by existing metrics.
+The updated metric does not reference any new columns. For example, changing a metric formula from [Column] * 0.1 to [Column] * 100 does not require a new materialization run.

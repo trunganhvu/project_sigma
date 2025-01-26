@@ -1,0 +1,25 @@
+Review warehouse view details
+Suggest Edits
+The Warehouse Views page in the Administration portal provides a centralized location to review details of all warehouse views created by users in your organization. The page allows you to search for and check the status of specific warehouse views, verify or copy view paths, and reference audit history, including who created a view and when it was created and last updated. You can also determine the location of a view’s source element and navigate directly to that workbook.
+This document explains how to utilize the Warehouse Views page in the Administration portal. For information about creating, renaming, and deleting views, see Create and manage workbook warehouse views.
+User requirements
+To access the Warehouse Views page in the Administration portal, you must be assigned the Admin account type.
+Utilize the Warehouse Views page
+Go to Administration > Warehouse Views:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Warehouse Views.
+In the Warehouse Views page, use the search bar, status filter (), and column sorting to view a focused list.
+The search feature looks for matches in the Document and View name fields.
+Review details about your organization's warehouse views, including source element name, view name, status, and last update date.
+To rename or delete a specific warehouse view, click the workbook name in the Document column. Sigma opens the workbook where you can locate the source element and manage the view.
+Warehouse view statuses
+The following statuses apply to warehouse views:
+Pending Sigma will create or update the view when the workbook is published.
+Successful Sigma successfully created or updated the view.
+In Progress Sigma is currently creating or updating the view.
+Failed The view couldn’t be created or updated.1
+1
+To view the cause of a failed status, hover over the Failed status indicator.
+RELATED RESOURCES
+Create and manage workbook warehouse views

@@ -1,0 +1,18 @@
+Geography functions
+Suggest Edits
+Geography functions enable you to work with the geography data type to analyze locations, routes, and other geospatial data. For example, you can use geography functions to transform data into compatible formats for geography maps.
+📘
+Geography functions aren't compatible with all data platform connections. To check if your connection supports these functions, see Supported data platforms and feature compatibility.
+Area Calculates the area of a geography, in specified units.
+Centroid Calculates the geographic center of a geography.
+Distance Calculates the minimum distance between two geographies, in specified units.
+Geography Converts GeoJSON or WKT formats to the geography data type.
+Intersects Determines if one geography intersects another geography.
+Json Converts geography data to GeoJSON.
+Latitude Returns the latitude component of a point.
+Longitude Returns the longitude component of a point.
+MakeLine Constructs a line from a series of points and line segments.
+MakePoint Constructs a point from latitude and longitude data.
+Perimeter Calculates the perimeter of a geography, in specified units.
+Text Converts geography data to WKT format.
+Within Determines if one geography is fully within another geography.

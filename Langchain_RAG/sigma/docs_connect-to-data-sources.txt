@@ -1,0 +1,44 @@
+Connect to data sources
+Suggest Edits
+A data source connection enables Sigma to communicate with your data warehouse. An open and available connection is necessary for Sigma to send commands and receive answers in the form of data result sets.
+To connect to a data source, every application (including Sigma) must provide a connection string that consists of the address or location of the data, appropriate user validations (user id and password), specific database configuration options, security options, and many more. Data source connections are expensive to create, relative to the time of operations that you can subsequently perform on them. Therefore, we open a connection and keep it active to perform a series of discrete operations. We manage the "closing" and refreshing of the connections regularly, so when you work with Sigma the next day, you can continue with your work and use the same connection, seamlessly. 
+While connections are a very powerful tool, consider carefully before creating multiple connections to the same database entity. Because you cannot move data across connections, you cannot perform cross-table calculations. For example, if you access Table1 from Connection1 and Table2 from Connection2, you cannot look at these tables as a collective entity, even if they are in the same database.
+Requirements
+Admin privileges in your Sigma organization.
+For more information, see User account types.
+A data warehouse that Sigma supports.
+These include Snowflake, BigQuery, Redshift, Databricks, PostgreSQL, AlloyDB, and MySQL .
+Create a connection to the data warehouse
+Each warehouse type takes different input parameters. Use the following instructions for your connection method:
+Connect to AlloyDB
+Connect to BigQuery
+Connect to Databricks
+Connect to MySQL
+Connect to PostgreSQL
+Connect to Redshift
+Connect to Snowflake
+Connect to Starburst
+Add Sigma IPs to the allowlist
+When your warehouse is closed to external connections because of firewalls, security groups, or other IP-based security policies, you have to add Sigma's IP addresses to the allowlist, so you can successfully connect to your data.
+Sigma's egress IP addresses are listed on all individual connection pages in your Sigma Administration portal.
+To view them:
+Open your Administration portal, then click Connections in the left navigation.
+Select any connection or click Create Connection.
+Look for the IP addresses listed under connection credentials.
+📘
+The IP addresses listed on the connections summary are not applicable to connections over Private Link. If you need the IP addresses for a Private Link connection, contact Sigma Support.
+Write access
+You can enable write access on your connection. Write access is required for materialization, CSV uploads, input tables, and warehouse views.
+Permissions
+After creating a connection, you can selectively share access with other people in your organization. For more information, see Data Permissions.
+Query timeouts
+By default, Sigma sets query timeouts to 120 seconds (2 minutes). When queries hit the timeout limit, Sigma will cancel the query. Under Connection Features, you can set a custom query timeout for your connection.
+RELATED RESOURCES
+Connect to AlloyDB
+Connect to BigQuery
+Connect to Databricks
+Connect to MySQL
+Connect to PostgreSQL
+Connect to Redshift
+Connect to Snowflake
+Connect to Starburst

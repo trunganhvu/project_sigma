@@ -1,0 +1,16 @@
+StartsWith
+Suggest Edits
+Returns true if a string starts with a specified substring.
+Usage
+StartsWith(string, substring)
+string (required)- The string to search.
+substring (required)- The substring to search with.
+📘
+EndsWith is case-sensitive. To create a search that is not case-sensitive, combine EndsWith with Lower.
+Example
+StartsWith("Jane Doe", "Ja")
+Returns TRUE
+RELATED RESOURCES
+EndsWith
+Contains
+Find

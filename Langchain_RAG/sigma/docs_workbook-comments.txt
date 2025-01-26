@@ -1,0 +1,65 @@
+Use comments in workbooks
+Suggest Edits
+You can add comments to workbooks, and individual workbook elements, to provide context for visualizations or controls, solicit feedback, or make requests. Add a quick comment or start a conversation about a workbook with your colleagues.
+When you add comments, make sure that your workbook is published or saved. If you want to add comments to an exploration, you must first save the exploration as a new workbook. If you add comments to a workbook in Explore mode, publish your changes or save your exploration as a bookmark before commenting.
+User requirement
+To view and add comments in workbooks, you must be assigned an account type with the Can comment on workbooks permission enabled.
+View comments
+To see comments on a workbook, click Show comments in the workbook header.
+
+A panel opens to show all comment threads.
+Close the comments panel
+To close the comments panel, click Show comments in the workbook header or Close comments panel in the top right corner of the panel.
+Add a new comment
+In the workbook header, click Show comments.
+Type your comment in the input box.
+Click Comment or press the keyboard shortcut (⌘ + enter on Mac, ctrl + enter on Windows).
+Comment on an individual element
+Hover over the element.
+Click the element menu at the element's top right corner.
+Select Comment.
+
+The comment panel opens to a subpanel for the specific element.
+Enter your comment.
+Click Comment.
+Edit a comment
+Users can only edit their own comments.
+In the Comments panel, locate the comment you want to edit, then click More.
+Select Edit.
+Update the comment.
+Click Save changes.
+Delete a comment
+Users can delete their own comments. Organization admins can delete any comment.
+In the Comments panel, select the More menu of the comment you want to edit.
+Select Delete.
+If the deleted comment had replies, the replies are still visible. If it had no replies, Sigma removes the thread.
+Reply to a comment
+In the Comments panel, scroll to the comment you wish to reply to.
+In the comment's bottom left corner, click Reply.
+
+A text box opens.
+Add your response.
+Click Reply.
+Mention a user in a comment
+The mentioned users receive an email notification about your comment.
+When adding a comment, type “@” and a list of all users who can be mentioned will appear.
+Start searching for a user by typing their name or email.
+Click to select who you want to mention.
+OR
+Use the arrow keys and press Enter or Tab.
+After you submit your comment, the user receives an email notification.
+If a mentioned user does not have permissions to view the workbook, a gray box will appear under the comment asking you to grant those permissions. To grant the user view access, click on Grant view access. If you do not grant them permission to view the workbook, they will not receive an email notification.
+Find your comment notifications
+When visiting a workbook, the number of un-viewed comments on the workbook is displayed on a counter on top of the comments icon on the workbook.
+When you are mentioned specifically in a comment, you receive an email notification. The email is titled “[Sigma Computing] New Mention on <workbook name>”.
+Resolve a comment thread
+Resolving a comment thread removes it from the comments panel immediately, unless the option to Show resolved threads is checked at the top of the panel.
+The first comment of each comment thread has a check box in the top right corner.
+Click it to resolve the entire thread including replies to that comment.
+Reopen a comment thread
+From the comments panel, check the option to See resolved threads at its top right.
+Scroll to the comment thread you wish to reopen.
+Click Re-open thread
+OR
+Add a reply by clicking on Reply at the bottom of the thread.
+The comment thread re-opens.

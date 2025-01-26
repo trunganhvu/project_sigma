@@ -1,0 +1,20 @@
+Year
+Suggest Edits
+The Year function returns an integer representing the year component of a specified date and time.
+Syntax
+Year(date, [timezone])
+Function arguments:
+date (required) - the date or column containing date values from which the year component is extracted
+timezone (optional) - the IANA time zone (e.g., “America/Los_Angeles”) to convert the date value to before extracting the year component
+📘
+When the timezone argument is omitted, the input date is evaluated in UTC time.
+Example
+Year(Date("2007-08-14"))
+Extracts the year component from the specified date (August 14, 2007) and returns 2007 to represent the year.
+RELATED RESOURCES
+DatePart
+Second
+Minute
+Month
+Quarter
+Quickstart: Common date functions and use cases

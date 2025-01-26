@@ -1,0 +1,26 @@
+Month
+Suggest Edits
+The Month function returns an integer representing the month component of a specified date and time.
+Syntax
+Month(date, [timezone])
+The Month function has the following arguments:
+date
+Required
+The date or the column that contains date values where Sigma extracts the month component
+timezone
+Optional
+The IANA time zone; for example, (e.g., “America/Los_Angeles”, used to convert the date value before extracting the month component.
+When omitted, timezone Sigma evaluates the date in UTC time.
+Examples
+Month(Date("2007-08-14"))
+Extracts the month component from the specified date (August 14, 2007) and returns 8 to represent the eighth month of the year.
+Month([Date])
+The Month function returns the following values for the Date column:
+RELATED RESOURCES
+MonthName
+DatePart
+Second
+Minute
+Quarter
+Year
+Quickstart: Common date functions and use cases

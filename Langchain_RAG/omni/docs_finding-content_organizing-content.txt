@@ -1,0 +1,39 @@
+Content ManagementOrganizing content
+On this page
+Organizing content with labels
+Along with folders, Omni also supports adding custom labels to your content to help with organization. While folders are helpful for maintaining structure and access, a document can only be in one folder at a time. For example, a dashboard is relevant to multiple teams, each of which has their own folder. Where should the document be located?
+With labels, you could place the dashboard in a shared folder and add relevant labels, ensuring the right people can find the content.
+Labels allow you to organize your content in a way that doesn't require duplication or sacrifice findability. Using labels, you can:
+Organize content by subject area, such as Marketing or Support
+Indicate the current working state of a document, such as In progress
+Use special Omni-provided tags to:
+Curate Home page content for your organization
+Mark important content as Verified
+Applying labels
+To apply a label to a document or a folder, click the Labels icon to the right of the document/folder name:
+Note: You must be in the published version of a document to apply labels.
+Managing labels
+Labels are managed in the Label settings page, which can be accessed by:
+Navigating to Settings > Labels, or
+Clicking the Labels icon in a document or folder, then the gear icon
+On the Label settings page, you can:
+Add a label by clicking the Add Label button.
+Rename a label by clicking the options menu (three dots) next to the label and selecting Rename.
+Delete a label by clicking the options menu (three dots) next to the label and selecting Delete. Note: Labels can't be deleted if they're currently in use.
+You can also apply special tags to labels, which will give them additional functionality.
+Curating content with special tags
+NOTE
+Instance Admin permissions are required to:
+Apply special tags to an existing label
+Apply labels with special tags to a document or folder
+Omni includes two special, protected tags that can be applied to existing labels:
+The Homepage tag allows you to select content to display on your users' Home page, in the For you section. This can be useful for:
+Providing helpful starting points for new users in your organization
+Ensuring content relevant to all users is easily accessible
+The Verified tag allows you to mark important content, such as dashboards that are monitored for correctness. This can be helpful for conveying to your users which content is actively maintained or has been vetted.
+To apply these tags to a label, click the options menu (three dots) next to a label and select one or both of the tags:
+When the tags are applied, the corresponding label will be highlighted to increase prominence. Labels with the Verified tag will be highlighted green with a checkmark, while those with the Homepage tag will have a Home Page badge:
+Previous
+Navigating content
+Next
+Editing & publishing content

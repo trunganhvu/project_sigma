@@ -1,0 +1,74 @@
+Connect to BigQuery
+Suggest Edits
+Sigma supports secure connections to BigQuery.
+This document explains how to connect your organization to a BigQuery warehouse.
+📘
+For information about Sigma feature compatibility with BigQuery connections, see Region, warehouse, and feature support.
+Requirements
+Admin privileges in your Sigma organization; see account types
+Permission to create a service account on your Google Cloud Project
+We recommend that you avoid granting excessive permissions to the account you use when connecting to your data store; for example, you do not require SYSADMIN-level access
+Create a BigQuery Service Account
+Before you connect to Sigma, you will need to visit your Google Cloud Platform (GCP) console to create a service account and generate a json private key for your BigQuery instance.
+What is a service account, and why do I need one?
+A GCP service account is a type of Google account that can securely communicate over Google APIs on your behalf. The service account you create in the steps below will act as a middleman between Sigma and your BigQuery warehouse.
+See Google’s service account documentation.
+Account Permissions / Roles
+When creating your service account, you will need to grant it specific access permissions. These permissions are called Roles.
+To run BigQuery with Sigma, please grant your service account the following roles:
+"BigQuery Data Viewer"
+"BigQuery Job User"
+"BigQuery Data Editor" - This role is only required if you intend to enable write access on your connection.
+Create a Service Account
+We have included instructions below to create your service account. However, please be aware that this guide may not always be up to date with the most recent GCP console changes, as GCP is not managed by Sigma.
+For Google’s instructions, visit Create a VM that uses a user-managed service account.
+Log into your GCP console.
+Open the Navigation menu.
+Hover over IAM & Admin and select Service Accounts from the submenu.
+Click + CREATE SERVICE ACCOUNT in the service accounts header.
+Under Service account details, add an account name, ID, and optional description.
+Click CREATE.
+Under Service account permissions, add the following roles:
+BigQuery Data Viewer
+BigQuery Job User
+BigQuery Data Editor - This role is only required if you intend to enable write access on your connection.
+Click CONTINUE.
+[optional] Under Grant users access.... you may choose to grant other users access to your new service account.
+This step is not necessary for connecting to Sigma.
+Click + CREATE KEY to create a json private key.
+A file will be downloaded to your computer, which you will later use when connecting to Sigma (Step 7).
+Create a Connection in Sigma
+If you have not already created a BigQuery Service Account, please do so now.
+In Sigma, open Administration > Connections.
+Click Create Connection.
+Name your connection.
+Select BigQuery under warehouse type.
+You will then be prompted to specify your Connection Credentials.
+Under Billing project ID, enter your GCP ‘Project ID’. This can be found under ‘Project Info’ on your GCP console dashboard. Find your project id.
+Note: Grant the service account the “BigQuery Data Viewer“ role for the project's datasets. See BigQuery documentation on Control access to resources with IAM: Grant access to a resource.
+Under Service account, paste the json key you created when setting up your service account. The key is located in the .json file that was downloaded to your computer when you created your service account.
+[Optional] Under Additional project IDs, you can add additional BigQuery project IDs to the same connection. Separate multiple IDs with a comma.
+Example: project-id-001, project-id-002
+Note: Grant the service account the “BigQuery Data Viewer“ role for each project's datasets. See BigQuery documentation on Control access to resources with IAM: Grant access to a resource.
+Under Connection Features, specify the following
+Connection timeout
+The time before timeout (or cancellation), in seconds, that Sigma waits for the query to return results.
+Default is 120, or 2 minutes.
+Maximum is 600, or 10 minutes.
+Use friendly names
+This switch makes column names from the data source more readable.
+For example, a database column ORDER_NUMBER appears as Order Number.
+On by default.
+Enable write access*.
+Note: The "BigQuery Data Editor" role is required for write access.
+Write access is required for CSV Upload, Materialization, and Dataset Warehouse Views.
+After completing the form, click Create.
+Confirm your Connection
+After you have created your connection, you can confirm that your data is accessible by visiting the Connections section of Sigma’s left hand navigation panel.
+If you are still in the Admin Portal, click the back button in the top left corner of your screen to close the Admin Portal and navigate back to the home page.
+Select your new warehouse connection from the left hand navigation panel.
+From here, you can navigate through your connection’s schemas and tables, confirming the connection was successful.
+RELATED RESOURCES
+Set up write access
+Data permissions
+Google Cloud - Service Accounts

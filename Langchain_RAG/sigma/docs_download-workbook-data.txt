@@ -1,0 +1,33 @@
+Download workbook data
+Suggest Edits
+You can download an entire workbook, a specific workbook page, or a specific workbook element from Sigma at any time. You can also schedule an export or send a scheduled export on-demand. See About exporting workbooks.
+If you attempt to export a workbook while editing it, you only have the option to download the draft version. If you want to download the published version or export to other destinations, open the published version of the workbook.
+🚧
+When executing a scheduled export or direct download to PDF or PNG formats, Sigma may store applicable control values as URL parameters in trace logs used for debugging and troubleshooting purposes. Exercise caution when exporting or downloading workbook content that uses controls to filter sensitive data.
+Export types and limitations
+There are size limits for exports based on file type and export location. For more information, see Download, export, and upload limitations.
+User requirements
+To download data from a workbook:
+You must be assigned an account type with the Download permission enabled. See License and account type overview.
+You must be the workbook owner or be granted the Can explore or Can edit workbook permission.
+Download an entire workbook
+To download an entire workbook:
+From the workbook menu (), select Export....
+On the Exports dialog, keep the default selection of Direct download.
+For Attachments, keep the default selection of Entire workbook and select the format of the file to download.
+Click Export.
+Sigma downloads a file to your device.
+Download a workbook page
+You can download a workbook page from the workbook page menu or from the workbook menu.
+Locate the workbook page that you want to download and open the page menu () and select Export.
+On the Exports dialog, keep the default selection of Direct download.
+For Attachments, keep the default page selected or choose another workbook page.
+Select the format of the file to download.
+Click Export.
+Sigma downloads a file to your device.
+Download a data element
+In a published or draft workbook, select the element.
+From the element's menu, select More .
+Select Export and choose the file format that you want to download.
+The available options depend on the type of element.
+Sigma downloads a file to your device.

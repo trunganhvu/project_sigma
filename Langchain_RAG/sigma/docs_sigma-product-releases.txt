@@ -1,0 +1,32 @@
+Sigma product releases
+Suggest Edits
+This document explains how Sigma Computing releases changes to the product, how those changes are announced in What’s new in Sigma, and what to expect for different release phases.
+How Sigma Computing releases changes to the product
+Sigma Computing is continuously evolving the Sigma service, adding new features and capabilities and improving what our customers can do with the product. Releases happen continuously, both for bug fixes and for new functionality. We strive to maximize the value delivered to our customers, and do not use fixed release cadences that slow down software delivery.
+Because we release major changes in staged rollouts using feature flags, certain features or functionality might be available in your organization that are not yet available to all customers. Documentation for incrementally-released updates typically appears once a majority of customers have access to the change.
+Release notes
+Sigma Computing announces recent feature releases, functionality changes, and bug fixes weekly on Fridays, excepting holidays. See What’s new in Sigma to review this changelog. Customers can subscribe to the changelog using RSS.
+Beta features
+Sigma Computing makes some features available in private or public beta releases. These features are identified in the product with a beta icon () and in the documentation with a beta notice. Some features do not have a component in the user interface of the product to which a beta icon can be appended; in those cases, the beta notice appears in the documentation only.
+Private beta features are not available by default and are not publicly announced. Private beta features are subject to frequent changes and might or might not have documentation available. If you are interested in joining a limited test group and enabling a private beta feature in your Sigma organization, contact Support or reach out to your Account Executive.
+Public beta features are made available in the product to all customers in staged rollouts. Customers do not need to request access to public beta features. Public beta features might or might not have documentation available.
+All beta features, whether private or public, and their documentation are subject to the following notice:
+🚩
+"Sigma may make certain functionality or features related to the Service which are designated as beta, pilot, non-production, or a similar description (each, a "Beta Feature") available to Customer. Beta Features may be used by Customer in Customer’s sole discretion and at Customer’s own risk. Beta Features are intended for evaluation purposes only. Sigma may discontinue Beta Features at any time in Sigma’s sole discretion and may choose to never make them generally available. Beta Features are considered part of the Service, however, Beta Features are provided “AS-IS”."
+Generally available features
+Unless otherwise indicated in the documentation, features and functionality are generally available (GA) in the product. When first released, GA features are made available in the product to all customers in staged rollouts. See How Sigma Computing releases changes to the product. If a feature was previously released in a beta release, the release notes indicate the transition to GA by including "(GA)" in the release announcement.
+Deprecated features
+Sigma Computing may deprecate features and functionality from the product.
+Deprecated features are features for which Sigma Computing has declared an intention to stop further enhancement. Deprecated features continue to work in the product for existing customers but might not be available to newly created organizations. Sigma Computing continues to support deprecated features and provide critical bug fixes until they are removed from the product for all customers after a notice period. However, Sigma customers need to begin planning for the future removal of support. Deprecated features are marked in the documentation as deprecated.
+The following features are deprecated:
+Get workbook schemaGET /v2/workbooks/{workbookId}/schema
+Update a connection PATCH /v2/connections/{connectionId}
+Workbook modes without Live Edit (documentation available only to selected customers)
+Warehouse data editing (documentation available only to selected customers)
+Application embedding (documentation available only to selected customers)
+Removed features
+Sigma Computing may remove features and functionality from the product after a deprecation period.
+Removed features are no longer supported and cannot be used. Customers must find an alternative to using the removed feature or functionality. Documentation for removed features is unavailable to all customers.
+Did this page help you?
+Yes
+No

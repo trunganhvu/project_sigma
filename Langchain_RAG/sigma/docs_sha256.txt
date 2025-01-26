@@ -1,0 +1,14 @@
+SHA256
+Suggest Edits
+The SHA256 (Secure Hash Algorithm 256-bit) function is a cryptographic hash function that transforms text input into a 256-bit hash value.
+There is no corresponding decryption function for SHA256. Do not use this function to encrypt text that later needs to be decrypted.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+SHA256(string)
+Function arguments:
+string The text value to be hashed.
+Examples
+In this example, you have a table with a User ID column. For privacy and confidentiality reasons, you might want to obfuscate the actual values in this column. You can use the SHA256 function to do so:
+SHA256([User ID])
+The function returns 256-bit hash values of each User ID.

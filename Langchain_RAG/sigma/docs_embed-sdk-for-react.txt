@@ -1,0 +1,10 @@
+Embed SDK for React (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Sigma provides several methods to allow users and developers to interact with its systems, including a web user interface, a public REST API, a JavaScript Embed API, and an SDK for the React framework.
+The Embed SDK for React offers a higher-level, developer-friendly interface that simplifies integration into applications, in contrast to Sigma’s lower-level JavaScript Embed API, which provides more granular control but may require additional coding.
+The source code is freely available on Github. Developers can clone the repository and refer to the comments in the code for each file.
+Additionally, there is a QuickStart for a more in-depth guide to using the SDK.
+The source contains a working application with a sample embed based on Sigma provided content.

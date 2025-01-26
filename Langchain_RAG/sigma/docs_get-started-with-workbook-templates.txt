@@ -1,0 +1,9 @@
+Get started with workbook templates
+Suggest Edits
+Workbook templates allow users to templatize and share workbook structures for quick and consistent reuse.
+Sigma lists all of the templates available to you on the Templates gallery page, including a set of Sigma-created examples. Access the Templates page from the left-side navigation panel on your home page.
+RELATED RESOURCES
+Create workbooks from templates
+Create and edit workbook templates
+Share templates with different orgs
+Enable a custom homepage (Beta)

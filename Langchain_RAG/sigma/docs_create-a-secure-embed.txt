@@ -1,0 +1,29 @@
+Create a secure embed
+Suggest Edits
+Secure embedding (formerly called "user-backed embedding") allows you to securely integrate Sigma content (an entire workbook, specific page, or individual chart or table element) into another application without requiring users to authenticate through Sigma. The secure embed inherits the host application's user security configurations at runtime to implement appropriate Sigma content access control.
+This document provides an overview of the workflows required to create a secure embed.
+System and user requirements
+The ability to create and manage secure embeds requires the following:
+Secure embedding must be enabled for your organization.
+You must be assigned the Admin account type or have been granted embedding credentials by an admin. See Generate embed client credentials for more information.
+📘
+Depending on your technical expertise and access to the host application, you may require assistance from your Engineering team when completing the server-side requirements.
+Required Sigma workflows
+Complete the following workflows in Sigma before addressing the server-side requirements.
+Generate embed client credentials. The client credentials (a unique client ID and client secret) are required to authenticate and authorize the embedded Sigma content in the host application.
+Create a team for embed users. Secure embedding requires at least one team in Sigma to facilitate group-level access to the embedded Sigma content. This team can also optionally support workspaces and data permissions for embed users.
+Create and publish a workbook containing the Sigma content you want to embed in the host application.
+Share the workbook with the embed user team to enable access to the Sigma content.
+Generate a secure embed path that points to the Sigma content.
+Test the embed in Sigma's embed sandbox. Configure and test optional interface, security, and user attribute parameters.
+Required server-side workflows
+Complete the following workflows in the host application's server environment.
+Create an embed API to interact with Sigma's services. This API manages requests and responses between the host application and Sigma.
+Implement the embed API and render the the Sigma content in the host application interface.
+RELATED RESOURCES
+Generate embed client credentials
+Generate a secure embed path
+Example embed API and URL
+Embed URL parameters
+Test an embed URL in the embed sandbox
+Common embed error codes and messages

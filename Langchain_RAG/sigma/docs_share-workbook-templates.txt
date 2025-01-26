@@ -1,0 +1,26 @@
+Share workbook templates
+Workbook templates allow users to templatize and share workbook structures for quick and consistent reuse.
+Suggest Edits
+User requirements
+The ability to share workbook templates requires the following:
+You must be assigned an account type with the Share documents permission enabled.
+You must be the template owner or be granted Can edit template permission.
+Template permission options
+Two permission types are available for templates:
+Can Use – allows the user to view the template and create workbooks from it.
+Can Edit – allows the user to edit and share the template, in addition to all “Can Use” permissions
+Share a template
+Open your Templates gallery page from the left-side navigation panel on your home page.
+Find the template you want to edit.
+Click its More button to open its menu.
+Click Open.
+In the workbook header, click the share icon ().
+Sigma opens the Share modal.
+Under Member or Team, select the user(s) or team(s) you want to share with.
+Under Permission, select a permission type.
+(Optional) Include a message to send with the invitation.
+Click Save.
+RELATED RESOURCES
+Get started with workbook templates
+Create workbooks from templates
+Create and edit workbook templates

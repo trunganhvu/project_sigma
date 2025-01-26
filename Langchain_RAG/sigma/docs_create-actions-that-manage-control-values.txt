@@ -1,0 +1,53 @@
+Create actions that manage control values
+Suggest Edits
+Workbooks support actions that set or clear values of specific control elements, enabling interacting users to quickly filter and unfilter data for different focused views.
+This document explains how to create actions that manage control values. For more information about actions in Sigma, see Intro to actions.
+User requirements
+📘
+The following requirements apply to users who configure actions. Users who access and interact with a workbook can typically trigger all existing actions within it. Any restrictions are noted in this document.
+The ability to configure actions requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
+1
+If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
+Set a control value
+Create an action that sets the value of a specific control element in the current workbook.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Set control value.
+Update control Select a control element to update in the current workbook.
+Set value as
+Select an option to determine the type of value Sigma passes to the control, then define the value.
+Specific values: Passes the specified (fixed) value.
+Values from a column: Passes values from the specified column in the trigger element’s underlying data (if applicable).
+Only available when the trigger element is a table, pivot table, input table, or visualization.
+Custom formula: Passes a value based on the defined formula.
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
+Clear one or more control values
+Create an action that clears the values of one or more control elements in the current workbook.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Clear control.
+Apply to Select the scope for the action. You can clear controls at these levels of granularity: Specific control, Container, Page, or Entire workbook.
+Control, Container, or Page If you selected Specific control, Container, or Page in the Apply to field, specify the target from the dropdown list.
+Reset to published value [optional] Check this box to reset the control values to the last published values. On a tagged version of a workbook, this setting resets to the tagged version's values.
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
+RELATED RESOURCES
+Intro to actions
+View and manage existing actions

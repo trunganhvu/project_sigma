@@ -1,0 +1,24 @@
+Enable or disable account upgrade requests
+Suggest Edits
+Sigma lets users request an account upgrade to gain access to features and capabilities that their current user account type doesn't permit. For example, users can request to be reassigned to an account type that allows them to create or explore workbooks.
+If you don't want users to be able to request account upgrades, an admin can disable this functionality.
+User requirements
+To disable the ability for users in your organization to request an account upgrade, you must be assigned the Admin account type.
+About upgrade requests
+Users can submit upgrade requests when trying to perform specific actions in Sigma. After submitting an upgrade request, a user cannot submit a new request unless the previous request has been denied.
+Users without permission to create workbooks
+When a user without permission to create workbooks clicks Create New on the Home page, they see a message that the ability to create workbooks requires an account upgrade.
+The user can send an upgrade request to organization admins, who can then reassign the user to an account type with Create, edit, and publish workbooks permission.
+Users without permission to explore workbooks
+When a user doesn't have permission to explore workbooks, Sigma displays a Request explore access button in workbook header. The user can click this button to learn about Explore access and send a upgrade request to organization admins, who can reassign the user to an account type with Basic Explore or Full Explore permissions.
+Enable or disable upgrade requests
+To enable or disable the ability for users to request account upgrades, do the following:
+Go to Administration > Account > General Settings:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Account, then open the General Settings tab
+In the Features section, locate the License upgrade request setting.
+Toggle the switch to the "on" position to enable the feature (default), or toggle the switch to the "off" position to disable it.
+If upgrade requests are enabled, as an admin, you receive an email and can respond to upgrade requests in Sigma. See Respond to account upgrade requests.
+RELATED RESOURCES
+Use a workbook in Explore mode

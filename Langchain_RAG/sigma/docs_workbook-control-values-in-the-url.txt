@@ -1,0 +1,193 @@
+Set control values in a URL using query string parameters
+Suggest Edits
+You can pre-populate the control values in a workbook when you embed a workbook by encoding the control ID and values with URL query string parameters. When embedding a workbook, you can set control values in the URL and specify other supported query string parameters. See Embed URL parameters for the full list of supported query string parameters. JSON web token (JWT) signed URLs also support setting control values in the URL with query string parameters.
+If you want to share a workbook with pre-populated control values with other Sigma users, consider creating a bookmark of the workbook with the desired control values, then sharing the bookmark with the relevant users or teams. See Create and manage bookmarks.
+🚧
+When executing a scheduled export or direct download to PDF or PNG formats, Sigma may store applicable control values as URL parameters in trace logs used for debugging and troubleshooting purposes. Exercise caution when using controls to filter sensitive data.
+Add query string parameters to a URL
+When you add query parameters to a URL, the first one appends the URL with a ?. Subsequent parameters can be added with an &.
+You can set control values in a URL using query string parameters for any link in Sigma:
+Workbook URL example
+Public embed URL example
+JWT-signed embed URL example
+For more specific guidance for different controls, see the following:
+Set a single control value in a URL
+Set a number range or range slider control value in a URL
+Set a date range control value in a URL
+Set a multi-select control value in a URL
+Workbook URL example
+For example, a workbook URL without any query string parameters appears as follows:
+https://app.sigmacomputing.com/workbook/{workbookID}
+If you want to prepopulate a control with the control ID Region in the workbook URL, add a query string parameter that sets a value for the control as follows:
+Based on the current URL structure, add the query string parameter to set control values:
+If the URL contains a query string parameter, for example, ?:nodeId= to indicate a selected workbook page, add an ampersand (&) to add another query string parameter.
+If the URL does not contain any query string parameters, append a question mark (?) to the URL.
+Provide the control ID and value as a key-value pair, URL-encoding any values as needed.
+For example, to set a value of Metro West for a control ID of Region in a query string parameter:
+?Region=Metro%20West
+The updated URL appears as follows:
+https://app.sigmacomputing.com/workbook/{workbookID}?Region=Metro%20West
+To include multiple query string parameters, separate each key-value pair with an ampersand (&):
+https://app.sigmacomputing.com/workbook/{workbookID}?Region=Metro%20West&Year=2022
+Public embed URL example
+To set control values in the URL for a public embed, reference the following example:
+https://app.sigmacomputing.com/embed/{embedID}?Region=Metro%20West&Year=2022
+JWT-signed embed URL example
+To set control values in the URL for a JWT-signed secure embed URL, reference the following examples. Because a control value is not a JWT claim, you can use query string parameters the same way as with other embed URLs.
+Set a control value in the URL before signing the URL:
+https://app.sigmacomputing.com/{organization-name}/workbook/{workbookname}-{workbookUrlId}/page/{pageId}?foods=cheeseburger,grilled%20cheese
+In this example, the control ID and values are the only query string parameters, so you use a ? to append them to the URL.
+Set a control value in the URL after generating the JWT value:
+https://app.sigmacomputing.com/{org-slug}/{workbook_id}?:jwt={JWT VALUE}&:embed=true&foods=cheeseburger,grilled%20cheese
+In this example, the control ID and values are query string parameters added after the :jwt and :embed parameters, so you use an & to append them to the URL.
+Encode URL parameters
+When you add control values to the URL, they must be encoded.
+If you programmatically generate an embed URL, use the JavaScript function encodeURIComponent to encode the parameters before adding them to the URL. Use this option if you use inbound JavaScript events, or use a JavaScript event handler to pass query string parameters to the URL.
+If you manually build a URL that includes control IDs and values, reference the list of Special characters for URL parameters and encode values manually.
+Considerations
+If your embed is public, the referenced control must be on a public workbook page. You cannot set control values from the URL of a public embed if the control is on a modal or hidden workbook page.
+If your control uses display values, for example a segmented or list control element, the URL query string parameter must reference the raw control value, not the display value.
+You cannot specify a value for a drill down control using query string parameters in a URL.
+Special parameter values
+When setting control values in the URL, special options are available:
+To set a control to null, use :null as the control value. You can also pass :null to clear a preselected value.
+To set a control to an empty string, "", use :empty as the control value.
+Set a single control value in a URL
+For controls that take a single value as an input, you can set the control value with a URL query string parameter as follows.
+Supported control types
+Single select list
+Text input
+Text area
+Number input
+Date
+Segmented
+Slider
+Checkbox
+Switch
+Top N
+Syntax
+Control-ID=Value
+Programmatically encode
+Encode text or number values:
+encodeURIComponent('<control-ID>')=encodeURIComponent('<control_value>')
+Do not encode datetime values:
+encodeURIComponent('<control-ID>')=<control_value>
+Do not encode logical values:
+encodeURIComponent('<control-id>')=true
+encodeURIComponent('<control-id>')=false
+Available values
+The value for the control must be the same data type expected as input to the control. See Intro to control elements.
+For a date control, you can specify an ISO-6801-formatted date, or specify a relative date for which to view data, using the following format <type>-<date_part>-<number>, where:
+type can be one of prior, for relative dates in the past, or next, for relative dates in the future.
+date_part can be one of minute, hour, day, week, month, quarter, or year.
+number is a numeric value corresponding to the number of date parts in the future or past to include.
+If using a list control to specify a date, only ISO 6801-formatted dates are valid. Relative dates are not supported.
+If specifying datetime data, such as in a date control or a list control that uses dates, note the following:
+📘
+By default, datetime values are parsed with your Sigma organization's account time zone. You can override this behavior to use the UTC +0 time zone. To do so, append a "Z" at the end of the timestamp (representing the Zulu time zone). For example: 2023-06-08T00:00:00Z.
+Text examples
+Specify one text value in a control, such as a single select list control or a text input control, where the control ID is Customer-Name:
+Customer-Name=Merchandise%20Store
+Populate text into a text area control, where the control ID is Instructions:
+Instructions=Start%20making%20changes%20in%20the%20afternoon
+Date examples
+Specify a date, such as for a date control or a single-select list control, where the control ID is start_date:
+Specify May 1, 2024: start_date=2024-05-01
+Specify May 1, 2024 at 8:00 AM in the account time zone: start_time=2024-05-01T08:00
+Specify May 1, 2024, at 8:00 AM in UTC time zone: start_time=2024-05-01T08:00Z
+Specify the date 3 months ago: start_time=prior-month-3
+Number examples
+Specify a number, such as for a number input or slider control, where the control ID is Amount:
+Amount=1000
+If the data includes commas as thousands separators:
+Amount=1%2C000
+Logical (Boolean) examples
+Specify a true or false value, such as for a switch control or a checkbox control, where the control ID is is_weekend:
+Show data only for weekend dates: is_weekend=true
+Show data only for weekday dates: is_weekend=false
+True or false values must be lowercase.
+Set a number range or range slider control value in a URL
+A number range control or range slider control contains a minimum and a maximum value. When setting the control in a URL query string parameter, specify which value to set.
+Supported control types
+Number range
+Range slider
+Syntax
+To set both the minimum and the maximum values, use the following syntax:
+Control-ID=min:Value,max:Value
+To set only the minimum value, use the following syntax:
+Control-ID=min:Value,max:
+To set only the maximum value, use the following syntax:
+Control-ID=min:,max:Value
+Programmatically encode
+encodeURIComponent('<control_id>')=min:<min_value>,max:<max_value>
+If your number values might contain special characters, such as a comma as a thousands separator, encode the values as well:
+encodeURIComponent('<control_id>')=min:encodeURIComponent('<min_value>'),max:encodeURIComponent('<max_value>')
+Number range examples
+Specify any value greater than 4000.5, where the control ID is User-Revenue:
+User-Revenue=min:4000.5,max:
+Specify any value between 4000.5 and 5000, where the control ID is User-Revenue:
+User-Revenue=min:4000.5,max:5000
+Specify any value between 1,000 and 3,000, where the control ID is User-Revenue:
+User-Revenue=min:1%2C000,max:3%2C000
+Specify any value less than 100,000, where the control ID is User-Revenue:
+User-Revenue=min:,max:100%2C000
+Set a date range control value in a URL
+A date range control contains a start value, or a minimum date for the range, and an end value, or the maximum date for the range. When setting the control values with a URL query string parameter, specify which values to set.
+Supported control types
+Date range control
+Syntax
+To set only the start value, use the following syntax:
+Control-ID=min:Value,max:
+To set only the end value, use the following syntax:
+Control-ID=min:,max:Value
+Or to set both:
+Control-ID=min:Value,max:Value
+💡
+You can also use start and end instead of min and max.
+Programmatically encode
+encodeURIComponent(<control_id>)=min:<min_date>,max:<max_date>
+Available values
+When setting a min_date or a max_date for a date range control, you can specify one of the following:
+An exact date, using ISO 6801 date format of YYYY-MM-DD HH:MM:SS.fff.
+Blank or :null to clear a preselected value.
+A relative date, using the following format: <type>-<date_part>-<number>, where:
+type can be one of prior, for relative dates in the past, or next, for relative dates in the future.
+date_part can be one of minute, hour, day, week, month, quarter, or year.
+number is a numeric value corresponding to the number of date parts in the future or past to include.
+Any relative format for min_date is the start of the date. For example, prior-year-1 means the start of the previous year and next-year-0 would mean the start of the current year.
+Any relative format for max_date is the end of the date. For example, next-year-1 means the end of the next year and next-year-0 means the end of the current year.
+📘
+By default, datetime values are parsed with your Sigma organization's account time zone. You can override this behavior to use the UTC +0 time zone. To do so, append a "Z" at the end of the timestamp (representing the Zulu time zone). For example: 2023-06-08T00:00:00Z.
+Date range examples
+Set a date range from a given date until 3 days ago, where the control ID is Analysis-Time-Frame:
+Analysis-Time-Frame=min:2024-04-01,max:prior-day-3
+For example, if you work with a data source that has a lag in being updated, you can use the relative time range to exclude data that does not exist yet.
+Set a date range from April 1, 2024 until now, where the control ID is Analysis-Time-Frame:
+Analysis-Time-Frame=min:2024-04-01,max:
+Set an empty date range control, clearing any preselected dates in the control, where the control ID is Analysis-Time-Frame:
+Analysis-Time-Frame=min:,max:
+Set a multi-select control value in a URL
+A list control can take multiple values as input if multiple selection is allowed. When setting the control values with a URL query string parameter, specify the values to set.
+Supported control types
+List
+Syntax
+Control-ID=Value[,Value-2,Value-3,Value-4...]
+Programmatically encode
+Encode text or number values:
+encodeURIComponent('<control-ID>')=encodeURIComponent('<control_value>')[,encodeURIComponent('<control_value_2>'),...]
+Do not encode datetime values:
+encodeURIComponent('<control-ID>')=<control_value>[,<control_value_2>,...]
+Available values
+The values provided must match the data type expected by the control. A list control can take Text, Number, Datetime, or Logical values.
+If the control expects Datetime data values, the values must be ISO 6801-formatted dates. Relative dates are not supported in a list control.
+Multi-select list control examples
+Specify one text value in a multi-select list control, where the control ID is Employee-Name:
+Employee-Name=Greg%20Humphrey
+Specify three text values in a multi-select list control, where the control ID is Employee-Name:
+Employee-Name=Greg%20Humphrey,Xiaoyu%20Xu,Meera%20Deshpande
+Specify two dates in a multi-select list control, where the control ID is birthday:
+birthday=1970-05-01,1991-01-24
+Specify four numbers in a multi-select list control, where the number data includes commas as thousands separators and where the control ID is sales-amount:
+sales-amount=30,450,2%2C000,600
+Specify both true and false values in a multi-select list control with logical data, where the control ID is is_weekend:
+is_weekend=true,false

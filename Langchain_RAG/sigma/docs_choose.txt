@@ -1,0 +1,32 @@
+Choose
+Suggest Edits
+The Choose function assigns to every row the value that corresponds to the index position, based on the number of the inputs or on the column.
+Syntax
+Choose(index, value1, ...)
+The function has the following arguments:
+index
+Required
+The index number of the returned value
+The index must be a number, a formula, or a column that is a Number data type.
+If the index is a number argument, the function returns only the value in the corresponding index position. If the argument is a column, the function returns the value that corresponds to each row's index number. 
+value1
+Required
+The first of values where to match the index.
+The list of values must have at least one element.
+When an index number does not have a matching value, the function returns Null.
+The value argument(s) can be Number, Logical, Text, or Date data types. All value arguments must be of the same data type.
+value2 ...
+Optional
+Additional values where to match the index
+Examples
+Choose(1, "value 1", "value 2", "value 3")
+Returns value 1.
+Choose([Weekday]([Date]), "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+Returns the name of the day of the week falling on the date in the [Date] column.
+Choose([Cohort Bins], "One Week", "One Month", "Over a Month")
+Returns the Time to Sale bucket each customer belongs to based on the Days First to Second Order column, which indicates the number of days between their first and second purchase.
+Choose(BinRange([Cost], 50, 100, 200, 500, 1000), "under $50", "$50 +", "$100 +", "$200 +", "$500 +", "over $1,000")
+The BinFunction here divides the Category column values into 6 bins, while the wrapping Choose function applies names the bins.
+RELATED RESOURCES
+Weekday
+BinRange

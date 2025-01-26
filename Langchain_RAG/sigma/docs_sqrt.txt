@@ -1,0 +1,9 @@
+Sqrt
+Suggest Edits
+Compute the positive square root of a positive number.
+Usage
+Sqrt()
+number (required) The number or column of numbers to compute the square root of.
+Example
+Sqrt(9)
+Returns 3

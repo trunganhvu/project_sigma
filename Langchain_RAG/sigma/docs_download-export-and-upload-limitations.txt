@@ -1,0 +1,35 @@
+Download and export limitations
+Suggest Edits
+Sigma provides many ways to download your data or export it to other systems. However, some limits apply, as described in the following tables.
+One million row export limit for most exports
+Sigma has a 1 million row export limit for most exports. If your data exceeds the limit, Sigma truncates the data to 1 million rows.
+If you export a pivot table, the 1 million row limit applies to the flattened table.
+If you export to cloud storage, the 1 million row limit does not apply.
+Download or export file type limitations
+The following limits apply when downloading or exporting specific file types:
+Download or export type Limits
+CSV 1 million rows.
+Excel 1 million rows.
+Max columns: 16,384
+Max string UTF-8 characters: 32,767
+Max URLs: 65,530
+Max URL length: 2079 characters
+Max cell limit for pivot tables: 5 million
+If any limit is exceeded, Sigma trims the data down to the limit.
+PNG No download limit.
+PDF: general No download limit.
+PDF: tables and pivot tables Maximum of 1,000 rows per table. By default, table and pivot tables in exported PDFs only display the number of rows that appear on a dashboard. To display more rows in your export, there is an option to show up to 1,000 rows per table. See Show additional rows in Configure additional options for exports.
+For details on which file types are supported for which destinations, see Send or schedule workbook exports.
+Destination limitations
+Sigma has the following limits for export recipients and destinations:
+Destination Limits
+Email 30MB combined for all attachments. An error occurs if the limit is exceeded.
+Google Sheets 5 million cells per table. Sigma truncates table cells exceeding the limit.
+Google Sheets have a limit of 10 million cells per sheet file, including all tabs. If an export to an existing sheet leads the Google Sheet to become larger than 10 million cells, an error occurs.
+Slack 1GB per file. An error occurs if the limit is exceeded.
+Cloud storage 5GB per file.
+For details on which file types are supported for which destinations, see Send or schedule workbook exports.
+RELATED RESOURCES
+Download or export a data element
+Download a workbook page
+Export a workbook

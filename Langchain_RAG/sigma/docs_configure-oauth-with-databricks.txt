@@ -1,0 +1,43 @@
+Configure OAuth with Databricks
+Suggest Edits
+This document guides you through the steps to first set up a Sigma OAuth application to enable authentication through Databricks as your IdP, then connect to that OAuth application from Sigma.
+This documentation applies to customers using Databricks for their CDW. If you are using Snowflake, see Configure OAuth with Snowflake.
+Requirements
+You must be assigned the Admin account type to manage authentication for your Sigma organization.
+Account Admin privileges in Databricks. See What are account admins? in the Databricks documentation.
+Configure a custom OAuth application for Sigma in Databricks
+Enable a custom OAuth application in your Databricks account. See the Databricks documentation for detailed instructions:
+See Enable custom OAuth applications using the Azure Databricks UI for Databricks on Azure.
+See Enable custom OAuth applications using the Databricks UI for Databricks on AWS.
+When you create the connection for the application in Databricks, you have several configuration options. Sigma requires the following configurations for your OAuth connection to work:
+Redirect URLs: Enter a redirect URL that matches your Sigma deployment.
+Deployment Login redirect URL
+GCP https://api.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-US (West) https://aws-api.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-US (East) https://api.us-a.aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-CA https://api-ca-aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-EU https://api-eu-aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-UK https://api-uk-aws.sigmacomputing.com/api/v2/oauth/1/authcode
+AWS-AU https://api-au-aws.sigmacomputing.com/api/v2/oauth/1/authcode
+Azure-US https://api.us.azure.sigmacomputing.com/api/v2/oauth/1/authcode
+Azure-EU https://api.eu.azure.sigmacomputing.com/api/v2/oauth/1/authcode
+Access scopes: When you are prompted to select an access scope, select All APIs.
+Client secret: Enable the option to generate a client secret, as Sigma requires this for secure connection.
+Record your client ID and client secret. You need these values for the Sigma configuration.
+Configure OAuth in Sigma
+In Sigma, configure your organization to use OAuth as the authentication method.
+You will need the client ID and client secret from the OAuth application you configured in Databricks in the previous section. You will also need your Databricks account ID. For information about how to retrieve your Databricks account ID, see Locate your account ID in the Databricks documentation.
+Go to Administration > Authentication.
+In the Authentication Method and Options section, locate the Authentication Method setting and click Edit.
+In the Authentication Method & Options page, configure OAuth authentication:
+In the Authentication Method dropdown, select the OAuth or OAuth or password option.
+To enable guest users to access permitted content, turn on the Allow Guest Access switch. Guest users must have Databricks user accounts provisioned and be added as OAuth users in your IdP in order to access Sigma.
+In the Metadata URI field, enter the OAuth metadata URI in the format that matches your Databricks environment. Replace with the unique ID for your Databricks account.
+Environment Metadata URI
+Azure https://accounts.azuredatabricks.net/oidc/accounts/<your-databricks-account-id>/.well-known/openid-configuration
+AWS <https://accounts.cloud.databricks.com/oidc/accounts/><your-databricks-account-id>/.well-known/openid-configuration
+In the Client ID field, enter the client ID that you received when you created your custom OAuth application in Databricks.
+In the Client Secret field, enter the client secret you recorded when you created your custom OAuth application in Databricks. After you enter and save this value, Sigma does not display it.
+Click Save to apply the changes.
+Test your OAuth configuration by logging out and logging back in to Sigma. Your organization’s login page should now display a "Log in with SSO" prompt.
+Now that you have OAuth enabled on your Sigma account, you can configure your Databricks connections to use OAuth. See Connect to Databricks.

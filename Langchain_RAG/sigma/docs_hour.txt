@@ -1,0 +1,13 @@
+Hour
+Suggest Edits
+Returns the hour component of the given Date as a number.
+Usage
+Hour(date, [timezone])
+date (required) The Date from which to extract the hour component.
+timezone (optional) Name of IANA time zone to get the date part at (e.g., “America/Los_Angeles”). When calculating a time zone, input dates are treated as UTC.
+Example
+Hour(Date("2007-08-14 07:11:00"))
+Returns 7.
+RELATED RESOURCES
+DatePart
+Quickstart: Common date functions and use cases

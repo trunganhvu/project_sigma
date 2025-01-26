@@ -1,0 +1,21 @@
+Display chart reference marks
+Suggest Edits
+Reference lines and reference bands are available for the following visualization types:
+bar charts
+line charts
+area charts
+scatter charts
+combo charts
+Requirements
+To use this feature, you must have Can Edit or Can Explore access to the individual workbook.
+Add a reference mark
+Before you start: This action uses the editor panel. If you have not done so already, open the editor panel from either Explore or Edit mode; see Workbook modes.
+In the editor panel, select Element format.
+Open the REFERENCE MARKS section.
+📘
+Format options vary by visualization type.
+Click + Add new.
+Expand the new reference mark, then select your reference mark type: Line (default) or Band. 
+Customize your reference mark with the remaining options, which differ for line and band reference marks.
+RELATED RESOURCES
+Intro to visualizations

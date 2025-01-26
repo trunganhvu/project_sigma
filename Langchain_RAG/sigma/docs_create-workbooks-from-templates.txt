@@ -1,0 +1,35 @@
+Create workbooks from templates
+Suggest Edits
+Workbook templates allow you to make templates of workbook structures for quick and consistent reuse. For more information see Create and edit templates and Share templates.
+Requirements
+The ability to create a new workbook from a template requires the following:
+You must be assigned an account type with the Can create, edit, and publish workbooks permission enabled.
+You must be the template owner or be granted Can use or Can edit template permission.
+Create a workbook from a template
+Open the Templates gallery page from the left-side navigation panel on your home page.
+Click the template you would like to explore.
+The templated workbook opens.
+Explore the template by clicking on any of its interactive elements. These include tables, visualizations and controls. None of your changes affect the template itself.
+(Optional) To create an editable and publishable workbook from the template, click Save As in the template’s header.
+Use your data in a workbook template (swap sources)
+Prerequisite: The data you want to swap in must be available in Sigma.
+To inject your own data into a workbook template:
+Open the Templates gallery page from the left-side navigation panel on your home page.
+Click the template you would like to use.
+The templated workbook opens.
+If the workbook is built on sample data, a popup appears at the top of the page.
+Click Swap now.
+
+This opens the Swap Data Sources page.
+Sigma attempts to automatically match your data with the template's expected data. 
+However, you can override this, or you may need to manually select a source if a cannot be found by Sigma.
+[optional] To replace a matched source, click the edit () button next to the source under REPLACE WITH. Then select a new source from the modal.
+If the template requires additional sources, check each sources match from the left most panel, ALL SOURCES IN USE.
+When ready, click Swap.
+Explore the workbook to confirm that your data looks correct.
+To create an editable and publishable workbook from the template, click Save As in the template’s header.
+Workbooks also support source swapping. To begin swapping your data into a workbook, open the workbook in Edit mode, open its header menu, then click Swap data sources.
+RELATED RESOURCES
+Get started with workbook templates
+Create and edit workbook templates
+Share templates with different orgs

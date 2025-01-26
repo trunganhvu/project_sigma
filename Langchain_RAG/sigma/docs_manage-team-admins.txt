@@ -1,0 +1,33 @@
+Manage team admins
+Suggest Edits
+Team admins are granted permission to edit team details and manage team members.
+This document provides an overview of team admin permissions and explains how to assign and remove Team Admin status. For information about creating teams and managing team members, see Create and manage teams and Manage team members.
+User requirements
+To manage team admins, you must be assigned the Admin account type.
+Team admin permissions matrix
+The following table indicates team admin permissions and restrictions.
+Administrative privilege Permission
+Edit the team name, description, and team access setting
+Add and remove team members
+Delete the team
+Assign or remove team admin status
+Impersonate users
+Assign team admin status
+Go to Administration > Teams:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Teams.
+In the list of teams, select the team you want to update.
+In the team details page, locate the team member you want to assign as a team admin, then click More and select Assign as a team admin.
+Sigma immediately displays a Team Admin badge next to the team member's name.
+Remove team admin status
+Go to Administration > Teams:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Teams.
+In the list of teams, select the team you want to update.
+In the team details page, locate the team member you want to remove as a team admin, then click More and select Remove as a team admin.
+Sigma immediately removes the Team Admin badge next to the team member's name.
+RELATED RESOURCES
+Create and manage teams
+Manage team members

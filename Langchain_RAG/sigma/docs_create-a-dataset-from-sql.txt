@@ -1,0 +1,43 @@
+Create a dataset from SQL
+Suggest Edits
+You can create datasets by writing SQL against the data in your warehouse.
+Requirements
+To use this feature, you must be assigned an account type with the permission to write custom SQL.
+To run custom SQL, you must have the Can use data permission for the entire connection. See Data permissions.
+The SQL editor only appears if you have connection-level access to at least one connection in your organization.
+To reference existing Sigma datasets and workbook elements within your SQL, you must have write access configured on your connection.
+Create a dataset by writing custom SQL
+To create a new dataset by writing your own SQL query against your data:
+Open Sigma Home.
+In the navigation panel, click Create New, then select Dataset.
+On the Select a Data Source page, click Select under SQL.
+In the side panel, click Select a Connection and select the connection you want to query.
+In the query editor, enter your custom SQL. Sigma provides autocomplete suggestions to guide you.
+Reference existing Sigma datasets
+You can reference your existing Sigma dataset in your SQL by using the fully qualified name as a view inside the warehouse. This is a combination of the dataset Location and view name:
+SELECT * FROM <location>.<dataset_warehouse_view_name>
+To determine the fully qualified name of the dataset, select when viewing a dataset to open the information panel:
+The Location field provides the database and schema in your CDW that contain the dataset, and the Dataset field provides the view name that you can reference.
+💡
+To copy the fully qualified name to your clipboard, click the more ( ) icon, then select Copy path.
+For the dataset shown in the screenshot, you can retrieve all columns of the dataset with the following example SQL:
+SQL
+SELECT * FROM SIGMASUPPORT.WRITE_BACK.VIEW_MY_SIGMA_DATASET
+To reference individual columns from your Sigma dataset in your SQL, wrap the column name in double quotes. For example:
+SQL
+SELECT "Customer Id" FROM SIGMASUPPORT.MATERIALIZATION.VIEW_NEW_DATASET_FROM_SQL_A4438843B7604999A324C84265EE695E
+Reference dataset parameters
+You can reference Sigma parameters in your SQL by wrapping the parameter's name in curly brackets:
+{{my_parameter_name}}
+If the parameter's value is output with single quotation marks, you can remove these quotation marks by prepending the keyword #raw before the parameter name:
+{{#raw my_parameter_name}}
+If the parameter is from a Date range control, you can extract the start and end date:
+{{my_parameter_name}}:start and {{my_parameter_name}}:end
+Limitations and warnings
+If you change the value of a parameter, make sure that the tables use the same schema.
+If you use the #raw parameter value, row-level security can be bypassed in the worksheet, creating a security vulnerability.
+Reference multi-select list parameters
+Multi-select list controls pass the multi-selected data as an array.
+For more information see the following articles in Sigma Community:
+Multi-select Parameters in Workbooks (hand-written SQL source) (Community)
+Multi-select Parameters in Workbooks (Calculated Fields) (Community)

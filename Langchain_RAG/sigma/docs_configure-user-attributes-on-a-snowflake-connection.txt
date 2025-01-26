@@ -1,0 +1,77 @@
+Configure user attributes on a Snowflake connection
+Suggest Edits
+You can set up user attributes on a Snowflake connection to dynamically assign a Snowflake warehouse or role for a specific user to use, based on their user attribute value.
+This document describes how and why to use attributes on your Snowflake connection. There are two attributes available on the Snowflake connection: Warehouse and Role.
+After you configure attributes on the connection, you can also pass the attribute to external users in a secure embed URL. For more details, see Apply dynamic connection and role switching to embeds.
+About the warehouse attribute
+The Warehouse attribute allows you to dynamically change the Snowflake warehouse used based on the value of a user attribute assigned to a user in Sigma.
+This can be helpful in a client-based setup because you can create separate warehouses for each client and easily monitor the compute costs incurred per client.
+About the role attribute
+The Role attribute provides row-level security using the roles you configured in Snowflake, rather than manually recreating row-level security and security policies in Sigma. This feature allows you to bypass OAuth to dynamically deploy your Snowflake roles on the connection, in Sigma. You can dynamically change the role on your Snowflake connection with user attributes.
+📘
+For embed users, you can set attributes on users and teams. For internal users, you can set attributes on teams.
+Requirements
+To set up dynamic warehouse switching or role switching based on user attributes, you must be assigned the Admin account type
+You also must ensure that privileges in Snowflake are set up to support this configuration:
+The Snowflake role to be used with a specific warehouse must be granted at least the USAGE privilege on the warehouse.
+The Snowflake role must also be granted at least the USAGE privilege on relevant databases and schemas connected to Sigma.
+The Snowflake role(s) must be granted to the Snowflake user associated with the connection.
+Configure user attributes
+In order to configure user attributes on a Snowflake warehouse connection, you must first create user attributes and assign them to teams. Depending on your use case, you can create a user attribute for a Warehouse, Role, or both. 
+To configure user attributes, do the following:
+In your Sigma Admin portal, go to User Attributes and click Create Attribute. 
+In the New Attribute section, enter a unique name in the Name field.
+In the Description field, describe the attribute. Optional. 
+In the Default Value field, enter a default value. Sigma will use the value defined here if no value is set for a team. Optional. 
+Click Create.
+After you click Create, the attribute appears under User Attributes.
+For a more detailed explanation, see User Attributes.
+Assign user attributes
+To assign a team to a user attribute, do the following:
+In the Teams Assigned section, click Assign Attribute to assign teams to this attribute.
+In the search bar, search for teams to assign this attribute to, or click in the search bar to view a list of your organization's teams. For more information, see Teams.
+Add a value in the Assigned Value field. 
+Click Assign. Your teams are now listed under Teams Assigned.
+To reorder the priority of teams, in the Teams Assigned section, place your cursor over the drag handle. Under the Priority column, and drag and drop the team to the desired priority.    
+📘
+If a user is a member of multiple teams, use Priority to determine which assigned value the user in the team is subject to.
+Set user attributes on a Snowflake connection
+After you configure user attributes to use to dynamically assign a warehouse or role to a user, configure the connection to use the user attributes:
+In the Administration Portal, go to Connections.
+Click Create Connection or open an existing connection.
+Click Snowflake.
+Follow the general configuration instructions in the Connect to Snowflake document.
+Click the More Menu on the Warehouse field to browse and select the warehouse attribute you previously configured.
+📘
+You must deselect OAuth access.
+Click the More Menu on the Role field to browse and select the role attribute you previously configured.
+You must deselect OAuth access.
+Your Snowflake connection is configured to dynamically use the role and warehouse set in Snowflake. 
+Use with secure embeds
+After you configure attributes on the connection, you can pass the attribute to external users in a secure embed URL. To use the role and warehouse attributes in an embed, you must add the parameters to the URL (Embed Path URL).  
+📘
+For the Role attribute, this configuration enforces row-level security for the duration of the secure embed.
+Add parameters to a secure embed URL
+In order to pass attributes in secure embeds, you must add the parameters to the embed URL for both attributes.
+In the embed URL, the attributes should be formatted as follows:
+:ua_{nameofattribute}=value
+
+//example
+:ua_warehouse=wh
+In the example below, the attribute is added at the end of the secure embed URL.
+https://app.sigmacomputing.com/embed/1qmpD5yiMIRvb6dI8l4pzK
+?:nonce=35df8548-c7e5-4d35-92da7f8114843999
+&:session_length=3600
+&:client_id=9319bfb04ae48af48bbee8f702669c085a38b6a73f43d32htd70a3cd6ee4h9iu
+&:time=1654709460
+&:external_user_id=12
+&:external_user_team=Team%20A%2CTeam%20B
+&:email=[harold@mycoolcompany.com](mailto:harold@mycoolcompany.com)
+&:account_type=explorer
+&:mode=userbacked
+&:ua_warehouse=wh1
+&:signature=j323557c82b26103faf65314db41ebc51ea9n3a61795ef22f45ep0aed1f4182493
+For more information, about adding parameters to a secure embed URL, see Embed URL parameters and Example embed API and URL.
+RELATED RESOURCES
+User Attributes
+Connect to Snowflake

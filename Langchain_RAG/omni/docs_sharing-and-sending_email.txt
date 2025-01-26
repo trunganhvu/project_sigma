@@ -1,0 +1,26 @@
+Schedules & AlertsEmail
+On this page
+Email deliveries
+With email deliveries, you can automatically schedule sending dashboards and individual tiles to your team.
+Setup
+No prior set up is required to use emails as a delivery destination. To create an email delivery, refer to the Creating deliveries guide for instructions.
+Whitelabeling with custom sender options
+THIS FEATURE IS IN BETA
+The Custom email sender feature is currently in beta. To have this feature enabled, reach out to Omni support: support@omni.co.
+By default, delivery emails are sent from an Omni email address. Omni's Custom email sender feature allows you to customize delivery emails' sender information, such as the sender's name and reply-to email address. This is especially useful for instances where you need to whitelabel Omni emails, such as using Omni as an embedded product.
+After Omni support enables this feature, an Omni Organization Admin will need to:
+Open the Settings page.
+Click Deliveries > Email tab.
+Toggle Custom email sender to On.
+Fill in the Sender Name and Sender Email fields.
+When finished, you can send a test (Send test) or Save changes.
+Recipients
+Recipients can be other members of your Omni organization or non-users, such as a contractor or external stakeholder. When recipients without an Omni account are added to a delivery, Omni creates a shell account, or an email-only user.
+Email-only users
+An email-only user is a recipient of a delivery that isn't associated with an Omni account. Omni builds these accounts to allow you to monitor scheduler usage and other related metadata.
+Like users with Omni accounts, email-only users can also be assigned user attributes for dynamic content.
+Organization Admins can view all email-only users by navigating to Settings > Users > Email-only tab. Note: This tab will only display if there is at least one email-only user receiving a delivery.
+Previous
+Setup
+Next
+SFTP

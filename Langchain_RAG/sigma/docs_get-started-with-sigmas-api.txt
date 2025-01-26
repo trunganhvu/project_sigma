@@ -1,0 +1,17 @@
+About the Sigma REST API
+Suggest Edits
+Sigma’s REST API provides developer access to resources programmatically, using HTTP. The API allows secure access to all the commonly used resources like connections, datasets, teams, workbooks and more. The API can be used to create custom applications or integrations with Sigma. JSON is returned by all API responses, including errors.
+See Get started with the Sigma REST API for more details.
+You can use the Sigma API to automate operations in support of native and embed workflows.
+API reference documentation
+The API reference documentation provides an interactive API console with code samples in a wide variety of common programming languages. You can perform API requests and review responses directly from the API reference page for a given endpoint.
+API recipes
+API Recipes provide sample code in JavaScript for many common use cases. Code for individual recipes can be copied directly from the API recipes page.
+Alternatively, all recipes can be downloaded from this git repository.
+There is also a Sigma REST API Recipes QuickStart to assist you in using these recipes on your local computer.
+Using Postman with the API
+There is also a Sigma API with Postman QuickStart that discusses and demonstrates how to leverage the very popular API platform Postman with the Sigma API.
+RELATED RESOURCES
+Generate Sigma API client credentials
+Get access token
+Identify unique IDs in Sigma

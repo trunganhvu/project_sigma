@@ -1,0 +1,8 @@
+Visualization & DashboardsVisualization typesBoxplot
+Boxplot
+Boxplot charts are a versatile and efficent way to summarize and compare data.
+The out of box visualization in Omni allow users to to choose if it is Quantitative or Nominal (under X) and the sort order (under both X + Y)
+Previous
+Heatmap Charts
+Next
+Overview

@@ -1,0 +1,44 @@
+Restore input table access for a Snowflake connection or user
+Suggest Edits
+When an admin changes the Snowflake role configured for a connection in Sigma, insufficient role privileges can interrupt input table access and prevent users from creating new input tables or saving edits to existing ones. This error can also occur when a connection uses OAuth and a user's role is reassigned within Snowflake.
+This document describes how to determine the root cause of the error and grant the necessary privileges to restore input table access for a connection or user.
+System and user requirements
+The ability to restore input table access for a connection or user requires the following:
+You must be assigned the Admin account type in Sigma.
+You must be able to grant privileges on objects in Snowflake.
+Identify the error's root cause and resolution
+When a Snowflake role lacks privileges to access input table data and the edit log (also known as the write-ahead log or WAL), impacted users cannot create new input tables or save edits to existing ones in Sigma. A workbook displays a "SQL compilation error" message indicating that the object doesn't exist or is not authorized, and Sigma sends an "Input table edits failed" system email to all organization admins and the user who encountered the error. The email sent to admins about this error indicates that "a user could not save edits to an input table due to insufficient role privileges."
+The resolution to restore input table access depends on the connection's authentication method and whether the role applies to the connection or a specific user accessing the connection. Use the following table to identify the error's root cause and resolution, then refer to the Retrieve the role and write-back schema and Update role privileges in Snowflake sections of this document.
+Connection authentication Error message object prefix 1 Root cause Resolution in Snowflake
+Non-OAuth
+(basic or key pair) SIGDS or SIGDS_WAL The role used by the connection cannot access tables containing input table data and the edit log In the write-back schema, grant the following privileges to the role used by the connection:
+On tables containing input table data (SIGDS prefix), grant ALL PRIVILEGES
+On the table containing the edit log (SIGDS_WAL prefix), grant INSERT and SELECT
+OAuth SIGDS_WAL The role used by the connection's service account cannot access the table containing the edit log In the write-back schema, grant the following privileges to the role used by the connection's service account:
+On the table containing the edit log (SIGDS_WAL prefix), grant INSERT and SELECT
+OAuth SIGDS The role assigned to the user cannot access the tables containing input table data In the write-back schema, grant the following privileges to the role assigned to the user:
+On tables containing input table data (SIGDS prefix), grant ALL PRIVILEGES
+1
+Sigma displays the error message in the workbook (when the user encounters the error) and includes it in the system emails. In the error message, a SIGDS prefix identifies a table containing data saved to an input table, and a SIGDS_WAL prefix identifies the table containing the edit log.
+Retrieve the role and write-back schema
+To ensure you update the role privileges accurately in Snowflake, first retrieve relevant details from Sigma.
+Non-OAuth connection
+When the error occurs on a non-OAuth connection, retrieve the name of the role used by the connection and the name of the write-back schema.
+If you received a system email reporting a failed input table edit, click View connection in the email to directly access the connection overview in the Sigma Administration portal. Otherwise, go to Administration > Connections in Sigma and select the applicable Snowflake connection.
+In the Connection Credentials section of the connection overview, reference the Role field to retrieve the name of the Snowflake role that requires privilege grants.
+In the Write Access section, reference the Write schema field to retrieve the name of the write-back schema containing input table data and the edit log.
+OAuth connection
+When the error occurs on an OAuth connection, retrieve the name of the role used by the connection's service account (only if the root cause is at the service account role level) and the name of the write-back schema.
+If you received a system email reporting a failed input table edit, click View connection in the email to directly access the connection overview in the Sigma Administration portal. Otherwise, go to Administration > Connections in Sigma and select the applicable Snowflake connection.
+Retrieve the name of the Snowflake role that requires privilege grants:
+If the root cause of the error is at the service account role level, go to the Connection Credentials section of the connection overview, then reference the Role field.
+If the root cause of the error is at the user role level, reference the user's email address in the system email, then identify the user's default role assigned in Snowflake.
+In the Write Access section, reference the Write destinations field to retrieve the name of the write-back schema containing input table data and the edit log.
+📘
+If the connection writes to multiple destinations, reference the error message in the system email and retrieve the specific write-back schema from the destination path. You can also access the workbook and refresh the input table, then retrieve the name of the applicable write-back schema from the input table query details.
+Update role privileges in Snowflake
+Use the role and write-back schema retrieved in the previous section to implement the applicable resolution outlined in the Identify the input table error root cause and resolution section of this document.
+You can grant privileges on tables in Snowflake using SQL or Snowsight. See Grant privileges to the role in Snowflake's documentation for details.
+💡
+Before granting privileges on tables, confirm that the role requires access to the input table data and is not restricted intentionally.
+If you cannot locate the identified write-back schema or table in Snowflake, the object might no longer exist. If the schema or edit log was unintentionally deleted, you must create a new connection or recreate the edit log table. Contact Support for more information.

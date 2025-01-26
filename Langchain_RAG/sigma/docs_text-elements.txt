@@ -1,0 +1,36 @@
+Text elements
+Suggest Edits
+Requirements
+To add and edit text elements, you must have Can Edit access to the individual workbook.
+Create a Text Element
+Before you start: This action is only available in Edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Open the workbook's ADD NEW panel, accessible from the + button located in the sidebar on the left side of the page.
+On the ELEMENTS tab, under UI ELEMENTS, click TEXT. 
+Your new text element will appear selected on the page.
+Begin typing to enter text.
+Use the toolbar at the top of the page to add custom formatting or hyperlinks.
+Use your cursor to drag and drop the element anywhere on the page canvas.
+Apply Formatting to a Text Element
+Before you start: This action is only available in Edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Click the element to select it.
+Select the text you want to format.
+Use the toolbar at the top of the page to select your format option(s).
+Add Dynamic Text Based on Your Data
+When editing a workbook, you can inject dynamic text into text elements. Dynamic text is text generated based on a formula. This is helpful if you want to display element headers or inline text that automatically updates based on your data.
+Before you start: This action is only available in Edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Select your text element, and position your cursor where you would like to add dynamic text.
+Hit = on your keyboard,
+or
+Click the function () button, located in the workbook's toolbar.
+
+A formula bar will pop up over your text element.
+Type a formula, just as you would in the formula bar of any data element. Start typing the name of the object/table with your desired field, and Sigma will provide suggestions for you to choose from.
+Hit Enter on your keyboard.
+[optional] To apply formatting:
+Select your new dynamic text.
+Choose a format option from the toolbar.
+RELATED RESOURCES
+Intro to UI Elements
+Did this page help you?
+Yes
+No

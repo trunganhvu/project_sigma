@@ -1,0 +1,22 @@
+Date
+Suggest Edits
+The Date function converts a text or number value to the date data type in ISO date time format.
+The text or number value must already reflect ISO or Unix time format to convert properly. When an input value doesn't reflect ISO or Unix time formats, use the DateParse function.
+💡
+Use the Date function within other functions to ensure a value is interpreted as a date data value instead of a text string.
+Syntax
+Date(value)
+Function arguments:
+value (required) The value or column containing values to convert to date data values in ISO date time format.
+Input values must reflect ISO date time format (yyyy-mm-dd or yyyy-mm-dd hh:mm:ss)
+When you convert an integer that represents Unix time, the Date function behaves like the DateFromUnix function and interprets the integer as a Unix timestamp, or the number of non-leap seconds that have passed since 00:00:00 UTC on January 1, 1970 (the Unix epoch).
+To perform arithmetic operations (like addition, subtraction, multiplication, or division) in the function, use numerical input.
+Examples
+Greatest([Invoice Date], Date(“2018-01-01”))
+The Date function first converts the 2018-01-01 text value ﻿to a date value representing January 1, 2018. The Greatest function then evaluates date values in the Invoice Date column against January 1, 2018 and returns the most recent of the two dates in ISO date time format.
+Date(1503724894)
+Interprets the Unix timestamp as 1,503,724,894 seconds past 00:00:00 UTC on January 1, 1970 and returns the ISO date time value 2017-08-26 05:21:34.
+RELATED RESOURCES
+DateFromUnix
+DateParse
+MakeDate

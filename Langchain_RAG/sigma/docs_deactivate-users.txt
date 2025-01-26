@@ -1,0 +1,40 @@
+Deactivate users
+Suggest Edits
+This article describes how to deactivate members and allocate their documents to active users, and how to reactivate inactive users.
+If your organization uses SAML + SCIM, you must deactivate users through your identity provider. If you deactivate in Okta, the user is marked as inactive in Sigma. If you deactivate a user in Azure, the user is set to inactive in Sigma for 30 days. After 30 days, the user is marked archived.
+If your organization only uses SAML, you must deactivate the user in Sigma.
+🚧
+If you deactivate a user, their client credentials (API and embed) will also be deactivated. References to these credentials will result in an invalid request error.
+To deactivate users and allocate their documents to an active user, do the following:
+Open the Admin Portal.
+Click People to open the People page.
+On the Members tab, select the checkbox next to each member you want to deactivate. Select the checkbox to the left of Name to select all users.
+📘
+When you check the box to the left of Name, it only selects the users in your view. If you scroll down, more users appear and can be selected.
+The numbers to the right of Account Type show the number of members currently displayed divided by the total number of members. In the example below, the admin scrolled down and revealed all 9 of the total members in the organization:
+In the right-hand corner, the number of selected users appears along with two icons. Click the first icon to deactivate the selected users.
+You can also click More for a selected member and then select Deactivate. This deactivates all selected users.
+On the Deactivate User popup, the member(s) you chose to deactivate display. In the Select New Owner section, assign the deactivated user's documents to a new owner.
+In the following example, the documents are assigned to tom@test.com.
+Click Deactivate.
+Deactivated user documents
+After you click Deactivate, the user's documents are automatically migrated to the selected user's My Documents folder. The deactivated user's documents are located in My Documents > Archived Users > Folder, where the folder title is the deactivated user's name. There is no need to manually transfer all of the documents created by the user, Sigma does this for you.
+If you use SAML and SCIM, the user's documents are also located in My Documents > Archived Users > Folder.
+Click More for a member to share, rename, move, or delete the folder.
+Deactivated user accounts & reactivation
+After an account is deactivated, it still appears in the Members tab on the People page with a status of Inactive.
+Inactive users are filtered out of the Members list by default. Use the list's filter menu to show all users.
+To reactivate a user, select Reactivate from More.
+Deactivate or reactivate user accounts via API
+An admin in Sigma can use the Delete member API endpoint to deactivate a user. This reassigns the deactivated user's documents to the user with API credentials.
+If you want to a user and reassign their documents to a specific user, make a PATCH request to the Update member API endpoint. Set thenewOwnerId to the user ID of the desired document owner, and isArchived to True.
+Reactivate disabled users in bulk
+To reactivate users in bulk, do the following:
+This operation is limited to organizations that do not use an IdP for authentication.
+In the admin portal, go to the People tab.
+To reactivate users in bulk, select the checkbox next to each user you want to reactivate. To select all, select the checkbox next to Name. You must display both Active and Deactivated users to perform this action.
+Click Members:
+Click Confirm.
+RELATED RESOURCES
+Invite people to your organization
+User account types

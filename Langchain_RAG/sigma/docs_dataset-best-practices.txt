@@ -1,0 +1,10 @@
+Dataset best practices
+Suggest Edits
+Minimize Levels
+All levels in the worksheet tab of datasets will be flattened in worksheets created on top of the dataset. Only create the levels necessary for key calculations to help prevent confusion.
+Consider Your Filters
+Applying filters to surface the most relevant data will make the process of discovering insights much quicker. When combined with materialization, it also means queries run faster. The best filters cut out irrelevant data without being restrictive.
+Describe the Dataset
+If the dataset was built as a base for a specific use case, a good title and description lets people know what that use case is. It’s important to be clear about when the dataset should and shouldn’t be used.
+Materialize
+If you are setting up materialization for your dataset, make sure to check when the data you are using is refreshed in the database. You want to set your refresh schedule to occur after the database refresh.

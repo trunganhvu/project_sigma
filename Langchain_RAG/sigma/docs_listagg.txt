@@ -1,0 +1,19 @@
+ListAgg
+Suggest Edits
+The ListAgg function joins a given column's row values into a single list. Each window of values within a column will be aggregated into an individual list. The output of this function is a text column.
+Syntax
+ListAgg([Column], separator )
+Function Arguments:
+[Column] (required) - The column of values that you would like to combine.
+separator (optional) - The text value separator to use between values, specified within quotation marks. If no separator is specified, a comma will be used.
+📘
+Sort the initial input column of values to subsequently sort the resulting aggregated list. If no sort is applied to the initial column, the resulting list's order of values will be unpredictable.
+Example
+ListAgg([County])
+A table contains a grouped [State] column and an associated [County] column. You can use the ListAgg function to create an list of all counties within each state.  Here, no separator is indicated, so it defaults to a comma.
+ListAgg([County], "-")
+Here, a dash is indicated as the separator, so each value will be separated by a dash.
+ListAgg([Store State], "\n")
+Here, the special keyword for a newline is indicated as the separator so each value will be placed on its own line. Note that you must wrap the column's text for this to occur.
+RELATED RESOURCES
+Concat

@@ -1,0 +1,71 @@
+Model data from database tables
+Suggest Edits
+System and user requirements
+The ability to model data from database tables requires the following:
+Your organization must be connected to a data source (CDW or DBMS).
+You must be assigned an account types with the Manage connections permission enabled.
+You must be granted Can use & annotate data permission for the connection.
+Annotate Tables
+Find Relevant Tables
+Locate the Data Catalog in Sigma's left hand navigation panel. Under Connections, click to select which data connection you would like to explore.
+From the data catalog, click on the table you would like to annotate.
+Add a Description
+Open the Table.
+Click the Edit button in the Table header.
+Click the information icon () in the Table header.
+Enter a description in the Description field of the Table details popup.
+Format Columns
+Open the Table.
+Click the Edit button in the Table header.
+Find the column that you would like to format, and click the arrow next to the column name to open the column menu.
+Under Format, choose the formatting option that you would like to apply.
+Click Publish to save your changes.
+Add Column Descriptions
+Open the Table.
+Click the Edit button in the Table header.
+Click to open the Column tab.
+Enter a new description in the column's description input field.
+Click Publish to save the changes
+Create Datasets
+Create Datasets From Tables
+Table based datasets allow you to bundle formulas, data transformations, filters, groupings and parameters into a rich data source that others can build on. Datasets can also be materialized back to your database, helping speed up analysis.
+Locate Data
+Locate the left-hand navigation panel.
+Click on Connections.
+Find the warehouse table you would like to use as a data source.
+Click the down arrow button to the right of the Explore button, in the page header.
+Give the dataset a name and select the location to save it in.
+Add a Description
+Open the dataset.
+Click the information icon () in the page header. This will open the page's info popup.
+Enter a description in the Description field of the dataset details popup.
+Add or Update a Badge
+Open the dataset.
+Click the information icon () in the page header. This will open the page's info popup.
+Select a badge type from the Badge dropdown list.
+[optional] Add a note to provide context for later reference or other teammates.
+Create Datasets from SQL
+SQL based datasets take SQL queries and turn them into reusable data sources that people can use as the basis for additional analysis. Datasets can also be materialized to your database, helping speed up queries. Any changes made to a dataset will be propagated forward to any downstream documents.
+Click the Create New button in the left navigation panel.
+Select Dataset. This will take you to the Select a Data Source page.
+Under SQL, click Select.
+Select your desired warehouse connection from the dropdown list.
+The database object panel on the left side of the page will allow you to explore your connection.
+[optional] Click on any table to preview its data.
+To write SQL, begin typing keywords into the text box in the top half of the screen. Sigma will automatically provide a list of autocomplete options to guide you.
+To run your SQL query, click the Run button in the center-right portion of the page.
+Keyboard shortcuts: CTRL-Enter on a PC or CMD-Enter on a Mac.
+Click the caret () next to the Explore button in the dataset header.
+Select Create Dataset.
+Delete a dataset
+To delete a dataset you must be the owner of the dataset, have Can edit access to it, or have the Admin account type.
+Click the caret () next to the dataset name, then click Delete....
+On the Confirm Deletion modal, click Delete.
+Recover a deleted dataset
+To recover a dataset that has been deleted, you must be the owner of the dataset or have the Admin account type.
+Go to your Home page.
+In the navigation menu, select Trash.
+In the Trash page, search the list of deleted documents and click the one you want to recover. You can sort the Name, Deleted on, or Deleted by columns to help identify the applicable document.
+In the Document has been deleted modal, click Recover. Sigma immediately opens the recovered document.
+RELATED RESOURCES
+Modeling Best Practices

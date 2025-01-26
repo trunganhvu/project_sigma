@@ -1,0 +1,17 @@
+ArrayLength
+Suggest Edits
+The ArrayLength function returns the number of entries in a list.
+Syntax
+ArrayLength(array)
+The ArrayLength function has the following argument:
+array
+Required
+Sigma counts the number of entries in this list
+Must reference a list parameter, or a column that contains list values
+Example
+A table contains a Products Bought column that has list values. You can use the ArrayLength function to count the number of products in the list of values.
+ArrayLength([Products Bought])
+RELATED RESOURCES
+ArrayContains
+ArrayDistinct
+ArraySlice

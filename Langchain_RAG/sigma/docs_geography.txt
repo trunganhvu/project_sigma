@@ -1,0 +1,19 @@
+Geography
+Suggest Edits
+The Geography function converts GeoJSON or WKT data into the Geography data type.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+Note: in GeoJSON and our Geography type, the coordinate order is always longitude, latitude
+Geography(value)
+The function arguments are:
+value: Contents the function converts into a valid Geography data type
+Examples
+Geography([GeoJSON])
+The Geography function returns the following values for the GeoJSON column:
+Geography([WKT])
+The Geography function returns the following values for the WKT column:
+RELATED RESOURCES
+Json
+Text
+Geography functions

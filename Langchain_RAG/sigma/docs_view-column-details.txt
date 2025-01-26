@@ -1,0 +1,26 @@
+View column details
+Suggest Edits
+Column details are available for all column types except JSON. To see details and statistics about an individual column:
+Click the caret () to open the column's dropdown menu.
+Select Column Details.
+Contents of the modal vary depending on column type. However, the overarching structure remains consistent.
+About
+This section lists column type, name, and formula (fx).
+Values
+This section displays visual representations of the columns data. The Top Values list contains the column’s most common values. This information is available for Text, Number, and Date columns.  A Value Distribution histogram is also available for Number and Date columns.
+Summary
+This section lists key column totals: Values, Nulls, Row Count and Distinct Values. The percent column delineates the percentage of count out of total rows in the column.
+Values - The total number of non-null values (see Count)
+Nulls - The total number of null values (eg CountIf( [column], IsNull([column])) )
+Row Count - The total number of rows in the column, regardless of value
+Distinct Values - The total number of unique values (see CountDistinct)
+Statistics
+This section lists a variety of column statistics. Minimum and Maximum values are displayed for Date and Text columns. These and all other stats listed below are available for Number columns.
+Minimum - The column’s minimum value. Depending on column type, this will be the lowest number, the oldest date, or the first Text value when sorted alphabetically (see Min)
+25th Percentile - The number of values in the bottom 25th percentile of the columns values (see PercentileCont)
+Median - The midpoint in a sorted list of column values. (see Median)
+75th Percentile - The number of values in the bottom 75th percentile of the columns values (see PercentileCont)
+Maximum - The column’s maximum value. Depending on column type, this will be the highest number, the newest date, or the last Text value when sorted alphabetically (see Max)
+Average - The average of all column values (see Avg)
+Standard Deviation - The column’s computed standard deviation (see StdDev)
+Variance - The column’s statistical variance (see Variance)

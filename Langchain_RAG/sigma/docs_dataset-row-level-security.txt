@@ -1,0 +1,39 @@
+Dataset Row-Level Security
+Suggest Edits
+📘
+This document is specific to Sigma datasets. For details about row-level security in workbooks, see User attributes.
+Row-level security restricts access to data based on the characteristics of the person viewing the data. Within Sigma, membership to a team and/or a user’s email can be used to filter what data is visible.
+Requirements
+To implement this feature, you must have Can Edit access on the individual dataset.
+Set Up Row Level Security
+Create a dataset
+Create a column with user-identifying filter criteria
+Creating the right filter logic is the key to row-level security.
+Sigma offers two functions that provide information about the current user. CurrentUserEmail returns the email of the user viewing the data. CurrentUserInTeam returns True if the current user is a member of any of the given teams.
+Both functions can be used as a test to filter data.
+Before you start: This action is only available in Edit mode. To start editing, click Edit in the top right corner of the page.
+Open the dataset's worksheet tab.
+Add a new column.
+Enter a formula for your user-identifying filter criteria.
+The formula should produce logical (true/false) values.
+Example
+Let’s say you have a table with sales results, and you want each salesperson to see only their results.
+First, you need to pull in the emails associated with each line of data in the Sales Results. You can then create a new column and set up the formula that tests for what data the viewer should see.
+[Salesperson Email] = CurrentUserEmail()
+This formula looks at emails in the column [Salesperson Email] and checks if it matches the email of the user currently viewing the dataset or its child document. It will return True for all rows where the current user’s email matches the salesperson email. You now have a test for what data should be shown to which user.
+Sigma can also create team level row security using CurrentUserInTeam. This function checks to see if the current user viewing the data is part of any of the specified teams.
+To set up team security, create a column that associates the data with the correct Sigma team. If the Southwest should only see data from California, Nevada and Arizona, set up a column with that logic.
+If( [Region] = “California”, “South West”,  [Region] = “Nevada”, “South West”,  [Region] = “Arizona”, “South West”)
+This will create a column that has the value Southwest for all rows of data that have the [Region] set to California, Nevada, or Arizona.
+Expand this logic to include all of the teams you want to test for. Then create your filter column.
+CurrentUserInTeam([Team])
+This will return True for every row of data where the current user belongs to the team indicated in that row of the [Team] column. You now know which data should be shown to someone, based on what teams they are a member of.
+Filters can also be set up to test for multiple conditions. You could filter a sheet to show salespeople only data from leads that they own, and show all the data to sales managers.
+( [Salesperson Email] = CurrentUserEmail() ) or ( CurrentUserInTeam(“Sales Manager”) )
+This returns TRUE for all rows when the viewer is in the “Sales Manager” team and returns TRUE only for rows where the viewer email matches the Salesperson Email for all other viewers.
+Filter the column
+After you have a column with your filter criteria set up, you can filter your dataset to only show the desired data.
+Select the column.
+Filter to only show rows where the value is True.
+This filters the dataset and any child documents to only show data when the current user matches the filter criteria.
+Hide the filtered column.

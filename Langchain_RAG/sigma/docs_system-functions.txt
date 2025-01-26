@@ -1,0 +1,9 @@
+System functions
+Suggest Edits
+System functions return information about your Sigma organization, including details about users and system configurations.
+CurrentTimezone Returns your organization's IANA time zone as configured in the Administration portal.
+CurrentUserAttributeText Returns the value of a specific attribute for the current (signed-in) user.
+CurrentUserEmail Returns the email address associated with the current (signed-in) user's account.
+CurrentUserFirstName Returns the current (signed-in) user’s first name as configured in the user’s profile.
+CurrentUserFullName Returns the current (signed-in) user’s first and last name as configured in the user’s profile.
+CurrentUserInTeam Returns true if the current user is a member of a specific teams.

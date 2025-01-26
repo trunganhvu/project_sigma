@@ -1,0 +1,8 @@
+SecurityIP address allowlist
+IP address allowlist
+By default, outgoing database connections from Omni originate from a set list of IP addresses per environment.
+Omni's IP addresses can be found on an individual connection's page, accessed by navigating to Settings > Connections and clicking a connection. Note: If you choose to limit access to your database by IP address, make sure all the IPs listed on this page are included in the allowlist.
+Previous
+AI tools & data handling
+Next
+Frequently Asked Questions

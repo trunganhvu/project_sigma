@@ -1,0 +1,32 @@
+Impersonate users
+Suggest Edits
+This document describes how admins can assume the permissions of another user in their organization.
+Requirements
+🚩
+Impersonate users is unavailable for organizations that use OAuth to authenticate.
+To impersonate users, you must be assigned the Admin account type. This feature is not available to members who are only assigned as team admins.
+Overview
+The functionality to impersonate users provides admins with ability to assume a user and view, edit, access Sigma resources based on the user's account type.
+When admins impersonate a user, they can identify and troubleshoot issues that a user experiences from their perspective. This lets admins resolve problems with greater efficiency so their users can resume work. Admins can also verify what documents the user can access and the corresponding permissions.
+Some additional use cases include:
+Validate row-level security (RLS)
+Understand how embed users are using embeds
+When you impersonate a user, an event is created in audit logs that identifies the user and the impersonator.
+Impersonate a user
+Follow the steps below to impersonate a user in your organization. You can impersonate a user on the People or Team tabs.
+📘
+Organization admins can only impersonate non-admin users.
+For Snowflake and PostgreSQL connections, the impersonation also applies to the role and warehouse attribute used on your connection.
+Impersonate a user from the People tab
+Open Administration > People.
+Select a user to impersonate.
+On the user profile, click Impersonate user.
+At top of the Sigma UI, you see a yellow banner that identifies the user that you are impersonating. During the impersonation session, you can view, edit, and access Sigma resources based on the user's account type.
+To end the session, in the yellow banner, click Stop Impersonation. You return to the user's profile logged in as yourself.
+Impersonate a user from the Team tab
+Open Administration > Teams.
+Select the team with the user that you want to impersonate.
+Locate the user that you want to impersonate, then click the (More) menu and select Impersonate user.
+At top of the UI, you see a yellow banner that confirms the identity of the user you are impersonating. During the impersonation session, you can view, edit, and access Sigma resources based on the user's account type.
+RELATED RESOURCES
+Manage Teams

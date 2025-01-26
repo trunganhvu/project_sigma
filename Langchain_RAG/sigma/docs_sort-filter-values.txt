@@ -1,0 +1,19 @@
+Sort filter values
+Suggest Edits
+This article covers how to sort include and exclude filters. It is relevant to both filter control elements and data element filters.
+Important: Include and Exclude filters/controls only show up to the top 200 values.
+Requirements
+None. Anyone with permission to view a workbook can access all visible filters.
+Sort Options
+The following options are available for all include/exclude filters:
+Descending by count (default)
+Ascending by count
+Descending by alpha-numeric (Z-A and 9-0)
+Ascending by alpha-numeric (A-Z and 0-9)
+Select a Sort Option
+Click the filter.
+Click the filter () button located in the top right corner of the dropdown.
+Select a sort option.
+RELATED RESOURCES
+Filter data in data elements
+Intro to control elements

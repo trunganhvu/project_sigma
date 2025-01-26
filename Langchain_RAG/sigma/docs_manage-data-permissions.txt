@@ -1,0 +1,74 @@
+Manage data permissions
+Suggest Edits
+With additive data permissions, you can manage grants for individual users and groups (the entire organization or configured teams) at the connection level or for specific databases, schemas, and database tables.
+This document explains how to view, add, edit, and revoke data permission grants. For information about the additive data permissions model and available data permission types, see Data permissions overview.
+🚩
+Data permission grants only affect members assigned account types (default or custom) using the Pro license.
+Members assigned account types using Lite or Essential licenses can only view datasets and applicable workbooks (and only when the View datasets and View workbooks account type permissions are enabled).
+User requirements
+To view, add, edit, and revoke data permission grants, you must be assigned the Admin account type or be granted Can admin data permission for the connection.
+View all grants
+View an overview of grants for the entire connection or a specific database, schema, or database table.
+Go to your Home page.
+In the navigation menu, select the applicable connection.
+If your organization has more than three connections, Sigma consolidates them in a Connections page. In the navigation menu, click Connections to open the page, then select the connection.
+📘
+You can also access a connection from the Administration portal. Go to Administration > Connections, select a connection, then click Browse Connection.
+Sigma opens the connection overview. In the Permissions section, you can view the following information for all permissions granted across the connection:
+Grantee Name of the user or group granted the permission
+Grant Location Name of the data entity to which the grant applies
+Grant Type Permission type granted
+Last Updated Date the grant was last updated
+To view permissions inherited by or granted to a specific user or group, enter a username, email address, team name, or “all members” in the search bar. You can also filter the list by grant type and scope level.
+To view permissions inherited by or granted for a specific database, schema, or database table, select the data entity in the side panel or click the linked entity name in the Grant Location field.
+If you select a database table, open the Permissions tab to view the applicable grants.
+Add new grant
+Add a new user or group grant for the entire connection or a specific database, schema, or database table.
+Go to your Home page.
+In the navigation menu, select the applicable connection.
+If your organization has more than three connections, Sigma consolidates them in a Connections page. In the navigation menu, click Connections to open the page, then select the connection.
+📘
+You can also access a connection from the Administration portal. Go to Administration > Connections, select a connection, then click Browse Connection.
+Sigma opens the connection overview. In the side panel, select a data entity to access its permissions list.
+If you select a database table, open the Permissions tab to view the applicable grants.
+In the Permissions section, click Add Permission.
+In the Grant permissions to modal, configure the new grant:
+Use the Member or Team search bar to find and select a user or group.
+Click the Permission field and select a permission type from the dropdown.
+📘
+User-level permission type availability depends on whether the user meets the account type permission requirements. The dropdown only displays permission types the user is qualified to inherit.
+Group-level permission type availability is unrestricted, regardless of whether all members qualify for the grant. However, individual members only inherit the group-level grant if assigned the required account type permissions.
+For more information about account type permission requirements, see Data permissions overview.
+To notify the grantee of the update, select the Send an email notification checkbox. To add the grant without notifying them, clear the checkbox.
+[optional] If sending an email notification, enter a message in the Add a Message field to provide additional context.
+Click Save to apply the grant.
+💡
+Add grants for multiple users and groups. Use the Member or Team search bar to find and select additional grantees, then select the applicable permission type for each.
+Review the new grant in the data entity’s permissions list.
+Edit existing grant
+Change the permission type for an existing user or group grant.
+Go to your Home page.
+In the navigation menu, select the applicable connection.
+If your organization has more than three connections, Sigma consolidates them in a Connections page. In the navigation menu, click Connections to open the page, then select the connection.
+📘
+You can also access a connection from the Administration portal. Go to Administration > Connections, select a connection, then click Browse Connection.
+Sigma opens the connection overview. In the Permissions section, locate the grant you want to update, then click More and select Edit grant.
+If the grant applies to a descendant data entity, click More and select Go to grant. In the data entity’s permissions list, locate the grant you want to update, then click More and select Edit grant.
+In the Grant permissions to modal, edit the existing grant:
+Click the Permission field and select a different permission type from the dropdown.
+To notify the grantee of the update, select the Send an email notification checkbox. To edit the grant without notifying them, clear the checkbox.
+[optional] If sending an email notification, enter a message in the Add a Message field to provide additional context.
+Click Save to edit the grant.
+Review the edit in the permissions list.
+Revoke existing grant
+Revoke an existing user or group grant.
+Go to your Home page.
+In the navigation menu, select the applicable connection.
+If your organization has more than three connections, Sigma consolidates them in a Connections page. In the navigation menu, click Connections to open the page, then select the connection.
+📘
+You can also access a connection from the Administration portal. Go to Administration > Connections, select a connection, then click Browse Connection.
+Sigma opens the connection overview. In the Permissions section, locate the grant you want to revoke, then click More and select Revoke grant.
+Review the confirmation modal and click Remove Grant to proceed.
+Confirm that the grant is no longer in the permissions list.
+RELATED RESOURCES
+Data permissions overview

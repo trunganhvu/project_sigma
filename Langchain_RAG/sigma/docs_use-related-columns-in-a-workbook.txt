@@ -1,0 +1,29 @@
+Use related columns in a workbook (Beta)
+Suggest Edits
+🚩
+This documentation describes a private beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, is removed. As with any beta feature, the feature described below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document. Beta features are subject to the Beta features disclaimer.
+If you are interested in joining a limited test group and enabling this feature in your Sigma organization, contact Support or reach out to your Account Executive.
+If the data source of your data element in a workbook is a data model table with one or more relationships , you can add columns from the related tables to your data element. Any child elements that you create can also access the related columns.
+Requirements
+The data source must be a table element in a data model with one or more relationships defined.
+You must be the workbook owner or be granted Can explore or Can edit access to the workbook.
+Add a related column to a data element
+If the data source of your data element in a workbook has one or more relationships defined, you can add the related column to your data element:
+Explore the workbook or open the workbook for editing.
+Select the data element.
+In the editor panel, for columns, select + (Add columns...).
+In the menu, choose Add source columns....
+Review the Source columns list for available columns from tables linked through data model relationships. You can see directly related table columns, as well as columns from inherited relationships.
+Select the checkbox for a column to add it to your data element.
+The related column appears in your data element, titled Column Name (Relationship Name).
+Use a related column in a formula
+If the data source of your data element in a workbook has one or more relationships defined, you can also use the related column in the formula of a calculated column in the data element.
+📘
+You do not need to add the related column to the data element before using it in a formula.
+Explore the workbook or open the workbook for editing.
+Select the data element. For example, a table of bike trips taken from one rental bike docking station to another, called TRIP.
+In the element, or in the editor panel, select + (Add column...).
+In the formula bar, enter a formula that references the related column. As you type, the related columns appear in the list of autocomplete suggestion:
+For example, to evaluate the availability of docking stations at the start station, you might write the following formula:
+If([TRIP/Start Station Details/Dock Count] > 15, "high availability", [TRIP/Start Station Details/Dock Count] = 15, "medium availability", [TRIP/Start Station Details/Dock Count] < 15, "low availability")
+The resulting table includes the calculated column, named Start Station Dock Availability:

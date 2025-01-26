@@ -1,0 +1,59 @@
+AdministrationConnection permissions
+On this page
+Connection permissions
+At a high level, permissions in Omni are set at the database connection, data model, and content levels. On this page we will work through how to set up database connection permissions. Refer to Organization settings and Data access control guides for more information.
+Setting User or Group Permissions
+User permissions are first set on the individual database connection then more fine-tuned permissions can be assigned to individual users or groups within the organization, streamlining the management process.
+All user permissions can be modified by a Connection Admin by navigating to Settings > Connections and altering the specific permissions set for a particular connection. The four data permissions can be set at several levels, in ascending order of querying flexibility for users:
+No Access: These users will not be able to query or view content built on this connection.
+Viewer: These users can view dashboards and workbooks built on predefined Topics.
+Restricted Querier: These users can create and view workbooks and dashboards, but can only query through predefined Topics.
+Querier: These users can create workbooks and dashboards, and query both modeled data (Topics) or unmodeled data (SQL) to the connection. These users cannot touch the shared model files on the connection.
+Connection Admin: These users have Querier access to query both modeled or unmodeled data, and can additionally edit the connection model and settings, including setting other users' permission to the given connection or adjusting the default permissions. These are the only users that can touch the shared model files on a connection.
+TIP
+Note that there are no specific model permissions, they are set at the connection level.
+There are two levels to database connection permissions: base access and connection roles.
+Base Access
+This is the minimum role assigned to all existing and new organization members for this connection. More permissive roles can be set for a group or user in the Connections Roles to override the base role. However, the base role will override less permissive roles.
+Connections Roles
+The group and individual user’s permissions will be added to the connection-level base role that is applied to all users of that connection.
+WHAT IS A PREDEFINED TOPIC?:
+By Default, Viewer and Restricted Querier users are restricted from accessing data that is not exposed in Topics in the Shared model.
+SQL queries are restricted
+Queries built in All Views & Fields (not on Topics) will be restricted
+Additions of, or changes to, Relationships or Topics in the workbook will lead to restriction of all queries in that workbook
+Fields based purely on other modeled fields (i.e. measures created from the quick aggregation menu, or a field defined as ${field_a} + ${field_b}) will not lead to restriction
+Fields based on raw SQL (i.e. CURRENT_TIME or raw definitions pointing to field_c vs ${field_c} will be restricted
+A Viewer or Restricted Querier attempting to access content with changes to Topics or Relationships will see a Permission Error. This can be resolved by either promoting the changes causing the restriction (and moving any All Views & Fields queries into Topics), or by enabling AccessBoost on this piece of content.
+Connection and Roles Matrix
+Permission No Access Viewer Restricted Querier Querier Connection Admin
+View names of workbooks on homepage X ✓ ✓ ✓ ✓
+Run Topic-based queries in a dashboard / workbook X ✓1,2 ✓ ✓ ✓
+Filter or use controls on dashboards X ✓ ✓ ✓ ✓
+Download from dashboards PNG, PDF, Excel, CSV X ✓ ✓ ✓ ✓
+Schedule dashboards (Slack, Email, Webhook, SFTP) X ✓ ✓ ✓ ✓
+Alert via dashboards (Slack, Email, Webhook, SFTP) X ✓ ✓ ✓ ✓
+Drill on dashboards (via drill modal) X ✓ ✓ ✓ ✓
+Build / edit a dashboard / workbook X X ✓ ✓ ✓
+Create new visualizations or KPIs X X ✓ ✓ ✓
+Write spreadsheet calculations X X ✓ ✓ ✓
+Use AI query or AI spreadsheet calculations X X ✓ ✓ ✓
+Run all queries in a dashboard / workbook X X1 X1 ✓ ✓
+View custom SQL results X X1 X1 ✓ ✓
+Write SQL X X X ✓ ✓
+Stage workbook model changes (new fields) X X X ✓ ✓
+Edit the shared data model X X X X ✓
+Manage permissions to the connection X X X X ✓
+Manage users globally3 X X X X X
+Content Permissions Independent Controls Independent Controls Independent Controls Independent Controls Independent Controls
+Impersonate Users / Sudo
+As an admin, you can use Omni’s “Impersonate User” functionality to test that your access grant is functioning properly. Impersonate a user with an user attribute value that excludes them from your access grant, and open up a new workbook to test that they can or can’t see the protected field.
+Note that admins cannot sudo as other admins.
+Footnotes
+Viewers and Restricted Queriers can only run Topic-based queries. They are not permitted to run queries defined outside of Topics, or run any query in a workbook which has altered Topic or Join Relationship definitions. In the future, escalated privileges may be granted to a specific workbook or dashboard, allowing one-off access to specific users (or all users). ↩ ↩2 ↩3 ↩4 ↩5
+Viewers can only access dashboards, not workbooks. ↩
+User management is controlled by global admins, not at the connection level by connection admins. ↩
+Previous
+Troubleshooting
+Next
+User Attributes

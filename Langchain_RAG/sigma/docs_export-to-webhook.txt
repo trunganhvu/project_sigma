@@ -1,0 +1,58 @@
+Export to webhook
+Suggest Edits
+📘
+This feature does not currently support export to authenticated endpoints.
+Sigma webhook exports let you send data to your own webhook endpoints, or to other applications such as Marketo, Segment, or Airtable, using a webhook. You can export your workbook data on an as-needed basis or create one or more schedules for recurring exports. Each schedule can support multiple endpoints and send conditions.
+Sigma generates exports from the workbook's latest published version. You can also choose to export a tagged workbook version. Draft changes are not exported.
+Requirements
+The ability to export to webhooks requires the following:
+You must be assigned an account type with the Export to webhook permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+📘
+If your organization restricts traffic from certain IP addresses, add the Sigma IP addresses to your allowlist. For more details, see Add Sigma IPs to the allowlist.
+Supported formats
+The following file types are available for all webhook exports:
+CSV
+JSON
+Export limit
+Webhooks have an export limit of 1 million rows. See Download, export, and upload limitations.
+Send an ad hoc webhook export
+From the workbook menu (), select Export.
+The Export modal opens.
+Select Webhook.
+For Endpoint, enter one or more target webhook endpoints.
+Separate multiple endpoints with commas.
+Endpoint URLs must start with https://.
+If the workbook has tagged versions, select which one you want to export elements from.
+In the Attachment section, select a workbook element to export.
+For the attachment, select an export file format, either CSV or JSON.
+Click Export.
+📘
+The export contains published workbook content only. Draft changes aren't reflected.
+Schedule a recurring export
+From the workbook menu , select Schedule exports....
+If this is the first schedule for the workbook, click Add Schedule, otherwise click + New schedule.
+(Optional) You can define conditions for when Sigma sends the export. To turn on conditions, click the Condition toggle. For more information, see Schedule exports using conditions.
+Select Webhook.
+For Endpoint, enter one or more target webhook endpoints.
+Separate multiple endpoints with commas.
+Endpoint URLs must start with https://.
+If the workbook has tagged versions, select which one you want to export elements from.
+In the Attachment section, select a workbook element to export.
+For the attachment, select an export file format, either CSV or JSON.
+In the Frequency section, set the delivery schedule:
+(Optional) Select the dropdown for Daily and select Weekly, Monthly, or Custom.
+For Daily, select Once a day or Multiple times.
+For Weekly, select which days of the week to send an email, and choose between Once a day or Multiple times.
+For Monthly, select which day of the month to send an email, and the time of day.
+For Custom, specify a schedule using cron syntax. See Set up a custom delivery schedule.
+If you select Multiple times, specify the frequency. For example, every 2 hours on the :15 of the hour between 9 AM and 6 PM.
+(Optional) Adjust the default schedule time zone using the dropdown menu.
+📘
+If you don't have the option to set a specific frequency, export frequency might be restricted for your organization. For more details, see Restrict export recipients and frequency.
+(Optional) Select the checkbox for Customize control values to filter the exported data according to the value of one or more workbook controls. See Configure additional options for exports.
+Click Create.
+RELATED RESOURCES
+Send and schedule exports from workbooks
+Set up a custom delivery schedule
+Apply control values to scheduled exports

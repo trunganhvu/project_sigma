@@ -1,0 +1,261 @@
+Function index
+Suggest Edits
+Sigma supports over 200 functions that enable you to perform simple and complex calculations, transformations, and extractions to get the most out of your data.
+Browse this function index by category to learn more about the specific types of functions available to you.
+Aggregate functions
+Aggregate functions evaluate multiple rows of data to return a single value. For example, you can use aggregate functions to perform group calculations (like Sum and Avg), retrieve specific values (like Min and Max), assess the data to provide insights (like Count and CountDistinct), or join multiple values (like ArrayAgg and ListAgg).
+ArrayAgg Identifies non-null row values in a column or group and aggregates them into a single array.
+ArrayAggDistinct Identifies distinct non-null row values in a column or group and aggregates them into a single array.
+Avg Calculates the average value of a column or group.
+AvgIf Calculates the average value of a column or group when the specified condition is True.
+Corr Calculates the Pearson correlation coefficient (bivariate correlation) of two columns.
+Count Counts the number of non-null and non-empty values in a column or group.
+CountDistinct Counts the number of unique non-null and non-empty values in a column or group. Does not count duplicate values. (Same as Ndv.)
+CountDistinctIf Counts the number of unique non-null and non-empty values in a column or group when the specified condition is True. Does not count duplicate values.
+CountIf Counts the number of non-null and non-empty values in a column or group when the specified condition is True.
+GrandTotal Calculates the grand total for column or group.
+ListAgg Joins the values of a group or column into a single text string.
+ListAggDistinct Joins the unique values of a group or column into a single text string. Does not include duplicate values.
+Max Retrieves the maximum (largest or latest) value in a column or group.
+MaxIf Retrieves the maximum (largest or latest) value in a column or group when the specified condition is True.
+Median Determines the median (midpoint) value of a column or group.
+Min Retrieves the minimum (smallest or earliest) value in a column or group.
+MinIf Retrieves the minimum (smallest or earliest) value in a column or group when the specified condition is True.
+PercentileCont Calculates the continuous kth percentile of a column or group.
+PercentileDisc Calculates the discrete kth percentile of a column or group.
+PercentOfTotal Calculates the percentage a value contributes to the specified aggregate total.
+StdDev Calculates the standard deviation of a column or group.
+Subtotal Calculates the subtotal of a column or group.
+Sum Calculates the sum of a column or group.
+SumIf Calculates the sum of a column or group when the specified condition is True.
+SumProduct Calculates the product of row values across specified columns, then calculates the sum of the resulting products for a column or group.
+Variance Estimates the sample variance (spread of distribution) of a column or group.
+VariancePop Calculates the population variance (spread of distribution) of a column or group.
+Array functions
+Array functions create, manage, and manipulate arrays (lists of indexed values).
+Array Returns an array containing specified values.
+ArrayContains Searches for a specific value in an array. If the value is found, the function returns True, otherwise it returns False.
+ArrayDistinct Returns the array without duplicate values.
+ArrayIntersection Compares two arrays and returns an array of all overlapping elements, without duplicates.
+ArrayJoin Joins elements of an array into a single text string.
+ArrayLength Determines the number of entries in an array, or list.
+ArraySlice Returns a portion of an array, defined by the starting index and length.
+Sequence Returns an arithmetic sequence as an array of integers based on a specified range and increment
+The following aggregate functions also create arrays:
+ArrayAgg Identifies non-null row values in a column or group and aggregates them into a single array.
+ArrayAggDistinct Identifies distinct non-null row values in a column or group and aggregates them into a single array.
+Date functions
+Date functions evaluate, convert, and manipulate date and time values.
+ConvertTimezone Converts date and time values to the specified time zone.
+DateAdd Adds a specified quantity of time to a date.
+DateDiff Calculates the time difference between two dates.
+DateFormat Formats a date value to text based on the format provided.
+DateFromUnix Converts a Unix timestamp to a date value.
+DateLookback Returns the value of a variable at a previous point in time (or lookback period) determined by a specified date and offset.
+DatePart Extracts the specified date part from a date value.
+DateParse Parses a text value in a specified format and returns a datetime value (date data type) in ISO format.
+DateTime Converts a text or date value into an datetime value in ISO format.
+DateTrunc Truncates the date to the specified date part.
+Day Returns the day of the month from a date value as a number.
+EndOfMonth Returns the last day of the month from a date value.
+Hour Returns the hour component from a date value as a number.
+InDateRange Determines if a date falls within a specified date range and returns True or False.
+InPriorDateRange Determines if a date falls within the date range of a prior period and returns True or False.
+LastDay Evaluates a specified component in a date value and returns the last datetime value of that component in ISO format.
+MakeDate Evaluates specified values representing year, month, and day units and returns a datetime value in ISO format.
+Minute Returns an integer representing the minute component in a specified datetime value.
+Month Returns an integer representing the month component in a specified datetime value.
+MonthName Returns the name of the month component from a specified datetime value.
+Now Returns the current date and time using your organization's account timezone.
+Quarter Returns an integer representing the quarter component in a specified datetime value.
+Second Returns an integer representing the second component in a specified datetime value.
+Today Returns the current date using your organization's account timezone.
+Weekday Returns an integer representing the day of the week in a specified datetime value.
+WeekdayName Returns the name of the day of the week in a specified datetime value.
+Year Returns an integer representing the year component in a specified datetime value.
+Financial functions
+Financial functions evaluate and calculate data related to money, investments, interest rates, and other aspects of finance.
+CAGR Returns the compound annual growth rate of an investment.
+Effect Returns the effective annual interest rate.
+FV Returns the future value of an investment.
+IPmt Returns the interest portion of a periodic payment for a loan based on the amount, number of periods, and constant interest rate. The portion of the payment allocated to interest decreases over time.
+Nominal Returns the nominal annual interest rate.
+NPer Returns the number of periods for a loan or investment based on known amount, interest rate, and periodic payment amount.
+Pmt Returns the periodic payment for a loan based on the amount, number of periods, and constant interest rate.
+PPmt Returns the principal portion of a periodic payment for a loan based on the amount, number of periods, and constant interest rate. The portion of the payment allocated to principal increases over time.
+PV Returns the present value of a loan or an investment, when using constant and regular periodic payments.
+XNPV Returns the net present value of an investment for payments or incomes at irregular intervals.
+Geography functions
+Geography functions enable you to work with the geography data type to analyze locations, routes, and other geospatial data. For example, you can use geography functions to transform data into compatible formats for geography maps.
+📘
+Geography functions aren't compatible with all data platform connections. To check if your connection supports these functions, see Supported data platforms and feature compatibility.
+Area Calculates the area of a geography, in specified units.
+Centroid Calculates the geographic center of a geography.
+Distance Calculates the minimum distance between two geographies, in specified units.
+Geography Converts GeoJSON or WKT formats to the geography data type.
+Intersects Determines if one geography intersects another geography.
+Json Converts geography data to GeoJSON.
+Latitude Returns the latitude component of a point.
+Longitude Returns the longitude component of a point.
+MakeLine Constructs a line from a series of points and line segments.
+MakePoint Constructs a point from latitude and longitude data.
+Perimeter Calculates the perimeter of a geography, in specified units.
+Text Converts geography data to WKT format.
+Within Determines if one geography is fully within another geography.
+Join functions
+Join functions retrieve data from target elements based on related columns in the local and target elements.
+Lookup Finds a value in a specified target element column and returns the corresponding row value from another column in that element.
+Rollup Finds a value in a specified target element column and aggregates all corresponding row values from another column in that element.
+Logical functions
+Logical functions perform logical operations or evaluate conditional statements and typically return boolean (true or false) output.
+Between Determines if a value is within the specified range; True or False.
+Choose Given a specified index number, returns the matching value from a list.
+Coalesce Returns the first non-Null value from a list.
+If Evaluates if one or more conditions are true or false and returns the corresponding value.
+In Determines if a specified value matches any candidate values; True or False.
+IsNotNull Determines if the cell has a value; True or False.
+IsNull Determines if the cell is Null; True or False.
+Switch Using the SWITCH paradigm, tests the specified value against a list of conditions, and returns the matching response.
+Zn Returns non-Null values, or 0 (zero) instead of Null values.
+Math functions
+Math functions perform mathematical operations, including arithmetic, trigonometric, rounding, statistical, and logarithmic calculations.
+Abs Returns the absolute value of a number.
+Acos Returns the arccosine of an angle.
+Asin Returns the arcsine of an angle.
+Atan Returns the arctangent of an angle.
+Atan2 Returns the arctangent of a coordinate pair.
+BinFixed Calculates the bin of a value among the specified number of identically-sized bins.
+BinRange Calculates the bin for a value using the specified lower bounds.
+BitAnd Calculates the bitwise AND of two numbers.
+BitOr Calculates the bitwise OR of two numbers.
+Ceiling Rounds the number up to the closest multiple of equal or greater value.
+Cos Returns the cosine of an angle.
+Cot Returns the cotangent of an angle.
+Degrees Converts the angle measurement from radians to degrees.
+DistanceGlobe Calculates the distance between two points on the globe, in kilometers.
+DistancePlane Calculates the distance between two points on a plane.
+Div Returns the integer component of a division.
+Exp Returns the mathematical constant e, or 2.71828.
+Floor Rounds the number down to the closest multiple of equal or lesser value.
+Greatest Returns the largest value from a list.
+Int Rounds the integer down to the largest integer of lesser or equal value.
+Least Returns the smallest value from a list.
+Ln Calculates the natural logarithm of a number, log_e(n).
+Log Calculates the logarithm of a number. Defaults to log_10(n).
+Mod Returns the remainder component of a division.
+MRound Rounds the number down to the closest multiple of the specified number.
+Pi Returns the mathematical constant π, or 3.14159....
+Power Calculates the result of a number raised to the specified power.
+Radians Converts the angle measurement from degrees to radians.
+Round Calculates the number to the specified number of digits.
+RoundDown Rounds a number down to the specified number of digits or decimal places.
+RoundUp Rounds a number up to the specified number of digits or decimal places.
+RowAvg Calculates the average value of a list of numbers.
+Sign Calculates the sign of a number. Returns -1 if negative, 1 if positive, or 0 if zero.
+Sin Calculates the sine of an angle.
+Sqrt Calculates the square root of a number.
+Tan Calculates the tangent of an angle.
+Trunc Truncates a number to the specified number of digits or decimal places.
+Passthrough functions
+Passthrough functions send requests to execute operations within your connected data platform, then return the response generated by your data platform's native functions.
+AggDatetime Calls a data platform aggregate function that returns a date data type. Aggregate version of CallDatetime.
+AggGeography Calls a data platform aggregate function that returns a geography data type. Aggregate version of CallGeography.
+AggLogical Calls a data platform aggregate function that returns a logical data type. Aggregate version of CallLogical.
+AggNumber Calls a data platform aggregate function that returns a number data type. Aggregate version of CallNumber.
+AggText Calls a data platform aggregate function that returns a text data type. Aggregate version of CallText.
+AggVariant Calls a data platform aggregate function that returns a variant data type. Aggregate version of CallVariant.
+CallDatetime Calls a data platform function that returns a date data type.
+CallGeography Calls a data platform function that returns a geography data type.
+CallLogical Calls a data platform function that returns a logical data type.
+CallNumber Calls a data platform function that returns a number data type.
+CallText Calls a data platform function that returns a text data type.
+CallVariant Calls a data platform function that returns a variant data type.
+System functions
+System functions return information about your Sigma organization, including details about users and system configurations.
+CurrentTimezone Returns your organization's IANA time zone as configured in the Administration portal.
+CurrentUserAttributeText Returns the value of a specific attribute for the current (signed-in) user.
+CurrentUserEmail Returns the email address associated with the current (signed-in) user's account.
+CurrentUserFirstName Returns the current (signed-in) user’s first name as configured in the user’s profile.
+CurrentUserFullName Returns the current (signed-in) user’s first and last name as configured in the user’s profile.
+CurrentUserInTeam Returns true if the current user is a member of a specific teams.
+Text functions
+Text functions evaluate or manipulate string data to perform operations like text modification, formatting, and extraction.
+Concat Combines multiple strings into a single text value.
+Contains Searches for a specified substring in a text value. If the substring is found, the function returns True, otherwise it returns False.
+EndsWith Determines if a text value ends with a specified substring. If the substring is found at the end of the text value, the function returns True, otherwise it returns False.
+Find Returns the index where it first finds the specified substring within a string. Returns 0 if not found.
+ILike Returns True if the string matches the pattern. Case insensitive.
+Left Returns the left portion of the string (the beginning), up to specified number of characters.
+Len Returns the number of characters in a string, including spaces.
+Like Returns True if the string value matches the pattern. Case sensitive.
+LPad Sets the string to a desired length by adding or removing characters at the front. Uses an optional fill character or defaults to extra spaces.
+Lower Converts a string to all lower case.
+LTrim Removes leading spaces from a string.
+MD5 Calculates the hash value of a string for the MD5 message-digest algorithm (hashing function).
+Mid Returns a substring from a string, defined by offset and length. Same as Substring.
+Proper Converts text to proper case, capitalizing the first letter of each word.
+RegexpExtract Returns the substring that matches a regular expression within a string.
+RegexpMatch Returns True if a string matches a regular expression.
+RegexpReplace Returns a string for a pattern and replaces it with a specified string.
+Repeat Returns the result of repeating the string a specified number of times.
+Replace Replaces every instance of a specified string with a replacement string.
+Reverse Reverses the order of characters in a string.
+Right Returns the right portion of a string (the end), up to the specified number of characters.
+RPad Sets the string to a desired length by adding or removing characters at the end. Uses an optional fill character, or defaults to extra spaces.
+RTrim Removes trailing spaces from the end of a string.
+SHA256 Transforms text input into a 256-bit hash value.
+SplitPart Splits the string into multiple parts at the positions of each appearance of the delimiter and returns the nth part of the string at the specified position.
+StartsWith Determines if a string starts with the specified substring. Returns True or False.
+Substring Returns a substring from a string, defined by offset and length. Same as Mid.
+Trim Removes both leading and trailing spaces from a string.
+Upper Converts a string to upper case (all capital letters).
+Type functions
+Type functions perform type casting or type conversion operations that transform values from one data type to another.
+Date Converts text or number values to the date data type in ISO datetime format.
+JSON Converts values to the variant data type in JSON format.
+Logical Converts values to the logical data type in boolean format (true or false).
+Number Converts values to the number data type.
+Text Converts values to the text data type.
+Variant Converts text values to the variant data type.
+The following geography function also transform values from one data type to another:
+Geography Converts GeoJSON or WKT formats to the geography data type.
+Window functions
+Window functions perform operations across an entire table, table grouping (grouped rows), or defined window of rows. Sigma supports cumulative, moving, shifting, and ranking window functions.
+Cumulative window functions
+Cumulative window functions evaluate a specified column in a table or grouping and return the running total or cumulative value for all rows up to and including the current row. This differs from aggregate values that calculate a summary value for the entire table or grouping.
+CumulativeAvg Calculates the running average up to and including the current row.
+CumulativeCorr Calculates the correlation coefficient between dependent and independent data columns up to and including the current row.
+CumulativeCount Counts the number of non-null values up to and including the current row.
+CumeDist Calculates the cumulative distribution of values relative to the current row value.
+CumulativeMax Returns the largest value up to and including the current row.
+CumulativeMin Returns the smallest value up to and including the current row.
+CumulativeStdDev Calculates the standard deviation of values up to and including the current row.
+CumulativeSum Calculates the sum of values up to and including the current row.
+CumulativeVariance Calculates the variance of a column up to and including the current row.
+Moving window functions
+Moving window functions evaluate a specified column and return a value based on a defined window of rows that moves in relation to the current row.
+MovingAvg Calculates the numerical average of a column within a moving window.
+MovingCorr Counts the number of non-Null values in a moving window.
+MovingCount Calculates the correlation coefficient of two numerical columns within a moving window. See Pearson (bivariate) correlation coefficient.
+MovingMax Finds the maximum value of a column within a moving window.
+MovingMin Finds the minimum value of a column within a moving window.
+MovingStdDev Calculates the standard deviation of a column within a moving window.
+MovingSum Calculates the sum of a column in a moving window.
+MovingVariance Calculates the statistical variance of a column in a moving window.
+Shifting window functions
+Shifting window functions evaluate a specified column in a table or grouping and return the value from a row that shifts in relation to the current row.
+FillDown Replaces all null values in a column or grouping with the closest prior non-null value.
+First Returns the first row value of a column or grouping.
+FirstNonNull Returns the first non-null value from a column or grouping.
+Lag Returns the value from a preceding offset row in a column or grouping.
+Last Returns the last row value in a column or grouping.
+LastNonNull Returns the last non-null value in a column or grouping.
+Lead Returns the value from a subsequent offset row in a column or grouping.
+Nth Returns the value from the nth row of a column or grouping.
+Ranking window functions
+Ranking window functions evaluate a specified column in a table or grouping and assign a rank to each row.
+Ntile Assigns the specified rank, in order, to the column rows of a column, approximately equal number of rows for each rank.
+Rank Assigns ranks to unique values in a column, from rank 1 onwards. Skips duplicate values.
+RankDense Assigns ranks to all values in a column, from rank 1 onwards. Assigns the same rank to duplicate values.
+RankPercentile Ranks the rows in the table by percentile.
+RowNumber Numbers the table rows, starting with 1.

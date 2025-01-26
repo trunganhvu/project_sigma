@@ -1,0 +1,22 @@
+In
+Suggest Edits
+The In function tests if a value matches any candidate value in a subsequent list of candidate values. The function returns True if the value matches any of the subsequent candidate values, False if no values are matched.
+Usage
+In(value, candidate 1,[candidates 2+])
+Function arguments:
+value (required): The value to test.
+candidate 1 (required): The candidates to test value against.
+candidates 2+ (optional): The additional candidates to test value against.
+📘
+At least one candidate value must be supplied to test the input value against.
+Example
+In("green", "red", "green", "blue")
+Return True
+In("yellow", "red", "green", "blue")
+Returns False
+In([Customer ID], 2000, 3000, 4000)
+Returns True for rows where Customer ID is 2000, 3000, or 4000. Return False for all other rows.
+In([Customers], "Customer 1", "Customer 2")
+Returns True for rows where Customers match “Customer 1” or “Customer 2”. Return false for all other rows.
+In("John Smith", [Customers], [Buyers])
+Returns True for rows where “John Smith” appears in either the Customers or the Buyers columns.

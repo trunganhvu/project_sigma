@@ -1,0 +1,85 @@
+Create and manage data models (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Build a data model to create a collection of table and input table elements that you can reference as data sources in workbooks and other data models across your organization. The familiar workbook-style format allows you to easily transform and analyze your data while streamlining data model permissions.
+This document explains how to create and manage data models. For information about data model concepts, see Intro to data models.
+📘
+Sigma will continue to support the previous datasets version (legacy datasets) until data models are fully developed and can facilitate a seamless transition. For information about legacy datasets, see Introduction to the dataset worksheet.
+User requirements
+The ability to create manage a data model requires the following:
+You must be assigned an account type with the Create, edit, and publish datasets permissions enabled.
+You must be the data model owner or be granted Can edit data model permission.
+Create a data model with reusable elements
+To create a data model, do the following:
+Go to your Home page.
+Click Create New and select Data Model from the menu.
+A new data model opens to the workbook page. Use one of the following methods to create a new reusable element:
+In the Add new element panel, select a table or input table element.
+If you select a table or linked input table, you must also select the element’s data source. This can be data from your CDW or DBMS, a CSV upload, custom SQL, or an existing reusable element from any data model.
+📘
+Future data-level changes applied to the source can be reflected in the data model. Some changes, like filters, are automatically inherited. For other changes, like added or removed columns, Sigma displays a prompt when you reopen the data model workbook page. This allows you to ignore the changes or update the reusable element. Display-level changes, like hidden columns or column groupings, are not inherited.
+Copy and paste a table or input table element from an existing workbook or data model. For more information, see Copy and paste elements.
+📘
+Reusable elements created via copy/paste are not linked to the original copied element and don’t reflect future changes applied to it.
+[optional] Create additional reusable elements and transform the data as needed. You can group columns, aggregate values, create child elements, add control elements, and more, just like in a workbook.
+To save the new reusable elements, go to the data model header and click Publish.
+When the data model saves successfully, the overview page opens. You can then preview each reusable element and continue managing the data model.
+Create a data model from a workbook table
+You can also create a data model from a table in a workbook. For example, if you uploaded a CSV-formatted file to a workbook directly and now want to reuse the data from the file in another workbook, you can create a data model from the table element with the CSV-formatted file as a data source.
+Open the workbook that has the table element you want to convert to a data model.
+Right-click on the element, or hover over the element and click More.
+Select Advanced options > Create data model....
+In the Create data model modal that appears, click Next.
+In the Add to a new data model modal, type a name for the data model and choose a destination location to organize the data model.
+Click Create. The data model opens in a new tab.
+Manage an existing data model
+You can make changes to data model metadata, share a data model with others, or make changes to the data sources in the data model. You can also delete data models and recover deleted data models.
+Edit a data model's name
+Choose a unique name to make it easy for members to search for and identify the data model.
+Open the data model you want to edit.
+In the data model header, double-click the document name and update the text. Sigma immediately applies the change.
+Edit a data model’s description
+Enter a description to add context to the data model and its reusable elements.
+Open the data model you want to edit.
+In the overview page, go to the data model details, then click the description field and update the text. Sigma immediately applies the change.
+Share the data model
+Share a data model to allow members of your organization to utilize the reusable elements as data sources. Users who aren’t granted permission to use a specific data model cannot view or select its elements as data sources in workbooks and other data models.
+Open the data model you want to share.
+In the data model header, click the caret () associated with the document name, then select Share from the menu.
+In the Share Data Model modal, search for and select an organization member, team, or email address.
+In the Permission field, select an option:
+Can view Allows selected users to view and use the data model and its reusable elements.
+Can edit Allows selected users to view, use, and edit the data model and its reusable elements.
+Click Share to save the permissions.
+Enable or disable an element as a data source
+By default, elements created in a data model are enabled for reuse as data sources in workbooks and other data models. You can disable or re-enable elements for reuse at any time.
+🚧
+Disabled elements remain in the workbook page but are removed from the data model overview and cannot be used as data sources unless re-enabled. Any element (in the same data model, different data model, or workbook) referencing a disabled element as a source displays a “Source not found” error message.
+Open the data model containing the element you want to edit.
+In the data model header, click Edit to open the workbook page.
+In the element you want to update, click to disable it as a data source or to enable it.
+When disabling an element, Sigma displays a Confirm disabling as source modal. Click Disable to proceed.
+Edit an element
+Edit a reusable or disabled element in a data model as you would in a Sigma workbook.
+Open the data model containing the element you want to edit.
+In the data model header, click Edit to open the workbook page.
+Locate the element you want to edit, then modify it as needed.
+Delete an element
+Delete a reusable or disabled element to permanently remove it from the data model.
+Open the data model containing the element you want to delete.
+In the data model header, click Edit to open the workbook page.
+Hover over or select the element you want to delete, then click More and select Delete element from the menu.
+Delete a data model
+To delete a data model you must be the owner of the data model, have Can edit access to it, or have the Admin account type.
+Click the caret () next to the data model name, then click Delete....
+On the Confirm Deletion modal, click Delete.
+Recover a deleted data model
+To recover a data model that has been deleted, you must be the owner of the data model or have the Admin account type.
+Go to your Home page.
+In the navigation menu, select Trash.
+In the Trash page, search the list of deleted documents and click the one you want to recover. You can sort the Name, Deleted on, or Deleted by columns to help identify the applicable document.
+In the Document has been deleted modal, click Recover. Sigma immediately opens the recovered document.
+RELATED RESOURCES
+Intro to data models (Beta)

@@ -1,0 +1,45 @@
+Querying & SQLCaching
+On this page
+Caching
+Omni caches data at several layers to improve performance and reduce load on the underlying data warehouse. Additional configuration will be built in the future to fine tune cache controls.
+Query Cache
+Omni caches the results of individual queries to share between users observing the exact same data sets. Query results are cached for 6 hours by default, and shared between users with relevant permissions to the data set. The default can be configured using caching model parameters at a model or topic level, outlined here.
+This means if one user queries a workbook or dashboard and shares the link with another user, the second user's results will frequently come from the query cache. This cache will only trigger for exact match of the query (all fields, pivots, filters, sorts).
+The query cache can be cleared on an ad hoc basis:
+From the workbook: Tab > Run w/o Cache
+From the dashboard: View > Refresh Data
+Requeryable Cache
+In addition to the exact match cache, Omni will cache data for requery, offering acceleration to similar follow up queries, filtering, or sorting during a given session.
+This cache is volume based and will hold the last 30 query results from a session. When data is returned without hitting the query limit, Omni will requery the data set when appropriate, offering much quicker query response times (as the data is queried in the browser).
+Example of the requeryable cache:
+Resorting a data set:
+Orders last 30 days, by day, sorted by day descending --> invert to sort ascending
+Filtering a result set:
+Orders last 30 days, by day --> Orders last 7 days, by day
+Regrouping a data set:
+Orders by city (note query limit must not be hit) --> Order by state
+Pivoting:
+Orders by date, status --> Orders by date, pivoted by status
+Here's a quick example where we aggregate users over a random selection of states in memory. We also quickly show the comparison to dropping back down to the database:
+Taking Advantage of the Requeryable Cache
+Huge unlocks in performance are available when being thoughtful about caching. Whole dashboards can be brought in memory for instant slice and dice, rather than each filter permutation hitting the database. Over time this will be automated for dashboards, but to build requeryable dashboard caching, the filters can be appended to dashboard tiles to build cubes.
+A simple example:
+This dashboard has one single-value tile counting total orders in the filtered set
+The table on the right shows the requeryable data set needed to cache each filter permuation
+The underlying value: orders.count
+The filters: users.age, users.state, users.country
+This means when the table to the right is loaded, we have every permutation of the filters, and all requery will be in-memory in the browser. This technique can be refined for entire dashboards to create psuedo-instant query response times.
+Cache Timing
+Currently the exact-match cache has a 6 hour expiry window by default. As mentioned above, this is configurable using cache policy model parameters outlined here. The browser requeryable cache will stay as long as the window is active, so may persist longer than expected. The browser requeryable cache will be configurable in the future.
+Cache Warming (Preemptively Caching Data)
+It's often a good idea to proactively warm the cache - if the first run can take a good bit and the dashboard will have heavy usage, it can be cached before the first user experiences the slower dashboard load. This can also sidestep having a stale cache entry (say someone loaded a dashboard yesterday and the cache was set to 24 hours to reduce cost).
+We can take advantage of the fact that the scheduler will always skip the cache and run queries fresh. This means if we schedule a dashboard, we are also building a fresh cache entry that future users can rely upon.
+A quick instructive example:
+9pm: User runs a dashboard with data fresh as of 9pm. The model is caching data for 24 hours, and thus this dashboard cache will populate results tomorrow morning for any users that load the same dashboard.
+6am: New data has come in overnight.
+7:30am: Dashboard is scheduled to run. This busts the cache and replaces the cache with data fresh as of 7:30am.
+8am: User loads the dashboard from the web browser, now with cached data as of 7:30am when the scheduler was run (rather than data from 9pm the day before if the scheduler was not run).
+Previous
+Writing SQL
+Next
+Useful query patterns

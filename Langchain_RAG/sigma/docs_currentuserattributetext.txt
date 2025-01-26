@@ -1,0 +1,18 @@
+CurrentUserAttributeText
+Suggest Edits
+The CurrentUserAttributeText function returns the corresponding attribute value for the current user as a Text data type.
+Syntax
+CurrentUserAttributeText("attrName")
+attrName
+Required
+Name of the user attribute generated in the User Attribute section of the Admin portal.
+Returns the current user's corresponding attribute value.
+The argument must be a Text data type.
+Example
+An admin adds a text column named Region into a dataset, creates a user attribute called Region Attribute, and assigns the user attribute to the following teams:
+West Team (consisting of users 1 and 2)
+Midwest Team (consisting of users 3 and 4)
+When using the following function in a dataset, members of each team will only see the rows that match the corresponding user attribute value in the Region column. That is, users 1 and 2 can see rows with the West Region value, and users 3 and 4 can see rows with the Midwest Region value.
+CurrentUserAttributeText(“Region Attribute”) = [Region]
+RELATED RESOURCES
+User Attributes

@@ -1,0 +1,15 @@
+RTrim
+Suggest Edits
+RTrim removes trailing spaces from the end of a string.
+Usage
+RTrim(text)
+text (required)- Text or a column of text to remove the trailing spaces from.
+Example
+RTrim(" John Doe ")
+Returns ” John Doe”
+Spaces on the left side are not removed
+RTrim([First Name])
+Returns:
+RELATED RESOURCES
+LTrim
+Trim

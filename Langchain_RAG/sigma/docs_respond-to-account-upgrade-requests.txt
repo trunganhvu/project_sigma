@@ -1,0 +1,28 @@
+Respond to account upgrade requests (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Users can request an account upgrade when attempting to create or explore a workbook. When a user submits an account upgrade request, all Sigma admins in the organization receive an email.
+As a Sigma admin, you can approve or deny account upgrade requests. For more details about license types and account types, see License and account type overview.
+For more details on when users can submit an account upgrade request, see About upgrade requests.
+If you don't want users to be able to request upgrades, see Enable or disable account upgrade requests.
+Approve an upgrade request
+To respond to an upgrade request, do the following:
+📘
+If you respond to an email requesting an upgrade, the link from the email opens the Reassign account type modal.
+Open the Sigma Administration portal.
+Select People, then open the Upgrade Requests tab.
+Any pending requests to review are displayed.
+For the user requesting the upgrade, review the message in the User Justification column.
+Select More, then select Reassign account type.
+In the Reassign account type modal, review the current account type for the user and the permission that the user is requesting. To approve the request, choose an account type to reassign to the user. The default account type is Pro, but you can choose any listed account type. Only account types with the requested permission are available to select.
+Select Confirm.
+Deny an upgrade request
+To reject or deny an upgrade request and remove it from the list of requests, do the following:
+Open the Sigma Administration portal.
+Select People, then open the Upgrade Requests tab.
+Any pending requests to review are displayed.
+For the user requesting the upgrade, review the message in the User Justification column.
+To reject or remove the upgrade request, select More, then select Remove request.
+The request is removed from the list.

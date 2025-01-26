@@ -1,0 +1,30 @@
+Aggregate functions
+Suggest Edits
+Aggregate functions evaluate multiple rows of data to return a single value. For example, you can use aggregate functions to perform group calculations (like Sum and Avg), retrieve specific values (like Min and Max), assess the data to provide insights (like Count and CountDistinct), or join multiple values (like ArrayAgg and ListAgg).
+ArrayAgg Identifies non-null row values in a column or group and aggregates them into a single array.
+ArrayAggDistinct Identifies distinct non-null row values in a column or group and aggregates them into a single array.
+Avg Calculates the average value of a column or group.
+AvgIf Calculates the average value of a column or group when the specified condition is True.
+Corr Calculates the Pearson correlation coefficient (bivariate correlation) of two columns.
+Count Counts the number of non-null and non-empty values in a column or group.
+CountDistinct Counts the number of unique non-null and non-empty values in a column or group. Does not count duplicate values. (Same as Ndv.)
+CountDistinctIf Counts the number of unique non-null and non-empty values in a column or group when the specified condition is True. Does not count duplicate values.
+CountIf Counts the number of non-null and non-empty values in a column or group when the specified condition is True.
+GrandTotal Calculates the grand total for column or group.
+ListAgg Joins the values of a group or column into a single text string.
+ListAggDistinct Joins the unique values of a group or column into a single text string. Does not include duplicate values.
+Max Retrieves the maximum (largest or latest) value in a column or group.
+MaxIf Retrieves the maximum (largest or latest) value in a column or group when the specified condition is True.
+Median Determines the median (midpoint) value of a column or group.
+Min Retrieves the minimum (smallest or earliest) value in a column or group.
+MinIf Retrieves the minimum (smallest or earliest) value in a column or group when the specified condition is True.
+PercentileCont Calculates the continuous kth percentile of a column or group.
+PercentileDisc Calculates the discrete kth percentile of a column or group.
+PercentOfTotal Calculates the percentage a value contributes to the specified aggregate total.
+StdDev Calculates the standard deviation of a column or group.
+Subtotal Calculates the subtotal of a column or group.
+Sum Calculates the sum of a column or group.
+SumIf Calculates the sum of a column or group when the specified condition is True.
+SumProduct Calculates the product of row values across specified columns, then calculates the sum of the resulting products for a column or group.
+Variance Estimates the sample variance (spread of distribution) of a column or group.
+VariancePop Calculates the population variance (spread of distribution) of a column or group.

@@ -1,0 +1,61 @@
+Schedules & AlertsSetup
+On this page
+Creating schedules & alerts
+A scheduled delivery will run at a given date/time regardless of results
+Requirements
+To follow the steps in this guide, you'll need:
+Permissions in Omni that allow you to create schedules and alerts.
+An existing destination to send deliveries to. Refer to the destination setup guides for more information:
+Email
+SFTP
+Slack
+Webhook
+1. Create the delivery
+In a dashboard:
+Click File > Deliveries & Alerts. The delivery options will display on the left side of the page.
+Fill in the following:
+Delivery - Select Schedule or Alert.
+Send - Select the content to be delivered.
+Destination - Select where the delivery should be sent: Email, SFTP, Slack, or webhook.
+Name - Enter a name for the delivery.
+If creating an alert, use the Alert tab to define the conditions that must be met to trigger the delivery. For example, you have a chart that tracks the Total sales for your ecommerce company. Using an alert, you can trigger a delivery when the total of your sales has changed.
+2. Configure the delivery schedule
+All delivery types require a schedule:
+For schedules, this determines when Omni will deliver the specified content to a destination
+For alerts, this tells Omni when to check if the current query results meet the conditions required to send the delivery
+To define the delivery's schedule, use the UI options (Daily, Weekly, etc.) to select a time period. For more control over timing, click the Custom option to use custom cron expressions.
+Note: By default, schedules are set in the local timezone of the delivery creator's computer. Use the Times are in drop down to change the timezone.
+Custom cron schedules (Advanced)
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Select format & filter options
+In the Dashboard or Chart tab, you can select the format of the content, such as PNG or CSV, and set filter values for the delivery.
+Note: Dashboard deliveries will automatically apply the dashboard's default filters. Use the Filters section to specify different filter values for the delivery.
+DID YOU KNOW?
+You can use filters to customize content for different recipients! For example, set a filter to A in a scheduled delivery to recipient A, and in another scheduled delivery to recipient B, set a filter to B.
+4. Configure destination settings
+The last step is to define where the delivery will be sent. Click the last tab, which will be labeled with the type of Destination you selected.
+Email
+SFTP
+Slack
+Webhook
+5. Test the delivery
+THIS STEP IS OPTIONAL.
+If you want to test the delivery before saving, click the Test Now button in the bottom left corner of the page. This will send the dashboard/chart to the destination using the current settings. For example, using Test Now would send the delivery to all Recipients.
+6. Save the delivery
+When finished, click Save to create the delivery.
+Previous
+Overview
+Next
+Email

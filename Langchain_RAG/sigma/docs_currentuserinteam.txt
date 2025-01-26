@@ -1,0 +1,11 @@
+CurrentUserInTeam
+Suggest Edits
+Returns True if the current user is a member of any of the given teams.
+Usage
+CurrentUserInTeam(team)
+team (required)- The team name (or comma separated list of team names) to test with.
+📘
+Team names are case-sensitive.
+Example
+CurrentUserInTeam("Marketing", "Sales")
+Returns True if the user currently viewing the data is in either the Marketing or Sales teams.

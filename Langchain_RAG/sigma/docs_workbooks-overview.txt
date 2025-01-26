@@ -1,0 +1,54 @@
+Workbooks overview
+Suggest Edits
+Sigma workbooks are data exploration tools for both Business Intelligence (BI) developers and spreadsheet-savvy analysts. Workbooks are similar to spreadsheets in that they have pages and display data in tables and pivot tables. Workbooks are similar to BI tools in that they provide dashboard-like displays that can include charts, graphs, controls, tables, texts, and images. You analyze your data and create visualizations on workbook pages, and use a page as a dashboard.
+Workbooks enable both ad hoc data exploration and complex BI presentations and reporting. The collaborative interface and visual approach to data interaction in Sigma makes data accessible to everyone in your organization, and teams can draw insights from large amounts of data.
+This document introduces you to workbooks and links to more resources.
+Workbook lifecycle states
+Workbooks have three states: explore, draft, and publish.
+When you create a workbook, it is in an explore state until you actively save the first version. You can keep a workbook in the explore state and never save it. For example, you might need to conduct ad hoc data exploration and analysis that is only needed in the current moment, and you don't want to clutter folders with one-off documents. Unsaved workbooks are called explorations and are available in the Recents page for 30 days.
+Save a workbook to continue your analysis and set up reporting. Saving also publishes the workbook, but only you have access until you share the workbook.
+For more information see Workbook lifecycle: explore, draft, and publish and Workbook modes: view, explore, and edit.
+Workbook embedding
+You can embed an entire workbook, a page, or an element in another application. See Workbook embedding: an overview
+Data used in workbooks
+Workbooks can use data from multiple sources, including tables in a Cloud Data Warehouse (CDW) and your organization's Sigma datasets. Your data is always live, accessible at scale, and cannot be deleted or corrupted. For information about data sources see Connect to data sources
+After Sigma connects to your data source, you can create workbooks directly from tables in your source, or you can model the data using a Sigma dataset. Use a dataset as the source for your workbooks to ensure consistency. For more information about data modeling, see: Data modeling with datasets and Data modeling tutorial.
+When users access a Dataset or Workbook that has been shared with them, that document owner's permission to the source data is evaluated within Sigma and the queries to the cloud data warehouse are run using the user account credentials specified in the connection settings. However, if the connection is configured to use OAuth without a service account, the queries run with the user's personal OAuth credentials configured for the data warehouse. If the connection is configured to use OAuth with a service account, an admin can configure individual workbooks to use the service account credentials. See Run a workbook with service account credentials.
+Workbook settings
+Sigma provides a variety of settings that affect the editing environment, formatting and theme, and page breaks for PDF exports. For more information see Workbook settings.
+What's in a workbook
+This section introduces you to the basic components of workbooks. The screenshots show a workbook in Edit mode.
+Pages and page tabs
+A workbook contains one or more pages. Page tabs, located at the bottom of the screen, show different pages in the workbook.
+Page menu
+Each page has a menu. When a workbook is in view mode, such as when it is provided to Viewers, users can export (download) a page as a PDF-formatted file. 
+In edit mode, users have more options for pages, including delete, rename, hide, duplicate, and add a new page. For more information about hiding pages, see Manage workbook page visibility.
+Page canvas
+Each workbook page has a canvas on which you can place elements such as tables, pivot tables, text, controls, images, and visualizations.
+Editor panel
+The workbook editor panel, on the left side of the screen, allows you to interact with and update elements in your workbook.
+When you select a new or existing element, the editor panel automatically displays that specific element’s configuration.
+The editor panel content changes depending on how you are currently interacting with the workbook. For example, it displays one view when adding a new element and alternative views when configuring different element types.
+Access to the editor panel depends on your workbook view mode.
+Elements
+You arrange elements on the page canvas. Element types include:
+Data elements (tables, visualizations, and pivot tables)
+UI elements (text, images, buttons, embeds, and spacers)
+Control elements (filters and parameters)
+In workbooks, tables and pivot tables are not considered types of visualizations. Visualizations, tables, and pivot tables are separate elements in the data elements category.
+For more information about elements see Intro to element types.
+Toolbar and formula bar
+The toolbar, located directly under the workbook header, gives you quick access to select actions, formatting options, and the formula bar. The toolbar content changes depending on the element you have selected, and undo, redo, and page theming functions are always displayed.
+{The formula bar lets you calculate values based on Sigma functions, much like a spreadsheet. See Orientation for spreadsheet users and Popular functions.
+When you select a column in a data element, you can view and edit the column's formula in the toolbar only if you have Can Edit or Can Explore access to the workbook. For more information see Folder and Document Permission.
+Information for legacy worksheet users
+If you previously used Sigma worksheets or dashboards, you may be familiar with the process of creating multiple worksheets to source visualizations for a single dashboard. Workbooks alleviate this workflow by allowing you to build your analysis exactly where it is displayed to your report consumers.
+RELATED RESOURCES
+Edit, draft, and publish a workbook
+Workbook modes overview: View, Explore, Edit
+Workbook lifecycle: explore, draft, and publish
+Create a workbook
+Intro to Element Types
+Workbook example templates
+What's Possible with Sigma Workbooks (Webinar)
+Questions and Answers on Workbooks and Visualizations (Community)

@@ -1,0 +1,105 @@
+Format and customize a table
+Suggest Edits
+You can efficiently and effectively design and format the display of your tabular data in Sigma. Sigma provides preset display styles for out-of-the-box aesthetics and readability, or you can customize style components independently for more personalized table designs.
+You can format and customize tables, pivot tables, and input tables, and apply the formatting at different levels of workbook development:
+Admins can define a default table style in an organization-wide workbook theme. See Create and manage workbook themes.
+Specify table styles for all tables, including pivot tables and input tables, in a workbook. See Table style settings in Workbook settings overview.
+Apply table styles to one table element. See Customize the table style for an individual element on this page.
+Format data in a given column. See Format column data on this page.
+Format data in columns based on a condition. See Apply conditional formatting on this page.
+User requirements
+Before you start: This action uses the editor panel. If you have not done so already, open the editor panel from either Explore or Edit mode; see Workbook modes.
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Customize the table style for an individual element
+Apply a custom table style to an individual table, pivot table, or input table element. Any custom table styles override styles set on the workbook level.
+Open a workbook in Explore or Edit mode.
+Select the table, pivot table, or input table element you want to modify.
+Select Element format in the side navigation, then click the Table style header to expand the section.
+Select a table style preset, or customize the table style components as needed.
+See Customizable table style options for more.
+Available table style presets
+Sigma includes two presets that automatically configure all table style options for a workbook. You can use a preset as a one-click solution or as the starting point for a custom table design.
+Spreadsheet
+The Spreadsheet preset (default) is designed for ongoing analysis and collaboration. It’s ideal for ensuring readability and including additional context, like tooltips and images.
+Presentation
+The Presentation preset is designed for table viewing. It’s ideal for aligning with company branding and adding visual appeal to your workbook.
+Customizable table style options
+You can customize any of the following table style components to meet branding and aesthetic requirements with table, pivot table, and input table elements:
+Cell spacing
+Grid lines
+Banding
+Header format
+Subheader format
+Cell format
+Cell spacing
+The Cell spacing setting allows you to adjust the padding around text within table cells. You can select one of four options: Extra small, Small, Medium, and Large.
+Extra small Small
+Medium Large
+Grid lines
+The Grid lines setting lets you manage the display of cell borders. You can select one of four options: No grid, Vertical grid, Horizontal grid, and All grid.
+No grid Vertical grid
+Horizontal grid All grid
+Banding
+The Show banding setting lets you alternate the background color of the data rows. The background color of the banded rows matches the default header background color.
+Disabled Enabled
+Header format
+The Header tab contains settings and tools that let you format table headers. You can customize the font type, size, weight, and color, as well as text wrap, text alignment, background color, and divider color settings.
+Subheader format (pivot tables only)
+The Subheader tab contains settings and tools that let you format subheader rows and columns. You can customize the font type, size, weight, and color, as well as text wrap, text alignment, and background color settings for both row or column headers.
+Cell format
+The Cell tab contains settings and tools that let you format data cells. You can customize the font type, size, weight, and color, as well as text wrap, text alignment, and background color settings.
+📘
+For pivot tables, cell styles apply to both value and total cells by default. To apply different styles to pivot table total cells, see Format pivot table totals.
+Format column location in a table
+To manage visibility and interactions with the columns in a table, you can format the location of columns in a table.
+Right-click a column, or select the caret () to customize a column:
+Choose Freeze up to column to freeze the position of that column and all columns to the left of the selected column. When scrolling to the right, the frozen columns remain visible. To remove a column from the frozen position, choose Unfreeze columns.
+Choose Hide column to hide the column when the table is viewed. You can reference hidden columns in formulas. Child elements created from a table with hidden columns do not include the hidden columns, but the columns can be added.
+Hide and show table components
+To manage whether various table components are shown in a table, you can format the table components:
+Open a workbook in Explore or Edit mode.
+Select the table or input table element you want to modify.
+Select Element format in the side navigation.
+Click the Table components header to expand the section and adjust the settings:
+Option Details
+Show table Whether to show the table columns and rows in the element. Deselect to show only the summary bar and title, if shown.
+Show collapsed columns For a table, whether to show ungrouped columns when a grouping is collapsed. Tables without groupings are unaffected by this option. For tables with multiple groupings, See Manage groups in a table.
+Show summary bar Whether to show the summary bar in a table or input table.
+Format column data
+Columns are formatted automatically according to the data type of the column. You can change the formatting to display the column data in a different way.
+Change number formatting
+Select a column, then choose an option in the toolbar to change the number formatting:
+Format as currency
+Format as percent
+Decrease or increase decimal places.
+Display numeric data in a different format. See Supported data types and formats for more details.
+Change column data appearance
+You can set the appearance of data in a column on the table level by setting the Cell format, but you can override those settings on the column level.
+These formatting options do not affect the column headers or totals. To format totals, see Format pivot table totals.
+After selecting a column, choose an option in the toolbar to change the column data appearance:
+Choose the alignment of data in a column.
+Choose the text color for a column.
+Choose the background color for a column. Select the column, then in the toolbar, click Background color.
+() Wrap text in the column.
+📘
+Conditional formatting takes precedence over formatting applied from the toolbar.
+Apply conditional formatting to table columns and cells
+To format table columns and cells based on a rule, or condition, apply conditional formatting.
+📘
+Conditional formatting takes precedence over toolbar column formatting options.
+With conditional formatting, you can apply a specific format to one or more columns based on a formatting rule. Choose from a default formatting rule, or specify a custom formula to use, such as with a logical function or text function.
+Apply text formatting, such as italics, bold, underline, and text color.
+Set a background color.
+Format number or date values.
+Apply a color scale to the background color or the text color.
+Display data bars over data values, or hide the data values to show data bars only.
+To apply formatting to the entire table, see Format table styles.
+Click to select the table.
+In the column menu for a column, or from the Element format panel, select Conditional formatting.
+If you open conditional formatting from the column menu, the Conditional formatting panel contains a default rule for the column. Otherwise, click + Add rule.
+(Optional) For Apply to, choose the columns to apply the conditional formatting to. You can also choose All columns.
+Choose between Single color, Color scale, and Data bars options for the formatting.
+For Formatting rule, define the conditional formatting rule. Choose a prebuilt rule, or define a custom formula.
+As you create the rule and define the formatting, the formatting is applied to the relevant columns and cells.
+(Optional) Add more conditional formatting rules by clicking + Add rule.

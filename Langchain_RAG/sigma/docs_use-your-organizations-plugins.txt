@@ -1,0 +1,21 @@
+Use your organization's plugins
+Suggest Edits
+With Sigma, you can add plugin elements to workbooks, to support custom functionality that isn't standard with Sigma's deployment. You only have access to plugins registered with your organization. Plugins are third-party applications built to add additional functionality into an existing product. For example, a software developer in your organization may create a plugin that lets you display your data in a chart type not otherwise supported in Sigma.
+Requirements
+To add or edit a workbook element through a plugin:
+You must be a Creator or Admin, or have a custom account type with appropriate permissions.
+You must have Can Edit access to the relevant workbook.
+Add an element to a workbook through a plugin
+Plugin-based elements only accept data elements as data sources. The source data element must be in the same workbook as the plugin.
+This action is only available in edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
+Open the workbook's ADD NEW panel.
+Select PLUGINS.
+Select a plugin type from the list.
+
+Your new blank plugin-based element will appear on the page.
+Configure your element’s values using the editor panel.
+Individual plugins define each element’s configuration options.
+Plugins only have access to the first 25,000 rows in a data source. Therefore, group and aggregate data to reduce the total number of rows. If your data source already contains groupings, the editor panel prompts you to select an aggregate level.
+RELATED RESOURCES
+Register a Plugin with your Sigma Organization
+Get Started with Custom Plugins

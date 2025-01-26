@@ -1,0 +1,98 @@
+Write custom SQL
+Suggest Edits
+When you explore your data warehouse using the SQL editor, you can preview SQL queries and create workbooks and datasets directly from SQL.
+This document describes how to:
+Create a workbook from SQL
+Create a SQL workbook element
+Reference existing Sigma workbook elements
+Use shortcuts, including:
+Toggle within SQL-based workbook data elements to an inline SQL editor with side-by-side display.
+Auto-format your SQL query.
+Use find and replace within your SQL query.
+Requirements
+To use this feature, you must be assigned an account type with the permission to write custom SQL.
+To run custom SQL, you must have the Can use data permission for the entire connection. See Data permissions.
+The SQL editor only appears if you have connection-level access to at least one connection in your organization.
+To reference existing Sigma workbook elements within your SQL, you must have write access configured on your connection.
+Create a workbook from SQL
+Open Sigma Home.
+In the navigation panel, click Create New, then select Write SQL to open the SQL editor.
+In the side panel, click Select a Connection and select the connection you want to query.
+In the query editor, enter your custom SQL. Sigma provides autocomplete suggestions to guide you.
+💡
+You can reference workbook controls in your SQL by wrapping the control ID in curly brackets. See Reference workbook controls.
+To run your SQL query, click Run, or use the keyboard shortcuts ⌘ + return on a Mac or ctrl + enter on a PC.
+To save your exploration as a workbook, click Save As.
+Create a SQL workbook element
+From within a workbook, click Edit in the top right corner of the page.
+Select Add element.
+Under Data elements, select the type of element you want to add: Table, Visualization, or Pivot table.
+Select SQL to write custom SQL to retrieve data from a CDW.
+Select the connection you want to query.
+An element appears in your workbook, prompting you to enter a SELECT statement to query the connection.
+In the query editor, enter your custom SQL. Sigma provides autocomplete suggestions to guide you.
+💡
+You can reference workbook controls in your SQL by wrapping the control ID in curly brackets. See Reference workbook controls.
+Reference existing Sigma workbook elements
+You can reference an existing Sigma workbook element in your SQL by creating a Warehouse View of your element and using the path of the view as the query's source table in the SQL editor. A Warehouse View transforms your published workbook element into a view inside the cloud data warehouse.
+📘
+The Warehouse View represents the published state of the workbook. To promote new changes in your workbook to the Warehouse View, publish your changes.
+The path of the Warehouse View in your cloud data warehouse is comprised of the Location and Workbook Warehouse View name.
+If you already created a warehouse view for your workbook element, find the details of the view so that you can reference it in SQL.
+Navigate to the workbook containing the element.
+Hover over the workbook element.
+Select View warehouse view info.
+Click Copy path to copy the full path to your clipboard.
+For example, to query the warehouse view shown above, use the following SQL:
+select * from SAMPLE_CONNECTION_PRODUCTION.ORG_S_CF2DE26E9A2C4C58BA1C91A0955DF7EE.SALES_BY_MONTH_AND_STORE_REGION
+Shortcuts
+Toggle to SQL editor in the element menu
+Click Toggle SQL Editor to switch back and forth between your data element and the inline SQL editor to update an element by modifying its SQL query.
+You can also use the space bar or click ( Maximize element to expand the element to full screen mode.
+Format SQL
+Click  Format SQL to quickly format long blocks of SQL text.
+Find and replace
+Click Search SQL or use the keyboard shortcut ⌘ + F to open up a tool that allows you to search within the SQL query and optionally replace instances of your searched term.
+Access custom SQL from the Lineage view
+View and edit custom SQL from the Lineage view of a workbook. Copy the full query to your clipboard or click Edit SQL to go to the inline SQL editor for the element.
+View the query history
+When you use the SQL editor, you can access the history of the queries recently run against the current connection.
+To access this history, select Connection in the left navigation pane, then click the History tab.
+To see the query history for all elements in the workbook, see Examine workbook queries.
+View multiple tables
+When writing your query, you can still use the left panel to explore data tables. You can switch between the Table Preview and SQL results, letting you preview columns you might want to use when joining data tables.‍
+Examples
+For more advanced custom SQL cases, refer to these examples.
+Change output based on a user attribute
+If you have user attributes defined in your organization, you can reference an attribute to limit the results returned from a SQL query based on the value of the user attribute for the current user.
+For example, for the example Plugs Electronics data, return results only with the store region that the current user can access based on the store_region user attribute assigned to them:
+SQL
+SELECT
+  *
+FROM
+  EXAMPLES.PLUGS_ELECTRONICS.PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA
+WHERE 
+  {{system::CurrentUserAttributeText::store_region}} = STORE_REGION
+As another example, return results filtered by the customer_name that the current user has access to view, based on the value of the organization_name user attribute assigned to them:
+SQL
+SELECT 
+  * 
+FROM 
+  test.orders 
+WHERE 
+  customer_name = {{system::CurrentUserAttributeText::organization_name}}
+For more details about the function syntax, see CurrentUserAttributeText. For more details about user attributes and assignment, see User Attributes.
+Return output for a specific date range control
+For an example returning rows only when a date column matches the value specified in a date range control, refer to the example SQL in Reference workbook control values in SQL statements.
+Return rows depending on the value of a multi-select control
+For an example returning rows depending on the value of a multi-select list control, refer to the example SQL in Reference workbook control values in SQL statements.
+### Return rows based on a schema text selector
+
+If you have a single-select or text control called `schema-param` that has a valid selection (a schema in your connected CDW), and the `STATIONS` table exists in the specified schema, the following example SQL returns all columns from the `STATIONS` column in the specified schema:
+
+```sql
+SELECT *
+FROM {{#raw schema-param}}.STATIONS
+When using this parameter to swap table, schema, or database names, the column names referenced in the SQL must be identical.
+RELATED RESOURCES
+Keyboard shortcuts: Mac OS

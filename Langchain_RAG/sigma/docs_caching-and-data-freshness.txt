@@ -1,0 +1,34 @@
+Caching and data freshness
+Suggest Edits
+How Sigma reduces warehouse overhead
+When data elements are updated, Sigma tries to reduce the overhead on your warehouse. The steps Sigma follows are:
+Check browser cache
+Try alpha query
+Try CDW result ID cache (only available for some CDWs)
+Re-query the warehouse
+See the following sections for details.
+Important: Manual refresh or scheduled refresh bypass all caching options. 
+Check browser cache
+The browser cache accounts for the data immediately accessible in the browser. If you make changes to a data element, Sigma first checks if existing data already in the browser can still work for the updated element.
+This may happen when:
+A column is renamed or moved
+Try alpha query
+If the data in the browser can't be used directly, Sigma checks if it can recalculate new values using the existing data in the browser.
+This may happen when:
+A new aggregate column is added
+Try query ID cache
+This happens only if your CDW supports result caching, such as with Snowflake and BigQuery.
+This may happen when:
+Regrouping data
+Sigma does not store query results, only the query ID returned by the warehouse.
+Set a query ID cache duration
+This applies only to CDWs that support can return results of past queries from a results cache using a query ID, such as Snowflake and BigQuery.
+A workbook's cache duration, or time-to-live (TTL), refers to the duration within which Sigma attempts to retrieve results from the CDW's result cache using the query ID. If Sigma determines that the query ID cache can be leveraged for a query and the last time the query was run against the CDW is within the query ID cache duration, Sigma does not attempt to re-run the query against the warehouse. If the last time the query was run against the warehouse is outside the query ID cache duration, Sigma retrieves the results from the CDW results cache using the query ID and renders the workbook, and in parallel Sigma executes the query against the warehouse. When the latest results are returned from the warehouse, Sigma updates the workbook visualizations.
+For information about changing the TTL, see Set a query ID cache duration.
+Manual refresh and refresh schedules
+Use a refresh schedule, if necessary. 
+Important: Sigma does not store query results, only the query ID returned by the warehouse. Every refresh re-queries the data in the warehouse. Setting an auto-refresh may burden the connection and result in significant warehouse costs.
+For more information see workbook refresh options.
+RELATED RESOURCES
+Set a query ID cache duration
+Workbook Refresh Options

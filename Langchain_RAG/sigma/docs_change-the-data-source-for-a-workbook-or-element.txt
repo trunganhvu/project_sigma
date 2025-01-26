@@ -1,0 +1,42 @@
+Change the data source for a workbook or element
+Suggest Edits
+You can change the data source used by an entire workbook or a specific data element.
+For example, you might build a workbook with data sources from a test data connection to reduce load on a production database while you experiment and create calculations. When you're ready to publish and share the workbook with your team or organization, you can replace the test data sources used by the workbook with production data sources.
+You can also change or swap the data source of a workbook automatically, based on the version tag of the workbook. See Swap the source of a tagged version.
+Requirements
+You must be granted Can use data permission for the connection that you want to change to.
+You must have Can edit or Can explore permissions on the workbook.
+Swap the data source for a workbook
+You can swap the data source for all elements in a workbook, for example to change from a test data warehouse connection to a production data warehouse connection, do the following:
+Open the workbook in Edit or Explore mode.
+From the workbook menu , select Swap data sources….
+In the Swap Data Sources Overview modal, review the auto-selected Matching Connection. If needed, update the selected connection.
+Review the Matching Data Sources for each element in the workbook. If any data sources have No Match, select Match Manually to choose a different data source for each element without a matching data source.
+On the manual match page, select a data source used by an element, then click Select Source.
+Search for or browse to a new data source, then click Select.
+Select the next data source that needs to be matched and repeat these steps.
+After all data sources without matches have been matched to a new data source, select Swap.
+If none of your data sources need to be manually matched, select Swap Now.
+The workbook updates to use the new data source. Any elements without matching data sources display an error.
+🚩
+If your workbook contains input tables or custom SQL elements, the data source and connection for those elements is not swapped. Instead, you must recreate the elements with the new connection as the data source.
+For an input table, create an input table with the new connection then copy and paste the data from the old input table to the new one.
+For a custom SQL element, create a new SQL element and write equivalent SQL against the new data connection.
+Change the data source for an element
+You can also change the data source used for a specific element. For example, if you created a view in your Snowflake database and you want to update a Sigma table element to use the view instead of the base table from the Snowflake connection, you can swap the source.
+🚩
+You cannot change the data source for an input table or an element that uses SQL to directly query the connected data warehouse. If you change the source for a SQL element, the element no longer uses SQL.
+Swap the data source for an element
+After selecting an element in Edit or Explore mode, you can change the data source:
+From the workbook canvas, select More > Element source > Change source. Or, at the bottom of the Element properties panel, locate the name of the data source and select > Change source.
+Search for or browse to a new data source for the element.
+[optional] Preview the data source to choose specific columns, then click Add.
+Select the data source to finish changing the data source.
+The data element updates. If your element contains a calculated column that references a column that does not exist in the new data source, the calculated column displays "unknown column".
+Replace the table used by a table element
+If you want to replace the table used by a table or pivot table element with a different table, do the following:
+From the workbook canvas, select More > Element source > Replace table. Or, at the bottom of the Element properties panel, locate the name of the data source and select > Replace table.
+Search for or browse to a new table for the element.
+Review the selected columns and optionally deselect the checkboxes next to any unwanted columns.
+Click Add.
+The data element updates. If your table contains a calculated column that references a column that does not exist in the new table, the calculated column displays "unknown column".

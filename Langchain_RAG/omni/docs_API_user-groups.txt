@@ -1,0 +1,168 @@
+API docsGroups
+On this page
+User group APIs
+The user group APIs allow you to manage user groups in your Omni instance, including individual memberships. These APIs follow the SCIM 2.0 standard.
+Create a group
+Creates a user group.
+POST /scim/v2/groups
+curl 'https://myorg.omniapp.co/api/scim/v2/groups' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer TOKEN' \
+--data '{
+    "displayName": "Blob Sales",
+    "members": [
+        {
+            "value": "9e8719d9-276a-4964-9395-a493189a247c"
+        }
+    ]
+}'
+Parameters
+Name Type Required Description
+displayName string ✓ The name of the group. For example, Blob Sales
+members array of objects A list of objects that defines the group's list of members. Each member should be specified as an object. For example: {"value": "USER-ID"}
+Returns
+Returns a user group object and a list of members, if provided.
+201 Created
+{
+    "displayName": "Blob Sales",
+    "id": "mEhXj6ZI",
+    "meta": {
+        "created": "2024-12-04T00:08:03.250Z",
+        "lastModified": "2024-12-04T00:08:03.250Z",
+        "resourceType": "Group"
+    },
+    "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:Group"
+    ],
+    "members": [
+        {
+            "display": "iamagoodblob@myorg.co",
+            "value": "9e8719d9-276a-4964-9395-a493189a247c"
+        }
+    ]
+}
+Update a group
+Updates the specified user group by setting the values of the parameters provided and leaving all other properties unchanged.
+PUT /scim/v2/groups/:id
+curl 'https://docs.playground.exploreomni.dev/api/scim/v2/groups/mEhXj6ZI' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer TOKEN' \
+--data'{
+    "displayName": "Blob SEs",
+    "members": [
+        {
+            "display": "iamagoodblob@myorg.co",
+            "value": "9e8719d9-276a-4964-9395-a493189a247c"
+        }
+    ]
+}'
+Parameters
+Name Type Required Description
+id URL parameter ✓ The ID of the group to be updated.
+displayName string ✓ The name of the group. For example, Blob Sales
+members array of objects ✓ A list of users that defines (and will override) the group, each specified as an object like: { "display": "iamagoodblob@myorg.co", "value": "USER-ID" } . Note: The user's display name won't be updated.
+Returns
+Returns the updated user group object associated with the provided user group ID.
+200 OK
+{
+    "displayName": "Blob SEs",
+    "id": "mEhXj6ZI",
+    "meta": {
+        "created": "2024-12-04T00:08:03.250Z",
+        "lastModified": "2024-12-04T00:20:47.346Z",
+        "resourceType": "Group"
+    },
+    "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:Group"
+    ],
+    "members": [
+        {
+            "display": "iamagoodblob@myorg.co",
+            "value": "9e8719d9-276a-4964-9395-a493189a247c"
+        }
+    ]
+}
+List groups
+Retrieves a list of user groups, sorted by creation time.
+GET /scim/v2/groups
+curl 'https://myorg.omniapp.co/api/scim/v2/groups' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer TOKEN'
+Parameters
+Name Type Required Description
+count integer The number of groups to return. Defaults to 100.
+startIndex integer An integer index that determines the starting point of the sorted result list. Defaults to 1.
+Returns
+Returns a list of group objects, each of which represents a user group.
+200 OK
+{
+    "Resources": [
+        {
+            "displayName": "Blob Sales",
+            "id": "mEhXj6ZI",
+            "meta": {
+                "created": "2024-08-29T20:33:36.626Z",
+                "lastModified": "2024-08-29T20:33:36.626Z",
+                "resourceType": "Group"
+            },
+            "schemas": [
+                "urn:ietf:params:scim:schemas:core:2.0:Group"
+            ],
+            "members": [
+                {
+                    "display": "iamagoodblob@myorg.co",
+                    "value": "9e8719d9-276a-4964-9395-a493189a247c"
+                }
+            ]
+        }
+    ],
+    "itemsPerPage": 1,
+    "schemas": [
+        "urn:ietf:params:scim:api:messages:2.0:ListResponse"
+    ],
+    "startIndex": 1,
+    "totalResults": 1
+}
+Retrieve a group
+Retrieves a user group using its unique ID.
+GET /scim/v2/groups/:id
+curl 'https://myorg.omniapp.co/api/scim/v2/groups/mEhXj6ZI' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer TOKEN'
+Parameters
+Name Type Required Description
+id URL parameter ✓ The ID of the group to be retrieved.
+Returns
+Returns the user group object associated with the provided user group ID.
+200 OK
+{
+    "displayName": "Blob Sales",
+    "id": "mEhXj6ZI",
+    "meta": {
+        "created": "2024-08-29T20:33:36.626Z",
+        "lastModified": "2024-08-29T20:33:36.626Z",
+        "resourceType": "Group"
+    },
+    "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:Group"
+    ],
+    "members": [
+        {
+            "display": "iamaverygoodblob@myorg.co",
+            "value": "9e8719d9-276a-4964-9395-a493189a247c"
+        }
+    ]
+}
+Delete a group
+Deletes the specified user group.
+GET /scim/v2/groups/:id
+curl DELETE 'https://myorg.omniapp.co/api/scim/v2/groups/mEhXj6ZI' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer TOKEN'
+Parameters
+Name Type Required Description
+id URL parameter ✓ The ID of the group to be deleted.
+Returns
+Successful requests will return a 204 No Content status. No response body is expected.
+Previous
+Users

@@ -1,0 +1,60 @@
+Workbook settings overview
+Suggest Edits
+A Sigma workbook has settings that apply to all its pages and elements. The settings covered in this document apply to workbooks using grid layout. See Create and manage workbook layouts.
+Access workbook settings
+Open the workbook settings panel from the Settings button at the bottom left of the workbook:
+Theme settings
+Choose a theme for your workbook. Administrators can create custom workbook themes. See Create and manage workbook themes.
+Theme: Select from a set of predefined themes. Themes encompass the palette, fonts, and title and table text sizes. The default uses the Light theme settings. You can choose a theme and modify its settings.
+Color settings
+The Color settings control text, button, background, element, and visualization colors in a workbook.
+Setting Description
+Appearance Sets light or dark theme for a workbook.
+Theme colors > Preset Sets a predefined color theme for workbook text, buttons, background, and visualizations.
+Theme colors > Text Sets the color of workbook text for your theme.
+Theme colors > Highlight Sets the color of buttons, link text, and selection indicators in your theme.
+Theme colors > Surface Sets the color for element backgrounds, borders, and icons in your theme.
+Override colors > Canvas Sets a custom color for the workbook canvas, different from the canvas color for the theme. Click x to clear.
+Override colors > Element Sets a custom color for workbook elements. Click x to clear.
+Visualization colors Applies a predefined palette or custom colors to use for visualizations in the theme. You can specify hex codes for the custom color palette.
+Invert visualization tooltips Inverts the theme's text and background colors in tooltips.
+When you specify a color, you can choose a color from a predefined palette, specify a hex code, pick a color from a window or document open on your computer using an eyedropper, or choose a color from a gradient.
+Select Revert to default to undo your changes and reset the settings to the default.
+Font settings
+The Font settings control fonts throughout the workbook.
+Setting Description
+Text font Sets the font for non-data workbook text, like element titles, element descriptions, and table headers. The default is Source Sans Pro.
+Data font Sets the font for workbook data. The default is Roboto.
+Title font Sets the font size and color of element titles.
+Select Revert to default to undo your changes and reset the settings to the default.
+Layout style settings
+The Layout style settings control the layout of workbook pages and elements.
+Setting Description
+Page width Sets the width of all pages in a workbook. The default is Full. Choose Custom to set a maximum width for workbook pages.
+Spacing Sets the size of spacing between elements.
+Corner Sets the shape of element corners. Choose from a square, rounded, or pill-shaped corner. The default is round.
+Data element style > Padding Sets padding for a data element. Deselect the checkbox to remove padding around a data or control element.
+Data element style > Background Sets a custom background color for a data or control element. Set to Auto to match the element background for the theme.
+Select Revert to default to undo your changes and reset the settings to the default.
+Table style settings
+The Table style settings control the format and display of tables, pivot tables, and input tables. For more details about table style options, see Customize table style.
+Setting Description
+Table style presets Applies a preset to configure all table style options.
+Cell spacing Sets the padding around text within table cells.
+Grid lines Determines how cell borders are displayed.
+Show banding Displays a background color to alternating data rows.
+Header Formats table headers.
+Subheader Formats subheaders (applicable to pivot tables only).
+Cell Formats data cells.
+Select Revert to default to undo your changes and reset the settings to the default.
+Layout settings
+The Layout settings control the workbook layout.
+Setting Description
+Always show grid Toggles the grid lines on and off. By default, the layouts grid is on, to help you align elements on a page. The grid displays when editing or exploring. It does not display to Viewers.
+Custom mobile layout Toggles whether the layout is used for both desktop and mobile devices. For more information, see the Responsive design for desktop and mobile layouts section in Create and manage workbook layouts.
+Select Revert to default to undo your changes and reset the settings to the default.
+Manage locales
+The Manage locales link opens the Manage locales panel. See Embedded workbook localization.
+RELATED RESOURCES
+Compose elements on a page
+Customize chart mark tooltip fields

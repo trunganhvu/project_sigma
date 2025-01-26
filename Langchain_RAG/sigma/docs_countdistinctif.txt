@@ -1,0 +1,24 @@
+CountDistinctIf
+Suggest Edits
+The CountDistinctIf function returns the number of unique values within a column or group for which all given conditions are true. You can use operators in conditions.
+Syntax
+CountDistinctIf([field], condition 1, condition 2+...)
+The function has the following arguments:
+field
+Required
+The column of values to be counted. Duplicate and Null or empty values are skipped.
+condition 1
+Required
+The condition to test. If the condition is true, then the row will be counted.
+condition 2+
+Optional
+Additional conditions to test. If multiple conditions are used, they must all be True for the row to be counted.
+Examples
+CountDistinctIf([City], [Population] > 5000)
+Finds the number of unique city names where the population is greater than 5000.
+CountDistinctIf([City], [Population] 5000 AND [Population] < 10000, [State] = "Ohio")
+Finds the number of unique city names where the population is between 5000 and 10,000 and the state is Ohio.
+RELATED RESOURCES
+Count
+CountDistinct
+CountIf

@@ -1,0 +1,22 @@
+View underlying data
+Suggest Edits
+When viewing, exploring, or editing a workbook, all data elements are minimized by default to display multiple elements in the canvas. You can maximize an individual data element to focus on its details and view the underlying data.
+When a visualization or pivot table element is maximized, it expands to the full width of the workbook page and exposes the element's underlying data table. Because the element and underlying data are inherently linked, changes applied to one are automatically reflected in the other.
+When a table element is maximized, it expands to fill the entire workbook page. The underlying data doesn't need to be displayed in an additional table since it's already exposed in the table itself.
+📘
+Data elements can be maximized in any workbook mode (View, Explore, or Edit), but changes can be made in Explore and Edit modes only.
+Maximize a data element
+Hover over or select the data element.
+In the element toolbar, click Maximize element.
+Minimize a data element
+In the page toolbar, click Minimize element.
+Interactive demo
+Hover over the embedded bar chart to display the element toolbar in the upper-right corner of the element.
+To maximize the chart and view the underlying data table, click Maximize element.
+To return to the full workbook canvas, click Minimize element.
+RELATED RESOURCES
+Intro to data elements
+Workbook modes overview: View, Explore, Edit
+Did this page help you?
+Yes
+No

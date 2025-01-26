@@ -1,0 +1,54 @@
+Edit, draft, and publish a workbook
+Suggest Edits
+When you edit a workbook, you create a draft. To make the changes visible to Viewers, you publish the draft. You can also choose to discard your draft, and return to the previously published version.
+Any user with Can Edit access to the workbook can edit it. You enter Edit mode by clicking the Edit button.
+If multiple users edit a workbook at the same time, the edits are automatically saved to a shared, live draft. Multiple editors can collaborate on this single draft in real time. See Collaborate with Live Edit in workbooks.
+When a user views or explores a saved workbook, they see the most recent published version.
+This document describes how to edit drafts and publish workbooks and how to delete and restore deleted workbooks.
+Requirement
+To draft and publish new workbook versions, you must have Can Edit access to the individual workbook.
+Edit an existing workbook
+To begin editing an existing workbook, click Edit in the workbook header.
+After the workbook enters Edit mode:
+The Edit button changes to an Editing menu.
+The version menu changes from PUBLISHED to DRAFT.
+The header displays a list of all users currently in Edit mode.
+💡
+Click a user’s icon to navigate to the element they have selected (if they have one selected).
+Workbook elements show the name of the user or users who are currently selecting the element.
+The editor panel and sidebar appear on the left side of the page.
+Changes you make to the draft automatically save to the live draft shared by all editors.
+If an editor clicks Publish, Sigma publishes all drafted changes, including changes drafted by all editors on the live draft.
+Preview drafted changes
+You can preview all drafted changes in both Explore and View modes prior to publishing. This is helpful if you want to see what a workbook will look like to users with View or Explore permissions to access to the workbook.
+To preview drafted changes:
+Click Editing.
+Select either Preview as explorer or Preview as viewer.
+
+To change states again, click Previewing and select your target state.
+Publish Drafted Changes
+To publish your edits, click the Publish button located in the workbook header.
+This action publishes all drafted changes to the workbook, including changes made by others editors using the live draft.
+Discard drafted changes
+To discard your drafted changes, click Editing > Restore draft to published version.
+Sigma discards all users' unpublished edits, not just yours.
+Return to the latest published version
+To return to a workbook's latest published version, click Editing > Go to published version. Sigma places the workbook into Explore mode.
+Sigma does not discard your drafted changes. You can return to the shared draft at any time by clicking the published version's Edit button.
+For more information, see Workbook version history.
+Delete a workbook
+To delete a workbook you must be the owner of the workbook, have Can edit access to it, or have the Admin account type.
+Click the caret () next to the workbook name, then click Delete....
+On the Confirm Deletion modal, click Delete.
+Recover a deleted workbook
+To recover a workbook that has been deleted, you must be the owner of the workbook or have the Admin account type.
+Go to your Home page.
+In the navigation menu, select Trash.
+In the Trash page, search the list of deleted documents and click the one you want to recover. You can sort the Name, Deleted on, or Deleted by columns to help identify the applicable document.
+In the Document has been deleted modal, click Recover. Sigma immediately opens the recovered document.
+RELATED RESOURCES
+Workbook lifecycle: explore, draft, and publish
+Workbook versions and version history
+Workbook modes overview: View, Explore, Edit
+Create a workbook or exploration
+Workbook collaboration with Live Edit

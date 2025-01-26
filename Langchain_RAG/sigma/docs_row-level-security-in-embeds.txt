@@ -1,0 +1,82 @@
+Implement row-level security in embeds
+Suggest Edits
+Row-level security (RLS) is a method for restricting data access based on user identity or characteristics. Sigma offers two functions that provide information about the current user:
+CurrentUserEmail returns the email of the user viewing the data.
+CurrentUserInTeam returns True if the current user is a member of any of the given teams. See Dataset row-level security.
+You can also perform row-level security with custom user attributes and the CurrentUserAttributeText function, applying a filter on a column using that function at the dataset level or in a custom SQL query.
+💡
+Review the QuickStart: Embedding 4: Application Row Level Security, which covers each step in detail.
+Example use case
+For example, if you have a table with a column called "Region" and you want to restrict users to viewing only certain regions while allowing them to use all the other functionality in the workbook, you can use row-level security.
+In this example, create a user attribute called "Region", and adjust the embed API to pass a value for the user attribute at runtime. This method works whether you use the user attribute to filter the dataset or Custom SQL used as the data source.
+Step 1: User Attribute - Region
+Create a user attribute for "Region":
+In the Administration portal, select User Attributes.
+Click Create Attribute.
+In the New Attribute section, enter a unique name in the Name field. In this example, enter Region.
+[optional] In the Description field, describe the attribute.
+In the Default Value field, enter a default value. Sigma uses the value defined here if no value is set for a team.
+🚧
+To ensure data is not unintentionally exposed, leave the default value empty or make sure the default value does not return data.
+Click Create.
+"Region" User Attribute
+Step 2: Create the dataset
+This example uses the Sigma Sample Database and the PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA table.
+🚩
+After creating, configuring, and saving a workbook based on this dataset, make sure to share it with your test teams and adjust the embed API for the new embed path. Keep the workbook to test against in the last step.
+To implement row-level security in the dataset, add a new column that evaluates the "Region" user attribute passed by the embed API.
+Set a filter on the new column to only show rows that evaluate to True.
+📘
+When this filter is enabled in the dataset, no rows are shown because the user attribute does not have a default value set. This is a security best practice to avoid unintentional data exposure.
+Step 3: Create a workbook
+Create a workbook based on this new dataset by clicking Explore. Save the workbook, generate a new embed path and share the workbook with relevant teams.
+In this example, you can use one or more teams to test different values of the user attribute to validate that the row-level security works as expected.
+Teams for testing
+Step 4: Configure the embed API
+To finish implementing row-level security for your embed, you must pass the values of the new "Region" user attribute to Sigma using the embed API. Configuring this ensures that the row-level security reflects the user attribute value of the user viewing the embed.
+For example, after modifying the embed API to include the new Region parameter and set its value to "West", only rows with the Region = West should be included in the table.
+In this example, the values for the user and team are adjusted based on the region value passed as part of the user attribute, which is hardcoded. In a production use case you want to the parent application to set the value of the user attribute dynamically at runtime.
+For example, these parameters would be added (or adjusted) in section 6 of the sample embed API code for ease of viewing.
+JavaScript
+    searchParams += `&:email=Sales_Team_West@sigmacomputing.com`;
+    searchParams += `&:external_user_id=sales_team_west_123`;
+    searchParams += `&:external_user_team=Sales_Team_West`;
+    searchParams += `&:account_type=Viewer`;
+    
+    // NOTE: UA values are case sensitive. 
+   searchParams += '&:ua_Region=West';
+Test the results in a web browser
+After setting up the embed and user attributes to set up row-level security, review the output to confirm it looks as expected.
+In this example, reviewing the Column Details for the Region column of the embed, only rows for the West region are displayed and row-level security is working as expected:
+Embed with Region column details shown
+Passing multiple values
+If you want, you can pass multiple values in the embed path. You can adjust the example embed API to pass more than one value in a comma-delimited list.
+In this case, adjust the sample embed API code as follows, to pass two values for the Region user attribute:
+JavaScript
+searchParams += '&:ua_Region=West,East';
+If you save the changes and refresh the embed browser page, the column details for the Region column now show data for West and East rows:
+Embed with two Regions passed by API
+Custom SQL
+If you prefer to write custom SQL to implement row-level security, you can use user attributes within SQL queries as well.
+You can reference any user attribute anywhere in the SQL statement. For example, switch the database name, table name, in the select clause or where clause based on the value of a user attribute.
+For example, based on the Region user attribute created in the previous steps, use it in a Custom SQL dataset to provide security.
+For more details on working with custom SQL in Sigma, see Write custom SQL.
+Create a dataset with Custom SQL
+In this example, query the PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA table and filter the results based on the value of the Region user attribute:
+SQL
+SELECT * FROM RETAIL.PLUGS_ELECTRONICS.PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA
+WHERE STORE_REGION = '{{system::CurrentUserAttributeText::Region}}'
+When setting up this dataset with a user attribute with no default value set, the query returns No data. This is expected and follows a security best practice of not returning results if there is no value provided.
+Continue by setting the Example embed API code to return only rows where Region = West:
+JavaScript
+searchParams += '&:ua_Region=West';
+Only West is shown:
+Custom SQL results shown with previous result set for comparison
+📘
+If you attempt to pass more than one value for the user attribute in a comma-delimited list, the syntax you use in the server.js file or SQL query can vary depending on the data warehouse being queried and how it interprets the syntax of the request.
+Workbook controls in embeds
+If your workbook contains workbook controls, consider how they effect your embedded analytics.
+Hidden controls
+If you place a control on a hidden page, the control does not appear in the embed. However, the values of the control and the filter can be visible to anyone with access to filter the table, including your embed viewers.
+Controls in a workbook URL
+When you create an embed, you can also include control values in the embed URL. See Apply control values with URL parameters.

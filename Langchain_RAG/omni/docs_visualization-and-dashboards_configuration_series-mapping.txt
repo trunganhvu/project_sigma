@@ -1,0 +1,11 @@
+Visualization & DashboardsConfigurationSeries Mapping
+On this page
+Series Mapping
+Any column (dimensions, measures, or calculations) or pivot can be re-arranged in the visualization layer. This allows for the flexible construction of many different types of visualizations over the same data table.
+Each facet is presented at the bottom of the visualization configuration under available fields.
+Duplicating Fields Across Facets
+Fields can be used across more than one facet by dragging from available fields into the corresponding facet. Alternatively the fields can be moved by grabbing a token and changing the chart. Here are a few examples with our original query:
+Previous
+Quick Charts
+Next
+Series Configuration

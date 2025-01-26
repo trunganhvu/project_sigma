@@ -1,0 +1,17 @@
+CumeDist
+Suggest Edits
+The CumeDist function returns the cumulative distribution of an input column. For each row value in the input column, the cumulative distribution will give the probability that other values within the input column will be less than or equal to that value, when sorted ascending.
+When sorted descending, the cumulative distribution gives the probability that other values within the input column will be greater than or equal to each row value. The output of this function is a number between 0 and 1.
+Syntax
+CumeDist([Column], direction)
+Function Arguments:
+[Column] (required) - The column to use to find the cumulative distribution.
+direction (optional) - The direction to sort the input column. Enter “asc” to sort ascending and “desc” to sort descending. Default sorting is ascending.
+Example
+CumeDist([Average Close Price])
+A table contains monthly averages for the close prices of a stock. The CumeDist function can be used to find the cumulative distribution of these average close prices.
+The percentage refers to the probability that other close prices will be less than or equal to the close price.  For the month 2012-03, there is a 26.30% chance that other close prices will be less than or equal to 38.18.
+CumeDist([Average Close Prices], "desc")
+To find the probability that values in the column will be greater than or equal to the average monthly row price, add "desc" parameter.
+RELATED RESOURCES
+RankPercentile

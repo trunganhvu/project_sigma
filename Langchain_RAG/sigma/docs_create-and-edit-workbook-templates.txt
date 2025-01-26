@@ -1,0 +1,30 @@
+Create and edit workbook templates
+Workbook templates allow users to templatize and share workbook structures for quick and consistent reuse.
+Suggest Edits
+Requirements
+The ability to create and edit templates requires the following:
+To create a new template from an existing workbook, you must be assigned an account type with edit permissions, and have view access to the existing workbook.
+To edit an existing template, you must be the template owner or be granted Can edit template permission.
+Create a new template
+Open the workbook you want to use as the basis of the template.
+In the workbook header, click the caret (▼) icon button to the right of the title.
+Select Save as template.
+This will open the Save as template modal.
+Enter a Template Name.
+Click Save.
+Sigma automatically directs you to your new template.
+Edit the template
+Create a new workbook from the template
+Share the template with teammates
+Edit an existing template
+Open the Templates gallery page from the left-side navigation panel on your home page.
+Find the template you want to edit.
+Click its More button to open its menu.
+Click Open.
+In the template header, click Edit Template.
+Make your changes.
+In the template header, click Publish to save your changes.
+RELATED RESOURCES
+Get started with workbook templates
+Create workbooks from templates
+Share templates with different orgs

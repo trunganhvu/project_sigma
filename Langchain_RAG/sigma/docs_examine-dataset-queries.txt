@@ -1,0 +1,37 @@
+Examine dataset queries
+Suggest Edits
+View recent queries
+The query history modal displays recent queries run from your open document within the existing session.
+Your document’s individual query list will automatically show each query’s status, action type, start time and run time.
+Open your dataset's worksheet tab.
+Click the caret icon next to the refresh button all the way to the left in your dataset’s toolbar.
+Click Query history....
+View an individual query
+Open your dataset's Worksheet tab.
+Click the caret icon next to the refresh button all the way to the left in your dataset’s toolbar.
+Click Query history....
+Click the query you plan to examine.
+Explore the query detail view:
+View and copy the Sigma generated SQL.
+If the query failed, an error will also be displayed below Query Details.
+Query status types
+These are the possible query status types within Sigma:
+ Completed Your query ran successfully!
+ Running Your query is currently running.
+Errored Something is wrong. Open the query detail view to see the error message.
+Paused Queries on your document are paused. To restart queries, click Play in your document toolbar.
+Canceled The query is canceled. This can happen if additional changes are made to your document before the query runs. In this situation, Sigma runs only the new query.
+📘
+By default, Sigma sets query timeouts to 120 seconds (2 minutes). Organization admins have the option to customize this per connection.
+Query runtime breakdown
+A detailed query runtime breakdown is available for successfully completed and timed out queries. Query runtimes can vary due to network traffic, queue delay, or data warehouse processing time. Sigma’s runtime breakdown allows you to see if and when your query encountered delays.
+The runtime is broken into three parts:
+Queue duration The amount of time the query sits in Sigma’s queue before being sent to the warehouse.
+Sigma runtime The amount of time Sigma takes to process the query, excluding queue duration and warehouse time.
+Warehouse runtime The amount of time between when Sigma sends a request to your data warehouse and when it gets a response back. This is roughly the amount of time the warehouse spent running your query.
+Incomplete queries do not display a detailed runtime breakdown. This feature is also not available for download/export requests.
+Pause and resume queries
+You can pause queries to make changes to your document without automatically running queries against your warehouse.
+Open your dataset's Worksheet tab.
+Click the caret icon next to the refresh/play button all the way to the left in your dataset’s toolbar.
+Click Pause queries or Resume queries.

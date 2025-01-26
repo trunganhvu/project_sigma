@@ -1,0 +1,30 @@
+Sigma support
+Suggest Edits
+Contact Sigma
+The Sigma team is here to support you every step of the way. While the live chat platform is the best method of reaching a Support Engineer, there are several ways to get in contact with Sigma:
+Live chat
+Chat with a Support Engineer in real time.
+During Sigma's business hours (Monday through Friday, 2:00 am to 6:00 pm PT, except holidays), agents typically respond within one minute. Outside business hours, agents respond to high-severity issues within 30 minutes. All other issues are addressed when business hours resume.
+To contact Sigma via chat, open the Help menu in your Sigma account, then select Live chat and click Send us a message.
+Escalations
+You can also use live chat to escalate a critical issue.
+For information about escalation criteria and best practices, see Escalate critical issues.
+Office hours
+Schedule a 30-minute Zoom session with an experienced Support Engineer to cover your questions about select topics, like embedding, authentication, input tables, and more.
+Click here to schedule office hours. You can also access Sigma's scheduling page directly in your Sigma account. Open the Help menu in your Sigma account, then select Live chat and click Sigma Support Office Hours.
+Support request
+Submit a support request to receive email responses from a Support Engineer.
+For more information about filling out the request form, see Submit a support request.
+Community Ask questions, share knowledge, and interact with Sigma staff and other members of the Sigma Community.
+Other helpful resources
+Status Refer to the Sigma Computing Status page to check for known issues currently under investigation.
+Documentation Browse Sigma’s public documentation to discover new features and learn more about using Sigma.
+Quickstarts Explore step-by-step QuickStart tutorials that can help you become a proficient Sigma user.
+Blog Keep up with the Sigma Blog for the latest news and information about data, BI, and how Sigma delivers speed and ease of use to customers.
+Events Join events like live trainings, meetups, webinars, and more.
+Holiday schedule
+Live chat is unavailable during the following U.S. federal holidays; however, on-call agents will respond to high-severity issues within 30 minutes. All other issues are addressed when business hours resume.
+New Year's Day (January 1)
+Thanksgiving (fourth Thursday in November)
+Day after Thanksgiving
+Christmas (December 25)

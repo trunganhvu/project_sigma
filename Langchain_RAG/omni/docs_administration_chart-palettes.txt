@@ -1,0 +1,230 @@
+AdministrationChart Palettes
+On this page
+Chart Palettes
+Using pre-defined color palettes allow you to quickly apply consistent color treatment to charts across workbooks and dashboards. A variety of discrete and continuous palettes are provided for you that cover a wide range of use cases. Administrators can create additional custom palettes of either type for easier customization and consistency.
+Chart palettes are currently only accessible in the X/Y style charts (bar, scatter, line, etc.) and not yet available in conditional formatting for tables visualizations.
+Custom palettes
+Adding
+Add as many additional custom palettes as your organization needs. Click the Add button at the top of the palette list. Customize by adding, editing and removing colors. Use the color picker control or select Open hex code editor and paste in a list of comma-separated hex codes.
+In the Chart Palettes settings page, custom palettes can be identified by an asterisk by their name.
+Custom palettes will be listed in the chart editor palette picker in alphabetical order before any of the Omni-provided palettes.
+Deleting
+To delete a custom palette, click the Options icon next to the palette and select Delete. If you delete a palette that an existing chart is using, the chart will be updated to use the organization's default palette.
+You can not delete any of the Omni-provided color palettes.
+Editing
+To modify a custom palette, click the Options icon next to the palette and select Edit. Make your modifications and click Save. Existing charts using the palette will be updated with the modifications.
+You can not edit any of the Omni-provided color palettes.
+Default palettes
+The default palette will be the initial set of colors applied to any new chart, automatically using the discrete or continuous palette based on the chart type and data.
+Admins can change the default palette by clicking the Options icon for the palette they would like to select and choosing Set as default. Existing charts using the default color palettes will be updated to the new default.
+Omni-provided or custom palettes can be set to the default. You can identify the default palette in Settings > Chart Palettes by the blue badge next to the name.
+The default palette can not be deleted until another palette has been set as the default.
+Using palettes in visualizations
+Chart palettes are currently only used for color faceting. You can access the chart palettes from the Options panel in the Color > Options popup. Any custom palettes created for the organization will appear in the list before the Omni-provided palettes.
+For more on using palettes in visualizations, see the Color by / Stacking documentation.
+Color references
+The color values for the Omni-specific palettes are provided below as a reference for creating your own palette variations. For all other palettes, refer to the Vega Scheme Reference.
+Omni discrete palettes
+Omni
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Omni pairs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Omni threes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Omni fours
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Omni ordered
+
+
+
+
+
+
+
+
+
+
+Omni ordered pairs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Omni ordered threes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Omni ordered fours
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Omni red green
+
+Omni red yellow green
+
+Omni continuous palettes
+Omni blues
+
+Omni greens
+
+Omni red yellow green
+
+Previous
+User groups
+Next
+Keyboard Shortcuts

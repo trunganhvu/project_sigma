@@ -1,0 +1,47 @@
+Query a dbt Semantic Layer integration (Beta)
+Suggest Edits
+🚩
+This documentation describes a private beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, is removed. As with any beta feature, the feature described below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document. Beta features are subject to the Beta features disclaimer.
+If you are interested in joining a limited test group and enabling this feature in your Sigma organization, contact Support or reach out to your Account Executive.
+Sigma supports dbt Semantic Layer integrations, allowing you to leverage your predefined dbt metrics in Sigma workbooks for ad-hoc analysis, recurring reports, and organizational dashboards. This document explains how to query a dbt Semantic Layer in Sigma and how the query flow progresses.
+System and user requirements
+In Sigma:
+To use this feature, you must be assigned an account type with the permission to write custom SQL.
+You must have the Can use data permission for your entire connection. See Manage data permissions.
+You must have write access configured on your connection. See Set up write access.
+You must have a dbt Semantic Layer integration configured. See Configure a dbt Semantic Layer integration.
+In dbt:
+You must have a semantic model and metrics created in dbt. See the dbt documentation on dbt Semantic Layer.
+Query flow between Sigma and dbt Semantic Layer
+When you enter a Semantic Layer query in Sigma, Sigma compiles your query into an intermediate representation and sends the query parameters to the dbt Semantic Layer JDBC API. dbt returns the SQL statement, in the appropriate dialect, to Sigma. Sigma then executes the SQL against your connected database, and outputs a table similar to those from your other data platforms. These tables can be used like any other data table in Sigma. You can reuse them across workbooks and data models, create and join datasets, build visualizations, and more.
+Every time a Semantic Layer query is run, Sigma requests the latest definitions so that changes made to the Semantic Layer are reflected in Sigma.
+Query the dbt Semantic Layer Integration
+To query the Semantic Layer, do the following:
+Open a workbook in Explore or Edit mode.
+Select Add element, then Table, then Custom SQL.
+Enter your query. See dbt’s documentation on Querying the API for metric metadata for query syntax.
+Select Run.
+Every time a Semantic Layer query is run, Sigma requests the latest definitions, so changes made to the Semantic Layer are reflected in Sigma. Changes made to the Semantic Layer will not be reflected unless a new query is run.
+Reference Semantic Layer metrics
+You can reference your semantic layer metrics by using the template syntax of {semantic_layer.metrics()}, with the name of your metric in dbt within the parentheses. See the dbt documentation on Querying the API for metric metadata for more syntax guidance.
+Example 1: Surface and group dbt metrics in a Sigma workbook
+You can surface your existing dbt metrics in a Sigma workbook, and group them by multiple dimensions. An example query might look like:
+SQL
+SELECT * 
+FROM
+{{ semantic_layer.query( metrics = ['new_customers', 'transactions', 'revenue_usd'],
+group_by = [Dimension('metric_time').grain('month'), 'customer__customer_country'])
+}}
+The query surfaces three existing metrics ('new_customers', 'transactions', 'revenue_usd') in the example dbt data, and groups them by both country and time (split by month intervals). This query generates the following result in Sigma:
+Example 2: Browse Semantic Layer metrics
+You can obtain a list of all metrics available in the Semantic Layer in Sigma by running the following custom SQL:
+SQL
+select * from {{semantic_layer.metrics()}}
+This produces a table of metric names and additional details, for example:
+Example 3: List all dimensions and time grains for a metric
+You may want to obtain a list of all dimensions and time grains available for an existing dbt metric. For example, if you had an existing dbt metric named 'transactions', your query might look like:
+SQL
+select *  from {{semantic_layer.dimensions(metrics=['transactions'])}}
+Running this SQL in Sigma produces the following result:
+Limitations
+Workbook controls cannot be referenced in Semantic Layer queries. Queries that reference workbook controls result in an error message.

@@ -1,0 +1,21 @@
+AdministrationAudit logs
+On this page
+Audit logs
+Audit logs are detailed records of the activity your users are taking in Omni, which can be useful for security and performance analysis. Events included in logs are structured as JSON payloads and sent in batches to Amazon S3 a few minutes after they're written.
+Setup
+Contact Omni support to request and set up this feature.
+Once configured, Instance Admin permissions are required to access audit logs.
+Data retention
+By default, logs are retained for at least one year. Contact Omni support if you need a shorter retention period.
+Event payloads
+Toggle the sections below to learn about the fields that each event type contains. Note: Payloads can contain Omni metadata, which can be safely ignored.
+Query context events
+Occurs when a user loads a document (workbook or dashboard)
+Query execution events
+Occurs when a user runs a query, which may be sent back to the warehouse
+Dashboard download events
+Occurs when a user downloads a full dashboard
+Previous
+User Attributes
+Next
+Query cancellation

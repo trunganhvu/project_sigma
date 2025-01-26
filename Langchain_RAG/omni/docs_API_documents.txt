@@ -1,0 +1,124 @@
+API docsDocuments
+On this page
+Document APIs
+The document APIs allow you to interact with documents in Omni.
+Document object
+Represents a document in Omni.
+Example
+Fields
+{
+  "connectionId": "c0f12353-4817-4398-bcc0-d501e6dd2f64",
+  "deleted": false,
+  "folder": {
+    "id": "ce3b1dcd-c768-4f01-a479-353325c4c5b0",
+    "name": "In Progress Reports",
+    "path": "in-progress-reports",
+    "scope": "organization"
+  },
+  "identifier": "12db1a0a",
+  "labels": [
+    {
+      "name": "Marketing",
+      "verified": false
+    }
+  ],
+  "name": "Blob Web Traffic",
+  "owner": {
+    "id": "9e8719d9-276a-4964-9395-a493189a247c",
+    "name": "Blobby"
+  },
+  "scope": "public",
+  "type": "document",
+  "updatedAt": "2025-01-07T10:00:00Z"
+}
+List documents
+Retrieves a paginated list of document items. This endpoint supports filtering, sorting, and cursor-based pagination.
+Basic request
+Filters & sorting
+Pagination with cursor
+GET /api/unstable/documents
+curl 'https://myorg.omniapp.co/api/unstable/documents' \
+--H 'Authorization: Bearer <TOKEN>' \
+--H 'Content-Type: application/json'
+
+
+
+
+
+
+Parameters
+Note: All parameters must be provided as query parameters.
+Parameter Type Required Default Description
+cursor
+string
+No X
+null
+Cursor for pagination. Used with sortField/sortDirection for relative positioning.
+pageSize
+number
+No X
+20
+The number of items to retrieve per page:
+Minimum - 1
+Maximum - 100
+sortField
+string
+No X
+desc
+Field to sort by. Must be one of the following:
+favorites - Sort by the number of favorites
+name - Sort by document name
+updatedAt - Sort by last update time
+visits - Sorts by view count
+sortDirection
+string
+No X
+desc
+Direction to sort results. Must be asc (ascending) or desc (descending).
+labels
+string
+No X
+null
+Comma-separated list of labels to filter results. For example: finance,marketing
+folderId
+string
+No X
+null
+Id of the folder to filter results. Will only return documents within the specified folder.
+creatorId
+string
+No X
+null
+UUID of the user who created the document(s). Retrieve user IDs with the List users and Retrieve a user endpoints.
+Response
+200 OK
+
+
+
+
+
+
+
+
+
+400 Bad Request
+
+
+
+
+
+
+
+404 Not Found
+
+
+
+
+
+
+
+500 Internal Server Error
+Previous
+Folders
+Next
+Users

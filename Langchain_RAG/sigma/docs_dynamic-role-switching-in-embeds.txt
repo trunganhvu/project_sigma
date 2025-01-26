@@ -1,0 +1,17 @@
+Apply dynamic connection and role switching to embeds
+Suggest Edits
+You can use the embed API to dynamically assign a Snowflake warehouse and/or role at runtime for each user. This allows you to use different levels of security (as configured for a Snowflake role) as well as the compute tier used, based on the specified Snowflake warehouse.
+This requires a moderate amount of configuration in Snowflake. See the QuickStart: Embedding 7: Dynamic Role Switching with Snowflake for detailed configuration guidance on the Snowflake configuration steps.
+User attributes are created in Sigma to support passing the required values at runtime to Snowflake.
+For example, if we want to restrict Snowflake data access based on the data in a column (like "Region"), that User Attribute configuration in Sigma might look like this:
+User Attribute configuration example for "DRS_Warehouse"
+After you create user attributes, you can apply them to the Snowflake connection in Sigma:
+Warehouse and Role set to use User Attributes
+Embed API Configuration
+For example, these parameters would be added in "section 6" of the sample embed API code for ease of viewing
+JavaScript
+// NOTE: UA values are case sensitive. Multiple values can be separated by a comma. 
+searchParams += '&:DRS_ROLE=DRS_WEST';
+searchParams += '&:DRS_Warehouse=COMPUTE_WH';
+📘
+User attributes are case sensitive.

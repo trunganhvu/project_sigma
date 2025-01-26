@@ -1,0 +1,62 @@
+Connect to DataDatabase setupMicrosoft SQL Server
+On this page
+Microsoft SQL Server
+Connect to your Microsoft SQL Server.
+Connecting to Microsoft SQL Server in Omni
+Gather Information from Microsoft Azure portal.
+To see the values for the required parameters in the instructions below, we recommend…
+Navigating to your Microsoft Azure portal.
+Navigate to the SQL database you want to connect to.
+Select Show database connection strings under the server name.
+Switch to the JDBC tab.
+And voilà, you should be able to see all of the parameters and values you need:
+jdbc:sqlserver://omni-test-admin.database.windows.net:1433;
+database=e-commerce;
+user=omni-test-admin@omni-test-admin;
+password={your_password_here};
+encrypt=true;
+trustServerCertificate=false;
+hostNameInCertificate=*.database.windows.net;
+loginTimeout=30;
+Step-by-Step Guide
+In Omni, to add a new connection:
+Navigate to the Admin tab.
+Select Connections menu option on the left hand panel
+Select the Add Connection button in the top right
+Select the Microsoft SQL Server button
+Follow these instructions to allowlist the Omni IPs for your MS SQL database
+Use this image to follow along for the necessary inputs to connect your database to Omni:
+Display Name is a required field.
+This display name can be whatever name you desire, it will be the name that is displayed on the Connections list on the Omni Connections page.
+Host is a required field.
+This is listed as Server name in the connection string parameter.
+Port is a required field.
+The port value is the number after the server name in the connection string.
+In the connection string example above, the port number is 1433.
+Database is a required field.
+Find your database name after the “database name” parameter in the connection string.
+In the connection string example above, the database name value is e-commerce.
+Include Schemas is an optional field.
+If schemas are specified in this field, Omni will only generate schemas for the schemas listed.
+Default Schema is a required field.
+dbo is the default value for Microsoft SQL databases.
+You can navigate to Azure Data Studio to see if there are other schemas to select from.
+Username is a required field.
+You can find your username in the connection string.
+Password is a required field.
+This is the password chosen for the SQL user when setting up the database.
+Database Timezone is a required field.
+The default is UTC. If you modified the timezone settings on your database settings, change this value to match your database settings.
+Query Timezone is a required field.
+The default value is Do not convert. If any other value is specified, the data Omni outputs will be converted from the database timezone to the query timezone when querying.
+Allowlist the IPs
+Before you can create a connection to Microsoft SQL Server, if you choose to limit access to your database by IP address, you can find the list of addresses for your environment on the connection page within the application. Be sure to include all of the listed IP addresses in your allowlist.
+You must have Microsoft Azure Portal admin permissions to add the Omni IP addresses to the allowlist. To allowlist… Navigate to your Microsoft Azure Portal.
+Select your SQL Database
+In the left-hand menu, navigate to the Networking menu option under Security
+Select the + Add a firewall rule button
+Input a desired rule name and the IPs shown in your Omni app in step 1 of Connection to the Microsoft SQL Server in Omni
+Previous
+Databricks
+Next
+MotherDuck

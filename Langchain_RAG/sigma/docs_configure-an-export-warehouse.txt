@@ -1,0 +1,23 @@
+Configure an export warehouse
+Suggest Edits
+An export warehouse is a virtual warehouse in Snowflake created specifically for running Sigma exports.
+By default, Sigma sends export queries to your connection’s primary warehouse, but you can configure it to run all scheduled, direct, and on-demand exports through a separate export warehouse. This practice isolates export operations to optimize performance and reduce computing costs.
+This document explains how to configure an export warehouse in Sigma.
+System and user requirements
+The ability to configure an export warehouse in Sigma requires the following:
+Your Sigma organization must have an existing Snowflake connection.
+You must be assigned the Admin account type.
+Prerequisites
+Before you configure an export warehouse in Sigma, you (or another user with appropriate Snowflake permissions) must create a separate virtual warehouse dedicated to running export queries in Snowflake. For more information about this process, see CREATE WAREHOUSE in Snowflake’s documentation.
+Configure an export warehouse
+Enable Sigma to use the dedicated export warehouse by configuring your Snowflake connection accordingly.
+Go to Administration > Connections:
+In the Sigma header, click your user avatar to open the user menu.
+Select Administration to open the Administration portal.
+In the side panel, select Connections.
+In the Connections page, select the Snowflake connection to which you want to add an export warehouse.
+In the connection overview, go to the Connection Details section and click Edit.
+In the Connection Features section, locate the Export Warehouse field and enter the name of the virtual warehouse created for export queries.
+Click Save to run all scheduled, direct, and on-demand exports through the specified warehouse.
+📘
+The export warehouse inherits the primary warehouse’s connection queue size. To set a different queue size for the export warehouse, contact Support.

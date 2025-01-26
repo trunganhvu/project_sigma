@@ -1,0 +1,29 @@
+Manage organization schedules
+Suggest Edits
+As a Sigma admin, you can view and manage an organization-wide list of scheduled reports in the Administration portal.
+You can also manage exports for a specific workbook, or those that you own. See Manage scheduled exports.
+Requirements
+The complete list of organization schedules is only available for users assigned the Admin account type.
+View and manage organization schedules
+To view your organization's schedules:
+Open the Administration portal.
+Go to Exports and select the Scheduled exports tab to see a list of all scheduled exports for your organization.
+You can search for a specific schedule by workbook name, filter by attachment, destination, and export conditions, or sort columns to locate the scheduled export you want to manage.
+Delete a schedule
+Open the Administration portal.
+Go to Exports and select the Scheduled exports tab.
+Locate the schedule that you want to delete.
+Click More, then click Delete.
+The schedule is deleted.
+Delete scheduled exports in bulk
+You can select multiple schedules to delete at the same time.
+In the Administration portal, go to Exports and select the Scheduled exports tab.
+Select the checkbox for each schedule that you want to delete, or select the checkbox in the column header row to select all visible scheduled exports.
+Click Delete to delete the selected scheduled exports.
+Click Confirm.
+Edit or view a schedule
+To edit or view a specific scheduled export for a workbook, select the workbook name to open the workbook.
+See Manage schedules for a workbook.
+RELATED RESOURCES
+Manage Your Schedules
+Send and schedule exports from workbooks

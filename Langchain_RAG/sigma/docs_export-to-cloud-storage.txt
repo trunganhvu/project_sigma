@@ -1,0 +1,81 @@
+Export to cloud storage (Beta)
+Suggest Edits
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+The data for elements in workbooks can be exported to Amazon Simple Storage Service (Amazon S3), Google Cloud Storage (GCS), or Microsoft Azure Blob Storage (Azure). Cloud storage is particularly useful for large, multi-GB data exports.
+Sigma generates exports from the workbook's latest published version. Draft changes are not exported.
+User requirements
+The ability to export workbooks to cloud storage requires the following:
+The workbook's data source must originate from a Snowflake connection.
+You must be assigned an account type with the Export to cloud permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+Supported file types and export limits
+CSV-formatted files (.csv)
+GZIP compression is supported (.csv.gz)
+File size limit of 5GB. See Download and export limitations.
+🚩
+Data exported from Sigma is directly unloaded from Snowflake to your cloud storage destination as a single file. As a result, the data does not have the same formatting visible in Sigma.
+For more information on data unloading in Snowflake, see Overview of data unloading in the Snowflake documentation.
+Configure cloud storage
+Before you can export to cloud storage from Sigma, you must set up a Snowflake storage integration.
+Follow Snowflake’s instructions to create your storage integration. See CREATE STORAGE INTEGRATION in the Snowflake documentation, or follow the guide for your cloud storage provider:
+Amazon S3: See Option 1: Configuring a Snowflake storage integration to access Amazon S3 in the Snowflake documentation.
+Google Cloud Storage: See Configuring an integration for Google Cloud Storage in the Snowflake documentation.
+Azure: See Configuring an Azure container for loading data in the Snowflake documentation. Follow the steps for Option 1: Configuring a Snowflake storage integration.
+After you set up the storage integration, grant the USAGE privilege on the storage integration to the Snowflake role used by your Sigma Snowflake Connection. A Sigma admin can check the role used by the connection in the connection settings. See Connect to Snowflake.
+📘
+If no role is specified in your Sigma Snowflake Connection, Snowflake uses a default role.
+Format a destination URI
+The destination URI represents the target file path for your export in your cloud storage service.
+Use the following template to format your URI:
+<schema>://<bucket>/<filepath>/<filename><filetype><compression>
+Where:
+Schema: The export destination. Specify “s3” if exporting to AWS S3, “gcs” if exporting to GCS, and "azure" if exporting to Azure.
+Bucket: The highest level storage object supported by the cloud storage provider. Your S3 bucket, GCS bucket, or Azure container.
+File path (optional): Target subdirectories in the bucket or container. If you do not specify a file path, exported files are added directly to the root.
+File name: A file name to use for the exported file.
+File type: The file format for the exported file. Must be .csv.
+Compression (optional): A compression option for the exported file. Can only be .gz.
+Example URI
+s3://my-sigma-bucket/cloud-exports/sales.csv.gz
+If your URI is identical to an existing file in the bucket, the existing file is overwritten.
+Send an ad hoc export to cloud storage
+From the workbook menu , select Export.
+📘
+If the Cloud Storage option is not available, the workbook is in Edit mode. Either publish your draft or return to the latest published or tagged version of the workbook before attempting to export.
+Select Cloud Storage.
+For Storage Integration, enter the name of your Snowflake Storage Integration. See Configure cloud storage on this page.
+For Cloud Storage URI, enter the destination URI. For guidance formatting the URI, see Format a destination URI.
+From the Element menu, select the workbook element to export.
+For the specified element, select a file format. You can choose from CSV or CSV, gzipped.
+Click Export.
+Sigma sends an export confirmation message to your email address.
+Schedule a cloud storage export
+From the workbook menu , select Schedule exports....
+If this is the first schedule for the workbook, click Add Schedule, otherwise click + New schedule.
+(Optional) You can define conditions for when Sigma sends the export. To turn on conditions, click the Condition toggle. For more information, see Schedule exports using conditions.
+Select Cloud Storage.
+For Storage Integration, enter the name of your Snowflake Storage Integration. See Configure cloud storage on this page.
+For Cloud Storage URI, enter the destination URI. For guidance formatting the URI, see Format a destination URI.
+From the Element menu, select the workbook element to export.
+For the specified element, select a file format. You can choose from CSV or CSV, gzipped.
+(Optional) Select the checkbox for Prefix file name with the current date and time.
+🚩
+If you do not select this option, the same file name is used for each scheduled export and the file is overwritten every time the export runs.
+In the Frequency section, set the delivery schedule:
+(Optional) Select the dropdown for Daily and select Weekly, Monthly, or Custom.
+For Daily, select Once a day or Multiple times.
+For Weekly, select which days of the week to send an email, and choose between Once a day or Multiple times.
+For Monthly, select which day of the month to send an email, and the time of day.
+For Custom, specify a schedule using cron syntax. See Set up a custom delivery schedule.
+If you select Multiple times, specify the frequency. For example, every 2 hours on the :15 of the hour between 9 AM and 6 PM.
+(Optional) Adjust the default schedule time zone using the dropdown menu.
+📘
+If you don't have the option to set a specific frequency, export frequency might be restricted for your organization. For more details, see Restrict export recipients and frequency.
+(Optional) Select the checkbox for Customize control values to filter the exported data according to the value of one or more workbook controls. See Configure additional options for exports.
+12. Click Create.
+RELATED RESOURCES
+Schedule exports using conditions
+Send and schedule exports from workbooks
+Connect to Snowflake

@@ -1,0 +1,18 @@
+AggGeography
+Suggest Edits
+The AggGeography function calls a warehouse aggregate function that returns a Geography data type. This function is the aggregate version of CallGeography.
+You can use the AggGeography function on BigQuery, and Snowflake connections.
+Syntax
+AggGeography(function_name, arguments...)
+The function has these arguments:
+function_name
+Required
+The name of the warehouse function that Sigma invokes
+argument1 ...
+Optional
+The arguments of the invoked function
+Functions may have 0 or more arguments
+RELATED RESOURCES
+CallGeography
+Geography
+Geography functions

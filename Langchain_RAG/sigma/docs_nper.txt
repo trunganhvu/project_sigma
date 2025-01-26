@@ -1,0 +1,38 @@
+NPer
+Suggest Edits
+The NPer function returns the number of periods for a loan or investment based on known amount, interest rate, and periodic payment amount.
+NPer is part of the set of financial functions that Sigma supports.
+Syntax
+NPER(rate, pmt, pv, [fv], [type])
+The NPer function has the following arguments:
+rate
+Required.
+The interest rate per period.
+pmt
+Required
+The payment for each period.
+pv
+Required
+The present value, or total value of all payments made as of the current date.
+fv
+Optional
+The future value, or a cash balance after the last payment.
+Defaults to 0.
+type
+Optional.
+Due date of the payment.
+0
+End of the period
+1
+Beginning of the period
+Default is 0.
+Examples
+NPer(0.07/12, 1000, 100000)
+The number of months it takes to pay off a loan of $100,000 if the interest rate is 7% and the regular payments are $1,000 each month is 79, or 6 years and 7 months.
+NPer(0.07/4, 3000, 100000)
+The number of quarters it takes to pay off a loan of $100,000 if the interest rate is 7% and the regular payments are $3,000 each quarter is 26.49, or about 6 years and 7.5 months.
+RELATED RESOURCES
+PV
+FV
+Pmt
+NPER function in Microsoft documentation

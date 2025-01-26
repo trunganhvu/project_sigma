@@ -1,0 +1,16 @@
+Schedules & AlertsSettings
+On this page
+Delivery settings
+NOTE
+Organization Admin permissions are required to access the Delivery settings page.
+The Delivery settings page, accessible through Settings > Deliveries, allows you to manage all deliveries in Omni.
+From here you can:
+Search, pause, and resume deliveries
+View recent delivery activity, including last run time, last run status, recipients, etc.
+Manage settings for delivery destinations currently in use, such as email or Slack
+Managing delivery access
+To set default delivery permissions for your organization, navigate to Settings > General > Content permissions. Refer to the Organization settings guide for more information.
+Previous
+Zapier
+Next
+Overview

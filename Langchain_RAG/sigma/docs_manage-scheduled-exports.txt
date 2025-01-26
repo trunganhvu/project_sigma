@@ -1,0 +1,67 @@
+Manage scheduled exports
+Suggest Edits
+You can view and manage scheduled exports, such as to stagger the schedules of exports, remove no longer needed scheduled exports, or to update the configuration of a scheduled export.
+Manage schedules for a workbook.
+Manage scheduled exports that you own or subscribe to.
+As an admin, manage all scheduled exports for your organization.
+💡
+If you have multiple scheduled exports, it's a best practice to stagger the schedules. Staggering schedules helps to reduce the load on Sigma and on the data warehouse.
+User requirements
+The ability to send and schedule workbook exports requires the following:
+To export to a specific destination, you must be assigned an account type with the export permission for that destination enabled.
+To schedule a workbook export, you must be assigned an account type with the Schedule export permission enabled.
+You must be the workbook owner or be granted Can explore or Can edit workbook permission.
+📘
+Additional requirements and permissions might apply depending on the export destination.
+Manage schedules for a workbook
+From the workbook menu (), select Schedule exports.
+The Schedule Exports dialog opens.
+You can review the list of scheduled exports for the workbook, reviewing the times and types of exports to identify overlapping schedules or recipients.
+For a specific scheduled export, you can click the More menu to rename the schedule, edit the schedule, send the configured scheduled export immediately, pause the scheduled export, or delete it.
+Edit or delete a schedule
+From the workbook menu (), select Schedule exports.
+The Schedule Exports dialog opens.
+Locate the schedule you want to send and click the More menu.
+Click Delete to delete the schedule or Edit to make changes to the schedule.
+Send a scheduled export on demand
+If you want to send a scheduled export without waiting for the next scheduled run of the export, you can send it on demand.
+From the workbook menu (), select Schedule exports.
+Locate the schedule that you want to send and click the More menu (), then select Send now.
+Pause or resume a scheduled export
+You can manually pause and resume scheduled exports.
+From the workbook menu (), select Schedule exports.
+The Schedule Exports dialog opens.
+Click the More menu of the Actions column and select Pause.
+In the Status column, the status changes to Paused.
+To resume an export, repeat the above steps but choose Resume from the More menu.
+Auto-paused scheduled exports
+If a scheduled export fails more than 5 times in 7 or more days and therefore none of the exports succeed, Sigma pauses the export and the user receives an email notification. The email notification contains the following message:
+Document export failed. Sigma has paused one of your scheduled exports. Please use the below link to the workbook to check details.
+You can manually resume the export. The Status column shows Paused with an exclamation point. To resume the paused export, choose Resume from the More menu in the Actions column.
+Manage your scheduled exports and subscriptions
+From your user profile, you can view and manage scheduled exports that you own or receive.
+If you are a Sigma admin, you can view or manage all scheduled exports for your organization. See Manage organization schedules.
+View and manage schedules in your profile
+To view and manage scheduled exports from your profile, do the following:
+Click the user menu in the top menu bar.
+From the dropdown menu, select Profile.
+From your user profile, select Scheduled Exports.
+Choose which scheduled exports you want to view and manage:
+Select Owned by you to view and manage scheduled exports created by you. If you're a Sigma admin, you also see schedules inherited from organization members that you deactivated.
+Select Your subscriptions to view and manage exports sent to your email address, whether owned by you or others.
+You can search, filter, and sort the listed schedules to more easily locate the schedule you want to find.
+To make changes to a specific schedule, select the name of the workbook to open the workbook and manage the schedule. See Manage schedules for a workbook.
+Delete a schedule
+To delete a schedule that you own:
+Click the user menu, then from the dropdown menu, select Profile.
+Select Scheduled Exports.
+Locate the scheduled export that you want to delete, then click More > Delete.
+Unsubscribe from a subscription
+To unsubscribe from a subscription to a scheduled export:
+Click the user menu, then from the dropdown menu, select Profile.
+Select Scheduled Exports.
+Select Your subscriptions and locate the subscription that you want to unsubscribe from.
+Click More > Unsubscribe.
+RELATED RESOURCES
+Send and schedule exports from workbooks
+Manage Organization Schedules

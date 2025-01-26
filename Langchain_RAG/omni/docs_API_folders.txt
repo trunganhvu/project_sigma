@@ -1,0 +1,112 @@
+API docsFolders
+On this page
+Folder APIs
+The folder APIs allow you to manage and organize content hierarchically within your Omni organization.
+Folder object
+Represents a folder in Omni.
+Example
+Fields
+{
+  "id": "folder123",
+  "name": "Documents",
+  "path": "/documents",
+  "scope": "organization",
+  "type": "folder",
+  "owner": {
+    "id": "user123",
+    "name": "John Smith"
+  },
+  "labels": ["important", "archived"],
+  "_count": {
+    "documents": 15,
+    "favorites": 3
+  }
+}
+List folders
+Retrieves a paginated list of folders within an organization. This endpoint supports filtering, sorting, and cursor-based pagination.
+Basic request
+With includes
+Path filtering
+Filters & sorting
+Pagination with cursor
+GET /api/unstable/folders
+curl 'https://myorg.omniapp.co/api/unstable/folders' \
+--H 'Authorization: Bearer <TOKEN>' \
+--H 'Content-Type: application/json'
+
+
+
+
+
+
+
+
+
+
+
+
+Parameters
+Note: All parameters must be provided as query parameters.
+Parameter Type Required Default Description
+include string No X null
+Comma-separated list of fields to include:
+_count - Include document and favorite counts
+labels - Include folder labels
+path string No X null
+Filter folders by path. Supports:
+Exact matching (e.g. /documents)
+Wildcard for children (e.g. /documents/*) Note: Wildcard can only appear at end of path
+cursor string No X null Cursor for pagination positioning
+pageSize number No X 20 Number of items per page (minimum: 1)
+sortField string No X name
+Field to sort by:
+name - Sort by folder name
+path - Sort by folder path
+sortDirection string No X desc Sort direction (asc or desc)
+labels string No X null Comma-separated list of labels to filter by
+scope string No X organization
+Scope of folders to retrieve (organization or restricted). Note: When restricted, ownerId is required.
+ownerId string No* ✓ null Required when scope is restricted. UUID of organization membership.
+Response
+200 OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+400 Bad Request
+
+
+
+
+
+404 Not Found
+
+
+
+
+
+Previous
+Queries
+Next
+Documents

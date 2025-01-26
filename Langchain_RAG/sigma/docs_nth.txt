@@ -1,0 +1,17 @@
+Nth
+Suggest Edits
+The Nth function repeats the Nth value of the the given column for every row in a column.
+Syntax
+Nth([Column], n)
+Function Arguments:
+[Column] (required) - A column of text, numbers, or dates to analyze.
+n (required) - Offset from top of column. Must be a constant integer greater than 0.  
+🚩
+When there is no sort specified on the table, the results for this function can change if you refresh the workbook. The sort is different upon refresh.
+Example
+Nth([Quarter], 2)
+Returns the 2nd result in the [Quarter] column for every row in the [Nth] column.
+RELATED RESOURCES
+First
+Last
+FillDown

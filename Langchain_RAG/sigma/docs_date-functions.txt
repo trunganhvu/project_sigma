@@ -1,0 +1,30 @@
+Date functions
+Suggest Edits
+Date functions evaluate, convert, and manipulate date and time values.
+ConvertTimezone Converts date and time values to the specified time zone.
+DateAdd Adds a specified quantity of time to a date.
+DateDiff Calculates the time difference between two dates.
+DateFormat Formats a date value to text based on the format provided.
+DateFromUnix Converts a Unix timestamp to a date value.
+DateLookback Returns the value of a variable at a previous point in time (or lookback period) determined by a specified date and offset.
+DatePart Extracts the specified date part from a date value.
+DateParse Parses a text value in a specified format and returns a datetime value (date data type) in ISO format.
+DateTime Converts a text or date value into an datetime value in ISO format.
+DateTrunc Truncates the date to the specified date part.
+Day Returns the day of the month from a date value as a number.
+EndOfMonth Returns the last day of the month from a date value.
+Hour Returns the hour component from a date value as a number.
+InDateRange Determines if a date falls within a specified date range and returns True or False.
+InPriorDateRange Determines if a date falls within the date range of a prior period and returns True or False.
+LastDay Evaluates a specified component in a date value and returns the last datetime value of that component in ISO format.
+MakeDate Evaluates specified values representing year, month, and day units and returns a datetime value in ISO format.
+Minute Returns an integer representing the minute component in a specified datetime value.
+Month Returns an integer representing the month component in a specified datetime value.
+MonthName Returns the name of the month component from a specified datetime value.
+Now Returns the current date and time using your organization's account timezone.
+Quarter Returns an integer representing the quarter component in a specified datetime value.
+Second Returns an integer representing the second component in a specified datetime value.
+Today Returns the current date using your organization's account timezone.
+Weekday Returns an integer representing the day of the week in a specified datetime value.
+WeekdayName Returns the name of the day of the week in a specified datetime value.
+Year Returns an integer representing the year component in a specified datetime value.

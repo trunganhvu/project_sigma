@@ -1,0 +1,445 @@
+Implement inbound and outbound events in embeds
+Suggest Edits
+Inbound and outbound events enable seamless interactions in embedded solutions by facilitating communications between the embedded content and the host application. For example, when a user clicks an object in the host application, a JavaScript inbound event can enable the embedded Sigma content to display different information.
+This document introduces inbound and outbound events and provides examples demonstrating how to use them in Sigma embeds. For a tutorial that walks you through sending and receiving events from a parent application and Sigma, see QuickStart: Embedding 07: Events.
+📘
+Inbound events were previously called "actions". Sigma renamed "actions" to "inbound events" to differentiate between this feature and the workbook actions feature.
+Because you can use a variety of methods to implement events, and you may have unique integration requirements, this document doesn't provide step-by-step guidance on implementing events in embeds. Instead, it highlights examples that can provide helpful context that you can leverage as you develop your own approach.
+💡
+You can use tools like Pendo for tracking and analyzing these events. For example, see Configure Track Events in the Pendo documentation.
+We provide an Embed SDK to help integrate these events in your app. To learn more, go here.
+Inbound events
+Inbound events are mechanisms through which the host application communicates with the Sigma embed. Essentially, they are variables or commands that Sigma processes and responds to by dynamically modifying control values.
+Sigma supports two methods of communicating inbound events:
+JavaScript: Typically utilized to send data from the host application to the embedded content without refreshing the embed. This method enables a more interactive and responsive user experience.
+URL: Primarily utilized at runtime to append variable values directly to the embed URL. This method is ideal for initializing the embed with specific parameters.
+Both methods offer flexibility in the transmission of actions, allowing your embedded solution to accommodate different scenarios and requirements.
+Example inbound event: Update controls in Sigma
+The following example script demonstrates a method of communicating information from the host application to the iframe of the embedded Sigma content. It utilizes the postMessage method to enable communication and allows the host application to send messages directly to the iframe's contentWindow to specify event type and controls to update.
+The target origin https://app.sigmacomputing.com enhances security by ensuring the message reaches the intended recipient.
+JavaScript
+// Get the Sigma iframe element from the document
+const sigma_iframe = document.getElementById('sigma-iframe');  
+
+// Post a message to the Sigma iframe's content window
+sigma_iframe.contentWindow.postMessage(  
+  {  
+    // Specify the type of event to perform
+    type: 'workbook:variables:update',  
+
+    // Define the controls to update in Sigma, with their new values
+    variables: { 'Variable1': 'value1', 'Variable 2': 'value2' },  
+  },  
+
+  // Provide the target origin for where the message should be accepted
+  'https://app.sigmacomputing.com',  
+);
+🚧
+This example event updates control values currently displayed in the embedded content. It does not apply to hidden controls.
+Example inbound event: Change the selected element or page
+The following example snippet demonstrates how to programmatically change the selected element or page within an embed. It utilizes the postMessage method to enable communication and allows the host application to send messages that specify the workbook:selectednodeid:update event type and ID of the node to select (the string placeholder value would be replaced with null or an actual node ID).
+The target origin is provided to ensure the message is sent to the correct domain.
+JavaScript
+const sigma_iframe = document.getElementById('sigma-iframe');  
+sigma_iframe.contentWindow.postMessage(  
+  {  
+    type: 'workbook:selectednodeid:update';  
+    selectedNodeId: string | null;  
+  },  
+  '<https://app.sigmacomputing.com'>,  
+);
+Available inbound events
+Sigma supports the following inbound events, which are triggered by user input into the console.
+workbook:bookmark:create
+This event creates a bookmark without using the embed UI.
+Event structure:
+JavaScript
+{
+   type: 'workbook:bookmark:create';
+   name: string;
+   isDefault: boolean;
+   isShared: boolean;
+}
+Event properties:
+name Bookmark name.
+isDefault If true, bookmark is viewed by default on opening the document.
+isShared If true, bookmark is shared with all users on this workbook.
+workbook:bookmark:delete
+This event deletes a bookmark without using the embed UI.
+Event structure:
+JavaScript
+{
+   type: 'workbook:bookmark:delete';
+   bookmarkId: string;
+}
+Event properties:
+bookmarkId The unique ID of the bookmark.
+workbook:bookmark:select
+This event selects or clears a bookmark in an embed.
+Event structure:
+JavaScript
+{
+   type: 'workbook:bookmark:select';
+   bookmarkId?: string | null;
+}
+Event properties:
+bookmarkId The unique ID of the bookmark. If specified, the user is redirected to the bookmark. If not specified, the bookmark is cleared and the user is redirected to the published version of the workbook.
+workbook:bookmark:update
+This event is used to update a bookmark with the changes from a user's exploration. The event is equivalent to clicking Update with current changes in the bookmark menu in the Sigma UI.
+Event structure:
+JavaScript
+{
+   type: 'workbook:bookmark:update';
+}
+A workbook:error iframe event is triggered in the following circumstances:
+Cause Error
+The user didn't select a bookmark to update. Bookmark not selected
+The user didn't make any changes to the selected bookmark and thus it can't be updated. Cannot update bookmark, no explore changes made
+workbook:fullscreen:update
+This event is used to update the fullscreen search parameter. If the targeted element is maximized, calling this function will minimize it and vice versa. Equivalent to Maximize element in the UI.
+This event is useful for maximizing and minimizing elements without using the UI.
+Event structure:
+JavaScript
+{
+   type: 'workbook:fullscreen:update';
+   nodeId: string | null;
+}
+Event properties:
+nodeId The node ID corresponding to the element.
+workbook:modal:toggle
+This event is used to open or close a modal in an embed. This event requires the user to have the necessary permissions to interact with the modal in the UI. For example, the Schedule exports modal requires the Schedule export permission.
+Event structure:
+JavaScript
+{
+   type: 'workbook:modal:toggle';
+   modalType: 'schedule' | 'export' | undefined;
+}
+Event properties:
+modalType The type of modal to open. Pass undefined to close the currently open modal.
+Supported modal types:
+'schedule'
+'export'
+undefined
+workbook:mode:update
+This event is used to change between View mode and Explore mode in an embed. If the user does not have the necessary permissions to explore the content or if the embed does not support Explore mode, this event has no effect. For more information about workbook modes, see Workbook modes overview.
+Event structure:
+JavaScript
+{  
+   type: 'workbook:mode:update';
+   mode: 'view' | 'explore';
+}
+Event properties:
+mode The mode in which the embed should present to the user.
+Supported modes are view and explore.
+workbook:selectednodeid:update
+This event is used to select a node ID without using the UI.
+Event structure:
+JavaScript
+{
+   type: 'workbook:selectednodeid:update';
+   selectedNodeId: string | null;
+   nodeType: 'element' | 'page';
+}
+Event properties:
+selectedNodeId The node ID of the element/page to select.
+nodeType The node type. Can be either 'element' or 'page'.
+workbook:sharinglink:update
+This event is used to make a link available that embed users can share with other users though the embed menu, embed footer, and scheduled exports email notifications. See Configure a shareable link for an embed for instructions.
+📘
+Sigma loads the URL you supply using this event to anyone given this sharing link. Ensure that your application authenticates users before displaying the content.
+Event structure:
+JavaScript
+{
+  type: 'workbook:sharinglink:update';
+  sharingLink: string | null;
+  sharingExplorationLink?: string | null;
+}
+Event properties:
+sharingLink The URL received by the embed user who wants to share an embedded workbook though the embed menu or footer. Once set, if the embed user schedules exports, the emails received by recipients will contain this link.
+sharingExplorationLink Optional. The URL received by the embed user who wants to share an embedded workbook though the embed menu or footer. It should include the explorekey, which can be obtained using workbook:explorekey:onchange. Once set, embed users will be able to choose if they want to share the exploration or the original workbook.
+Sigma validates the strings passed in sharingLink and sharingExplorationLink using two regular expressions. Your URL must match one of these:
+Text
+^https?:\/\/(www\.)?[-a-zA-Z0-9\.~%:_\-@\/\?=&\+\*!\$]{2,50}\.[a-z]{2,10}\b([-a-zA-Z0-9\.~%:_\-@\/\?=&\+\*!\$]*)$
+Or:
+^https?:\/\/[-a-zA-Z0-9\.~%:_\-@\/\?=&\+\*!\$]+(\\.[-a-zA-Z0-9\.~%:_\-@\/\?=&\+\*!\$]+)*(:[0-9]+)\/?(\/[.[-a-zA-Z0-9\.~%:_\-@\/\?=&\+\*!\$]+]*)*$
+The links cannot be longer than 1000 characters. If the value does not pass validation, the sharing link is not set.
+workbook:variables:list
+This event is used to list the controls and their values.
+Event structure:
+JavaScript
+{  
+   type: 'workbook:variables:list' 
+}
+Will return:
+JavaScript
+{
+   type: 'workbook:variables:current';
+   variables: variablesObject;
+}
+Event properties (returned):
+variables A mapping of key value pairs for the controls and control values in a workbook.
+workbook:variables:update
+This event is used to update the controls and control values of a workbook without using the UI.
+Example call: frame.contentWindow.postMessage({type: "workbook:variables:update", variables: {ua: 'south'}})
+JavaScript
+{  
+   type: 'workbook:variables:update';
+   variables: variablesObject 
+}
+Event properties:
+variables A mapping of key value pairs for the controls in a workbook.
+Outbound events and listeners
+Outbound events are messages the embedded Sigma content communicates to the host application to provide updates about interactions or changes applied to the content within Sigma. JavaScript event listeners must be implemented for the host application to detect and respond to outbound events. This facilitates the interactivity between the host application and Sigma embed.
+Example outbound event: Basic event listener
+This first example demonstrates how an event listener can be added to the window object. The listener checks for event messages sent by the Sigma embed and logs the event data.
+JavaScript
+window.addEventListener('message', function (event) {
+  if (event.source === document.getElementById('sigma-iframe').contentWindow &&
+      event.origin === "https://app.sigmacomputing.com") {
+    // Handle the received event data
+    console.log(event.data);
+  }
+});
+Example outbound event: Filter specific event messages
+This second example demonstrates how to filter out unrelated event messages (for example, from React DevTools).
+JavaScript
+window.addEventListener('message', (message) => {
+  // Filter out messages not related to Sigma
+  if (message.data.source !== 'react-devtools-bridge') {
+    console.log(message.data);
+  }
+});
+Available outbound events
+Sigma supports the following outbound events that describe user interactions with embedded Sigma content. Each event includes specific properties about the interaction that allow the host application to process and respond accordingly.
+action:outbound
+This event occurs when a Generate iframe event workbook action is triggered. This event can be used to react to user actions taken in the workbook. See Create actions that trigger embed iframe events.
+Event structure:
+JavaScript
+{
+   type: 'action:outbound';
+   name: string;
+   values: Record<string,unknown>;
+}
+Event properties:
+name A name for the event. Enter this name in the Event name field in the workbook action.
+values One or more event keys and values to pass to your host application. Enter the corresponding key-value pairs in the Event key fields in the workbook action.
+url:onchange
+This event occurs when the URL path changes, but not when URL search parameters change. This event returns the URL of the embed.
+This event gives insight into when the user creates their own workbook that they can edit.
+Event structure:
+JavaScript
+{
+   type: 'url:onchange';
+   url: string;
+}
+Event properties:
+url The embed pathname without search or query parameters.
+workbook:bookmark:onchange
+This event occurs when a user selects or deselects a bookmark.
+Event structure:
+JavaScript
+{
+   type: 'workbook:bookmark:onchange', 
+   bookmarkName: string; 
+   workbookId: string;
+   versionTagName: string | null; 
+   bookmarkId: string;
+}
+Event properties:
+bookmarkName The name of the bookmark.
+workbookId The ID of the workbook where the bookmark was created.
+versionTagName The tag associated with the bookmarked workbook. Always null in embeds.
+bookmarkId The unique ID of the bookmark.
+workbook:bookmark:oncreate
+This event occurs when an embed user creates a bookmark using the embed UI.
+This event is useful for analyzing when users create their bookmarks.
+Event structure:
+JavaScript
+{
+   type: 'workbook:bookmark:oncreate';
+   bookmarkName: string;
+   workbookId: string;
+   versionTagName: string | null;
+   bookmarkId: string;
+}
+Event properties:
+bookmarkName The name of the bookmark.
+workbookId The ID of the workbook where the bookmark was created.
+versionTagName The tag associated with the bookmarked workbook.
+bookmarkId The ID of the created bookmark.
+workbook:chart:error
+This event occurs when a chart produces an error.
+This event is useful for detecting errors and taking action in response.
+Event structure:
+JavaScript
+{
+   type: 'workbook:chart:error';
+   nodeId: string;
+   message: string | undefined;
+   code: string;
+}
+Event properties:
+nodeId The node ID of the chart.
+message The error message.
+code The error code.
+workbook:chart:onvalueselect
+This event is specifically designed for user interactions with embedded visualization elements, like clicking data points in a bar chart. This event extends beyond the basic interaction details and includes a values object that provides insight about the specific chart component selected.
+This event is crucial for applications that must respond to precise user interactions within embedded visualization elements. It offers a nuanced understanding of the chart component a user focuses on and analyzes.
+Event structure:
+JavaScript
+{
+   type: 'workbook:chart:onvalueselect';
+   nodeId: string;
+   title: string;
+   values: valuesObject;
+}
+Event properties:
+nodeId The node ID of the chart.
+title The title of the chart.
+values Contains key-value pairs representing any selected field column value, including color, axis, and value of the selected chart component. For example, the category label and corresponding value of a specific data point.
+Example scenario:
+A user clicks on a specific bar in a bar chart. The event returns detailed information about that bar, including its category label and value. This enables the host application to provide context-specific responses or further data insights related to that precise interaction.
+workbook:dataloaded
+This event occurs when a workbook finishes loading its data.
+This event is useful for signaling when an iframe finishes loading a Sigma embed.
+Event structure:
+JavaScript
+{  
+   type: 'workbook:dataloaded' 
+}
+Example scenario: When a user exports the workbook as PDF via API immediately after accessing a workbook, they might see in the PDF that the embed element hasn't finished loading. Developers can add a check for iframe elements and check that the iframe contents are fully loaded before exporting.
+workbook:error
+This event occurs when a workbook produces an error.
+This event is useful for detecting errors and taking action in response.
+Event structure:
+JavaScript
+{
+   type: 'workbook:error';
+   message: string | undefined;
+   code: string;
+}
+Event properties:
+message The error message.
+code The error code.
+workbook:exploreKey:onchange
+This event occurs when a new exploration is created on an embed.
+Event structure:
+JavaScript
+{
+   type: 'workbook:exploreKey:onchange', 
+   exploreKey: string;
+}
+Event properties:
+exploreKey The unique ID associated with the exploration.
+workbook:fullscreen:onchange
+This event occurs when the user minimizes or maximizes an element.
+This event is useful for taking an action in response to an element being minimized/maximized.
+Event structure:
+JavaScript
+{
+   type: 'workbook:fullscreen:onchange';
+   fullScreen: boolean;
+}
+Event properties:
+fullScreen If true, the element was maximized; if false, the element was minimized.
+workbook:id:onchange
+This event occurs when the ID of the displayed workbook changes.
+This event gives insight into when the user creates their own workbook that they can edit.
+Event structure:
+JavaScript
+{ 
+   type: 'workbook:id:onchange'; 
+   id: string 
+}
+Event properties:
+id The workbook ID.
+workbook:loaded
+This event occurs when a workbook's metadata has loaded, but the elements haven't been evaluated.
+This event is crucial for scenarios in which an initial setup or a pre-processing step is required before the workbook becomes interactive. It provides an opportunity to implement any preparatory actions in the host application based on the workbook's metadata.
+Event structure:
+JavaScript
+{
+  type: 'workbook:loaded',
+  workbook: {
+    variables: encodedVariables // Contains workbook metadata
+  },
+}
+workbook:pageheight:onchange
+This event communicates the document height to the parent whenever it changes.
+This event is useful for avoiding situations where the body of a frame would scroll due to dynamic sizing. Use this function to calculate the height of the iframe.
+To use this event, the responsive_height parameter must be set to true. See Embed URL parameters.
+Event structure:
+JavaScript
+{
+   type: 'workbook:pageheight:onchange';
+   pageHeight: number;
+}
+Event properties:
+pageHeight The height of the page, in pixels.
+workbook:pivottable:oncellselect
+This event occurs when a user selects a cell or multiple cells in an embedded pivot table. This event provides an array of selected cells and their properties.
+This event is crucial for applications that require responsive interaction with pivot table data within Sigma, allowing the host application to tailor its response based on user selection in the embedded workbook.
+Event structure:
+JavaScript
+{
+   type: 'workbook:pivottable:oncellselect';
+   nodeId: string;
+   title: string;
+   cells: cellsObject;
+}
+Event properties:
+nodeId The node ID of the pivot table.
+title The title of the pivot table.
+cells
+A collection of of objects for each cell, including the following:
+type: 'valueCell' to identify the cell as a standard value cell.
+value: Value to identify the actual cell data.
+columnName: String to name the column containing the cell.
+workbook:published
+This event occurs in secure embeds when a user saves and publishes a workbook.
+This event is useful for taking some action in the host application when a workbook is published and for tracking when changes are made to a workbook.
+Event structure:
+JavaScript
+{
+   type: 'workbook:published';
+   workbookId: string;
+}
+Event properties:
+workbookId The ID of the published workbook.
+workbook:table:oncellselect
+This event occurs when a user selects a cell or multiple cells in an embedded table. This event provides an array of selected cells and their properties.
+This event is crucial for applications that require responsive interaction with table data within Sigma, allowing the host application to tailor its response based on user selection in the embedded workbook.
+Event structure:
+JavaScript
+{
+   type: 'workbook:table:oncellselect';
+   nodeId: string;
+   title: string;
+   cells: cellsObject;
+}
+Event properties:
+nodeId The node ID of the table.
+title The title of the table.
+cells
+A collection of of objects for each cell, including the following:
+type: 'valueCell' to identify the cell as a standard value cell.
+value: Value to identify the actual cell data.
+columnName: String to name the column containing the cell.
+underlyingData: An array of rows contributing to the aggregate value. The data is subject to size limitations. A truncation flag indicates when the data exceeds the limit.
+Example scenario:
+When a user selects a specific cell (for example, in the Sum of Revenue column) for a particular order, the event returns detailed information about the cell, including its value, column name, and any underlying data (if it's an aggregate value).
+workbook:variables:onchange
+This event occurs when a user- or system-initiated update is applied to a control within the embedded Sigma content.
+This event is essential for situations where the host application needs to respond to changes within the embedded Sigma content. This event provides information about user interactions with the embedded content, allowing for a dynamic and responsive integration within the host application. For detailed examples on how values are encoded for URLs, refer to Apply control values with URL parameters > Directly generate a URL.
+Event structure:
+JavaScript
+{
+  type: 'workbook:variables:onchange',
+  workbook: {
+    variables: { 'Variable1': 'value1', 'Variable 2': 'value2' } // Updated variable values
+  },
+}
+Event properties:
+workbook.variables Contains the controls and their values updated within the workbook. The format follows the structure { 'Variable Name': 'value' }, with URL-encoded values.
+RELATED RESOURCES
+QuickStart: Embedding 07: Events

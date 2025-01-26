@@ -1,0 +1,73 @@
+Pivot table totals and subtotals
+Suggest Edits
+If your pivot table contains aggregated values, such as a column calculating the sum or count of a value, totals are shown by default. To hide totals, see Show and hide totals in a pivot table.
+You can hide, manage, and perform additional calculations with those totals. To format totals, such as by highlighting totals or changing the font color, see Format pivot table totals.
+For more details about pivot tables, see Working with pivot tables.
+Definitions and key concepts
+If a pivot table contains values, a grand total can be calculated. If a pivot table has more than one column added as a pivot row, or more than one column added as a pivot column, subtotals are also calculated.
+Pivot totals are calculated using the same formula as the corresponding value in the table, but applied to a higher-level grouping of the data. Grand total calculations are performed against the entire pivot table, and subtotal calculations are performed against the next-higher-level grouping of the data:
+Grand total: The aggregated calculation of all values for a pivot row and/or for a pivot column. In the example screenshot, grand totals are highlighted in pink.
+Subtotal: The aggregated calculation of values in a group of pivot rows or pivot columns. In the example screenshot, subtotals are highlighted in yellow.
+Depending on the grouping levels in your pivot table, other calculated totals might be available to use in formulas, such as with the Subtotal or PercentOfTotal functions:
+Row Total: The grand total for the row. Calculates the aggregate of the values across the pivot row. If there are multiple pivot rows, this is the grand total for the lowest-level row in the grouping. In the example screenshot, the values in the Total column for Maine, 248 and 316, are row totals.
+Parent Row Total: The grand total for the parent row, equivalent to the aggregate of the column totals in the grouping. Functions as a subtotal for each group of rows in the pivot table. In the example screenshot, the values for the East and West row are the parent row totals for the child rows. For example, 32995 is the parent row total for each Store State row in the East grouping for the month column 2023-01.
+Column Total: The grand total for the column. Calculates the aggregate of the values in the pivot column. In the example screenshot, the values in the Total row for specific months are column totals. For example, for the month column of 2023-01, 81643 is the column total. For 2023-02, 74664 is the column total.
+Parent Column Total: The grand total for the parent column, equivalent to the aggregate of the row totals in the grouping. Functions as a subtotal for each group of columns in the pivot table. In the example screenshot, the values in the Total column at the parent column level contains the parent column totals. For example, 564 is the parent column total for Maine.
+In the screenshot, the East and West rows each show a parent row total calculating the sum of all states in the region. These two parent row totals are subtotals, and are summed to calculate the pivot table grand totals. There are also column subtotals in the Total column in the month level.
+For examples working with pivot table totals in formulas, see the following tutorials:
+Tutorial: Calculate a percentage for subtotals in a pivot table
+Tutorial: Calculate a percentage for row subtotals
+Show and hide totals in a pivot table
+You can choose to show or hide totals in a pivot table for specific pivot rows and columns. Totals are shown by default. Totals appear differently depending on whether the pivot table displays rows as a single column or separate columns. See Display multiple pivot rows as separate columns for more details about that setting.
+💡
+Totals are available when your pivot table contains aggregated values, such as sums or counts.
+Hide grand totals
+To hide all grand totals for your pivot table, do the following:
+In the editor panel, select Element format.
+Select Totals to open the totals formatting section.
+For Grand Totals, deselect the checkbox.
+All grand totals (the Total column and Total row) are removed from the pivot table.
+To hide only the column-level grand total, do the following:
+On the pivot table or in the editor panel, select the caret () next to the column name. In this example, the Quarter of Date column.
+In the dropdown menu, select Show totals so that the checkmark disappears.
+The Total column is removed from the pivot table.
+Hide parent row totals
+To hide only the row-level grand total, do the following:
+On the pivot table or in the editor panel, select the caret () next to the column name. In this example, the Store Region column.
+In the dropdown menu, select Show totals so that the checkmark disappears.
+The Total row is removed from the pivot table.
+Hide subtotals
+To hide subtotals in a pivot table, do the following:
+In the editor panel, select Element format.
+Select Totals to open the totals formatting section.
+For Subtotals, deselect the checkbox.
+All subtotals are removed from the pivot table. In this example, the Total row for each store region is removed.
+If your pivot table displays displays rows as a single column and the rows are collapsed, totals are always shown.
+💡
+You can also deselect Show totals in the column menu for the child pivot row. In this example, the Store State column.
+Tutorial: Calculate a percentage for subtotals in a pivot table
+In this example, calculate the percent of total units sold in a given region. This example uses the PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA table included in the Sigma Sample Database.
+Start with a pivot table with pivot rows Store Region and Store State and an aggregate value of Sum of Quantity.
+To calculate the percentage of total units sold, add a new column to the pivot table:
+In the editor panel, in the Values header, click the plus (+).
+Select Add New Column.
+In the formula bar for the new column, enter:
+[Sum of Quantity (Row Total)] / [Sum of Quantity (Parent Row Total)]
+Press Enter or click the checkmark to save the formula.
+To format the calculated column as a percentage, in the workbook toolbar, click Format as percent (%).
+The result appears as follows:
+Tutorial: Calculate a percentage for row subtotals
+In this tutorial, calculate the percent of total state retail sales broken down by region and sales quarter.
+Start with a pivot table with pivot rows Store Region and Store State, a pivot column of Date, truncated to display Quarter of Date, and an aggregate value of Sum of Quantity.
+In the editor panel, in the Values header, click the plus (+).
+Select Add New Column.
+In the formula bar for the new column, enter:
+[Sum of Quantity] / [Sum of Quantity (Parent Row Total)]
+Press Enter or click the checkmark to save the formula.
+To format the calculated column as a percentage, in the workbook toolbar, click Format as percent (%).
+The result appears as follows:
+RELATED RESOURCES
+Working with Pivot Tables
+Format pivot table totals
+PercentOfTotal
+Subtotal

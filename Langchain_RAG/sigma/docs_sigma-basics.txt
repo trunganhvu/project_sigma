@@ -1,0 +1,47 @@
+Sigma basics
+This document introduces you to some basic concepts and terminology used in Sigma.
+Suggest Edits
+Core components
+A Sigma organization has the following components:
+Data source
+The source of the data used to drive analysis is usually tables from a data platform such as Snowflake or BigQuery. Sigma does not store the data itself; it accesses the data through a connection. Sigma can connect to a variety of data platforms and also supports uploaded .csv files. Sigma Admins create and manage data permissions for connections.
+
+When users access a dataset or workbook that has been shared with them, that document owner's permission to the source data is evaluated within Sigma and then the queries to the data platform are run using the account credentials that have been set in the connection's settings. The exception to this is if the connection is configured to use OAuth authentication. In this case, users' data permissions are controlled using an IdP and queries are run using users' personal credentials.
+Data models & datasets
+Raw data from a data store may need some manipulation, pruning, additional calculations, and filtering to be most useful in analysis. In Sigma, you create a data model or a dataset from your data store and use it to drive the data in one or more workbooks. It's more efficient to create and reuse the same data model for different workbooks than to always use the raw data and rebuild any modifications. See Get started with data modeling.
+Workbooks
+Workbooks display the tables and visualizations used to communicate your analysis. Workbooks contain pages, much like tabs in a spreadsheet. Pages contain the tables, charts, controls (filters), free-form text, and images used to relay information to people who view the workbook. If you've worked with other BI products, a workbook page is like a dashboard. See Workbooks overview.
+API
+Use the Sigma REST API to programmatically access a broad range of Sigma features.
+Workbook concepts
+When you perform analysis in Sigma in a workbook, familiarize yourself with the following concepts.
+Pages
+Workbooks have pages, like spreadsheet tabs. You can use a page as a traditional BI dashboard and display or export it. For more information see Workbooks overview.
+Elements
+Elements are the objects that you put on a workbook page. Element types include:
+Data elements (tables, charts, and pivot tables)
+UI elements (text, images, buttons, embeds, and dividers)
+Control elements (filters and controls)
+Layout elements (containers and modals)
+You can use an element in a workbook as a data source for another element. The source element is referred to as the parent element, and the element using the data is a child element.
+For more information, see Intro to element types.
+Table concepts
+Tables are the simplest starting point for analysis in Sigma, but there are some differences from working in spreadsheets or traditional business intelligence tools.
+Columns, not cells
+Traditional spreadsheet tools provide data and formulas on a per-cell basis. Sigma manages data at the column level. Calculations and formatting changes apply to every cell in a column. This approach scales better for large amounts of data.
+For more information about columns in tables, see Create and manage tables. To see a column's formula, among other details, see View column details.
+Grouping columns
+You can group columns to perform aggregate and other calculations for each grouping level. Grouping columns lets you perform complex analysis in a table. You can consider groupings like a one-dimensional pivot table, but with a much wider library of calculations than those available in a pivot table. Add a grouping to a table to calculate metrics like sign-ups per week, sales per region, cost per product line, or other calculations that apply to a specific group of data.
+You can add multiple groupings to a table. For more details, including a detailed example, see Create and manage tables.
+Filters
+Filters limit the visible results in charts and tables to show only data that meets certain criteria. For example, display only the values that fall within a certain range, or events that occurred after a certain date. You can add a control element to filter multiple elements at the same time.
+Sigma supports many types of filters for workbook and data models, as well as datasets. For more details about working with filters and controls, see Dynamically filter and modify data in Sigma.
+Users
+Access to functionality in Sigma occurs across different groupings of people:
+Organization An organization is the highest level and normally correlates to a business entity.
+Team Teams are groups of users. Teams make it easy to share connections, data models, datasets, and workbooks with a group of people. You can also use teams to manage different types of access restrictions.
+User Users are individuals with accounts in Sigma. Users can be assigned different account types to manage permissions throughout a Sigma organization.
+Exports and reports
+Anyone with permission to a workbook can download a PNG image of an element, just like taking a screenshot. Users with the relevant permissions enabled on their assigned account types can export reports from Sigma via email, Slack, and other formats and destinations. See Send or schedule workbook exports.
+RELATED RESOURCES
+Get around in Sigma

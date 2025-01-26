@@ -1,0 +1,55 @@
+Manage workspaces
+Suggest Edits
+Use workspaces to categorize and share folders and documents. Share them with users and teams using permission grants.
+Organization admins manage all workspaces within their organization.
+Both admin and non-admin users can access their assigned workspaces from the left hand panel in the homepage. Admins also have access to an additional All workspaces tab.
+Create a workspace
+There are two ways for organization admins to create workspaces.
+Option A: create a workspace directly from the workspace list page.
+On your homepage’s navigation panel, click Workspaces to open the Workspace page.
+Click Create Workspace in the top right of the screen.
+Name your workspace.
+Type to add teams and/or members.
+For each team or member, select a permission type.
+[optional] Enter an email notification under Add a Message or uncheck Send an email notification.
+Click Save.
+OR
+Option B: create a workspace by creating a team and selecting to create a workspace for that team.
+Share a workspace
+Permission grants on a workspace are hereditary; sharing a workspace will share everything inside of that workspace at the same level as the original grant. There are two possible ways to share a workspace.
+Share from within the workspace
+Open the workspace.
+Click the Share button located in the top right corner of the screen, to open the share modal.
+Type to add teams and/or individual members.
+Select a permission type for each team and/or member.
+[optional] Enter an email notification under Add a Message or uncheck Send an email notification.
+Click Save.
+Share from the workspace list
+On your homepage’s navigation panel, click Workspaces to open the Workspace page.
+Click More next to the workspace you wish to share.
+Click Share to open the share modal.
+Type to add teams and/or individual members.
+Select a permission type for each team and/or member.
+[optional] Enter an email notification under Add a Message or uncheck Send an email notification.
+Click Save.
+Modify or revoke access to a workspace
+Open the workspace’s Share modal either by clicking More on the Workspace page or from the Share button on the individual workspace’s page.
+Click to open the Who has Access tab.
+[optional] To select a new access/grant type, use the Access Type dropdown menu to the right of the team or member.
+[optional] To revoke access completely, hover over the team or member. Then click the trash can icon that appears on the right side of the modal.
+Click Save.
+Delete a workspace
+When a workspace is deleted, any child folders or documents will be automatically moved into a folder in the deleter’s My Documents.
+On your homepage’s navigation panel, click Workspaces to open the Workspace page.
+Click More next to the workspace you wish to share.
+Click Delete.
+This will open the Confirm Deletion modal. Click Delete to confirm.
+The organization level workspace
+Every new organization is provided an organizational-level workspace by default. This workspace is accessible to all organization members.
+Organization admins have the option to delete or restrict access to this workspace. Although this workspace was added by default, all management of the workspace can be conducted like any other workspace.
+Understanding teams and workspaces
+Teams and workspaces have a many-to-many relationship. A team can be granted different levels of access to different workspaces, and multiple teams can be granted different levels of access to a single workspace.
+This flexibility allows the structure of workspaces to be organization-dependent. For example, an organization might have a workspace for each of its teams. In addition, it might also have workspaces for each quarter of the year, shared with the relevant teams.
+RELATED RESOURCES
+Folder and Document Permissions
+Data permissions overview

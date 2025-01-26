@@ -1,0 +1,40 @@
+FV
+Suggest Edits
+The FV function returns the future value of an investment.
+Use the FV function to calculate the future value of an investment, assuming periodic, constant payments with a constant interest rate. You can also use it for the future value of single lump sum payment.
+FV is part of the set of financial functions that Sigma supports.
+Syntax
+FV(rate, nperiods, pmt, [pv], [type])
+rate
+The interest rate per period.
+nperiods
+The total number of payment periods.
+pmt
+The payment made each period.
+If this is a deposit into savings or similar investment, the value must be negative. For cash received, such as income or dividends, payment value must be positive.
+pv
+Optional.
+The present value of future payments. If omitted, assumed to be zero. Must be entered as a negative number.
+Default is 0.
+type
+Optional.
+When payments are due:
+0
+End of period
+1
+Beginning of period
+Default is 0.
+Notes
+Be consistent with the units for rate and nperiods arguments. If you make monthly payments on a two-year loan at an annual interest rate of 7%, use the rate calculation of 0.07/12 and nperiods calculation of 2*12. For annual payments on the same loan, use the rate of 0.07 and nperiods of 2.
+Example
+FV(0.1/12, 5*12, -1000)
+The future value of a 5-year loan with an annual interest of 10%, and monthly payments of $1,000 is $77,437.07.
+FV(0.1/4, 5*4, -3000)
+The future value of a 5-year loan with an annual interest of 10%, and quarterly payments of $3,000 is $76,633.97.
+FV(0.1, 5, -12000)
+The future value of a 5-year loan with an annual interest of 10%, and annual payments of $12,000 is $73,261.20.
+RELATED RESOURCES
+PV
+Pmt
+NPer
+FV function in Microsoft documentation

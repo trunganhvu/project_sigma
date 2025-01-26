@@ -1,0 +1,14 @@
+Reverse
+Suggest Edits
+The Reverse function reverses the order of the characters in a string.
+This function is useful for making text functions that normally work forwards from the beginning of a string, such as Mid or Substring, to instead work backwards from the end of the string.
+Usage
+Reverse(text)
+text (required)- Text or a column of text that you want to reverse.
+Example
+Reverse("desserts")
+Returns “stressed”
+[Extract Area Code (Failure)] = Mid([Phone Number], 5, 3)
+[Extract Area Code (Success)] = Reverse(Mid(Reverse([Phone Number]), 6, 3))
+RELATED RESOURCES
+Mid

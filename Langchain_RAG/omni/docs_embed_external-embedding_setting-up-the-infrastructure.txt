@@ -1,0 +1,160 @@
+EmbeddingExternal embeddingSetup
+On this page
+Embedding infrastructure setup
+Omni is where the permissions are defined and content is managed and created; however, the application where the content is embedded should dynamically map the user to the right underlying data by generating a script. Make sure your data security is set up correctly in Omni before you start.
+Understanding the embed url
+Omni embed URLs are composed of a few parts. These parts are concatenated into a single string and signed with a unique secret key used only by your organization. The signature is then added to a url with all the parts specified as query parameters in the URL.
+When an Omni server receives the request in the URL, we will attempt to generate the same signature. If the passed in signature matches the signature generated in our servers, the request is honored.
+Generating a secret
+Generate a secret by going to the Admin > Embed section of your Omni instance.
+Press the “Reset Secret” button to generate your random secret key. Resetting an existing secret key will invalidate the previous one, so be sure to update any scripts with the latest secret.
+Embed Parameters
+The parameters below can be included in embed requests to customize the resulting embed user or session. Note that these parameters are included as URL parameters on a valid embed request (see the "Example URL Parameter" column for reference).
+Parameter URL Parameter Required Description Example Input(s) Example URL Parameter
+Content Path contentPath ✅ Define the starting page when the embed user logs into the iframe. /dashboards/<dashboard-id> (Dashboard), /w/<dashboard-id>/duplicate (Workbook), /my (My Content Page), /entity-folder (Entity Folder), /root (Hub) contentPath=%2Fdashboards%2Fa6908f35
+External ID externalId ✅ Required parameter creating a unique ID. This can be any alphanumeric value. sugar, &spice123 or 123+EveryThingNice externalId=ohtani17
+Name name ✅ Required parameter and can contain a non-unique name for the embed user's name property. Bubbles Power, Buttercup Puff or Blossom Girls name=Shohei+Ohtani
+Nonce nonce ✅ Required 32-character string. Must be unique for each embed login url or else the session will fail to load. If using the sdk or /embed/sso/generate-url endpoint, nonce will be automatically added to your generated urls if one is not provided. abcdefghijklmnopqrstuvwxyz123456 nonce=abcdefghijklmnopqrstuvwxyz123456
+Access Boost accessBoost ❌ Boolean setting to enable Access Boost for the embedded dashboard. true or false accessBoost=true
+Connection Roles connectionRoles ❌ Strongly recommended. Defines the connection roles available for embed users. Restricted queriers can create new content, Viewers can only consume dashboards {"connection-id-1":"RESTRICTED_QUERIER", "connection-id-2":"VIEWER"} connectionRoles=%7B%2265b10d2a-473b-4486-92c8-0ba628c7d1cb%22%3A%22RESTRICTED_QUERIER%22%7D
+Custom Theme customTheme ❌ Allows you to stylize embedded dashboards based on JSON blob composed of custom theme properties. Custom theme example customTheme=%7B%22dashboard-background%22%3A%22blue%22%7D
+Custom Theme ID customThemeId ❌ Allows you to stylize embedded dashboards based on a predefined theme ID from your Omni instance abcdefgh-ijkl-mnop-qrst-123456789123 customThemeId=abcdefgh-ijkl-mnop-qrst-123456789123
+Embed Entity entity ❌ User group identifier used to associate the resulting embed user with a larger group. This will also create the shared entity folder using whatever name is set in the value Any alphanumeric value entity=Dodgers
+Entity Folder Content Role entityFolderContentRole ❌ Specifies the content role the embed user will be given to their shared entity folder Viewer - can see content in shared folder, can’t save to it Editor - can see and save content in the shared folder Manager - can control other users’ permissions to the shared folder VIEWER, EDITOR, or MANAGER entityFolderContentRole=EDITOR
+Email email ❌ Will populate the emails from the users in the entity for sharing and deliveries myemail@emaildomain.co email=shoheiohtani17%40dodgersforever.com
+Filter Search Param filterSearchParam ❌ Specify which filters to apply for this embedded content. f--order_items.status=closed filterSearchParam=f--order_items.status%3D%257B%22values%22%253A%255B%22Complete%22%255D%252C%22appliedLabels%22%253A%257B%257D%257D
+Groups groups ❌ An array of group names that allows you to associate the resulting embed user with existing groups on your Omni instance. ["Blah 1"] groups=%5B%22Blah+1%22%5D
+Link Access linkAccess ❌ Allows you to customize which other Omni dashboards can be linked to from the embedded dashboard. Input __omni_link_access_open for all links on the embedded dashboard to be permissed and shown; input a list of dashboard IDs: abcd1234,efgh5678,ijkl9999 to only permit those specific dashboard IDs to be shown; leave the parameter blank for all links to other Omni dashboards links to be restricted; Note that links to anything other than an Omni Dashboard will be shown and permissed regardless of the values specified in the linkAccess parameter. linkAccess=__omni_link_access_open
+Mode mode ❌ Application - allows embed users to access the full content system and navigate through the Omni app in an iframe Single content - only embeds an individual dashboard or workbook. No content navigation or app headers APPLICATION or SINGLE_CONTENT mode=APPLICATION
+Prefers Dark prefersDark ❌ Allows you to control whether the resulting embed session has a dark mode or light mode appearance true, false, system prefersDark=false
+Built-in Theme theme ❌ Allows you to style the resulting embed session with a built-in Omni application vibes, dawn, breeze, blank theme=vibes
+User Attributes userAttributes ❌ Reference which user attributes you want applied to this particular embed user. {"country":"Townsville", "associated_ids":[9,10,11]} userAttributes=%7B%22country%22%3A%22Townsville%22%2C%22associated_ids%22%3A%5B9%2C10%2C11%5D%7D
+Generate embed urls
+There are three ways to generate signed embed URLs in Omni:
+Typescript SDK for Typescript and Javascript server implementations (Node, Deno, Bun, etc)
+API endpoint
+Writing your own script to generate the signed embed URL
+SDK (Recommended)
+Omni has a supported Typescript SDK and some unsupported examples in other languages. Overtime the supported libraries will expand:
+Supported:
+Typescript
+Unsupported:
+Ruby
+API (Second Best)
+While the Typescript SDK is the preferred method for generating signed URLs, you may not be able to leverage it if your backend is not running a Javascript runtime. For other languages and environments we offer a simple stateless API as an escape hatch:
+https://<YOUR OMNI HOSTNAME>/embed/sso/generate-url
+Generate a signed URL
+The /embed/sso/generate-url endpoint only accepts POST requests.
+For POST operations, parameters are passed as a JSON object in the request body.
+Returns a signed URL for an embedded piece of content.
+Additional Properties Accepted or Required
+Property Post Body Param Description Required
+secret secret Your embed secret, obtainable from the Admin > Embed section of omni ✔️
+Requirements and Comments:
+The endpoint does not accept a signature param, since that is what it is generating
+The endpoint requires a secret param (the one in your admin > embed panel)
+The nonce param is optional. If not included, we'll generate one for you
+JSON encoded parameter values (userAttributes, connectionRoles) should be URL encoded
+Example POST request and POST body:
+POST https://example.omniapp.co/embed/sso/generate-url
+
+{
+  contentPath: '/dashboards/12345678',
+  externalId: '12345678',
+  name: 'foo',
+  secret: '12345678901234567890123456789012',
+  userAttributes: '%7B%22shop_id%22%3A%22123%22%7D',
+}
+Manually Generate a Signature and URL (Hard Mode)
+To generate the signature, the follow steps must be followed exactly:
+Concatenate the properties, delimited by a newline character in the exact order enumerated below. Note they are in alphabetical order, with the exception of the leading login URL:
+login URL
+content path
+external id
+name
+nonce
+Next concatenate the optional properties, again in alphabetical order. Any undefined optional properties must be omitted (no space, no extra newline, etc):
+access boost
+connection roles
+custom theme
+custom theme id
+email
+entity
+entity folder content role
+filter search param
+Must be URI encoded unless pulled from Omni dashboard URL (in which case the string is already URI encoded).
+groups
+link access
+mode
+prefers dark
+theme
+user attributes
+There must be no leading or trailing spaces, and only a single newline between each part of the signature. Example below that includes optional parameters custom theme, entity, filter search param, prefers dark, link access, theme, and user attributes:
+https://example.embed-omniapp.co/embed/login
+/embed/dashboards/123abc
+luke@example.com
+Luke Skywalker
+hN38NgtnV2B3PMILhKQOpwLyJRP4qVv4
+{"dashboard-background":"#00FF00","dashboard-tile-title-font-size":"1.5rem"}
+Acme Corp
+f--users.country=%7B"kind"%3A"EQUALS"%2C"type"%3A"string"%2C"values"%3A%5B"USA"%5D%2C"is_negative"%3Afalse%7D&f--users.state=%7B"kind"%3A"EQUALS"%2C"type"%3A"string"%2C"values"%3A%5B%5D%2C"is_negative"%3Afalse%7D&f--inventory_items.cost=%7B"kind"%3A"GREATER_THAN"%2C"type"%3A"number"%2C"values"%3A%5B"20"%5D%2C"is_negative"%3Afalse%2C"is_inclusive"%3Afalse%7D
+true
+__omni_link_access_open
+vibes
+{"planet": "tatooine"}
+Sign the string using your secret key (available in your admin portal) with an HMAC sha256 digest algorithm, encoded as a base64url string. See https://datatracker.ietf.org/doc/html/rfc4648#page-7 for more information about base64url. Node.js example:
+const hmac = crypto.createHmac("sha256", secret);
+hmac.update(data);
+return hmac.digest("base64url");
+Crafting the URL
+To generate the signed url, take the parts from above, URL encode them as part of a URL query string and attach the generated signature.
+The URL form usually:
+https://<your org name>.embed-omniapp.co/embed/login
+Search params are then url encoded and appended. Order of params is irrelevant when generating the login url.
+?contentPath=%2Fembed%2Fdashboards%2F123abc
+&externalId=luke%40example.com
+&name=Luke%20Skywalker
+&nonce=hN38NgtnV2B3PMILhKQOpwLyJRP4qVv4
+&entity=Acme+Corp
+&theme=vibes
+&userAttributes=%7B%22planet%22%3A%22tatooine%22%7D
+&filterSearchParam=f--order_items.status%3D%257B%22kind%22%253A%22EQUALS%22%252C%22type%22%253A%22string%22%252C%22topic%22%253A%22order_items%22%252C%22values%22%253A%255B%22Returned%22%255D%252C%22base_view%22%253A%22order_items%22%252C%22is_negative%22%253Afalse%257D
+&linkAccess=__omni_link_access_open
+&prefersDark=true
+&customTheme=%7B%22dashboard-background%22%3A%22%2300FF00%22%2C%22dashboard-tile-title-font-size%22%3A%221.5rem%22%7D
+&signature=rpf-YbMMTd2XzO_HRyP1E_RiYpQYqBkU-X9iUMplEz4
+Note: newlines are not required, they were added to enhance readability.
+All together this should look like:
+https://example.embed-omniapp.co/embed/login
+?contentPath=%2Fembed%2Fdashboards%2F123abc
+&externalId=luke%40example.com
+&name=Luke%20Skywalker
+&nonce=hN38NgtnV2B3PMILhKQOpwLyJRP4qVv4
+&entity=Acme+Corp
+&theme=vibes
+&userAttributes=%7B%22planet%22%3A%22tatooine%22%7D
+&filterSearchParam=f--order_items.status%3D%257B%22kind%22%253A%22EQUALS%22%252C%22type%22%253A%22string%22%252C%22topic%22%253A%22order_items%22%252C%22values%22%253A%255B%22Returned%22%255D%252C%22base_view%22%253A%22order_items%22%252C%22is_negative%22%253Afalse%257D
+&linkAccess=__omni_link_access_open
+&prefersDark=true
+&customTheme=%7B%22dashboard-background%22%3A%22%2300FF00%22%2C%22dashboard-tile-title-font-size%22%3A%221.5rem%22%7D
+&signature=rpf-YbMMTd2XzO_HRyP1E_RiYpQYqBkU-X9iUMplEz4
+Note: newlines are not required, they were added to enhance readability.
+Embed URL Builder
+To test and make sure the format etc of parameters you're passing through as you expect you can use the url builder (intended for internal embedding predominantly).
+First, you'll need your content's unique ID.
+Dashboards: the dashboard content ID can be found in the browser URL or by following the share steps above.
+Workbooks: the workbook content ID is the same as the dashboard ID if the workbook is tied to a dashboard. If the the workbook is only saved as a workbook then the workbook ID can only be found through the share steps above, How to generate an embed URL. Note that embedding a workbook creates a copy of said workbook for that embed user so their changes are not reflected back into the application's production version of that workbook.
+Navigate to the Embed URL builder, Admin > Embed > URL Builder tab.
+Input the required fields (denoted with a red asterisk):
+Content Path
+for dashboards, it is /dashboards/ID_value
+for workbooks, it is /w/ID_value
+External ID
+this can be any alphanumeric value
+Name
+this can be any alphanumeric value
+Generate your URL and embed!
+Previous
+Data security
+Next
+Customization & interactivity

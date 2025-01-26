@@ -1,0 +1,19 @@
+Visualization & DashboardsConfigurationOverview
+On this page
+Overview
+Visualization Configuration
+Once quick charts are selected, specific configuration is offered at every level of the visualization from series details, to axes, to tooltips. Each configuration option is nested under it's respective chart facet.
+More details are available under each section.
+Quick charts
+Series mapping
+Series configuration
+X-Axis
+Y-Axis (Left Axis, Right Axis)
+Color
+Size
+Tooltips
+More details is available on specific chart types here
+Previous
+Boxplot
+Next
+Quick Charts

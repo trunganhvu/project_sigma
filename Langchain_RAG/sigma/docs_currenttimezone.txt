@@ -1,0 +1,15 @@
+CurrentTimezone
+Suggest Edits
+The CurrentTimezone function returns the name of the IANA time zone configured as your organization's account time zone.
+🚧
+Workbook elements that use this system function are not supported by materialization.
+Syntax
+CurrentTimezone()
+📘
+CurrentTimezone has no function arguments because it’s context-sensitive and doesn’t depend on any explicitly provided values.
+Example
+CurrentTimezone()
+The organization's account time zone is set to America/Los_Angeles. CurrentTimezone returns the IANA time zone name, America/Los_Angeles.
+RELATED RESOURCES
+Now
+ConvertTimezone

@@ -1,0 +1,20 @@
+Connect to DataDatabase setupClickHouse
+On this page
+ClickHouse
+Connecting to ClickHouse
+Retrieve the HTTPS Connection Credentials
+Gather the HTTPS hostname, username and password from the Connection page in ClickHouse. You can get there by navigating to <Your_Warehouse_Name> details > Connect > View connection strings > HTTPS.
+
+To connect to ClickHouse with HTTP(S) you need this information:
+The HOST and PORT: typically, the port is 8443 when using TLS or 8123 when not using TLS.
+The USERNAME and PASSWORD: out of the box, the username is default. Use the username appropriate for your use case.
+Creating the connection in Omni
+Display Name: <CONNECTION_NAME>
+Host: <YOUR_HOSTNAME> (from previous step)
+Port: <YOUR_PORT> (from previous step)
+User: <YOUR_USERNAME> (from previous step)
+Password: <YOUR_PASSWORD> (from previous step)
+Previous
+BigQuery
+Next
+Databricks

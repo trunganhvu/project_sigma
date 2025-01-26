@@ -1,0 +1,11 @@
+Register a Sigma Plugin Dev Playground
+Suggest Edits
+To enable developers in your organization to develop and test plugins, an Admin must first create a plugin called Sigma Plugin Dev Playground. Other plugin development documentation assumes that this dev playground exists.
+Requirements
+You must be assigned the Admin account type or a custom account type that supports plugin developer feature permissions.
+Register a Sigma Plugin Dev Playground
+Follow the plugin creation instructions in Register a Plugin with your Sigma Organization. When prompted, configure the plugin as shown:
+Name Sigma Plugin Dev Playground
+Description Sigma Plugin Dev Playground
+Production URL http://localhost:3000
+Development URL http://localhost:3000

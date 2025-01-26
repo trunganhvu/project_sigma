@@ -1,0 +1,38 @@
+MakeLine
+Suggest Edits
+The MakeLine function constructs a LineString from a series of Point or LineString data.
+📘
+This function isn't compatible with all data platform connections. To check if your connection supports it, see Supported data platforms and feature compatibility.
+Syntax
+MakeLine(geo1, geo2, ...)
+The function has these arguments:
+geo1
+Required
+A valid point or line value that can be located on the Earth's sphere; must comply with the Geographic Coordinate System
+geo2
+Required
+A valid point or line value that can be located on the Earth's sphere; must comply with the Geographic Coordinate System
+geo3 through geoN
+Optional
+A valid point or line value that can be located on the Earth's sphere; must comply with the Geographic Coordinate System
+When using line segments in arguments, Sigma treats the terminal points of the line as separate points, in order. For example, the expression:
+MakeLine(point1, MakeLine(point2, point3), Makeline(point4, point5, point6))
+is the same as the expression:
+MakeLine(point1, point2, point3, point4, point5, point6)
+Examples
+MakeLine([Point], MakePoint(-74.044502, 40.689247))
+MakeLine(MakePoint(2.294481, 48.85837), [Point], MakePoint(-74.044502, 40.689247))
+``
+MakeLine(MakeLine(MakePoint(48.85837, 2.294481), MakePoint(-0.075278, 51.505554)), [Point], MakeLine(MakePoint(40.689247, -74.044502), MakePoint(-77.050636, 38.889248)))
+These examples create lines between:
+
+1. The points in the **Point** column, and the location of the Statue of Liberty at coordinates (-74.044502, 40.689247)
+2. The location of the Eiffel Tower (2.294481, 48.85837), the **Point** column, and the location of the Statue of Liberty (-74.044502, 40.689247)
+3. The line between the Eiffel Tower (2.294481, 48.85837) and the Tower Bridge ( -0.075278, 51.505554), the **Point** column, and the line between the Empire State building (-73.985428, 40.748817) and the Lincoln Memorial (-77.050636, 38.889248).
+
+![](https://files.readme.io/642f5e7-function-makeline-example.png)
+
+ 
+RELATED RESOURCES
+MakePoint
+Geography functions

@@ -1,0 +1,19 @@
+Configure a dbt Semantic Layer integration (Beta)
+Suggest Edits
+🚩
+This documentation describes a private beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, is removed. As with any beta feature, the feature described below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document. Beta features are subject to the Beta features disclaimer.
+If you are interested in joining a limited test group and enabling this feature in your Sigma organization, contact Support or reach out to your Account Executive.
+Sigma supports dbt Semantic Layer integrations, allowing you to leverage your predefined dbt metrics in Sigma workbooks. This document explains how to configure a dbt Semantic Layer in Sigma. To query an existing integration, see Query a dbt Semantic Layer integration.
+System and user requirements
+You must be assigned the Admin account type.
+You must have a dbt integration configured in Sigma. See Manage dbt integration.
+You must use the same dbt service account token that you use for the dbt integration, and that token must be configured with the following permissions: Semantic Layer Only, Metadata Only, and Read-Only. See the dbt documentation on Service account tokens.
+You need a dbt environment ID. See the dbt documentation on the dbt environment command.
+Configure a dbt Semantic Layer integration
+Go to Administration > Account.
+In the Integrations section, select Edit next to your dbt integration.
+In the dbt Integration section, fill out the required fields:
+Service Token Your dbt service account token.
+Access URL The URL of your existing Sigma dbt integration. This is likely cloud.getdbt.com (not semantic-layer.cloud.getdbt.com).
+Environment ID Your dbt environment ID.
+Select Save.

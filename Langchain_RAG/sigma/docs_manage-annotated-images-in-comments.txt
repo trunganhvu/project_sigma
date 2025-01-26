@@ -1,0 +1,19 @@
+Manage annotated image ability and storage period
+Suggest Edits
+By default Sigma allows users to take a screenshot of an element and add comments. For more information see Annotate element images as comments.
+Admins can modify the default 3-month image storage period or disable this feature.
+If comments are disabled, image annotations are also disabled. For more information see Disable commenting.
+Requirements
+You must be an organization Admin to disable annotated image comments across your organization.
+Commenting must be enabled.
+Change the image storage period
+Go to Account > General Settings.
+In the Annotations section, click Edit. The Edit storage period modal opens. 
+Change the Time settings to any time between 1 day to 2 years.
+Click Save.
+Disable annotated images
+Go to Account > General Settings.
+In the Annotations section, toggle the feature to off.
+RELATED RESOURCES
+Annotate element images as comments
+Disable commenting

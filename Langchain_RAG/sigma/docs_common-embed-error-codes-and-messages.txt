@@ -1,0 +1,28 @@
+Common embed error codes and messages
+Suggest Edits
+This document describes common error messages you may encounter when developing secure embeds.
+General error codes
+Error Code Definition
+EEXIST Duplicate detected. This can be a duplicate team, user, etc.
+EPERM The requested operation is not permitted. Could indicate a lack of relevant workbook or account type permissions.
+ESTALE Stale object.
+ENOENT Object does not exist.
+EACCES Permission denied.
+EINVAL Invalid argument. Could indicate a URL parameter that doesn't exist.
+ETIMEDOUT Request timed out. Could indicate that the query didn't respond from warehouse in specified timeframe.
+NETWORK Unable to connect to Sigma. This is typically a local network error.
+UNKNOWN Default API error message for all other errors.
+Parameter-based error messages
+Error message Cause
+Invalid embed request.
+Invalid embed mode
+(Check to ensure mode=userbacked for secure embedding.)
+Invalid embed request. ":email" is not valid. Invalid email
+Invalid embed request. ":session_length" exceeds maximum Invalid time
+Session expired. Reload the page. Session length has been exceeded
+The page you're looking for does not exist. Embed not found. Invalid embed_path
+The specified teams in ":external_user_team" do not exist. Please check spelling or create new teams in the admin portal. Invalid external_user_team
+(when team is specified)
+You don't have permission to access this page. Invalid clientID or external_user_team (when team is not specified)
+You don't have permission to access this page. Invalid embed signature. Invalid embed secret
+You don’t have permission to access this page. Sigma embed is expired. Session length has been exceeded

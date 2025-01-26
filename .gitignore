@@ -1,0 +1,3 @@
+/venv
+/Langchain_RAG/models/codellama-7b.Q8_0.gguf
+/Langchain_RAG/models/vinallama-7b-chat.Q8_0.gguf

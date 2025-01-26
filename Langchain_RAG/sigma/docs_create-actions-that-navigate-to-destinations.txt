@@ -1,0 +1,113 @@
+Create actions that navigate to destinations
+Suggest Edits
+Workbooks support actions that navigate users to predefined URLs, other Sigma documents, or different locations within the current workbook, including modals.
+This document explains how to create actions that navigate users to specific destinations. For more information about actions in Sigma, see Intro to actions.
+User requirements
+📘
+The following requirements apply to users who configure actions. Users who access and interact with a workbook can typically trigger all existing actions within it. Any restrictions are noted in this document.
+The ability to configure actions requires the following:
+You must be assigned an account type with the Full explore or Create, edit, and publish workbooks permission enabled.
+You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
+1
+If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
+Open a link
+Create an action that navigates to an external link or destination within Sigma. Open a static link or generate a dynamic URL that adjusts to control or column values in the current workbook.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Open link.
+Link URL
+Enter the URL of an external webpage or destination within Sigma.
+For information about using dynamic text in the URL, see Create a dynamic URL in this document.
+Open in
+Select an option to determine how the link opens in the browser.
+New window: Opens the link in a new browser window.
+Same window: Opens the link in the current browser window when the user interacts with the trigger element directly in Sigma.
+Parent window: Opens the link in the current browser window when the user interacts with the trigger element in an embed.
+The interacting user’s browser settings may change the selected Open in behavior. For example, New window may instead open the URL in a new tab (same window), and Same window may instead open the URL in the same tab.
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
+Open a link with a dynamic URL
+To generate a dynamic URL that adjusts to control or column values in the current workbook, utilize Sigma’s dynamic text functionality when configuring the Link URL field in step 4 of the previous section.
+In the Link URL field, enter the base URL (unless this must also be dynamically generated), then enter = anywhere you want to add a dynamic value.
+When you enter = , Sigma immediately displays an overlay containing a formula bar. Enter a control ID, or the title and column of an element, enclosed in square brackets (for example, [Search-control] or [Vendors/Portal]). You can also apply functions to generate dynamic values or to transform control and column values as needed.
+Open a workbook or template
+Create an action that navigates to another Sigma workbook or template. Open the destination document in its published state, or pass specific values to existing control elements to instantly open a drilled-down view.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Open Sigma doc.
+Destination
+Select a workbook or template to open.
+Interacting users can only view the destination document if granted permission to access it.
+Pass control values See Pass values to controls in the destination workbook in this document.
+Open in
+Select an option to determine how the workbook or template opens in the browser.
+New window: Opens the document in a new browser window.
+Same window: Opens the the document in the current browser window when the user interacts with the trigger element directly in Sigma.
+Parent window: Opens the document in the current browser window when the user interacts with the trigger element in an embed.
+The interacting user’s browser settings may change the selected Open in behavior. For example, New window may instead open the workbook or template in a new tab (same window), and Same window may instead open it in the same tab.
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
+Pass values to controls in the destination workbook
+To open a drilled-down view of the destination workbook, add control targets and rules to the Pass control values field in step 4 of the previous section.
+In the Pass control values section, click Add a control target.
+Configure the required fields to identify the control target and define the rule:
+Update control Select a control element to update in the destination workbook.
+Set value as
+Select an option to determine the type of value Sigma passes to the control, then define the value.
+Specific values: Passes the specified (fixed) value.
+Values from a column: Passes values from the specified column in the trigger element’s underlying data (if applicable).
+Only available when the trigger element is a table, pivot table, input table, or visualization.
+Custom formula: Passes a value based on the defined formula.
+[optional] Repeat steps 1 and 2 to configure additional control targets and rules.
+Navigate the current workbook
+Create an action that navigates to a specific location within the current workbook. Shift the focus to the top of a page or to an individual element.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Navigate in this workbook.
+Destination Select the page or element to focus on in the workbook view
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
+Open or close a modal
+🚩
+This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
+Beta features are subject to the Beta features disclaimer.
+Create an action that opens or closes a modal in the current workbook. For more details about modals, see Add a modal to a workbook.
+Open a workbook in Explore or Edit mode.
+Select the element you want to trigger the action, then click Actions in the side navigation.
+In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
+In the Action modal, configure the required fields to define the response:
+Action Select Open modal or Close modal.
+Select modal
+If configuring an Open modal action, select the modal to open, or choose New modal.
+The Close modal action doesn't require modal selection because it must be configured on an element within the modal it closes.
+If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
+To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+[optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
+💡
+Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
+Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
+[optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
+RELATED RESOURCES
+Intro to actions
+View and manage existing actions

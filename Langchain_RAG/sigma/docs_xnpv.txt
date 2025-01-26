@@ -1,0 +1,32 @@
+XNPV
+Suggest Edits
+The XNPV function returns the net present value of an investment for payments or incomes at irregular intervals.
+Use XNPV when you discount non-periodic cash flows.
+XNPV is part of the set of financial functions that Sigma supports.
+Syntax
+XNPV(rate, values, dates)
+The XNPV function syntax has the following arguments:
+rate
+Required
+The discount rate of the cash flows
+To use 20%, use the value 0.2.
+values
+Required
+A series of cash flows that corresponds to a schedule of payments, in dates. 
+The first payment is optional and corresponds to a cost or payment that occurs at the beginning of the investment. If the first value is a cost or payment, it must be a negative value. The function discounts the succeeding payments based on a 365-day year. The series of values must contain at least one positive value and one negative value.
+dates
+Required
+A schedule of payment dates that corresponds to the cash flow payments.
+The first payment date is the beginning of the schedule of payments. All other dates must be later than this date, but they may occur in any order.
+The general formula for the XNPV function is:
+Example
+XNPV(.20, [Values], [Dates])
+Calculates the net present value of cash flows of Values made on corresponding Dates, with a discount rate of 20%.
+For the following list of values and dates, the XNPV would be $18,392.
+Values
+(-6380, 9680, -1000, -9680, 1000, 2340, 1000, -2500, 5200, 2300, 4400, 5060, 5760, 6360)
+Dates
+(03/28/2021, 07/28/2021, 08/27/2021, 08/29/2021, 09/28/2021, 09/30/2021, 10/19/2021, 11/01/2021, 12/03/2021, 01/02/2022, 02/02/2022, 03/02/2022, 04/01/2022, 04/31/2022)
+RELATED RESOURCES
+PV
+XNPV function in Microsoft documentation

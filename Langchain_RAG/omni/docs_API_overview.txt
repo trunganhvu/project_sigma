@@ -1,0 +1,20 @@
+API docsOverview
+On this page
+API reference
+With Omni's APIs, you can programmatically interact with your Omni instance.
+Base URL
+The API base URL is the same as the URL you use to login to Omni. For example, if you log in using https://myorg.omniapp.co, your base URL will be https://myorg.omniapp.co/api.
+Only HTTPS calls are accepted.
+Authentication
+Authenticate your calls to the API by providing an API key in your requests. Every request made to the API must have an Authentication header with the API key as a Bearer token:
+curl 'https://myorg.omniapp.co/api/scim/v2/users' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer [YOUR_API_KEY]]'
+To create an API key, navigate to Settings > API Keys. API keys are only displayed once when created.
+Note: If you find you don't have access to API keys, reach out to Omni support.
+API key expiration
+API keys do not expire, but they may be revoked by the user at any time. In the event that your API key is lost or compromised, delete the API key in your Omni instance and create a new one.
+Previous
+Frequently Asked Questions
+Next
+Models
