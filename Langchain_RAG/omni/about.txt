@@ -1,0 +1,238 @@
+About
+All jobs are data jobs.
+Data tool proliferation has gone off-the-rails. There's now a tool for every data need, but they all require compromises. Some are fast. Some are consistent. Some work for sophisticated analysts. Others, for business users who don't live and breathe SQL. Organizations have to navigate tradeoffs between tools that move fast, and those that provide the consistency and control of agreed upon metrics.
+At Omni, our goal is to help people do their best work with data that meets them where they are. That's why we've created the only business intelligence platform that combines the consistency of a shared data model with the speed and freedom of SQL. Whether you live in SQL or spreadsheets, we're building Omni to be the one tool anyone can use.
+The team that brought you Looker and Stitch
+Who says you can't have it all? Omni closes the gap between instant gratification analytics and reliable, governed mature enterprise BI, without the heavy upfront data modeling process.
+✌️
+Colin Zima
+CEO
+Colin has decades of experience in leading data teams at Looker, Google, and HotelTonight. From structured finance and company building to product decision making, Colin’s been applying data since he wrote his college thesis on in-game NFL betting.
+🙌
+Jamie Davidson
+President
+Data is at the center of Jamie’s career. From data science to product manager to product leader, Jamie has led teams at Looker, Google, HotelTonight, and Redpoint Ventures. He is passionate about helping people use their data.
+👾
+Chris Merrick
+CTO
+Chris led the engineering teams at Stitch and Talend and helped create the Singer and dbt open source projects. He gets excited about making data easy to understand, and loves the creativity of solving open-ended data problems.
+Team
+Jonathan Swenson
+Engineering
+Steven Talbot
+ Engineering
+Nate Agrin
+Engineering Leader
+Luke Bowerman
+Engineer
+Jared Hardy
+Design
+Richard Czechowski
+Engineering
+Alisa Tatarinova
+Engineering
+Arielle Strong
+Product
+Sarah Waterson
+Design
+Cathy Lennon
+Engineering
+Brian Frantz
+Engineering
+Corey Ruderman
+Engineering
+Eli Cohen
+Engineering
+Anika Swenson
+Customer Succes
+Tamara John
+Marketing
+Diego Jara Simkin
+Sales
+Sean Gafke
+Business Development
+Buck Ryan
+Engineering
+Jack Sweeney
+Customer Success
+Elliot Park
+Engineering
+Mark Guerin
+EMEA Sales
+Jess Gaines
+Customer Success
+Jonathan Griffiths
+Marketing
+Conrad Slimmer
+Engineering
+Savannah English
+Sales
+Conner Ching
+Marketing
+Liam McCarthy
+EMEA Customer Success
+Anakarina McFadden
+Customer Success
+Megan Yazdani
+Sales
+Trevor Heath
+Sales
+Greg Bastis
+Sales
+Gustav Staprans
+Engineering
+Karly Avvakumovits
+Business Development
+Sloane Pitman
+Business Development
+Conor O'Mara
+EMEA Customer Success
+Craig Arrigan
+EMEA Sales
+Keerthivasan
+Growth Engineering
+Jessie Baier
+Sales
+Dillon Ford
+Sales
+Grant Miller
+Sales
+Cillian McSweeney
+EMEA Business Development
+James Ostergaard
+Product Expert
+Kurt Luu
+Business Development
+Kylee Schroth
+Customer Success
+Elizabeth Schuler
+Customer Success
+Justin He
+Customer Success
+Olivia Jeffris
+Business Development
+Rob Miller
+Engineering
+Nancy Chacko
+Peter Whitehead
+Meredith Dodge
+Jade Khiev
+Backed By
+Expert Founders and Operators
+Parker Conrad
+Rippling
+Gokul Rajaraman
+DoorDash
+Andrew Ofstad
+Airtable
+Bob Moore
+Crossbeam
+Marco Zapposta
+Thumbtack
+Max Mullen
+Instacart
+Othman Laraki
+Color
+Mathilde Collin
+Front
+Eric Wu
+OpenDoor
+Kevin Weil
+Planet Labs
+Pete Koomen
+Optimizely
+John Kobs
+ApartmentList
+Nick Baum
+StoryWorth
+Aleem Mawani
+Streak
+Andrew Wynn
+Ascend
+Fred Stevens-Smith
+Rainforest QA
+Ryan den Rooijen
+Chalhoub Group
+David Fraga
+Invision
+Justin Laing
+Jane Technologies
+Dave Sherry
+Quintoandar
+Jamie Niemasik
+Simba Chain
+David McIntosh
+Instacart
+Vijay Karunamurthy
+Scale.ai
+Ken Wu
+Presidio Medical
+Nik Raman
+PhoneX
+Shiva Rajaraman
+OpenSea
+Rushabh Doshi
+Digit
+Curtis Lee
+Microsoft
+Justin Palmer
+TopFunnel
+Bryan Mahoney
+Chord
+Henry Davis
+Chord
+Adam Breckler
+Better Health
+Ian Roncoroni
+Pindrop
+Ankit Jain
+Infinitus
+Misha Esipov
+Nova Credit
+Industry Experts
+Frank Bien
+CEO Looker
+Keenan Rice
+GM Firebolt
+Tricia Montalvo Timm
+GC Looker
+Jake Stein
+CEO Common Paper
+CEO of Stitch Data
+Tristan Handy
+CEO of dbt Labs
+Barr Moses
+CEO of Monte Carlo
+Boris Jabes
+CEO of Census
+Nick Caldwell
+GM Twitter
+CPO of Looker. GM PowerBI
+Jeremiah Lowin
+CEO of Prefect
+Chris White
+CTO of Prefect
+Dave Fowler
+CEO of Chartio
+Harry Glaser
+CEO of Modelbit
+ CEO of Periscope
+Tom O'Neill
+CTO of Modelbit
+ CTO of Periscope
+Chris Child
+Product at Snowflake
+Pete Fishman
+CEO of Mozart Data
+Michael Driscoll
+CEO of Rill Data
+Peter Bailis
+CEO of Sisu Data
+Josh Wills
+Data at Weave Grid
+Daniel Mintz
+Data at Promise
+Ibby Syed
+CEO of Cotera
+Nicholas Freund
+CEO of Workstream

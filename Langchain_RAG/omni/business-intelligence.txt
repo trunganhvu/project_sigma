@@ -1,0 +1,158 @@
+Governed, self-service business intelligence
+Analytics everyone can trust and use — from running SQL queries and spreadsheet-style calculations to filtering dashboards and scheduling reports.
+Free Trial
+=
+(
+B8
+-
+B1
+)
+/
+B1
+A
+B
+C
+Orders
+Created Date
+Orders
+Orders Count
+% Change
+1
+2023-10-05
+401
+⌀
+2
+2023-10-06
+357
+⌀
+3
+2023-10-07
+347
+⌀
+4
+2023-10-08
+252
+⌀
+5
+2023-10-09
+282
+⌀
+6
+2023-10-10
+419
+⌀
+7
+2023-10-11
+406
+⌀
+8
+2023-10-12
+389
+=
+(
+B8
+-
+B1
+)
+/
+B1
+9
+2023-10-13
+332
+-7%
+10
+2023-10-14
+349
+0.58%
+Make better, faster decisions with Omni
+Give your entire team the ability to view, analyze, and securely share data in the way that works best for them.
+Explore data easily
+Build data models in SQL or interactively as you query. Explore data easily with our point-and-click UI and spreadsheet-style formulas.
+Build beautiful visualizations
+Clearly communicate the metrics that matter to your business using out-of-the-box visualizations or easily customizing your own.
+Rapidly share findings
+Securely share content via URL, scheduled reports, or embedded into your line of business apps so everyone can access and act on data within their preferred workflow.
+With Omni, our data team now focuses on new projects, while business users make faster decisions. This efficiency is crucial for sustainable business operations.
+— Ari Stern, Staff Analytics Engineer
+Read the case study
+Look no further for better BI
+You don't have to choose between the flexibility of workbooks and the governance of enterprise BI. Have it all — without the enterprise price tag.
+Flexible
+Fast time-to-value
+Simple ad hoc analysis
+Easy data integrations
+Democratized access
+Governed
+Reliable, curated metrics
+Clear permissions
+Centralized management
+Operational workflows
+Omni balances the best of Looker's code-based modeling layer approach with the best of Tableau's self-service workbooks — empowering a wider variety of users to explore and consume without falling into the pitfall of complexity creep.
+— Martin Zerbib @ Sifflet
+Read the case study
+Everything you need to provide analytics access
+Omni's data model allows for reusability, governance, and performance optimization as you query, so you can focus on answering your questions.
+Explore data your way
+Connected workbooks
+Workbooks combine the simplicity of a point-and-click UI with the flexibility of spreadsheets. Explore modeled or un-modeled data within your sandbox environment, and when you discover something interesting, promote it to your teams shared data model for reuse and governance.
+Connected Workbooks
+Spreadsheet-Style Formulas
+Curated Data Sets
+SQL Mode
+Communicate findings with teammates
+Flexible visualizations
+Communicate your analysis with an auto viz recommended by Omni or choose from our library. You can also customize visualizations with text, imagery, iframes and more, or use our built-in Vega editor to create something entirely new.
+Flexible Visualizations
+Interactive Dashboards
+Easily Shareable
+We have a lot of people who are Excel power users and they love the ability to pivot quickly in Omni.
+— Griffin Tschurwald, Head of Engineering
+Read the case study
+Connect to all your data and workflows
+Intelligent cache
+Omni gives you the speed of in-memory extracts with the scale of a data warehouse, so you don't have to choose between running large queries in-database or pulling data that gets stale quickly.
+Intelligent Cache
+Integrated
+Trust the results
+Governed data model
+Our data model creates balance to ensure organizational consistency without constraining workflows. Omni's layered data model allows you to keep in sync with the database and create a single source of truth while maintaining flexibility for ad hoc exploration.
+Governed Data Model
+Permissions
+Security
+Support
+One platform to meet all your analytics needs
+Everyone wants data, but not everyone wants to log into a BI tool to get it. The Omni Platform powers internal reporting, operationalizes data into workflows, and puts dashboards and visualizations directly into your product.
+Internal Analytics
+Operational Analytics
+Embedded Analytics
+Workbook
+Workbook
+Workbook
+Shared Model
+Schema
+Materialized
+Replacing our previous BI tool with Omni gave us another level of insight and ease that we really need, internally and for our companies. Now, we're able to extend that impact across our companies to help them access data without requiring in-house data experts or tools.
+— Mark Valdez, CEO
+Read the case study
+See Omni in action
+(1:34)
+Analyze with your preferred language
+Use the point & click UI, SQL, Excel, or AI to get answers from your data.
+(5:27)
+Promote to the shared model
+Explore freely in your workbook, then build upon your team's shared data model.
+(6:30)
+Move faster with dbt
+With Omni's dbt integration, you can pull in metadata, create new models, and more.
+FAQs
+What data sources can I connect to Omni?
+Does Omni integrate with dbt?
+What type of visualizations does Omni support?
+How do you manage workbook versioning?
+What is your support model?
+Are you looking to deliver external-facing analytics?
+We do that, too 😉 Learn more about using Omni for embedded analytics.
+Speed up product development
+Increase customer engagement
+Monetize your data
+Learn More

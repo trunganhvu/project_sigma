@@ -57,4 +57,4 @@ def compare_companies(question):
     # Tùy chỉnh logic tại đây để so sánh.
 
 # Gọi hàm so sánh
-compare_companies("So sánh ưu và nhược điểm của hai công ty.")
+compare_companies("So sánh điểm mạnh và điểm yếu của công ty Omni và Sigma?")

@@ -1,0 +1,50 @@
+Omni seamlessly integrates with your data stack
+Free Trial
+Connect directly to your data
+Omni has native integrations with the most popular data warehouses. Once connected to your data, our intelligent cache delivers results fast — without limiting how deeply you can explore.
+Amazon Redshift
+Google BigQuery
+Snowflake
+Databricks
+MySQL
+MotherDuck
+Postgres
+Microsoft SQL Server
+Clickhouse
+Trino
+dbt
+Streamline your analytics engineering
+Omni's bi-directional dbt integration goes further than any other BI integration to eliminate complexity and effort in your analytics engineering workflow.
+Seamlessly surface dbt model changes in Omni
+Pull dbt context into Omni for deeper visibility
+Author dbt models from Omni model definitions
+Deliver data where your team needs it
+With Omni, everyone on your team has the freedom to access and act on data within their preferred workflow. Securely share reports and dashboards via URL, schedule emails, or embed iframes in other apps.
+Schedule reports to send via email
+Automatically send essential reports and dashboards to keep your team up-to-date on progress towards goals and give executives an overview of business performance.
+Share dashboards in Slack
+Schedule company-wide KPI and team dashboards to be sent to specific people or channels. Add filter parameters to your content so that individuals only follow what's relevant to their work.
+Embed data anywhere
+Quickly embed dashboards and reports into the tools where your team is already working. Omni works with most popular SaaS platforms, including Salesforce, Notion, and more.
+One platform to meet all your needs
+Built on modern, cloud-native architecture to power fast, scalable, and trustworthy analytics.
+Internal Analytics
+Operational Analytics
+Embedded Analytics
+Workbook
+Workbook
+Workbook
+Shared Model
+Schema
+Materialized
+Learn more about Omni
+Business intelligence
+Explore data easily
+Build beautiful visualizations
+Rapidly share findings
+Learn more
+Embedded analytics
+Speed up product development
+Increase customer engagement
+Monetize your data
+Learn more

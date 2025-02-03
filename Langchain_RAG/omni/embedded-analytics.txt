@@ -1,0 +1,66 @@
+Fast and flexible embedded analytics
+Quickly add customer-facing analytics to your product without sacrificing the speed, security, and brand your customers know and love.
+Build exceptional data products with Omni
+Give your customers the insights they need, without slowing down or lowering your standards.
+Speed up product development
+Ship faster and deliver a premium experience at scale with our extensible dashboard components and modern architecture.
+Increase customer engagement
+Deliver valuable insights and a world-class user experience via beautiful visualizations and dashboards — without an enterprise price tag.
+Monetize your data
+Outshine your competitors and create new revenue streams with rich, customized data content that's easy to maintain.
+Look no further for fast dashboards
+Your customers should't have to wait. Omni dashboards load instantly, unlike legacy tools.
+Omni
+232,124
+Events
+20%
+112,058
+Sessions
+8%
+27,752
+Users
+12%
+Sources
+Purchase Funnel
+Sessions
+Let your customers create and share their own reports
+Give users the power to build their own analyses with AI, Excel calcs, or a point-and-click UI — right inside of your product.
+Learn How
+See what our customers build with Omni
+PrimaryBid shipped a modern data product for their customers in under one week.
+Learn More
+Examples of PrimaryBid customer-facing dashboards built with Omni
+We wanted to give our customers a truly modern analytics experience without needing to invest significant front-end engineering resources to build it. Of the many embedded analytics products we evaluated, Omni was the only one that would make it possible for us to achieve that goal.
+— Jonny Dungay, Analytics and BI Lead at PrimaryBid
+Read the case study
+Everything you need to build data into your product
+You're the expert in your product. We're experts in data.
+Fast
+Show your customers instant results with analytics run on modern architecture that combines in-database and in-memory processing with intelligent caching.
+Customized
+Easily create beautiful, branded data experiences using customizable visualizations and extensible components including markdown elements to add links, texts, images, and more.
+Governed
+Deliver accurate metrics that instill trust — all defined in our governed data model to help you easily standardize, maintain, and update as you need.
+Scalable
+Quickly build, iterate, reuse, and maintain customer-facing reports as your needs evolve, without engineering resources or enterprise prices.
+Secure
+Meet all industry-leading security and privacy requirements with row and column-level permissions, content controls, user attributes, and SSO authentication — all in compliance with SOC 2, HIPAA, and GDPR standards.
+Supported
+Get expert advice and hands-on support from a team with decades of experience in data infrastructure, delivery, and monetization.
+One platform for all your users
+Everyone wants data, but not everyone wants to log into a BI tool to get it. The Omni Platform powers internal reporting, operationalizes data into workflows, and puts dashboards and visualizations directly into your product.
+Internal Analytics
+Operational Analytics
+Embedded Analytics
+Workbook
+Workbook
+Workbook
+Shared Model
+Schema
+Materialized
+Are you looking for a business intelligence solution?
+We do that, too 😉 Learn more about our core platform.
+Governed, self-service
+Beautiful visualizations
+Operational analytics
+Learn More

@@ -1,0 +1,47 @@
+Secure cloud analytics
+Built by a team with years of experience — we know how to keep your data secure.
+Platform security
+Our platform is designed to prioritize the security of customer data. Encryption and isolation are used to keep data and credentials secure, and systems are strictly access-controlled on the basis of least privilege. Penetration testing and vulnerability scanning are used to proactively identify and close vulnerabilities.
+Organization security
+Our hiring and training processes emphasize data security as our most important job.
+Our security program implements rigorous controls to protect customer data, including personnel background checks and regular security training.
+Compliance
+Our team is committed to maintaining the compliance needed by our customers. This includes annual SOC 2 Type II audits and meeting the standards of the General Data Protection Regulation (GDPR), California Privacy Rights Act (CCPA), and Health Insurance Portability and Accountability Act (HIPAA).
+SOC 2
+HIPAA
+GDPR
+CCPA
+Modern analytics with robust security features
+Governed data model
+Control access to data on the view (table) and field (column) level
+Row-based filtering based on user permissions
+Model change management
+Powerful security administration
+Granular permission roles
+Permissions on the user and group level
+User attribute-based access control for flexible data permissions
+SAML
+Secure data connectivity and processing
+Data connections are encrypted
+Tunneled connections to securely access data in private networks
+Data stays encrypted inside the Omni platform
+One secure platform for all your data needs
+Learn more about our security practices
+Data & infrastructure security
+Infrastructure provider
+Data encryption
+Access control
+Network security & system monitoring
+Personnel security
+Formal security policy
+Onboarding & offboarding process
+Development
+Penetration Testing
+Application monitoring
+Change management
+Third-party vendor security
+Contact our team
+Omni follows strict privacy laws and security standards to help keep our customers safe. If you'd like to learn more or request access to audit reports or other security documentation, please contact your account team or security@omni.co.
+Ready to get started?
+Request Live Demo
+Watch tour video

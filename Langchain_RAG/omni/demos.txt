@@ -1,0 +1,74 @@
+Smart Labels, Editing Vis from the Dashboard, AI Chart Building, Cache Busting API, and More
+January 31, 2025
+A new labeling algorithm that means no overlapping labels. Beautiful scatterplots, lines, bar charts right out of the box. Rolling out shortly.
+Probably our most persistent bug is now in the past. Lots of structural work to improve our URL structure and metadata storage to make sure tiles aren't moving or changing in unexpected ways.
+The first in a series of work to lift a bunch of the editing experience for visualization to the dashboard itself. Making sure builders have all the relevant tools in both the workbook and on the dashboard. Part one covers titles and descriptions, more to come.
+Some new work to build visualizations using natural language. These are all using the UI chart builder, so remain editable by end users. We hope to unify more of the AI interactions in the future, but continuing to press AI into all the different facets of the app.
+Now the cache is fully in your control - we have a new API to purge the cache. This means the cache can be tied to changes upstream - ETL cycles, dbt runs, or simply because you have new data.
+More work on nested folders in the content management system, including some discussion of permission inheritance.
+We show a nice workflow for deploying embedded dashboards - here we use the API to tie dashboards in a folder to the sidebar navigation in production. This means deploying new dashboards to customers can be as easy as a prod folder in the Omni environment - easy build and deploy.
+Colors are great, but we're not stopping there - we've lifted transparency controls everywhere you find colors. Also available through 8-character hex codes. More tools, cleaner finished product.
+Continuing the work to speed up embed auth and make every embedded dashboard faster.
+Pair of demos to smooth out the drafts experience - final touches on locked read-only field picker + now we'll make sure to save even un-run SQL on save.
+A quick look at some new fancy gauge charts.
+We show some workflows to build dashboard themes using AI. This means folks can feed in app styles to quickly build new embed themes in Omni.
+Smart Labels
+The thumbnail says it all - a new labeling algorithm that means no overlapping labels. Beautiful scatterplots, lines, bar charts right out of the box. Rolling out shortly.
+Nate Agrin
+•
+Visualization
+Tiles Don't Move on Edit
+Probably our most persistent bug is now in the past. Lots of structural work to improve our URL structure and metadata storage to make sure tiles aren't moving or changing in unexpected ways.
+Eli Cohen
+•
+Dashboards
+Editing on Dashboard - Part One
+The first in a series of work to lift a bunch of the editing experience for visualization to the dashboard itself. Making sure builders have all the relevant tools in both the workbook and on the dashboard. Part one covers titles and descriptions, more to come.
+Gustav Staprans
+•
+Dashboards
+AI Chart Builder
+Some new work to build visualizations using natural language. These are all using the UI chart builder, so remain editable by end users. We hope to unify more of the AI interactions in the future, but continuing to press AI into all the different facets of the app.
+Jamie Davidson
+•
+Workbook, Visualization
+Cache Busting API
+Now the cache is fully in your control - we have a new API to purge the cache. This means the cache can be tied to changes upstream - ETL cycles, dbt runs, or simply because you have new data.
+Conrad Slimmer
+•
+Administration, Modeling
+Nested Folders
+More work on nested folders in the content management system, including some discussion of permission inheritance.
+Meredith Dodge
+•
+Content Management
+Dynamic Embed Sidebar
+We show a nice workflow for deploying embedded dashboards - here we use the API to tie dashboards in a folder to the sidebar navigation in production. This means deploying new dashboards to customers can be as easy as a prod folder in the Omni environment - easy build and deploy.
+Corey Ruderman
+•
+Embed, Api, Administration
+Transparent Colors Everywhere
+Colors are great, but we're not stopping there - we've lifted transparency controls everywhere you find colors. Also available through 8-character hex codes. More tools, cleaner finished product.
+Sarah Waterson
+•
+Visualization
+Better Embed Auth
+Continuing the work to speed up embed auth and make every embedded dashboard faster.
+Elliot Park
+•
+Embed, Administration
+Drafts Polish - Read-Only Workbook and SQL Saving
+Pair of demos to smooth out the drafts experience - final touches on locked read-only field picker + now we'll make sure to save even un-run SQL on save.
+Alisa Tatarinova
+•
+Workbook
+Super Clean Guage
+A quick look at some new fancy gauge charts.
+Sarah Waterson
+•
+Visualization
+Themes with AI
+We show some workflows to build dashboard themes using AI. This means folks can feed in app styles to quickly build new embed themes in Omni.
+Arielle Strong
+•
+Embed, Dashboards

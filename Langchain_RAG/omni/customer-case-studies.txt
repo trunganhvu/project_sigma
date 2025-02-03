@@ -1,0 +1,95 @@
+The trusted partner of data-driven teams
+From early startups to global companies, we love helping people with data.
+Explore case studies
+Get started fast
+Adopted by most teams within two weeks of implementation
+Migrated all Looker models in under two days
+Built a modern data product in less than a week
+Migrated and achieved 100% adoption in under six weeks
+Expect more from your data platform
+Migrate faster
+We help customers build data models from scratch, migrate content from previous BI tools, and create custom data products in days and weeks — not months.
+Increase data access
+Omni's user-friendly interface makes it easy for your business users and external customers to explore data independently and get the answers they need.
+Conserve resources
+Omni customers report decreasing the time their Data and Engineering teams spend fixing issues and fulfilling one-off requests, and reducing their BI spend.
+Improve self-service
+Omni balances the best of Looker's code-based modeling layer approach with the best of Tableau's self-service workbooks — empowering a wider variety of users to explore and consume without falling into the pitfall of complexity creep.
+— Martin Zerbib @ Sifflet
+Read the case study
+Quote 1
+Quote 2
+Quote 3
+Quote 4
+Quote 5
+Quote 6
+Migrated tools and trained business users in < a month
+Increased access to and value of data for Revenue Ops and Product teams
+Reduced BI spend and gained more hands-on support
+Read the case study
+Increased adoption of BI by 30%
+Migrated data models and reports in < 6 weeks
+Increased dashboard speed by 2X
+Read the case study
+Sped up development and experimentation
+Increased value of existing data investments including Snowflake and dbt
+Increased self-service and data-driven decisions
+Read the case study
+Made data accessible to the entire team in < 2 weeks
+Implemented Omni and migrated content in < a week
+Gave users easier ways to view and analyze data
+Read the case study
+Gained a competitive advantage using real-time insights
+Implemented Omni without a data team or expert
+Provided performance dashboards to its portfolio companies
+Read the case study
+See what our customers build with Omni
+PrimaryBid shipped a modern data product for their customers in under one week.
+Learn More
+Examples of PrimaryBid customer-facing dashboards built with Omni
+Get more from your data and save resources
+We wanted to give our customers a truly modern analytics experience without needing to invest significant front-end engineering resources to build it. Of the many embedded analytics products we evaluated, Omni was the only one that would make it possible for us to achieve that goal.
+— Jonny Dungay, Analytics and BI Lead at PrimaryBid
+Read the case study
+Quote 1
+Quote 2
+Quote 3
+Quote 4
+Quote 5
+Reduced data engineering tickets by 80%
+Reduced BI spend by 50%
+Simplified exploration of unstructured data
+Read the case study
+Five team members built a modern data product in < week
+Created a competitive advantage with a modern customer experience
+Increased internal data access company-wide
+Read the case study
+Reduced BI spend by 75%
+Migrated all Looker models < 2 days
+Made self-service possible for business users
+Read the case study
+Migrated completely in < 3 days
+Made it easier for users to explore unstructured data
+Redirected engineering resources to product development
+Read the case study
+Our team is committed to your success
+Responses in real-time
+With Omni, you'll get support while you're exploring or building with your data — not after you've moved onto something else.
+Hands-on support
+Whether you need help running a complex analysis, evolving your data model, building a dashboard, or simply finding a fix, just send us a link and we'll dive right in!
+Help beyond Omni
+Want help defining retention cohorts? Curious about best practices for data warehouse management? We're here to partner with you on all of it.
+Learn about our customer support
+Learn more about Omni
+Business intelligence
+Explore data easily
+Build beautiful visualizations
+Rapidly share findings
+Learn more
+Embedded analytics
+Speed up product development
+Increase customer engagement
+Monetize your data
+Learn more
+Ready to get started?
+Free Trial

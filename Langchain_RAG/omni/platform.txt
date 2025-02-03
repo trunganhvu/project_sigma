@@ -1,0 +1,160 @@
+The fast and scalable analytics platform
+Analyze, define, and visualize key metrics, and build exceptional customer-facing data products — all on a single platform.
+Free Trial
+Fast
+Explore your data immediately and get instant query results with analytics run on modern architecture.
+Flexible
+Easily communicate findings with beautiful out-of-the-box visualizations and customizable components, including links, texts, and images.
+Governed
+Define, standardize, and maintain metrics in a shared data model so your team can use them anywhere and always trust the results.
+Scalable
+Quickly build, maintain, reuse, and iterate on internal and external-facing reports without wasting engineering resources or paying enterprise prices.
+Secure
+Meet all industry-leading security and privacy requirements with row and column-level permissions, content controls, user attributes, and SSO authentication.
+Supported
+Get expert advice and hands-on support from a team with decades of experience in data infrastructure, delivery, analysis, and monetization.
+What makes Omni different
+Analytics without compromises — or an enterprise price tag.
+Flexible
+Fast time-to-value
+Simple ad hoc analysis
+Easy data integrations
+Democratized access
+Governed
+Reliable, curated metrics
+Clear permissions
+Centralized management
+Operational workflows
+Best of both worlds
+Our intuitive point-and-click UI enables business users to explore data independently. Power users can choose between SQL or familiar spreadsheet-style formulas.
+A data model that doesn't slow you down
+Start exploring data immediately and build governance as you query. You can also use your existing dbt model.
+Instant results
+Our intelligent cache uses in-database and in-memory compute to load query results and dashboards instantly, so your team never has to wait.
+Hands-on support
+With Omni, you get more than just great software. Our expert team replies in real-time to answer your team's questions and help you get the most out of your data.
+One platform to meet all your analytics needs
+Everyone wants data, but not everyone wants to log into a BI tool to get it. The Omni Platform powers internal reporting, operationalizes data into workflows, and puts dashboards and visualizations directly into your product.
+Internal Analytics
+Operational Analytics
+Embedded Analytics
+Workbook
+Workbook
+Workbook
+Shared Model
+Schema
+Materialized
+How does Omni work?
+Direct connections to your data
+Omni has native integrations with the most common data warehouses, including AWS Redshift, Google BigQuery, Snowflake, Databricks, MySQL, Postgres, and MotherDuck.
+Our intelligent cache uses in-database and in-memory compute to optimize query performance at every level, deliver instant results, and drill into row-level detail in the database.
+Automated data modeling
+Omni's unique approach to data modeling ensures consistency and accuracy while retaining the flexibility for ad hoc exploration. You can start exploring data instantly and update the model as you go.
+Our three core modeling layers reflect the:
+raw database
+governed data model
+ad hoc workbook environment
+The workbook layer can be used for exploration and one-off queries and to make changes that can be promoted back to the shared model.
+Bi-directional dbt integration
+Omni's dbt integration is bi-directional to:
+seamlessly surface dbt model changes in Omni
+pull dbt context into Omni for deeper visibility
+author dbt models from Omni model definitions
+Easy data exploration
+Point-and-click UI
+Our UI allows everyone to confidently explore data without writing a single line of code. Users can simply click to create new queries and dashboards, or build on existing ones by adding new filters and fields or making changes to visualizations.
+Spreadsheet formulas
+Users who prefer working in spreadsheets like Excel can efficiently explore data and create new metrics directly from our workbook UI, no SQL required. Omni Calculations are compatible with the popular spreadsheet formulas many already know and love.
+=
+(
+B8
+-
+B1
+)
+/
+B1
+A
+B
+C
+Orders
+Created Date
+Orders
+Orders Count
+% Change
+1
+2023-10-05
+401
+⌀
+2
+2023-10-06
+357
+⌀
+3
+2023-10-07
+347
+⌀
+4
+2023-10-08
+252
+⌀
+5
+2023-10-09
+282
+⌀
+6
+2023-10-10
+419
+⌀
+7
+2023-10-11
+406
+⌀
+8
+2023-10-12
+389
+=
+(
+B8
+-
+B1
+)
+/
+B1
+9
+2023-10-13
+332
+-7%
+10
+2023-10-14
+349
+0.58%
+SQL mode
+When you write SQL in Omni, our SQL Super Powers feature automatically parses and restructures your query. Your newly modeled concepts then become accessible in the field picker in the UI so you can efficiently reuse the logic in the future.
+We have a lot of people who are Excel power users and they love the ability to pivot quickly in Omni.
+— Griffin Tschurwald, Head of Engineering
+Read the case study
+Flexible components
+Customizable visualizations
+Omni has a large library of beautiful out-of-the-box visualizations that you can customize to your liking using our advanced editor, supported by VegaLite. You can also choose from flexible markdown elements to create stylized and dynamic visualizations made up of text, images, charts, and more.
+Fast and flexible embedded iframes
+Omni reports and dashboards can be embedded into the internal apps where your team is already working (such as Salesforce) and into your product to create more value for your customers. The embedded dashboards will follow the permissions you set in the app and Omni using SSO, so users will only ever see the data they're supposed to.
+Easy sharing
+Securely share content via URL, scheduled reports, or embedded iframes so anyone with permissions can access and act on data within their preferred workflow.
+Scalable platform administration
+Permissions
+Organizational administrators can manage user permissions and data connections to ensure security. Users can be granted varying levels of access at the connection level including no access, viewer, restricted querier, querier, and admin.
+User attributes
+User attributes make it easy to scale user management by mapping user-specific variables to actions such as querying, dashboarding, or general permissions. For example, you can use user attributes to restrict accessible rows of data via Access Filters.
+Expert data support
+You're the expert in your business and product, and we're your experts in data. Our team's here to help you with Omni, plus anything else you need to get the most out of your data, — whether that's introductions to partners, advice on building a data-driven culture, or support monetizing your data with in-app reporting.
+Learn more about Omni
+Business intelligence
+Explore data easily
+Build beautiful visualizations
+Rapidly share findings
+Learn more
+Embedded analytics
+Speed up product development
+Increase customer engagement
+Monetize your data
+Learn more
