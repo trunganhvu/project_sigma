@@ -11,6 +11,8 @@ Organize your Omni content with labels.
 Iterate and collaborate on changes in your Omni documents using a draft and publish workflow.
 📄️ Sharing content
 Share documents with other users in your Omni organization.
+📄️ Migrating dashboards
+If you need to change the connection a dashboard uses, this guide is for you. Instead of creating and building a new dashboard from scratch, you can use Omni's Content migration APIs to make the changes programmatically.
 Previous
 Timezone settings
 Next

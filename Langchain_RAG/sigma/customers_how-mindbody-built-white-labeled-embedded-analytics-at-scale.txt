@@ -1,0 +1,398 @@
+How Mindbody Built White-Labeled Embedded Analytics at Scale
+By Alex Klein
+PRODUCT MANAGER, MINDBODY
+The Industry 
+Mindbody is a wellness business that's focused on empowering wellness operators throughout the world through business management software. 
+
+If I’m running a wellness business, there are just a lot of things that I need to understand, both as a business operator and specifically as a wellness business operator. We're not dealing with tech companies; we're dealing with physical locations.
+With Sigma, you're able to essentially have world-class Series D software i-Framed into our core software and white-labeled where it looks like we've done the development.
+A yoga studio owner mainly just wants to be teaching yoga but also needs to survive as a business. And how do you survive as a business? You understand your economics, but then on top of that, your utilization. How are you utilizing your staff? How are your schedules optimized against the demand in the market? Our customers demanded comprehensive data insights to thrive in a high-churn industry. 
+Life before Sigma
+When I started at Mindbody, we faced two major challenges: improving our development velocity and providing a modern business intelligence UI for our customers. Mindbody has historically not invested heavily in having advanced reporting and analytics done in-house.
+Sigma is all about time to value.
+We realized that some people were paying more for their analytics providers than they were for the core software themselves. It seemed like an enormous opportunity to bring a lot of that in-house for our business as well. Not only because we could control the ecosystem, but also because it could be a major revenue and growth driver for our business as well. 
+Choosing a BI solution 
+Our legacy systems were highly splintered, at times inaccurate, not centralized, and difficult to develop against. Legacy in-house and external BI systems were not only difficult to develop against but also had significantly limited functionality upside. 
+The cost to maintain legacy systems and develop in less friendly BI environments — like needing to use specialty BI languages to build — proved more expensive in the long run than going with a solution like Sigma. 
+But then you start thinking about the longer-term costs — development costs to build your own LLM versus potentially being able to leverage something like Sigma’s Copilot that's going to be coming out. It’s being able to rely on a product team that's getting investments.
+We’re really thinking about: What kind of product team are we betting on? What kind of software do we want to use with a high-velocity roadmap? Those types of things became very important to us when we considered who we wanted to partner with for the next five years. The big bet was that Sigma is all about time to value.
+Life with Sigma
+We’ve adopted an entirely new embedded analytics approach, which is the bigger needle mover from our perspective. More and more customers are onboarding as we speak. 
+With Sigma, you're able to essentially have world-class Series D software i-Framed into our core software and white-labeled where it looks like we've done the development. That's the thing we haven't been able to achieve with other platforms. Also because Sigma is all spreadsheet-based, it's much easier to democratize data across the system.
+We've got more than 25k customers who then have more than 500k staff members across the world, all of whom should probably touch Sigma’s dashboards in some capacity or another.
+Value realization for us comes from two different areas: New customer sales, and the decrease in customer churn. The richness of our data products has taken us from a laggard in the market to a leader in the market and this not only creates sales traction but also increases stickiness. 
+The revenue opportunity from that is material.
+Finally, for enterprise customers, they want to customize this even more. At that point, the direction we’re going is essentially setting up a consulting relationship. 
+What’s Next With Sigma
+Sigma’s speed and velocity are unparalleled, at least from my perspective. Velocity and Sigma go hand in hand. 
+We've got more than 25k customers who then have more than 500k staff members across the world, all of whom should probably touch Sigma’s dashboards in some capacity or another. There isn't really a concept of done after that. We imagine just continuously bringing new data online for our customers across this enormous, enterprise-grade wellness management software. 
+Read more about how embedded analytics works in Sigma.
+‍
+ABOUT
+MINDBODY
+As a tech-focused wellness business, Mindbody launched embedded analytics at scale to replace outdated and traditional analytics platforms.
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

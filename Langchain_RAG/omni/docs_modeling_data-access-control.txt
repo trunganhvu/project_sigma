@@ -1,4 +1,4 @@
-ModelingData Access Control
+ModelingData access control
 On this page
 Data Access Control
 Managing Permissions in Model Files
@@ -142,6 +142,6 @@ joins:
   orders:
     user: {}
 Previous
-Parameters reference
+Model configuration
 Next
-Okta
+Topics

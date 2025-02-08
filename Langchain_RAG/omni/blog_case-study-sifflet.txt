@@ -1,0 +1,38 @@
+Sifflet case study
+Creating self-service data access for everyone in under two weeks
+March 14, 2024
+Sifflet is an all-in-one observability platform that gives its customers a birds-eye view of their data. With a platform purpose-built to help companies maintain data quality, reliability, and access, the France-based Sifflet team intuitively understands the positive impact data usage can have on everything from business growth and product adoption to productivity and collaboration.
+Sifflet’s Head of Product, Martin Zerbib, recently led the charge to find a business intelligence tool that would allow everyone to keep track of key metrics and explore data without the company having to hire a full-fledged data team. Having previously worked at Looker, Sisense, and Snowflake, Martin knew the data infrastructure landscape well and what he was looking for.
+After vetting several tools, Martin and the Sifflet team decided to go with Omni, which ultimately allowed them to:
+Get up and running in under a week: Martin was able to independently implement Omni and build Sifflet’s data model and initial dashboards in less than five days — while still staying on top of his other responsibilities at work.
+Make data accessible to the entire organization: The Product, Sales, Customer Success, Finance, and Engineering teams were all using Omni within two weeks of its implementation.
+Let users choose how to interact with data: Individuals can opt to get recurring reports delivered via email, analyze data with Omni’s point-and-click UI and spreadsheet-style formulas, or write SQL queries and promote changes to Sifflet’s shared data model.
+Key elements of Sifflet’s data stack
+Evaluation: Balancing governance with self-service
+Since its inception, the Sifflet team has been collecting sales and product data, but never had an easy way to access it. Martin needed to find a BI platform that would remove barriers to viewing, analyzing, and sharing data for every team, including less technical ones.
+"I really like Omni's hybrid approach to BI — bringing together usability and a strong modeling layer into a single tool. It fills a big gap."
+Martin Zerbib, Head of Product at Sifflet
+With ease of use at the top of his list of criteria, Martin quickly ruled out Looker. “I loved the product, but, from my experience working there, I knew it would be difficult to drive adoption,” says Martin. “Looker is a great tool for people who know how to model data, but it’s hard for everyone else.”
+Martin also considered Lightdash. “We were interested in Lightdash, but we discovered in the evaluation process that the tool had some of the same constraints as Looker. In Lightdash, we had to modify our dbt model in order to make changes to our dashboards. We wanted something that would easily allow our Engineering and Product teams to contribute to our model and wouldn’t require them to have data engineering expertise.”
+The Sifflet team decided to try Omni to make data modeling and exploration accessible for more teams. “Omni balances the best of Looker's code-based modeling layer approach with the best of Tableau's self-service workbooks — empowering a wider variety of users to explore and consume data without running into the pitfalls of complexity creep,” says Martin. “It resolved a lot of the issues we were seeing in other tools.”
+Implementation: A data model and dashboards built in a week
+Martin was able to build out Sifflet’s initial data model and dashboards in Omni in under a week, despite calling it a “side project” to his full-time role (at the time, leading the Solutions Engineering team). Martin focused on modeling sales data first, so that the team could get an overview of the pipeline and performance against quarterly goals.
+"The implementation was incredibly straightforward and very fast. We were able to build a dashboard on the very first day."
+Martin Zerbib, Head of Product at Sifflet
+“We had to do quite a lot of modeling at the beginning, so we really benefited from Omni’s modeling capabilities,” explains Martin. “We were changing the model almost every day at the beginning, and I discovered how easy it is to refresh the schema. It was great to just hit refresh and immediately see the changes and get the benefit — without having to do something like editing LookML.”
+Results: Every team at Sifflet has access to data
+Before implementing Omni, few people at Sifflet could view the data the company was collecting and monitoring, let alone make use of it. Today, the Engineering, Product, Finance, Sales, and Customer Success teams are all able to easily access and explore data in whatever way they choose. Martin walked us through a few of the key use cases across the team.
+"We're an organization that uses a lot of data but has a very small data team of one. Omni makes it possible for us to meet everyone's data needs efficiently."
+Martin Zerbib, Head of Product at Sifflet
+Sales
+Omni helps the Sales team and leadership at Sifflet stay on top of key metrics — bookings, average proof of concept (POC) length, POC conversion rates, quota attainment, ARR, and more — on both an individual rep and company-wide basis. Account executives and sales engineers don’t even have to log into Omni to view a dashboard. Sifflet automatically schedules reports with the relevant metrics to be sent to their inbox.
+Customer Success
+Customer success reps use Omni to measure overall product adoption, and to understand how individual customers are using Sifflet. “They look at things like how many models users are creating, where they’re running into errors, and which features they’re using. This data helps the team provide better support and get feedback that we can use in product development.”
+"Omni has been instrumental in empowering our Sales and Customer Success teams to gain deeper insights into customer usage patterns. With Omni, we efficiently identify inactive customers, tailor engagement strategies, and prioritize feature adoption. Additionally, Omni facilitates seamless collaboration with our Product team by providing granular data on customer usage, enabling us to drive informed decisions and enhance our platform to meet evolving customer needs."
+Matthieu Roques, Sifflet Solutions Engineer
+Engineering
+In addition to using Omni for product analytics, the Engineering team tracks run time and monitors the performance of Sifflet’s tech stack and platform as a whole. “We put Sifflet on top of our own data pipelines which generates metadata on the health of an asset and why things fail. When we want to get a deeper look, we use Omni.”
+Finance
+With Omni, the team built out a finance dashboard to monitor the financial health of the business and track important metrics such as CAC, growth rate, and ARR. “As an early-stage company, there’s a lot of value in showcasing our growth to investors and external partners, and Omni makes it really easy to build and share those reports.”
+What’s ahead
+Because Sifflet’s team is building a data product themselves, they’ve already started thinking through ways their own customers can benefit from Omni, too. Since Omni started offering embedded analytics, the Sifflet team has been exploring bringing Omni dashboards into their own platform to make it easier for end users to manage data quality with Sifflet.

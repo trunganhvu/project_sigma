@@ -1,3 +1,104 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Create actions that download and export data
 Suggest Edits
 Workbooks support actions that initiate direct downloads and exports to email, Slack channels, webhooks, and cloud storage.
@@ -15,14 +116,14 @@ Create an action that downloads an entire workbook, a specific page, or an indiv
 📘
 This action can only be configured and triggered by users assigned an account type with the Download or Send Now permission enabled.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Download and export.
 Destination Select Download.
 Attachment Select the workbook content to download, then choose a file type.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -33,7 +134,7 @@ Create an action that emails an entire workbook, a specific page, or an individu
 📘
 This action can only be configured and triggered by users assigned an account type with the Download or Send Now permission enabled.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Download and export.
@@ -46,7 +147,7 @@ More options [optional] Select the Include link to workbook checkbox to allow th
 [optional] Select the Run queries as recipient checkbox to run workbook queries as the recipient of the email. If deselected (default), queries run as the user who performs the action.
 [optional] Select the Send as .zip file checkbox to send attachments as a compressed zip file.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -57,7 +158,7 @@ Create an action that exports an entire workbook, a specific page, or an individ
 📘
 This action can only be configured and triggered by users assigned an account type with the Export to Slack permission enabled.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Download and export.
@@ -67,7 +168,7 @@ Message [optional] Enter a message to include in the Slack notification.
 Attachment Select the workbook content to export, then choose a file type.
 More options [optional] Select the Include link to workbook checkbox to allow channel members to open the workbook directly from the Slack message.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -78,7 +179,7 @@ Create an action that exports an individual element’s data to another applicat
 📘
 This action can only be configured and triggered by users assigned an account type with the Export to webhook permission enabled.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Download and export.
@@ -86,7 +187,7 @@ Destination Select Webhook.
 Endpoint Enter the receiving application’s endpoint.
 Attachment Select an element to export, then choose a data format.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -97,7 +198,7 @@ Create an action that exports an individual element’s data to cloud storage.
 📘
 This action can only be configured and triggered by users assigned an account type with the Export to cloud permission enabled.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Download and export.
@@ -107,7 +208,7 @@ Cloud Storage URI Enter a file path for the export destination.
 Element Select an element to export, then choose a file format.
 More options [optional] Select the Prefix file name with current date and time checkbox to include the export date and time (in ISO format) in the file name.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -116,3 +217,9 @@ Consider allowing keyboard navigation to trigger actions only when it facilitate
 RELATED RESOURCES
 Intro to actions
 View and manage existing actions
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

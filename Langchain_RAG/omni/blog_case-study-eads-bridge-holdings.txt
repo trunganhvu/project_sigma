@@ -1,0 +1,54 @@
+Eads Bridge Holdings case study
+Creating competitive advantage by bridging the gap between real-time insights for traditional businesses
+October 26, 2023
+During his 17 years working in Silicon Valley, Mark Valdez witnessed technology evolve at an extraordinary rate. Companies connected to the Valley’s tech ecosystem benefited tremendously from modern software with new capabilities, lower prices, easier adoption, and increased reliability and security, yet many traditional businesses outside of this ecosystem were being left behind.
+“Companies that operate outside of the tech industry still need technology. They’re actually starving for it. But they lack the insight and connections required to find, vet, set up, and maintain the digital products and services that would benefit them the most,” says Mark.
+Mark saw an opportunity to bridge this divide, and in 2021, he founded Eads Bridge Holdings (EBH). EBH acquires primarily owner-operated, traditional small and mid-size businesses (SMBs), partners with their existing management teams, and equips them with the best-in-class technology to create an inflection point for growth and profitability.
+One of the first steps to improving business performance is deeply understanding it. That’s why Mark set out to make it easy for EBH and its portfolio companies to answer one essential but surprisingly thorny question: “How is my business doing today?”
+In our interview, CEO Mark Valdez and VP of Technology Annand Sharma discuss:
+How software informs EBH investment philosophy
+Data as a competitive advantage - for businesses and investors
+Assembling a data stack without a dedicated data team or engineer
+Bringing modern business intelligence (BI) to traditional businesses
+Why EBH chose Omni after a year of vetting BI tools
+Key elements of EBH’s data stack
+Managing and growing business performance with software
+As Mark explains, “Software shapes everything we do from how we source deals and run our due diligence, to the value creation strategy we devise for each business and the people we hire internally. Not many firms have a VP of Technology like Annand on their founding team.”
+Unlike your typical private equity company, EBH’s goal is not to drive “exits”. The goal is to take businesses with existing profits and compound them over time using EBH’s Technology Playbook - a strategy of equipping formerly offline businesses with the right software and digital services for their unique industry, model, and team.
+From his career in Silicon Valley and his time at EBH, Mark has seen first-hand just how hard it is for SMBs to get essential information about their performance, which, in turn, makes it hard for EBH to know what’s working and what’s not to identify untapped opportunities for improvement.
+"Typically, investors rely on companies to provide business performance metrics, and it usually takes a lot of manual labor to do that regularly. When I started EBH, I realized how game-changing it would be if we could see how each asset is performing at any time, and empower the managers of those businesses to do the same."
+Mark Valdez, CEO
+Building a modern data stack for everyone
+Mark and Annand set off on a thorough vetting process to find tools to make this vision a reality. “The future goal is to be able to manage the entire EBH business from an iPad,” says Mark. However, the first step towards that vision is to enable business users at EBH and its companies to access and explore real-time data independently.
+"We're looking at data from multiple sources and businesses, so we need to have a BI tool with powerful, flexible data modeling capabilities that anyone can use."
+Annand Sharma, VP of Technology
+“Data is only valuable to the extent that it’s used,” adds Mark. “If people don’t look at the data or have to send an email to Annand every time they want to get an answer then it defeats the purpose of investing in tools.”
+Finding the right BI product took the longest, by far. EBH needed a tool that was trusted, quick to implement, and easily used by everyone - without the support of a dedicated data person or team. To assess potential solutions, Annand came up with the following criteria.
+EBH’s criteria for evaluating BI tools
+Criteria How Omni stacks up
+Fast ✅
+Flexible data modeling ✅
+Intuitive ✅
+Modern look and feel ✅
+Usable by non-technical people ✅
+Team with industry experience ✅
+Product with a long, established track record ✖️
+“The BI tools we looked into fell into two buckets: products that require users to write R or SQL to run queries, or what I’d call Excel in a browser,” says Annand. “Those tools, while familiar, also felt clunky and stiff, like they were built decades ago.”
+Some of the more modern tools didn’t have the speed EBH was looking for. “A lot of BI tools we looked at would take measurable seconds to load, and that immediately knocked them out of the running,” said Annand.
+After evaluating products in both categories, EBH met with the team at Omni to see the product. “I actually flagged Omni to Annand after the launch the previous year. It was super early at that point but we decided to take a look and see what had changed,” recalls Mark. The answer? A lot.
+Omni met all of Annand’s criteria, except one: Omni has a shorter track record than the big BI platforms they evaluated - making it feel riskier. But the pace of innovation, the expertise of the team, and Omni’s investment in EBH’s success clinched the deal.
+"The pace of innovation at Omni is really exciting. We know that what we're investing in today will look different in twelve months - in a good way - and we will get the chance to grow with Omni as it develops."
+Mark Valdez, CEO
+“The other thing I’d add is that the Omni team put a tremendous amount of effort into ensuring that we were successful,” says Mark. “It’s comforting knowing that we have a team behind us that is going to get us where we need to go.”
+Case study: Stokes Counseling
+The first use case for EBH’s data stack was to build a key progress indicator (KPI) dashboard for their first investment, Stokes Counseling. “They had no reporting prior to this,” explains Mark. "The company was effectively unaware of what was going on with these metrics.”
+At a minimum, they needed to give both the EBH and Stokes Counseling teams insight into what’s happening with the business on a day-to-day and week-to-week basis. Before they implemented a BI tool, EBH did this analysis manually.
+“Previously, we’d go into a system, get the raw data, export it into Excel, run our analysis and produce the graphs and charts there, export everything to a PDF, and put the PDF in Notion for the business managers to look at,” recalls Mark.
+To get an updated look at performance data, they would have to do it all over again. To make things more efficient, EBH had previously implemented a different BI tool, but it didn’t serve the use case well enough and it required more technical expertise at each portfolio company - something EBH knew wouldn’t drive the ROI and impact they sought out to make.
+"Replacing our previous BI tool with Omni gave us another level of insight and ease that we really need, internally and for our companies. Now, we're able to extend that impact across our companies to help them access data without requiring in-house data experts or tools. When the answers are at your fingertips, it really changes the game."
+Mark Valdez, CEO
+The data model Annand is building will allow the billing team and clinical directors at Stokes Counseling to answer key questions, whenever they need to, such as:
+How many patients are clinicians seeing each week over week?
+What’s the average revenue generated from those visits?
+Are insurance providers paying out at the right cadence?
+“Now with Omni, Business users can ask questions of the data, rather than just seeing high-level performance data,” says Mark. “That’s where the magic really happens.”

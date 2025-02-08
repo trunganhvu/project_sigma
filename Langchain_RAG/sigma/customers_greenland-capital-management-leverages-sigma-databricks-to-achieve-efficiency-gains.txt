@@ -1,0 +1,149 @@
+Greenland Capital Management Leverages Sigma & Databricks to Achieve Efficiency Gains
+About Greenland Capital Management
+Greenland Capital Management is an investment manager based in New York City. Founded in 2021 by Michael Englander, Greenland provides emerging portfolio managers with an opportunity to transform their distinct investment methodologies into successful investment businesses. The firm has 15 investment teams that maintain their own workflows and bespoke investment styles within the firm’s differentiated operating environment.
+THE CHALLENGE
+Technical Barriers Limit Portfolio Managers' Data Access
+Greenland aims to offer its portfolio managers (PMs) an unconventional incubation opportunity. Convinced that there’s no universal prescription for generating returns, the firm provides its PMs with tools to perform quantitative analysis and financial insights that help them execute and scale their specialized strategies with heightened conviction based on data analysis. These PMs join the firm with varying levels of technical expertise and partner with Greenland’s technology team to take their strategies to the next level. 
+At one point, we tried using an alternative platform to make it easier for them to work with data, but the time and resource demands of the platform were too high.
+—Nan Xiao, Chief Technology Officer at Greenland Capital Management‍
+The firm initially used an alternative platform to integrate its data for analysis but found that this approach created an inefficient workflow with its quantitative developers. As a result of the complexity associated with producing reports for its PMs, Greenland wasn’t positioned to offer the bespoke PM-specific reports that it wanted to. 
+“We wanted a way to help our PMs deliver analysis that reflected their own investment strategies and research processes,” recalls Nan Xiao, Chief Technology Officer at Greenland. “At one point, we tried using an alternative platform to make it easier for them to work with data, but the time and resource demands of the platform were too high. Plus, the reports weren’t responsive enough to changes in the market.” 
+Greenland began looking for a more efficient way to integrate data, and for solutions that would make it easy for PMs to work with data regardless of their technical background. By making it more efficient for PMs to engage with data, Greenland hopes to continue to add and grow successful investment teams. "A bespoke data environment and related insights should enhance our investment teams' process" Said Xiao. “We ultimately realized that if our teams kept using legacy tools, we would either have to require them to use a standard workflow that didn’t best reflect their style and mindset or assign development resources to each team to build them a bespoke system. Neither one was the ideal option.”
+THE SOLUTION
+Sigma & Databricks Democratize Data Access Across the Firm
+Greenland began looking for solutions that would enable all of its PMs—regardless of technical background—the ability to engage and leverage its data resources. The firm began its transformation by implementing Databricks Lakehouse Platform in just three months. Greenland now uses Databricks to deploy bespoke reporting systems automatically for its PMs. 
+With Sigma, we’ve reduced the hurdle of our PMs having to model the data before analysis.
+—Nan Xiao, Chief Technology Officer at Greenland Capital Management
+“We agreed with the Databricks philosophy that rather than just using our existing data warehouse, we needed to implement an all-in-one data platform that was built to enable more effective data engagement by our investment teams,” explained Xiao. “We’re not a software company that focuses on building APIs and offering web features. Our focus is data analysis and insights, and Databricks Lakehouse Platform has been exceptional for that use case.”
+Seeking to give PMs the power to work directly with data, Greenland then began looking for a new partner. At Databricks Data + AI Summit 2022, the firm began learning about Sigma’s powerful analytics capabilities. Greenland implemented Sigma within a short period of time and quickly increased the efficiency of its data activities.  
+“With Sigma, we’ve eliminated the hurdle of our PMs having to model the data before analysis. It looks and works like the spreadsheets our PMs are used to, but it gives them direct access to data without having to go through our developers. At the same time, Sigma allows our data engineering team to maintain strong governance over our data,” said Xiao. 
+THE RESULTS
+Greenland Achieves Broader Data Engagement 
+With Sigma and Databricks, Greenland is now helping to accelerate its PMs’ data analysis and insight generation. The firm uses the Databricks Lakehouse Platform to convert less refined data sources into a more actionable resource and make it available to Sigma for further analysis. PMs who can write Python code work directly within Databricks Notebooks, while PMs with less technical backgrounds access their data through Sigma. 
+We’ve built many of reports and dashboards in Sigma for risk management, performance tracking, alpha tracking, and more.
+—Nan Xiao, Chief Technology Officer at Greenland Capital Management
+Greater Efficiency for Financial Analysts
+Greenland uses Sigma to enable its investment professionals to make a greater contribution to their businesses and the growing firm. Despite lacking a development background, they can use Sigma to create various analysis tools in much less time.
+“Sigma accelerates our financial analysts' ability to make contributions,” Xiao remarked. “Our PMs are quickly adopting the tools our analysts build. Without Sigma, involving analysts on this level would be very difficult. We would have had to use our senior engineers to get the same results.”  
+Faster Onboarding
+Now that Greenland creates bespoke reporting systems for its new investment teams from a streamlined workflow, the firm can onboard these teams much more quickly. By making it more efficient for PMs to engage with data, Greenland hopes to continue to add and grow successful investment teams.
+Less Production Work for Developers
+Thanks to Databricks Lakehouse Platform, Greenland’s quantitative developers spend much less time translating PM ideas into code. This task is saving Greenland’s development team a large amount of time each month. With Databricks, Greenland has processed tables totaling millions of lines of data that have been analyzed in Sigma. 
+Easier Access to Data
+As Greenland continues to incubate new investment teams, its PMs benefit from enhanced ease of data engagement. “We’ve built many reports and dashboards in Sigma for risk management, performance tracking, alpha tracking, and more,” Xiao remarked. “Our PMs can now more effectively get hands-on with their data and deliver greater insights.”
+Top-Notch Support
+Greenland plans to keep innovating as it grows and expects its partners to keep up. The firm has been extremely happy with the support it has received from Sigma and Databricks. “Sigma’s live support services are extremely useful when we need help on the fly,” Xiao concluded. “Their entire account team has been fantastic. We get a similar level of care and attention from Databricks. This is a partnership that is off to an excellent start.”
+THIS DOCUMENT IS FOR INFORMATIONAL PURPOSES ONLY, AND IT DOES NOT CONTAIN ANY OFFER TO PURCHASE SECURITIES OR ANY INSTRUMENT. STATEMENTS CONTAINED HEREIN REFLECT FACTUAL INFORMATION AND EXPERIENCES, BUT THESE STATEMENTS ALSO INCORPORATE SUBJECTIVE JUDGMENTS AND PERSPECTIVES, AND NO GUARANTEE IS MADE THAT OTHERS WILL EXPERIENCE SIMILAR OUTCOMES. NOTHING CONTAINED HEREIN REFLECTS AN ENDORSEMENT OF GREENLAND CAPITAL MANAGEMENT LP (“GREENLAND”) OR ANY OF ITS PERSONNEL. THIS DOCUMENT DOES NOT CONTAIN INVESTMENT ADVICE, NOR DOES IT REFLECT ANY OFFER OF INVESTMENT ADVISORY SERVICES, OR ANY FORM OF INVESTMENT, LEGAL, TAX, FINANCIAL, OR ANY OTHER FORM OF, ADVICE OR RECOMMENDATIONS. NO REPRESENTATION IS MADE AS TO THE ACCURACY OR COMPLETENESS OF THE STATEMENTS MADE WITH RESPECT TO THE CAPABILITIES AND UTILITY OF THE SERVICES DISCUSSED HEREIN. STATEMENTS REGARDING GREENLAND’S INVESTMENT PROCESSES REFLECT SIMPLIFIED PRESENTATIONS OF COMPLEX PROCESSES; SUCH STATEMENTS ARE NOT COMPREHENSIVE REPRESENTATIONS OF GREENLAND’S INTERNAL PROCESSES, WHICH WILL EVOLVE OVER TIME. NO OBLIGATION IS UNDERTAKEN TO UPDATE OR MODIFY ANY CONTENTS HEREIN. NOTHING CONTAINED HERE IS A GUARANTEE OF FUTURE PERFORMANCE.
+BY THE NUMBERS
+1M+
+MILLIONS OF LINES OF DATA PROCESSED ON DATABRICKS AND ANALYZED ON SIGMA
+1000+
+THOUSANDS OF VALUABLE DATA INSIGHTS GENERATED
+Months Saved
+MONTHS SAVED IN ONBOARDING NEW INVESTMENT TEAMS
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

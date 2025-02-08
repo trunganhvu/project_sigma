@@ -1,0 +1,16 @@
+Analytics made faster with Apache Arrow
+BI tools should be fast.
+October 17, 2022
+Chris Merrick
+I will say it again, BI tools should be fast. Fast enough to keep up with your train of thought. Fast enough to let you get lost in your data and quickly find your way out, rather than waiting for queries to finish from the coffee machine.
+Speed is core to how we build at Omni, and Apache Arrow is part of our strategy for keeping it fast.
+Serialization Bottleneck
+If you’ve spent much time building data processing applications, you probably know that serialization and deserialization are speed killers. When your application writes data into a format like JSON, Parquet, or CSV, you’re serializing it, and reading it back into the application deserializes it into an in-memory representation like a Python dataframe or Java object.
+This can be slow, and the worst part is it’s pure overhead. Changing data formats doesn’t solve real problems, it just makes our applications happy. Sure, some formats are better for certain use cases than others, but it’s still just a means to an end. In my prior role as the CTO of Stitch, we made our pipeline 10x faster by removing intermediate serialization and deserialization; deserialize once on the way in, and serialize once on the way out.
+That’s where Apache Arrow comes in. Arrow is a data format optimized for analytics and standardized across many languages and systems. Let’s break this down:
+Arrow has a columnar layout optimized for processing many values from the same column in a table, which is common in analytics use cases. In a columnar layout all of the data for a column is in a single block in memory, so, to perform a SUM, the processor can rip through it from start to finish without skipping around from block to block. Modern processors even combine operations over multiple records to make things even faster.
+Systems that ‘speak’ Arrow can operate on Arrow data without paying the serialization and deserialization tax. Multiple applications can operate on Arrow data in shared memory without any transfer or format translation. And if transfer or storage is required, Arrow can be stored as a file or sent over the network in the same representation that it uses in memory.
+Straight to Arrow
+At Omni, our goal is to get data into Arrow as quickly as possible, and keep it there as long as possible. Omni’s query engine converts result data into Arrow as soon as we receive it from the database. We cache it in Arrow in our server layer. Our requeryable cache operates on Arrow directly, both avoiding reserialization and taking advantage of the columnar layout to operate efficiently. We serve Arrow to the user’s browser, and perform operations like filtering and sorting against the Arrow representation directly.
+This will get even faster in the future when databases start offering to return query results in Arrow format directly, meaning data will stay in the same format from the moment it leaves the database until it is rendered into a chart, table, or other piece of content.
+Let us know if you’d like to give it a try!. We look forward to your feedback.

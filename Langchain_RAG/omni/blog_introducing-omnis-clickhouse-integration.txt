@@ -1,0 +1,19 @@
+Introducing Omni’s ClickHouse integration
+Making it easier for customers to open new use cases
+July 2, 2024
+Jamie Davidson
+We built the Omni platform to help customers with all of their data needs, everywhere their data lives. We’re constantly listening to what customers want to do and where they want to do it — ensuring our development stays in lock-step with their needs. With this, we’ve seen the increasing popularity of ClickHouse, and today we’re excited to announce Omni support for Clickhouse Cloud. 
+Clickhouse was built to manage, view, and analyze huge volumes of data efficiently, making it a valuable backend datastore for various applications. Integrating directly with Clickhouse is particularly exciting because it opens up new use cases thanks to ClickHouse’s roots in real-time analytics and their rapid growth in areas like observability, business intelligence, and machine learning.  
+Middleware, for example, uses Omni and ClickHouse to power product analytics use cases. Omni’s just-in-time modeling workflow complements ClickHouse nicely because it allows for the structure of the core schema while enabling easy analysis of semi-structured data for all users in an intuitive interface. Together, this pairing brings flexibility and cost performance. 
+“Our engineers use ClickHouse, and everything they develop goes into JSON. Because Omni gives me a way to easily extract that JSON, we get to skip the discussion of what attributes they need. The combination of ClickHouse and Omni reduces the number of data tickets I receive and increases the speed at which engineers can get insights on the features they’re building.”
+Zach Michel, Co-founder @ Middleware
+Another use case we regularly see with ClickHouse is customer-facing analytics, especially when performance is paramount. When delivering an experience to customers, companies need to trust that the underlying data warehouse that powers dashboards will run fast. No one wants to wait for loading spinners, or worse, timeouts! ClickHouse optimizes for the speed and  concurrency needed to power user-facing products running on large data sets. Customers expect queries like these to return in 100 ms — often under high concurrency workloads, so delivering the best customer experience makes the underlying architecture even more important. 
+Omni designed our architecture from day zero to optimize for low latency, high concurrency use cases. Our aggregate awareness and query pipeline optimization are designed to scale horizontally without creating overhead.
+Connecting ClickHouse and Omni
+For joint customers, it’s easy to get started with ClickHouse and Omni, simply:
+Retrieve the connection credentials in ClickHouse
+Add the database credentials to Omni 
+Customize your settings
+You’re live 🎉 
+With that, you’re connected and Omni can automatically generate a model from ClickHouse! To learn more, you can follow these steps to generate a model.
+If you’re not already using Omni, we’d love to show you Omni in action and help you get started 🚀

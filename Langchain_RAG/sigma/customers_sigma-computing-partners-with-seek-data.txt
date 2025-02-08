@@ -1,0 +1,140 @@
+A vision for data apps: Seek Data explains why we “can’t afford to operate in a world of slow performance”
+By Erik Mitchell
+FOUNDER AND CEO, SEEK DATA
+Seek Data is both a customer and a partner of Sigma. We spoke with Erik Mitchell, CEO and Founder of Seek Data. Seek is a cloud-native application platform built on Sigma and Snowflake to make it easy for everyone to develop, distribute, and consume B2B analytics apps at scale.
+How Seek Uses Data
+Seek delivers industry-driven, turnkey applications to business users that deploy in minutes – rather than months – and are built by industry experts, as well as powered by industry-driven curated third-party data models.
+Sigma and Seek are truly the only combination in the market that allows you to bring together billions of rows of first and third-party data in a seamless manner. 
+For example, our customers might leverage data to proactively identify and solve out-of-stocks on shelves before they happen, while identifying the root cause to prevent them in the future. We helped a large CPG client identify ~$50M+ in annual opportunity to reduce their out-of-stocks across retailers, while identifying the root cause (like weather, events, or brand affinities) to optimize inventory in the future.
+Our platform is designed to solve the four biggest challenges to generating analytics ROI in today’s market. Those are: Time (we save people months); people (we connect consumers to apps built by experts so you don’t have to hire them);  and data (through Seek Enrich, we’ve already ingested, joined, and modeled the leading third-party data sources in your industry); and budget (we streamline the cost of data, teams, and more through our turnkey applications).  
+We leverage Seek Enrich to better hyper-target consumers for a DTC brand in retail.  By leveraging our proprietary Enrich capability, we’ve combined the best third-party data in the market to help a DTC brand find a path to doubling their ROAS.
+Life before Sigma
+For our business and our customers, scalability has always been a major consideration and concern as our data volumes have grown tremendously over the past few years. We can't afford to operate in a world of summary tables, aggregations, and slow performance. For our customers, minutes mean dollars, and legacy BI tools like Power BI and Tableau simply couldn't support the data volumes without tremendous time and effort put into building the 'right' datasets behind the scenes to optimize performance.
+Power BI and Tableau simply couldn't support the data volumes for our clients. Our industry can't afford to be limited by data size.
+Life with Sigma
+Sigma's execution of delivering an infinitely-scalable BI solution was the hook for us. The ability to drill to the lowest granularity - while still creating executive-level dashboards - was incredibly attractive for our business and for our customers. Our industry (retail & SaaS) can't afford to be limited by data size. Sigma removes the concern around the ability to gain insights from billions of rows at a time.
+I believe Sigma's vision for data applications will integrate seamlessly with what we are doing at Seek. 
+Sigma has empowered our customers to eliminate the need for heavy IT workloads, time, and effort dedicated to data engineering. That instead has allowed our customers to focus on finding the insights that will drive competitive advantage in their businesses.
+Sigma, combined with Seek's capabilities, has enabled our customers to go from region & metro-level personalization insights – like city level – to store and household level, driving significant increases in revenue, customer retention, and spending efficiencies in marketing and sales. 
+When our customers ask for new BI & visualization capabilities, Sigma delivers.  
+For example, by leveraging geolocation and brand affinity data, we were able to help a large CPG understand how vital their brands are to owners of short-term rental properties across the country – and identify exact property-level opportunities. That enabled them to create an entirely new strategy for the short-term rental audience and execute the strategy both directed towards the managers themselves, as well as with the retail chain locations in the surrounding areas. 
+Sigma Impact 
+There are so many reports and dashboards we’ve built that have impacted our decision making. It all comes down to a combination of the ability to combine industry-specific apps and data with the necessary granularity to drive hyper-targeted opportunities.  
+Our partnership with Sigma has accelerated our platform journey more than 12 months, while also impacting the day-to-day capabilities and execution of every one of our clients.
+Sigma + Seek is truly the only combination in the market that allows you to bring together billions of rows of first and third-party today in a seamless manner, add industry intelligence to that data to create row-level insights, and then visualize the data at its most granular level. 
+The Sigma capability is critical to the Seek platform - empowering our team to focus on what differentiates Seek in the market, rather than trying to build our own proprietary BI and visualization capability. Our partnership with Sigma has accelerated our platform journey more than 12 months, while also impacting the day-to-day capabilities and execution of every one of our clients.
+Sigma's ability to deliver enhancements within your platform has driven tremendous operational and efficiency gains for Seek. When our customers ask for new BI and visualization capabilities, Sigma delivers, and in many cases is ahead of the curve. This improves our ability to support our customers in meaningful ways, making it a great partnership for everyone involved.
+I believe Sigma's vision for data applications will integrate seamlessly with what we are doing at Seek. In the future, I’m excited about continued opportunities to drive data analytics as an industry towards a more ‘insight-driven’ world. In the future, the industry will focus less on amassing data, and more on leveraging data with industry-specific apps to drive insights at scale. 
+Read more about Sigma’s impact, or join our next live demo here.
+‍
+ABOUT
+SEEK DATA
+Seek Data is a cloud-native application platform built on Sigma and Snowflake to make it easy for everyone to develop, distribute, and consume B2B analytics apps at scale.
+More about
+Seek Data
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

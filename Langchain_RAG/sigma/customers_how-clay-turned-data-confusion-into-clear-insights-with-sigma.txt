@@ -1,0 +1,392 @@
+How Clay Turned Data Confusion into Clear Insights with Sigma
+By Josh Hanson
+DATA SCIENTIST, CLAY
+We had the opportunity to speak with Josh Hanson, the data scientist responsible for building the data stack at Clay. He shared how, before adopting Sigma, their data operations were scattered, making it difficult to gain insights from their rapidly growing data. Josh recounted the decision-making process behind choosing Sigma as their data analytics and BI solution and described the impact it has had on streamlining data access, empowering teams, and fostering a truly data-driven culture across the company.
+Life Before Sigma
+Before we adopted Sigma, our data analysis process at Clay was, to put it bluntly, disorganized. 
+Our data was brimming with potential, but without the right tools, it was locked away. We had an idea of the insights we wanted to unlock, but accessing and analyzing it was a cumbersome process. Everything felt disconnected. For example, we were running a self-serve growth function but had no visibility into what marketing channels were actually working. We didn’t have any way to track which channels were driving leads, sign-ups, or conversions. Our team had the ambition to leverage data to fuel our rapid growth, but without the right tools in place, we were flying blind.
+As a data scientist stepping into this environment, I knew we needed a proper infrastructure to track and measure performance. We had the raw data but no real way to turn it into actionable insights. And in today’s fast-paced environment, that just wasn’t sustainable.
+Choosing a BI Solution
+When it came time to select a BI solution, I knew the entire data stack had to be built around Snowflake. Snowflake was going to be our foundation because it provided the flexibility and performance we needed for scaling. The next step was finding a BI tool that could integrate seamlessly with Snowflake. I had used various BI tools in my past roles — Looker, Mode, Tableau — and honestly, I wasn’t thrilled with any of them. They all had limitations, whether it was their performance, flexibility, or ease of use for non-technical users. I wanted something better.
+Sigma was the first BI tool that I actually enjoyed using.
+That’s when I found Sigma. Initially, I was skeptical. Another BI tool? But after doing a proof of concept, it became clear that Sigma was different. It was built to sit on top of Snowflake and worked perfectly with it, offering the flexibility I needed while also being user-friendly for non-SQL users. The driving factor in choosing Sigma was its ability to empower everyone across the organization — not just data scientists but marketers, product managers, and support teams — to access the data they needed without always coming to me for answers.
+Life With Sigma
+It’s not just about volume anymore; it’s about smart, data-driven decisions that maximize ROI.
+Since adopting Sigma, the impact on Clay has been transformative. We’ve been able to build a truly data-driven culture, and that’s no small feat. One of the first things we did was set up analytics for our growth marketing team. Using Sigma, we were able to create dashboards that track everything from visitors to sign-ups, trials, and conversions across all marketing channels. For the first time, our team had visibility into what was actually driving growth. Bruno, our head of growth marketing, now has the data he needs to optimize channels, improve conversions, and drive results. 
+Another game-changer has been Sigma’s ease of use for non-technical team members. We’ve empowered teams like customer support and customer experience to build their own dashboards and track the metrics that matter to them. Our head of support can now monitor response times, conversation volumes, and even build attribution models that help improve our service. Our customer experience team uses Sigma to track product engagement, credit consumption, and identify churn risks, all in real-time.
+For me personally, Sigma has changed how I work. While I still use Python and Jupyter notebooks for some data science tasks, Sigma has become my go-to tool for quick exploratory analysis. It’s fast, it’s flexible, and it handles the data volumes we deal with effortlessly. I never thought I’d say this, but I actually enjoy doing exploratory analysis in a BI tool now.
+What's Next with Sigma
+Sigma has become an indispensable part of our data ecosystem.
+We have big plans for how we’ll continue to use Sigma. We’ve already started using it for more advanced self-serve analytics, and the goal is to enable every team to make data-driven decisions without needing a data scientist involved at every step. We’re also eagerly anticipating the upcoming Python notebook integration, which will allow us to handle even more sophisticated analyses directly in Sigma. That’s something I’m particularly excited about, as it will reduce the need for switching between different tools and streamline our workflow even further.
+Moving forward, we plan to expand its use even more across the company, integrating it into every aspect of our operations, from product development to customer success. The goal is clear: make data accessible to everyone and use it to drive smarter, faster decisions across the board.
+I can confidently say that with Sigma, the sky’s the limit for what we can achieve at Clay.
+ABOUT
+CLAY
+Clay helps combine 1st-party data, intent data, and 3rd party data from 100+ external enrichment in one place for people to do deep customer research.
+More about
+Clay
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

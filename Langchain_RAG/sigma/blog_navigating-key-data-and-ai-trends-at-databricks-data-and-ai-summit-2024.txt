@@ -1,0 +1,396 @@
+Blog home
+Navigating Key Data and AI Trends at Databricks Data and AI Summit 2024
+Mitch Ertle
+SENIOR PARTNER SOLUTIONS ARCHITECT
+Max Benjamin
+MANAGING PARTNER AND HEAD OF ANALYTICS, AIMPOINT DIGITAL
+Navigating Key Data and AI Trends at Databricks Data and AI Summit 2024
+
+Data Analytics experts and thought leaders Max Benjamin, Managing Partner and Head of Analytics at Aimpoint Digital, and Mitch Ertle, Databricks Partner Solutions Engineer at Sigma, are here to discuss the most important trends and themes at this year’s summit. Let’s dive into the future of data and AI.
+Mitch: Max, let’s jump right in.
+What key themes are top of mind for you this year to learn about at Databricks Data and AI Summit?
+Max: For me, I definitely plan to explore AI deployment and operationalization, particularly LLMOps, to understand how we can better effectively implement AI solutions at scale. Real-world applications, like dynamic pricing for retail, offer valuable insights into best practices and industry use cases. 
+Mitch: Absolutely, I echo those sentiments. The convergence of AI and data analytics is a pivotal theme. I'm particularly interested in sessions like "Introduction to DBRX and other Databricks Foundation Models," which delve into leveraging foundational AI models for driving innovation. Additionally, topics related to data sharing protocols and accessibility of AI, such as Delta Sharing and AI Functions in SQL, are key areas of focus for me this year. On the topic of accessibility of analytics and AI, I'm particularly interested in exploring embedded analytics and the opportunities it affords. This demonstrates how organizations can monetize data by integrating analytics directly into their products, or identify brand new ways to monetize data easier and more flexibly.
+Max, how do you see these themes shaping the future of AI and data analytics in the industry?
+Max: These themes are indicative of a broader trend towards democratizing access to AI and making data-driven decision-making more accessible to businesses of all sizes and all teams in the business. By leveraging advanced analytics and AI technologies, organizations can gain deeper insights into their data, optimize processes, and drive innovation. The future of AI and data analytics lies in empowering businesses with the tools and knowledge to harness the full potential of their data assets.
+Mitch: I couldn't agree more. The democratization of AI and data analytics remains a top priority of Sigma’s and key to driving widespread adoption and unlocking new opportunities across industries. As companies continue to invest in AI and data analytics capabilities, we'll see a shift towards more agile, data-driven decision-making processes, and multimodal tools that actually make these easier to use. Ultimately, these themes are driving a fundamental transformation in how businesses operate and compete in the digital age.
+Max, I’ve added your lightning talk to my DAIS agenda,  "Dynamic Pricing with Databricks and Sigma". What can I and other attendees expect to learn from it? Also, what are some other sessions you recommend?
+Max: During my lightning talk, you'll learn about cutting-edge dynamic pricing models, how to integrate them into data applications, and their role in driving profitability. This session will be valuable whether you are in the retail industry or looking to operationalize analytics. Another session I recommend for those interested in operationalizing AI is "A Practitioner’s Perspective on LLMOps," which offers valuable insights into managing AI models for long-term value. I'm particularly excited about sessions covering real industry applications through detailed case studies. Aimpoint Digital has outlined our top session picks in this blog.
+Mitch: Thanks so much Max. For those attending Data and AI Summit 2024, Join us to explore these groundbreaking innovations. Attend Aimpoint or Sigma held sessions (register in the DAIS App!):
+Tuesday 11:30AM - Dynamic Pricing with Databricks and Sigma by Aimpoint Digital: Empower your pricing strategy with real-time, AI-driven insights.
+Wednesday 11:40 - LLM-Powered BI: Turn Unstructured Data into Actionable Insights by The Jordan Company: Learn how to use the power of LLMs for transformative business intelligence and endless LLM-driven use cases.
+Wednesday 2:50PM - Self-Serve Analytics App Development and Data Exploration by Leadspace: Discover the future of dynamic data interaction and embedded analytics product development with Sigma and Databricks.
+Visit Aimpoint Digital at booth #18 for more information.
+Visit Sigma at booth #91 for sessions by Aimpoint Digital on these topics and more.
+—
+Aimpoint Digital is a market-leading analytics, data engineering, and AI advisory/solution engineering firm in the US and UK. They partner with innovative companies across various industries, helping them craft effective strategies for optimizing their data assets, modernizing their data infrastructure with Databricks, and developing impactful applications of GenAI.
+Sigma is the first and only cloud analytics solution built natively for the Databricks Data Intelligence Platform, redefining business intelligence with instant, in-depth data analysis on billions of records through an intuitive spreadsheet interface. Its write-back capability and comprehensive support system accelerate organizational growth and innovation. As the market growth leader in cloud data analytics, Sigma is the go-to application and workflow platform for cloud data applications.
+‍
+THE ULTIMATE KPI PLAYBOOK
+AI/ML
+Databricks
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -1,0 +1,393 @@
+Blog home
+Master Databricks Billing and Usage: How Sigma’s New Template Makes It Incredibly Easy
+Mitch Ertle
+SENIOR PARTNER SOLUTIONS ARCHITECT
+Master Databricks Billing and Usage: How Sigma’s New Template Makes It Incredibly Easy
+Try the Template Now
+Get excited: You can now harness the full potential of your Databricks environment with Sigma’s newest template. 
+Databricks recently introduced system tables in Public Preview, offering an unprecedented level of visibility into your data, billing, and usage patterns.
+While these tables provide a treasure trove of insights, extracting actionable information from them can be a daunting task for many users. That’s where Sigma steps in.
+We've developed a powerful Billing Usage template designed to transform this complex data into clear, actionable insights, making it accessible to everyone, regardless of technical expertise. With Sigma, you can now easily track, analyze, and optimize your Databricks costs and usage, empowering your team to make smarter, data-driven decisions in real-time. Ready to see how it works? Let's dive in.
+What Sigma's billing usage template offers
+This powerful template is designed to give you a clear, comprehensive view of billing for compute resources within your Databricks account. This template is essential for anyone wanting to understand Databricks billing and usage because it fully breaks down your spending, covering all computing aspects, including all-purpose, job, interference, and SQL warehouses. Everything is presented in a single, easy-to-understand dashboard, making it accessible to users of all technical backgrounds.
+The template ensures that no detail is missed by providing visibility across various workspaces within your account. This holistic view makes it simple to identify spending trends, spot inefficiencies, and make informed, data-driven decisions to better manage your technology budget.
+The billing overview doesn’t just stop at a high-level summary. It also dives deeper, offering insights into the specific SKUs being utilized on a weekly and daily basis. This level of detail is crucial for teams aiming to manage their resources effectively, avoid unexpected costs, and ensure that every dollar is well spent.
+How this template can benefit you
+This template is designed with practicality in mind. It utilizes fabricated data from Databricks system tables that closely mirror the actual data in your instance. The key advantage of this approach is that you can easily swap in your own data, allowing the template to generate insights specifically tailored to your account and workspaces.
+Enable the necessary schemas: Begin by importing our Databricks Python notebook to set up the required schemas within your Databricks instance. This step is crucial for establishing the foundation needed for Sigma to access and analyze your data. Detailed instructions are available in the Read Me tab of the Template, and you can also refer to Databricks documentation for further guidance.
+Swap in your own data: Once the schemas are enabled, our guide on data swapping will take you through the process of replacing the fabricated data in the template with your own. This ensures that the insights generated are specific to your account and workspaces.
+Customize the template: The template is fully customizable. Whether you want to integrate additional system tables from your catalog or make other modifications, our documentation provides the steps you need to tailor it to your unique requirements.
+Ready to Get Started? 
+Contact us here or through your Customer Success Manager to try the Databricks Usage Template in your environment.
+A special thank you to Tyler Spencer and Sully Clark for their contributions to building out this template and associated resources.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Cloud BI
+Product
+Databricks
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

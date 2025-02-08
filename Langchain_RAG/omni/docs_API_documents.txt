@@ -1,6 +1,8 @@
 API docsDocuments
 On this page
 Document APIs
+HEADS UP!
+The document APIs are in beta and may have future breaking changes.
 The document APIs allow you to interact with documents in Omni.
 Document object
 Represents a document in Omni.
@@ -34,12 +36,16 @@ Fields
 List documents
 Retrieves a paginated list of document items. This endpoint supports filtering, sorting, and cursor-based pagination.
 Basic request
+With includes
 Filters & sorting
 Pagination with cursor
 GET /api/unstable/documents
-curl 'https://myorg.omniapp.co/api/unstable/documents' \
+curl -X GET 'https://myorg.omniapp.co/api/unstable/documents' \
 --H 'Authorization: Bearer <TOKEN>' \
 --H 'Content-Type: application/json'
+
+
+
 
 
 
@@ -49,6 +55,12 @@ curl 'https://myorg.omniapp.co/api/unstable/documents' \
 Parameters
 Note: All parameters must be provided as query parameters.
 Parameter Type Required Default Description
+include
+string
+No X
+null
+Comma-separated list of fields to include:
+_count - Include favorite counts
 cursor
 string
 No X
@@ -84,7 +96,7 @@ folderId
 string
 No X
 null
-Id of the folder to filter results. Will only return documents within the specified folder.
+ID of the folder to filter results. Will only return documents within the specified folder.
 creatorId
 string
 No X
@@ -92,6 +104,35 @@ null
 UUID of the user who created the document(s). Retrieve user IDs with the List users and Retrieve a user endpoints.
 Response
 200 OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,8 +158,9 @@ Response
 
 
 
+429 Too Many Requests
 500 Internal Server Error
 Previous
 Folders
 Next
-Users
+Content migration

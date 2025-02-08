@@ -1,0 +1,30 @@
+Introducing “Create Mode” for embedded analytics
+Unlock business value by enabling your customers to build custom reports
+December 6, 2024
+Jamie Davidson
+When you give customers access to dashboards and reports, there are typically two stages. First, they're thrilled. But then they have more questions: 
+“Can we get this on a monthly basis instead of weekly?” 
+“How does Order Count look if it’s cut by Status instead of Type?” 
+“This chart for Orders is super helpful. Can you also add a chart for Revenue?”
+These aren’t just feature requests – they signal a deeper need. Customers don’t just want to see data. They want to interact with it, explore it, and get their own insights, without waiting for your team to make adjustments. 
+With Omni’s Create Mode, your customers can run analyses and build reports to get the answers they want – and they won’t need your team to pull data for every new question.
+In this example, users of Gleam, an eCommerce management platform, can view pre-built analytics or build their own custom reports. With Create Mode, Gleam allows its customers to:
+Create and save their own queries, workbooks, and dashboards.
+Analyze data using AI, a point/click UI, Excel calculations, or SQL. 
+Share insights with their team.
+Explore content created by their colleagues.
+Why go beyond pre-built dashboards?
+Customers are facing tighter budgets and greater scrutiny over every expense. They have to get as much value as possible from the products they purchase. Opening up more insight into product usage through self-service reporting is a great way to help them get and measure that value.
+By offering customers analytics within your product, you can boost customer engagement and create: 
+Competitive differentiation: Even if your competitors provide analytics, your users can go deeper with the AI, Excel, and point/click functionality Create Mode offers.
+New revenue streams: Offer a self-service analytics experience as part of higher pricing tiers, larger deal sizes, and bigger upsell contracts.
+Additional bandwidth for your customer success team: Instead of manually building and maintaining customer reports, your CS team can focus on more strategic projects. 
+How data teams are implementing Create Mode 
+Create Mode creates flexibility for your customers and your business. You can include it in your standard offering or at different tiers based on your customers’ needs.
+“Omni’s Create Mode aligns perfectly with one of our upcoming initiatives because it will allow us to offer deeper exploration to our most engaged customers. This premium offering will allow them to answer new questions instantly, without needing to submit additional requests to our team.”
+Chris Snyder, Director of Data Science @ ActiveProspect
+Deliver self-service analytics without building a BI tool
+When you open up self-service reporting for your customers, you kick off a strategic flywheel for your business that drives engagement, retention, and conversion.
+Create Mode starts that flywheel for your company – and implementing it is simple with Omni’s embedded analytics. 
+For customers already using Omni to embed analytics into your product, you can learn how to get started with Create Mode here and connect with our team on Slack. And if you’re not already using Omni for internal BI or embedded analytics, we’d love to show you how to get started.
+PS – Want to learn more about our recent product launches? You can register for our next Omni Live on December 11th: Omni 2024 Product Highlights.

@@ -1,0 +1,406 @@
+Blog home
+Semantic Modeling with Sigma
+Dillon Morrison
+DIRECTOR OF PRODUCT MANAGEMENT
+Semantic Modeling with Sigma
+SEPTEMBER 17, 2024
+I’m thrilled to announce the upcoming launch of Sigma’s newest functionality coming this October: Data Models. 
+Since Sigma’s inception, we’ve been the market leader for ad-hoc and self-service analytics. Sigma provides users with a window into their cloud data warehouse through a familiar Excel-style interface, so users of any technical sophistication can finally get access to their company’s data without going through a data analyst. With Sigma’s spreadsheet UI, customers like DoorDash, Blackstone, and US Foods conduct highly-performant analytics on massive, cloud-scale data. Our 1000+ customers and their amazing data journeys demonstrate the value that Sigma’s self-service capabilities bring to an organization.
+With the introduction of Data Models, we’re bolstering Sigma’s self-service capabilities with a robust semantic layer and all the benefits that come with it, including metric consistency, reusability, governance, versioning, and more. 
+Why now?
+Sigma has served our customers well for years without a full-fledged semantic modeling layer. Why is now the right time to build these modeling capabilities? 
+Providing users with self-service analytics capabilities inevitably leads to more data analysis across an organization. This is a great thing! It means that your team is getting value from your organization’s data, and you’ve created a powerful self-service environment. Give yourself a pat on the back! However, with more analytics and dashboards, there’s a greater chance that different users are defining the same metrics differently. As a result, we received feedback that users wanted a canonical definition for certain company KPIs. 
+In response to this feedback, we launched Metrics, and we immediately saw over half of our customers rebuild key workflows around this new object. Our customers quickly recognized the value of centralizing around a consistent definition of a key business metric in their business intelligence layer. They particularly emphasized the benefits of letting departmental team members define Metrics themselves without involving the data team or learning to write any code.
+For example, Our VP of Operations, Orla Clifford, knows the constantly changing logic and definitions of key business metrics better than any of our data analysts. She runs the business; she’s in the best place to define key company KPIs like “Enterprise ARR,” “Engaged Customer Count,” and “Net Dollar Retention.” She’s also the best person to update those metric definitions as our business evolves and we make changes to our Salesforce schema and field definitions. Sigma’s Metrics functionality allows Orla to define and manage those metrics, and she never needed to learn SQL or coordinate with our data team. She handled everything herself, with no tech bottlenecks or middlemen, just as she should.
+Stories like Orla’s encouraged us to deliver more functionality to help ensure consistency and reusability. It also encouraged us to do it in a way that deepens our strengths around self-service and business user empowerment. How did we do that? By starting with a few key principles:
+1) Built with a no-code UI for speed and accessibility
+Just like the rest of Sigma, users can build full semantic data models in an entirely no-code environment. This makes data modeling concepts accessible to central data teams, departmental analysts, and line-of-business owners. Business owners are closest to their problems. Like Orla, they understand their business logic best and should be able to define tables and metrics without learning to code (assuming you give them the right permissions). 
+This seems obvious, right? The users that are closest to the business know their calculations best. So why don’t other tools allow business users to define business logic and metrics? Historically, Analytics & BI tools have required users to learn complex or proprietary coding languages to create centralized business logic. They required this because expressing business logic and metric definitions required an understanding of the underlying properties of the tables in a database and the SQL required to pull that data. These concepts are prohibitively foreign to most business users, and for good reason. Most users shouldn’t have to learn SQL; they should spend their time working on their specialized jobs, where they can add the most value to their organizations. A sales rep should be working on their accounts, not spending time learning query languages. This is where Sigma’s unique Excel-style interface sets us apart. Sigma has already done the heavy backend work to translate standard spreadsheet syntax to SQL; it’s the core innovation upon which Sigma was built. So, with Sigma, users can express definitions in standard spreadsheet syntax (the true lingua franca of everyday analytics) rather than learning SQL or complex proprietary languages. 
+To layer on additional governance, admins can optionally set up approval workflows to designate specific users that must approve metric creation and edits before they’re pushed to the rest of the org. If you want your internal data analysts to approve every new metric that business users create, Sigma wants to fully support and encourage that workflow. Data teams should be able to decide on a per-team or per-user basis which users in your org can create, edit, and share metrics and models with the rest of your org. 
+2) Flexibility based your skills and your use-case
+Many organizations consider self-service and consistency to be opposite sides of a spectrum (many technical publications even prescribe processes to balance these extremes). Data teams have often felt as though they need to choose one at the cost of the other. They can provide unrestrained access to data to deliver self-service for their organization, but at the cost of inconsistent and inaccurate calculations (try asking four different analysts to calculate the same number for you). Or, they restrict their users' access to the data but ensure high-quality, consistent calculations with tools that require heavy upfront data modeling and offer limited ad-hoc abilities to any employee outside the data team. We’ve long lived in this world of perceived tradeoffs, and each organization has had to pick and choose what they care about most. 
+At Sigma, we believe this is a false tradeoff. Data teams need the best of those worlds. They should have the ability to offer their organizations unrestrained access to data by default, but also have the ability to introduce highly-governed metrics and calculations when and where consistency is critical.
+With Sigma, you can create governed data models for any department or use case, and keep the rest of your data open and accessible. Lockdown key metrics for your executives while empowering departmental users to run ad-hoc analyses on your warehouse tables. Clean and lockdown your 'active_customer' table for your revenue team, while leaving the 'event' table in its raw form for your curious, tinkering engineers. 
+Unlike many other tools, Sigma will never require you to model all your data up front. You can always opt to give teammates direct access to warehouse tables. You choose what data, when, and for whom to build semantic models.
+3) Integrated into the Ecosystem 
+Unlike other tools, Sigma is leaning into the data ecosystem rather than fighting against it. 
+You can define Metrics and other business logic in Sigma, then consume them wherever you’d like. Use Sigma’s upcoming Metrics APIs to pull metric values or definitions into notebooks, custom applications, or any other third-party tool. This ensures all your business logic is defined one-time, in one-place. No more duplicated logic across multiple applications. 
+“The dbt + Sigma partnership offers a perfect combination for our customers that want best-of-breed BI on top of a centrally governed semantic layer where all critical business metrics can be defined and managed in one place.”
+- Nick Handel, Head of Semantic Layer at dbt Labs
+If you’d prefer to keep your business logic outside of your BI tool because you want to avoid vendor lock-in, or you use your own homegrown metrics layer, or you simply prefer a standalone semantic layer, Sigma wants to fully support these architectures as well. We’re actively developing integrations with our standalone semantic layer and data catalog partners, such as DBTs Semantic Layer, Databricks Unity Catalog, Cube.dev, Atlan, and more. 
+“We’re thrilled to partner with Sigma to integrate their BI capabilities with our semantic layer. The Cube + Sigma solution is perfect for any company that wants all the benefits of a centralized semantic layer, with the industry-leading self-service capabilities of Sigma’s spreadsheet interface.”
+- Brian Bickell, VP of Strategy and Alliances at Cube
+In the near-term, you’ll be able to query these standalone semantic layers and visualize and share the results directly in Sigma. In the long-term, Sigma will provide bidirectional integrations with these tools to help you move your business logic to wherever it makes the most sense. You can define business logic in either Sigma or a separate layer, then seamlessly push and pull that logic between the two. You can choose when and where to keep your logic based on your needs and your skillset. And critically, this business logic will always stay synced, so there’s never any discrepancies between Sigma and the other tools in your ecosystem. 
+4) Leveraged for AI
+Lastly, the benefits of defining metrics and table relationships extend beyond Sigma’s classic workbook interface. Sigma’s AI features take full advantage of these concepts to improve suggestions and increase accuracy. When a user asks a question using Sigma’s Natural Language Querying interface, our AI will reference any Metric definitions and factor those into our output. 
+Think about a Metric like “engaged users.” Asking an AI copilot to calculate the number of “engaged users” in your app leaves all kinds of room for interpretation. Is a user that logs in everyday “engaged”? Or does a user need to take specific actions like completing a task list to meet the “engaged” criteria? Rather than leaving this up to the copilot, Sigma’s AI will leverage our existing metric definitions to ensure that we’re providing the most accurate and transparent answer possible.
+What’s coming next
+Data Models are just the start of the journey. We’re investing heavily in modeling and governance capabilities, with plenty of exciting projects on the roadmap: fanout awareness and prevention, data validation, unit tests, reusable visualizations, approval workflows, improvements to versioning, and more. 
+As always, we’d love to hear feedback. How does our approach resonate with your business and data needs? What can we do better? Are there any killer features you’d like to see? Let us know! 
+THE ULTIMATE KPI PLAYBOOK
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

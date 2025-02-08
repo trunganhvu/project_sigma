@@ -175,6 +175,6 @@ Select fields from each side of the join using the dropdowns
 The join type should be selected (nearly always LEFT)
 In order to count across tables correctly, enter the relationship between the tables. To make this easier we have added an inferrer that checks cardinality between data sets and will select for you (see below)
 Previous
-Parameters
+Measures
 Next
-Views
+Filters

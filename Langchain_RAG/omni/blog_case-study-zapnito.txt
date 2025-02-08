@@ -1,0 +1,39 @@
+Zapnito revamps its embedded analytics by replacing Looker with Omni
+How Zapnito migrated to Omni in less than a month with no disruption to customers
+November 7, 2024
+Zapnito’s embedded analytics is a core feature of its customer-knowledge-sharing platform. However, Looker, their previous embedded analytics platform, was no longer meeting all of their needs, so the team was keen to implement an alternative solution – one that offered a more modern experience and better customer support at a competitive price. 
+With Omni, Zapnito revamps its embedded analytics offering while saving the company money. In the future, they plan to unlock new revenue streams through Omni’s self-service analytics offering.
+Results
+Quick & seamless transition from Looker to Omni: <1 month migration with no disruption to customers
+Significant cost cutting from Looker embedded analytics
+Pain Points
+Lack of product innovation. Zapnito wanted to deliver a modern, innovative analytics experience to their customers, but they hadn’t seen significant innovation in Looker’s product.
+Difficulty accessing customer support. Embedded analytics are a core part of Zapnito’s product, so they wanted to work with a partner they could trust and build a partner relationship with.
+High costs. While they wanted to keep their embedded analytics product, they wanted to implement a solution with pricing that better fit their business model.
+The Challenge
+Zapnito’s embedded analytics help deliver more value to its customers through data. By providing customers with insights into user behavior, Zapnito helps customers connect their users to the right knowledge and experts, at the right time. This data is critical for Zapnito’s customers to measure ROI and turn activity into actionable insight.
+Jon Beer, Zapnito’s COO and co-founder, wanted to expand their analytics offering but was hesitant about investing further in Looker, their previous provider. Since Looker had become part of Google, the team wasn’t confident that the product would continue innovating. They’d also had some difficulty accessing close customer support, and their contract was expensive. 
+Zapnito’s data consulting partner, Andrew Searson at Shearwater Analytics, then introduced him to Omni. Andrew had already helped several partners migrate to Omni, so he felt confident they could deliver an exceptional embedded analytics experience with Omni while reducing costs.
+The Evaluation & Migration
+Zapnito’s Looker renewal was quickly approaching, which gave Jon a tight evaluation timeline. He needed to have a high level of confidence that they could (1) build the dashboards, (2) conduct quality assurance, and (3) ensure continuity for customers – all within just three weeks. 
+Through a short trial, they were able to achieve this confidence thanks to Andrew’s experience in Zapnito’s analytics and expertise in both Looker and Omni. 
+As a proof of concept, Andrew first built three of Zapnito’s seven embedded dashboards. “He built these really quickly,” Jon said. “Since he had experience in both Looker and Omni, the translation between the two was straightforward.”
+Then, Andrew thoroughly QA’d the dashboards. He ensured the Omni dashboards produced the same results as the Looker dashboards and that users could only see their own data.
+Once Jon decided to move forward with Omni, Andrew finished building and QA’ing the other four dashboards. Then, he passed it over to the Zapnito engineering team to bring the dashboards into the product.
+“It only took the engineering team a day or so to embed Omni within Zapnito,” Jon recalled. “The backend works quite similarly to Looker, so it was pretty easy to make the change.”  
+Altogether, within a month, Zapnito had fully replaced Looker with Omni – without any disruption to their customer experience.
+“It’s quite impressive that we were able to swap platforms and still deliver the same experience while cutting costs, all in 4 weeks.”
+Jon Beer, COO at Zapnito
+The Impact
+Cutting costs significantly
+By switching to Omni, Jon was able to replicate and improve Zapnito’s embedded analytics experience while saving the company money. 
+Gaining access to white-glove customer support
+Zapnito wanted an analytics partner they could rely on, especially since their embedded data product is customer-facing. With Omni’s customer support, they have direct access to a team ready to help anytime on Slack.
+“Because Looker’s been subsumed by Google, it’s not so easy to get access from Looker support. We found Omni’s support process to be a lot better – I definitely had the feeling that we’d be looked after.”
+Jon Beer, COO at Zapnito
+Providing self-service analytics to customers
+“Clients always ask me about how they can get access to the data and run their own queries,” Jon shared.
+ Omni recently launched Create Mode to help customers do just that. With Create Mode, customers can offer a self-service analytics environment for their users, where they can run their own queries, build their own dashboards, and save & share content throughout their organization. 
+Jon is looking forward to implementing this at Zapnito. “If we can offer that self-service experience, that’ll make customers really happy,” he says. “It’ll also save our customer success team from having to run ad-hoc queries. And since it’s a value-add for customers, we may even be able to add it as a monetization layer on top of our existing analytics offering.”
+“It felt like Omni was built to be an embedded product from the ground up.”
+Jon Beer, COO at Zapnito

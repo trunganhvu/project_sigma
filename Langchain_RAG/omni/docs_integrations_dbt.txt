@@ -27,7 +27,7 @@ dbt model descriptions will be added to the matching Omni view files. These are 
 If metadata changes in dbt, you’ll need to refresh the schema again in Omni to resync. This can be done via the model menu in the IDE, the connection page (either manual or on a cron schedule), or triggered via API endpoint.
 Sync dbt changes with schema refresh
 Schema refresh syncs downstream changes from dbt into your Omni model, pulling in field changes, new fields, new tables, etc. This eliminates the need to manually update the Omni model every time something changes in the layer below. To kick off a refresh, select 'Refresh Schema' from the IDE model menu, or use our API endpoint. Learn more about schema refreshes here.
-Pull dbt context and metadata into
+Pull dbt context and metadata into Omni
 INFO
 Note: When column descriptions differ between your dbt instance and your data warehouse's catalog, Omni prioritizes dbt's column descriptions.
 Pulling metadata from dbt into Omni makes it easier for analytics engineers, analysts, and business users to share context about what fields and tables mean, ensuring they're using the right things in their queries (and making tracing logic throughout the data stack very easy!). Omni pulls the following information from dbt:
@@ -58,7 +58,11 @@ The intended use of the dbt integration, is that you build all content and model
 These should be configured in Omni to mirror dbt (e.g. Production environment with a target name of “prod”, a development environment for each developer schema, etc.). This allows you to point Omni to production tables and schemas when in production, while also easily swapping to a development environment view to see how tables look in that context and how your associated content may be impacted. This can be done in a branch within the model, and will then point the omni_dbt schemas there.
 The core difference here is that you build on just one set of tables (with the omni_dbt prefix), rather than building two copies of a dashboard (one on public, the other on a development schema) and you can swap across the two seamlessly within a branch to see how things change and eliminate the duplication of work.
 As a result, to use the environment switching you have to be built on something dynamic (the omni_dbt* schemas) to allow for that swapping under the hood rather than the static schemas in the db.
-If you’ve already built a bit of content on your physical production schemas, you can run the dbt migrator. The dbt migrator will copy the existing logic you may have added in Omni from those physical schemas to the omni_dbt schemas, as well as replicate the relationships in the relationship file. Users will still need to update the model file with the corresponding tables, as well as use the content validator to cut over content successfully.
+Migrating Existing Models to dbt Virtual Schemas
+If you’ve already built a bit of content on your physical production schemas and you want to get started using the omni_dbt virtual schemas, you can run the dbt migrator. The dbt migrator will copy the existing logic from those physical schemas to the omni_dbt schemas, as well as replicate any relationships.
+For example, if you have custom dimensions defined on top of a model such as dbt__customers.view, running the migrator will copy those dimensions into the omni_dbt__customers.view file.
+You will still need to update your topics so they point to the new virtual schemas, as well as use the content validator to cut over any content that is referencing the raw table views.
+The migrator can be found in the dbt tab within the connection's settings:
 Common Troubleshooting:
 I connected to dbt, but I don’t see the omni_dbt schemas / I see the omni_dbt schemas, but they are empty
 When in a branch for a given environment, go to Model > Refresh Schema. If the schema folders are still empty, you should go and add a # to a table in each schema and check again.

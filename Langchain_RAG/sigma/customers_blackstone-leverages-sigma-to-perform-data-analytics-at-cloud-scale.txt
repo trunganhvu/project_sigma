@@ -1,0 +1,413 @@
+Blackstone Leverages Sigma & Snowflake to Perform Data Analytics at Cloud Scale
+The Challenge
+Growing Need for Ad Hoc Analysis & Self-Service
+Given its scale, Blackstone has various strategies which can all benefit from data and analytics at cloud scale. Finance team members have the financial knowledge but require additional technical expertise to operate their traditional BI tools like Tableau and Power BI, or for that matter, the more powerful Python tools. 
+The learning curve with other traditional BI tools is much higher compared to Sigma.
+—Han Zhang, Senior Vice President at Blackstone
+These tools are also somewhat limiting when it comes to ad hoc analysis. “Though the traditional tools are great with full scale dashboards or visualizations, they take away the raw data from the end user,” says Han Zhang, Senior Vice President at Blackstone. “The data isn't readily available in front of the user—it's stuck in either ‘view details’ or ‘other charts’ inside Tableau, Power BI, etc. For us, the need of the hour was ad hoc analysis over full scale dashboards.”
+The company also uses Excel widely. Finance team members are well versed with Microsoft Excel but using Excel is difficult due to the scale and complexity at which Blackstone operates. 
+Han and his team started looking for an analytics platform with the ease and flexibility of Excel, the compute power and speed of a cloud data warehouse, the ability to collaborate and work in real-time, and the security and scale of Blackstone. 
+THE SOLUTION
+Unlocking the Existing Pool of Knowledge & Creating A Happy Medium Between Tools 
+The limitations posed by Excel, Power BI, and Tableau, and the need for speed and scale led Blackstone to Sigma, a tool purpose-built for the cloud data warehouse and an analytics platform trusted by more than 500 data driven companies. Sigma’s simple and intuitive Excel-like interface instantly drew Han to the platform since the team’s primary requirement was ad hoc analysis—aggregate analysis involving Min, Max, Average, or Sum, and more sophisticated portfolio analysis involving Index or Vlookups on huge data sets that ran into billion row records.
+If you know how to use Excel, you can pick up Sigma very quickly.
+—Han Zhang, Senior Vice President at Blackstone
+With Sigma, they’re able to achieve data democratization by unlocking their existing pool of “Excel experts.” They no longer need dedicated technical experts and Tableau developers, and their Finance teams can self-serve and perform most of the ad hoc analysis themselves. 
+“I see Sigma as a happy medium between Excel, Tableau, and some of our traditional BI tools,” explains Han. 
+Currently, there are more than 700 active Sigma users analyzing million to billion row datasets, globally. In addition to solving for simple analysis at scale Sigma's Input Tables feature has opened up a world of new possibilities for Blackstone. Input Tables provides teams across the company with the power to directly add data to Snowflake, their cloud data warehouse, and take control of their data and analyses. Han tells us how they’re able to leverage it for ad hoc analysis without having to write custom logic back into the database. This saves them both time and effort as they no longer need to go back to a data engineer or an administrator. Blackstone has also embedded Input Tables in their internal applications. 
+THE RESULTS
+Live, Curated, & Controlled Data at Fingertips
+As one of the first alternative asset managers on Snowflake, and a heavy user of Sigma, Blackstone has been a true data pioneer that uses advanced analytics capabilities to power their business through portfolio analysis, root cause analysis, and scenario modeling. 
+I think the biggest value driver for Sigma is that you're not using specialized Python developers to analyze billion row records anymore. You're just adding an Excel user.
+—Han Zhang, Senior Vice President at Blackstone
+Leveraging the Full Capability of Snowflake
+Having jumped onto the cloud database wagon pretty early, Han and his team found out that none of their existing tools were able to leverage the full capability of Snowflake as an elastic computing database where you can grow and shrink your environment dynamically. However, this changed once Blackstone found Sigma, an analytics platform purpose-built for the cloud. “Sigma is a more governed and performant alternative to using an Excel connector to Snowflake,” says Han. 
+Input Tables: A True Game Changer
+While most traditional BI tools present data to you, Sigma’s Input Tables take data analysis to another level by presenting the users with a unique opportunity to augment that data by directly writing back additional data or their commentary to Snowflake. 
+Blackstone uses Sigma for a variety of use cases including ad hoc analysis, root cause analysis, mapping, forecasting, planning, and even embedding. They’re able to slice and dice data based on different geographical rollups, change parameters and original assumptions, and enrich the data for future analysis. 
+Han and his team have gone a step further and embedded Input Tables in their data stack and internal applications. They use it as a way to collect data as “data input screens were unnecessarily cumbersome to create in various applications.” Now, they’re able to combine it with warehouse views which gives them the ability to take those data inputs and then directly write it into the next downstream application. 
+Cost, Resource, & Time Savings
+The alternate asset management leader can log considerable savings across the board using Sigma. Compared to other tools, like Tableau, the learning curve is drastically cut short with Sigma. What would have taken a beginner Tableau developer weeks of training to come up to speed with Tableau, only takes hours with Sigma. 
+For more experienced BI developers, learning how to implement new calculations used to take hours of googling. With Sigma in-app support, picking up new techniques takes minutes with direct access to Sigma engineers.  
+Plus, the team did not have to hire additional analysts with a Tableau skillset to fully meet the demands of their Finance teams. Also, the move from the traditional BI tools to Sigma brought down the analysis time from days to hours, resulting in significant time savings. 
+Security & Governance 
+Sigma on Snowflake creates a single governed environment for regulated financial data, making compliance with its internal policies a lot easier. Blackstone, as Han explains, now has a single source of truth to more efficiently govern data and control who has access to that data. 
+All in all, with a secure and intuitive spreadsheet-like interface laced with new functionalities such as Input Tables, Blackstone is now able to unify data and business teams, conduct root cause analysis, and perform scenario modeling at speed and scale. Employees can run aggregate analysis on insurance loan portfolios running into billions of rows, FDIC bank suite datasets dating back to the 1930s, and leverage Blackstone’s cloud infrastructure to the fullest.
+‍
+BY THE NUMBERS
+700+
+700+ ACTIVE USERS ON SIGMA
+Billion Row Datasets
+MILLION TO BILLION ROW DATASETS BEING ANALYZED, GLOBALLY
+From Days to Hours
+FROM DAYS TO HOURS: INCREDIBLE TIME SAVINGS
+ABOUT
+BLACKSTONE
+Blackstone is one of the world’s largest alternative asset managers with $991B in assets under management. It serves institutional and individual investors through its businesses in private equity, real estate, credit, hedge fund solutions, infrastructure, life sciences, and others to deliver lasting value.
+More about
+Blackstone
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

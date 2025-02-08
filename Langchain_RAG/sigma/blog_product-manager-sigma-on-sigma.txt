@@ -1,0 +1,409 @@
+Blog home
+How The Product Team Uses Sigma At Sigma
+Zalak Trivedi
+PRODUCT MANAGER
+How The Product Team Uses Sigma At Sigma
+The typical day of a product manager at Sigma is fast-paced and varied. One moment you’re gathering customer feedback to refine features, the next you’re in standups with engineering to ensure smooth sprint execution. By the afternoon, you might be collaborating with sales teams on customer roadmap presentations or diving into long-term strategy planning for the next fiscal year. It’s a role that requires constant context-switching, and having the right tools can make all the difference. For me, Sigma has been that tool.
+Breaking free from traditional BI limitations
+Traditional BI tools often require heavy reliance on SQL, LookML, or other teams, which creates delays and inefficiencies. Early in my career, building Oracle BI dashboards was clunky and slow. Tools like Tableau and Power BI improved the experience but still demanded technical skills or dependence on others. For a product manager, simple tasks like filtering or slicing data often involved filing requests and waiting for assistance, which impacted agility and delayed decisions.
+When spreadsheets met the cloud: Discovering Sigma
+In my previous role, our company was looking for a BI product, when someone from Sigma reached out. As a buyer, the spreadsheet interface immediately stood out. I love spreadsheets. I consider myself a power user of Excel and Google Sheets. When I saw Sigma’s interface, I thought, “Well, I don’t need anybody. I can use spreadsheets all day.”
+As I started digging in more, the amount of things I could do myself without actually writing SQL or relying on somebody else was eye-opening for me.
+How Sigma superpowers product managers: Five key use cases
+Sigma has transformed my day-to-day work in many meaningful ways. Here are five specific use cases really illustrate its impact for product managers:
+1. Crushing the wait: Empowering self-service analytics
+The main point I cannot emphasize enough is you can do so much more on your own. If you are an average technical user who doesn’t code—which most PMs are—Sigma 10x’s your output. If I have the right tables available to me, I can create dashboards, find insights, and slice and dice the data in ways that make sense for my analysis. I’m not reliant on anyone else.
+For example, we introduced a new functionality for version tagging. By ensuring all the raw data tables are available to me, I can analyze how many customers are using it, how many tags have been created, and how often a tag has been used on a workbook. I can also slice and dice by time periods, customers, or different uses of version tagging—all without relying on anyone else. A process that used to take weeks now takes me 30 minutes, freeing up my time to focus on other parts of my role. We’re done, and we’re moving on to the next thing.
+2. Building the future: Roadmapping and strategy
+Sigma offers a feature called input tables—think of it as an empty spreadsheet powered by a warehouse. Any process you’d typically do in Excel or Sheets can be done collaboratively in Sigma. All our project planning happens in Sigma because we can create separate tabs for different teams in one workbook. For instance, I have an embedding tab where I list:
+All my projects
+What they mean
+Customer outcomes
+Alignment with company priorities
+Engineer and designer assignments
+It’s a complete, 360-degree view of the project. I can link documents, Confluence pages, and Jira tickets directly into the table. If an executive wants to check in on my Q4 embedding work, they can go to that tab and find all the information at the right level of granularity.
+We also use this same tab to plan the next quarter’s projects. This approach enables the entire company to view, provide feedback, and collaborate, ensuring we build a roadmap that aligns with customer needs, company priorities, and principles.
+3. Listening loudly: Streamlining user research
+With Sigma, user research is simple and straightforward. Information like what actions customers are performing and where they’re clicking helps our team determine the best candidates for product research. For example, if I’m rolling out a new embedded analytics feature tailored to admins, I can easily filter and identify the best candidates for research.
+Once I’ve selected the best candidates, I organize everything in Sigma. I create an app with a list of questions and capture answers during the discussion. I can also link the recording, artifacts, or assets shared during the process. All this data is loaded into the warehouse, making it instantly and immediately available for analysis. After interviewing 20 users, I can analyze their responses alongside quantitative data to make informed decisions.
+4. Building data apps: Streamlined solutions for complex needs
+We’ve built several data apps in Sigma that simplify workflows and drive efficiency. One of the first apps is the "Voice of the Customer", which tracks user research activities. This app allows us to log customers who’ve participated in research, track the topics discussed, and compare insights across similar research efforts. By centralizing all this information, we can identify evolving customer needs and ensure no research opportunity is missed.
+Another critical app is the "Escalations Tracker." This app streamlines how we handle urgent customer requests that bypass our standard planning process. Any escalated issue is tracked, prioritized, and reviewed by product management and leadership. This ensures immediate attention while maintaining transparency and accountability.
+We also developed a "Private Beta Management" app. Previously, enabling private beta features involved a cumbersome process requiring multiple tools and manual updates. With this app, customer success representatives can fill out a simple form, and I can enable features with a single click. This cuts down a multi-step workflow into one that takes seconds, improving response times and customer satisfaction.
+5. Mastering organization: Advanced project management
+Sigma plays a central role in enabling project management. Using Sigma’s input tables and actions, I’ve built workflows that align with our needs while remaining flexible for iteration. For example, I create projects within Sigma that include detailed descriptions, goals, and timelines. Each project tracks associated tasks, assigned owners, and progress updates. Permissions can be set to ensure that team members only see tasks relevant to their responsibilities, minimizing unnecessary distractions. Additionally, Sigma’s interconnected workbooks allow me to link data across related projects, providing a unified view of dependencies and timelines. This streamlined approach eliminates the need for multiple external tools, making project management more efficient and centralized.
+The Sigma advantage for product managers
+Using Sigma delivers three transformative benefits for product managers:
+Efficiency that multiplies impact: Sigma empowers me to operate independently. I can analyze data, build dashboards, and create workflows without waiting on technical teams. This autonomy means I can move from insight to action in minutes.
+Simplified workflows without the noise: By consolidating tools and processes into Sigma, I avoid the inefficiencies of context switching. Everything I need—analytics, planning, project management—is seamlessly connected in a single platform.
+Collaboration that fuels innovation: Sigma’s collaborative features allow teams to build on each other’s work. Apps like "Voice of the Customer" started small, but through team contributions, evolved into robust tools that drive better decisions.
+At Sigma, everyone is a data analyst with varying levels of skill. The tool ensures I’m not waiting for others to build dashboards or surface insights. As a product manager, it transforms my workflows—from planning roadmaps and analyzing user behavior to addressing customer feedback. Sigma’s flexibility, collaborative capabilities, and self-service design allow me to prioritize what matters most: delivering value to customers and creating impactful products.
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Inside Sigma
+Data Apps
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -1,0 +1,132 @@
+How SimpleTire Transformed Its Data Culture and Analytics with Sigma
+By Adley Amzovski
+VICE PRESIDENT OF ANALYTICS, SIMPLETIRE
+We spoke with Adley Amzovski, Vice President of Analytics at SimpleTire, a leading tire e-commerce platform committed to making tire buying simple and convenient for consumers. Recognizing the untapped potential of the company’s data, Adley led a significant transformation by transitioning from Power BI to Sigma. This shift has revolutionized SimpleTire’s data culture, driving widespread adoption of self-service analytics and empowering employees across departments to make data-driven decisions.
+Life Before Sigma
+Before adopting Sigma, our analytics capabilities at SimpleTire were limited by Power BI, which could not fully support our growing investments in real-time data pipelines, machine learning, and AI. Although the data was available in Snowflake, business users struggled to access it directly and customize their analyses. The unfamiliar syntax and lack of real-time access meant they heavily relied on the analytics team for even basic requests. This dependency slowed decision-making and prevented us from fully capitalizing on advanced analytics opportunities across the organization.
+Business users were frustrated. They knew we had the data and the potential for advanced insights, but accessing it was cumbersome and inefficient. Sales and marketing teams, for example, couldn’t track real-time performance seamlessly, causing us to react to changes rather than anticipate them. The analytics team, caught up in routine reporting and queries, had limited bandwidth for driving transformative projects in AI, machine learning, and predictive modeling. We needed a solution that would not only unlock the power of our real-time data and advanced analytics investments but also allow the entire organization to engage with data independently, accelerating decision-making and driving innovation.
+Choosing a BI Solution
+When we began searching for a new BI solution, our primary goal was to find a tool that could seamlessly integrate with Snowflake and democratize data access. We evaluated several competitors, including staying with Power BI, but none of them offered the intuitive, user-friendly experience that Sigma did. I was particularly drawn to Sigma’s Excel-like interface, which I knew would resonate with our business users who were already comfortable working with spreadsheets.
+The driving factor for choosing Sigma was its promise of self-service analytics—putting powerful, intuitive tools in the hands of our business users.
+The decision wasn’t made lightly. We conducted thorough evaluations, comparing functionalities, ease of use, and cost implications. What stood out about Sigma was its ability to provide direct, live access to our Snowflake data, eliminating the need for complex ETL processes and enabling real-time data exploration. Business users can generate their own insights without constantly relying on the analytics team.
+Life With Sigma
+We’ve gone from a culture of data bottlenecks to one of data empowerment.
+Implementing Sigma has been nothing short of transformative for SimpleTire. With Sigma, we’ve exposed curated data to the business in a way that allows teams to build on the foundations created by the analytics department. Business users are now customizing reports and dashboards to meet their specific needs, which has led to a significant increase in adoption across all our reports.
+For example, our sales and marketing teams can now track real-time performance data independently. They have the freedom to explore the data and uncover insights that were previously buried under layers of static reports. This autonomy has fostered a culture of innovation, leading to more dynamic strategies and improved engagement. Our forecasting data is now accessible to everyone, from high-level leadership to individual teams, allowing us to monitor performance metrics in real-time and identify issues—such as a low-performing product line—much earlier. This has enabled us to pivot and adjust our strategies quickly, maintaining our competitive edge in the market.
+From an analytics perspective, the transition to Sigma has allowed my team to elevate their role within the organization. We’re no longer bogged down by routine report generation and data wrangling. Instead, we’re focusing on high-impact projects, developing dynamic, interactive models that allow users to simulate different scenarios and explore various outcomes. This has positioned the analytics team as strategic partners, contributing directly to the business’s growth and success.
+What’s Next With Sigma
+Our goal is to transform Sigma from a BI tool into a robust data application that integrates deeply into our data stack.
+Looking ahead, we have ambitious plans for Sigma. We see it evolving far beyond its current capabilities. We’re exploring the potential for Sigma to power simulations, custom analytics solutions, and real-time decision-making.
+We’re also excited about the external applications of Sigma through embedded analytics. We’ve already started using it to share insights with our partners, improving inventory management and identifying bottlenecks in our supply chain. This external-facing Sigma portal has opened up new avenues for collaboration and positioned SimpleTire as an analytics leader in our industry. Moving forward, we plan to develop this capability further, creating valuable data products that will solidify our competitive edge.
+Sigma has not only transformed our internal data culture but also positioned us to lead in our industry through innovative use of analytics. I’m excited to continue pushing the boundaries of what’s possible with data at SimpleTire, leveraging Sigma to drive both internal efficiencies and external growth.
+ABOUT
+SIMPLETIRE
+SimpleTire is a B2B technology enabled platform that connects all the participants in the tire industry to drive better consumer experience and improve efficiencies. Manufacturers, distributors, tire installers, national retailers, clubs and fleets all engage on the Simple Tire platform to help deliver an improved experience to the online consumer — all the way from researching to buying to installing tires.
+More about
+SimpleTire
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

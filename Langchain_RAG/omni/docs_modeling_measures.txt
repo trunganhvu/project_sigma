@@ -339,4 +339,4 @@ From this, we can then build a filtered measure that includes this boolean field
 Previous
 Dimensions
 Next
-Filters
+Relationships & Joins

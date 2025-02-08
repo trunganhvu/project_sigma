@@ -1,0 +1,415 @@
+Blog home
+Challenges and Opportunities in Interactive Cloud Data Analytics
+Çağatay Demiralp
+CHIEF RESEARCH SCIENTIST
+Challenges and Opportunities in Interactive Cloud Data Analytics
+Data analysis is imperative for enterprises to leverage the signals from data to improve their business outcomes. Three major correlated forces act on enterprise data analysis today.
+First, more and more enterprise data is stored in the cloud. The decreasing cost of keeping data in the public cloud has been the primary driver of this trend.
+Second, the size and diversity of data available to enterprises increase faster than ever as a growing number of data sources (typically SaaS applications) feed into enterprises’ data stores. For example, even a small-size company can have several marketing applications regularly pushing new data into the enterprise’s data warehouse. Another aspect of this trend is the nature of the new data, which is increasingly semi-structured or unstructured, primarily text, including logs, but also, for example, sensor, audio, imaging, and video data.
+Third, the number of business users who would like direct access to cloud data is also rapidly growing. This boosts the demand for easy-to-use cloud data analysis systems (often simplified as self-service tools). An undercurrent to this trend is that spreadsheet applications, which business users have traditionally used, have become inadequate for data analysis as spreadsheets do not facilitate the analysis of live, large-scale, or unstructured data. For instance, a 5-column table with one million rows would quickly push the limits of many spreadsheet applications. Another reason for the expanding user base is the second trend above, which makes the data relevant to an even larger number of business users.
+In a positive feedback loop, these trends amplify each other’s effects, and we expect them to continue doing so. Below, we list six challenges around interactive cloud data analysis systems. These problems also present research opportunities to address them, of which we give examples.
+1. Performance
+Data analysis systems built on modern persistent databases, on-premise or cloud, are scalable in the sense that they allow large datasets to be stored, processed, and analyzed. For example, distributed databases can scale arbitrarily in principle through horizontal scaling of the hardware. However, this does not translate into interactive scalability, where the desired response time is typically under 1 second. Furthermore, cloud data warehouses (CDWs) organize data to optimize for high throughput scans and aggregations, which may not be conducive for performant point lookups. While users have different tolerance levels for different tasks (consider data export vs. resizing a window), anything above 1 second is likely to increase user attrition. Therefore, sustaining fast response time is critical for interactive data systems.
+Optimizing client-vs-server load Dividing the computation between the server (e.g., CDW) and the client (e.g., browser) optimally to improve performance is a critical, long-standing research problem in data systems. Cloud computing brings new challenges as well as opportunities to this problem, which can benefit from machine learning (ML) to develop new solutions and improve existing approaches. Currently, the compute resources of browsers are severely underutilized in general.
+Predicting what can be precomputed, prefetched, and cached Can we improve prefetching and caching with learned models? For example, if we can predict the response time of a query or its return size, we can inform our caching policies. Can we mine the historical workload patterns to minimize CDW fetches and enable further analysis at interactive rates?
+If we can predict what a user might be doing next during analysis, we can also bring the relevant data to the client and perform the necessary computations there. Research is nascent in this space, particularly in cloud settings, leaving a lot to be addressed.
+Assisting users with performance debugging Expressivity of a system, the degree to which it supports users to perform a wide range of analyses, can limit the reach of precomputation-based optimizations for performance, as users may express complex analyses never envisioned by the system for optimization. In many cases, however, users can themselves take actions (e.g., removing a filter) to improve the responsiveness of an interactive data analysis system. Still, current solutions often do not go beyond showing progress bars. Surfacing performance bottlenecks to users and enabling them to take action can ameliorate performance issues in many cases.
+2. Usability
+Interactive data systems that are powerful enough to support nontrivial enterprise data analysis are still difficult to use. The challenge is particularly true for non-technical users, who form the largest user segment. Relatedly, it takes a long time for users to learn a new system or become productive in using it. Users across personas, whether data analysts or business users, would benefit from a better onboarding experience with data analysis systems.
+Guided analysis Automated or guided analysis is one of the few tools we have in the long term to address usability challenges. Users can benefit from system help in every stage of data analysis. For example, users need help when they have no idea how to start their data analysis. They also need help during the analysis on how to best proceed to achieve their tasks. Automated analysis has been a focus of research and is implemented in commercial systems in various forms. However, most solutions have unproven effectiveness or come across as one-off demonstrations. There is little publicly available empirical data on how widely users adopt these solutions.
+An important research question is how to integrate automated or guided data analysis techniques within existing workflows of data-centric systems in general and cloud data analytics systems in particular. The current dichotomous approaches, the dangling (orphan) intelligent features or exclusively automated approaches, fail to provide an effective mechanism for leveraging, evaluating, and improving automated techniques.
+Goal-driven analysis Data analysis systems need to be better connected to the users’ end goals and should optimize for achieving these goals end-to-end. For example, for enterprise business data analysis, better support for defining key performance indicators (KPIs) and guiding users in achieving their KPI goals are necessary. In this context, business data analysis systems must be decision support and management systems. Decision options (e.g., experiments evaluating different business scenarios through what-if analysis) must be stored, tracked, and updated as core abstractions. This is a vastly underexplored, multifaceted engineering and research problem.
+Safeguarding (linting) decision-making While empowering users by enabling easy access to data and data analysis is a big step forward, it does not guarantee the quality of outcomes. Broad audiences of users often lack proper data education or literacy, making it difficult for them to have confidence in their decisions. Can we ensure data governance (confidence and consistency in decision-making) without creating additional layers of abstraction over data, disempowering the very same users? Tools guiding and nudging users can also play an important role here.
+3. Discovery 
+Finding the relevant data for one’s analysis is a challenge. This is already a difficult task for data analysts and is daunting for non-technical users. Hence, enabling easy and effective discovery of relevant data is increasingly valuable. It is common for an enterprise database to contain thousands of tables. A compounding issue is that many of these tables can be duplicates or previous (now stale) versions of other tables.
+The relevance of a document (table, dashboard, or workbook) is essentially a function of four parameters; the content, the usage (e.g., queries run on the document), provenance (e.g., how the content and usage have changed), and the task at hand. For example, in current data analysis systems, it is often difficult for users to quickly find what has been done with a given dataset.
+Also, existing solutions for search based on metadata indexing are not scalable. Neither are curated human-in-the-loop approaches such as data catalogs. Data catalogs are typically inaccessible within business intelligence (BI) tools, inadequate for surfacing relations that are not already known to users, and inflexible in capturing data semantics. We expect this problem to be more prominent with the prevalence of heterogeneous data stores containing extensive unstructured and structured data collections.
+Semantic search and discovery Search functionality in data analysis systems today is typically based on indexing textual metadata of documents using external indexing services such as Elasticsearch or Algolia. It is challenging to effectively search large tables based on their semantic content. Metadata-based approaches, where a human-in-the-loop process creates metadata, do not scale. In this sense, we are at the Yahoo-vs-Google juncture of search in cloud data analytics systems, where new techniques of a freeform search that do not rely on curation are needed. Vector search based on representation learning (embeddings) can be one of the many potential approaches to the problem that research can explore.
+Visualization for discovery Visualization has a vital role to play in data discovery because it can help users quickly view and explore what datasets are available to them and how they are related to each other and the tasks at hand. Visualization tools and techniques would benefit from being codesigned with the algorithmic and learned techniques for data discovery. Interactive visualization interfaces also open opportunities to get user feedback to improve the underlying learned and algorithmic models for search and discovery.
+4. Integration
+Data integration has been one of the big pain points enterprises face historically. In the context of interactive cloud data analytics, integration challenges concentrated around helping users understand the relations between data sources and the compatibility (e.g., joinability and unionability) of these sources for dataset preparation and augmentation. In some instances, data can be combined after a series of transformations, which may be elusive for non-technical users. To help users, data analysis systems often rely on heuristics such as syntactic column header (text) and atomic type matching. Data-driven, semantic approaches can complement these heuristics and, for example, significantly improve inference recall. Providing adequate tools for guiding users to integrate and ready their data for analysis is also essential for data governance.
+Dataset preparation Discovery is the first step in readying data for analysis. However, even when users can easily find relevant datasets, combining them in a parsimonious manner for data analysis is a significant challenge. Data analysis systems need to help users find and augment the data relevant to their tasks, similar to the goal-driven analysis we discussed above. In this sense, data discovery and integration are tightly coupled and should be regulated together end-to-end by the data analysis goal of the user.
+5. Administration
+Cloud data analysis systems expand the number and the types of users who can access the data. Enabling broader data access brings new challenges to privacy, security, and costs, increasing the surface area of risks.
+Access control We need better abstractions/features to ensure privacy and security and manage user access control accordingly. There is tension between maximizing access and protecting security and privacy. Conventional access models are of limited relevance in cloud data analytics settings. It is unclear how access control should propagate across derived datasets and artifacts (e.g., dashboards, embeddings) or across distributed systems such as the data analysis system, the identity provider, and the CDW. Furthermore, data analysis systems need to support access policies that are more granular than individual datasets, such as row- or column-level access policies.
+Conversely, multi-tenant cloud systems also present opportunities for sharing and exchanging data across enterprises. What are the practical models for exchanging data across enterprises? Addressing this question is essential for making the most of our collective data.
+Out-of-box observability Data analysis systems would benefit from efficiently tracking data- and user-workflow provenance for observability. This opens opportunities for delivering better user management and access control features, helping users debug their data analysis, and training high-capacity machine learning models to augment systems and tasks.
+Cloud billing management As enterprises move their infrastructure to cloud services, the pay-as-you-go model of computation has advantages for reducing startup costs. However, it makes them sensitive to billing costs for cloud services. There is an opportunity to augment cloud data analytics systems to help enterprises manage their billing costs and optimize cloud services for minimum cost. Support for cost efficiency can be equally important for an individual user because we see customers of cloud data analysis systems forwarding their costs to users in some instances.
+6. Infrastructure
+Data analysis systems on the cloud are under continuous development. Since software updates are instant, there is general business pressure to regularly add new features and services while maintaining and improving the existing ones. Developing, debugging, testing, and managing cloud services can be painful.
+Developer tools for the cloud Existing development tools are not designed with cloud computing in mind. Developing and managing distributed web applications and microservices can benefit from a new tool stack for the cloud. For example, recent work on a database-oriented operating system and tooling around it can offer abstractions that can be useful for researchers to build on and extend.
+Better machine learning lifecycle While machine learning has great potential for improving user and system tasks in data analysis systems, efficiently deploying models is a challenging problem. How can models learn from patterns across customers in multi-tenant systems? How can models share training data from different customers? Do we need to develop a separate model for each customer for domain adaptation? How can we enable end-user customization of the models and their predictions?
+In-database machine learning Challenges in sandboxing model training and serving have become a rate-limiting factor in adopting ML in the current multi-tenant cloud settings. Running ML models in the database can benefit from the time-tested built-in access control mechanisms of the underlying DBMS to ensure data protection and privacy (e.g., GDPR and HIPAA). It preempts and simplifies many privacy and security concerns, along with associated contractual hurdles in ML model development and serving, not only for enterprise data analysis systems but also broader data systems.
+In-database ML can also bring significant performance gains and potential reductions in computing costs by avoiding data transfers outside the database for inference. However, there are a few challenges that would benefit from further research. The developer experience with stored procedures suffers from hurdles similar to microservices and distributed web applications. Also, using specialized hardware such as GPU and TPU within stored procedures or user-defined functions is not possible currently without losing some of the benefits of the underlying approach.
+Architecting for extensibility How do we design cloud data analysis systems that are easier to use while being expressive and extensible? This question would benefit from systematic studies. For example, research can start by surfacing and operationalizing the insights buried in discussions of research papers and design decisions of successful systems and contribute patterns for designing extensible systems. Designing extensible and evolvable data systems is crucial for creating “whole-product” data analysis solutions.
+Representation learning Having efficient semantic and contextual representations of data, users, and their tasks (queries, for example) is necessary for addressing the challenges above. Transfer learning, particularly through the plasticity of the transformer architecture, has greatly improved tasks in computer vision and natural language processing. The question is whether we can replicate this success for problems related to cloud data analytics. To begin with, representation learning for relational tables and queries is a harder problem than for languages and images. Nevertheless, it has the potential to transform data management and analysis completely, automating and improving data analysis workflows from data discovery to data visualization to decision-making with models learned from massive cloud user data.
+Conclusion
+Our list above is grounded in and biased by our experience and what we consider important. Regardless, interactive cloud data analytics is rich with many challenging research and engineering problems directly impacting users and enterprises. We are very excited about the future of cloud data analytics systems at Sigma Computing and hiring researchers and engineers to tackle many of these problems.
+Written by Çağatay Demiralp and Sigma Team. 
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -1,0 +1,21 @@
+Two opposing modes of business intelligence
+And why your organization needs both
+September 27, 2022
+Jamie Davidson
+Over the last few decades, Business Intelligence has oscillated across a spectrum of lightweight ad hoc analysis and centralized governed platforms. This has largely mirrored the advances and constraints of database technology.
+Workbook:
+On one end of the spectrum, there are workbook style tools typified by Excel and Tableau. These tools create immediate value. Analysts are able to slice and dice metrics creating reports and deriving insight. But everyone has experienced the inconsistency and proliferation of revenue.xlsx, revenuev1xlsx, revenuev2.xlsx. Analysis is easy but siloed. SQL running tools are a different user but with the same tradeoffs. What SQL analyst hasn’t created every permutation of their canonical base query for the business need. This metric for this product line, but in this region, for this time frame …
+Centralized:
+In contrast, the other end of the spectrum are IT managed centralized tools that provide a single source of truth and platform to govern analysis. Looker is the canonical example for this category and enables a modern approach in a category that is decades old. Centralized tools provide consistency but at a cost. To democratize access, they require building manual proprietary data models. Because every business is constantly changing, operations are changing, the data that is the exhaust is changing and requires continual investment. Like any other code base, a data model evolves and is subject to bit or model rot.
+Reality is more complex.
+Every organization has a need for both paradigms. Ad hoc analysis is necessary to understand the changing data. As ad hoc analysis is hardened, it should be possible to promote it into the centralized governed experience.
+The advances in modern infrastructure have only accelerated this need. Technologies like Snowflake and BigQuery enable cost effective replication of all an organization's data. Data is changing at a greater velocity than ever before.
+Consider a simple example:
+Ryan is a CSM at a SaaS startup, he does a quick analysis comparing his customers by looking at a combination of usage data, support tickets and Salesforce account information in a workbook. He thinks this could be a useful new measure of customer health. He shares the workbook with his manager Larissa and they find it’s helpful predicting potential issues and renewals.
+After a while, Maddie on the BI team starts to field requests from the sales team to look at “Ryan’s” health score. She decides to promote the new customer health definition to the Shared model so the entire organization can use it.
+After a few months, the metric makes it onto the CRO’s quarterly dashboard and eventually into board decks. To ensure good performance (and manage cost) the data engineering team takes this metric and ports it into dbt and computes a customer health fact table in batch in their ETL.
+Ad hoc analytics compliments centralized reporting. Omni is a new mode of BI that gives you the best of both worlds.
+As your business evolves, custom workbooks, with direct access to SQL, allow for exploration of both governed and not yet governed data. As that exploration proves useful, workflows can promote the logic to be shared with the rest of the organization. Eventually, the system can power transformational logic in your existing data infrastructure allowing for cost performance optimizations like batch updating aggregate tables.
+Evolution of a data model.
+The goal is to allow for the flexibility of ad hoc analysis in an Omni workbook context, with a centralized single source of truth within an organization's shared model. To make this interaction possible, Omni enables the promotion of Workbook logic to a Shared data model.
+Request access to see for yourself.

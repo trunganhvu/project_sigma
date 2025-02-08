@@ -43,6 +43,6 @@ Help us continue to improve the experience by rating the results.
 If the user closes out the Omni AI Query Helper the text history is deleted.
 This feature is enabled for all Omni customers and for all embedded instances of Omni. If you would like to have the feature turned off please contact: support@omni.co
 Previous
-Sharing content
+Migrating dashboards
 Next
 Querying data

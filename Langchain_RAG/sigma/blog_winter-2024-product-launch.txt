@@ -1,0 +1,449 @@
+Blog home
+Team Old School BI? Team New School AI? With Sigma, You Don’t Have To Choose
+Nijil Kuruvilla
+PRODUCT MARKETER
+Team Old School BI? Team New School AI? With Sigma, You Don’t Have To Choose
+DECEMBER 12, 2024
+Are you Team Old School BI or Team New School AI? Either way, Sigma’s latest winter release is built to give you the best of both worlds—seamlessly combining powerful AI capabilities with tried-and-true enterprise BI tools. 
+This launch also delivers infrastructure enhancements designed to maximize the performance of your data stack, offering data teams unparalleled reliability and speed.
+We’re continuing our mission to empower technical and business users, delivering tools that combine the perfect balance of innovation and dependability. Here’s what’s new:
+AI-powered analytics
+Ask Sigma
+AI Query 
+Operational reporting enhancements
+Flexible subtotals on tables and pivot tables
+Hierarchies and ragged hierarchies in pivot tables
+Export bursting
+Infrastructure and security updates
+Multiple identity providers (IdPs)
+Enhanced OAuth Security
+Database/catalog parameterization
+Sigma for Data Teams
+Write-back to Redshift via Input Tables
+Materialization improvements
+Dynamic tables materialization
+Dependent materialization
+Azure (Europe) and AWS (US East) regional expansion
+Read on to learn more, or watch the Winter 2024 Product Launch on-demand video to hear from our leaders as they showcase Sigma’s new capabilities.
+Accelerating data analysis with the power of AI
+Ask Sigma
+Ask Sigma is a natural language query interface that responds to your question while also guiding you through every step of the analytical process and giving you new ways to interact with the data.
+What sets Ask Sigma apart is its commitment to discovery, transparency, control, and a path forward for the user.  Unlike black-box AI solutions, Ask Sigma shows you exactly how it arrives at each answer—and gives you the option to edit any step of the analysis or even choose a different data source to start with. Ask Sigma highlights popular workbooks, relevant datasets, and even provides additional analysis related to your question. You can open any parts of the analysis into a Sigma workbook to dive deeper into your query.
+Ask Sigma:
+Enables self-service analytics
+Reduces interruptions to the data team
+Upskills less technical users
+Makes it easier to locate the right data and metrics
+Maintains organizational governance and security around how users interact with AI
+Learn more about Ask Sigma and how AI company Clay uses it to drive self-service analytics.
+AI Query
+Take full advantage of your cloud data warehouse's AI capabilities and unlock deeper insights directly within Sigma. AI Query lets you apply popular LLMs to you data through simple SQL functions, making advanced AI capabilities accessible while keeping your data secure and governed within your existing infrastructure.
+‍
+Ask Sigma and AI Query make AI convenient, flexible, and transparent, helping everyone on your team—from data analysts to decision-makers—tap into the power of AI.
+Operational Reporting That Scales
+Building sophisticated, flexible reports with pivot tables that scale with your business has never been more manageable.
+Custom Subtotals
+With Custom Subtotals, you can define subtotals at any level of a pivot table and gain more control over how data is aggregated and visualized. This feature provides the flexibility you need to create insightful financial reports and operational analyses.
+‍
+Hierarchies and Ragged Hierarchies
+Our enhancements to hierarchies make it easier for you to model complex organizational structures, including parent-child relationships. With these updates, you can create more detailed reports and perform ad hoc analysis leveraging your data's inherent structure. Hierarchies unlock a new dimension to Sigma’s powerful analytical capabilities, empowering you to dive deeper into your data.
+
+‍
+Whether you're analyzing regional sales performance or drilling into departmental budgets, you can now easily navigate multiple levels of data relationships.
+Export Bursting
+Automate the generation and distribution of customized reports at scale. Export Bursting ensures access to consistent data across your organization while saving time and driving efficiency.
+
+These reporting enhancements help teams create reliable, in-depth reports that support better decision-making without the complexity of legacy BI tools.
+Infrastructure That Adapts to Your Enterprise
+Our latest enterprise-grade infrastructure improvements ensure your data is always secure and accessible to those with the appropriate permissions.
+Multiple Identity Providers (IdPs)
+Seamlessly manage multiple data warehouses for different user groups via different OAuth providers. This feature makes handling complex organizational structures and external collaborators easier while maintaining strict security standards.
+Enhanced Security
+New support for JWT (JSON Web Token) and PKCE (Proof Key for Code Exchange) for OAuth authorization ensures your data is always protected by the latest security standards while simplifying integration with existing systems.
+
+Database/Catalog Parameterization
+Control data access with fine-grained isolation at the database or catalog level. This feature enables embedded analytics customers to have more precise governance, simplifying the management of complex data environments at scale.
+This collection of features gives you the tools to manage data access securely and at scale, offering peace of mind for enterprise teams.
+Tools for Data Teams
+We’re simplifying life for data teams with enhanced capabilities designed to boost efficiency, accelerate performance, and drive faster results. 
+Write-back for Amazon Redshift
+We’re bringing our write-back feature—Input Tables—to Redshift. Now, you can build scenarios, augment existing models, and comment and collaborate on your Redshift data directly within Sigma. This feature streamlines workflows by enabling users to take action on their data without leaving the Sigma environment, making the analytics process more efficient and reducing the need for additional tools.
+Materialization Improvements
+We’re introducing an integration with Snowflake Dynamic Tables and new Dependent Materialization schedules—built to scale with organizations with many creators. These updates optimize computational resources and streamline workflows, especially when managing complex dependencies.
+Regional Expansion
+Sigma will be available in more regions, including Azure West Europe and AWS US East, ensuring you can use Sigma wherever your data resides. Harness the full potential of your data in real-time, experience reduced latency, improved performance, and meet regional compliance requirements.
+These updates make it easier for data teams to build, manage, and scale their analytics, regardless of the complexity of their data environments.
+Sneak Peek: Data Apps
+Sigma’s latest innovation, Data Apps, transforms analytics into action. Built on your cloud data warehouse, these low-code applications bring workflows, decisions, and collaboration into one unified experience—without compromising on security or governance.
+Picture this: Sales reps input forecasts directly in Sigma. Managers approve them with automated notifications. Real-time, AI-powered insights enrich the data—all in one platform. Personalized views ensure every user gets exactly what they need, eliminating the need to jump between tools.
+With Data Apps, teams can simplify processes, collaborate seamlessly, and move from insights to outcomes faster. Stay tuned for the full launch in March 2025.
+See Sigma in Action
+Sigma’s latest updates bring you advanced AI capabilities, enhanced reporting, and secure, scalable infrastructure—all designed to help your teams move faster and work smarter.
+See the impact firsthand:—start a free trial, schedule a personalized demo, or join us at one of our upcoming events to see how Sigma transforms the way your business works.
+THE ULTIMATE KPI PLAYBOOK
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

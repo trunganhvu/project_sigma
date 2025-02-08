@@ -1,0 +1,47 @@
+How dbt and BI should work together: Omni’s dbt integration
+A seamless experience across dbt and BI to help you maximize both
+August 21, 2024
+Liam McCarthy
+BI hasn’t caught up to dbt. 
+dbt has brought best practices from software engineering into analytics, but BI hasn't kept pace with this evolution. In most BI tools, changes to your dbt models can break your analyses and require hours to fix. You’re unable to test your development dbt models without pushing risky changes, recreating content in a separate database connection, or exposing security risks. And if you want to push any logic from the BI layer down to dbt, you’ll have to find the SQL and copy & paste it yourself, without any help.
+These basic workflows should be table-stakes for BI tools, but most BI vendors have just scratched the surface of integrating with dbt — only pulling some basic metadata from your repo or offering a visualization layer that lacks any development features.
+dbt is powerful, but without a BI platform that leverages it effectively, you’re creating duplicative work and not getting the most out of either dbt or BI.
+From the start, we’ve designed Omni to optimize how you work with dbt. In this blog, I’ll share how we help customers use dbt + Omni together, including: 
+Embracing the dbt development workflow with Omni’s dynamic environments: Switching between dev/prod schemas in branches
+Enabling seamless change management between dbt and Omni: Using schema refreshes and content validation to keep Omni up-to-date with dbt, without breaking content
+Keeping Omni and dbt in sync with two-way integration: Pushing to dbt, Git controls, and more useful metadata syncing
+Embracing the dbt development workflow with Omni’s dynamic environments
+dbt’s development and production environments give you the ability to test your data transformations before shipping them. Dynamic environments in Omni bring this workflow into your BI layer by letting you switch between your dev and prod dbt environments. 
+When you enter a branch in Omni, you can specify which dbt schema you’d like to target – creating a “dynamic environment” that lets you switch between building upon your development models and building upon your production models. That way, you can see how changes you make in development mode will affect your analyses and visualizations before shipping to production. Here’s a quick walk-through:
+In contrast, other BI tools only lightly integrate with dbt and leave out key workflows like this one. For example:
+In Looker, you have two potential workarounds, but both are risky:
+Manually update the `sql_table_name` reference in LookML, risking accidental changes in production.
+Use user attributes to switch between schemas, requiring developer access to admin settings, which poses a security risk.
+Neither solution automatically picks up new models in your development schema or changes to the structure of existing models.
+Tools that aren’t model-based, such as Sigma, Mode, and Tableau, don’t offer a way to switch between dev and prod environments in the same database connection. You’d either need to: 
+(1) do duplicate work by setting up a separate “dev” connection to test your dbt models before pushing them to your “prod” connection, or 
+(2) risk making changes to prod models without testing how they might impact your dashboards.
+Enabling seamless change management between dbt and Omni
+Data is always changing – field names and metric definitions constantly need updating. One day, Revenue needs to account for a new product; the next day, your PM wants L7D Retention to be L14D Retention; and sometimes, you just need to correct your own spelling error (“User Coun”? 😅).
+Your BI layer shouldn’t need an overhaul every time you make a change in dbt, but often, it does. Every week, I talk to frustrated analysts/engineers who are making breaking changes in dbt, then spending hours responding to Slack messages with screenshots of broken charts and manually updating individual queries and dashboards.
+Omni makes it easy to keep all your existing content intact when you change underlying fields in dbt. After you make changes in dbt, you can refresh your schema (manually, on a schedule, or using our API to integrate with your dbt repo’s CI/CD workflow) to pull those changes into Omni. Then, all you’ll need to do is a quick find & replace in Omni’s content validator to rewire any outdated field references to the new field name, and your content will be as good as new!
+Other BI tools make this workflow quite cumbersome in comparison. For example:
+In Looker, any field names you change in dbt must be individually updated in LookML; there’s no “refresh schema” button to pick up all changes to your dbt models at once. That means each change you make in dbt requires you to remember to change that same field in Looker – so keeping your Looker instance in sync with your dbt models is a constant challenge.
+In non-modeled tools like Sigma, Mode, and Tableau, any changes to underlying fields must get updated in every table, visualization, or workbook – there’s no central place to find & replace all field references across content. This is because these tools don’t have a shared data model, so every piece of content is its own entity – and requires its own updating.
+Keeping Omni and dbt in sync with two-way integration features  
+Push changes to dbt
+Omni’s just-in-time data modeling workflow makes it quick and easy to iterate on top of your data model, and you will often want to push those new data model elements down to dbt. We built our "Push to dbt" functionality to make that process easy to do right from the BI layer.
+When you hit "Push to dbt", you’ll see (and can edit) the SQL definition of your current view and be prompted to open a PR to define a new dbt model, including refs to your existing dbt models. Then, once you get your PR reviewed and merged, you will have solidified that definition into your data warehouse layer. From here, you can use the schema refresh and content validator workflow to bulk-update Omni references that point to it. 
+It can be tough to model in dbt without getting to touch and feel the data as you go. With Omni, you can accelerate the modeling process by using the UI to visualize and analyze your data in real-time, and then push the logic down to dbt when you’re ready.
+Metadata syncing
+You’ve already worked hard building documentation into your dbt model, so you shouldn’t have to duplicate that effort in your BI tool. Omni will pull in key pieces of metadata so you don’t have to switch back and forth between Omni and dbt, including:
+Model and field descriptions
+SQL model code
+In addition, any changes to dbt metadata will be picked up by schema refreshes in Omni, so you’ll always have the most updated context while querying.
+Manage dbt code and BI code together with Git controls
+Your dbt code lives in Git, and your BI code can, too! Omni’s Git integration helps you manage both from the same place to keep your models governed. You can even have a single mono-repo, such that Omni will save all its code into an “Omni” folder in your existing dbt repo.
+Using dbt + Omni better together
+For too long, BI tools haven’t caught up to dbt, which has resulted in painful, repetitive work. 
+We’re fixing that.
+Omni’s dbt integration provides a seamless developer experience across both. Whether you’re splitting business logic across Omni and dbt, or Omni is just a lightweight layer on top of a highly curated dbt model, Omni integrates with core features of dbt to help you optimize both, together.
+We’re constantly building new features to help you work better with dbt + BI, so if you’re interested, you can stay up to date through our weekly demos. And if you’d like to learn more about how Omni can help you get the most out of dbt, we’d love to show you.

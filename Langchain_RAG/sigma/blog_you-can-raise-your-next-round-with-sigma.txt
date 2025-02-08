@@ -1,0 +1,396 @@
+Blog home
+You Can Raise Your Next Round With Sigma — Here’s How We Did It
+Orla Clifford
+VP OPERATIONS
+Jake Hannan
+HEAD OF DATA
+You Can Raise Your Next Round With Sigma — Here’s How We Did It
+
+It’s time for your company to fundraise. You’ve sized your market, defined your product’s differentiating factors, and proven your product market fit. The pitch deck is ready and investors are interested in talking. It’s showtime, right? Almost. The question you have to ask yourself is whether your Data Room is ready to support your pitch deck.
+With ongoing market challenges, including the lack of exits and high interest rates, a strong Data Room has never been more important. And we know firsthand — we just wrapped our Series D round and secured $200 million. 
+Here’s how we built our Data Room for Sigma’s investors — using Sigma. 
+What Is a Data Room?
+A Data Room is a collection of your business's underlying data, including your historical performance, MRR schedule, platform usage metrics, sales data, and your financial model. The intent is to help investors get up to speed on your business by giving them the information they need to do their due diligence on your company (and eventually write an investment memo to discuss with the rest of their team). Traditionally, companies used secured cloud storage and posted their data in a series of documents and spreadsheets for investors to download and analyze. 
+The challenges with that approach are well documented — not only the obvious issues around keeping your Data Room organized and secure, but also how to make sure that the thread of your story remains coherent as you provide additional data to answer questions throughout the diligence process. Most importantly, you need to ensure investors see your data's key points. After all, a spreadsheet isn’t a natural storytelling tool and investors don’t know your business the way that you do. 
+Having a well-organized, well-structured Data Room is a great way to impress investors and give them a sense of what it’s like to work with you. After all, investors are people, too, and making it easier for them to do their jobs is always going to be the right call.
+Why Sigma?
+At Sigma, one of our core Operating Principles is to always lead with data. We believe that taking a data-first approach that clearly lays out our opportunity — without hiding relevant details — sets the right foundation for honest and transparent conversations with investors. So, when it came time to start our Series D fundraising process, we started preparing our Data Room at the same time as our pitch deck. For us, the choice was simple — we were always going to use our product to showcase our story, but we also knew that using Sigma would give us the ability to securely share our data with investors, build our narrative, and deepen our relationships. 
+The Proof Is in the Product
+As a cloud-native analytics platform with a spreadsheet-like interface, we knew that investors could easily navigate our data using their existing Excel skills, but we also knew that we could draw attention to the key points of our story with interactive dashboards, reports, and visualizations. 
+We used dynamic text elements to articulate why things are the way they are, instead of words on a slide and a disparate spreadsheet. This was particularly important to us when we wanted to be transparent about the areas that we continue to work on — we didn’t want those to be a surprise lurking in our data. These dynamic text elements continue to update as a user filters other elements on the dashboard, keeping the story incredibly concise—less words, more data.
+Finally (for bonus points), we even allowed investors to experiment with their own versions of our financial model using input tables — we wanted them to see the art of the possible in the same way that we did.
+Nick Bunick, Principal at NewView Capital, shared his experience using Sigma during their due diligence process: “We had the privilege of using Sigma during our due diligence process. What impressed us the most was how easy it was to become fluent on the platform. We were able to refine our projections, visualize historical trends, and collaborate with the Sigma team only minutes after logging in for the first time.” 
+Inspect What You Expect
+Typically, when you share this data with investors, it’s hand-off-and-hope: Hand off the data, hope they get it right, and wait for more questions. With Sigma’s powerful telemetry and in-app reporting, we could see who was interacting the most with the data and what actions they were taking. This allowed us to anticipate their questions and post data proactively so that our story was built during the two weeks of diligence. 
+So, Did It Work?
+Well, you tell us. We ended up at a $1.5B valuation, putting us in a small club of companies that have seen their value increase in recent years. And while it was our product vision and market opportunity that drove that valuation and outcome, it certainly didn’t hurt that we had a well-organized and structured Data Room. 
+Jared Sleeper, Partner at Avenir Growth Capital was impressed with Sigma’s capabilities to share its data with investors. “We were delighted that Sigma opted to use its own product to share its data with investors,” he said. “The platform allowed us to do ad-hoc analyses ourselves without subjecting the company to follow-up emails, drilling down in ways that helped us better understand the business. It would be great if every company presented its data the way Sigma did, letting investors drill down to the raw underlying data rather than relying on carefully crafted presentations.” 
+If you find yourself in the same situation, our most basic advice for anyone starting a fundraising round is to plan and build your Data Room as carefully as you do your pitch deck. But, if you have a story to tell and you want it to shine, Sigma is the answer.
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

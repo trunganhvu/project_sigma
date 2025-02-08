@@ -1,0 +1,142 @@
+UnitedMasters: Revolutionizing Independent Music with Sigma
+By Kristi Oloffson
+SENIOR PRODUCT MARKETING MANAGER, CONTENT
+When it comes to music publishing, the power of retaining ownership and rights is reshaping artists’ careers.
+UnitedMasters, a leading software and services platform for independent artists, aims to help artists retain more ownership over their work. Senior data analyst James Francis Reihing recently received the Workbook Designer Award from Sigma’s inaugural Data Impact Awards, recognizing his innovative approach to using data in the music industry. 
+The company's offering spans from music distribution services to technology tools that help artists with their marketing solutions. With more than two million independent artists under them, UnitedMasters helps artists gain commercial success while retaining full ownership of the master recording rights to their music. But a year ago, when it came to managing their internal analytics, they described themselves as stuck.
+Before Sigma 
+From 2018 to 2023, UnitedMasters relied on a legacy business intelligence (BI) tool primarily utilized by a small group of SQL-proficient analysts. 
+"We had been using a legacy, well-known business intelligence tool for the past five years," said Christopher Sheehey, Director of Data Science. 
+This tool, however, was no longer supported by the vendor, meaning no bugs or feature requests would be addressed. Additionally, it required SQL knowledge to query data, which limited its use to a few members of the Data Science, Product, and Engineering teams.
+The company faced a critical decision: either renew the contract for their outdated BI tool, which would significantly hinder projects, like the in-development StatsCenter subscriptions dashboard, or find a new solution. UnitedMasters evaluated Sigma and three other business intelligence platforms. 
+"We found that Sigma has the best functionality across the various tested tools," Sheehey said. Sigma offered a robust non-SQL spreadsheet that worked well for non-technical teams, as well as the ability to query large amounts of data.
+Migration to Sigma 
+James, a key analyst at UnitedMasters, gathered a cross-functional team to evaluate the different BI platforms and ultimately led the vendor selection process, migration to Sigma, and post-implementation adoption. 
+The team aggregated data on the usage of all legacy BI dashboards and created a prioritized list of dashboards to migrate over to Sigma before the legacy BI tool shut-off date. They also exported all data from the previous tool so that any SQL query previously used in the legacy tool could be saved and later referenced in Sigma. 
+"One analyst successfully migrated our entire BI stack and dashboards in less than a month, without the need for external consultants. " Sheehey said. “How long do most BI platform migrations last? 3 months? 6 months? A year? James introduced a Sigma workbook that captured all of the SQL code and metadata from the legacy BI platform. It’s searchable. Filterable.”
+This efficiency saved the company an estimated 16 full-time employee months compared to similar migrations at other companies. Additionally, James optimized the use of Snowflake computing through materializations.
+“The workbook allayed stakeholders concerns that insights from a legacy dashboard wouldn’t be available in the new system,” the team wrote. “It was our data safety blanket. This allowed us to rebuild only the most important, most active dashboards during the migration.”
+"Thank you to Sigma for recognition of James’ work as part of the Data Impact Awards this year," said Pablo Jablonski, VP of Engineering at UnitedMasters. "Through James’s work, Sigma has now become an essential tool for understanding all of the data surrounding UnitedMasters’ artists and using that data to grow the business."
+Life with Sigma
+Once they discovered Sigma, however, the trains really began to run on time. Now, leadership “has more insight than ever before,” and “data science is doing actual science.”
+As the winner of this year’s Workbook Designer Award, Sheehey described James in the application as “the mythical 10x analyst.”
+Sheehey continued: “With Sigma, he's become a 100x analyst. His dashboards are impeccably designed and lead to countless big 'aha' moments,” Sheehey wrote in the application. 
+“James has introduced a class of workbooks that solve challenges that BI solutions aren't designed to solve,” Sheehey continued. “On the revenue side, the primary dashboard that James built led us to identify an additional lever to drive subscription growth, which helped us achieve our subscriptions target, with strong double-digit year-over-year growth in subscriptions. He has introduced a class of workbooks that are unlike anything I've ever seen before, workbooks that solve challenges that BI solutions aren't designed to solve. “
+Sigma Impact
+The impact has led to two fundamental improvements in the organization. 
+First, a subscriptions impact tracker now delivers daily updates on key performance metrics. By diagnosing specific user cohorts and their performance, the business can isolate exactly which cohorts are driving improved results and which ones may require deeper investigation. 
+Second, the Product, Marketing, and Music teams are all unblocked from getting the insights they need. All of this has freed up the data science team to partner with Product and leadership on any questions that require advanced statistical analysis. 
+“This has already led to us more effectively pricing our investments in artists,” the team wrote.“ Previously, our data scientists were chart-makers.” 
+UnitedMasters' journey with Sigma exemplifies how leveraging advanced data tools can lead to substantial business improvements and empower independent artists to thrive while retaining ownership of their work.  In an industry where the ability to adapt and respond to changes can make or break success, UnitedMasters' investment in data analytics positions them as a leader in supporting independent artists to thrive on their own terms.
+Explore your data with a free trial, or read more about our customers. 
+ABOUT
+UNITEDMASTERS
+UnitedMasters, a leading software and services platform for independent artists, aims to help artists retain more ownership over their work
+More about
+UnitedMasters
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

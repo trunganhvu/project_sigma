@@ -1125,11 +1125,11 @@ End row: value must be 0, must be named 'End', this can be replaced in the futur
   "transform": [
     {
       "as": "LABEL",
-      "calculate": "datum['label_test']"
+      "calculate": "datum['label']"
     },
     {
       "as": "AMOUNT",
-      "calculate": "datum['amount_test']"
+      "calculate": "datum['amount']"
     },
     {
       "window": [

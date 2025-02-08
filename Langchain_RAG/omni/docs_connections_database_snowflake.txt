@@ -1,7 +1,6 @@
-Connect to DataDatabase setupSnowflake
+Connect to DataConnect databasesSnowflake
 On this page
 Snowflake
-Connecting to Snowflake
 Create Snowflake User
 Login to Snowflake
 Create a new Worksheet
@@ -37,11 +36,11 @@ grant select on future views in schema <database>.<schema> to role omni_role;
 Create Snowflake Connection
 Navigate to Settings > Connections select Add Connection Connection
 https://yourinstance.omniapp.com/connections/new
-Finding your Account Indentifier
+Finding your Account Identifier
 In Snowflake, your account identifier is your account locator, qualified by platform and region if your Snowflake is not hosted on AWS in US West (Oregon) (i.e. may be account_name or account_name.us-central1.gcp). More information in the snowflake docs can be found here.
 To find your locator, region, and platform, click on your user in the bottom left of the snowflake console and hover over account.
 NOTE
-Snowflake connection parameters can be case sensitve, and are often capitalized. If you see errors on connection, confirm your connection parameters match your Snowflake environment exactly.
+Snowflake connection parameters can be case sensitive, and are often capitalized. If you see errors on connection, confirm your connection parameters match your Snowflake environment exactly.
 Name: <PREFERRED_OMNI_CONNECTION_NAME>
 Account: YOUR_ACCOUNT_ID> (see instructions above)
 Username: omni_user (if you created a user above)
@@ -59,7 +58,11 @@ Return to the keypair configuration page in Omni and enable the keypair.
 Confirm this user isn't used by any other Omni connections or connections outside of Omni, and then remove the user's password:
 alter user omni_user unset password;
 Note: every Omni connection must use a different keypair. We recommend using a different Snowflake user for each connection, but these users can use the same Snowflake role to simplify permissions administration.
+What's next?
+Now that Snowflake is set up, you can:
+Configure user permissions, schema refreshes, environments and timezone settings
+Learn how Omni generates the model associated with the connection
 Previous
 Redshift
 Next
-SSH tunnels
+Connection settings

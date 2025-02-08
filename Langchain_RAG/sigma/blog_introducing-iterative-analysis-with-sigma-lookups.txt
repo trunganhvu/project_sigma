@@ -1,0 +1,409 @@
+Blog home
+Introducing Iterative Analysis With Sigma Lookups
+Erica Chase
+PRODUCT MANAGER
+Introducing Iterative Analysis With Sigma Lookups
+MARCH 17, 2022
+We are excited to announce the new Sigma Lookup function.
+This feature enables users to bring data together similar to Excel's Vlookup. Sigma leverages the speed and power of the cloud data warehouse. With Lookups, you can explore, analyze, and make decisions with cloud data in real-time. Here’s how to get started with Lookups — it’s quick and the learning curve isn't steep.
+What Are Lookups And How Do They Work?
+Sigma Workbooks provide users with a spreadsheet interface where everyone is on a level playing field, whether they are Excel wizards, SQL experts, or new to analytics altogether. We believe in making an accessible tool where anyone with interest can dig in and learn to do complex analysis, all without a single line of code.
+Currently in Sigma users can create table elements within the workbook giving them a way to view billions of rows of data from a data warehouse table. Now, with lookups, users can bring together information from those tables, making new analysis possible.
+A new way of joining together data, built with business users in mind
+Similar to VLOOKUPs, the Sigma Lookup function is something that can be called from the function bar or via an interactive modal. And unlike SQL joins, Lookups will never expand the cardinality of a table. You will always have the same number of rows that you started with, avoiding common BI traps.
+     Sigma Workbooks
+Sigma Workbooks provides an easy-to-use, collaborative canvas purpose-built for business teams.
+get started
+Empowering Business Users With Sigma Lookups
+We want to enable business users to easily bring together data in a way that is familiar, but more powerful than anything they’ve used before.
+Business users with boots on the ground, making decisions with data, need to be able to comfortably access and explore in the cloud data warehouse to truly take advantage of the power of real-time analytics. That’s why we took one of Excel’s most powerful features, the VLOOKUP, and made a version that lets users bring together cloud data.
+Why It’s better than joins
+With an approachable and familiar spreadsheet interface users can jump right in and start bringing data together using Lookups. If you are a SQL enthusiast, you may be wondering how Lookups relate to joins, and why they are better. Under the covers, Lookups are joins.
+We take the inputs from the user and translate them into a SQL query that executes a left join. So why bother with Lookups? In short, the user interface is designed to be approachable, familiar, and relatively foolproof for users that do not have experience with SQL joins.
+Even when joins have an approachable interface, they have a lot of hidden pitfalls that Excel users accustomed to the “one row, one result” reality of VLOOKUPs won’t be attuned to. So we made a function that doesn’t expand the cardinality.
+Then, we took it one step further. The Lookup modal itself gives users feedback on whether their Lookup makes sense and is likely to be successful.
+Even veteran SQL users may find themselves preferring lookups because of the joyful flexibility there is in pulling data in using a table formula. In the middle of your analysis, if you want an aggregate number you can just add in an aggregated lookup. No need to adjust groupings, check calculations, and manage additional rows.
+Use Cases How You Can Use Lookups To Make Your Job Easier
+The most basic use for Lookups is to bring in additional information. For example, you may have a customer ID in your order table but you want to know more about the customers. Using Lookup, you can pull in information from the Customer table, such as Customer Name.
+Cohort analysis
+Cohort analysis typically requires technical skills and extensive coding in other BI tools.
+With Sigma, identify customer cohorts in seconds. You can group your data in several ways to get different views of your cohorts. Assign cohorts to the data and Lookups can bring it in for different analyses to reveal new data trends.
+Aggregate data from external sources: counting orders etc
+Lookups are more than just pulling in information. You can also aggregate data of multiple matches. For example, if you’re analyzing your customer base, and want to know the date of a customer's first order and how many total orders they’ve made you can get both those pieces of information with Lookups.
+Starting with the customer table, you can then Lookup ‘Order date’ from the orders table. By using aggregate Min, you’ll return the oldest order date associated with the customer ID. Just like that, you have the date of the first order.
+To get the total number of orders, just apply a different aggregate. Create a second lookup of ‘Order ID’ and apply the aggregate ‘CountDistinct’. You’ll get the number of distinct order IDs associated with the customer.
+Implicit Lookups
+When doing analysis, sometimes you just want access to a total. There are no join keys, or matching columns because all you want is to reference the number you already calculated in your single value chart or your element’s summary bar. For those cases, you can just reference the value by just typing in the name of the element where the total is calculated, and then selecting the total. That’s it. An easy way to do some extremely powerful analysis.
+Read also
+DATA ANALYTICS
+How to do a Customer Cohort Analysis: Time to 2nd Sale Example
+Explore All Your Data With Lookups
+Lookups in Sigma enable users to quickly and easily bring data together to offer a top-of-the-line exploration experience. Users can aggregate data from multiple sources to save time. The flexible table formula makes Lookups in Sigma very easy by adding aggregates without the need to manage additional rows or adjust groupings. Drill down past basic customer data to see order dates, number of products purchased, Order ID, etc. Lookups equip business users with the ability to answer their own questions instantly without having to wait on a technical user for help.
+     THE ULTIMATE KPI PLAYBOOK
+Sigma News
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

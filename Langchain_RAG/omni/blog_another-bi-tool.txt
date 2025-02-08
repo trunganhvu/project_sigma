@@ -1,0 +1,32 @@
+Why we’re building another BI tool
+Applying lessons and embracing change
+September 22, 2023
+Colin Zima
+I’m often asked - "Why are you building another BI tool?". I think that’s fair. There are a lot of BI tools already out there - and most of our team has already helped build one. So why do we think we need another one? And why do we believe we can build it better this time?
+The simple answer is that things change and we learn along the way. But let’s break that down.
+Things change part 1: The tug-of-war problem
+I won’t dive into the history of business intelligence (< we’ve already done that - a couple of times), but I do like to look back at how the market has continued to shift back and forth between the struggle for stronger data governance and more freedom with self-service. The core problems haven’t changed, but there’s been a steady tug-of-war between which of these problems is most important at a given time (and which product serves as the generational leader at any given moment).
+At Looker, we got a little lucky on timing. The market was adjusting to the diaspora of analyses created by workbook tools like Tableau. Governance (and the data model) was an easy way to position trust in data. A decade ago, being able to model quickly was a key “re-innovation”.
+But, in many ways, we over-corrected. The sacrifice for better governance was a loss in all of the flexibility and speed Tableau and desktop BI provided.
+Looker requires technical expertise and the time to interface with the data model anytime you want to add something new or make a change. This forces some users out of the tool - to something like Excel. With that, you lose that org-wide trusted governance Looker set out to establish. This also adds weight to the model, which hurts performance and the workflow of one-off exploration.
+Of course, data governance is important, but it needs to be better. When you put walls in front of users being productive, they leave the tool. Great data tooling means finding a balance between governance and freedom.
+Things change part 2: Technologies get better
+Over the last decade, there have also been significant advancements throughout the data stack. Cloud has become expected. Cloud data warehouses have become normal (believe it or not this used to be a challenge at Looker).
+But it's not just super massive scale like Snowflake, BigQuery, Redshift, and Databricks. Small data has transformed too. Companies used to have to make a choice between scalability and performance - in BI that meant in database vs. in-memory. Now, we can do both seamlessly. Fast, instant dashboards and filters, but the depth and real-time-ness of the data warehouse.
+In Omni, the true magic of this optimization emerges in the query experience:
+When doing ad hoc exploration in SQL is compiled live down to the data warehouse - pivoting, filtering, whatever. All the data is available. But rather than forcing every query down every time, we can also be smart about re-aggregating data we’ve already asked about.
+For example, you can add running totals or create a new filtered measure directly from the UI, and we can process it in the browser rather than drop it back down to the DB. The result is simply faster querying and exploration - all of the depth, no loss of data, but huge speed improvements passively. It’s the best of Looker and Tableau without thinking.
+This kind of in-memory OLAP next to a live data warehouse was really only possible in the last couple of years, so it’s been fun to bring the magical performance improvement to life.
+What we’ve learned: Creating a balanced approach for the best of BI
+After a decade of building BI and even longer being BI users, we’re putting our learnings to use to form our core beliefs - while also recognizing we can’t be so opinionated that we stop people from doing the thing they’re trying to do. We want to help, but not force you to do something our way.
+Meet people where they are
+Startups today sometimes have more tools than people, and most enterprises have a ton of tools but slightly more favorable ratios. In most cases, you either buy separate tools or optimize heavily toward one population. We want to create a gentle unraveling of that onion - building a UI for the end users but still always making it possible for the power user to drill through. So if you reach a cliff and can’t do something in the UI, you can easily switch to SQL or break through the matrix to customize it.
+Ultimately, we’re balancing the shared consistency of a data model with the freedom and openness of SQL in one tool that (we believe) provides the best of both worlds.
+Modeling is the enabler, but it’s not the goal
+The current modeling workflow is to write model → publish → query. It’s very linear and sometimes it works.
+You can do this workflow in Omni, but you can also invert that workflow to touch the SQL and model by query. So when you find a construct you like during ad hoc exploration, you can publish or promote it to the data model.
+We believe you shouldn’t be forced into an all-or-nothing approach - in either direction.
+Cloud optimization and cost management are key
+Advances in technology have made a lot more possible, but the new needs to be tackled consciously. While companies can generate, collect, and store more than ever before in the cloud - this creates new challenges in optimizing that performance and managing costs. We’re building in caching layers at every level to optimize this.
+Yes, we’re building another BI tool with Omni, but we’re doing so with new technologies and over a decade of experience building these workflows and getting customer feedback. The last decade taught us that the original Mode 1 (think strong central governance) vs. Mode 2 (think decentralized workbook analytics) BI problems aren’t going away. We can’t keep overcorrecting.
+There needs to be better balance in BI, and I believe we’re obsessed enough with the product and customer experience to make it happen.

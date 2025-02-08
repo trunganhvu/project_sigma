@@ -349,7 +349,44 @@ filters:
       is: snowflake-arctic
     filter_single_select_only: true
 Here we've built a Snowflake Cortex dynamic column that can call a model based on the dynamic_model specified. The filter is set as single-select, with descriptions on each model to help the end user. This value is piped into the Cortex call to select the given model for analysis using filters.states.dynamic_model.value.
+Dynamic Date Part Example
+schema: other
+sql: |
+  
+  SELECT 
+     CASE 
+        WHEN {{ filters.colin_test.timeframe_selector.value }} = 'Daily' THEN date_trunc(created_at, day)
+        WHEN {{ filters.colin_test.timeframe_selector.value }} = 'Weekly' THEN date_trunc(created_at, week)
+        WHEN {{ filters.colin_test.timeframe_selector.value }} = 'Quarterly' THEN date_trunc(created_at, quarter)
+        WHEN {{ filters.colin_test.timeframe_selector.value }} = 'Yearly' THEN date_trunc(created_at, year)
+        ELSE date_trunc(created_at, year)
+      END as event_date
+    , count(*) as dim_count
+  FROM users 
+  GROUP BY 1
+
+dimensions:
+  dim_count: {}
+
+  event_date:
+    format: "%Y-%m-%d"
+    timeframes: []
+    primary_key: true
+
+filters:
+  timeframe_selector:
+    type: string
+    suggestion_list:
+      - value: Daily
+      - value: Weekly
+      - value: Monthly
+      - value: Quarterly
+      - value: Yearly
+    default_filter:
+      is: Monthly
+    filter_single_select_only: true
+This pattern creates a fact table to be requeried or aggregated using a template filter to set the date part (here BQ SQL). Note we cannot current inject unquoted strings into the SQL block, but we can instead handle with a CASE statement.
 Previous
 Filters
 Next
-Model Management
+Okta

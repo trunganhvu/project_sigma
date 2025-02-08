@@ -116,7 +116,7 @@ Payload:
   }
   format: string // one of 'pdf', 'csv', 'xlsx'
 }
-tile:download
+dashboard:tile-download
 This will trigger when a user downloads a given tile on a dashboard
 Payload:
 userId: string - id of the user who downloaded the dashboard

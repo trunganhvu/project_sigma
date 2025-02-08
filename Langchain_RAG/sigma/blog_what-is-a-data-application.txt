@@ -1,0 +1,395 @@
+Blog home
+What is a Data Application?
+Steve Goldt
+SR. DIRECTOR, SOLUTION ENGINEERING
+What is a Data Application?
+In today’s fast-paced business environment, staying ahead of the competition requires more than just traditional methods. Enter data applications—a revolutionary way to automate and optimize business processes by seamlessly combining data, user experience, and business logic. 
+What is a data application?
+At its core, a data application empowers teams to streamline operations and drive better outcomes by harnessing data from multiple systems, augmented with human inputs, and triggered workflows. Whether you’re in a unique industry or a specialized department, these applications are designed to meet your specific needs, making them a game-changer in the digital landscape.
+Why are data apps important? 
+Charles Darwin famously said, “It’s not the strongest of species that survives, nor the most intelligent, but the one most responsive to change.” This principle holds true in the business world as well. Traditional enterprise applications are great for automating standard processes like posting journal entries or generating purchase orders. However, they fall short when it comes to handling workflows unique to your business or team and are not designed for prototyping or deploying improvement initiatives. They focus on automation rather than optimization.
+Data apps, on the other hand, are agile and designed to move at the speed of business. They don’t require management by a central IT team, do incorporate data from multiple systems, and can be easily adapted to fit your unique metrics and workflows.
+Interestingly, agile data applications have been around for decades, often in the form of spreadsheets with macros. However, these come with constant concerns about data accuracy, freshness, and security.
+How are modern data apps developed?
+Today, there’s a significant shift towards cloud data warehouses and the modern data stack. Organizations across industries are recognizing the value of treating data as a competitive asset rather than a costly liability. As more workloads move to the cloud, trusted data from disparate systems becomes readily available for analytic applications and ad hoc analysis, forming the foundation of modern data apps. With the right platform, business teams can create their own data apps, implementing unique workflows based on reliable information without the need for spreadsheets or downloads.
+Modern data applications are not just a trend; they are an essential tool for business agility and efficiency. They allow for the integration of vast amounts of data from various sources, enhanced by human inputs, to trigger workflows that lead to superior business outcomes. This capability is not only about making data accessible but also about making it actionable and tailored to specific business needs.
+How do businesses benefit from data apps?
+As the migration to cloud-based solutions continues, organizations will increasingly demand more from their business intelligence platforms. They will want to interact with their cloud data warehouse (CDW) using familiar spreadsheet skills, easily integrate and manipulate data, leverage forms for data entry, trigger complex workflows, and update other systems based on data anomalies. The expectation will be that every action taken on data will directly contribute to improved business outcomes, making data applications an integral part of the business intelligence ecosystem.
+Real-world examples of modern data apps
+To illustrate the transformative power of data apps, let’s look at some real-world examples:
+A Fortune 100 energy company has developed a tailored data app for employee performance reviews, combining automated data from HRMS and operational systems with contextual inputs from employees, managers, and peers.
+A non-profit healthcare company uses a data app to reduce outstanding sales days by correcting erroneous diagnosis codes through user interaction with large data volumes, dramatically speeding up bill resubmission.
+An entertainment technology company has replaced inefficient spreadsheets with a data app for capturing theater data during new film screenings, moving from email attachments to cloud-based data.
+A Wall Street investment banking firm uses a data app to streamline month-end processing, integrating manual updates and automatic system updates to replace error-prone spreadsheets.
+These stories highlight how modern data apps can be customized to meet the unique needs of different businesses and teams, leveraging existing investments to boost both efficiency and effectiveness.
+Driving success with data applications
+As you embark on your next analytics initiative, consider the unique workflows and processes of your teams. Enable them to take action, streamline processes, and improve business outcomes. The most efficient automation is done by people who own and understand the accountability for their jobs.
+As Peter Drucker, management consultant and author said, “Information is the oil of the 21st century, and analytics is the combustion engine.” If your analytics platform is “analysis-only,” you’re missing out on must-have capabilities. It’s time to transform your business with modern data apps and start driving better outcomes today.
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

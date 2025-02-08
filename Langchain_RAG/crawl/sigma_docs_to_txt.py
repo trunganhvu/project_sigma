@@ -50,7 +50,7 @@ def get_content_and_save_to_file(driver, url, output_folder):
         driver.get(url)
 
         # Lấy nội dung từ thẻ <main>
-        content_element = driver.find_element(By.CSS_SELECTOR, "article.rm-Article")
+        content_element = driver.find_element(By.CSS_SELECTOR, "body")
         content = content_element.text.strip()
 
         # Lưu nội dung vào tệp

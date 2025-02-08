@@ -1,0 +1,397 @@
+Blog home
+Breaking Free From Legacy BI: Modernize With Sigma In The Cloud
+Breaking Free From Legacy BI: Modernize With Sigma In The Cloud
+Moving off legacy BI isn’t as simple as switching to a BI tool on top of a cloud database. Legacy systems like SAP BusinessObjects, Oracle OBIEE, MicroStrategy, and IBM Cognos, were built for a world of integrated enterprise needs, doing heavy lifting on complex, ad-hoc reporting, often directly tied to databases or data cubes. These systems did a lot of the heavy lifting for users, enabling comprehensive operational reporting and ad-hoc analysis directly from tightly coupled databases or cubes. But in today’s data landscape, it’s clear: to tap into the true power of cloud data warehouses like Snowflake and Databricks, businesses need more than yesterday’s BI solutions.
+The newer generation of BI tools, often referred to as BI 2.0, are more focused on data visualization, exploration, and dashboarding. While these tools excel at providing visual insights, they often lack the robust tabular interface capabilities that legacy systems provide. They are also not cloud-native, which makes them bad choices when moving their data operations to the cloud world. This leaves a significant gap for enterprises looking to move their entire data stack to the cloud.
+‍
+LegacyBI solved a lot of problems and was full stack in some cases.
+‍
+The void in cloud-native capabilities
+Few cloud-native products offer the same comprehensive features that legacy systems provide. This makes achieving a 1:1 feature comparison difficult when transitioning to the cloud. Instead, enterprises need to rethink their approach to leverage the unique capabilities of cloud-based systems.
+Sigma offers a semantic layer similar to legacy systems like SAP Business Objects, which are provided with “Universes” or Oracle’s “RDP,” but it’s built for the cloud. As data becomes a crucial competitive advantage, Sigma represents the new paradigm in BI — one that fully integrates with the cloud and completes your data stack. Add in the parallels to a spreadsheet with Excel-like formulas, references, and pivot tables, and you have a new-age BI product that achieves what legacy BI attempted with Microsoft Office plugins — all without compromising on enterprise data security. This makes Sigma the best ad-hoc analysis tool in the market, eliminating the need for data extracts and empowering businesses to make data-driven decisions faster.
+Sigma’s ability to handle reporting, bursting, and large-scale data exports and distributions makes it the replacement of choice for enterprises migrating to the cloud. It offers the features enterprises need to modernize their data stack while providing the flexibility and power that cloud-based solutions demand.
+Sigma does everything legacy BI does but at cloud scale.
+Sigma makes cloud migration simple.
+Don’t believe us? Just ask our customers
+A Midwest furniture retailer cut reporting time from hours to seconds
+This retailer was bogged down by slow performance and complex extracts in Microstrategy. When they moved to Sigma, reporting went from hours to seconds, with a streamlined view of inventory and store performance. They’re now positioned to make quicker decisions that keep stock fresh and customers happy.
+A Northeast CPG brand got real-time supply chain insights
+As this CPG brand shifted its supply chain and finance reporting from SAP BW, they needed a BI tool that allowed dynamic income statement analysis. Sigma’s solution unlocked powerful, real-time insights, giving their teams a faster, more intuitive way to analyze the numbers behind supply chain trends and bottom lines. 
+A global polymer manufacturer empowered non-technical finance teams
+Replacing SAP Analysis for Office was critical for this manufacturer’s finance team as they moved to Snowflake. With Sigma, their non-technical team found themselves navigating data in a familiar, Excel-like environment, empowering them to conduct ad-hoc analysis on their own terms and timelines. Data adoption and democratization are now part of the day-to-day.
+A window & door manufacturer scaled customer service and revenue insights 
+This manufacturer needed a scalable, agile replacement for their outdated OBIEE system. With Sigma on Databricks, they streamlined warranty lookups, service call insights, and revenue analysis across 200+ distribution channels, putting critical data directly in the hands of customer service reps and decision-makers.
+A workspace retailer saved $5 million annually by retiring legacy tools
+Merchandisers at this leading retailer previously spent up to 60 hours weekly on data extracts from Microstrategy. Sigma slashed their reporting time while providing access to over 600 million rows of SKU and sales data. They’ve not only retired half of their legacy tools but also gained a competitive edge in price negotiations, saving the business millions annually. 
+Ready to modernize your stack?
+Transitioning away from legacy BI isn’t just about replacing old tools; it’s about embracing a platform that empowers every team member to make faster, smarter decisions. Sigma was built to do just that. By combining familiar, spreadsheet-like interfaces with the unmatched power and scalability of cloud data, Sigma offers a bridge to a future where data truly drives your business forward.
+Whether you’re aiming to streamline operations, enhance reporting speed, or scale insights across teams, Sigma provides the modern solution you need. It’s time to retire the limitations of legacy systems and embrace a new way of working with your data.
+Let’s talk about how Sigma can help you modernize your stack and unleash the full potential of your cloud data — starting today.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

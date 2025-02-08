@@ -1,0 +1,24 @@
+Under the hood of Omni’s intelligent cache
+The hybrid execution of in-memory and in-database
+February 2, 2024
+Jamie Davidson
+Omni’s unique architecture represents a step function improvement over the query execution of legacy analytical platforms. We believe the real magic comes from optimizing across each level, and we’ve obsessed over fine-tuning our execution pipeline from connecting to the database, to the data transfer format (Arrow), to the exact match cache, and the unique intelligent requeryable cache powered by Omni’s data model. In this post, I’ll take a deeper dive under the hood of our intelligent cache.
+By balancing the hybrid execution of in-memory and in-database queries, Omni’s intelligent cache optimizes performance and cost-effective use of data infrastructure. Our hybrid execution is a new type of distributed system that optimizes query computation in the optimal location to minimize costs and enable better end-to-end performance.
+A core part of Omni’s architecture is an intelligent caching layer that allows for the reuse of result sets. This intelligence allows for optimization and control of the use of data warehouses by computing relevant aggregates in intermediate result sets once and not requiring recomputing of raw granular tables for different permutations.
+Omni intelligently routes query execution to the closest and fastest environment with the correct cached granularity of data.
+If... → ...then
+A query powering a table or visualization in a workbook or dashboard only requires data already present on the user's local machine via the Omni browser’s requeryable cache Omni executes the query locally
+The query requires more data than is present locally for a user, but can be satisfied by data in Omni’s application layer requeryable cache The query is executed in Omni’s caching layer
+If the query requires new data not present in any cache The query is executed against the underlying database
+The query requires a join between data in multiple cache layers or the database directly Omni will optimize the query for the most efficient query
+This hybrid execution minimizes network latency in round trips to the database and optimizes for the recomputation of aggregations from raw data. This queries the data wherever it is present in the most efficient way possible.
+In the example below, we’re able to change the filter date value for the entire dashboard and see almost instant results — no waiting for it to load 👇
+Omni’s intelligence comes from our understanding of the relational algebra used to translate a drag-and-drop data table or visualization into an optimized query. The relationships between dimensions, measures, and views are expressed in our data model which can be easily built in the front end or directly developed in SQL and YAML in our IDE.
+Finally, let’s consider how this hybrid approach is different from other BI tools…
+Omni has robust cache controls that allow for management and controls of precomputed aggregated result sets. This cache is leveraged to enable query optimization.
+In contrast, legacy BI products force users to choose between extracts or direct query.
+This choice comes with compromises.
+With extracts end users get the speed of local execution but the burden of maintaining the extract. Adding a new field or getting refreshed live data requires updating an extract or running into memory limitations. This leads to more requests and more work for the data team any time a user wants to add new fields or explore a new date range. It might be faster up front, but inevitably requires more back-and-forth.
+With direct query, you get the scale and timeliness of the underlying database. With cloud columnar data warehouses like Snowflake, BigQuery, and up-and-comers like MotherDuck and Clickhouse, this can mean querying petabytes of data in real-time. This provides users with the power and depth of that database, but comes with the cost of computation and the latency introduced by network and recomputation.
+We believe in providing as much flexibility as possible, so you don’t need to choose. Omni’s intelligent cache automatically optimizes for the query. You get the scale and timeliness of your database coupled with the speed of an in-memory extract OLAP engine without any management.
+If you’d like to take Omni for a spin and see how we perform with your data, we’d love to help you test it for yourself.

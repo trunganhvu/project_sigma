@@ -1,0 +1,33 @@
+Streamlining the analytics workflow for dbt and BI
+Three ways to use our dbt integration
+October 17, 2023
+Chris Merrick
+Every BI tool integrates with dbt. It’s just SQL, after all. But most of these integrations don’t actually make the job of being an analyst or analytics engineer easier. Because the job isn’t done when the dbt model is delivered; it must also be available and understandable in the BI tool, reports must be created or updated, and the model and reports must be updated in lockstep as both evolve.
+Analytics engineering promises to enable analysts to build the data model, query it, and then analyze, visualize, and report on it. This is dbt’s core innovation, and it has been incredibly successful at empowering analysts to do data modeling. But, even when all of these activities can be done by a single person, the workflows for actually performing them across dbt and most BI tools are cumbersome. Write dbt model, push to dbt, run dbt, add new or update existing references in BI, validate dependent charts, rinse, repeat.
+We architected Omni in the age of dbt and my history with dbt goes back to 2016 - putting us in a good spot to ensure our integration actually streamlines the analytics workflow to make the data modeling and user experience better. Here's how it works.
+Omni’s bi-directional dbt integration
+How to use dbt and Omni together
+1) Seamlessly surface dbt model changes in Omni
+Data modeling is a deep topic unto itself: once you build a model, it has to be tested, refined, and then (most likely) refreshed and integrated with tools downstream (like Fivetran) or upstream (like Census). dbt is great for this.
+The challenge starts when you want to connect this back to analysis. When you model in dbt you are making tables and transforming SQL, then all of these changes need to be absorbed by your BI tool. This process is completely manual for most BI workflows.
+For example, let’s compare this process in Looker and SQL-based tools to using Omni:
+Comparing Looker and Omni
+When using Looker, changes in dbt generally require the associated changes to be manually made in your Looker model. Simple workflows like renaming columns or creating a new table can require multiple teams to coordinate.
+Omni updates new and changed fields automatically while preserving all of your custom modeling, eliminating the need to manually update LookML every time your dbt model changes.
+Comparing SQL-based tools and Omni
+When using a SQL-based tool, this is even more painful. Renaming a single column or table in dbt can mean fixing tens or hundreds of broken pieces of content. You're still stuck adding new columns and deleting old ones by hand.
+In Omni, the aliases parameter lets you map the names of tables and fields to new values to preserve existing content without repetitive renaming. You can make a single update in the model without needing to chase down every.single.outdated.reference and fix it in broken content.
+We built Omni to pair with dbt from the beginning - knowing that over time, you will inevitably refine your dbt models. As you add and change tables and columns, these new changes can be refreshed with a click in Omni without losing the modeling and reports you have in place.
+2) NEW: Pull dbt context in Omni for deeper visibility
+While the above options save us time while using dbt and Omni, we wanted to make it even smoother.
+Our new integration pulls model definitions and documentation from dbt into Omni. This allows users exploring data to see the documentation on the tables and columns they’re using, and folks building models to see documentation and definitions in dbt and in Omni.
+When the metadata inevitably changes in dbt, simply click Refresh Schema in Omni (either from the connection page or the model) to resync, and they refresh seamlessly alongside other model changes.
+With increased metadata visibility across both tools, you can now provide greater data visibility and understanding with less repeated work.
+3) Author dbt models from Omni model definitions
+Omni is not only great for building analyses; it’s also great for building data models. That’s because data modeling and analysis are two sides of the same coin - every time you select columns, aggregate, and filter to perform an analysis, you’re also modeling.
+That’s not to say all analyses should become dbt models (please, don’t create one dbt model per chart). But, when you do create a query in Omni that you want to promote into dbt, you can simply download the dbt SQL definition from the Omni IDE. This enables data engineers to harden definitions created through Omni’s intuitive UI by other users.
+For example, if a non-technical user creates definitions, you can take the SQL Omni wrote from their exploration via the UI and then promote that directly to your dbt model.
+More to come
+Analysts and Analytics Engineers would ideally be able to iterate rapidly between analyzing and modeling data. Create an analysis, extract the reusable logic into a data model, and then iteratively enhance the model to improve accuracy and support other analyses. Our goal is to further integrate Omni with dbt so users can seamlessly complete this entire workflow from Omni.
+Looking ahead, we plan to allow users to push models directly to dbt without any manual copy and paste, trigger dbt runs, switch between development and production dbt schemas, and validate content against dbt changes. One of our core beliefs is recognizing that different users need different tools, and we’re building this integration with the goal of making the data modeling experience better for everyone - whether you prefer to model in dbt, Omni, or both.
+If you’d like to explore Omni and test this for yourself, we’d love to help you.

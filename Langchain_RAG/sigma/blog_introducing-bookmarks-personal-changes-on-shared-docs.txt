@@ -1,0 +1,393 @@
+Blog home
+Introducing Bookmarks: Personal Changes on Shared Docs
+Dillon Morrison
+DIRECTOR OF PRODUCT MANAGEMENT
+Introducing Bookmarks: Personal Changes on Shared Docs
+JANUARY 29, 2024
+How often do you visit a dashboard in Sigma and apply the same exact filters or drill-downs each time? How about creating multiple copies of the same dashboard, so you can add a few personal modifications?
+These workflows represent explicit tradeoffs. You have to take a few extra steps to make the changes you want, but you don’t clutter or overly-personalize a shared dashboard. However, these extra steps undeniably create some friction. At Sigma, we aim to create the fastest, most seamless data tool in the market. We place tremendous importance on smoothing out friction while still maintaining a high degree of configuration and customizability. This is what led us to develop bookmarks.
+So what exactly do bookmarks do? Bookmarks allow users to save interactions on top of a workbook, without breaking the connection to the underlying workbook. Save filter selections, parameter selections, add annotations, and even add entirely new elements, all without impacting the shared workbook for the rest of your team. Bookmarks deliver the benefits of a separate “copy” of a document, combined with the benefits of a live connection that updates in real time.
+You can also create multiple bookmarks on the same dashboard for different permutations of analysis. If any teammates modify the original dashboard, you’ll see those additions flow through to your bookmark as well.
+Let’s walk through a few quick examples to highlight the benefits.
+Add Personal Changes to a Shared Dashboard
+At Sigma, we have one central dashboard that everyone loves to reference—our sales and business development dashboard (“Go-to-Market Workbook”), which shows things like our customer count, revenue, progress to quarterly goals, annual KPIs, and more. It’s essentially the command center for all of our field operations. Our VP of Operations, Orla, is constantly updating this workbook with new, helpful breakdowns of our internal data, updated sales targets, and more.
+This dashboard is incredibly useful, and unsurprisingly, members of every team want to add additional cuts of data for their own business purposes. Account Executives in sales want to add charts that help them track their individual quotas and performance, Partner Managers want to add breakdowns by partner segments, and Product Managers like myself want to tie feature usage details to our biggest customers.
+But no one wants every person in the company adding their own context and bloating the original dashboard, which inevitably draws attention away from the details that matter. We want to keep our command center clean and dedicated to answering a few essential questions for the whole company.
+With Bookmarks, users can now interact with the dashboard however they please: selecting filter values, adding new visualizations, changing parameters, etc., and then save those changes on top of the shared dashboard. As Orla continues to improve our GTM Workbook with new datasets and new analysis, every bookmark inherits those changes in real time. Each individual can preserve their individual additionals, all while maintaining a shared view of the underlying dashboard. You get the benefits of making your own customizations while still maintaining a live connection. As a bonus, you’re not adding clutter for everyone else.
+Bookmarks create a branching workflow for documents.
+Save Filter Sets
+For a simpler use case, say our sales manager Chris simply wants to filter our GTM workbook for his given territory and their team of AEs. Rather than making Chris add those filters each time he opens the GTM workbook, he can simply save a bookmark, and apply it as the “default view”. Now every time Chris opens the GTM workbook, he’ll see his saved filter set applied. This saves users a few annoying clicks each time he revisits the same dashboard. Making a product seamless means making it fast to repeat common tasks, so we’re always happy to shave a few clicks off a repeated workflow wherever we can.
+The filter sets are saved and automatically applied for this individual whenever they open a workbook.
+Create Both Personal and Shared Bookmarks
+Bookmarks can be saved as either personal or shared bookmarks. Personal bookmarks are available to you, and you only. Shared bookmarks are accessible by anyone with access to the underlying workbook.
+Shared bookmarks are accessible to all users with access to the workbook.
+Have Feedback?
+Do Bookmarks open up any new use cases for you? Are they saving you time and repeat work? Are there additional improvements you’d like to see? Let us know, we’re always eager to get feedback. Drop us a note on Sigma Support, we review every submission we get.
+New to Sigma? Check out a demo of the product in action.
+THE ULTIMATE KPI PLAYBOOK
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

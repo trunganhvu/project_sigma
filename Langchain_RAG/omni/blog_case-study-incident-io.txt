@@ -1,0 +1,59 @@
+incident.io unlocks self-service analytics with Omni
+75% of incident.io employees are weekly active Omni users
+October 23, 2024
+As incident.io rapidly scaled, they started to outgrow Metabase, their previous BI tool. The data team liked Metabase’s flexibility & ease for basic queries, but more complex questions required them to rely heavily on custom SQL. This led to inconsistent results, tedious maintenance work for the data team, and a high barrier to entry for non-technical users. 
+With Omni, incident.io still has a fast, flexible BI platform – but with the added benefits of self-service & consistency afforded by a shared data model. Now, the team can quickly query data with dependable metrics and joins, easily maintain dashboards, and enable teams across incident.io to analyze data themselves.
+Results
+95% of incident.io employees use Omni, and 75% are weekly active Omni users
+Reduced percentage of custom SQL queries from 70% in Metabase to 5% in Omni
+Pain Points
+Inconsistent definitions of metrics and joins. Not having core metrics and joins defined in a semantic layer often led to data discrepancies across the organization.
+Tedious upkeep of their BI content due to reliance on custom SQL. Nearly all key dashboards were built off custom SQL, so any changes to metric and join definitions had to be manually coded into every query. This maintenance work quickly piled up for the data team.
+Difficulty driving adoption. Without a shared data model, non-technical users didn’t have a “jumping off point” into the data and struggled to dig in without knowing SQL.
+Lack of product innovation. As a 10-year-old tool, Metabase’s product was mature, but the pace of development had slowed over time. The data team didn’t feel confident that their feature requests would be met in a reasonable timeframe.
+The Challenge
+incident.io’s first BI tool was Metabase, which served them well as a small, technical team. Since simple queries could be done in the UI and everyone could write more complex SQL queries, they could build interactive dashboards to meet their analytics needs. 
+But as the company scaled, Jack Colsey, Analytics Manager at incident.io, needed a way to deliver data in a scalable and consistent way to the growing organization. 
+“It was just getting very painful to maintain things at scale,” Jack said. 
+With Metabase, they struggled to have consistent definitions of metrics and table joins, leading to inconsistent results and tedious maintenance work. Although Metabase offered UI-based options for pre-built tables and metrics, it didn’t have an underlying, code-based semantic layer that powered every query. This left business users without a reliable “starting point.” If they didn’t know what to query, they wouldn’t engage with the data. 
+In particular, when Jack overhauled the company’s key metrics dashboard, he had to hand-code the timeframe selector’s CASE statement into every tile’s custom SQL. He knew that this level of maintenance wouldn’t work long-term, so he started the search for a more scalable BI platform.
+The Evaluation Process
+Once Jack began the evaluation process, he crowdsourced a list of desired features and ranked them by priority. At the top of his list were a: 
+Semantic layer, to help them achieve self-service and consistent metrics & joins 
+Robust dbt integration, one that meshed with their existing workflow
+Modern and intuitive user experience, for both business users and technical developers
+Jack narrowed it down to 3 tools: Looker, Lightdash, and Omni. However, fairly early, the team ruled out Looker and Lightdash. 
+With Looker, having a semantic layer was powerful, but building everything from the shared model – without a workbook layer, like in Omni – made it inflexible. They also felt that their workflows in Looker were slower than in Omni: the lack of a native dbt integration made it difficult to keep LookML in sync, and the flow between developing in LookML and building analyses and charts was tedious.
+“The workbook model in Omni is a really powerful feature. The ability to say ‘I want to define this in my workbook and reuse it across my dashboard, but I get to pick whether or not I want everyone else to see it is a complete differentiator from what we could do in Looker.”
+Jack Colsey, Analytics Manager at incident.io
+With Lightdash, they enjoyed having a single place for dbt & BI development, which let them quickly iterate on changes. However, there was less flexibility for development outside of dbt, which didn’t suit their use case. Many of incident.io’s engineers are involved in analytics, and having to onboard them to dbt added friction.
+With Omni, Jack saw a few unique aspects that ultimately helped him decide to move forward: 
+Self-service unlocked by the semantic layer: Jack estimates that 90% of incident.io’s queries come from Omni Topics, pre-joined and filtered data sets built by the data team as safe “launching” points. This opened up self-service for non-technical users and helped the data team reach answers faster.
+Flexibility enabled by the workbook interface: The data team and engineers could freely write custom joins and calculations, and non-technical users could use the point-and-click UI.
+Effective dbt integration: While testing Omni’s dbt integration, they found that it “just worked” – it did what they wanted it to, without unnecessary effort from their team.
+“It’s clear that Omni is a tool built by data people for data people.”
+Jack Colsey, Analytics Manager at incident.io
+The Migration
+Jack used the migration to Omni from Metabase as an opportunity to clean up their analytics estate. 
+He identified the 30 most-viewed dashboards in Metabase, and then he and his team divided & conquered to rebuild the dashboards in Omni. They found it easy to convert most of their custom SQL queries to modeled objects in Omni. For their more complex use cases, like their executive dashboard with templated filters, they leaned on the Omni team for help.
+“The Omni team was really responsive in Slack and completely onboard to help us debug issues or explain how to implement our ideas.”
+Jack Colsey, Analytics Manager at incident.io
+In all, it took them about a month to fully migrate off Metabase. By refactoring their custom SQL statements into reusable logic within their semantic layer, they unified their team members around a few key dashboards that serve as safe jumping off points for them to explore further on their own.
+“The transition from custom SQL to a semantic layer was an opportunity to ‘slow down to speed up.' By migrating to Omni, we were able to consolidate the number of dashboards in our BI tool by 5x.”
+Jack Colsey, Analytics Manager at incident.io
+The Impact
+Widespread adoption
+With Omni, incident.io has drastically increased adoption: 95% of incident.io employees use Omni, and 75% are weekly active Omni users.
+“We’ve seen really good adoption across the company. Pretty much everyone is involved in Omni in one way or another.”
+Jack Colsey, Analytics Manager at incident.io
+This widespread adoption has helped data become part of incident.io’s operational rhythm. For example: 
+Sales can see all their deals’ Salesforce data in an Omni dashboard, including embedded Gong recordings and transcripts. They can also share the dashboard with folks who don’t have a Salesforce account, saving incident.io from purchasing an extra license.
+Customer Success frequently uses the Customer Health dashboard before jumping on customer calls to quickly understand how they use the product and where they may need help.
+“Someone from our customer success team came up to me and showed me something she’d built in Omni, without our help,” Jack said. “‘I wouldn’t have been able to do this before,’ she said.”
+Office-wide dashboards help unify the company around key initiatives. For example, when they recently launched a new feature, they displayed an Omni dashboard measuring adoption of the feature. The whole team celebrated together in the office as they watched usage tick up in real-time.
+Powerful dbt integration
+For the data team, Omni’s dbt integration has saved them time – and stress. “With Metabase, we used to run a dbt-to-Metabase script to keep the tools in sync. But this made me nervous because it was a third-party app,” Jack explained. “Omni’s dbt integration just worked. We set it up once, and it’s been working seamlessly since.” 
+Achieving a single-source-of-truth
+Using Omni’s semantic layer has helped incident.io reduce its querying using custom SQL from 70% to 5%. That has made dashboard maintenance far easier, since any changes to the shared model are automatically applied to every tile on a dashboard – a welcome change from their Metabase experience, where every chart needed to be updated with custom SQL. Beyond helping the data team move faster, Omni’s shared data model helps Jack and the data team feel confident in the accuracy of their analyses – and that confidence is invaluable.
+“You can’t really quantify the cost of having wrong data, but that cost is real. Having correct data is like an “uptime” metric – we strive to keep it at 100%, and there’s a lot of pressure to maintain that. With Metabase, we had to remember to update every query whenever we changed a metric or join, and if we forgot, it was painful. With Omni, we don’t have that pressure anymore.”
+Jack Colsey, Analytics Manager at incident.io

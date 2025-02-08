@@ -1,0 +1,406 @@
+Blog home
+Announcing Metrics in Sigma
+Kevin Marr
+PRODUCT MANAGEMENT LEAD
+Announcing Metrics in Sigma
+MARCH 30, 2023
+A BI classic, reimagined for the spreadsheets world
+We’ve finally done it: Sigma has metrics! You can now encapsulate any aggregate calculation—such as profit margin, churn rate, or net present value—into reusable fields that you can drag and drop into your workbooks.
+Many had wondered how it was even possible for Sigma, a BI tool, to have been adopted by the likes of DoorDash, US Foods, and Blackstone without metrics. Don’t all BI tools require you to define metrics before being able to run any reports at all?
+The answer is that Sigma isn’t just a BI tool. Up until now we had been strictly focused on building out the first-ever spreadsheets interface on top of live cloud-scale data. Our customer adoption has proven that there is a massive amount of value in doing so, even without metrics. After all, there are over a billion spreadsheet users out there in the world, and Excel and Google Sheets don’t have metrics. 
+The popularity of the interface allowed Sigma deployments to grow rapidly. And our customers increasingly were looking for ways to reuse business logic and make data analysis more consistent and scalable among their growing user bases. We knew that it was finally time for metrics.
+The challenge was: how do we go about introducing a classic BI concept—a metric—into the spreadsheets world?
+Founding Principles
+To achieve that, we first decided on a few founding principles:
+1. Metric definitions should be owned by subject matter experts, not engineers. Defining a metric should be as easy as writing a spreadsheet formula. 
+2. Metrics should be optional, not required. They should save you time, not get in your way. 
+3. If you update a metric, it should update everywhere the metric is used. Metrics should help your team speak the same language as the business evolves.
+It took quite a number of iterations in the development process to get this right, but last month we arrived at a place we’re really proud of. Without further ado, let’s jump in.
+How Metrics in Sigma Work
+Creating Metrics
+Creating a metric is really simple. All you need to do is type in a formula and give it a name. The formula editor uses the same suggestions, auto-complete, in-product documentation, and field coloring that our users are accustomed to from our workbook editor. 
+Our metric formula editor. I don’t miss editing raw SQL from my analyst days.
+Any Sigma functions are valid in a metric definition—conditional, mathematical, textual, aggregate, even lookups. The only requirement is that all functions should at some point be rolled into an aggregate function. For example, this formula defines a new metric I’m calling “Total Revenue This Month”:
+Here, I compose a metric using a date/time function, an arithmetic operator, and a conditional aggregate function. There’s a lot of power here.
+You can also add some nice optional fields, like a description or a format to be applied everywhere the metric is used. We also show you a quick preview of the result. To save it, you just click the Publish button. Easy peasy!
+Using Metrics in Workbooks
+This metric we created will now be visible in any workbook that uses the table or dataset associated with it.
+In any workbook that uses this data, I can browse the available metrics. 
+Hovering over a metric displays its definition as well as its formula, so that workbook analysts can be sure that the metric does what they think it will. Trusting data is key to adopting it.
+To bring it into your analysis, you just drag the metric in. You can drag it into a table’s grouping level, a pivot table’s Values section, or a chart’s Y-axis. The important thing here is that you don’t have to type anything or remember how the metric was defined—that work has already been taken care of.
+An enterprising analyst can also use metrics as a starting point from which to spin off bespoke explorations. Any metric can be referred to from another column’s formula via [Metrics/Metric Name]. And of course, we will suggest and auto-complete them for you in the formula bar. 
+Here, I am in the process of calculating the average order value in my workbook using the existing Total Revenue and Total Orders metrics.
+Changing Metrics
+Inevitably there will come a time when you need to edit a metric that’s already been incorporated into many workbooks. We wanted to make sure that doing so wouldn’t result in any broken content, which we found was a big issue in some other tools. When you edit a metric in Sigma, the update just flows through to all of the places where the metric is used—even if you change the name of the metric! No broken stuff, and no tears.
+Take Metrics for a Spin!
+Metrics are now in Beta, available for every Sigma user. Take them for a spin, and start building up your organization’s lingua franca for how critical KPIs are defined.
+To learn more, check out our documentation.
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Cloud BI
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -1,0 +1,425 @@
+Blog home
+How To Consolidate All Your Business Development Data For Instant Insights
+Conner Demo
+ANALYTICS ENGINEER
+How To Consolidate All Your Business Development Data For Instant Insights
+Your company may have great Business Development tools. But that doesn’t mean the tools provide great insights.
+Sure, these tools have reports. For example, Outreach offers a breakdown of representative activity, and Salesforce shows how opportunities are progressing. 
+However, being siloed within these platforms limits your analysis. Combined, these data points could create a comprehensive picture of business performance and highlight potential challenges.
+But first — how do you bring these data points together?
+The old way: Pulling data from source systems
+Business Development Representative (BDR) teams operate in a sea of tools that have separate operational use cases. Although the individual tools in a BDR tech stack are operationally powerful, achieving clear data insights across all of the tools is difficult. We’ve all spent time poking around Outreach reports trying to inspect the activity of reps and the broader org trying to find something useful. Or, sifting through Gong transcripts and briefs, trying to find a clue.
+To make better decisions faster, you should be working with cloud data that lives in one place: your warehouse. And Sigma is the best platform for analyzing live cloud data.
+The new way: Using Sigma to consolidate reporting across tools
+At Sigma, our team of analytics engineers developed our BDR Operations workbook to consolidate reporting and enhance inspection.
+In one space, we can perform analysis on:
+Conversion rates per sales stage
+Overall, manager, and rep-level quota pacing
+Efficiency of our org and reps, even down to the activity type
+With this approach, there’s no more Salesforce reporting sprawl. No more inconclusive comparisons between Outreach reports and Salesforce reports. Instead, we have a singular space to assess everything we need to manage, inspect, and coach our Business Development team.
+How we built our BDR operations workbook
+In order to consolidate reporting, we first needed to set up our models in Snowflake. We have four main models that power this workbook:
+Salesforce_opportunities
+Our opportunities: all stage changes, which rep booked the initial meeting, how the meeting was booked, etc.
+Outreach_activity
+All Outreach Activity from BDRs
+Outreach account ID linked to their Salesforce account ID
+Fivetran connection for near-time data
+BDR_quotas
+A Sigma Input Table for manual entry of our quotas. This allows us to easily add or update BDR quotas
+Fiscal_calendar
+Our model that shows which dates fall in which fiscal quarter (FQ)
+Once set up in Snowflake, we can perform all of our aggregations and calculations inside of Sigma. We use fiscal_calendar to categorize all dates by FQ. Then, by using the name of the BDR, Salesforce Account ID, and FQ as keys, we can perform lookups to correlate all of this data. 
+This allows for near-time data on stage totals, current pacing, and our suite of conversion rates. With Sigma, we can quickly filter these metrics by one or many variables, such as individual rep, manager, date range, industry, activity type, etc.
+Our conversion rates are not just limited to stage progression. We can assess every rep, on an individual level and team level, on how efficient they are in:
+Prospects Connected with to Meetings Booked
+Out of all prospects we actually positively connect with through Outreach, Nooks, etc., how many do we book a meeting with?
+Accounts Connected with to Meetings Booked
+Out of all accounts we actually positively connect with through Outreach, Nooks, etc., how many do we book a meeting with?
+Connected Calls to Meetings Booked
+Email Replies to Meetings Booked
+‍
+‍
+We can also measure, across the entire org, team, or individual production rates:
+‍
+We can break down these rates by date range, region, industry, customer verticals, etc. This can answer fascinating questions like, “What reps are most effective in calling in Industry A and Industry B?” We have the visibility to discover quantitative insights that can then be investigated qualitatively. 
+Every single tool in our Business Development tech stack now flows into this workbook. With Sigma’s bookmarks, users can bookmark filtering to have specific reports at hand quickly. It’s saved our team's time by eliminating reporting sprawl and allowing for unprecedented visibility.
+Driving stronger alignment & self-service with business teams
+Sigma’s spreadsheet UI and underlying data features superpower this workbook’s usability. For our analytics engineering team, there are very few ad-hoc data requests because most questions posed by our Business Development team can be self-answered. 
+But don’t just take my word for it. My colleague Jimmy Chen, Senior Director of Sales Development at Sigma, says it’s completely transformed his relationship with data. “In prior organizations, I was left scrambling across multiple sources of data (Outreach, Salesforce, various tools), often with slightly different numbers. Through Sigma, I can see everything through a single pane of glass and make in-line edits to SFDC and the CDW,” he says. “The BDR leadership at Sigma uses the workbooks to power everything from tracking performance indicators for coaching to doing deep analysis across territories. It's truly empowered our organization to run with data at the center.”
+Sigma’s ability to show underlying data bolsters the impact of metrics such as our “Prospects Connected to Meetings Booked,” because this metric, in Sigma’s friendly spreadsheet UI, becomes much more than just a conversion rate. With just a few clicks, users can quickly answer questions about this metric, such as:
+What specific meetings were booked? 
+What activities were completed that led to these meetings booked? 
+What type of activity actually booked the meeting? 
+How many touchpoints occurred before the meeting was booked? 
+Not only does this empower our Business Development team, but Sigma unlocks true self-service, giving valuable time back to workbook users and the analytics engineering team. 
+Try it out yourself
+Business development is as effective as it is efficient. Siloed data in source systems prevents the analysis necessary for truly understanding performance, and more importantly, efficiency. A one-stop shop, powered by Sigma and a data warehouse, unlocks the analysis a Business Development org needs in order to accessibly measure and monitor performance and efficiency. Check out our interactive demos to see how Sigma accomplishes these goals. 
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

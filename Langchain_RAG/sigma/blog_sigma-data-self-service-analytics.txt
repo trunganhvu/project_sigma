@@ -1,0 +1,400 @@
+Blog home
+The Myth Of Self-Service Analytics: How To Actually Get More Value
+Bruno Calver
+EMEA SENIOR SOLUTION ENGINEER
+The Myth Of Self-Service Analytics: How To Actually Get More Value
+NOVEMBER 21, 2024
+Due to the rise of cloud data platforms, organisations now have the opportunity to truly enable self-service analytics, unlocking more value from their data than ever before. However, despite significant investments in modern BI tools, many businesses still struggle to meet the diverse needs of their users. In this blog, we’ll explore the concept of the long tail of BI and how modern analytics solutions can address this often-overlooked business need.
+Why self-service analytics matters
+The easiest way to think about people’s information needs is to look at a similar scenario where people search for information, that of Search Engine Optimisation (SEO).
+The concept of the long tail of search is well-known and expressed in the following graphic:
+#70% is a standard industry benchmark; research actually shows this can be higher: https://ahrefs.com/blog/long-tail-keywords/
+A few important ideas are expressed above. First, is that the long tail makes up the majority of end user demand for information. Essentially, most people are demanding very specific rather than general information. Secondly, people are more likely to act on information gathered through long-tail searches. This could be some kind of sales conversion or a change in behaviour.
+If we draw a similar chart for the world of BI and analytics, it would look like this:
+Linking to the above graphic, central data teams can only build a limited number of dashboards and data views that the business requires. Typically, this addresses around 10% of the total demand for insights and reporting, which mostly plays to the fundamental need of businesses to keep score.
+Power users then meet an additional 20% of the analytics demand by adapting centrally created content and, in some cases, building new content to make it more operationally relevant. Some of this work might be done using data exported from the BI platform into spreadsheets. This cannot be called business self-service; these are typically analysts/developers who are embedded into lines of business to help address the most important use cases not addressed by central teams. Power Users are still technical developer personas.
+This means around 70% of the total demand for insights and data amongst the business is simply not being serviced by traditional analytics platforms. The business will often find other ways to get hold of the data they need, usually in spreadsheets and manual extracts. However, this is most often inefficient, error-prone, and risky from a security and audit perspective.
+Another way this operational data can also be built into business workflows via dedicated SaaS-based point solutions. While these might be effective, they often add cost and complexity to the business.
+The keys to unlocking true business self-service
+Based on my experience of over 10 years working with many organisations, from large enterprises to small-medium businesses, it is unusual for more than 5% of an analytics and BI platform to be used for business self-service. It is usually much less than that.
+This situation around self-service is in contrast to the marketing of leading BI and analytics vendors, who have long promised self-service visualisation. So, why isn’t self-service analytics working as expected?
+Spreadsheets are the language of business: There are an estimated 1.1 billion spreadsheet users worldwide. For most business users, spreadsheets are the preferred way to interact with data — not the abstract dashboards and visualisations typical of BI tools, which often require specialised skills.
+Traditional BI tools lack data granularity: Conventional BI platforms often aggregate data, providing summaries rather than detailed, transactional insights. This limits the ability of users to explore data in depth and tackle use cases that require granular information.
+BI platforms don’t support data input or user-defined workflows: Spreadsheets are used not just for data analysis, but also for creating lightweight applications that combine user input with system-generated data. Traditional BI tools lack native support for write-back capabilities, making it difficult for teams to build multi-step, multi-user workflows.
+Empowering the business with cloud-native analytics
+To unlock the true value of self-service, analytics solutions must meet three core requirements: speak the business’s language (spreadsheets), provide access to granular data across the enterprise, and enable users to input and manage their data in a controlled environment.
+Sigma leads the next generation of analytics tools, combining the familiarity of a spreadsheet-based interface with the power of cloud data warehouses or lakehouses. Here’s how Sigma addresses the challenges that have long hindered self-service analytics:
+Spreadsheet-based interface: Sigma’s intuitive, spreadsheet-like interface lowers the barrier to entry, allowing business users to interact with data in a format they know and trust.
+Access to detailed data: Sigma connects directly to cloud data warehouses or lakehouses, allowing users to explore all organisational data at the most granular level without limitations.
+Native write-back capabilities: With built-in support for data input, Sigma empowers teams to manage their own content alongside system data, all while ensuring that data remains governed and audit-ready in the cloud.
+Sigma’s cloud-native approach not only resolves the limitations of traditional BI tools but also enables organisations to extend the value of their data strategy by truly democratising access to insights.
+Transforming self-service from vision to reality
+Unlocking the long tail of BI requires more than just dashboards; it demands a modern analytics solution that speaks the business’s language, provides granular data access, and enables write-back workflows. With Sigma, organisations can finally deliver on the promise of self-service analytics, empowering all users to drive meaningful insights and make data-driven decisions.
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

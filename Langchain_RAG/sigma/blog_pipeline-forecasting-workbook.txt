@@ -1,0 +1,422 @@
+Blog home
+Cut Sales Forecasting From Days To Minutes With Sigma
+Jake Hannan
+HEAD OF DATA
+Mike Gerardi
+VP OF SALES
+Cut Sales Forecasting From Days To Minutes With Sigma
+Sales leaders have to juggle pipeline management, forecasting accuracy, and time-consuming prep if they want effective meetings and teams. The reality of trying to do this is an all-to-familiar challenge: scattered data, endless spreadsheets, and the nagging sense that there has to be a better way. That’s why we created a pipeline forecasting workbook in Sigma — a dashboard that not only streamlines processes but transforms how sales and data teams collaborate to drive better results, faster.
+Imagine if, instead of scrambling through disconnected spreadsheets or static BI dashboards, you could see your entire sales pipeline in real-time, with live data updating as deals progress. Picture a workbook where every team member — from the individual rep to the VP of Sales — can input data directly, view forecasting metrics instantly, and collaborate seamlessly with the data team, all within the same platform. 
+Developed by Mike Gerardi, Sigma’s VP of Sales, and Jake Hannan, Sigma’s Head of Data and Demo Engineering, this pipeline forecasting workbook does more than just report numbers. It’s a real-time solution that cuts down hours of busy work, provides instant insights, and allows sales teams to focus on what really matters — closing deals and hitting targets. In this interview, Mike and Jake walk us through how they created this transformative tool, sharing how it’s reshaped their workflows and why it’s a must-have for any sales leader looking to stay ahead.
+The Spark: How a Customer Problem Led to a Game-Changing Workbook
+Mike, how did the idea for this pipeline forecasting workbook first come about?
+Mike Gerardi:
+‍The pipeline forecasting workbook came into reality, I'd say, almost five years ago. A customer needed to collect data from multiple points — they were using iPads and laptops, entering data, and reporting it back. After I heard that, I started talking to our leadership about using the spreadsheet as an input vehicle, not just an analytics and exploratory vehicle. They kinda laughed me out of the room, but then they asked me, 'Would you use something like this?' And I said, 'Yeah. Every sales pro, every manager, director, anyone in sales organizes their business in a spreadsheet.’ And that was one of the ways Input Tables came to be.
+Jake, what was your first impression when you heard this idea?
+Jake Hannan:‍
+Mike had this vision, and I thought, this makes sense. Sigma allows you to take those wild ideas and turn them into something operational. Mike was already doing something valuable for his team, but our goal was to scale that into a solution that could impact the entire organization. Sigma’s ability to handle live data, to collaborate in real-time, made that possible.
+Bridging the Gap: Sales and Data, Better Together
+How does this workbook enable collaboration between sales and data?
+Mike Gerardi:‍
+The banter between Jake and I is what makes the magic work. I speak in spreadsheet, and I know sales and the business. Jake speaks data. With Sigma, we can both speak the same language in a way that’s not possible in other places. In Sigma, I can shape things based on the business problem I’m trying to solve, and Jake helps bring that vision to life. The back-and-forth, the collaboration — it’s the handoff that makes this work.
+Jake Hannan:‍
+Yeah, Mike and I banter all the time about data and what we need to get the job done. With Sigma, we're able to work together in the same workbook, live, even when Mike’s on the road. He can ideate with me from anywhere, and we’re constantly iterating. The transition was seamless because Sigma is built for that kind of collaboration.
+Revolutionizing Sales Forecasting: Cutting Down the Busy Work
+Mike, how has the pipeline forecasting workbook changed your process?
+Mike Gerardi:‍
+Before Sigma, I spent six hours a week preparing for the forecast call. It was exhausting — tracking deals, managing all the moving parts in an offline spreadsheet.  With Sigma, I don’t need to do that anymore. I do all my work in this pipeline forecast, and it’s all surfaced in the right way, right where I need it. Now, I can get on a forecast call with no prep, because everything is already in place. It’s a huge time-saver.
+Jake, what impact does this workbook have on your team?
+Jake Hannan:‍
+From the data side, Sigma has transformed how we work. Previously, sales teams would use 1,500 spreadsheets, and we’d have to wrangle that into a data warehouse or other tools. It was a nightmare. Now, everything lives in one place, and it’s seamless. Sigma’s input tables allow us to gather live data with all the governance and auditability we need, while also making things incredibly easy for sales.
+Real-Time Insights, Real Results: How the Workbook Drives Business Impact
+Can you share a specific example of how this workbook influenced decisions at Sigma?
+Mike Gerardi:‍
+What’s been really fun is seeing how new executives like Marcello Gallo, our Chief Revenue Officer, and Sean Hughes, our SVP of Americas, have reacted to this workbook. They can see our entire business, from high-level forecasts to individual reps’ performance, in real-time. We’ve never had that kind of visibility before. Now, we can roll everything up across the business and even apply algorithmic predictions based on historic trends. It’s truly incredible how this tool has impacted our decision-making.
+Jake Hannan:‍
+Exactly. What this workbook has done for us is propagate insights across the organization. Mike can forecast a million-dollar deal, and I can instantly see how that affects our bottom line — whether it’s our gross revenue retention, net dollar retention, or something else. That kind of visibility into the business, in real-time, is unparalleled. And it’s available everywhere within Sigma.
+Scalability and Customization: Building a Workbook That Grows with You
+How has this workbook evolved, and what makes it adaptable as the business grows?
+Mike Gerardi:‍
+One of the best parts about this workbook is that it’s not a static tool. As our business has grown, Sigma has allowed us to scale the workbook alongside it. Whether we’re adding more sales reps, expanding into new markets, or adjusting our forecasting methods, the workbook adapts. It’s not locked into one format or set of features — it evolves with us.
+What can other organizations do to build their own pipeline forecasting workbooks? 
+Jake Hannan:‍
+The flexibility comes from Sigma’s ability to handle live data and its intuitive interface for customization. Every organization’s sales process is different, and Sigma allows each team to build out the features they need. Whether it’s adding new input tables, layering in more complex data models, or integrating with other tools, Sigma is designed to be customizable without requiring heavy IT involvement. This means that any sales leader can tailor it to their exact business needs, whether they’re scaling from a small team to a global enterprise.
+Lessons Learned: Advice for Sales Leaders and Data Teams
+What key lessons have you both learned from building this workbook, and what advice would you give to sales leaders and data teams looking to improve their collaboration?
+Mike Gerardi:‍
+The biggest lesson for me was that collaboration between sales and data is essential. Sales leaders need to have a clear understanding of the problems they want to solve and be able to communicate those needs effectively to the data team. My advice to sales leaders: get comfortable working with data. It’s not just about the numbers — it’s about how you can use those numbers to shape your strategy and drive decisions. And don’t be afraid to ask for what you need.
+Jake Hannan:‍
+From a data perspective, the biggest takeaway is that technology is only half the battle. The real challenge is aligning people and processes. Ninety-five percent of the go-to-market team uses this Workbook weekly. That’s incredible. My advice to data teams: listen closely to what the sales team is trying to achieve. Don’t just focus on the tech — focus on building tools that are actually useful and intuitive for the end-users. Also, iterate quickly. We didn’t get everything right on the first try, but Sigma allows us to adjust on the fly.
+Moving Beyond Pipeline Forecasting
+What’s the future of this workbook?
+Mike Gerardi:‍
+We’re constantly iterating. The first version I built was just something to solve my problem. But with every new feature Sigma rolls out, like workbook actions and overlays, we’re able to make the tool even more powerful. It’s evolving all the time, and that’s what makes it exciting. We’re always improving.
+Jake Hannan:‍
+Yeah, we’ve got a lot more coming. Sigma is constantly introducing new features, and we’re using all of them to make this workbook more robust. We’re especially excited about integrating AI — which will allow us to summarize notes and ask questions based on Salesforce fields and Gong data. This workbook is already far beyond what it was when we started, and we’re only just scratching the surface of what’s possible.
+THE ULTIMATE KPI PLAYBOOK
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

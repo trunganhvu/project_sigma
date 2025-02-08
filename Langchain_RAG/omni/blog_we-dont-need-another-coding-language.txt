@@ -1,0 +1,14 @@
+We don’t need another coding language
+Fun to build doesn’t mean great for users
+February 8, 2024
+Chris Merrick
+One of the most eye-opening classes in my college computer science curriculum was programming languages. It turns out compilers aren’t just performing big nested if/else statements to parse language syntax! In fact, programmers have invented some impressive tools for building languages: parsers, lexers, and abstract syntax trees. And the standard language building tools like yacc, lex, and antlr are even open source. It was exciting to think about designing syntax that could be purpose-built for solving the problem I was working on. Maybe one day I, too, could become a BDFL!
+15 years later, I haven’t built a single language.
+And, I have no plans to do so.
+That doesn’t mean I wasn’t tempted, especially early in my career. At RJMetrics, we frequently discussed building RJQL — a proprietary query language for our BI tool. This project never got off the ground, partially because it was too big. Designing a language is hard, and, if you actually want people to use it, you also have to build the supporting pieces like IDEs, documentation, and debugging tools. But, more importantly, I could never convince myself that our users actually wanted to learn a new language, rather than just use the one they already knew: SQL.
+This same insight informed my discussions with Tristan, Connor, and Drew that led to the creation of dbt: how can we give SQL users more power with a language they already know, rather than force them to learn something entirely new? The adoption of dbt speaks for itself. Beyond the incredible execution of the dbt team, it also confirmed something important for me:
+SQL is a very active, loved language
+That’s why we took a SQL-first approach to semantic modeling in Omni. Dimensions, measures, and filters are just SQL expressions, views are just SELECTs, and, if you like writing SQL yourself, Omni lets you; we can even parse your SQL and upgrade it into the data model for reuse.
+Now, we’re applying the same lesson to Omni Calculations. Many BI tools invent their own language for calculations, like Looker Expressions or PowerBI’s DAX. But the world has had a good enough calculation language since 1985: Excel. Is Excel’s syntax perfect? No. But a billion people have learned how to use it. People have dedicated the time to know it — inside and out — and some have even turned it into a sport.
+Even though I once dreamt of creating a language, I have spent my career avoiding it. The team at Omni even has ideas to make Excel’s syntax more elegant, but we’re not going to build them. It would be fun for our engineers, but it puts a burden on the people who matter most: our users.
+P.S. — If you’re looking for a new BI tool that lets your team use SQL, their favorite spreadsheet formulas, and a point-and-click UI, we’d be happy to show you Omni.

@@ -1,0 +1,420 @@
+Dashboards that work the way you’ve always wanted
+DON’T CHOOSE BETWEEN SPEED-TO-INSIGHT AND SCALABILITY. SIGMA DASHBOARDS GET YOU BOTH.
+TOP TEAMS CHOOSE SIGMA. SEE FOR YOURSELF.
+Stop the extracts. Stop the delays. Stop the endless data loops.
+Sigma simplifies the process of requesting, validating, and exploring data for both dashboard builders and consumers.
+SINGLE SOURCE OF TRUTH
+No more duplicated dashboards
+Users enter the Explore mode to perform an ad hoc analysis, which allows them to customize dashboard content without changing the master version.
+LINEAGE
+Every element acts as a data source
+As you build elements from an original data source, you can re-use those elements as new data sources, effectively carrying over your data logic to downstream elements.
+REAL-TIME
+Data you can trust from live cloud query
+Make confident decisions with data you know is always up-to-date, via Sigma’s direct connection to your cloud data platform.
+Build beautiful, bespoke dashboards
+See examples
+Explore Sigma
+GOVERNED
+Views and access customized by role
+Set controls over who can see what in the dashboard, so that only authorized users can access sensitive or secure data.
+PLUG & PLAY
+Easy to build
+Simply choose a data source and get building. Users can drag and drop charts, tables, text and imagery into a grid-style workbook, and even trigger dashboard actions based on clicks.
+CUSTOMIZE
+Beautiful by default
+Use container elements, custom styling, and a library of data visualizations to tell a story with your data. Plus, set custom themes that reflect the company brand.
+Say goodbye to the dashboard dilemma
+Downloading data because you can’t wait on another team to update the dashboard? You’re not alone. Luckily, Sigma breaks this cycle.
+Watch on youtube
+Features designed with a better workflow in mind
+Drill anywhere
+Get answers on the fly on any visualization. Drill through any dimension or build pre-defined drill paths for curated viewing.
+Lineage
+Every element is a data source you can build from. Keep track and adjust any relationship through our intuitive lineage model.
+Data Visualizations
+Easily build with all the chart types you’re used to, plus KPIs, waterfall charts, Sankey diagrams and more. Use plug-ins to add custom charts.
+Explore mode
+Dive deeper into a dashboard by exploring. Perform analysis, reshape charts, add insights, and save your own personal view.
+Automated sharing
+Keep teams and stakeholders in the loop with scheduled emails and conditional alerts for timely access to insights.
+Seamless distribution
+Securely build reports with custom permissions for relevant consumers or third-party integrations, ensuring insights reach the right destination.
+Related resources
+RESOURCES
+Interactive Demos
+A collected gallery of Sigma Workbooks built to show off how anyone can build and find answers directly in Sigma.
+BROWSE OUR DEMOS
+SUCCESS STORY
+Sigma + Hashicorp
+Read how HashiCorp drove adoption through Sigma by removing 80% of its dashboards and democratizing data access.
+READ THE CASE STUDY
+CUSTOMER STORY
+Why Leap Metrics calls Sigma “life saving.”
+Srini Gorty, CEO and Founder of Leap Metrics, discusses how Sigma helps its analytics-first health care platform drive health care outcomes in underserved communities.
+HEAR THEIR STORY
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

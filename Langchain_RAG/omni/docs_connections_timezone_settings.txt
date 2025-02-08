@@ -1,4 +1,4 @@
-Connect to DataTimezone settings
+Connect to DataManage connectionsTimezone settings
 On this page
 Converting timezone data
 Omni can convert time-based data to different timezones, performing the conversion when it generates SQL for a query. The underlying data is not changed. Instead, Omni converts the query results using the connection's timezone settings.
@@ -24,6 +24,6 @@ Trying to determine how these settings impact the timezone used for conversion? 
 Preventing timezone conversion
 To prevent timezone conversion for a field, add the convert_tz: false property to the field in model. Note: This applies only to fields that don't contain timezone information.
 Previous
-Connection settings
+Connect with SSH
 Next
 Overview

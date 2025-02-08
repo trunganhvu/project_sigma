@@ -1,0 +1,42 @@
+Digital Trends case study
+Omni helps Digital Trends conserve resources and get more from their data
+February 22, 2024
+Digital Trends is an award-winning publishing company with over 125 million unique monthly visitors across their portfolio of technology and lifestyle sites and partners. Brandon Clark, Senior Director of Product and Engineering, describes the team behind Digital Trends as “small, but mighty” — smart and scrappy enough to compete with brands with significantly more resources.
+To stay nimble and keep productivity high, the Engineering team relies on three key operational superpowers: efficient and consistent internal processes, accurate and accessible data, and great technology partners to power both. Recently, Brandon set out to find a new business intelligence platform to reduce costs, conserve developer time, and make it easier for the team to explore data.
+Since switching from Looker to Omni, Digital Trends has been able to:
+Reduce costs: Migrated from Looker to Omni in two days and reduced Digital Trends’ BI spend by 75%
+Save resources: Engineers and developers are now able to spend more time focusing on their own work instead of answering one-off data questions
+Increase self-service: Non-technical users from across the business can use Omni to explore data and answer questions
+"Omni fills a big gap for us. We don't need nearly as many in-house resources to be successful anymore. Omni is so user-friendly that the entire team can access and explore data on their own. After our experience with Looker, we've been so pleasantly surprised — everyone's saying: 'Wow, this just works.'"
+Dan Gaul, Chief Technical Officer
+Key elements of Digital Trends’ data stack
+The challenge: Do more with less
+Brandon joined Digital Trends 13 years ago as the first engineer. Over his tenure, Brandon has worn many hats, from product engineering to developer ops to QA. “Basically, if it’s technical, I oversee it,” says Brandon, with a laugh. “It gives me a lot of insight into how the business runs, what each team is experiencing, and how engineering can be a resource to the entire business.”
+Last year, Brandon took on yet another responsibility: data. Because of planned changes in Google’s cookie policy, the Digital Trends team had previously built out a robust data stack, team, and strategy to prepare. But when the policy timeline changed and that level of resourcing was no longer needed, Brandon stepped up to fill the gap, despite not having much experience with data.
+At the time, Digital Trends was using a pricey data warehouse, custom infrastructure for ETL, and Looker for business intelligence. “It was very expensive to maintain, and because of the significant change to our strategy, we were over-provisioned.”
+Brandon partnered with DoiT to find opportunities to reduce their spend. “DoiT helped us figure out how to do data storage and ETL more cheaply, and we ultimately ended up using Google BigQuery for data storage and Dataflow for ETL.”
+The last step was finding a replacement for Looker. “Looker checked many boxes in terms of functionality, but the value we received didn’t justify the cost,” says Brandon. He wanted to find a less expensive BI tool that would allow the team to speed up the development of dashboards and improve ease of access.
+"The team lacked confidence in Looker. Without expertise, people found it very hard to get the data they needed."
+Dan Gaul, Chief Technical Officer
+Brandon contacted a former colleague, Andrew Searson, who is now advising companies on data strategy and infrastructure through his consultancy, Medusa Analytics. “Andrew’s a wizard, and he was gracious enough to be a resource for me. He’d answer all my questions, and occasionally, if something broke, he’d help me fix it,” says Brandon. When Andrew suggested Omni, it was time for a test spin.
+The criteria: Cost savings and hands-on support
+Just a few days later, Brandon was meeting with the Omni team to see the product and discuss budget and timeline goals. “It was obvious how good the tech was right away. Omni met a lot of the same needs as Looker, but it had an extra layer of polish and a much more affordable price.”
+After the first call, Digital Trends immediately started a technical trial. What stood out most to Brandon about Omni was the level of support he received from the team.
+"It was incredible how quick and easy the migration was. Within two days, the Omni team had translated our old Looker models into the new platform and we were able to already start building dashboards."
+Brandon Clark, Senior Director of Product and Engineering
+Having managed Digital Trends’ data stack without much data experience, Brandon especially appreciated having the Omni team as a sounding board. “With Looker, it was harder to get advice or answers to my questions,” recalls Brandon. “Omni provided me with the opportunity to learn best practices around data from people with expertise.”
+"The speed and support we got from Omni was amazing and saved our team a lot of time and resources. The team was a big selling point for me. Everyone is incredibly knowledgeable, passionate, and eager to make us successful."
+Dan Gaul, Chief Technical Officer
+The results: Unified, self-serve data for every team
+“Data is our bread and butter for media advertising,” says Brandon. Instead of fulfilling one-off requests, he wanted to make it easy for every team to access the metrics and dashboards that mattered to them, and run analyses to help them see and improve performance. The first step was to talk to stakeholders from each function and understand their needs around data. Brandon gives a few examples of how he’s been able to better support different teams and external partners with Omni.
+Editorial team
+“The Editorial team needs to know how much content we’re creating, at what cadence, in which categories, and from which authors, as well as the performance of that content in terms of sessions, click conversions, and revenue,” explains Brandon. Having all this data in one place allows the team to derive valuable insights to inform the editorial calendar.
+“For example, the Editorial team uses Omni to figure out what kinds of content are most likely to drive revenue and which articles we need to keep updated to maintain our high Google ranking.”
+Finance team
+Brandon worked with the Omni team so that it was easier to see revenue from all sources and identify the biggest drivers. “Having data from different domains in one place helps our Finance team more easily see which dials we can tweak to increase traffic and revenue.”
+Partner reporting
+“Right now, we’re working with one of our partners to try to find a way to maximize affiliate revenue from events like Black Friday and Amazon Prime Day,” says Brandon. Previously, it took weeks for Brandon to pull these reports, but now he can do it in less than a day. “We’re able to use Omni to determine baseline performance and identify areas of opportunity based on past data trends, and then we share those reports with partners, which they use to inform their strategy.”
+Looking ahead
+With the resources Digital Trends has saved by implementing Omni, the team is mapping out their next use cases. In the future, Brandon plans to embed analytics directly into the team’s content production tool, CMS, and other platforms, so that every team can easily see data within the context of their work, and make decisions accordingly.
+"The most noticeable change has been the level of support. I inherited our data stack, so having the Omni team's domain expertise has been hugely valuable. I've been able to do a lot more with a lot less. They are even helping train our broader team so everyone can build their dashboards and get answers."
+Brandon Clark, Senior Director of Product and Engineering

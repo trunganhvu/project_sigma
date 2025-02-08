@@ -1,0 +1,406 @@
+DoorDash Logs a 30% Increase in Queries while Keeping the Snowflake Cost Constant with Sigma
+About DoorDash
+DoorDash is a technology company that connects consumers with their favorite local businesses in 27 countries across the globe. Founded in 2013, DoorDash builds products and services to help businesses innovate, grow, and reach more customers. DoorDash is building infrastructure for local commerce, enabling merchants to thrive in the convenience economy, giving consumers access to more of their communities, and providing work that empowers. DoorDash partners with over 550,000 merchants and has over 25 million consumers who use the platform each month. As a lean, data-first, and high-growth company, DoorDash seeks to become the leading local commerce platform that people can turn to for all goods.
+THE CHALLENGE
+Dashboard Management and Scalability 
+DoorDash ran into dashboard management issues. Too many dashboards needed to be optimized for running SQL queries. The existing processes at DoorDash did not allow their analytics efforts to scale smoothly due to performance and connectivity limitations posed by the traditional BI tools. Plus, it was expensive and costly per-person licenses meant limited access. DoorDash’s priority was to scale lean, fast, and efficiently.
+DoorDash wanted an analytics tool that could be used by everyone in the organization, which made collaboration effortless. However, due to limited access, it became difficult to share dashboards and reports with a wider audience, leaving much to be desired by the creators and consumers of the dashboards.
+In 2021, Andrew Huynh, Senior Business Intelligence Engineer, and his team at DoorDash began their search for a new BI platform that would build a self-service analytics environment and democratize their ability to build dashboards. They evaluated Sigma along with a few other vendors as potential new BI platforms and ultimately chose Sigma. Sigma won over one of the popular tools because Doordash did not have enough data engineers to model and prepare the data for all end users, which was a requirement.
+THE SOLUTION
+Sigma Implementation and Workflow Optimization Across the Organization
+Once DoorDash chose Sigma, Andrew and his team spearheaded the implementation, migration, and creation of existing dashboards on the DoorDash side. He and his team rebuilt over 5,000 dashboards in Sigma. DoorDash was able to onboard over 30,000 users to the Sigma platform.
+Sigma’s engineers and onboarding team worked closely with the DoorDash team for a seamless transition through this unprecedented and unanticipated scale of migration. All onboarded users had access to training videos, tutorials, and content tailored to their analytics needs. 10% of DoorDash users share a Slack channel with Sigma, creating a community of users with open communication, troubleshooting, and support at their fingertips. The adoption has been huge—92% of creators have been active within the last 30 days. 
+The amount of collaboration with Sigma has been really refreshing, and it’s something that we brag about to other vendors.
+—Andrew Huynh, Senior BI Engineer, DoorDash
+With Sigma in place, DoorDash was able to simplify its analytics by reducing the time, costs, and complexity of writing custom SQL. In fact with Sigma, DoorDash saw a 25-30% increase in queries while keeping the Snowflake costs constant.
+THE RESULTS
+Real-Time Data Analytics and Effortless Collaboration
+Today, the DoorDash enterprise and operations excellence teams heavily use Sigma to make data-driven decisions.
+Data Democratization
+With Sigma, 12,000 DoorDash internal users can access live data and edit dashboards for management approval anytime. This self-service approach has helped the food delivery leader democratize data across the entire organization, increasing transparency, collaboration, and decision-making. 
+Efficiencies of Scale 
+With the Sigma rollout, the company could determine which dashboards were essential to business and which could be decommissioned. As a result, DoorDash reduced the overall number of dashboards, providing more clarity across the organization.
+DoorDash is now able to quickly implement cross-departmental changes—users can see where their teammates left off and start making changes instantly. Collaboration is fast and seamless. 
+Real-time Reporting
+The DoorDash enterprise and operations excellence teams use Sigma heavily to collaborate with vendors and merchants in order to create reports and measure performance metrics. DoorDash can automate reporting and allow their vendors and merchants to self-serve and generate their own insights using Sigma.
+The conditional scheduled reports with Sigma are really helpful. It’s my favorite feature.
+—Andrew Huynh, Senior BI Engineer, DoorDash
+Plus, with Sigma’s real-time reporting and scheduled exports, Andrew and his team can create reports and have them self-refresh in increments of 5 minutes, 24 hours, or weekly to establish a baseline heartbeat of scheduled reports—running 24/7 without having to keep tabs on them or incur extra costs. This allows the team to catch the outlier threshold and exception criteria when they need to quickly detect anomalies. Previously, DoorDash did not have an integration to build alerts and create scheduled exports.
+More Business Outcomes  
+Sigma is able to help DoorDash make data driven decisions at scale while taking care of optimization and prioritization. "The amount of collaboration with Sigma has been refreshing to the point that we brag about it to other vendors,” shares Andrew. “We're delivering around 25-30% more outcomes, more queries, more visualizations within that same fixed amount." This same level of output would have cost us much more in terms of compute costs, licensing, and labor with other tools. 
+Security & Governance 
+With Sigma, DoorDash is able to tailor the platform for different teams by assigning role-based permissions along with ensuring GDPR compliance and being able to audit controls for partners, vendors, and affiliates.
+DoorDash now has more control over its vendor reporting process, making it possible for vendors to log into a secure site to access what they need without purchasing additional seats. In the past, DoorDash created reports for partners and vendors on an externally facing site, which posed some governance challenges.
+With all of these features, DoorDash is able to log considerable cost and time savings. In fact, using live data has had a direct business impact. DoorDash is able to determine undersupplied hours, which gives the company visibility on the best times to increase promotions to attract more customers in any given location. All in all, Sigma is able to deliver more outcomes, queries, and visualizations across DoorDash while keeping the Snowflake cost flat. 
+BY THE NUMBERS
+5,000
+REBUILT OVER 5,000 DASHBOARDS
+30,000
+ONBOARDED OVER 30,000 USERS TO THE SIGMA PLATFORM
+30%
+30% MORE QUERIES AND VISUALIZATIONS OVER TRADITIONAL ANALYTICS AND BI TOOLS THAT LED TO BETTER DECISION-MAKING
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

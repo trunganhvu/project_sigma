@@ -1,0 +1,411 @@
+Blog home
+Announcing Sigma’s First Data Impact Award Winners
+Kristi Oloffson
+SENIOR PRODUCT MARKETING MANAGER, CONTENT
+Announcing Sigma’s First Data Impact Award Winners
+JULY 11, 2024
+Sigma is a platform that goes beyond the standard definition of “business intelligence.” As a multi-player data workspace, Sigma allows you to build, code, visualize, analyze, and write your own data back to its source. 
+But our customers take it a step further. In reviewing the applications for The Sigma Data Impact Awards, we saw new benchmarks set in fraud prevention, global financial systems becoming more efficient, and true social impact in emergency management and education. The stories absolutely blew us away, showing us not only what is possible in Sigma, but what is possible when businesses bring their data to life. 
+The 2024 Data Impact Award Winners Are:
+The Data Culture Award: Jefferies, Aditya Bothra
+Data Innovator of the Year:  NG.CASH, Iago Chavarry
+The Enterprise Impact Award: Intercontinental Exchange, Durgesh Das
+The Social Impact Award: Merit, Marshall Broussard
+The Workbook Designer Award: UnitedMasters, James Francis Reihing
+Data Innovator Honorable Mention: REI, Shawn Crawford 
+The Data Culture Award: Jefferies, Aditya Bothra
+Jefferies, a global investment and financial services company, uses Sigma to ensure that trade reporting follows federal regulations, track audit trails, and monitor historical updates in one place.
+“Sigma's innovative dashboarding tool with writeback functionality has revolutionized regulatory operations,” said Aditya Bothra, Corporate Technology Associate. “It's shifted the paradigm from tedious email threads to a dynamic, collaborative analytics platform. This tool empowers users to resolve trades swiftly and effectively. This award is a testament to our commitment to innovation and collaboration at Jefferies."
+With more than 2,300 employees, Jefferies uses Sigma across several departments, providing value not only to data analysts but also to business users across the organization. 
+Data Innovator of the Year: NG.CASH, Iago Chavarry
+As a financial services platform, NG.CASH investigates and prevents fraud, and the Brazil-based company began using Sigma to run its anti-fraud operation in 2023.
+”Before Sigma, we felt like we were always one step behind the fraudsters, trying to catch up. But now, we're leading the way. It's like Sigma handed us a map to navigate a landscape we thought we knew, but actually didn't,” Chavarry wrote. “Thanks to Sigma, we've become quicker, sharper, and way more strategic. This change has done more than just boost our stats — it has revolutionized our whole approach to fraud prevention. We're not just fighting fraud, we're setting new standards in how it’s done.”
+Chavarry uses Sigma to gain deeper insights into fraudsters' behaviors, which allows him to enhance the anti-fraud engine's rules effectively. Over the last six months, the fraud user rate has been reduced by 89%, and the fraud transaction rate has been reduced by 66.3%. 
+“Our enhanced strategies have empowered NG.CASH to implement assertive precautionary blocks on suspect users,” Chavarry wrote. “This proactive approach boosted our Infraction Reports Total Recovery Rate from 1% to an astounding 25%. To put this in context, while a 1% recovery rate is common in the banking industry, we've redefined success, recovering a quarter of all infractions’ involved amounts. This leap signifies our commitment to not only identifying but also rectifying fraud-related losses, setting new benchmarks for the industry.”
+The Enterprise Impact Awards: Intercontinental Exchange (ICE), Durgesh Das
+Intercontinental Exchange, known as ICE, is a global financial services company that operates financial exchanges, including the New York Stock Exchange. 
+The team using Sigma at ICE says analytics adoption increased by “at least 30%” after switching to Sigma, and 75% of users interact with the platform daily.
+“We can now proudly proclaim that we have achieved true self-service and rapid time to insight,” Das said. “This widespread adoption underscores Sigma's role in empowering users with the tools and freedom to transform data into actionable intelligence, fostering a robust, data-centric culture within the enterprise.”
+Durgesh Das, the VP of Analytics and Governance, explained how ICE has used Sigma across the enterprise to improve decision-making. “Over the last two years, we have worked to strengthen ICE’s Unified Data Platform to empower stakeholders with the autonomy to harness data for comprehensive, real-time insights, leading to more agile and informed business decisions across the organization,” Das said. 
+The Social Impact Award: Merit, Marshall Broussard
+Data can not only change the course of a business — it can also change lives.
+Data Analytics Engineering Manager Marshall Broussard took this concept and ran with it, using data to get the right people to the right life-saving places.
+In their awards submission, Merit’s team wrote about how they used Sigma’s real-time data capabilities during Hurricane Ian to manage 7,000 emergency workers’ activities, logging 1.1 million hours and efficiently distributing essential supplies to those who needed them most.
+This data transparency effort also helped expedite federal reimbursements. It used to take years for funds to reach them, but with Sigma’s reporting, they saw $500M reimbursed within 100 days.
+Merit also used Sigma for its education-related initiatives, allocating over $300M to more than 150,000 students across three states through its digital platform. The team directly attributed this success to Sigma-powered, data-driven marketing efforts, noting there was a sizeable increase in program participation once personalized communications were implemented. Families were consistently reminded of available resources, leading to greater enrollment in enrichment programs like summer camp.
+"With Sigma, Merit's Data Analytics team effortlessly transforms vast amounts of government program data into precise, actionable insights,” Tomer Kagan, Merit’s CEO, said. “These insights enable us to improve education for countless children,  help people start meaningful careers, and save lives. We're thankful to Sigma for acknowledging the impact of our work with the new Social Impact award.”
+The Workbook Designer Award: UnitedMasters, James Francis Reihing
+UnitedMasters is a leading software and services platform for independent artists. It includes music distribution services, innovative technology tools, and artist marketing solutions. UnitedMasters helps over two million independent artists gain commercial success while retaining full ownership of the master recording rights to their music. 
+But a year ago, they were stuck. Once they discovered Sigma, however, the trains really began to run on time. Now, leadership “has more insight than ever before,” and “data science is doing actual science.”
+“Reihing was the mythical 10x analyst. With Sigma, he's become a 100x analyst. His dashboards are impeccably designed and lead to countless big 'aha' moments,” the team wrote in its application. “Reihing has introduced a class of workbooks that solve challenges that BI solutions aren't designed to solve. On the revenue side, the primary dashboard that Reihing built led us to identify an additional lever to drive subscription growth, which helped us achieve our subscriptions target, with strong double digit year-over-year growth in subscriptions.” 
+The team was able to migrate Sigma with one full-time employee and no consultants, which they estimate saved 16 full-time employee months compared to previous migrations. Reihing also optimized the company’s use of Snowflake compute through materializations, which saved them another estimated $15k per month.
+“Thank you to Sigma for recognition of James’ work as part of the Data Impact Awards this year,” said Pablo Jablonski, VP of Engineering at UnitedMasters. “Through James’s work, Sigma has now become an essential tool for understanding all of the data surrounding UnitedMasters’ artists and using that data to grow the business.”
+We are grateful to each and every customer who uses Sigma to advance their goals in data, business, and beyond! We look forward to celebrating more of our amazing customers next year. 
+‍Read more stories about our Customers here.
+THE ULTIMATE KPI PLAYBOOK
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

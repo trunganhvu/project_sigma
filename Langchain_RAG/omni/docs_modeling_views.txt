@@ -246,6 +246,6 @@ See Relationships & Joins
 Fields
 See Dimensions and Measures
 Previous
-Relationships & Joins
+Parameters
 Next
-Query Views
+Query views

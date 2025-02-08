@@ -1,0 +1,389 @@
+How Wine.com Improved Its Data Analytics with Sigma
+By Greg Elenbaas
+VICE PRESIDENT OF ENGINEERING, WINE.COM
+We spoke with Greg Elenbaas, Vice President of Engineering at Wine.com, the nation's largest online wine retailer. Wine.com enhances the customer experience by blending retail and technology to deliver personalized wine recommendations through advanced analytics powered by Sigma.
+Life before Sigma
+At Wine.com, we faced significant challenges with our previous analytics pipeline. As the nation's largest online wine retailer, we pride ourselves on discovery and personalization for our customers, yet our data system wasn't keeping pace. Our analytics process had long lead times — team members would submit a request, and it would enter a queue with no certainty of when it would be addressed. Competing priorities made this even worse. Whether for merchandisers, finance, or marketing, everyone faced delays in getting crucial data insights. For example, our merchandisers needed to know which products were out of stock but getting high views, and our marketing team wanted real-time campaign performance data. All of this was bottlenecked by a small analytics team, making it hard to make timely, data-driven decisions.
+Choosing a BI Solution
+When it became clear that our existing setup was holding us back, we knew we needed a better business intelligence (BI) tool. We were already using Tableau, but it had its own problems. It was clunky, with long lead times for producing reports, and only the most experienced users could truly be productive with it. The licensing structure also made it prohibitive to scale. We briefly considered other platforms, like Looker, but after hearing negative feedback from industry peers, we decided against it.
+We were impressed by how quickly it integrated with Databricks — within 15 minutes, we had access to our data.
+Ultimately, Sigma came highly recommended through an internal referral from a trusted acquaintance. Once we saw the demo, we were impressed by how quickly it integrated with Databricks — within 15 minutes, we had access to all of our data in our bronze, silver, and gold schemas. Sigma’s ability to simplify access control through Azure Active Directory was another major selling point. We needed something intuitive for non-data professionals, and Sigma fit the bill perfectly. It wasn’t just a BI tool — it was a tool that empowered our team to become more data-first.
+Life with Sigma
+Since implementing Sigma, our entire approach to data has transformed. Our company has truly become more data-first. The long queues are gone. Now, anyone with the time and curiosity to dive into our data can get answers quickly without having to rely on the analytics team. This shift has allowed each department — marketing, merchandising, finance — to make faster, more informed decisions.
+Marketing led the charge because they had the longest backlog of data requests. Sigma helped them analyze email campaigns, direct mail, and other performance metrics efficiently. Next, we onboarded our merchandising and finance teams. With historical data spanning 25 years, this shift has been monumental in helping us understand customer preferences, shopping habits, and product trends. We’ve freed up our analysts’ time, allowing them to focus on deep-level analysis and strategy rather than simply churning out reports. The results speak for themselves: our team is more strategic, data-driven, and agile.
+Sigma wasn’t just a BI tool — it was a tool that empowered our team to become more data-first.
+What’s Next with Sigma
+Looking forward, our goal is to deepen our use of Sigma and expand its adoption across all departments. We’re continuing to hold office hours and run workshops to help non-data professionals get comfortable using the tool. We also want to ensure that everyone is utilizing Sigma to its fullest potential. The tool has made it possible for us to connect various data sources easily, and we plan to take advantage of that. For instance, we’re working on integrating marketing spend data from platforms like Google Shopping and Facebook, using simple Excel uploads for now but eventually moving to more automated ETL processes.
+The results speak for themselves: our team is more strategic, data-driven, and agile.
+Our mission at Wine.com is to remain adaptive to changing trends — whether those are demographic shifts or evolving consumer preferences. With Sigma, we can stay nimble, react to market conditions, and make data-driven decisions that ultimately improve both our margins and our customer experience. The journey with Sigma has been rewarding, and we look forward to what’s next.
+Read more about using Sigma for retail sales.
+ABOUT
+WINE.COM
+Wine.com is a wine online retailer that sells over 2 million bottles per year, with a stock of more than 17,000 different bottles of wine, in the United States.
+More about
+Wine.com
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

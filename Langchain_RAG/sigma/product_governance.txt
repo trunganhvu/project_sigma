@@ -1,0 +1,160 @@
+Built-in governance for collaborative teams
+SIGMA BRINGS TRUST & FLEXIBILITY TO DATA EXPLORATION.
+HAVE PEACE OF MIND WITH SIGMA, LIKE THESE COMPANIES
+Worry-free self-service
+Get the best of both worlds: ad hoc analysis for business teams, but within a set of guardrails controlled by the data and IT teams.
+REDUCE RISK
+End the extract
+Legacy BI tools rely heavily on data extracts, creating risk for data leaks and leading to inaccurate data. Sigma ends the extract by keeping the spreadsheets where they belong, in your cloud data platform.
+FAST
+Seamless provisioning
+Simple and flexible permission management makes it easy to onboard new users and change permissions in bulk, all with 100% auditability and security.
+MANAGE SPEND
+Optimize cloud investment
+You control your cloud data platform spend. Easily track every query and optimize compute with out-of-the-box Sigma usage and cloud performance dashboards.
+SEMANTIC MODELING
+Ensure consistency in metrics
+Data models in Sigma contain all the primitives you need to build a robust, fully governed semantic model: reusable tables, relationships, metrics, role-based permissions, version tagging on data models, and more.
+Keeping your data safe with Sigma
+Visit our Trust Center
+Vulnerability Reporting
+Enterprise trusted features
+Effortless integration
+With Sigma, you get row-level and role-based security to make sure that the right data goes to the right person.
+Secure sign-on
+Leverage OAuth for seamless connections to Databricks and Snowflake—write access included.
+Certification
+Use badges to categorize and endorse business-ready workbooks and data sets.
+Enterprise audit capability
+Admins can monitor every action with Audit Logs: granular visibility that integrates with your security information event management system.
+Version control
+Work never gets lost. Track development cycles and changes with version history and version tagging.
+Data models
+Manage relationships, set metrics, and create a foundation for scalable, trustworthy analytics—all without writing a line of code.
+“Sigma eliminates risky data extracts and keeps your data safe inside the Data Cloud, which makes me feel confident that my data is always secure and compliant.”
+CHRIS LAMBERT
+CTO AT PAYLOAD
+Top teams choose Sigma.
+See for yourself. Sigma is a G2 crowd favorite,
+backed by countless reviews.
+SEE SIGMA ON G2
+READ THE REVIEWS
+Related resources
+PLATFORM
+Security
+Access our Trust Center for the latest security reports, including ISO certifications and SOC 2.
+VISIT TRUST CENTER
+BLOG
+Semantic Modeling with Sigma
+Learn how Sigma's enhanced data modeling capabilities bring trust and flexibility to your data environment.
+READ THE POST
+PARTNERS
+Partner Integrations
+Sigma Integrates with the leading platforms in the Modern Data Stack to provide a seamless experience for your data teams and business users.
+EXPLORE INTEGRATIONS
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

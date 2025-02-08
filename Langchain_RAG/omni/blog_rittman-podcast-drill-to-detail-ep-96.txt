@@ -1,0 +1,10 @@
+Rittman Podcast, Drill to Detail - Ep 96
+Omni’s Mission to Answer the First 100 Questions
+April 5, 2022
+Colin Zima
+A few months ago I had the opportunity to talk with Mark Rittman, of Rittman Analytics. We had a great conversation about our new company Omni, my time helping to build Looker, and the new challenges for modern data companies.
+Centralized or decentralized governance
+When considering BI tools, companies have a multitude of choices, but before they select one they need to decide how to govern their data environment. Small companies want to make choices today that solve today’s problems. But there are trade-offs to speed - when business teams can discover and explore decentralized data, then integration, security, and governance can become a problem. Balancing these competing priorities is a constant source of tension for fast growing teams.
+Listen to the podcast to hear more thoughts about metrics layers, accessing data, and of data models….
+“Introducing Omni: The fastest way to turn SQL into intelligence
+Mark Rittman is joined in this very special episode by Colin Zima, ex-Head of Analytics at Looker and now co-founder of Omni, a new analytics startup looking to become the fastest way to ask the first 100 questions.”

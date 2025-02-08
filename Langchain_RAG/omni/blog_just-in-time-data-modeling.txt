@@ -1,0 +1,28 @@
+The case for just-in-time data modeling
+You miss opportunities when you always model first
+May 8, 2024
+Chris Merrick
+The modern data era has been marked by adding rigor to data work with software engineering practices. We write data models and reports as code and check them into Git. We define interfaces with data contracts. We verify data correctness with tests. We have evolved from data analysts to analytics engineers.
+Software engineering is fundamentally about balancing speed and quality. How fast can you deliver great software? These new practices have helped data teams deliver better quality, but they have slowed us down. We need to tip the scales back toward delivering data and analysis quickly when the business needs it, without waiting days for a data model to be defined, tested, and code reviewed.
+Let’s look back to software engineering for inspiration. In software, a just-in-time (JIT) compiler only interpretsand processes code as it needs it, rather than doing it all up front before a program is run. Applying the same idea to data modeling: Just-in-time data modeling means building your data model as you do analysis. Need a new dimension or measure? Just add it to your analysis, and get the answers you need.
+But this only works if you close the loop by allowing the ad-hoc definitions you’ve made to become part of your organization’s data model. This is the workflow data organizations need to balance speed and quality: build analysis quickly, distill out the useful parts into the organization’s data model, then repeat by building more analysis on top of that data model.
+This might sound like chaos if you’re accustomed to having a rigorous, tightly governed data model. Before you decide to cut me off completely, let me say: As a software engineer who helped build dbt, I love order and well defined interfaces. There are many cases when modeling first just makes sense — for example, when your dataset is a product itself, or your data is massive and needs to be pre-aggregated.
+But, data changes constantly. Therefore, when and where you model your data shouldn’t always be the same (even though 99% of workflow diagrams show it’s always the same!). Just-in-time modeling lets you adapt to the situation: whether your intent is to build a data model, or you're just doing analysis and want to think about the model later, the workflow is the same.
+Architecture matters for just-in-time modeling
+Just-in-time modeling, or modeling as you’re doing analysis, provides maximum flexibility when your business is rapidly changing and you need a fast answer or you’re not sure what you’re looking for. This workflow is important, but there previously wasn’t a good solution to make it possible. From the day we started Omni, we built it to address this gap — to bring flexibility in harmony with the benefits of a governed data model so you no longer need to choose between trust and speed.
+The way we built this flexibility into the product is with a multi-layered data model, reflecting the:
+raw database
+in-database data model (e.g. dbt model)
+governed data model
+ad hoc workbook environment
+Omni’s layered data model — making it easy to promote across layers
+This layered approach provides two unique opportunities:
+First, it enables just about anyone to help build a model: via a point-and-click UI, Excel functions, SQL, AI, or by parsing JSON that can be reviewed and promoted to the governed model to increase the speed of model development.
+Second, these layers open up just-in-time modeling so you maintain the speed and flexibility necessary to get the answers you need. Then, you can promote them to the governed data model if they need to be reused.
+Here’s a demo from my colleague Conner, showing how to use just-in-time modeling to quickly identify what’s driving revenue.
+Omni demo: Just-in-time data modeling
+You can also use just-in-time data modeling to help quickly prototype the best ways to cohort users, get directional feedback on ‘how is X test working?’ while it’s still in progress, or help product managers identify key activation points with simple filtered measures on “Has completed / has not completed”. We see customers use just-in-time data modeling all the time because there are a ton of use cases where you get the most value by just getting started.
+Takeaways
+By now, we all know the promise of data modeling: take time to define reusable and trusted metrics to speed up your decision-making down the line. Slow down now, speed up later.
+That promise is outdated and it misses the reality of analytics engineering today. It’s not circa 2000s anymore; you don’t have days and weeks to build perfect cubes. You’re just trying to move as fast as your business is — and data modeling should meet you in those moments when you’re doing your best work, not slow you down just when things are getting good. Maybe some essential metrics like revenue or user counts need to be concretized in your data warehouse or a tool like dbt, but the rest should come just-in-time.
+Today’s great data teams need a tool that can keep up with the speed of modern businesses. Our goal is to help you get great work done quickly – and make it scalable later if it needs to be. And if you’d like to learn more, we’d love to show you.

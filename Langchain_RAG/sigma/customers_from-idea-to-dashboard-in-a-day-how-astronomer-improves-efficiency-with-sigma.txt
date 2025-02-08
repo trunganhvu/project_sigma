@@ -1,0 +1,145 @@
+From Idea To Dashboard In a Day: How Astronomer Improves Efficiency with Sigma
+About Astronomer
+Powered by Apache Airflow and building, running, and observing data pipelines-as-code, Astronomer’s modern data orchestration platform, Astro, helps data teams worldwide maximize productivity and gain complete visibility into their data landscape by removing the boundaries of a distributed and siloed data ecosystem.
+We sat down with Astronomer Director of Data Strategy Roger Magoulas and Senior Data Scientist Maggie Stark to hear about their Sigma experience.
+THE CHALLENGE
+Too Many Duplicate Efforts & Isolated Data Sources
+With customers in over 35 countries trusting Astronomer as their partner for data orchestration, the team needed a way to answer questions faster and minimize ad hoc requests. Generating mass volumes of complex data points every day, it became increasingly challenging to centralize company-wide data and empower everyone to gain a holistic view of the business. There was also no standard for analytics workflows or data architecture, and were often duplicate efforts across teams, making exploratory analysis more difficult and time-consuming than it needed to be.
+We noticed that there was a lack of centralization and consistency, that we really needed to have a bake-off and pick one tool that would help most easily socialize data throughout the organization.
+—Roger Magoulas, Director of Data Strategy, Astronomer
+Furthermore, there were more ad hoc customer requests than the team could handle. Each time the sales or customer success team received a question from a customer, they would pass it over to the data team, who would spend considerable time slicing and dicing data, creating custom dashboards, etc. This process just wasn’t scalable.
+That’s when Astronomer knew they needed a better way to leverage data to meet customer needs and make more-informed business decisions. Their current workflows weren’t producing comprehensive analysis, and they were just sitting on mounds of unused, siloed data and unanswered questions.
+THE SOLUTION
+Centralizing Data & Creating Joint Metrics
+Before Astronomer sought out an analytics solution, they assessed their data goals. Astronomer not only wanted to centralize their data and reduce the number of duplicate efforts and ad hoc requests but also empower every business user to quickly and comprehensively understand what was happening in the business (without relying on the data team).
+We’re hoping to become a data-informed organization and use data to help everyone have the context to make better decisions.
+—Roger Magoulas, Director of Data Strategy, Astronomer
+To combat the lack of centralization and standard for data architecture, Astronomer turned to Sigma. With Sigma on top of their cloud data warehouse Snowflake, the team was able to keep their spreadsheets up-to-date with the latest data and even import simple datasets into Sigma. 
+Senior Data Scientist Maggie Stark explains that they also integrated multiple data sources to create more “complex metrics because they were using the centralized data warehouse where a bunch of sources lives instead of just their isolated datasets.” 
+The team also built a cleaner data architecture, enabling business users to pull already combined and aggregated data to drive improved and more efficient processes as well as exploratory analyses.
+THE RESULTS
+Faster Data Exploration, Increased Productivity, & Greater Bottom-Line Improvement
+Leveraging Sigma on top of Snowflake, Astronomer was able to combat its two primary analytics use cases of wanting to decrease duplicate efforts and centralize company-wide data, accelerating data exploration and driving business outcomes.
+Increased Team Productivity
+Now that the data is connected, it flows through the system and impacts other teams, so when we have customer success successfully selling contacts, finance immediately sees that result and doesn’t need to dig up the data anymore.
+Maggie Stark
+Senior Data Scientist, Astronomer
+Centralizing data sources, creating a standard data architecture with joint metrics, and empowering anyone to explore data independently helped Astronomer scale from completing 400 tasks to 14,000 tasks per day in under six months. 
+Additionally, the team was able to ramp up quickly because of the familiar spreadsheet interface of Sigma’s pivot tables. This enabled users to easily drill down into different dimensions and answer complex questions faster.
+Decreased Duplicate Work
+Before Sigma, “you would see other teams making the same metrics. So having a centralized platform where we could share all the data really helped reduce those efforts,” says Stark. With everyone on the same page, it was also easier to discuss what to do next based on actionable insights.
+Self-Service Dashboards = Data-Driven Culture
+Most of our departments are data consumers at this point, but we’re seeing a growing number of teams start to become data producers.
+Maggie Stark
+Senior Data Scientist, Astronomer
+Leveraging Sigma as their central dashboarding tool, business users across Astronomer could easily drill down into granular dimensions such as customer, date range, etc., on a spreadsheet-like interface to quickly gain insights into what to do next. Magoulas notes, “Our product team actually uses a lot of operational data so they can see what’s going on in our platform and other facets of the product to help them make better decisions.”
+Overall Bottom-Line Improvement 
+Gaining a holistic view of the organization, Astronomer was able to identify key focus areas, prioritize certain product features and gaps, adopt a self-service data culture, and help anyone make better decisions and drive organizational outcomes. “Instead of spending time on [data discovery], they’re able to spend time on what they need to do with that data,” explains Magoulas.
+Moreover, the Astronomer team is now more proactive (versus reactive) and has “a lot of context and can talk to customers in a smart way about what’s happening and anticipate things they may have questions about or offer things that can help them work better and become a better customer for us.” 
+All in all, Astronomer has drastically transformed the way they process what’s going on in the business. With a clearer understanding, the team can not only answer customer questions faster than ever before but can also now forecast and anticipate customer problems before they arise, strategize how to best interact with customers, gauge pricing, and more.
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

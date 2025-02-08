@@ -1,4 +1,4 @@
-Connect to DataSSH tunnels
+Connect to DataManage connectionsConnect with SSH
 On this page
 Connecting databases using SSH
 If your database is in a private network or an additional layer of network encryption is needed, Omni can connect through an SSH tunnel. In this configuration, Omni establishes an encrypted connection to an SSH server on your network, and then uses SSH's Local Forwarding feature to route traffic through the SSH connection to the database in your network.
@@ -13,6 +13,6 @@ SSH Server Setup
 We recommend using the OpenSSH server, as it is the most widely used SSH server and is guaranteed to be compatible with the OpenSSH client we use to establish the connection. Most Linux distributions come with OpenSSH installed or easily installable through a package manager.
 Your SSH server must be in a network that accepts traffic on the SSH port from Omni's outbound IP addresses, and be able to route traffic to the network that the database resides in. Additionally, the database's firewall must be configured to accept traffic from the SSH server.
 Previous
-Snowflake
+Connection settings
 Next
-Model generation
+Timezone settings

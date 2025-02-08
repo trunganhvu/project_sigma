@@ -1,0 +1,398 @@
+Blog home
+Real-Time Risk Management: How We Built The Ultimate Customer Churn Workbook
+Kaela Dickens
+SR. CUSTOMER SUCCESS MANAGER
+Real-Time Risk Management: How We Built The Ultimate Customer Churn Workbook
+It’s the kind of stuff that keeps Customer Success leaders up at night: Which accounts are at risk, and are we doing enough to prevent them from churning? 
+We needed a workbook that would provide full visibility into our customer health, both on the enterprise and commercial sides. The goal was clear: to automate the risk identification process and provide a centralized tool for our Customer Success Managers (CSMs) and account executives to manage at-risk customers efficiently. We wanted a Sigma solution that not only provided visibility but also served as a dynamic collaboration tool for our weekly strategy meetings.
+That’s why we created a workbook that analyzed enterprise risks in real-time. It has been transformative for our CS leaders, offering a dynamic, interactive platform that enhances both strategy meetings and day-to-day operations. By consolidating key data points and enabling real-time access to vital information in Sigma, this workbook empowers leaders to make informed decisions swiftly, prioritize risks effectively, and foster a culture of transparency and accountability. The transformation from scattered data to a single source of truth is more than just a technological upgrade; it's a strategic advantage that drives efficiency and success in managing customer risks. Here’s how we built it: 
+Turning chaos into clarity with a unified vision
+Before we had this workbook, our process was chaotic and inefficient. Anecdotal conversations and manual entries into Google Sheets were the norm, making it hard to get a cohesive view of customer health across the team. PowerPoint presentations and spreadsheets were the tools of the trade, leading to duplicated efforts and a lack of real-time data visibility.
+Imagine the frustration of manually moving data around and trying to maintain consistency across multiple platforms. This messy, ad-hoc process was ripe for transformation.
+Revolutionizing our workflow with real-time insights
+Developing this workbook was a collaborative effort. We started by examining the existing manual processes and identifying the key data points we needed to track. Our internal data team played a crucial role in defining the right Salesforce data model, ensuring we had all the necessary fields and relationships mapped out correctly.
+Version one of the workbook was a straightforward report showing which customers were at risk, the potential revenue impact, and weekly notes on each account. From there, we iterated based on feedback from our stakeholders—CSMs, account executives, and renewal managers.
+We quickly realized the need to split the workbook into separate views for enterprise and commercial accounts due to the different scales and processes involved. Enterprise teams might manage a handful of high-value risks, while commercial teams deal with a larger volume of lower-value risks. Adding interactivity through filtering, sorting, and workbook actions further enhanced the tool's usability, making it easy to prioritize and manage risks dynamically within the meetings. Before, if we wanted information that wasn’t pasted into the Powerpoint ahead of time, we had to table the discussion to find those data points. Now, we can click through one tool in real-time and find any piece of information we need, right there. 
+Key features and tools: Unleashing Sigma’s Power
+Several Sigma features were instrumental in bringing this workbook to life:
+Workbook Actions: These allowed us to dynamically click on the most standout at-risk accounts and surface relevant notes from Salesforce, making the workbook highly interactive and user-friendly.
+Navigation Buttons: Buttons enabled seamless transitions between summary views and detailed account information, streamlining the user experience.
+Input Tables: We use input tables to flexibly re-map account data in ways that make sense for our team without relying on backend changes in Salesforce. This feature alone saved countless hours and reduced dependency on external admin support.
+Like any development project, we faced our share of challenges. Data modeling was particularly complex, requiring careful coordination between multiple data sources and ensuring consistency across different views. Additionally, maintaining the workbook with multiple editors required a clear and organized approach to managing data tabs, which any developer knows can get quite messy! Using Sigma’s formatting options, we reorganized, streamlined, and added narrative to our data tabs so anyone can go in and understand the data model.
+Driving success through efficiency and transparency
+This workbook has become the cornerstone of our risk management process. It has streamlined how we assess and address customer risks, providing a single source of truth for our CSMs and account executives. No more rooting around in Salesforce or relying on outdated spreadsheets—everything we need is in one dynamic, interactive tool.
+Our weekly meetings have been transformed, allowing us to identify and prioritize risks in real-time. The workbook serves as our agenda, our notes, and our visibility tool, all rolled into one. The ability to interact with the data dynamically means we can make informed decisions on the fly, focusing on the areas that will have the most significant impact.
+While we are still quantifying the full business impact, the qualitative benefits are clear. We've seen a significant reduction in the time spent managing and reporting risks, and the improved visibility has enabled us to address potential issues much earlier. Unexpected benefits have also emerged, like fostering a culture of transparency and accountability within the team.
+Evolving strategies for a data-driven future
+Looking ahead, we plan to integrate this workbook into a broader suite of tools for account and portfolio management. The success of this project has inspired us to develop more Sigma-powered solutions that enhance our internal processes and provide even greater value to our customers.
+If you're looking to create your own workbook, my advice is simple: think beyond just displaying data. Sigma is a dynamic tool designed for interaction, analysis, and real-time decision-making. Consider how you can center your conversational workflows around the data and make collaboration more streamlined and efficient.
+Don't be afraid to iterate. Design Thinking is a great process to follow, including starting with a basic prototype and having people use it in real life. They’ll come up with some incredibly helpful and concrete feedback that will enable you to refine the tool based on their needs. Empower your team to make changes and improvements, and leverage Sigma's flexibility to adapt quickly to new requirements.
+This workbook has provided us with clarity, efficiency, and a strategic advantage when looking at how to address potential churn. Its evolution is a testament to the power of leveraging data to drive business success, and we are excited about the future possibilities it holds.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

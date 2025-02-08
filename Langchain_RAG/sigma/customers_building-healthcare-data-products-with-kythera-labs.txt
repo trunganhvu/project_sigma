@@ -1,0 +1,394 @@
+Building healthcare data products with Kythera Labs
+By Josue Bogran
+SOLUTIONS ARCHITECT MANAGER, KYTHERA LABS
+Kythera Labs empowers healthcare and life sciences organizations with more accurate insights from healthcare data. We take billions of inaccurate or incomplete healthcare claims and transform them into more accurate, refined data analytics products for life science and healthcare provider organizations through novel data technology and advanced data science.
+Sure, someone could purchase raw claims data and try to fix those claims themselves. But that requires years of work and a big budget. Our platform, Wayfinder, streamlines data sourcing, engineering, preparation, as well as analysis.  Leveraging decades of healthcare and data science experience, our technology and data products accelerate analysis and deliver more accurate answers — so our customers can spend their time solving problems instead of cleaning up messy data.
+Because Wayfinder is built on Databricks, we can deliver better access to our customers and easily integrate solutions like Sigma. With Sigma, we first built internal reporting tools for our finance team and then created fit-for-purpose reporting using Sigma for our customers.
+Life before Sigma
+Before discovering Sigma, we used a handful of different tools. I personally came from a Power BI background, and I used to be a hardcore, diehard Power BI fan. But Sigma made me realize there are other solid alternatives out there. At Kythera Labs, we've used Power BI and Tableau, and now we're using Sigma. Realistically speaking, we have customers that need us to work with Power BI, and other customers that need us to use Tableau. However what we found is that customers have a hard time managing that infrastructure with Power BI and with Tableau.
+Choosing a BI solution 
+Sigma enables us to develop beautiful and actionable dashboards much faster than other BI tools we use.
+Sigma enables us to develop beautiful and actionable dashboards much faster than other BI tools we use. We have internal users who are not BI developers or have never been BI developers—primarily salespeople—who can pick up Sigma within an hour. They're able to quickly get started and develop that proof of concept through to a final product.
+Life with Sigma
+Seamless Integration:
+We built Wayfinder on Databricks, which makes it simple for us to integrate Sigma, collaborate on and integrate new features, and deliver great compatibility across clouds and platforms. These integrations and capabilities simplify our customers’ data technology infrastructures so they can focus on analyzing quality data to help make decisions faster—which saves them a lot of time and money. 
+Getting started with Sigma, we built reporting for our finance team, which allows for easier access to critical performance metrics. Now, we are working on developing reporting using Sigma which leverages our deep expertise in healthcare and life sciences. For example, we are working on embedding Sigma dashboards inside our Wayfinder so that our customers can easily connect to our quality data in ways that provide immediate value. Sigma presents a great way for our customers to explore our data assets with rich visualizations and, for many, immediately delivers ROI.
+Enhanced Visualization:
+Sigma helps our customers visualize their data and analyses faster.
+Sigma helps our customers visualize their data and analyses faster. Our rich data assets precisely identify where surgeries have taken place. With Sigma we can then build dashboards that help customers visualize the data and insights to better understand findings and make decisions. For example, some customers use our solutions to determine where to open a clinic to better serve the community. Using Sigma alongside our data lets them see the best locations for a clinic based on their analysis.
+Improved security: 
+Sigma's built-in security features for embedding dashboards have proven to be both secure and easy to work with. There are multiple layers of security that help us develop a dashboard once — and then allow us to dynamically display the right data to each customer. With other tools we've leveraged, this would not have been as easily possible.
+Sigma Impact
+Sigma makes developing dashboards, reporting capabilities, and applications very easy.  Finding what you're looking for is very simple.
+I would encourage teams to try out Sigma. Sigma makes developing dashboards, reporting capabilities, and applications very easy. You can dive in, and it’s very intuitive. Finding what you're looking for is very simple.
+Read more from other customers who are choosing Sigma.
+ABOUT
+KYTHERA LABS
+Our data scientists, engineers, statisticians, and domain experts are dedicated to building solutions that efficiently collect, organize, standardize, improve, and transform data—empowering the Healthcare and Life Sciences industries to uncover insights that lead to better patient outcomes.
+More about
+Kythera Labs
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

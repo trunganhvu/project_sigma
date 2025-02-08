@@ -1,0 +1,146 @@
+Whatnot Leverages Sigma to Drive Revenue, Volume, and Efficiency
+About Whatnot
+Whatnot is one of the largest livestream shopping platforms in the U.S., connecting buyers and sellers in real-time across any category—from collectibles like trading cards to comics, fashion, sneakers and more. Founded in 2019 by Grant Lafontaine and Logan Head, the platform couples rigorous seller vetting with a focus on community to create a welcoming space for people to share their passions with others. Today, Whatnot’s top sellers earn up to eight figures a year.
+‍
+THE CHALLENGE
+Outgrew Legacy Analytics
+Whatnot relies heavily on leveraging data analytics and business integration tools for business requirements and serving users. Sigma was the clear choice as we needed quick deployment and a robust solution to meet our growing needs.
+—Evan Hou, Head of Analytics, Whatnot
+Whatnot generates vast amounts of data from diverse sources, including customer interactions, financial transactions, and operational processes, creating a complex data analytics environment. The key challenge for Whatnot was effectively managing user data, inventory, and analytics in a manner that enhanced the user experience, streamlined operations and drove business growth in a secured environment.
+Whatnot needed to evolve its data management and analytics platform to provide real-time insights and enable scalability for their business.
+THE SOLUTION
+Scalability, Security, & Functionality
+The Whatnot team assessed several BI and analytics tools in the market before they landed on Sigma as their platform of choice. “Sigma could deliver the speed in development and responsiveness we sought in our dashboard visualizations,” says Evan. “It enabled us to access and analyze complex data efficiently, leading to better decision-making and improved business outcomes.”
+Sigma's cloud-based platform provided Whatnot with scalability and security features that ensured the confidentiality and integrity of their data. This allowed for easy integration with other data sources as the company continued to grow and expand their operations. The platform also offered robust features that enabled team members to work together on dashboards, share interpretations, and track changes in real-time.
+The comprehensive solution seamlessly integrated with Snowflake, Whatnot's data warehouse, and dbt, their data transformation tool, resulting in a smooth transition with minimal disruption to existing workflows and operations. Their SQL IDE and materialized views efficiently analyzed complex data from various sources. It significantly improved query performance, providing quick access to frequently used data. Sigma's built-in analytics and visualization tools facilitated the exploration and communication of insights.
+THE RESULTS
+Multifold Growth, Enhanced Efficiency, & Improved Features
+Sigma's responsive dashboards and exemplary performance contributed to a 6X growth rate in revenue and a 10X improvement in order volume.
+Revenue Growth
+Sigma, Snowflake, and dbt provides Whatnot the perfect combination for analyzing unique data sets to handle unorthodox use cases and complex data modeling. Sigma’s spreadsheet-like interface helped Whatnot uncover valuable insights, indicating areas for improvement in sales and operational processes.
+Based on the results, the team was able to improvise product features leading to 6X increase in revenue. Evan talks about their improvement in product features: “Streamlining livestreams auctioning process with an improvised feature that now starts in a single click—this highlights the power of Sigma's Solution in driving business success.”
+Increase In Order Volume
+Using Sigma's automatic document generation and version control capabilities, Whatnot could ensure data quality and consistency. It helped maintain accurate records of customer behavior and preferences effortlessly, leading to more targeted marketing efforts and improved customer experience, resulting in higher order volumes.
+The reports, powered by Sigma, helped various stakeholders understand the business deeply and as a result, the company was able to grow categories and impact from its product features, and even increase  order volume by 10X. Evan says, “Sigma's simplified charting and communication of statistical analysis provided valuable insights that contributed to our success.”
+2.5X More Efficiency
+Sigma's compatibility with Snowflake enabled Whatnot to access the live data in Snowflake directly. This integration enabled an advanced query engine and user-friendly interface allowing employees to analyze and filter massive datasets easily. This self-service functionality provided real-time insights, faster feedback loops, and accelerated learning, resulting in a 2.5X increase in efficiency.
+Enhanced Scalability
+Sigma's report-sharing capabilities through Slack and other platforms helped Whatnot automate the process of sharing metrics with partners and investors, allowing them to receive all necessary data more frequently than once a quarter. This allows them to improve communication and transparency with stakeholders, driving better business outcomes and amplifying growth.
+Sigma + Snowflake + dbt: Better Together
+Sigma's integration with Snowflake and dbt provided Whatnot with a powerful solution. Sigma’s simple spreadsheet-like interface works seamlessly with dbt data models and Snowflake's scalable storage and processing capabilities. Together, they provide a comprehensive and scalable solution for Whatnot's complex data analytics needs, enabling the company to make data-driven decisions with ease.
+In conclusion, Sigma's advanced business intelligence capabilities paired with Whatnot's data strategy empowered employees to make informed decisions in real-time. This led to significant revenue and sales growth, solidifying Whatnot's position as a leader in the online marketplace industry.
+BY THE NUMBERS
+10X
+10X INCREASE IN ORDER VOLUME
+6X
+6X INCREASE IN REVENUE GROWTH
+2.5X
+2.5X INCREASE IN EFFICIENCY
+More about
+Whatnot
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

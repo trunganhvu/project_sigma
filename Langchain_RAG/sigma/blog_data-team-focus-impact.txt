@@ -1,0 +1,163 @@
+Blog home
+Your Data Team Is Failing If They’re More Focused On Code Than Impact
+Fran Britschgi
+SOLUTION ARCHITECT, AI & DATA SCIENCE
+Jake Hannan
+HEAD OF DATA
+Your Data Team Is Failing If They’re More Focused On Code Than Impact
+From one “Technical User” to another: We have to make sure the impact of our data work goes beyond the code in our notebooks.
+How many times have you, as a data engineer or analytics engineer, poured countless hours into perfecting a data model? You dive deep into the code, ensuring every pipeline is flawless, every query optimized. You're chasing pinpoint accuracy, aiming to be exactly right.
+But then... nothing happens.
+Your meticulously crafted work doesn't impact the business. It doesn't inform decisions or drive strategy. Instead, it sits idle, gathering digital dust. Meanwhile, the data team is seen as a cost center—a black box that consumes resources without delivering tangible outcomes.
+Frustrating, isn't it?
+Why this disconnect exists
+This scenario is all too common and rooted in a fundamental misalignment. We're trapped in a governance doom loop, obsessed with perfecting data pipelines and enforcing rigid processes. In so many organizations, almost as a reaction against data democratization, we begin to prioritize our efforts against being exactly wrong while overlooking being vaguely right, sacrificing speed and agility for the illusion of perfection.
+Here's the forgotten reality of business: Direction is far more important than pinpoint accuracy.
+Here's the forgotten reality of business: Direction is far more important than pinpoint accuracy. Your stakeholders don't have the luxury of waiting for perfect data. They need to move fast, make decisions with insufficient information, and adapt on the fly. By focusing on being vaguely right, we embrace the reality that making decisions with imperfect data is better than making no decisions at all.
+Stop underestimating “non-technical” users
+We've also fallen into the trap of labeling business users as "non-technical," underestimating their insights and intuition. This leads to a disconnect where the real value—the historical understanding and expertise of subject matter experts—is shunted outside of the realm of the “data team.” Companies aren't founded to perfect data pipelines or pull tables in flawless SQL; they're built to deliver a marketable solution to the problems their founders originally dreamed of fixing. Of course, as data teams, we aim to serve this purpose through our expertise and craft the most robust data frameworks possible. But we must face the tradeoff; the most accurate data models imaginable are worthless if they’re not being adopted by the business, and worse than useless if the dogmatic pursuit of those data models prevents your experts from having access to data at all. 
+Your business experts are builders and doers
+So, how do we bridge this gap? It starts with an adjustment of our perceptions. The most successful companies using Sigma today have moved past the divisive label of “non-technical” in favor of a self-service model that has room for the actual range of skill sets that exist in each org.
+In practice, those personas typically fall into two categories: the builders and the doers.
+1. The builders 
+These are the software-savvy users who are always looking for an efficiency gain, the folks who are always looking to automate or to make life more data-driven. These tend to be individual contributors who aren’t afraid to test out new processes, but they really can be found in every department of your business.
+They operate independently from the traditional data team, leveraging their domain expertise to create new, reusable solutions that address the specific needs of their own teams.
+
+They don’t wait for IT teams to build them dashboards, they find the data themselves and set up their own alerts. They don’t wait for top-down initiatives, they test their own hypotheses with their own skills.
+
+They need tooling that allows them to prototype ideas beyond the imagination of the administrative layer. They need direct lines of communication, flexible permissions, and an unpoliced playground for their innovation. In return, with full awareness and intentionality, they build the data model into a contextually useful asset. They shape the assets available to an organization through the ad-hoc work that they build for themselves and their teams. Think of the folks who build macros, automate workflows, and dream big with bold initiatives to make their teams more efficient.
+2. The doers
+The doers are the individual users and revisionists who take existing tools and make them their own. They rely on their anecdotes, intuition, and insights—the nuanced understanding that no centralized data team can replicate. They are handed powerful templates from the builders, but they have the sole ability to enrich those templates with what they need to do their jobs better, something only they could know how to do. They carry the true heart of the reason for joining the company in the first place—the repository of intuitive knowledge, anecdotal experiences, and the nuanced insights of subject matter expertise. 
+Doers could be anyone in your business, but you’ll always find them pushing the boundaries of the tools they have access to. 
+By empowering both the Builders and the Doers, we tap into the true drivers of business value: the people who live and breathe the business every day. We stop viewing them as "non-technical” and start recognizing them as the collaborative experts they are.
+Bridge the gap between data engineering and business impact
+So as a technical team, how do we make sure our work is valuable? How do we help our very capable stakeholders—the builders and doers—leverage our data assets to build, analyze, and act?
+Here’s where Sigma steps in.
+Sigma bridges the gap between data engineering and business impact. With Sigma, data models don’t gather digital dust. They get leveraged by the builders and doers who need to solve problems—immediately.
+And our workbooks are the interaction layer that makes it all happen.
+How Sigma Workbooks ensure data assets get leveraged by the business
+Sigma has always been all about providing open access to data. We're talking raw tables, raw calculations—the works. It's a platform that turns the traditional governance model on its head. It’s open-world first, enhanced by security and governance, never limited by it. 
+For the builder:  Sigma empowers sales managers, marketing leaders, engineering leads, and builders of any kind to create comprehensive workbooks and dashboards without the bottlenecks of a centralized data team. They can innovate rapidly, embracing the philosophy that vaguely right is better than exactly wrong. This freedom enables them to deliver timely and impactful solutions, with the confidence that their Doers will be able to make their own specific required changes themselves.  
+For the doer: Users can take existing workbooks and customize them extensively. They can make their own 50 changes based on their anecdotes and intuition, tailoring insights to their specific needs while staying connected to the original data sources and assets provided to them by the builders.
+By providing this level of access and flexibility, Sigma reduces the friction between data teams and business users.
+The business impact of a data platform that works for all skillsets
+Embrace imperfection: Sigma allows for quick iterations and adjustments, enabling users to make decisions with the data they have—not the data they wish they had.
+Leveraging subject matter expertise: With Explore Mode, Input Tables, comments and collaborative live edits, business users inject their insights directly into the data analysis process, ensuring outputs are grounded in real-world context.
+Sigma allows for quick iterations and adjustments, enabling users to make decisions with the data they have—not the data they wish they had.
+Fewer interruptions: With business teams able to self-serve, data engineers face fewer ticket requests and "shoulder taps." You can focus on building robust data foundations without being a bottleneck. When people downstream from you build, you don’t have to.
+Enhanced collaboration: Collaborate directly with stakeholders within the Sigma workbook. You're speaking the same language about the same data, minimizing misunderstandings, and aligning goals.
+Cloud scale & speed: Leveraging the power of the cloud, Sigma ensures that data access is not just flexible but also fast and scalable. Architecturally speaking, Sigma will always be a perfect view into your warehouse as it exists, not as it existed through yesterday’s cached version.
+Advanced features: AI Queries allow your Builders and Doers to push the boundaries of what's possible, enabling sophisticated analyses without the traditional constraints of advanced edits. 
+Make sure your code drives impact
+The true value of your work is only realized when it's actively used and trusted by the business. You can use the coolest technology or most sophisticated code to build a data model or asset—but it doesn’t matter if it sits in a vacuum.
+So when it comes time to build your next data asset, make sure you’re thinking about the next step: Who does this go to? How do they leverage it? Do they have the tools to work with it on their own?
+From what I’ve seen, it’s the platform—the data interaction layer—that’s key to making it all work. Your stakeholders need a governed (but not too restrictive) playground where they can leverage the tools you’ve given them and uncover insights on their own. You build the initial components, and they build something bigger downstream. This way, data engineers and analytics engineers can finally see their contributions driving real decisions—and it’s not because they wrote the fanciest code. It’s because they enabled action.
+Want to see what I’m talking about? Schedule a Sigma demo, or explore a free trial, and we’ll show you exactly how to drive more business impact with your work.
+THE ULTIMATE KPI PLAYBOOK
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

@@ -1,0 +1,408 @@
+Blog home
+Modern Bastion Hosts
+Joshua Stuts
+SOFTWARE ENGINEER
+Modern Bastion Hosts
+In the modern world of networking, where do bastion hosts fit in? Even in a perfect world of Zero Trust with extremely robust user and device identity based authentication, it would still be risky to have all of your infrastructure publicly accessible. There are still great security benefits to having network layers for defense in depth. Thankfully, modern bastion host technology makes this achievable while being user friendly.
+What is a Bastion Host?
+a server whose purpose is to provide access to a private network from an external network, such as the Internet.
+The ideal “Modern Bastion Host” has the following traits:
+Uses SSH certificates
+Centrally managed
+Cloud platform agnostic
+Logs to a Cloud Data Warehouse
+Runtime security & alerting
+Auth
+Traditionally bastions hosts may have used standard static credential authentication, and perhaps directly granted access to resources once on the network. This isn’t great from a security perspective and is difficult to scale. The world is moving toward passwordless authentication methods, and so should our bastion hosts. Introducing identity based authentication solves this problem.
+Using your identity provider for authentication & authorization introduces multiple benefits. Combine using your identity provider with using a Certificate Authority for managing SSH certificates, and you’ll have an excellent way to automate user lifecycle management. Rather than manually adding and removing static SSH keys for individual users, you can centrally manage this process with groups within your identity provider.
+At Sigma Computing we use Okta for Single Sign-On (SSO) combined with Okta Advanced Server Access (ASA) for SSH certificate and server management. We enforce MFA when authenticating to Okta, and therefore access to our bastion hosts are protected by MFA. With Okta ASA, engineers no longer need to juggle holding onto static SSH keys. The ASA client brokers short lived SSH certificates for the user, based on their identity. With this, our engineers are able to securely log on to our bastion hosts nearly as easily as any SaaS app!
+Centrally Managed & Cloud Agnostic
+There are some great cloud provider specific products for bastion hosts and SSH management(AWS SSM, GCP OS Login, etc.), but in order to be strategic and avoid vendor lock-in, it is important to remain cloud provider agnostic. Solutions that can be used on any cloud provider, and integrated with any identity provider are best.
+This also greatly increases the usability for engineers. Regardless of where the bastion host is, users can access them all through the same method. Okta ASA enables our engineers to easily discover bastion hosts they have access to with one simple command sft list-servers. Bastion hosts from all of our cloud environments are centrally managed, organized into projects, and assigned user entitlements based on Okta groups.
+Logging
+We need to know who is logging in and when in case of a security incident. The standard linux openssh access logs, normally output to /var/log/auth.logor /var/log/secure depending on the distro, but these can be noisy and difficult to make use of. Okta ASA provides logging that not only shows logins, but also the SSH Certificate credential management actions.
+Once users are logged in to the bastion hosts, it is important to be able to audit what commands were ran. Okta ASA provides options for configuring session capture, but in our case we opted in for more tooling to allow runtime security controls on-top of just monitoring.
+As logs are collected, we send them to our security cloud data warehouse for long term storage, and of course to leverage Sigma’s capabilities for building dashboard visualization and log searching.
+Runtime Security & Alerting
+Beyond just monitoring, it is essential that we have the capability to enforce policies and manage SSH sessions in real time. Cmd Control offers a solution, installed as an agent on your Linux SSH hosts. The Cmd console lets us define our own policies and respective actions.
+For example, here we can define a policy that triggers whenever an SSH session is about to start that is outside of the US and Canada. When triggered, this will send a slack alert to us, requiring approval within 120 seconds. If approval is not granted, the session will be stopped.
+Additional Security Considerations
+Patching
+Patch the bastion hosts. Everything above will be for a lost cause if you’ve left your bastion hosts vulnerable to known security issues. For bastion hosts running on cloud VMs, its the responsibility of the account owner to patch the OS and packages on the host. For Linux hosts, the unattended-upgrade utility is a great starting point for automating security package updates. The major cloud providers each have their own features for VM OS patch management.
+Infrastructure as Code
+Using an Infrastructure as Code tool, such as Terraform, modules can be built to represent the bastion hosts as code. This makes it easy to manage and scale. Once the configuration is defined in code, it can be repeatedly deployed to new environments. There should be no manual configuration drift. Configuration as code should be the source of truth.
+Zero Trust Principles
+“never trust, always verify”
+Just because a user is on a bastion host within a private network, does not mean it can be blindly trusted. Want to access the private kubernetes endpoint from the bastion host? Verify your identity again. Want to access a private database? Verify your identity again.
+Visualization
+To wrap things up, Sigma can easily help build dashboards to convey all the important information, in seconds. Anyone can build a dashboard with Sigma, you don’t need to be a data scientist, or in this case a security wizard. Simply connect Sigma to your security cloud data warehouse, and explore!
+Fully customizable dashboard created with Sigma Computing
+Thanks to Jim Gale, Diana Johnson, and Ross Hosman
+‍
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

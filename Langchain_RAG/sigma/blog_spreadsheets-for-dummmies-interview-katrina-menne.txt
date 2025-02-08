@@ -1,0 +1,669 @@
+Blog home
+Decoding Data Trends: Insights from Analytics Expert Katrina Menne
+Krishn Rapoor
+PRODUCT MARKETING MANAGER
+Decoding Data Trends: Insights from Analytics Expert Katrina Menne
+Sigma sat down with Katrina Menne, a renowned expert in data analytics and author of "Spreadsheets for Dummies: Sigma Special Edition." In this conversation, we explore the evolution of data from ancient records to today's digital spreadsheets, the pivotal moments and trends in the data analytics industry, and the innovative approaches of platforms like Sigma. 
+Menne shares her journey into data analytics, the challenges and opportunities in data democratization, and her vision for the future of business intelligence. This interview is a must-read for anyone interested in the dynamic world of data. Don't miss the chance to deepen your understanding and skills—download "Spreadsheets for Dummies" today.
+In your view, how has the story of data evolved from ancient times to today?
+The story of data is the story of humanity itself. Some of the earliest examples of writing were tables recording trade, inventory, and population records. For the vast majority of history, data collection was a meticulous process because the necessary tools were expensive and reserved for the select few. Even as technology advanced with inventions like paper, the printing press, and computing, the spreadsheet has endured because it is how our brains best organize data. Today, digital spreadsheets continue to be indispensable tools because they enable businesses of all shapes and sizes to analyze, visualize, and share data with efficiency and accessibility.
+What drove you to become involved in data analytics, and what message do you hope to communicate through your work?
+Like many people in the data industry, I didn't intend to end up here. Growing up, I always asked many "why" questions. My early career was typical, Excel-based, business and financial analytics roles, where I learned how to understand and translate spreadsheets into meaning. My following roles "moved beyond" the spreadsheet into automation, visualization, and general data practices, but now I've come full circle back to the spreadsheet! The overarching message I want to convey through this book and my other content is that anyone can be a data person. You only have to be curious and willing to learn. 
+Do you have a favorite section or chapter in the book? If so, which one and why?
+My favorite section to write was Chapter 4, The Future of Spreadsheets and Data Analytics. Sigma could have taken the easy route of building "just a fancy Excel," but they aren't. Instead, Sigma is creating a whole new realm of possibilities for data teams with data applications. I conclude the section by painting a picture of a pretty cool, streamlined, but powerful data future.
+What are some of the most surprising trends in the data analytics industry right now?
+An interesting trend has been the return to presenting analytics in tables. Trends always ebb and flow, and for a while, with the rise of data visualization platforms, designers shifted away from tables in favor of bar charts, line charts, maps, and other visualizations. However, there was always this underlying desire for “just show me the numbers.” It's been exciting to see a better balance between beautiful visualizations and well-designed tables, especially now that it's easier to build them. Ultimately, it's all about finding the right combination for the audience and the use case.
+Who would you say are the heroes and villains in the story of data democratization?
+There is a pretty interesting mix of heroes and villains in the story of data democratization. On the hero side, we have those no-code/low-code platform developers like Sigma, whose primary goal is to make data more accessible to nontechnical folks. Then there's the vibrant data community, contributing through forums, meetups, and social media, teaching data literacy, analytics, engineering, and decision science to anyone interested. On the flip side, we've got the villains – such as data silos or technical debt within organizations that keep information fragmented and proprietary software that locks data into restrictive systems. And, of course, there's the ongoing issue of bias in data and algorithms that can lead to unfair outcomes. It's a fascinating and complex landscape.
+What would you say has been a pivotal moment in the evolution of data analytics during your career?
+A pivotal moment was the rise of drag-and-drop interfaces for data tools. These no-code/low-code options empowered nontechnical users to not only consume data but also manage and manipulate it. Once people could answer their own questions, they started asking more and more. And this sparked a wave of curiosity and self-sufficiency that really drove the need for a better iteration, like Sigma.
+Could you describe a typical user of advanced data tools? How have their needs shaped the development of platforms like Sigma?
+Advanced users of data tools typically fall into two categories: those tackling complex modeling and predictive analytics, and those who, having mastered the fundamentals, skillfully combine basic concepts to create sophisticated yet clear and intuitive analyses. These users push the boundaries of platforms like Sigma, driving the continuous release of innovative features and updates. One aspect I love most about Sigma is their responsiveness to feedback, implementing solutions that not only address specific pain points but also streamline the entire workflow, making the overall process more efficient and intuitive.
+In what ways does a company like Sigma represent a paradigm shift from traditional spreadsheets and BI platforms?
+Sigma challenges the limits and traditional use cases for spreadsheets and BI platforms by combining the best of these former options and adding innovative features. The clearest example is Input Tables, which capitalize on everyone's familiarity and comfort with spreadsheets but in the wrapper of a modern BI platform. By embedding editable spreadsheets into the data analysis lifecycle, Sigma has unlocked new data creation, management, and analysis possibilities. This combination allows users to seamlessly transition from data management to analysis and actionable insights, bridging the gap between traditional tool’s limitations and modern business needs.
+How does Sigma address the challenges posed by massive datasets that traditional spreadsheets struggle to manage?
+Sigma handles massive datasets by actually loading the data properly, which might sound simple but is absolutely fundamental. I can't count how many times I've been in discussions about what to compromise on because traditional spreadsheets can't manage large datasets. People often settle for less granularity or shorter time frames, missing out on valuable insights. Sigma, however, was built for modern cloud architecture from the ground up, not just adapted to it. This shift means significant performance improvements, letting users work with large datasets smoothly and uncover those deeper insights without having to compromise.
+What are the upcoming trends or technologies in data analytics that you find most exciting or potentially game-changing?
+AI is obviously a current hot topic in every industry. While many people mention faster development and more advanced analytics as key benefits, I'm particularly excited about its impact on data consumers. Innovation thrives on diverse perspectives, and AI has the potential to make it easier for individuals from various backgrounds to explore and utilize data. I'm looking forward to seeing how this will challenge and grow traditional, technically oriented-thinkers to find new innovations and strategies.
+Looking beyond the current landscape, what future developments do you hope to see in the field of business intelligence? How does Sigma fit into that?
+The future of data and business intelligence is incredibly promising. While AI will undoubtedly drive new innovations, several other exciting developments are on the horizon. For example, as data becomes more accessible and technical barriers lower, the importance of data literacy—understanding fundamental data concepts—will only grow. I hope to see a continued emphasis on educating the general public in proper data analysis and interpretation. Platforms like Sigma will play a key role in this evolution by offering user-friendly entry points and progressively advanced features as users develop their analytics skills. Another future I look forward to is a continued emphasis on data compliance and security that gives individuals greater insight and control over their own data, ensuring user privacy and ethical data practices.
+Get the ebook
+Job level*
+Executive / VP
+Director
+Manager
+Individual Contributor / Specialist
+Student / Researcher
+Job role*
+Data Architect
+Engineer
+IT
+Product Manager
+Other
+Country*
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+I Agree to receive other communications from Sigmacomputing.com. 
+
+By clicking submit below, you consent to allow Sigma Computing to store and process the personal information submitted above to provide you with the content requested.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

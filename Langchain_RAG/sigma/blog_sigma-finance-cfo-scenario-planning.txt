@@ -1,0 +1,388 @@
+Blog home
+No-hassle Scenario Planning: Sigma's CFO On How Real-Time Data Is Changing Finance Leadership
+Christina Liu
+CHIEF FINANCIAL OFFICER
+No-hassle Scenario Planning: Sigma's CFO On How Real-Time Data Is Changing Finance Leadership
+As a CFO, quarter-end is always an intense time—filled with pressure, constant shifting priorities, and high-stakes decisions. But during my first quarter-end at Sigma, I experienced something revolutionary: real-time, actionable insights at my fingertips, 24/7. It changed the game for how I approached the entire process.
+Having access to our pipeline forecasting and movements, built easily in Sigma, was a transformative experience. In real time, I can track bookings, renewals, new logos, and more. I can start at the highest level and drill down by region, customer segment, or even individual accounts, and see instantly where the pipeline stands.
+No more waiting for static reports or reconciling conflicting numbers between departments. With Sigma, I can clearly see the progression of opportunities through the sales cycle, and also get an immediate view on how future quarters are shaping up. Scenario planning is no longer a hassle, either, with input tables enabling me to map out potential outcomes on the fly.
+No more waiting, just winning
+One of the most remarkable aspects of Sigma is how dynamic the process becomes especially during quarter-end. Deals constantly shift—some are won, others are lost or get pushed—all of this happening by the hour. Previously, using other BI tools, there were long refresh times that slowed down decision-making. By the time clean dashboards were ready, so many deals had already been processed. Sigma eliminates that delay entirely, enabling truly real-time decision-making and ensuring everyone across the organization is working from the same up-to-date information.
+In the past, this lag in data updates often led to version control problems. What finance saw in the morning didn’t match what the sales team was working with by noon, which created unnecessary cycles of back-and-forth to sort out discrepancies. This process consumed valuable time and energy. But with Sigma’s real-time capabilities, the issue of conflicting data simply disappears. Everyone operates from a unified source of truth, cutting down on confusion and enabling quicker, more confident decision-making.
+One source of truth for all teams
+The ability to self-serve data is another key advantage of Sigma. From any chart or table, I can easily drill down into the details, whether by sorting deals by region, account rep, or size. In the past, getting these answers would have required reaching out to someone on my team and waiting for a report. Now, with Sigma, I can explore and diagnose data on my own, immediately finding the answers I need without wasting time or energy.
+With Sigma’s real-time capabilities, the issue of conflicting data simply disappears.
+As any CFO knows, quarter-end is not just about closing deals; it’s about cross-functional alignment. In the final days of the quarter, all teams—sales, finance, product, support and many other teams —need to be on the same page to ensure success. Having a unified, real-time view of the data made our daily meetings more efficient. Instead of wasting time aligning on what everyone was seeing, we were already aligned and ready to take action. This meant faster, more informed decisions.
+Breaking down silos with Sigma
+Beyond quarter-end, Sigma is also proving invaluable for planning and cross-functional collaboration. We use Sigma to plan our resource allocations and share cross functionally.  This shared visibility allows everyone to play with the data in real time, experimenting with different allocations and ROI scenarios.  No more multiple versions of the same spreadsheet, one for each function.   The role based security Sigma offers allows the same workbook to be shared with different teams, each having their customized view.  
+This level of transparency and collaboration is critical for effective planning. Finance can no longer operate in a silo, planning out budgets without input from other key stakeholders. Sigma’s sandbox approach allows leaders across the organization to take ownership of their budgets and contribute to a more accurate and aligned financial plan. This dynamic relationship between finance and the rest of the business is essential for success, and Sigma is enabling that collaboration like never before.
+My first quarter-end at Sigma has been a revelation. Having been through countless challenging quarter-ends in my career, I can confidently say that this one was different. With real-time data, self-service capabilities, and a unified source of truth, we were able to make faster, more informed decisions that directly impacted our success.
+For finance leaders looking to streamline their operations, improve cross-functional collaboration, and make real-time, data-driven decisions with confidence, Sigma is the key. It has already transformed how we operate during the most critical moments, and I’m excited to see how it will continue to empower our team as we move forward.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

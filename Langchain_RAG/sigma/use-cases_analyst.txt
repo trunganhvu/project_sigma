@@ -1,0 +1,127 @@
+ROLE
+Business analyst data visualization software
+Bye-Bye backlog 👋 ... Sigma is so easy to use, you’ll spend less time creating reports and more time solving complex business problems. 
+Request a demo
+Free trial
+Analysts are closer to the business than anyone, but are often too buried in the reporting backlog to focus on higher-value initiatives. Legacy BI tools only make the problem worse because they are slow, restrictive, and require constant end-user training to achieve self-service. 
+
+Sigma is fast and familiar. Live query = no data movement, no pre-defined drill paths, and no scale limitations. Sigma’s spreadsheet-like interface enables users to freely explore ALL their data, drilling into the smallest detail. For analysts, that means less time writing reports and more time solving complex business problems.
+Build better content, faster
+Connect, visualize, and publish content in minutes. Build pivots, answers, and advanced analysis with ease. Share those insights with others and let them continue to explore in a secure, governed environment.
+Collaborate with your stakeholders in real time
+Reduce reporting back-and-forth and improve self-service by collaborating with your users in real time. Annotate data to improve data literacy and boost data fluency. Sigma will help your users understand and speak the language of data like never before.
+Work with all of your data
+Speed ✔️ Scale ✔️ Complex data models ✔️
+
+Whether it's a simple csv upload, an existing dataset from your warehouse, or anything in between, use Sigma to create a model or start exploring model-free. It’s your choice. 
+
+Business logic, reusable metrics, data lineage, and more. Datasets in Sigma allow ultimate flexibility to work with your data however you want.
+“We are 2.5X more efficient; Sigma delivers a powerful solution that has democratized data access, enabling rapid prototyping, and innovation.”
+Evan Hou, Head of Analytics, Whatnot
+VIEW STORY
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

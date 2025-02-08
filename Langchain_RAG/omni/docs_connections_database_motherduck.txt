@@ -1,4 +1,4 @@
-Connect to DataDatabase setupMotherDuck
+Connect to DataConnect databasesMotherDuck
 On this page
 MotherDuck
 Connect to MotherDuck.
@@ -21,6 +21,10 @@ Use this image to follow along with the next steps:
 3.5.3. Navigate back to the database connection page in Omni.
 3.5.4. Paste the token you just copied.
 Select “Create Connection” and voila! You can see your new connection in action by heading over to the “Make a workbook” or “Browse Model” options in the “Woo hoo!” success modal in the top right.
+What's next?
+Now that Motherduck is set up, you can:
+Configure user permissions, schema refreshes, environments
+Learn how Omni generates the model associated with the connection
 Previous
 Microsoft SQL Server
 Next

@@ -1,0 +1,393 @@
+Blog home
+Sigma Listed as a Representative Vendor in the 2023 Gartner® Market Guide for Embedded Analytics
+Prashant Soral
+SR. DIRECTOR, ENTERPRISE ARCHITECTURE
+Sigma Listed as a Representative Vendor in the 2023 Gartner® Market Guide for Embedded Analytics
+In the 2023 Market Guide for Embedded Analytics, Gartner says, “The definition of the embedded analytics market is changing as the availability of low-/no-code interfaces increases, drawing on the services originally exposed via APIs to support embedding. These enable non developers to compose stand-alone analytic applications. In addition, capabilities are evolving, with more platforms offering automated insights such as key driver analysis, outlier/anomaly detection, clustering and forecasting. These capabilities are enabling citizen developers, who may lack coding skills, to extend the reach and connectedness of how ABI is used.”
+As companies become more data-driven and users need to answer more questions, having embedded analytics capabilities within your business can be a game-changer. Deploying embedded analytics within various software applications and web experiences is great for streamlining user workflows and assisting in day-to-day operations. 
+In a 2021 Gartner Analytics Consumerization-Democratization study, “among the organizations that took part, 62% already use embedded analytics built by application developers, and an additional 21% are planning to adopt the technology.”
+Simply put, embedded analytics is the process of integrating analytics tools directly within applications or websites, giving users access to insights and enabling them to build dashboards and make data-driven decisions quickly without having to leave the application or website.
+Embedded analytics eliminates the need for separate tools or dashboards, allowing users to explore data, create visualizations, and quickly generate reports. Embedded analytics are incredibly useful for organizations that rely heavily on data to make decisions, such as finance, healthcare, and e-commerce. Businesses can see overall improved productivity and efficiency through embedded analytics. Along with the advantages and increasing popularity of low/no-code data analytics solutions, many companies are looking to simplify their data stacks and make it easier for everyone to leverage data for decision-making. 
+Sigma was built to help businesses harness the power of their data in an easy-to-use and familiar interface—the spreadsheet. Our embedded analytics enable companies to move fast and allow users to self-serve, cutting out unnecessary work to reach the final insights. One of our customers, Greenwich.HR, a global provider of real-time labor market intelligence, was able to leverage Sigma’s embedded analytics capabilities to enter a prohibitive market and projects over $1m in new revenue.
+“We're projecting WageScape—powered by Sigma—will give us seven-digit revenue from new incremental sales in the first year of operations.” —Cary Sparrow, Founder & CEO, Greenwich.HR
+It’s no secret that companies want to be as efficient and cost-effective as possible, so naturally, an embedded analytics solution makes sense if you have a use case. Embedding analytics within applications is less expensive than purchasing a separate analytics platform with licenses for each user and makes it easy for customers to get insights, improving customer satisfaction. Additionally, with Sigma’s embedded solution, users require little to no training due to the familiar spreadsheet interface. A perfect example of this comes from our customer Slope Software a cloud-native financial projection platform. Slope was able to eliminate unnecessary complexity and land its biggest customer after reviewing its new Sigma-powered embedded capabilities with the prospect.
+“We’re definitely power users. We’re probably using all of the features Sigma offers on the embedding side, plus some features that are still in beta. We’re hoping that what Sigma has learned from implementing with us will help Sigma become the best embedding solution on the market. It’s an incredible product.” —Taylor Perkins, Co-founder & CTO, Slope Software
+Gartner states, “by 2026, 50% of organizations will have to evaluate analytics, business intelligence, data science and machine learning platforms as a single and composable platform due to market convergence.” 
+Many companies will be looking for the right analytics tools in the coming years since leveraging data is crucial in order to stay competitive. Embedded analytics will be highly sought after, given all of the advantages that come with it.
+There are multiple uses for embedded analytics functionality:
+To assist internal users within an organization by delivering analytics directly in business applications.
+For external users such as customers to have access to analytics within a web experience.
+Integrating analytics capabilities into commercial software offerings.
+Sigma has done a lot of work to directly enable secure and powerful embedded analytics capabilities into customer-facing products. At Sigma, we want to enable business users to build reports and dashboards in a familiar spreadsheet interface without having to know SQL or rely on a data team and to have complete visibility of data lineage and the transformations needed to productionalize data products, all while connected to your single source of truth, your data warehouse.
+Whether your organization needs to embed single visualizations or a group of visualizations, both can be embedded in a page, even if it includes other UI components. You have the ability to embed entire dashboards on their own. 
+Gartner, Market Guide for Embedded Analytics, 14 February 2023, Anirudh Ganeshan, et. Al.
+GARTNER is a registered trademark and service mark of Gartner, Inc. and/or its affiliates in the U.S. and internationally and is used herein with permission. All rights reserved.
+Gartner does not endorse any vendor, product or service depicted in its research publications, and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner’s research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose.
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Embedded Analytics
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -280,6 +280,6 @@ col3:
         col3:
           is: true
 Previous
-Measures
+Relationships & Joins
 Next
 Templated Filters

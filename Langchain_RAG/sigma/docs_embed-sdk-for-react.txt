@@ -1,10 +1,114 @@
-Embed SDK for React (Beta)
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
+Embed SDK for React
 Suggest Edits
-🚩
-This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
-Beta features are subject to the Beta features disclaimer.
 Sigma provides several methods to allow users and developers to interact with its systems, including a web user interface, a public REST API, a JavaScript Embed API, and an SDK for the React framework.
 The Embed SDK for React offers a higher-level, developer-friendly interface that simplifies integration into applications, in contrast to Sigma’s lower-level JavaScript Embed API, which provides more granular control but may require additional coding.
 The source code is freely available on Github. Developers can clone the repository and refer to the comments in the code for each file.
 Additionally, there is a QuickStart for a more in-depth guide to using the SDK.
 The source contains a working application with a sample embed based on Sigma provided content.
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

@@ -1,6 +1,6 @@
-ModelingQuery Views
+ModelingQuery views
 On this page
-Query Views
+Query views
 Query views are workbook queries that have been saved to the shared model as a view. This model file type has a file name structure of <query_name>.query.view. The <query_name> is dynamic based on what the query tab is named in the workbook. This is a powerful mechanism that allows you to do light transformations on data which get compiled as CTEs when queried.
 Create a query view
 In a workbook, build out the desired query you want to save. Once your query is all ready, navigate to the workbook's menu, click Model and towards the bottom of the list you can select Save query as view. Once a query view is created you can also choose Update query as view to use the same workflow without duplicate query views in your model.

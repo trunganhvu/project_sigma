@@ -1,3 +1,120 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+CTRL-K
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Dataset best practices
+Tutorial: Data modeling with datasets
+Introduction to the Dataset Worksheet
+Dataset worksheet controls
+Dataset Worksheet Columns
+Dataset Totals
+Dataset filters
+Create and manage dataset parameters
+Using CSVs in Datasets
+Dataset Lineage
+Share datasets
+Configure Dataset Columns
+Dataset Links
+Create a dataset from SQL
+Manage datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Dataset Worksheet Columns
 Columns are central to working in Sigma. When you create a dataset worksheet, you can structure and format your existing columns, create column calculations, and sort and filter your data.
 Suggest Edits
@@ -93,3 +210,9 @@ When Sigma detects JSON or Variant column types, ‘Extract Columns’ becomes a
 Did this page help you?
 Yes
 No
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

@@ -61,4 +61,4 @@ Changes to Dynamic Schemas
 Previous
 Editing & publishing content
 Next
-Workbooks
+Migrating dashboards

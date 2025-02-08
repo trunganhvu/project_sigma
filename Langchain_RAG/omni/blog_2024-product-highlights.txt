@@ -1,0 +1,86 @@
+Ship it: Omni’s 2024 Product Highlights
+Upleveling the basics and doing things a bit unconventionally
+December 11, 2024
+Arielle Strong
+One of Omni’s company values is “ship it.” This applies to both us and our customers: we move fast, and we want our customers to move fast, too.
+In 2024, we did just that: we shipped a lot of stuff. Along the way, we pushed 4,884 commits to Github and shared our progress for everyone to follow with 386 Engineering development demos. Everything we shipped helped us continue on our journey of redefining what great BI looks like by upleveling the basics and doing things a bit unconventionally.
+It can be hard to keep track of it all, so keep reading and check out Jamie’s Omni Live for some of the core areas we tackled and a sneak peek of what’s coming next 👀
+AI that’s *actually* helpful
+Analysis accelerators
+Beautifying Omni
+Dev workflows that just make sense
+Embedded analytics your users will love
+Admin controls and automations
+What’s coming next
+AI that’s *actually* helpful 🤖
+When we built AI capabilities into Omni, we approached it with a healthy amount of both skepticism and optimism. We knew AI could be a helpful tool, as long as it’s also trustworthy. 
+So we designed AI query and calculation agents to speed up your workflows. Not sure where to start when looking at a new dataset? Our Query AI agent can get you started with an answer and give you the tools to keep iterating until it’s just right. Can’t remember how to perform a nested IF statement in Excel? Don’t worry, Calculations AI is an Excel expert. 
+Plus, our AI tools are teachable. They consume all the rich metadata that already exists in your data model and can take instruction and additional prompts to help them understand your unique business and data.
+For more details on our AI features & philosophy, check out:
+AI querying: Watch my demo here & read about it in our docs.
+Calculations AI: See it in action here & read Richard’s blog here. 
+Omni’s AI philosophy: Read Colin’s blog here.
+Analysis accelerators 💥
+Back in my analyst days, I was often running analyses that should’ve been simple, but the tool I was using made it clunky. With Omni, we want to take simple tasks that are annoyingly hard to do and make them delightfully easy. 
+For example, period-over-period analyses are such a common use case; they need to be easy for anyone. We’ve made this possible directly from the UI: simply toggle between fields in charts and do period-over-period analysis. You can also bring data from one tab to another with xlookup(), directly reference another cell’s values, or use one query’s results to filter another – without any complex joins.
+For more details on our analysis accelerators, check out:
+Period-over-period: Watch Steven demo it here. 
+xlookup(): Watch demos & read the blog from Cathy here.
+Cross-tab refs: Watch Cathy demo it here. 
+Filter by query: Watch Steven demo it here.
+Field & timeframe selectors: Watch Jamie demo it here & read more about how to set these up in our docs.
+Beautifying Omni 🎨
+We care about design, a lot. We want Omni to be beautiful, and we want to give you the tools to make your Omni outputs beautiful. 
+This year we released theming and custom color palettes to give you lots of power to design gorgeous, picture-frame-worthy dashboards (or at least match your corporate branding). We also added beautiful map visualizations and fine-tuned a bunch of visualization configuration controls to help you display data in a way that is just right. 
+And for the Omni app itself, we sprinkled in updated colors, layouts, and interactions to make navigation even easier.
+For more details on how to build beautiful content in Omni, check out:
+Dashboard theming: Watch Jared demo it here & read our docs for more. 
+Global color palettes: Watch Gustav demo it here & read our docs for more.
+Visualizations:
+Auto-visualization enhancements: Watch Nate demo auto-vis locking here. 
+Custom map regions: Watch Rob demo it here & check out our very first customer demo: Chris from CamoAG showing some cool custom maps.
+Omni UX: Watch Luke walk through some of the improvements here.
+Dev workflows that just make sense ⚡
+BI is just one piece of the data stack puzzle, but that’s not where our caring about the workflow starts or ends. We want to have the best development workflows so that managing ever-changing data feels seamless – within and beyond Omni. 
+Since many of our customers use dbt in conjunction with Omni to manage data transformations, we spend a lot of time thinking about what the dbt <> BI workflow should be. To make this possible, we deepened our dbt integration to offer:
+Toggling between dev/prod schemas to test the impact of dbt changes
+dbt SQL mode, which lets you run dbt SQL (including ref()s) directly in Omni
+“Push to dbt”, which allows you to author dbt models from Omni 
+A “dbt IDE” that shows your entire dbt repo inside Omni
+We also pushed hard on version control options in Omni. For example, you can connect Omni to your git repo to use pull requests to manage your model and store backups of model files (and my personal favorite – git blame 😉). With our new draft/publish workflow, changes can also be staged in a draft before pushing them live. This helps keep your “production” content safe while you edit and develop behind-the-scenes. Plus, our model and content APIs allow programmatic, code-based editing of your Omni instance from other applications, opening up more ways to manage Omni as you’d like.
+For more details on development workflows, check out:
+dbt: Read Liam’s blog on our dbt integration & watch Buck demo: Dynamic schemas, dbt SQL mode, push to dbt, and dbt IDE.
+Git: Read more about our Git integration here.
+Content drafts: Watch Luke demo the latest version of drafts here & read our docs for more.
+Model API: Watch Jamie demo it here.
+Content API: Watch Chris demo it here.
+Embedded analytics your users will love 📊
+We love helping our customers build analytics into the apps their team already uses, like Salesforce, and into their customer-facing products. Our work across Omni extends to our embedded analytics offering, including design and beautification controls – making it even easier to fine-tune the reports and dashboards you build with Omni to match the look and feel of your own app.
+And this year, we wanted to take it a step further so your customers can drill in and interact with their data. Create Mode for embedded analytics allows your customers to go beyond pre-built reports and dashboards to build their own analyses using AI, Excel, and point/click. This lets them get super granular with their data and saves your team from sending ad-hoc reports. Do your customers prefer to receive updates via email? No worries, our embedded deliveries make it possible to schedule and send data directly to the right person’s inbox. 
+For more details on our embedded analytics, check out:
+Create Mode: Watch Elliot demo it here & read more about it here. 
+Embedded deliveries: Watch Elliot demo it here.
+Admin controls and automations ⚙️
+Navigating BI permissions can be a big responsibility for your data team, so we’ve added several features to streamline these processes as much as possible. 
+Users can now set their own timezones for date/time fields in Omni (this also lets you provision embed users’ timezones on the fly). And if you have extra tight permissions requirements, SAML-only login mode gives admins even greater control. We’ve also made it easier to understand how your team uses Omni with more detailed usage analytics and the ability to go deeper with ad-hoc analyses. And with so many users needing fresh answers, we know performance optimization is key. So, we released aggregate awareness to help you leverage preexisting, clean data (perhaps transformed by a tool, like dbt) to optimize your queries dynamically for speed.
+On the automation front, you can set conditions to receive alerts when the results of a query change. Want to know if traffic increases or inventory is too low? We got you. You can also schedule data deliveries to others via email, Slack, or webhook, and even apply different filters per recipient with email bursting.
+For more details on our admin controls & automation, check out:
+In-app analytics: Watch Gustav demo ad-hoc analysis here. *For customers, you can access Analytics from the sidebar on the homepage. 
+Aggregate awareness: Learn how to get started in Steven’s blog.
+Content organization & foldering: Watch Luke demo it here.
+User-specific timezones: Watch Steven demo it here.
+SAML-only login: Watch Chris demo it here.
+Schedules & alerts: See it in action in Corey’s blog. 
+Email bursting: Watch Corey demo it here. 
+What’s coming next 👀
+We’ve been busy, and we’re even more stoked about what’s coming next year. Of course, we’ll continue investing in the fundamentals. But, we also love creating exciting and novel experiences in the BI layer. Some of our early experiments include:  
+Spreadsheets (for real)
+Despite all the fancy viz types you can use in Omni, tables are still the most popular. We want to bring the rich spreadsheet experience we know and love from Excel directly into Omni. We’re working on some early versions and we’ll continue to share more as it develops. 
+Product-ized dashboards 
+When we share product updates with our customers, the features that make dashboards more engaging often get a ton of hype. We’re exploring more ways to make dashboards feel like mini-apps that can be used operationally, including dynamic pullout drawers, richer pop-ups, and deeper styling controls. We want to give customers the flexibility and interactions needed to go from dashboard → actionable app.
+New use cases for AI 
+We’re continuing to test ways to build useful and trustworthy AI into Omni. For example, we noticed that most customers are comfortable writing Excel formulas with arithmetic, but they often use Calculations AI to write longer, more complicated formulas (the longest one was a whopping 10,620 characters, written by AI!). In these tedious scenarios, we think applying AI can be a massive accelerator.
+One example is an AI agent for SQL and modeling to help speed up developers building in Omni. This demo shows an early version of an AI “copilot” that autocompletes code in the SQL editor and model IDE.
+Hop aboard the ~ship~ 🚢
+We’re grateful to all our customers – their constant feedback helps us ship better and faster. We’re excited to keep the momentum going next year and can’t wait to hear what else you’re looking for. 🙌
+If any of these features catch your eye and you’d like to learn more, we’d love to show you. And you can always catch our weekly engineering demos on our website or follow along on LinkedIn.

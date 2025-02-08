@@ -1,0 +1,143 @@
+Blog home
+How to Influence Stakeholders to Embrace Embedded Analytics
+Krishn Rapoor
+PRODUCT MARKETING MANAGER
+How to Influence Stakeholders to Embrace Embedded Analytics
+‍Embedded analytics is no longer just a buzzword; it's a strategic must-have for any organization looking for a competitive edge. By Integrating data analysis tools into existing applications, you’re not just enhancing capabilities—you’re, empowering every stakeholder to unlock the full potential of your data. But let’s be real, convincing stakeholders to jump on the embedded analytics train can require a bit of finesse. 
+In this post, we'll explore smart strategies for getting your stakeholders excited about embedded analytics and ready to make better, data-driven decisions.
+Why Embedded Analytics?
+Embedded analytics has become a game-changer for a variety of reasons. Here’s why it’s making waves and why businesses are jumping on board to drive data-driven decision-making.
+Competitive Advantage
+Embedded analytics is a serious market differentiator. It adds immense value to your product, making it stand out and giving your business a competitive advantage. Not only does it help monetize data, but it also increases product stickiness. This can transform your company into a data-driven powerhouse, attracting new customers and boosting revenue. Plus, it enhances productivity by allowing users to analyze data without disrupting their workflow, saving time, and keeping everyone focused on core tasks.
+User Experience
+Seamlessly integrating embedded analytics into workflows can dramatically improve user experience. It reduces the learning curve and boosts efficiency. With embedded analytics, you maintain consistency and branding, presenting data within your product’s existing interface. Users can quickly respond to changes and make informed decisions, all while enjoying a cohesive and customized experience that matches your application’s branding.
+Scalability
+As your organization grows, so does the need for scalable solutions. Embedded analytics can easily scale to meet increasing data and user demands, making it a vital component for accommodating business expansion.
+Communicating with Stakeholders 
+Understanding why embedded analytics is crucial is just the first step. Next, you need to communicate its value effectively to your stakeholders. Here’s a roadmap to influence and inspire them. 
+Know your audience
+Before making your pitch, it's essential to identify the key stakeholders. Embedded analytics impacts everyone in a company, each with unique needs and challenges. Generally, stakeholders fall into one of three groups: product, business, or data teams.
+Product Teams
+These folks are responsible for developing and managing the product in which your data will be embedded.  Product managers, developers, and UX/UI designers care about product features, functionalities, user experience, and design. Development time, usability, and the look and feel of the product are top of mind. They want embedded data to blend seamlessly into one cohesive product, prioritizing user experience.
+Business Teams
+Getting buy-in from business stakeholders is critical. Executives, sales, and marketing teams must be aligned for your embedded project to take off. They focus on the strategic value embedded analytics brings, such as aligning with business goals, supporting data-driven decision-making, and contributing to the overall success of the business. Think new revenue streams, cost-cutting, or time-saving opportunities.
+Data Teams
+Data managers, analysts, and scientists want their work to be accessible and actionable. They create the underlying data models, algorithms, and visualizations that power embedded analytics. These stakeholders prioritize the accuracy and security of analytics itself, as the embedded product is useless if the data is inaccurate or exposes sensitive information.
+Target Your Message
+Tailor your message to highlight the tangible benefits of embedded analytics based on the stakeholders you're addressing. For executives, focus on business value and competitive advantages, such as new revenue streams For data analysts, focus on technical benefits like row-level access control. Keep it relevant and clearly demonstrate how embedded analytics directly impacts them.
+Provide a Live Demonstration
+Actions speak louder than words. A live demonstration of embedded analytics allows stakeholders to see the potential firsthand. It answers  questions in real-time and provides a personalized walk-through, bringing their specific use cases to life. 
+Leverage Success Stories
+Share compelling success stories and case studies of organizations that have successfully implemented embedded analytics. Tailor these stories to your audience.   For data teams, a case highlighting how  “Sales Impact Academy Cuts Dashboard Creation Time by Over 50% with Sigma” can build trust and illustrate increased effectiveness. Real-world examples are powerful motivators. 
+Conclusion
+Getting stakeholders to embrace embedded analytics requires a blend of understanding their needs, showcasing tangible benefits, and using targeted messaging. By addressing their concerns, offering hands-on experiences, and demonstrating the transformative potential of embedded analytics, you can pave the way to a more data-driven and agile future. It's time to unlock the full potential of your data and empower stakeholders to make decisions that drive success.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Embedded Analytics
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

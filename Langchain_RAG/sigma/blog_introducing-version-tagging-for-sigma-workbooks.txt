@@ -1,0 +1,418 @@
+Blog home
+Introducing Version Tagging for Sigma Workbooks
+Zalak Trivedi
+PRODUCT MANAGER
+Introducing Version Tagging for Sigma Workbooks
+MAY 25, 2023
+Streamline your workbook development lifecycle with new version control features
+We're very excited to introduce Version Tagging in Workbooks!
+With Version Tagging, you can now seamlessly manage, control, and organize multiple iterations of your workbooks throughout their lifecycle. This empowers your teams to develop and stage multiple versions of the same workbook for different users, ensuring an efficient and streamlined collaboration process. 
+Learn more about Sigma’s embedded analytics capabilities here.
+What is a Version Tag?
+A Version Tag is a feature in Sigma workbooks that allows users to manage, control, and organize multiple iterations of their workbooks throughout their software development lifecycle (SDLC). This tool is used to mark or label different stages or versions of a workbook, allowing for a more efficient and streamlined collaboration process.
+Why Version Tagging Matters
+The SDLC of a workbook in Sigma has multiple stages. From first designs to early proofs to full production workbooks with multiple data sources, going from start to finish can take multiple steps and multiple iterations. As you work through these steps, it's sometimes essential to control and share stable versions with different stakeholders based upon their relevance to any project. Now you can modify workbooks at different stages without affecting the core experience of any one given user. 
+Read about Sigma’s Input Tables feature here. 
+How to Use Version Tagging
+1. Create Tags: If you’re an administrator in your Sigma organization, you can go to the administration panel and create the tags you want for your workflows. You can add descriptions and select colors for your tag. This color will allow you to easily identify the tag on your workbooks.
+
+These tags can be named according to your workbook development lifecycle, and the significance of them is based on how you use them. For example: If your organization has a process that moves workbooks from development to staging for testing, and needs an approval from the governance team before moving to production, you will create three different tags: Staging, Governance, and Production
+
+Under tags, create the name, add a description, and select a color.
+
+2. Assigning tags: Once an administrator has created tags, the creator of the workbook will be able to apply these tags to drive the workbook through different stages of its development lifecycle. In the workbook view, an owner or admin can click on “Tag this published version” to tag a copy of their workbook with your new “Production” tag.
+A new tag is set on a specific workbook inside of Sigma.
+‍
+‍3. Swapping connections: When a workbook is tagged, you have the option to swap the connection used by the tagged version.Your organization may have different data access levels between teams. For example, you might have production data that is not shared with developers or QA. This allows you to show the correct data to the right audience. 
+‍
+A source is modified for a specific version tag inside of Sigma.
+4. Sharing a tagged workbook: A tagged workbook can be shared with stakeholders that have limited access to making or viewing core changes to the main workbook. From the share modal on the workbook, select the users or teams that need access to the tagged version and select the tag from the list. For example: for your stakeholders or customers, you may want to only provide them with access to “Production” tagged workbooks. This way, they will not see any workbook versions that are not tagged production.
+A version-tagged workbook is shared within Sigma.
+‍
+‍5. Version Tagging for Embedding: In an embedded environment, it is critical to control when changes made to embedded workbooks in Sigma are deployed/rolled out to your customers. This is because embedded workbooks are exposed to a potentially large number of the embedding application’s users, and it is imperative to provide a stable experience to these users. Additionally, it is quite common that changes to embedded workbooks need to be migrated to non-development environments in tandem with other changes being made to the embedding application.
+‍
+6. Using Version Tagging APIs: To specify the version tag you would like to use in an embed, you can add ‘/tag/<tag_name>’ to your embed path.  For example if your embed path was 'https://app.sigmacomputing.com/embed/7KnctsOB98suXFKLBIpiw7'  then you could use ‘https://app.sigmacomputing.com/embed/7KnctsOB98suXFKLBIpiw7/tag/Development’ to display the dev version of the workbook in the embed. So even if in Sigma you are looking at production data, the embed will show the dev version as the tag is used to generate the embed. To show the prod version instead, you would use ‘https://app.sigmacomputing.com/embed/7KnctsOB98suXFKLBIpiw7/tag/Production’. Check out the documentation for the Version tagging API here.
+ 7. Version Tagging + Input Tables: Version Tagging also supports Input Tables! You can add input tables to your workbooks and tag them with version tags you have already created. Now you can share a tagged workbook with others and allow them to edit and add data to your production workbook. Confidently deploy your workbooks while also letting anyone add new data to that workbook like a custom application!
+
+One important behavior to note is that when you tag a workbook that has an input table, the data in that input table is not copied over. We maintain different environments for your tagged versions so that users only see and interact with the data that is relevant to them. If data needs to be copied over, feel free to use our copy paste feature to bring that data into the tagged version if needed.
+
+Learn more about Sigma Input Tables here. 
+Workbook Version vs. Version Tag
+In Sigma, the published view will show the latest version. You can go into your version history by clicking on the dropdown next to the workbook name to see the different versions. Each time you publish your workbook, you are creating a new version of the workbook. In the version history, you will also be able to see every version where you have applied a tag. A version tag can be applied to any workbook version. At a given point there will be one workbook + unique tag combination. 
+You can restore to older versions or apply tags to an older version as well. This easy access menu allows you to see the history of the workbook as well as the application of different version tags on it.
+The version history is shown for an example version tagged workbook inside of Sigma.
+Benefits of Version Tagging
+Version tagging saves you time, providing a simpler way for workbook lifecycle management within the same workbook.
+You can easily iterate on workbooks and collaborate with peers to publish changes without worrying about breaking the experience for your customers or stakeholders.
+Additionally, you can provision different access to different data to developers, QA personnel, and customers by swapping connections, databases, and/or schemas before tagging workbooks
+Version tagging also gives users the ability to integrate the workbook lifecycle management capabilities into Git via Sigma Version Tagging APIs.
+Finally, the URL follows the tag as it floats to a new workbook version when that version is associated with the tag.
+We're excited to bring this feature to you. To get started with Version Tagging, chat with your customer success representative on how it could enhance your team's workflow. Check out our help documentation or follow a quickstart guide to try it out yourself. 
+If you don’t have Sigma yet, chat with one of our friendly and helpful representatives to get your organization on Sigma or sign up for a free trial here. 
+THE ULTIMATE KPI PLAYBOOK
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

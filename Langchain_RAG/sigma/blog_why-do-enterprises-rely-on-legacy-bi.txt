@@ -1,0 +1,392 @@
+Blog home
+Why Do Enterprises Still Rely on Legacy Business Intelligence?
+Akshay Devalla
+PRODUCT MANAGER, ANALYST WORKFLOWS
+Why Do Enterprises Still Rely on Legacy Business Intelligence?
+Why Do Enterprises Still Rely on Legacy Business Intelligence?
+In the ever-evolving technological landscape, the persistence of legacy business intelligence (BI) systems might seem surprising. Yet, many enterprises continue to depend on these systems for their data analysis needs. This blog post explores what legacy BI is, its historical context, why it remains entrenched in many enterprises, and the complexities surrounding investment in these aging systems.
+Legacy BI systems: The cornerstones of traditional data analysis
+Legacy BI encompasses the traditional business intelligence systems that have been fundamental to corporate data analysis over the past decades. These include well-known platforms like IBM’s Cognos, SAP’s Business Objects, Microsoft’s SQL Server Reporting Services (SSRS), Oracle’s OBIEE, and MicroStrategy. These systems were specifically designed to help businesses retrieve, manipulate, and analyze data stored in on-premise databases and data warehouses.
+The evolution of legacy BI: From data cubes to integrated solutions
+The inception of legacy BI can be traced back to the need for robust on-premise data storage and processing. Initially, these systems required pre-aggregated data to function efficiently, leading to the development of data cubes to aid in data analysis. However, the complexity of early data aggregation methods made these systems less accessible for business users, prompting the development of user-friendly BI solutions that integrated directly with data warehousing and cube technologies.
+Over time, as these products evolved, the underlying database vendors bought them out. They formed vertically integrated companies that could serve as a business data store, warehouse, and analysis solution. This helped these companies become important parts of businesses across all departments, especially within the IT, Operations, and leadership teams. 
+As the BI industry matured, these platforms evolved to include comprehensive reporting, ad-hoc analysis capabilities, and scheduled exports, all within a single software package. Notably, many legacy BI systems introduced Excel plugins to simplify user interaction with data, embedding these tools deeply within organizational workflows.
+Outdated architectures: The limitations of BI 2.0 in a cloud-first world
+BI 2.0, like Tableau, was also built before the advent of CDWs and was built for an on-prem environment. They solved a completely different problem in data visualization and dashboarding. Some of these tools also had a modeling component to help visualize data better, but they never tried to solve the tabular analysis problems and exports like legacy BI.
+While initial BI architectures were strictly on-premise, the rise of cloud computing has introduced a new paradigm in the form of cloud data warehouses (CDWs). BI 1.0 and BI 2.0 were still built for on-prem and had fundamental architecture limitations on being cloud-native. To work with enterprise-scale data, these tools are also dependent on cubes to create pre-aggregates of data to be able to use it effectively. Cubes are hard to maintain and modify and require massive spikes of computing to create the pre-aggregations needed to work with the data.  
+This setup doesn't allow the tool to leverage the power of the CDW's (theoretically) infinite compute and analyze live real-time data at an unimaginable scale. 
+The hidden costs of sticking with legacy BI systems
+Despite their older technology base, legacy BI systems represent significant ongoing expenditures for many enterprises due to licensing fees, maintenance, and the infrastructure required to support them. These systems often see limited new investment from their parent companies in terms of development or innovation. This results in an investment for this tool's users that doesn't have a RoI besides sustaining business processes.
+There are a lot of costs associated with maintaining these systems; besides just the licensing fee of maintaining these systems, enterprises also need to ensure that they have appropriate hardware to run these systems and ensure data doesn't get stale. There are people costs involved in maintaining cubes, data pipelines, infrastructure, and additional personnel and software costs that make the true cost of ownership of this software astronomically high.
+Despite these challenges, enterprises continue to rely on legacy BI systems due to their deep integration into business processes, comprehensive feature sets, and the significant training and operational upheaval that migrating to new systems would entail. The lack of compelling alternatives that match the robust, table-centric analytical capabilities of legacy BI also plays a crucial role. 
+It is imperative that companies that have invested in moving to the cloud relook their tech stack, especially for ad-hoc analysis and operational reporting and ensure they are proactive in moving away these legacy systems that slow the business down and guarantee a lower ROI for their investment in modernization.  
+The future of business intelligence
+Legacy BI systems remain entrenched in many enterprises not only because of their capabilities but also due to the significant ongoing investment in maintaining these systems, despite a noticeable lack of innovation from their parent companies. As enterprises increasingly look to leverage the benefits of cloud computing, the challenge lies in developing new BI tools that bridge the gap between the rich functionality of legacy systems and the modern cloud architecture. Until such solutions are realized, legacy BI will continue to be a critical, albeit aging, component of business intelligence strategies.
+BI 3.0, like Sigma, could be a great choice for these companies looking for ad-hoc, operational reporting software that leverages the power of the CDW by live querying data. Sigma also has the capability to write back data in a familiar spreadsheet-like interface, making change management in organizations smoother as well. 
+THE ULTIMATE KPI PLAYBOOK
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

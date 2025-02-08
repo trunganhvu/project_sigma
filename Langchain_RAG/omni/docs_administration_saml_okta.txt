@@ -61,6 +61,6 @@ Press Save.
 The group is now provisioning in Omni, which generally completes in under 1 minute.
 NOTE: Adding a group to Push Groups does not provision user accounts to all users in that group. You will need to assign all users in the Assignments tab first, which you can do by selecting Assign to Groups from the Assign dropdown menu.
 Previous
-Data Access Control
+Templated Filters
 Next
 Active Directory

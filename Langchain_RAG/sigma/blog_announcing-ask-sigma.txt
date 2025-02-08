@@ -1,0 +1,445 @@
+Blog home
+Introducing Ask Sigma: AI That Works Like A Data Analyst
+Mallory Busch
+DIRECTOR OF PRODUCT MARKETING
+Introducing Ask Sigma: AI That Works Like A Data Analyst
+DECEMBER 12, 2024
+Today, we’re excited to announce the most significant update to Sigma in years: the launch of Ask Sigma.
+What is Ask Sigma?
+Ask Sigma is our new natural language query interface that responds to your question while also guiding you through every step of the analytical thought process and showcasing which analysis methods are performed to achieve an answer.
+Ask Sigma is AI that helps you:
+Get to the root of the problem you’re trying to solve
+Find the data most relevant to you
+Learn the best analysis methods to employ
+Broaden your understanding of your data
+Strengthen your data-informed decision-making
+It’s AI built around 4 key principles: discovery, transparency, control, and a path forward.
+Discovery
+As you go through the analytical thought process with Ask Sigma, you discover:
+New ways of working in Sigma
+Additional data sources to consider
+Which colleagues are using similar data
+Existing workbooks related to your questions
+Far more insights than the question you asked
+Transparency
+Ask Sigma shows you every step of its decision logic. You have full visibility into how AI goes through its analysis, from the data sources referenced to the formulas calculated.
+Control
+You can edit any of the steps Ask Sigma took to get its result. Browse and select a different data source, apply a new formula, change the filter, or alter your prompt. Ask Sigma will adjust its path based on your input, instead of starting over from scratch. 
+A Path Forward
+Ask Sigma doesn’t just return a result and call it a day. It presents you with additional analysis that provides a more well-rounded understanding of the topic you’re interested in. You can open the analysis in a Sigma workbook to learn more, drill into the data, and analyze further. 
+How to use Ask Sigma
+1. Ask your question
+Feel free to go broad—Ask Sigma is designed to help you work through your thought process and discover more insights.
+‍
+2. Review Ask Sigma’s decision logic—and edit as necessary
+Ask Sigma shows its multi-step chain-of-thought process, so you can understand how AI interpreted your question and attempted to solve it. You have full control to edit any of the steps that Ask Sigma took—and therefore influence the direction it takes. Ask Sigma will incorporate your input into its modified analysis rather than starting over from scratch every time you adjust your query.
+3. Take the next step to learn more
+Sigma is the most powerful and performant analytics tool on the market. Ask Sigma may be the starting point for your analytical thought process, but you can easily open its insights into a workbook to go deeper in your analysis, with the full power of Sigma at your fingertips.
+Why Ask Sigma is different from AI you’ve seen in other BI tools
+Most AI in BI is stuck on simple questions & questionable answers
+This year, every major data analytics and business intelligence vendor has released a signature AI feature. They’re often marketed as copilots that will take your natural language query and deliver an instant answer from your data—like magic.
+It sounds great in theory, but we think these approaches fall short in practice. Here’s why: 
+People often don’t know what question to ask the copilot.
+You don’t have great visibility into which data sources the AI can reference. You may not know much about your data trends either—and therefore don’t really know where to start when asking questions.
+These copilots reject broad questions.
+Your real question may be, “How are sales going?” but you’re forced to use a specific metric like, “What is ARR for fiscal year 2026?” to get an AI-generated result.
+You can’t inspect the work AI did to get its result.
+You’re expected to trust that AI got the right answer, or even that the data sources, tables, and models the AI referenced were accurate. When you do get more explanation, it’s often in the form of a dense code block that’s difficult to validate.
+The AI doesn’t give you more context.
+You ask a question, you get an answer, and that’s it. The AI can tell you, “ARR in fiscal year 2026 was 52 million,” but it’s not telling you how that data compares to other years or what other trends you should review.
+This brings you back to step 1. You’re staring at the blank box of a copilot again, trying to figure out the next, narrow question that you're supposed to ask of your data.
+We don’t think this is the best interface for AI in BI. It’s not trustworthy and it doesn’t take you far enough in your data analysis process. 
+Ask Sigma guides you through critical thinking & skill development
+With Ask Sigma, we’re more focused on using AI to help you move along your own intelligent thought process. 
+Why does that matter? Well, consider the value of solving a problem. True value comes not from simply finding answers but from developing the capability to ask better, more relevant questions.
+Ask Sigma encourages users to engage deeply with the data, building intuition and analytical skills over time. It helps you think critically, uncover patterns, and expand your knowledge base, rather than simply delivering a finite result.
+This emphasis on process empowers more people in your organization to think like analysts, democratizing analytical skills rather than just access to data. 
+When everyone can think like an analyst, they move beyond surface-level answers to uncover deeper insights and tell richer stories with data. Plus, this process of exploring data and contextualizing results builds a larger collective knowledge base at your organization. 
+We think all of this is far more valuable than a copilot that requires a simple question in exchange for a simple, questionable answer.
+Customer story: How Clay uses Ask Sigma
+Clay is a rapidly growing AI company that puts Sigma at the center of its data operations. Founding Data Scientist Josh Hanson shared how multiple teams at Clay—across growth marketing, engineering, and support—use Ask Sigma to get answers to their data questions and learn more data analysis skills along the way.
+Enabling self-service analytics
+“As I'm thinking here at Clay about enabling self-serve analytics, I think Ask Sigma is going to play a huge role in that,” Josh said. “Ask Sigma does such a great job of not only pointing [users] in the right direction, but also breaks down exactly what it did so that people can understand and make sure it didn't have some error.”
+In addition, Josh noted, Ask Sigma also helps users identify the data that’s most important to them. “I actually have a hunch that across time, most of my stakeholders—just by using Ask Sigma repeatedly and over and over—will start picking up on what tables are most valuable to them and where important data relevant to them exists.”
+Replacing traditional data dictionaries
+Clay has a robust transformation layer with more than 500 dbt models. But that also means there are “500 tables that someone could erroneously choose when trying to solve or answer some question they have,” Josh said. “People need something to easily sort through that.”
+This is where Ask Sigma has been uniquely helpful to the teams at Clay. “I think you look at Ask Sigma and you think it's an analytics tool,” Josh said. “But it is actually replacing the data dictionary in a lot of ways. A user doesn't have to understand anything about those 500 models. All they have to do is ask some question and AI does the looking through the dictionary itself for you.”
+Reducing interruptions to the data team
+“In an old world before Ask Sigma,” Josh said, other teams would go directly to the data team to get their questions answered. “That's an hour or two of my time,” Josh said. But now those same teams go into Ask Sigma and get their questions resolved on their own. “They don’t have to communicate with me and it saves me time. I am no longer the only way to get an answer with data.”
+Upskilling less technical users
+Josh pointed out that Ask Sigma does more than simply answer a user’s question—it “starts nudging them in the direction they think they should head, which is honestly the job of any good data analyst.”
+The way that Ask Sigma is designed, Josh noted, also makes it feel like a partner to the analytical thought process. 
+“It's like, ‘Let's work through this question together and show you how you can go from A to Z,’” Josh said. Ask Sigma “allows people to actually learn how to do a lot… You can imagine if you see that process over and over that AI is performing, across time, that person's just going to know how to do that themselves.”
+Get access to Ask Sigma
+Ask Sigma is in private beta, with larger access expected soon. To get your organization on the list for early access, reach out to your Sigma representative today. 
+In the meantime, check out these additional ways to leverage AI in Sigma:
+Apply LLM functions from your warehouse to your data with AI Query.
+Use Explain Viz and Formula Assistant to get your work done faster with native AI helpers in Sigma.
+Forecast data with the click of a button using Snowflake Cortex ML.
+THE ULTIMATE KPI PLAYBOOK
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -1,0 +1,49 @@
+The Rounds case study
+Delivering sustainable goods and data-driven insights with Omni
+October 18, 2023
+Grocery delivery startup, The Rounds, is committed to providing sustainable everyday essentials while reducing household waste. The company operates a closed-loop logistics system, delivering home basics and local goods then collecting packaging for reuse.
+Efficiently managing their business requires widespread access to real-time, accurate data. This ensures that everyone can make informed decisions benefiting the company, their Members, and the environment.
+The Rounds decided to migrate their business intelligence (BI) tools to Omni, which led to several significant advantages:
+Optimizing data investments: The migration allowed The Rounds to efficiently utilize their existing data investments, such as Snowflake and dbt.
+Reduced development time: One-off data queries and development tasks for the data team were streamlined, saving valuable time.
+Enhanced self-service: Omni empowered their teams to make quicker, data-driven decisions across the organization.
+Key elements of The Rounds’ data stack
+The challenge: Bridging the last mile
+The Rounds' data team aimed to facilitate data-driven decisions company-wide to support sustainable growth. Their data stack includes: Fivetran for third-party data ingestion, Segment for web analytics, Snowflake as the data warehouse, and Postgres as the application database. They used dbt to transform data and establish a single source of truth.
+However, their previous BI tool, which was SQL-based, presented challenges. It lacked self-service capabilities and had fragmented dashboards, impeding the distribution of trusted information.
+Ari Stern, Staff Analytics Engineer, shared, "Our prior tool wasn't great for self-service; users needed SQL skills to use it effectively. Dashboards were isolated, making it hard to replicate analysis or build common data definitions."
+The evaluation: Supporting long-term efficiency
+The Rounds sought a solution that would not only facilitate the migration, but also support a self-service culture.
+"The biggest thing for us wasn't just the migration, but what happens after the migration. "
+Ari Stern, Staff Analytics Engineer
+“The biggest thing for us wasn't just the migration, but what happens after the migration. A key reason for switching BI tools was we wanted to create a self-service culture and enable our team to build data models to serve different use cases,” shares Ari. “Our data team doesn’t want to become a dashboard-building factory, we want to build interesting pieces on the backend to empower users with a self-serve layer on the front. We need a tool that allows everyone to answer their own questions and trust the results.”
+To meet their goals, The Rounds evaluated several BI tools, including Looker and Omni.
+Many members of the data team at The Rounds were familiar with Looker and wanted a BI tool that would deliver a similar curated and governed exploration environment. However, they wanted a more cost-effective tool that would provide users with more flexibility to do ad hoc exploration and answer their own questions.
+“We like and are familiar with Looker,“ explains Griffin Tschurwald, Head of Engineering “However, from experience, we knew Looker was going to be more restrictive and required us to build everything out first - that timeline didn’t work well for our business. Neither did the cost.”
+"...from experience, we knew Looker was going to be more restrictive and required us to build everything out first - that timeline didn't work well for our business. Neither did the cost."
+Griffin Tschurwald, Head of Engineering
+The migration: Switching to Omni for business intelligence
+Looking for a more flexible solution, The Rounds also evaluated Omni. On trialing Omni for the first time, Ari shares:
+“We were all excited because Omni has a lot of similar benefits to Looker, but they’ve also made great improvements. I love that technical users can run SQL in Omni, take the outputs of SQL, and promote them into the model and clickable fields; it significantly accelerated our development time. Additionally, the ability to make isolated changes in workbooks and then promote them into shared models was especially exciting. Our entire team does a lot of one-off analyses; in Omni, it’s great to have the option to eventually canonize them without being required to promote them right away.”
+Increasing the speed of development was also critical in their BI tool evaluation. According to Ari, “Omni’s ability to automatically refresh the schema from the data warehouse and data model allows us to move a lot faster than other tools that require you to build the semantic layer first. We’re doing a lot of experimentation and A/B tests; we roll out new columns for feature flags people are a part of and we need to filter by cohorts.”
+It was also important for the new solution to integrate with and leverage the technology investments the team had already made in other tools, such as dbt.
+“We use dbt to transform our data and sometimes query the raw data directly without wanting to model it. Using dbt and Omni together works well for us because we don’t have to have everything modeled in dbt to explore it in Omni. Omni gives us the flexibility to query different types of sources together; you can even add multiple connections!” exclaims Ari.
+"Using dbt and Omni together works well for us because we don't have to have everything modeled in dbt to explore it in Omni."
+Ari Stern, Staff Analytics Engineer
+Beyond technical differentiation, The Rounds was also looking for a long-term partner who would be hands-on with support for their lean team while continuing to quickly develop and innovate in the product.
+Ari comments, “The customer support with Omni has been very positive and fast. The Omni team supported us to ensure we met our timeline. In comparison, other tools we evaluated were less responsive and didn’t move as fast - especially the larger organizations.”
+"The Omni team supported us to ensure we met our timeline. In comparison, other tools we evaluated were less responsive and didn't move as fast - especially the larger organizations."
+Ari Stern, Staff Analytics Engineer
+After a thorough evaluation, The Rounds selected Omni’s BI platform to make the most efficient use of their data team and tool resources, increase self-service, and empower efficient decision-making across their company.
+Building a sustainable data culture
+Migrating to Omni enabled The Rounds to leverage their existing data investments and build a self-service environment. Teams across the company gained the ability to explore data independently, reducing dependence on the data team.
+For instance, the merchandising team can now self-serve by adding new filters to dashboards without technical assistance. Previously, the team couldn’t explore new data without support from the data team. Ari explains, “We used to have to add a new field to the SQL query when there was new data, and that made the merchandising team dependent on us for fast answers. Now with Omni, they can self-serve to add a new filter to a dashboard with a simple point-and-click.” Today, the merchandising team can understand the latest trends in order value and units sold by brand, supply, and product, so they can work with the operations teams to efficiently coordinate inventory.
+Excel power users also found Omni's pivot feature invaluable for rapid analysis. Griffin expands, “We have a lot of people who are Excel power users and they love the ability to pivot quickly in Omni. For example, we operate in multiple cities so it’s really powerful for our stakeholders to do a quick pivot by market.”
+"We have a lot of people who are Excel power users and they love the ability to pivot quickly in Omni. "
+Griffin Tschurwald, Head of Engineering
+Ari emphasized the impact, "With Omni, our data team now focuses on new projects, while business users make faster decisions. This efficiency is crucial for sustainable business operations."
+"With Omni, our data team now focuses on new projects, while business users make faster decisions.
+This efficiency is crucial for sustainable business operations."
+Ari Stern, Staff Analytics Engineer
+In conclusion
+With Omni, The Rounds efficiently utilizes its data resources, enhances self-service capabilities, and empowers data-driven decision-making across the organization. It's a key component of their journey towards building a sustainable data culture.

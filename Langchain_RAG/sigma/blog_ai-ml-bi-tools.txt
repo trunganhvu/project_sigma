@@ -1,0 +1,420 @@
+Blog home
+BI, AI, & ML: What’s Valuable And What’s Just Hype
+Team Sigma
+BI, AI, & ML: What’s Valuable And What’s Just Hype
+TL;DR: Key Takeaways
+Artificial intelligence and machine learning are transforming business intelligence with features like automated insights, pattern recognition, and forecasting.
+Technologies like large language models, edge analytics, and quantum computing are shaping the future of BI, promising faster and deeper insights.
+Investment growth and developments highlight a growing emphasis on accessibility, automation, and efficiency in BI, empowering organizations to derive actionable intelligence from their data.
+It’s no secret that artificial intelligence (AI) and machine learning (ML) have become the buzzwords of the decade, promising to revolutionize industries from healthcare to retail. However, the reality can be far more complex when implementing it in business intelligence (BI). Are these technologies truly driving actionable insights, or are they just flashy features that don’t live up to the hype?
+AI and ML capabilities often appear in product descriptions with grand promises of effortless automation and predictive prowess. Yet, many data professionals are left wondering: which features deliver value, and which are just marketing fluff?
+Together, we’ll navigate the noise, identify what’s genuinely useful, and unpack why critical evaluation of these technologies matters more than ever.
+The current reality of AI/ML in BI
+AI and ML are reshaping industries, and BI is no exception. These technologies hold immense promise: automating processes, identifying patterns, and generating predictive insights that were once impossible to achieve at scale. Yet, the journey from innovation to implementation often reveals a more nuanced reality.
+At its core, AI simulates human intelligence, enabling tasks like learning and decision-making, while ML improves systems through data without explicit programming. They’ve introduced game-changing capabilities to BI tools, such as natural language querying (NLQ), anomaly detection, and automated insights. 
+These advancements have helped organizations transition from reactive to proactive decision-making. However, many companies face significant barriers, including high costs, technical complexity, and the need for comprehensive data governance.
+The hype surrounding AI-powered analytics adds another layer of complexity. Marketing often promises seamless automation and unparalleled accuracy, but a 2024 report by the RAND Corporation reveals that approximately 80% of AI projects fail, double that of standard IT projects. 
+Common culprits are misaligned goals, data quality issues, and insufficient user training. These findings highlight the critical importance of setting realistic goals and ensuring robust data management when adopting AI solutions.
+Separating hype from value is crucial to avoid wasted resources and ensure meaningful results. Time and budgets are finite, and focusing on capabilities that truly align with your goals can drive measurable impact. Effective tools rely on clean, comprehensive data to deliver accurate forecasts or uncover hidden trends. Conversely, flashy but impractical features often lead to frustration and missed opportunities.
+Staying agile is equally important. Today’s must-have feature could be outdated tomorrow, making adaptability and critical assessment vital. By evaluating AI/ML tools with a discerning eye, data enthusiasts can avoid pitfalls and unlock their potential to drive better outcomes. 
+The key is maintaining realistic expectations while leveraging tools that empower your workflows — which means automating ad hoc analysis to increase your team’s capabilities. 
+AI/ML in modern BI tools
+The adoption of AI and ML has transformed how organizations approach data analytics. But with such rapid innovation, what does the current environment look like? What sets effective tools apart from those that fall short?
+Features like natural language processing (NLP), automated anomaly detection, and predictive modeling are becoming standard, while some platforms are exploring generative AI for tasks such as summarizing dashboards and suggesting visualizations. 
+These advancements promise transformative insights but often highlight a gap between innovation and usability. Many organizations lack the infrastructure or expertise to fully leverage these tools, creating a divide between leaders in adoption and those still navigating the basics.
+Furthermore, market adoption remains inconsistent. While over half of organizations view AI/ML as critical to their analytics strategy, challenges like cost, complexity, and data readiness hinder widespread implementation. For individual contributors, this fragmented landscape presents both opportunities and obstacles. Thriving in it requires a clear understanding of useful features and a discerning approach to exaggerated claims.
+Common AI/ML features for data analytics
+While some capabilities drive real value by saving time and improving decision-making, others feel more like bells and whistles. Below, we break down the most commonly found AI/ML features in data analytics and explore their benefits in real-world contexts.
+Automated insights generation identifies trends, patterns, and anomalies in your datasets without requiring you to manually sift through rows of data. Automated insights save time by surfacing key observations that might otherwise go unnoticed. However, the true value lies in how actionable these insights are; tools that contextualize data make it easier for users to take informed steps. 
+Similarly, pattern recognition algorithms are great at identifying recurring behaviors and relationships in large datasets. For example, in e-commerce, these algorithms can reveal purchase trends, helping businesses optimize their inventory or marketing strategies. Pattern recognition really shines when combined with robust visualization tools, making patterns easy to interpret.
+From predicting revenue growth to anticipating customer churn, forecasting tools leverage historical data to project into the future. Particularly useful for planning and scenario modeling, forecasting helps businesses allocate resources efficiently. However, overly complex forecasting tools can overwhelm users who lack advanced analytics expertise.
+Which AI features in BI are actually useful?
+Not all AI features in BI tools deliver equal value. While many capabilities sound impressive, their real-world usefulness often depends on the context and the challenges your business seeks to solve. From improving operational efficiency to driving customer insights, here’s a closer look at some of the most impactful features and how they stack up in practice.
+Automated insights discovery
+Automated insights tools can be game-changers when used correctly. AI-driven tools can rapidly analyze extensive datasets to uncover hidden correlations and trends, enabling businesses to make informed decisions. Yelp utilizes AI-powered review insights to summarize customer opinions on aspects like food quality and service, helping users make better dining choices. However, the effectiveness of these tools depends on how well the insights are contextualized and aligned with business goals.
+Pattern identification in large datasets
+Identifying recurring behaviors is crucial for understanding customer preferences and optimizing operations. Uber employs BI for dynamic pricing and operational management, analyzing real-time data to adjust fares based on demand patterns, thereby enhancing efficiency and customer satisfaction.
+ While this feature is immensely powerful, it requires strong data governance to ensure that the patterns detected are relevant and unbiased.
+Anomaly detection
+Anomaly detection is most useful when paired with real-time alerts, ensuring teams can act quickly. It plays a critical role in uncovering irregular patterns that can signal potential issues such as fraud or operational inefficiencies. 
+Podium, a leading customer messaging platform, leverages Sigma’s capabilities alongside Snowflake Cortex functions to monitor key metrics and detect anomalies in real-time. This integration allows Podium to proactively address irregularities, enhancing operational efficiency and ensuring smoother forecasting processes.
+Predictive analytics and forecasting
+Features like time series forecasting and what-if analysis allow businesses to make informed decisions about the future. Air France-KLM partnered with Google Cloud to implement AI technology that analyzes passenger preferences and travel patterns, enhancing tailored travel options and operational efficiency. 
+AI enables businesses to anticipate future trends, facilitating strategic planning. However, the accuracy of these tools hinges on the quality of historical data and the robustness of the algorithms used.
+Natural language capabilities
+Natural language querying (NLQ) and natural language generation (NLG) make analytics more accessible, particularly for non-technical users. Imagine being able to ask, “What were our top-performing campaigns last year?” and receiving a detailed, easy-to-understand response instantly. 
+These capabilities bridge the gap between data science and business operations, though their utility depends on how well the tool understands and interprets queries. KPMG integrates AI across its operations, allowing employees to interact with data using conversational language, thus improving efficiency and decision-making processes. 
+What’s next? Emerging AI/ML trends in BI
+As AI and ML continue to evolve, their role in BI is expanding in transformative ways. Current tools are already revolutionizing how we analyze and interpret data, but emerging trends promise to refine and elevate BI even further. Technologies like large language models (LLMs), such as Llama, Perplexity, and OpenAI’s GPT, are pushing the boundaries of NLP. 
+These models enable users to interact with BI tools conversationally, asking plain-language questions and receiving personalized insights. Imagine having a conversation with your analytics platform to uncover trends or explore data effortlessly. While promising, widespread adoption of LLMs will depend on ensuring data privacy and the interpretability of results.
+Edge analytics is another trend reshaping BI, driven by the need for real-time decision-making. Organizations can instantly act on insights by processing data closer to its source, whether through IoT devices in manufacturing or customer interactions in retail.  This approach is particularly valuable in industries like autonomous vehicles or healthcare monitoring, where split-second decisions are critical. 
+At the same time, the potential of quantum computing looms on the horizon. Although still in its infancy, this technology has the capacity to solve complex optimization problems exponentially faster than traditional methods. Applications such as supply chain management and financial modeling could see groundbreaking improvements once quantum computing becomes more accessible.
+A key shift in BI is the increasing democratization of AI and ML tools. User-friendly interfaces and prebuilt algorithms are empowering non-technical users to adopt and integrate these technologies into their workflows. This accessibility fosters innovation and expands the reach of AI in BI, enabling broader collaboration across organizations. 
+However, as these tools become more widespread, the need for robust governance grows to ensure they are used effectively and ethically. Together, these trends signal an exciting future for BI, where advanced AI/ML capabilities drive faster insights, deeper analysis, and a more inclusive approach to data-driven decision-making.
+THE ULTIMATE KPI PLAYBOOK
+AI/ML
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

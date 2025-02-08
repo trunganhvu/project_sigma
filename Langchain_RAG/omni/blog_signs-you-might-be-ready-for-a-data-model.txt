@@ -1,0 +1,74 @@
+Signs you might be ready for a data model
+A framework for scaling the impact of data work
+January 10, 2024
+Conner Ching
+I used to be one of the sole data people at an early stage startup, and now I get to help analysts in similar positions. In order to move quickly, it’s common to opt for a SQL-only tool for analytics. But with that flexibility often comes chaos…in the form of daily barrages of Slacks 😳:
+“Where do I pull revenue metrics for our upcoming board meeting?”
+“Do you know what parts of the product our customers are actually using?”
+“What was our website conversion rate for new visitors last quarter?”
+Then, these questions are often followed by: “Why doesn’t this data match this other report?” or “How do I know what data to trust?”
+Even if you’re data-savvy, your data can still be a mess. You’re working hard – constantly querying, spreadsheet-ing, and Slack-ing – but it won’t drive trust or business impact if no one actually uses the data. It can feel like you’re being data-driven…into the ground 🫠.
+If this sounds a little too familiar, then it may be time to implement a data model. In this blog, I’ll share why a data model can help you scale the impact of data work and how you can build one, including:
+Thinking like a data PM to evaluate the needs of your team
+Choosing the right tool(s) (e.g. dbt, a semantic layer, or a hybrid approach)
+Rolling out your data model
+What is a data model? 🛢️
+A data model is a curated set of tables and fields that make data accessible and reliable for your company.
+To create a data model, data teams work with cross-functional team members to identify what data they want and in what form. Then, using a variety of tools, data teams transform raw data into clean tables and metrics – a data model – that’s easily utilized, understood, and trusted by end users.
+By imbuing structure into the chaos of raw data, models pave a safe path of exploration for your users. This path is often enough to enable non-technical users to get the answers they need. For more technical users, this path lets them confidently venture off into more complex analyses, knowing they’re headed in the right direction.
+A data model helps your data team scale impact 🦸
+When you build a data model, you establish a common language for the business. These shared metrics and definitions grease operational wheels, letting stakeholders shift their focus from how you’re measuring → how to make the business better. Instead of reacting to countless requests from stakeholders, you empower them to answer their own questions – and you free up your time to carry out more impactful projects.
+Ultimately, building a data model elevates your data team from a service org (“Can you help me find this data?”) to a strategic partner (“The data helped me choose which test was best, thank you!”).
+Of course, implementing and maintaining a data model isn’t an overnight task – it takes collaboration and change management to do it well. But the benefits and scalability it affords you far outweigh the effort. Investing in a data model upfront will help keep your data team fast and efficient.
+At Omni, we help teams at various stages of their data journey – from those with mature, robust data models, to those creating a data model for the first time. Again and again, we see how the data model unlocks scale, speed, and growth. As you consider building your data model, here are a few suggestions to get you started.
+How to start building your data model 🔨
+What to build: Acting like a data PM
+How to build it: Choosing the right tool
+When to build it: Rolling it out to the team
+Think like a data product manager 👷 #
+Just as a PM needs to understand their end users’ pains and goals, you should start by understanding your business users’ needs, too. Here are some guiding questions for your “user research”:
+What are users trying to accomplish?
+Set up conversations with stakeholders across various teams to understand their most important questions and goals. For example, Marketing may want to improve conversion across the funnel and Finance may need to increase forecast accuracy.
+What data do users need to accomplish their goals?
+With those goals in mind, identify what data your users need to answer their questions. Put yourself in their shoes – what data would make their jobs much easier? For Marketing, that might be clean funnel conversion metrics; for Finance, that might be better visibility into opportunity data.
+What definitions do we need to clarify?
+Some of the metrics in the data model may benefit from standardization across the business. For example, are there differences between how Sales and Marketing define a Sales Qualified Opportunity? How do Finance and Sales define milestones during the sales process? Are the milestones defined in a shared system (e.g. Salesforce), or are they decided based on context that’s not documented and shared (e.g. context living in sales reps’ heads) with everyone?
+Note: This is often one of the most difficult pieces; it involves juggling multiple stakeholders in a potentially complex discussion. But it’s also a unique chance to step up as a strategic partner, brokering decisions on key business metrics that will help the entire company function better.
+By equipping yourself with a clear understanding of what you’re trying to build, you put yourself in a better position to decide on the right tool to build it.
+Choose the right tool(s) 🧰 #
+To build your data model, you’ll need to transform your raw data – create new tables, define new fields and measures, etc. In today’s data stack, most folks conduct this transformation in dbt, a semantic layer, or a hybrid of both.
+Using dbt
+dbt transforms your data using SQL in your data warehouse (Snowflake, BigQuery, etc.). dbt is useful when:
+Other tools beyond your BI tool rely on this transformation (e.g. AI/ML applications)
+Your BI tool’s transformation capabilities are limited
+Transformations are expensive or time-consuming in your BI tool
+For example, aggregating massive data into daily roll-ups might severely slow down your BI tool if you have to run that query every time you pull up a dashboard 🥶. But if this transformation is done in dbt, that transformed data can get pulled into your BI tool as if it were raw data from your data warehouse, leading to much faster performance ⚡.
+If you’re unfamiliar with dbt, don’t worry – I was, too, until recently. Here are some resources I found helpful to reference as I was starting out with dbt:
+What, exactly, is dbt?: From dbt’s founder, Tristan Handy, this article delves into dbt’s role in the modern data stack.
+dbt Fundamentals: Create your first dbt models in this step-by-step guide.
+Version control with Git: For non-software engineers, the concept of version control can be confusing. This guide from dbt Labs provides a high-level overview to help familiarize you with common dbt vocabulary.
+Let’s walk through an example. Many businesses have an “orders” or “contracts” dataset that captures when people pay you for your products and services. Maybe you want to aggregate this table into a monthly sales overview for your Finance team, with each month’s total sales and month-over-month % change. In dbt, that might look something like this:
+Using a semantic layer
+A “layer” of transformation that’s done within your BI tool (Omni, Looker, etc.), after it’s already pulled data from your data warehouse. A semantic layer is useful when:
+Users want to interact with your aggregations, including drilling, filtering, pivoting, slicing, etc.
+For example, if you create a “Daily Count of Orders” table in your BI tool, then you can drill down to see the individual orders that comprise each day. But if this table was created in dbt, you wouldn’t be able to see the individual orders in your BI tool. For a data team, doing this in dbt may mean you’re getting more follow-up questions from your stakeholders to access data they can’t see in the BI tool.
+The transformation is ad-hoc; you only need a transformed metric every once in a while, so it’s not worth storing it in your data warehouse and potentially creating clutter or slowing down performance.
+You want to reduce data engineering workloads and use more analyst-friendly modeling methods, such as letting SMEs contribute to metric definitions as business needs evolve.
+If you’re using a BI tool like Omni that has a semantic layer, then creating a monthly sales overview table (like in the previous example) is easy. We don’t need to drop into dbt; we can do it right from the BI tool:
+Taking a hybrid approach #
+A hybrid approach is useful when you want to reap the performance benefits of transforming in dbt while maintaining the flexibility of the semantic layer.
+It’s helpful to think about how you’d like to structure your company’s data culture. If you have a data-savvy business team, adding the flexibility to model in the semantic layer is a great way to incorporate their knowledge into the model, encourage self-service, and free up bandwidth for your data folks.
+At Omni, we’re big fans of the hybrid approach (read more about why here). Here’s a quick example of how the hybrid approach works – using Omni and dbt together to create that monthly sales overview table:
+Now that you know what to build and how to build it, you’re ready to start building your data model!
+Rolling out your data model 🎢 #
+To make the process more manageable, I’d recommend starting with one team at a time and taking a prototyping approach:
+Choose a team: A great candidate would be a team whose members you already have strong relationships with, one with data-savvy members who are excited to benefit from improved self-service, or one that simply has the most accessible data. Hint: Think about which team you receive the most Slack requests from; they’re likely a great place to start!
+Prototype: Build out the first iteration of that team’s data model, perhaps for a specific project they’re working on (e.g. marketing conversion, pipeline forecasting).
+Share the model with a few members: Create some examples of how that data model can be used, and explain it to a few key members of the team. For example, is anyone currently working on a project where shared definitions and data would be particularly useful? Offer to help them weave the data model into their analysis, and highlight how it makes their insights trustworthy and replicable without slowing them down.
+Collect feedback and iterate: As team members begin using the data model, ask for feedback! Ask what’s working, but more importantly, ask what’s not working, confusing, or missing. Continue iterating on the model based on this feedback. This will ensure you’re all set up for long-term success.
+Share the model with the team broadly: Once you feel confident that the model serves the team well, share it with the broader team. Host training sessions and create documentation to effectively enable the team.
+Offer help and collect feedback: As more people begin using the modeled data, they’ll likely have questions and feedback (which will help make the model even better!). To manage this ongoing communication, we’ve seen many customers set up a #data-questions Slack channel to house these discussions. As folks become more comfortable with the model, you can expect them to bring you strategic, business-focused questions (“What’s the best way to visualize this data to show this insight?”) rather than tactical questions (“Where do we find the data?”).
+Throughout this “prototyping” process, make sure to constantly reiterate the value of the data model to earn buy-in from your users. Building this internal credibility and excitement will help you bring the data model to other teams and your entire company.
+Data modeling: Transform your data, transform your org
+When you build your company’s data model, you’re fundamentally improving how the business is run. Instead of disagreeing about what metrics mean, people will work together to improve those metrics. Instead of constantly answering questions, your data team can drive more impactful, strategic projects. Instead of chaos, there will be clarity – and from that clarity will come results.
+We believe Omni is the best place to build and maintain a data model that will spark insights & impact for your team. We’d love the opportunity to show you how.

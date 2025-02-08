@@ -1,0 +1,397 @@
+Blog home
+Introducing Table Styles with Sigma
+Katherine Maples
+PRODUCT MANAGER
+Introducing Table Styles with Sigma
+NOVEMBER 29, 2023
+Tables are the lifeblood of how organizations consume data—yet most BI platforms completely ignore their styling. Whether the goal is to reinforce brand recognition, highlight critical metrics, or to fiercely grab attention, having the options to adjust the look and feel of elements like tables are a necessity. With our latest release, Sigma is introducing Table Styles that elevate how tables are consumed by organizations, giving them the first-class formatting they deserve.
+This quarter, Sigma is introducing a comprehensive Table Styles feature for tables, pivot tables, and also input tables. Let’s explore why it’s so important to design data tables in BI dashboards, and dive into how Sigma empowers users to style tables in the most efficient and intentional way. 
+Why Should I Style Tables and Spreadsheets?
+Data tables have always provided a structured and organized view of data that can be deeply explored and precisely validated in a way that other visualizations do not. Due to this advantage, tables and spreadsheets are the most commonly used representations of data in various industries, and are frequently shared, presented, and displayed for a wide range of audiences. 
+But when sharing, presenting, and displaying any content, it’s important that it looks good as well as personal. That means breaking out of the enduring no-frills method for presenting numerical and textual information, and adding more aesthetic appeal. 
+“Things look great right out of the box, without the need for advanced design skills.”
+Designing a table or a spreadsheet can also go beyond aesthetics. Personal styling is essential for branding, association, and directing focus. It influences the user experience, readability, as well as the overall effectiveness of data analysis. A well-designed table also helps users quickly grasp the information presented, facilitating better decision making. Additionally, consistent styling across multiple tables and dashboards ensures a cohesive visual identity, facilitating easy comparison and creating a seamless experience for users. 
+Even better, these styling features reduce the design skill level needed for a technical analyst to curate a beautifully-designed dashboard. That means things look great right out of the box, without the need for advanced design skills. 
+Coming This Quarter: Sigma Table Styles 
+At Sigma, tables and spreadsheets are our bread and butter. Many of us believe that tables and spreadsheets are the ultimate data visualization, on top of Sigma already being widely familiar, easy-to-use, and extremely flexible. 
+Any and every Sigma user can create or explore a table within the platform. It’s highly encouraged for every individual to expand any chart to a table view and dig into the data without relying on other teams for answers. Table styling is the newest iteration of this, in order to make these tables even more impactful and effective.
+“Personal styling is essential for branding, association, and directing focus.”
+Our Table Styles feature is made up of several smaller design features that can now be applied to any tables, pivot tables, or input tables to enhance their look and readability. Customizations include header styles, header colors, gridline options, font options, cell spacing, and more. And if a certain combination of styling options feels perfect, it can be saved as part of your Workbook Theme, allowing the style to be reused and shared by an entire organization. 
+NOTE: PUBLIC BETA OF THE FEATURE WILL BE IN DECEMBER 2023. THE ADDITION OF TABLE STYLES TO WORKBOOK THEMES WILL NOT BE INCLUDED IN THE PUBLIC BETA, BUT WILL BE INCLUDED LATER IN THE QUARTER WITH THE GENERAL AVAILABILITY (GA) RELEASE.  
+TIP: USERS CAN USE THE “COPY/PASTE FORMAT” BY RIGHT CLICKING ON A TABLE OR WITH THE KEYBOARD SHORTCUT (CTRL+ALT+C) TO COPY STYLES FROM ONE TABLE TO ANOTHER AS A SHORTCUT IN THE MEANTIME. 
+New customizations include header styles, header colors, gridline options, font options, cell spacing, and more.
+The Advantages of Sigma’s Table Styling
+The new table styling options offer several advantages when creating workbooks. The examples below show a before and after for what will be possible with the new styling features coming soon. 
+Improved aesthetics: The new features enable customization options such as header styles, cell spacing, and gridline options, making the tables more visually appealing.
+Enhanced readability: Thoughtful styling like highlighting pivot totals helps users quickly scan and understand the table's content, improving data comprehension.
+Personalization and branding: Adding Table Styles to your Workbook Theme expands workbook customization to match brand guidelines, ensuring that the tables align with the organization's visual identity.
+Designing data tables in business dashboards is a critical aspect of effective data visualization. With Sigma's upcoming customization features, including header styles, cell colors, cell spacing, gridline options, as well as the ability to incorporate them into themes, users will be able to easily make any dashboard more visually appealing and tailored to their specific needs. By leveraging these styling capabilities, businesses can stay true to their brand and empower their teams to make informed decisions with confidence. Stay tuned for more details on the upcoming Table Styles in Sigma. 
+Read more about data visualization in Sigma, or start a free trial here. 
+‍
+THE ULTIMATE KPI PLAYBOOK
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

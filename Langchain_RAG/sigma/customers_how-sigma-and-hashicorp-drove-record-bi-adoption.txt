@@ -1,0 +1,403 @@
+Less is more: How HashiCorp removed 80% of its dashboards to drive adoption through Sigma
+By Sean Rice
+DIRECTOR OF DATA ENGINEERING AND ANALYTICS
+By Frances Wong
+MANAGER, DATA & ANALYTICS
+HashiCorp has a suite of enterprise applications that allows DevOps teams to deploy any application in any infrastructure. We spoke with Sean Rice — the Director of Data Engineering and Analytics at HashiCorp — where he manages their data tech stack and data infrastructure. Sean’s primary goal is making data available to help the company make data-driven decisions. We also spoke with Frances Wong, who administrates and manages Sigma as a tool for HashiCorp. Her team also supports HashiCorps’ analytics team by building and creating analytics dashboards and reports.
+Life before Sigma
+Life before Sigma was fragmented to some degree. There were very unclear goals and alignment. We had all the classic challenges that teams have: disparate data sources, disparate use cases, and unclear alignment.
+More dashboards were not solving more problems.
+Adopting Sigma came from needing to migrate off of a legacy system. We had a significant number of dashboards that were not being leveraged — and they were being used for all of the classic reasons that dashboards aren't being used: They were created at a point in time when they solved a problem that they no longer solve. We probably came to the realization that somewhere in the neighborhood of 80% of our dashboards were not being leveraged on a daily basis.
+Having that many dashboards that were dated or inaccessible was doing more harm than good, unfortunately. More dashboards were not solving more problems. 
+Sigma came in and helped us solve those things with just being easier to use, quite frankly. We wanted the tool to be as easy to use as possible and not be a barrier to entry for other teams.
+If teams are using other tools, I think that barrier to entry is much higher. For data analysts or data engineers, they're great at those tools. But I don't know that every business stakeholder is. So now, we've found significant value in that we get to speak the same language as our stakeholder.
+The tool itself is very intuitive, and it has a much shorter learning curve, in my opinion, than other tools I've worked with.
+Life with Sigma 
+We've onboarded many other tools. I think setting up Sigma took us maybe one sprint, so that's two weeks. Which is really unheard of.
+We get to speak the same language as our stakeholders.
+Since Sigma, we’re able to have a lot more trust in our metrics. Now we know when people go into Sigma, the data is up to date. People know what they're doing, they understand the data, and we don't have to worry about an exec opening up a dashboard and not realizing someone hasn't touched it in five years.
+We're tracking things like the number of active users, which is much higher than our incumbent. We're tracking stats like the rendering of certain dashboards, like critical C-suite reporting. All of those have significantly improved versus our previous tool. 
+Sigma is not the end of the data life cycle — it’s the beginning.
+The time to value was also something that really increased for us. We're able to get it in the hands of stakeholders much, much sooner.
+Sigma Impact 
+When you onboard a new BI platform like Sigma, you’re inherently changing fundamental business processes as much as you're changing a reporting tool. One of the things we love about Sigma is that it's not the end of the data life cycle. Sigma should be the beginning. 
+To be able to have access to Python in a BI tool is incredibly, incredibly effective.
+Now we get to have real conversations around the enablement of dashboards. And we get to talk about the data in much greater detail. That means we're not spending our time worrying about data extracts, or worrying about data sources in the way that we would have been in the past. It’s helped me and my teams fundamentally change how we monitor the cost and performance of our cloud data warehouse.
+We're just sort of scratching the surface on expanding Sigma past our initial onboarding and migration. The R&D teams and our product analytics teams have been the first wave. I think as we look to incorporate finance and go-to-market and all these larger functions, we still have a lot of opportunity there.
+Sigma rolled out Python as quickly as I've seen anybody roll that out. We love that. Python is a development standard — a lot like SQL. To be able to have access to Python in the BI tool is incredibly, incredibly effective. Its inclusion into a BI tool is really advantageous for us because now a developer doesn't have to go out into another client to manage it. We're really excited to try to apply it to a bunch of the use cases that we have. 
+Future of BI 
+We have to get data to people to make their own decisions. The choice of BI tooling should be much more aligned with the principle of, “We just need to make this as efficient as possible,” and not approach it like some kind of artistic endeavor to win a competition. I think we've kind of lost focus to some degree in that space. I think we've tried to push more complex visualizations. What we’ve learned is that we don't need to force what we think is best on the user. We can have the user tell us what they think is best and meet them where they are with their skill set. 
+With Sigma, it's very easy to say, “Hey, that's the only tool that you need to be able to do everything you need.”
+Read more about Sigma’s impact, or join download a free trial here. 
+‍
+‍
+ABOUT
+HASHICORP
+HashiCorp has a suite of enterprise applications that allows DevOps teams to deploy any application in any infrastructure.
+More about
+Hashicorp
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

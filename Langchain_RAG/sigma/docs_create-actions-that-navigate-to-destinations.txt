@@ -1,3 +1,104 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Create actions that navigate to destinations
 Suggest Edits
 Workbooks support actions that navigate users to predefined URLs, other Sigma documents, or different locations within the current workbook, including modals.
@@ -13,7 +114,7 @@ If you’re granted Can explore workbook permission, you can configure actions b
 Open a link
 Create an action that navigates to an external link or destination within Sigma. Open a static link or generate a dynamic URL that adjusts to control or column values in the current workbook.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Open link.
@@ -27,7 +128,7 @@ Same window: Opens the link in the current browser window when the user interact
 Parent window: Opens the link in the current browser window when the user interacts with the trigger element in an embed.
 The interacting user’s browser settings may change the selected Open in behavior. For example, New window may instead open the URL in a new tab (same window), and Same window may instead open the URL in the same tab.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -40,7 +141,7 @@ When you enter = , Sigma immediately displays an overlay containing a formula ba
 Open a workbook or template
 Create an action that navigates to another Sigma workbook or template. Open the destination document in its published state, or pass specific values to existing control elements to instantly open a drilled-down view.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Open Sigma doc.
@@ -55,7 +156,7 @@ Same window: Opens the the document in the current browser window when the user 
 Parent window: Opens the document in the current browser window when the user interacts with the trigger element in an embed.
 The interacting user’s browser settings may change the selected Open in behavior. For example, New window may instead open the workbook or template in a new tab (same window), and Same window may instead open it in the same tab.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -76,13 +177,13 @@ Custom formula: Passes a value based on the defined formula.
 Navigate the current workbook
 Create an action that navigates to a specific location within the current workbook. Shift the focus to the top of a page or to an individual element.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Navigate in this workbook.
 Destination Select the page or element to focus on in the workbook view
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -94,7 +195,7 @@ This documentation describes a public beta feature and is under construction. Th
 Beta features are subject to the Beta features disclaimer.
 Create an action that opens or closes a modal in the current workbook. For more details about modals, see Add a modal to a workbook.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Open modal or Close modal.
@@ -102,7 +203,7 @@ Select modal
 If configuring an Open modal action, select the modal to open, or choose New modal.
 The Close modal action doesn't require modal selection because it must be configured on an element within the modal it closes.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -111,3 +212,9 @@ Consider allowing keyboard navigation to trigger actions only when it facilitate
 RELATED RESOURCES
 Intro to actions
 View and manage existing actions
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

@@ -1,0 +1,143 @@
+Moffitt Cancer Center takes One More Step towards its Mission of Improving Cancer Care with Data Democratization through Sigma
+About Moffitt
+Opened in 1986, Moffitt Cancer Center is on a mission to contribute to the prevention and cure of cancer through revolutionary digital innovations that can facilitate rapid scientific breakthroughs and ultimately save lives. A vast array of demographic and clinical data is available on Moffitt patients, and making this data securely available to analysts, researchers, care providers and other business stakeholders is essential for meeting the organization’s long-term goals.
+THE CHALLENGE
+Limited Access to Essential Data
+Moffitt consists of a central campus for the primary clinical hospital and the Moffitt Research Institute (MRI), with several additional clinical campuses across the Tampa Bay region. The Moffitt catchment area currently includes 23 counties spanning West Central Florida—an area home to 9.8 million people, and nearly 47% of the state's population. Moffitt is home to over 500 research and clinical faculty, spanning population science, quantitative science, basic science, and the full spectrum of disease-specific clinics. In addition, a variety of other stakeholder groups from the Clinical Trials Office and Office of Community Outreach, Engagement, and Equity to operational teams including IT, Finance, Patient Services, Quality and Patient Safety, and Marketing/Public Relations all have a diverse set of data needs. 
+Previously, Moffitt relied on an on-prem warehouse solution. This met the organization’s needs for more than a decade, but the model eventually proved to be an inefficient way of delivering data to faculty members. To modernize its data infrastructure, Moffitt upgraded to an AWS-based ecosystem, the Moffitt Cancer Analytics Platform (MCAP), centered around a Snowflake data warehouse. The organization maintains a curated and research-ready schema within this data warehouse capturing over 500,000 distinct patients, over a million research biospecimens, and over 2,200 discrete data elements. This central warehouse pulls in data from the electronic medical record, cancer registry, research biobanking system, billing system, survey results, molecular data, and more.
+Prior to MCAP, only a handful of team members had been actively using the organization’s legacy self-service data tool. Both the tool and the underlying data model were difficult to work with, discouraging regular use and insightful data exploration. Moffitt needed to find a way to make its curated data more easily available to its almost 8,000 employees and empower them to do more with that treasure trove of information. 
+THE SOLUTION
+Expanding Access & Sparking Research 
+Once the critical data was centralized and curated in Snowflake, Moffitt deployed Sigma to address two specific data-access-related use cases.
+The first goal was to facilitate transparency into Moffitt’s broad array of data assets through a new and improved self-service toolkit. Dr. Rachel Howard, a Data Scientist in Moffitt’s Health Informatics department, worked closely with Sigma and outside collaborator phData to create MCAP Explore, a Sigma workbook that provides visibility into the data in Snowflake in an entirely de-identified manner. MCAP Explore facilitates patient filtering, cohort building, and data visualization that drives feasibility assessments for research studies and provides an overview of the Moffitt data landscape for researchers, clinicians, and operational teams alike. The freedom to explore data and generate aggregate counts and preliminary data immediately, without having to submit a formal request, is invaluable to Moffitt team members.
+After initial data exploration has been conducted using MCAP Explore, the Collaborative Data Services Core (CDSC), which consists of 25 data analysts, is charged with provisioning identified data for research in an analysis-ready format and in alignment with the regulatory approvals received for the specific study. Many CDSC team members had spent many years working exclusively with point-and-click software, Excel files, and email, and had limited coding experience to allow them to be flexible and efficient in retrieving and customizing the data in MCAP. Moffitt’s Health Informatics department determined that Sigma was an ideal way to meet these users halfway, offering the familiarity of a spreadsheet interface and easy access to data without requiring knowledge of programming languages. 
+‍
+THE RESULTS 
+Ease of Use, Flexibility, Security, & Time Savings 
+Now that Moffitt is leveraging Sigma in combination with its Snowflake data warehouse, the organization is addressing its two primary analytics use cases in a manner that has proven to be flexible, simple, secure, and remarkably time- and resource-efficient. 
+Ease-of-use
+One of the primary features Dr. Howard highlights is Sigma’s ease of use and the ability to get started right away with little to no advanced knowledge or training. Workbook creation is extremely intuitive, from generating visualizations to overall layout. Dr. Howard and her colleagues value all the time saved on design and aesthetics, as the platform automatically aligns widgets and text and allows simple drag-and-drop capabilities that minimize the need for user customization. Dataset creation is similarly simple, with the user guided clearly through the whole process of joining multiple tables, selecting columns of interest, and performing basic operations like grouping and filtering.
+Computational Efficiency
+Time is of the essence when there’s a grant deadline approaching, and Moffitt’s team members don’t want to wait several minutes for their queries to run. The ability to schedule materialization of the underlying datasets for MCAP Explore back to the Snowflake environment so the tool can read directly from Snowflake means that even with over 300 million rows of data, they are able to generate updated patient counts and answer their faculty’s questions in a matter of seconds.
+Unparalleled Flexibility
+When Dr. Howard considers her favorite features of Sigma, she cites the exceptional flexibility of the tool, and how successfully it serves everyone from skilled data analysts who want to write custom SQL queries, to less experienced data team members who need to build simple but robust datasets to pass on for downstream analysis, all the way to the totally inexperienced data user who just wants to interact with drop down menus and bar charts.
+15X Increase in User Adoption
+Prior to Sigma, the number of new users of Moffitt’s self-service toolkit was in the range of 20 per year, institution wide. In the first week after deploying the MCAP Explore workbook built on Sigma, there were already 133 active users of the tool. Within less than two months, that number was over 275 distinct users.
+25% Time & Resource Savings 
+Between allowing investigators to generate their own preliminary counts and identify their cohort of interest, and significantly improving the data collection and curation toolkit available to CDSC team members, the combination of Sigma and Snowflake is anticipated to substantially reduce the time needed for the CDSC to fulfill requests for custom data deliverables. Given that these analysts charge hourly, the time savings is expected to drive a 25% reduction in related project costs. 
+Security and Governance
+As a healthcare organization, Moffitt must always be mindful of protecting identifiable patient information. The beauty of Sigma, according to Dr. Howard, is that it can mirror all Moffitt’s previously established Snowflake role-based access control policies, so an additional layer of governance and oversight is not required. Whether it’s the de-identified access role used for the self-service tool, or the CDSC team-specific role used by their analysts, Moffitt didn’t need to acquire any additional technical debt by re-assigning all our data masking policies in a second environment. 
+In the long run, these changes and efficiencies stand to have a significant impact on Moffitt’s larger mission. Now scientists and physicians can explore questions on their own through the self-service analytics platform, and the data services team can create curated datasets and workbooks faster, serving more data customers. As a result, Moffitt team members will be equipped to conduct more novel research, including applying for and securing the grants that are essential to their studies and, hopefully, uncovering more insights into one of the world’s greatest medical mysteries.
+BY THE NUMBERS
+300 Million
+300M ROWS OF CURATED PATIENT DATA MADE EASILY ACCESSIBLE
+15X
+15X INCREASE IN ACTIVE USERS OF DATA SELF-SERVICE TOOLKIT
+25%
+TARGETS 25% REDUCTION IN TIME TO GENERATE AND DELIVER DATASETS FOR RESEARCH USE
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

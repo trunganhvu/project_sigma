@@ -1,0 +1,150 @@
+Workato Turns to Sigma’s Input Tables to Drive its Business Forward
+About Workato
+Workato is an enterprise automation and integration platform that enables businesses to connect their applications and streamline complex workflows. Its simple drag-and-drop interface and step-by-step logic makes it easy for business users to create workflows. The platform leverages machine learning and patented tech to make the creation and implementation of automations substantially faster than traditional platforms. 
+‍
+THE CHALLENGE
+Limited by Other Tools’ Complexities
+Workato was using a legacy tool that came with big promises but bigger headaches.
+“Our legacy tool required us to do a lot of data preparation and categorization to even create basic reports,” says Nathan Muller, Sr Sales Ops Analyst at Workato. The intricacies involved with different fields of data made it challenging to trust the results and for that reason the team wasn’t confident in the answers that were rendered unless certain things were locked.
+Plus, all the backend work made it incredibly hard for the Workato team to set up simple dashboards and reporting, which were key to decision making. In one such instance, their BI tool failed to deliver a critical go-to-market intel report that the leadership needed. This was the breaking point that led Workato to look for alternative tools and platforms.
+‍
+THE SOLUTION
+Real-Time Analytics, Visualizations, & Reporting At Cloud Scale 
+The limitations and the challenges involved in delivering real-time reports led Workato to Sigma, a tool purpose-built for the modern cloud data warehouse. After a year of using both Sigma and their legacy tool, the company wanted to consolidate on to one BI and analytics platform. In an internal bake-off between the two, Sigma won by an overwhelming majority, capturing 90%+ of the votes. Since this bake-off and full Sigma implementation, Workato has seen a 4X increase in product engagement as measured by proficient dashboard creators.
+The most recent Sigma functionality—Input Tables—opens a new world of two-way interaction with the data warehouse. Input Tables gives the Workato team the power to directly add data to Snowflake, their cloud data warehouse, and create "what-if" scenarios in real-time, without changing the source data. With this newly populated data they are able to then create Workato recipes to action this data in their CRM, ERP, and many other systems.
+With Input Tables, we are now able to build sophisticated models and complex scenarios in addition to simple dashboards and reports.
+—Tyler Lawson, Director of Business Intelligence & Analytics, Workato
+Tyler adds how Sigma’s intuitive spreadsheet-like interface empowers users to create predictive models of different outputs on Snowflake, their cloud data warehouse. For instance, the company is able to determine how valuable an account might be to a salesperson by modeling pipeline and conversions. With Sigma, Workato is able to pull in their data source, add new columns, create those columns based off of formulas from other columns, perform joins, do Vlookups, and combine everything into like one final data.
+THE RESULTS
+Elevating Forecasting, Territory Planning, & Scenario Modeling
+With Sigma, Workato is able to build predictive models, create data products, conduct “what-if” analysis, and determine the efficacy of its marketing campaigns.
+Productivity Gains
+The Workato team has been able to log substantial productivity gains since the Sigma implementation. The sales org now has deep insights and actionable intel into both (1) pipeline and (2) AE performance. With pipeline forecasting, they’re able to determine which prospects are most likely to convert through scoring accounts to ascertain how valuable an account might be to a salesperson. Plus, they’re able to track AE performance in terms of dollars attained against “measurable work” in the form of meetings, phone calls, and other outreach activities, all in one easily digestible scatterplot. 
+This intelligence arms the team with incredible insights to become more effective and efficient.
+Cost, Resource, & Time Savings
+“The ability to visualize pipeline and AE performance within the bounds of our existing contract with Sigma has saved us at least $10,000 that we may have otherwise spent on additional software,” says Tyler.  
+He further adds that with Sigma it’s super fast to spin up a new data set, create a fast moving dashboard, and then materialize it. “What would potentially take us three weeks [with our legacy tool] is down to a day or two with Sigma–which is more than 90% in time savings.” 
+The team was also able to get the load times down from “20 seconds to 5 seconds and while seconds might not sound much, when you're sitting there staring at your screen watching the page load, 15 additional seconds seems like an eternity." Tyler & Nathan were able to log a 75% improvement there.
+Scenario Modeling with Input Tables 
+The Input Tables functionality wherein you can directly write to Snowflake has next leveled the “what-if” scenario modeling that the Workato team is able to perform. 
+We’re massively using Sigma’s Input Tables for territory planning and future pipeline creation. It lets us simulate different scenarios by drawing different state and country lines to gauge the perceived value of a territory.
+—Nathan Muller, Sr Sales Operations Analyst, Workato
+Drawing up scenarios on-the-fly, adding groupings and variables, and running simulations could be pretty challenging without such a feature. Nathan and team are using it to build products that have territory scenario building as their core offering. In addition to the more sophisticated analysis, Nathan has also been leveraging Input Tables for a more simplistic use case that involves “creating empty Input Tables to quickly pull in information, which otherwise is a lot of work.” In addition to these use cases, Tyler, adds how Sigma is helping them make their marketing campaigns tighter and more efficient. 
+Enhanced Functionality
+While taking advantage of live data at a granular level, the Workato team is now able to create entirely new analytics views like scenario models incorporating their own variables or present alternative data to that which is generated from source applications to add fresh perspectives. They’re able to build predictive models to inform critical business decisions. 
+Plus, as per Tyler, Sigma works extremely well with their cloud data warehouse Snowflake. 
+BY THE NUMBERS
+90%
+90% TIME SAVED IN DASHBOARD CREATION
+4X
+4X INCREASE IN PROFICIENT DASHBOARD CREATORS
+75%
+75% REDUCTION IN LOAD TIMES AS A RESULT OF MATERIALIZATION
+More about
+Workato
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

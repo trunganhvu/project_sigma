@@ -1,4 +1,4 @@
-ModelingModel files
+ModelingModel configuration
 On this page
 Model files
 Model files are used to define configuration for the analytical environment (topics, views, and so on) associated with a specific connection.
@@ -80,6 +80,14 @@ cache_policies:
     max_cache_age: 59 seconds       # Required. Defines the policy's time limit.
   daily_cache_policy:
     max_cache_age: 24 hours
+max_cache_age:
+Required for use with cache_policies. Defines the time limit for the cache policy.
+cache_policies:
+  daily_cache_policy: 
+    max_cache_age: 24 hours         # Must be between 0 seconds and 24 hours
+  minutes_cache_policy:
+    max_cache_age: 5 minutes
+Accepted values must be between 0 seconds and 24 hours. If a value exceeding 24 hours is entered Omni will default to the model's specified default_cache_policy. If a default policy isn't set, Omni's default policy of 6 hours will be used.
 default_cache_policy:
 Defines a default cache policy for the model. If set, the cache policy will be applied to all topics in the model and override Omni's default cache policy. Refer to the Topics documentation for information about setting topic-level cache policies.
 cache_policies:
@@ -155,14 +163,6 @@ included_views:
 Defines a list of views from the database schema to include in the model. Views that aren't included can't be referenced when modeling.
 This parameter can't be used if ignored_views is in use.
 included_views: [products, users, orders]
-max_cache_age:
-Required for use with cache_policies. Defines the time limit for the cache policy.
-cache_policies:
-  daily_cache_policy: 
-    max_cache_age: 24 hours         # Must be between 0 seconds and 24 hours
-  minutes_cache_policy:
-    max_cache_age: 5 minutes
-Accepted values must be between 0 seconds and 24 hours. If a value exceeding 24 hours is entered Omni will default to the model's specified default_cache_policy. If a default policy isn't set, Omni's default policy of 6 hours will be used.
 template:
 Details coming soon.
 week_start_day:
@@ -173,6 +173,6 @@ DEPRECATED
 On December 10, 2024, we deprecated this field in favor of giving topics their own file. Model files that contain this field will continue to function as they always have, but going forward you'll encounter an error if you attempt to add topics: to a model file.
 Refer to the Topics documentation for more information.
 Previous
-Overview
+Model management
 Next
-Topics
+Data access control

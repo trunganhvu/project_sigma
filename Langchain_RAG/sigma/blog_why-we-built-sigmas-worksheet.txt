@@ -1,0 +1,404 @@
+Blog home
+Why We Built Sigma’s Worksheet
+Jim Gale
+SOFTWARE ENGINEER
+Why We Built Sigma’s Worksheet
+‍
+Sigma Worksheet is an interactive, direct-manipulation interface for constructing data warehouse queries—the overlay shows a sample synthesized query. The design of Worksheet arose from certain criteria that make it powerful and yet accessible.
+May is the month of Sigma Computing’s founding. So it’s a good time for us to reflect on where we are going and how we got here. Sigma is a startup founded with a goal of making data within organizations more usable to its members. Sigma Worksheet is our innovative, direct-manipulation interface enabling visual, interactive online analytical processing (OLAP) at cloud scale. It is designed for analysts and business users alike and is the foundation upon which Sigma is built. However, before we converged on Worksheet, we had to learn what its properties should be through a series of experiments. Here we share some of that journey and the lessons learned.
+Automated Insights
+Initially, we built several prototype analytic systems whose functionality might be summarized as “automatic query generation.” These required a semantic model of the data, so we experimented with different automatic and manual systems for constructing that model. For data ingestion we built integrations with several Software-as-a-Service (SaaS) platforms.
+An early prototype from this period, Moonpedia, presented the user’s data as an interactive “encyclopedia.”
+As a test case, we used sales and operational data from a large technology company and tried to automatically generate the reports they were producing manually. We evaluated these results through interviews with the people who had produced the original reports.
+From this work we gained many insights, among them:
+Automatically producing valuable analyses for our customers was going to require a heavy investment in up-front modeling. We knew this would make sales difficult and expensive, and furthermore, it didn’t feel like who we were. We wanted to offer information superpowers to our customers, not IT consulting projects.
+Enterprise data comes from a huge number of sources. We wanted the experience of onboarding with Sigma to be seamless, even delightful for our customers, but building a high-quality integration for every data source a customer cared about was daunting for a small company.
+Capturing company-specific knowledge with automated methods proved difficult. For example, negative sales amounts were outliers and seemed to offer interesting insights, but they actually just represented equipment returns.
+Our systems put the business user, along with their knowledge, on the sidelines. If our users saw something that looked wrong, they had no practical way to correct or revise it, especially if they couldn’t understand how values they saw were being derived. As automated methods powered by AI become popular again, we believe these early lessons are as pertinent as ever.
+Visually Programming Data
+Reflecting on these prototypes, we began exploring how to capture and automate the knowledge of business users. We observed that many contemporary analytics systems such as Tableau provided an interactive visual interface, but still required some coding proficiency in practical use. We believed that a sharp drop-off from the visual interface to the programming layer hinders the productivity of end users. Every time the code needs a change, the business user becomes blocked on someone else who can update the code. Worst case, the user might have to do without that change, leading to incomplete analyses. Interviews with current users of these systems confirmed this belief. So we asked ourselves: can we integrate code with a visual interface tightly enough to enable business users to become programmers?
+Interface of a notebook-style prototype, one of our earlier iterations. This system combined a direct-manipulation interface with a novel declarative programming language.
+Motivated by this question, we implemented a series of prototype systems that presented data and code together and let users manipulate both using an interactive visual interface. Our interfaces were “live” in the sense that they automatically refreshed values in response to changes, inspired by electronic spreadsheets, functional reactive programming, and Bret Victor’s learnable programming. We also drew ideas from data-wrangling systems, including Wrangler and OpenRefine, and end-user code-synthesis approaches such as Excel’s Flash Fill.
+We experimented with several interface forms: a spreadsheet-like canvas, interactive histories of transformations against data, and notebook-like documents similar to Jupyter. We also tried two novel functional programming languages, first a simple record-based language and later an array-based language. Both were influenced by Excel formulas and Microsoft’s M language (evolved to Power Query in subsequent years). We investigated the usability of this platform with our own use-cases and with feedback from analysts and business users in our target markets.
+From the development of this second category of prototypes, we learned some hard lessons:
+Matching a live execution environment with an unconstrained programming language was a challenge. Everything looked beautiful in Bret’s demos, but in our actual usage we saw how a very small change in the code could lead to an arbitrarily complex change in the data. In an environment where the view reacts to the code and the data, this means that the user’s view while editing can become unstable and disorienting.
+Complex operations were difficult to integrate into a guided user interface, alongside arbitrary code. Our query language was powerful, but we know many users wouldn’t be comfortable using it directly. We needed to provide special-purpose interfaces to guide users through important and complex operations like joins and grouping, but our efforts to mate a special-purpose interface to arbitrary code was only partially successful.
+Potential customers were reluctant to entrust direct access to and storage of business data to a brand-new cloud-based organization with no reputation. We believed strongly that the cloud was the future for IT and were determined to build our product there, but the reality is that SaaS companies survive on trust — something that we had not yet earned.
+Design Considerations
+After these iterations and experimentation, we set out to build Worksheet, the interactive query builder that would underpin Sigma. We were seeking a middle ground between the two types of systems we had previously explored, a highly-automated system with very limited interaction and a visual programming system. We identified five criteria for Worksheet’s design and development, informed by what we learned from our earlier iterations, existing research and tools for data analysis (in particular Eirik Bakke’s Sieuferd), and our experience in developing data systems over the years:
+Build on the data warehouse that customers already have. Avoid a lengthy ingest phase, endless third-party integrations and data controller responsibility. The new generation of cloud data warehouses (CDWs), such as Google Big Query, AWS Redshift and Snowflake, enable a direct-query model for business intelligence (BI) that wasn’t viable in the old on-premises world.
+Enable data experts and business users to collaborate in a shared language. The interface we offer for business users must bring the full power of the underlying database.
+Allow business users to share and automate their knowledge. The system must support composition and parameterization in ways all our users can understand.
+Make the query model a good match to a live visual interface. The user’s view must not change in unexpected ways when they are making edits, and complex changes must be guided by purpose-built interfaces.
+Design the query builder to be understood and used by anyone who can use spreadsheet systems. Spreadsheets have well known deficiencies, but they haven’t stopped Excel from becoming the world’s #1 BI tool. We decided early on that Sigma was for all business users, not just analysts and data scientists. We want to meet these users where they are, allowing them to transfer hard-won spreadsheet skills to the data warehouse.
+Conclusion
+From the very first demonstration of our Worksheet prototype, we saw that it would be the foundation of Sigma. Fast forward and Worksheet now makes cloud-scale data accessible to all Sigma users — many with little or no prior experience working with databases. Worksheet enables them to engage with the data they care about in an interface that is both familiar and productive.
+This article is an adapted excerpt from a paper detailing and studying the design of Worksheet. Continue with the full paper on arXiv to learn how Sigma Worksheet works “under the hood,” or watch this short demonstration video to see Worksheet in action.
+Thanks to Eran Davidov
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

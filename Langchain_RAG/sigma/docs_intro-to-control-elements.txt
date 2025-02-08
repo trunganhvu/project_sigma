@@ -1,3 +1,109 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+CTRL-K
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Create and manage a control element
+Create and configure a segmented control
+Drill down control
+Top N filter
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Intro to control elements
 Suggest Edits
 Add control elements to a workbook to provide predefined interactions to users viewing or customizing a workbook, such as inputs that modify data, selections to filter data or change displayed data, drilldown paths, or other ways of manipulating data.
@@ -28,7 +134,7 @@ When you duplicate a control, the new control has the same behavior and formatti
 When you sync controls, they share the same ID. See Synced controls.
 Types of controls
 Control elements support a wide range of options, including all filter types:
-List
+List values
 Text input
 Text area
 Segmented control
@@ -42,7 +148,7 @@ Top N
 Drill down
 Switch
 Checkbox
-List
+List values
 Include or exclude selected values in a list. Up to 200 values can be displayed in the list control.
 Input type: List of selectable values.
 Supported data types: Text, Number, Date, Logical
@@ -54,8 +160,8 @@ Select multiple page paths to include for several elements on a website analytic
 Select relevant ID numbers to exclude from a table.
 Choose the current and previous quarter from a list to include only those quarters in a chart.
 Select false and null values for a survey column to include only those in a table.
-Interactive example of a list control
-In the following interactive example, interact with the Year list control. Click to open the dropdown menu, then select the sales years you want to show in the chart. Both targeted data elements respond to your changes.
+Interactive example of a list values control
+In the following interactive example, interact with the Year list values control. Click to open the dropdown menu, then select the sales years you want to show in the chart. Both targeted data elements respond to your changes.
 Text input
 Search values in the targeted data element column(s) for full and partial matches between the text input and your data’s values.
 Input type: Enter text in a text box. If the option is shown, the user can select an operator.
@@ -181,3 +287,9 @@ Parameters in Workbooks
 Did this page help you?
 Yes
 No
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

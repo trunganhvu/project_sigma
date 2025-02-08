@@ -1,0 +1,165 @@
+Build powerful apps on your cloud data
+KNOW HOW TO USE A SPREADSHEET? NOW YOU CAN BUILD A DATA APPLICATION.
+WHETHER SPREADSHEETS OR PYTHON--TEAMS OF ALL SIZES EXPLORE, ANALYZE, AND DECIDE WITH DATA IN SIGMA
+Go beyond analysis.
+Activate workflows with your data.
+Build scalable applications, automate workflows, and take action customized to your team’s needs without writing any code.
+CENTRALIZED
+Operate with a data-first approach
+Build applications directly on your data warehouse to leverage unified, live, secure data that leads to scalable business outcomes. Combine centralized data with the dynamic data your team manages daily.
+AUTOMATED
+Set up workflows that drive collaboration and action
+Create dynamic, data-driven workflows that automatically capture data, engage your external systems, and trigger actions and alerts.
+CUSTOMIZED
+Design apps that fit your flow
+Build custom internal tools you actually need instead of buying yet another tool that falls short of your team’s use cases.
+SIMPLE
+Do it all from a spreadsheet
+Skip writing code, requesting engineering resources, or adding to technical debt. Sigma connects directly to your cloud data.
+SECURE
+Govern with confidence
+Ensure security, compliance, and governance across your data applications with fine-grained controls.
+See data apps in action
+Use Sigma to collect data, write it back to the cloud, trigger actions, customize workflows, and do it all at scale.
+Watch the video
+Everything you need to build a code-free app
+Write-back via Input Tables
+Incorporate human context into your analysis and write data directly into the warehouse, all without writing any code.
+Actions
+Define interactivity between elements in a workbook to specify how inputs and user activities trigger workflows.
+Forms
+Collect data at scale and enable multiple users to collaborate on the same data within their own customized environment. 
+Multi-user workflows
+Customizable role-based access controls to enable different teams to work together on the same data in real-time.
+Directly connect to the cloud
+Empower every user regardless of their technical acumen to self-serve insights straight from the cloud.
+Embedded Analytics
+Effortlessly integrate into your applications and provide a seamless data experience for your customers that drives action and insight.
+“Sigma’s data applications integrate seamlessly with what we do at Seek.
+The ability to combine industry-specific apps and data with the necessary granularity to drive hyper-targeted opportunities has made a big impact on our decision making.”
+ERIK MITCHELL
+FOUNDER AND CEO, SEEK DATA
+Top teams choose Sigma.
+See for yourself. Sigma is a G2 crowd favorite,
+backed by countless reviews.
+SEE SIGMA ON G2
+READ THE REVIEWS
+Related resources
+EBOOK
+Spreadsheets for Dummies
+Download your free copy of Spreadsheets For Dummies now and start revolutionizing the way you data. It’s easy to start, and even easier to master.
+GET YOUR FREE COPY
+RESOURCES
+Interactive Demos
+A collected gallery of Sigma Workbooks built to show off how anyone can build and find answers directly in Sigma.
+BROWSE OUR DEMOS
+SUCCESS STORY
+Sigma + Blackstone
+Blackstone leverages Sigma & Snowflake to perform data analytics at cloud scale.
+BLACKSTONE WITH SIGMA
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

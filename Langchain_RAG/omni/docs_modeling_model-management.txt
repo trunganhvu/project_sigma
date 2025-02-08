@@ -1,4 +1,4 @@
-ModelingModel Management
+ModelingModel management
 On this page
 Model Management
 Managing your models in Omni can be done through the workbook layer or the development IDE. This is made possible by Omni's layered approach to maintaining your data and allowing users to promote those changes to the different layers, i.e. model layer and workbook layer. We also offer a dbt integration that allows you to access that layer as well.
@@ -79,9 +79,9 @@ Click Preview restore
 Compare the changes in all affected files.
 Select Restore this version.
 Refresh Schema
-Omni strives to stay in lockstep with changes in the database layer below. One of the more challengeing experiences in BI management are when schema changes occur in the database layer, and this has only become more prevelant with dbt.
+Omni strives to stay in lockstep with changes in the database layer below. One of the more challenging experiences in BI management are when schema changes occur in the database layer, and this has only become more prevalent with dbt.
 The shared data model exists in two layers, the schema model from the database and the user-generated, virtual fields that exist only in the Omni layer. When Refresh Schema is selected from Model dropdown in the IDE, simple field references will be updated to reflect the current schema in the database (including objects like dbt views). This means if columns or tables are added or removed, these changed would be reflected in the updated schema model. Note these changes may result in invalid/broken references, but will be flagged by the model validator.
-Schema refresh may be user-triggered, or automated on a schedule.
+Schema refresh may be user-triggered or automated on a schedule.
 Note that the schema refresh kicks off a job that runs in the background, so can take several minutes depending on size of database. If schema updates do not appear instantly, give the refresh job a bit of time to complete.
 Refresh Your Schema
 You can refresh your schema(s) connected to Omni by selecting "Refresh Schema" from the Model dropdown in your model's IDE.
@@ -96,6 +96,6 @@ Export to dbt
 We want to make model management easy both in Omni and below the BI layer. To this end, we offer the ability to export a view file's dbt SQL. This will allow users to build fact tables, or virtualized fields into their dbt models beneath Omni.
 Currently this will require some rework of your Omni model, because new dbt views will then be populated into the model upon schema refresh. This means field references would need to be remapped to maintain continuity. In the future the intent is for this promotion to become button-click.
 Previous
-Templated Filters
+Model generation
 Next
-Parameters reference
+Model configuration

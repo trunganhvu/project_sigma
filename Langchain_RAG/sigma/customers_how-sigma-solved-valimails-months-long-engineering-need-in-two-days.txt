@@ -1,0 +1,138 @@
+How Sigma Solved Valimail’s “Months-Long” Engineering Need in Two Days
+By Seth Blank
+CTO, VALIMAIL
+We spoke with Seth Blank, CTO of Valimail. With over two decades of executive and entrepreneurial experience, Seth champions the expansion of DMARC as the global standard in email authentication, a critical element in preventing phishing, spoofing, and other forms of email fraud. He is committed to enhancing the safety and efficiency of the email ecosystem and holds multiple leadership roles within key industry working groups.
+Life before Sigma
+Data is key to Valimail's operations. By collecting and synthesizing customer email usage, which includes both legitimate and illegitimate activity, we are able to ensure continuous protection from phishing and spoofing for our customers. Our team is always looking for ways to do more with data, and that means we have to work hard to mature our cross-team data culture.
+The difference between Sigma and traditional BI tools? Our people are actually using Sigma.
+For years, however, our data culture has been data-request driven. The Data Team was answering questions reactively, turning around CSVs or static dashboards in Metabase. We wanted a culture where any team could get the data they wanted instantly, interrogate the data, and then – on their own – be able to see the impact of decisions they made. We wanted data to help people drive action, not just answer one-off questions.
+The biggest challenge we had with our data culture was that you could ask different teams the same question and get different answers. Our dashboards were static, and if you made an update with one, that change wasn’t inherited anywhere else. You had to manually tweak all the dashboards. As a result, the data team spent a lot of time cranking out dashboards that were never actually used, because no one could tweak or update them. At a time when we thought our wealth of data in dashboards would be accelerating us, this lack of confidence was actually slowing us down.
+We wanted data to help people drive action, not just answer one-off questions.
+When we did a Data Team SWOT, our legacy BI tool showed up as a major threat. We needed a new tool that was easy to use, that various teams could own data in, and that others could leverage without needing to understand the underlying data. We also needed performance and scalability. We have an obnoxious amount of data, and we need to be able to load the data and play with it in a short amount of time, each time. Different BI tools load data differently and are also differently performant. 
+We evaluated BI tools like Amazon QuickSight and Microsoft PowerBI. Our data was in Snowflake, however, and we wanted something that would pair well. Snowflake and Sigma work together perfectly, like a tech stack version of peanut butter and chocolate. 
+Life with Sigma = Democratizing Data
+We’ve made rapid progress since bringing Sigma on board. People across the company have been able to jump in and rapidly iterate with dashboards. Each team has built a “golden workbook” that other people can inherit and play with easily. This is important because we have hundreds of data systems across the business, and making it easy to connect information between them is essential to a mature data culture.
+Snowflake and Sigma work together perfectly, like a tech stack version of peanut butter and chocolate.
+We know so much about our world because of all the data we take in. We can see our market shifting. Marketing can see what campaigns we’re running and what impact they make on conversions. Product can see who comes into our app, what they do, what they buy, what support requests they make, and what hours the support team spends with them. Essentially, we can see the customer journey through and through. 
+The problem we had, however, was what happened when we wanted to mix this data across different teams. Data was siloed, and to build a meaningful dashboard, you used to have to understand all the systems you were using. With Sigma, a marketing team member can easily play with and join information from a support team’s “golden workbook,” along with the finance team or the product team. The workbooks abstract the data into easy-to-understand levels that people can plug and play with. With Sigma, no one needs to be an expert on data sources other than their own.
+With Sigma, you can answer the question someone asked you in the meeting during the meeting.
+The difference between Sigma and traditional BI tools? Our people are actually using Sigma. Traditional BI tends to simply be the delivery of a dashboard; and if you need something more, you have to enter a never-ending request loop. And even then, you end up downloading the data to Excel or Google Spreadsheets to play with it yourself. With Sigma, people can just go do what they wanted to in the first place. You can answer the question someone asked you in the meeting during the meeting. You don’t need to put a ticket in, and you don’t need to wait. 
+I made a bet that we could build the solution in Sigma, and in two days we were live.
+Sigma solves months-long engineering problem in two days
+Our market’s moving very fast due to the new Google and Yahoo! email authentication requirements going into effect this year. Valimail is the only player in the space with the scale and the automation to support the millions of companies who overnight needed to get authentication in place for their email. We’re also the choice partner of key vendors in the industry. Together, we support shared customers and keep their email protected and delivered.
+Making it easy to connect information between hundreds of data systems is essential to a mature data culture.
+Our partners need insight into our shared customers’ compliance against the new requirements. These partners were able to look at individual items in our app, not aggregated views that showed trends and progress. The new market reality meant we needed to share meaningful answers instantly – not raw data slowly. 
+Our engineering team was also slammed with priority work for customers as well as handling scale. Building out a native dashboard in our app to meet the new needs of these partnerships could not have been prioritized for months, but partners needed it now. I made a bet that we could build the solution in Sigma, and in two days we were live. Sigma also lets us rapidly iterate the dashboards, so we can play with partners while we’re learning what’s most impactful for them without wasting engineering effort during this process. I’d always expected to build the dashboard eventually. Now that Sigma has shown its power, we might just embed it directly, and save the overhead.
+Read more from other customers who are choosing Sigma here, or join our weekly live demo. 
+‍
+ABOUT
+VALIMAIL
+Valimail is the global standard in email authentication, a critical element in preventing phishing, spoofing, and other forms of email fraud.
+More about
+Valimail
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

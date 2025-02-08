@@ -40,8 +40,8 @@ Custom cron schedules (Advanced)
 
 
 3. Select format & filter options
-In the Dashboard or Chart tab, you can select the format of the content, such as PNG or CSV, and set filter values for the delivery.
-Note: Dashboard deliveries will automatically apply the dashboard's default filters. Use the Filters section to specify different filter values for the delivery.
+In the Dashboard or Chart tab, you can select the format of the content, such as PNG or CSV, and set filter or control values for the delivery.
+Note: Dashboard deliveries will automatically apply the dashboard's default filters and controls. Use the Controls and Filters section to specify different control and filter values for the delivery.
 DID YOU KNOW?
 You can use filters to customize content for different recipients! For example, set a filter to A in a scheduled delivery to recipient A, and in another scheduled delivery to recipient B, set a filter to B.
 4. Configure destination settings

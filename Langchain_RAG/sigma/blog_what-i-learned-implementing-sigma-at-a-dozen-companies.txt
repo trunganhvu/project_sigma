@@ -1,0 +1,409 @@
+Blog home
+What I Learned Implementing Sigma at a Dozen Companies
+Joe McFarren
+SENIOR PARTNER SOLUTIONS ENGINEER
+What I Learned Implementing Sigma at a Dozen Companies
+I started my career as a molecular geneticist doing cancer research on brain tumors. So, how exactly did I end up at Sigma? My name is Joe McFarren, and I’m a Senior Partner Solutions Engineer at Sigma Computing. Like a lot of people in data and analytics, I’ve had a non-linear path to get where I am today: I have been a corporate researcher, a business analyst, a project manager, a Tableau developer, a practice leader, and now I work here at Sigma.
+Having been a consultant for the last seven years of my career, no other platform has excited me the way Sigma has. I believe in this platform so much that I left my consulting role at phData to be a solutions engineer here. As a consultant, however, I implemented Sigma over a dozen times. As a platform that is on a meteoric rise, I’d like to offer some advice when considering using Sigma, implementing Sigma, and some simply “nice-to-knows.” I don’t want you to make the same mistakes I did when I was starting out.
+The biggest misconceptions about Sigma
+In the implementations I’ve led myself, I ran into nearly the same exact issues every single time:
+“How do I do XYZ in Sigma? I know how to do it in Tableau!”
+“Why can’t Elena on the executive team see the amazing workbook I created?”
+“How do I add a calculation?”
+“Does Sigma even allow you to make data visualizations?”
+Some of these are a bit tongue-in-cheek, but the overarching message stands: there are some misconceptions about Sigma and how it is implemented. 
+1. Sigma isn’t just a spreadsheet.
+Sigma is an incredibly simple platform to get up and running. The downside of how simple it is to use the platform is that some people think that we’re just a spreadsheet. 
+In MS Excel, you are limited to just over a million rows (1,048,576 rows, to be exact) and you have to deal with local copies of data. Using local copies means that Elena on the executive team may be using an outdated version of the spreadsheet that John in accounting sent to her. This adds yet another step in everyone’s day and can cause nothing but confusion. Even worse, it makes it so the end user doesn’t have trust in the data. With Sigma, you are always hitting the most up-to-date data because we’re using a live connection to the data warehouse. Plus, you can query billions of records. Yes, billions. I accidentally did a self-join on a 600 million row data set (whoops) and I was shocked when Sigma returned a result!
+Sigma also allows for modern data visualizations with a couple of clicks. There’s also Sigma’s “drill anywhere” functionality, which basically means you can continue to dig deeper into each layer of data when new questions come up. In competitors, viewing data shows a basic table with values. In Sigma, viewing row-level data is the heart of our platform. You can see data in aggregate or at the row level and apply familiar things like conditional formatting or pivot tables. You can’t create a five-billion-row pivot table in Excel. You absolutely can in Sigma.
+2. Sigma and phData make data teams work smarter and faster.
+Sigma is browser-based and built for the cloud, which means you are always hitting your live data. There is no need for requesting license keys, no worrying about data extracts or outdated CSVs, and no issue with your desktop version not being in line with your internal server or customer’s version. These features of Sigma make your data teams certainly work faster and more efficiently, reducing time to value when implementing Sigma.
+Additionally, Sigma is purpose-built for the cloud data warehouse and has a similar look and feel to the cloud platform. As a platform specifically built for cloud data warehouses and not adapted to them like our competitors, creating a data visualization from million rows of data and being and to drill down to the row level is extremely simple. From my experience implementing our platform in the past, a common theme was hearing that things just make sense in Sigma. Jumping into a legacy tool can be daunting with jargon and difficult calculations. Everyone knows what a table looks like, and that’s why we present data that way in Sigma. Being able to bend data to your will is a powerful thing, especially when you don’t have to be a python developer or even have a deep understanding of SQL. 
+Sigma’s live edit function is also a game changer in the analytics and BI space. Similar to never having to worry about data extracts, live edit allows you to work closely with another user and collaborate with your team in real-time. No more saving a workbook, emailing it over to them, hoping you attached the right one, and potentially working off of an outdated version. With live edit, you and your team can work collaboratively in an instant – something no other BI tool can claim.
+phData’s team of Sigma experts are prepared to partner with you at any stage of your analytics journey – whether that involves setting up and connecting Sigma to Snowflake, expanding use cases for your already in-use Sigma environment, or starting an end-to-end modern data analytics stack.
+3. Use. The. Data. Lineage.
+This is one thing I learned very quickly after implementing Sigma well over a dozen times is to use. The. Data. Lineage. I feel Sigma has the best-in-class data lineage view built right into the platform, which allows the end user to troubleshoot or wrap their head around the data model without having to do anything besides a single click in the interface.
+I helped customers and clients troubleshoot a calculation or data visualization countless times in other BI platforms that are usually a simple filter applied at the data source level, thus filtering all of the data that comes into the workbook. Or, having an account ask me why their visualization does not match their data warehouse queries… only to see that they were using the incorrect source table. These problems would be immediately and efficiently solved if all data exploration and visualization platforms had this data lineage feature, but that’s simply not the case.
+Sigma’s data lineage is also great because it allows you to not only view the full lineage, but also click in and drill into individual data elements from the lineage. You may also click a table or data source and view some metadata around the table: 
+The connection
+The workspace location
+The owner
+The last updated time
+If there is a materialization schedule
+All of the dependencies in the workbook
+All of this information is incredibly important and truly valuable to have in a one-stop shop in a workbook. 
+4. You aren’t alone – take a look at our resources!
+We at Sigma understand that our platform is relatively new and not everyone may have the expertise to use our advanced functionality right off the bat. With that being said, we have quite a bit of resources available for you to get up to speed on Sigma. When I would implement Sigma at various client sites, I always recommended the Virtual Hands-on Lab to the end users since this is a robust hands-on lab for the first-time user. 
+There is also a Data Modeling Quick Start that takes the user through a more data modeling-focused exercise. These resources are great for those that are just getting started with Sigma, so these are resources I always recommend to users.
+Finally, the help site and community site are two places that provide documentation as well as community support for Sigma users. The community site in particular, is a place to connect to other Sigma users that live and breathe the platform. These users are extremely valuable and helpful members of the community that are always willing to chime in if you run into a snag. Our support team monitors the community site too, so I know you’ll always be in good hands.
+Okay, one more thing actually. I highly recommend using the “?” button in the bottom right of any Sigma workbook. This will connect you with technical support, and they have saved me a number of times. If they can’t figure something out immediately, they will go as far to set up time with you to make sure that your problem is solved.
+Throughout my time implementing Sigma at client sites, I am fortunate to have run into these snags because I can communicate them to our end users as what not to do. Overall, I would really recommend leaning on our documentation, community site, and technical support as well as using our differentiators like our data lineage and live edit. If you have any questions, feel free to reach out and get a free trial today!
+Let’s Sigma together! Schedule a demo today.
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+Data Analytics
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -5,9 +5,9 @@ The user APIs allow you to manage users in your Omni instance. These APIs follow
 Create a user
 Creates a user.
 POST /scim/v2/users
-curl 'https://myorg.omniapp.co/api/scim/v2/users' \
+curl -X POST'https://myorg.omniapp.co/api/scim/v2/users' \
 --H 'Content-Type: application/json' \
---H 'Authorization: Bearer TOKEN' \
+--H 'Authorization: Bearer <TOKEN>' \
 --data '{
     "displayName": "Blobby",
     "userName": "iamagoodblob@myorg.co",
@@ -33,38 +33,38 @@ No X
 n/a
 An object defining the user's user attributes. Attributes are represented as key/value pairs, where the keys map to the IDs of user attributes (the Reference column in the User attributes page) defined in Omni.
 Response
-Returns a user object and user attributes, if provided.
 201 Created
- {
-    "active": true,
-    "displayName": "Blobby",
-    "emails": [
-        {
-            "primary": true,
-            "value": "iamagoodblob@myorg.co"
-        }
-    ],
-    "groups": [],
-    "id": "9e8719d9-276a-4964-9395-a493189a247c",
-    "meta": {
-        "created": "2024-12-03T23:13:14.109Z",
-        "lastModified": "2024-12-03T23:13:14.109Z",
-        "resourceType": "User"
-    },
-    "schemas": [
-        "urn:ietf:params:scim:schemas:core:2.0:User"
-    ],
-    "userName": "iamagoodblob@myorg.co",
-    "urn:omni:params:1.0:UserAttribute": {
-        "good_blob": "yes"
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+429 Too Many Requests
 Update a user
 Updates the specified user by setting the values of the parameters provided and leaving all other properties of the user unchanged.
 PUT /scim/v2/users/:id
-curl 'https://myorg.omniapp.co/api/scim/v2/users/9e8719d9-276a-4964-9395-a493189a247c' \
+curl -X PUT 'https://myorg.omniapp.co/api/scim/v2/users/9e8719d9-276a-4964-9395-a493189a247c' \
 --H 'Content-Type: application/json' \
---H 'Authorization: Bearer TOKEN' \
+--H 'Authorization: Bearer <TOKEN>' \
 --data '{
     "urn:omni:params:1.0:UserAttribute": {
         "good_blob": "sometimes"
@@ -92,31 +92,31 @@ No X
 n/a
 An object defining the user's user attributes. Attributes are represented as key/value pairs, where the keys map to the IDs of user attributes (the Reference column in the User attributes page) defined in Omni.
 Response
-Returns the updated user object associated with the provided user ID.
 200 OK
-{
-    "active": true,
-    "displayName": "Blobby",
-    "emails": [
-        {
-            "primary": true,
-            "value": "iamagoodblob@myorg.co"
-        }
-    ],
-    "groups": [],
-    "id": "9e8719d9-276a-4964-9395-a493189a247c",
-    "meta": {
-        "created": "2024-12-03T23:13:14.109Z",
-        "lastModified": "2024-12-03T23:13:14.109Z",
-        "resourceType": "User"
-    },
-    "schemas": [
-        "urn:ietf:params:scim:schemas:core:2.0:User"
-    ],
-    "userName": "iamagoodblob@myorg.co",
-    "urn:omni:params:1.0:UserAttribute": {
-        "good_blob": "sometimes"
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+429 Too Many Requests
 List users
 Returns a list of users, sorted by creation time. This endpoint supports filtering.
 Refer to the Embed tab to view an example specific to embedding.
@@ -124,9 +124,9 @@ Non-embed
 Filters
 Embed
 GET /scim/v2/users
-curl 'https://myorg.omniapp.co/api/scim/v2/users' \
+curl -X GET 'https://myorg.omniapp.co/api/scim/v2/users' \
 --H 'Content-Type: application/json' \
---H 'Authorization: Bearer TOKEN'
+--H 'Authorization: Bearer <TOKEN>'
 
 
 
@@ -152,41 +152,7 @@ No X
 1
 An integer index that determines the starting point of the sorted result list. Defaults to 1.
 Response
-Returns a list of user objects, each of which represents a user.
-Non-embed
-Embed
 200 OK
-{
-    "Resources": [
-        {
-            "active": true,
-            "displayName": "Blobby",
-            "emails": [
-                {
-                    "primary": true,
-                    "value": "iamagoodblob@myorg.co"
-                }
-            ],
-            "groups": [],
-            "id": "9e8719d9-276a-4964-9395-a493189a247c",
-            "meta": {
-                "created": "2024-11-04T16:01:47.015Z",
-                "lastModified": "2024-11-04T16:05:45.356Z",
-                "resourceType": "User"
-            },
-            "schemas": [
-                "urn:ietf:params:scim:schemas:core:2.0:User"
-            ],
-            "userName": "iamagoodblob@myorg.co"
-        },
-    ],
-    "itemsPerPage": 1,
-    "schemas": [
-        "urn:ietf:params:scim:api:messages:2.0:ListResponse"
-    ],
-    "startIndex": 1,
-    "totalResults": 1
-}
 
 
 
@@ -225,12 +191,44 @@ Embed
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+429 Too Many Requests
 Retrieve a user
 Retrieves a user using their unique ID.
 GET /scim/v2/users/:id
-curl 'https://myorg.omniapp.co/api/scim/v2/users/9e8719d9-276a-4964-9395-a493189a247c' \
+curl -X GET 'https://myorg.omniapp.co/api/scim/v2/users/9e8719d9-276a-4964-9395-a493189a247c' \
 --H 'Content-Type: application/json' \
---H 'Authorization: Bearer TOKEN'
+--H 'Authorization: Bearer <TOKEN>'
 Parameters
 Parameter Type Required Default Description
 id
@@ -239,40 +237,40 @@ Yes ✓
 n/a
 The ID of the user to be retrieved.
 Response
-Returns the user object associated with the provided user ID.
 200 OK
-{
-    "active": true,
-    "displayName": "Blobby",
-    "emails": [
-        {
-            "primary": true,
-            "value": "iamagoodblob@myorg.co"
-        }
-    ],
-    "groups": [],
-    "id": "9e8719d9-276a-4964-9395-a493189a247c",
-    "meta": {
-        "created": "2024-12-03T23:13:14.109Z",
-        "lastModified": "2024-12-03T23:13:14.109Z",
-        "resourceType": "User"
-    },
-    "schemas": [
-        "urn:ietf:params:scim:schemas:core:2.0:User"
-    ],
-    "userName": "iamagoodblob@myorg.co",
-    "urn:omni:params:1.0:UserAttribute": {
-        "good_blob": "yes"
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+429 Too Many Requests
 Delete a user
 Deletes the specified user. Refer to the Embed tab to view an example specific to embedding.
 Non-embed
 Embed
 DELETE /scim/v2/users/:id
-curl DELETE 'https://myorg.omniapp.co/api/scim/v2/users/9e8719d9-276a-4964-9395-a493189a247c' \
+curl -X DELETE 'https://myorg.omniapp.co/api/scim/v2/users/9e8719d9-276a-4964-9395-a493189a247c' \
 --H 'Content-Type: application/json' \
---H 'Authorization: Bearer TOKEN'
+--H 'Authorization: Bearer <TOKEN>'
 
 
 
@@ -284,8 +282,9 @@ Yes ✓
 n/a
 The ID of the user to be deleted.
 Response
-Successful requests will return a 204 No Content status. No response body is expected.
+204 No Content
+429 Too Many Requests
 Previous
-Documents
+Content migration
 Next
 Groups

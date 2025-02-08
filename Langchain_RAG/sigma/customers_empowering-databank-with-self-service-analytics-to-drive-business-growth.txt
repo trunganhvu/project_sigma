@@ -1,0 +1,132 @@
+Empowering DataBank with Self-Service Analytics to Drive Business Growth
+By Vlad Friedman
+CHIEF TECHNOLOGY OFFICER, DATABANK
+We spoke with Vlad Friedman, Chief Technology Officer at DataBank, to learn how this leading data center provider is revolutionizing its data strategy. Vlad shared how adopting Sigma has empowered their team to democratize data access, streamline operations, and drive business growth through advanced analytics.
+Life Before Sigma
+DataBank is one of the largest data center providers in America, operating 65 locations across 29 markets. Our mission is to support the colocation and managed service needs of large-scale enterprises and hyperscale companies around the globe. We’re essentially the foundation for much of the internet's infrastructure, housing everything from cell carriers to modern AI companies within our walls, ensuring their digital infrastructure is secure, operational, and reliable.
+Before adopting Sigma, our data analysis capabilities were cumbersome and limited. 
+We relied heavily on our IT and data teams to provide any insights or reports needed by the business. This dependency meant that business users couldn't access data independently, leading to delays and inefficiencies. Our existing BI platform, Power BI, simply couldn’t scale with our needs. It was challenging to create real-time visibility into our data, and our goal of achieving self-service reporting felt unattainable. The need to go through IT for every data request slowed us down and limited our ability to act on insights promptly.
+Choosing A BI Solution
+When we decided to seek a new BI solution, we undertook a rigorous and exhaustive evaluation of over 20 different platforms. The objective was clear: we needed a tool that would allow us to democratize our data, empowering business users to generate reports and perform their own analyses without IT involvement.
+Initially, Sigma caught our eye because of its user-friendly interface and the flexibility it offered. However, we ruled it out early due to the requirement for a data warehouse, which we had minimal experience with. We knew that incorporating a data warehouse would add complexity and cost. After evaluating numerous other platforms and failing to find a single solution that met our needs, we revisited Sigma.
+The turning point came when the Sigma team helped us see that combining their platform with Snowflake’s data warehouse would provide unparalleled power and flexibility.
+This combination would allow us to not only gather data but also transform it into actionable insights, ultimately driving our business forward. The ease of use and the ability for non-technical users to create sophisticated dashboards in a matter of hours convinced us that Sigma was the right fit.
+Life With Sigma
+Implementing Sigma has been transformative. 
+Our goal is to have 90% of reports generated independently by end users without IT’s intervention. While we're still in the process of fully deploying Sigma, the initial feedback has been overwhelmingly positive. Business users now have the ability to access and analyze data in real-time, enabling quicker, more informed decision-making. The simplicity and intuitive nature of Sigma’s interface have allowed our team to hit the ground running.
+Sigma has also enabled us to move beyond just providing information. It’s helping us achieve actionable insights. For example, we can set up alerts within the platform to notify managers when key performance indicators are breached. This proactive approach allows our teams to take immediate action, improving our overall efficiency and enhancing customer experiences.
+What’s Next With Sigma
+We have an ambitious roadmap for Sigma over the next 18 months. Our initial phase focuses on internal analytics, enhancing our ability to monitor operations, sales, customer satisfaction, and financial performance. Once this is established, we plan to integrate Sigma into our customer portal, offering enhanced visibility and more powerful analytics capabilities to our clients.
+Sigma is becoming the core of our business visibility strategy, and we're excited to see the full impact it will have as we continue to evolve into a truly data-driven organization.
+‍
+ABOUT
+DATABANK
+With 65 locations across 29 markets, DataBank supports the digital infrastructure of some of the world’s largest enterprises.
+More about
+DataBank
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

@@ -1,0 +1,395 @@
+Blog home
+The Legacy BI Tools Holding Back Your Databricks Usage
+Sarah Wsiaki
+PRODUCT MARKETING MANAGER
+The Legacy BI Tools Holding Back Your Databricks Usage
+As data warehousing technologies such as Databricks are advancing rapidly in capabilities, many organizations still find themselves leveraging legacy business intelligence (BI) tools. These tools, such as Power BI, Tableau, Spotfire, OBIEE, and others, were designed for a bygone era of on-premises data. Although some of these platforms have developed cloud versions or been retrofitted to work with cloud infrastructure, they still carry limitations. Retrofitting doesn’t equate to cloud-native; these tools often lack the flexibility, scalability, and efficiency that modern data environments demand.
+In this blog, we’ll examine how these legacy BI tools are inefficient, expensive, and misaligned with modern data strategies. 
+Inefficient data processing and performance bottlenecks
+As previously mentioned, most legacy BI tools were designed with on-premises data systems. These systems rely on rigid and outdated architecture that is not designed with the flexibility and scalability needed in modern data environments. Modern data platforms like Databricks leverage Apache Spark, allowing massive amounts of data to be processed in parallel, allowing for the running of even the most complex workloads. 
+Just like their data warehousing peers, legacy BI tools were built with now outdated query structures that slow performance when connecting to platforms like Databricks when compared to a cloud-native tool like Sigma. Additionally, because tools like Databricks enable large volumes of data to be efficiently processed, modern data tools must be built to query those massive volumes of data.
+High maintenance costs and hidden operational expenses
+Legacy BI tools are not a great match with the modern data infrastructure of Databricks due to data processing power and performance limitations. 
+Maintaining legacy BI platforms is expensive, often requiring whole teams of support to ensure timely patching, upgrades, and feature support. This diverts valuable time and resources away from adding value to your business to performing mundane maintenance and upkeep tasks. Additionally, the talent needed to upkeep these extremely complex systems is often very expensive and hard to find. This hidden cost quickly drives up the total cost of ownership. 
+Lastly, legacy BI platforms are notorious for having slow and insufficient vendor support for their tools. Many times, the teams assigned to clients are not even experts in the tooling because of its complexity. 
+Limited scalability and flexibility
+Modern data strategies rely on the scalability and flexibility of cloud architecture due to the rapidly changing nature of modern business as well as the ever-increasing volumes of data created and ingested in today’s business environment. When legacy BI tools were designed, their creators could never have imagined the amount of data companies need to query and the timeliness they need today. While some legacy BI tools have been adapted to operate in cloud environments, they were not originally designed for the cloud. As a result, their cloud versions often struggle with true scalability and flexibility. These solutions carry over many of the constraints from their on-premises origins, limiting their ability to handle today’s dynamic data demands efficiently.
+Legacy BI tools were built at a time when extracting data from a central data warehouse (CDW) or other storage systems on scheduled refreshes was the norm.  Not only are today’s volumes of data not conducive to this approach, but modern data consumers cannot wait hours for their data to be refreshed. Sigma always provides the latest data to its users because it directly queries the CDW. Not only does this ensure timeliness of data, but it also removes wasted time from troubleshooting data refresh errors that are very common with legacy BI tools. 
+Lastly, since legacy BI tools largely rely on extracting data, scaling up data consumption often requires a change in licensing and increased cost to store the cached data. This severely limits how quickly businesses can respond to the increasing needs of their data consumers. Because Sigma is not reliant on cached data and has extreme query processing capabilities, it is able to scale with the business's ever-increasing demand for data. 
+Misalignment with modern data strategy 
+Just like companies are evolving, the way in which companies view and leverage data is evolving. As discussed previously, legacy BI tools rely on outdated query structures and expensive and time-consuming caching and refreshing of data extracts. This strategy was largely born out of the “self-service” movement that proposed central data teams exposing data to line of business (LOB) users and trusting that those users would help provide more flexible and LOB-focused analytics. Let’s dive into how this approach fell short of its promises. 
+Self-service analytics was a great idea, but in many cases, it fell apart upon execution. By removing central data teams from the creation of analytics assets, governance, and security became federated. While this may have allowed for more timely delivery of data products, it also introduced far too many instances of incorrect data and the loss of a Single Source of Truth (SST). This results in a loss of integrity and trust in an organization’s data, which ultimately undermines companies' investment in the Databricks platform. 
+By handing back the responsibility of transformation and modeling to central data teams, companies are able to ensure that the data LOB users are consuming is timely and accurate. Sigma allows users to take that timely and accurate data and easily create LOB data products on top of that data. 
+Inhibited collaboration and data democratization
+We’ve discussed some of the impacts of legacy BI tools on how they were designed, but there are other ramifications to using legacy BI tools with Databricks.  Because of the extract/cache nature of legacy BI tools, they often create data silos within organizations where different departments in a business are using different data models, terminology, or metrics than others.
+Additionally, these tools often require very specialized training, so not all LOBs in an organization are able to leverage these legacy BI tools in the same capacity. Whereas some legacy BI tools can require months or even years of intensive training to master, Sigma provides users an extremely simple development environment that dramatically shortens training time. Because of this, organizations are much more able to realize the value of their investment in Databricks. 
+Outdated BI tools are holding your business back—it’s time for a change
+The modern data landscape is rapidly changing and evolving, which means that your approach to producing data products should be as well. Sticking with legacy BI tools is not just inefficient, it is also costing your business valuable time and money. Now is the time to make the switch! Cloud-native solutions like Sigma seamlessly integrate with Databricks and offer a true path to dependable and fast data insights, increased adoption of data usage, and increased ROI for your investment in your Databricks infrastructure. 
+THE ULTIMATE KPI PLAYBOOK
+Insights
+Databricks
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

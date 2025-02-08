@@ -1,3 +1,104 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Create actions that modify or refresh elements
 Suggest Edits
 Workbooks support actions that determine column visibility, update element groupings and properties, change axis scales, and refresh data. These actions enable interacting users to quickly view and drill into different underlying data segments, tailor chart presentations, and ensure elements display the most up-to-date data.
@@ -10,12 +111,12 @@ You must be assigned an account type with the Full explore or Create, edit, and 
 You must be the workbook owner or be granted Can explore1 or Can edit workbook permission.
 1
 If you’re granted Can explore workbook permission, you can configure actions but cannot save changes to the workbook’s published version.
-Show specific columns
+Show columns from a static selection
 Create an action that shows a specific column or set of columns in the target element.
 📘
 This action cannot modify grouped columns.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Modify element.
@@ -26,13 +127,13 @@ If the trigger element is a List value or Segmented control, select the From a s
 When you choose All columns, user interaction triggers the target element to show all columns that existed at the time you configured the action. To show columns added post-configuration, you must update the action.
 Hide unselected columns Select the checkbox to hide the remaining columns (not selected in the What to modify field), or keep the checkbox clear to continue showing all columns already displayed in the target element.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
 Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
 [optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
-Show columns with names matching control values
+Show columns that match control values
 Create an action that shows columns in the target element when the column names match selected control values in the trigger element. This action can only be configured when the trigger element is a List value or Segmented control.
 📘
 This action cannot modify grouped columns.
@@ -41,7 +142,7 @@ To set column names as control values, use one of the following methods:
 Enter column names in an input table column, then select that column as the control element's value source.
 Create a manual list of column names as the control element's values source.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Modify element.
@@ -50,18 +151,18 @@ What to modify
 Select Show columns, then select With names matching control values in the secondary field.
 When a user interacts with the control, the target element shows all columns with names that match selected control values (selected checkboxes in a List value control, or the selected segment in a Segmented control) and hides all columns with names that match unselected control values (cleared checkboxes in a List value control, or unselected segments in a Segmented control). Columns with names that don't correspond to control values are unaffected by the action and may be shown or hidden based on other configurations and actions.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
 Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
 [optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
-Hide specific columns
+Hide columns from a static selection
 Create an action that hides a specific column or set of columns in the target element.
 📘
 This action cannot modify grouped columns.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Modify element.
@@ -72,13 +173,13 @@ If the trigger element is a List value or Segmented control, select the From a s
 When you choose All columns, user interaction triggers the target element to show all columns that existed at the time you configured the action. To show columns added post-configuration, you must update the action.
 Show unselected columns Select the checkbox to show the remaining columns (not selected in the What to modify field), or keep the checkbox clear to continue hiding all columns already hidden in the target element.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
 Consider allowing keyboard navigation to trigger actions only when it facilitates the configured action sequences and is unlikely to interfere with usability.
 [optional] To execute the action sequence only when a specific condition is met, click More in the action sequence, then select Add condition and configure the criteria. For more information about conditions, see Define an action condition.
-Hide columns with names matching control values
+Hide columns that match control values
 Create an action that hides columns in the target element when the column names match selected control values in the trigger element. This action can only be configured when the trigger element is a List value or Segmented control.
 📘
 This action cannot modify grouped columns.
@@ -87,7 +188,7 @@ To set column names as control values, use one of the following methods:
 Enter column names in an input table column, then select that column as the control element's value source.
 Create a manual list of column names as the control element's values source.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Modify element.
@@ -96,7 +197,7 @@ What to modify
 Select Hide columns, then select With names matching control values in the secondary field.
 When a user interacts with the control, the target element hides all columns with names that match selected control values (selected checkboxes in a List value control, or the selected segment in a Segmented control) and shows all columns with names that match unselected control values (cleared checkboxes in a List value control, or unselected segments in a Segmented control). Columns with names that don't correspond to control values are unaffected by the action and may be shown or hidden based on other configurations and actions.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -107,7 +208,7 @@ Create an action that moves a column into or out of a table grouping, visualizat
 📘
 If the target element is a table, the Move columns option is only available when the table contains existing groupings.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Modify element.
@@ -117,7 +218,7 @@ Select Move columns, then select a grouping or property from the target element.
 The to base option removes a column from its current placement in a grouping or property.
 Column to move Select a column to move into or out of the target grouping or property.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -126,7 +227,7 @@ Consider allowing keyboard navigation to trigger actions only when it facilitate
 Swap columns
 Create an action that swaps all columns of a table grouping, visualization property (axis, color, tooltip, etc.), or pivot table property (row, column, or value). This action removes all existing columns in the target grouping or property and replaces them with the selected column.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Modify element.
@@ -134,7 +235,7 @@ Target element Select an element to modify.
 What to modify Select Swap columns, then select a grouping or property from the target element.
 Swap with Select a column to replace the existing columns in the target grouping or property.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -143,7 +244,7 @@ Consider allowing keyboard navigation to trigger actions only when it facilitate
 Set the axis scale
 Create an action to set the scale of the dependent variable (or value) axis in the target element.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Modify element.
@@ -151,7 +252,7 @@ Target element Select an element to modify.
 What to modify Select Set axis scale.
 Scale type Select an option to determine the scale type applied to the target element’s dependent variable (or value) axis.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -162,13 +263,13 @@ Create an action to refresh the data of a target element in the current workbook
 🚧
 This action doesn’t refresh the data if the element is materialized.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Refresh element.
 Element Select an element to refresh.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -177,3 +278,9 @@ Consider allowing keyboard navigation to trigger actions only when it facilitate
 RELATED RESOURCES
 Intro to actions
 View and manage existing actions
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

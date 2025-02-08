@@ -1,0 +1,398 @@
+Home-buying platform Tomo uses Sigma to analyze customer behavior and share, export, and visualize data on the fly.
+By Will Begeny
+VP, MARKETING, TOMO
+We spoke with Will Begeny, VP of Marketing at Tomo, whose mission is simply to “make home buying less painful and more joyful.” Tomo uses Sigma to analyze customer behavior, help predict the cost of acquiring new customers, and find business efficiencies to make housing more affordable. 
+Affordable housing through business efficiency 
+Buying a home is filled with lots of little steps and calculations. While the net impact can be overwhelming for a buyer, all that complexity also adds layers and layers of costs and makes buying a home far less accessible. If we understand in analytical terms how people move through this convoluted system, we can find and test better solutions to all these points of friction and actually save them money in the process. That’s our job, in a nutshell. 
+Prior to Sigma, data was on an island.
+How can we find innovative ways to find efficiency in our own business so that we can ultimately pass that money back onto a customer and make getting a mortgage a lot more affordable for more people?
+Life before Sigma
+We need good, clean, simple, and accessible data to make smart decisions about where our customers are coming from, what's changing in the industry, and what we can do about it. 
+Being able to share, export, and visualize data on the fly is operationally much less complicated with Sigma than other platforms. 
+Prior to Sigma, data was on an island — controlled by a few folks who had the numbers (via our BI warehouse, Snowflake) — and this led to leapfrogging the insights. People would do what made sense, based on the data in front of them — which might be at odds with other data somewhere else. That was a hassle. What we needed was a much more centralized view of the business, with more people tapping into our core datasets to make better, more informed choices.
+Life with Sigma
+Being able to connect cleanly into our data warehouse Snowflake was essential, and this opened the door to a lot of people creating customizable tables with bare minimum SQL knowledge. Apart from that, we wanted to be able to share, export, and visualize data on the fly, which is operationally much less complicated with Sigma than other platforms. 
+Every morning several leaders on the team (including the CEO), have a daily stand-up where we all essentially stare at Sigma for 90 minutes. We can operate like day traders and make good choices about where we're acquiring customers, as well as where we're losing so that we can sharpen our business and get better results. 
+We all stare at Sigma and operate like day traders. 
+We take a hard look at where and how leads are coming in, how they’re moving through the system, and how different cohorts, pricing scenarios, and markets influence outcomes. Ultimately, we make adjustments to our strategy as new information unfolds. Next, the goal is to make meaning of the data, ask questions in real time, and then cut different scenarios so that we can act on them immediately. 
+It would be an enormous waste of time to try and have one person package up a bunch of charts with a single vantage point — because there’s rarely a clear simple answer. So we play with and manipulate different tabs in Sigma, and call different numbers if we need to update a query based on a hunch. It’s essentially how we do business.
+Without a common visualized data environment, we'd be stuck in POV discussions and single-source insights, rather than collectively interrogating the data and finding a shared sense of meaning.
+Sigma impact and customer acquisition
+We use Sigma to track sales operations on a daily basis, where we can look at the overall efficacy of different tactical tests and directly tie that to an overall reduction in CAC (cost of customer acquisition). This is a major focus area for our business, since every dollar we can save we put back into our customer's pocket. 
+Ultimately CAC is about ad spend and people (how different sales teams work, how we make the most of their time, so they’re not wasting energy bothering people who aren’t interested or burning our people out with too much on their plates). We find ways to save money on both fronts and put that back into the pockets of our customers (so that more people choose Tomo because we have lower mortgage rates — and the cycle continues). 
+We need to be looking at the intersection of lots of different data points from different sources and people in the same space — that’s where Sigma comes in.
+But to be able to do all of that, we need to be looking at the intersection of lots of different data points from different sources and people in the same space — that’s where Sigma comes in. Understanding this behavior takes a very interconnected analytical system (which we serve via Snowflake), and an easy way for people to find answers to nuanced scenarios again and again based on that data (and again, that’s where Sigma comes in). 
+Building an intellectually curious company  
+As we get better about integrating natural language processing and leaning on AI to support hypothesis detection and root causes of an issue, we can start to ask bigger and broader questions of our data (without pulling a data scientist off a major project to explore every whim). This will ultimately build a more innovative and intellectually curious company, which is vital to our long-term success.
+‍Read more about Sigma’s impact, or download a free trial here.
+‍
+ABOUT
+TOMO
+Tomo uses Sigma to analyze customer behavior, help predict the cost of acquiring new customers, and find business efficiencies to make housing more affordable. 
+More about
+Tomo
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

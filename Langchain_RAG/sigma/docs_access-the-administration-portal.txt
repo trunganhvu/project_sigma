@@ -1,44 +1,137 @@
-Access the Administration portal
-Suggest Edits
-The Administration portal contains configurations for your Sigma organization. Users assigned the Admin account type are granted full access to the Administration portal to customize branding, set up user authentication, create connections, invite users, create teams, manage version tags, and more. Other organization members can have partial access to the portal based on specific account type permissions.
-This document describes the Administration portal and how to access it.
-User requirements
-To access and manage all configurations in the Administration portal, you must be assigned the Admin account type.
-Users assigned to account types with the following permissions are granted partial access to the Administration portal:
-Org Management > Usage Dashboard permission: Enables access to all usage dashboards in the Usage page.
-Org Management > Customization permission: Enables the ability to customize fonts and manage workbook themes in the Account page.
-Org Management > Admin permission: Enables the ability to customize fonts, manage workbook themes, customizing email branding, and set up a custom SMTP server in the Account page.
-Data Warehouse > Connections: Enables the ability to manage CDW/DBMS connections in the Connections page.
-Access the Administration portal
-In the Sigma header, click your user avatar to open the user menu.
-Select Administration to open the Administration portal.
-Click the tabs in the side panel to navigate the portal pages.
-Administration portal pages
-Account
-Manage general account settings, including organization name, time zone, integrations, and so on. For more information, see Account management.
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
 Authentication
-Manage authentication methods, set custom session timeouts, and restrict email export recipients. For more information, see Manage authentication.
-Connections
-Connect to your Cloud Data Warehouse. For more information, see Connect to data sources.
-Usage
-Understand your organization's Sigma usage through our dashboards. For more information, see Usage overview.
-People
-Add and manage organization members. For more information, see Manage people.
-Teams
-Create and manage teams and workspaces. For more information, see Manage teams.
-Account Types
-Manage user account types, create custom account types, and check license type usage. For more information, see User account types.
-User Attributes
-Create and assign user attributes. For more information, see User attributes.
-Embeds
-View details about your organization's embedded workbooks. For more information, see Workbook embedding overview.
-Tags
-Create and view workbook version tags to streamline your workbook development lifecycle. For more information, see Version tagging.
-Scheduled Exports
-View details about your organization's scheduled exports. For more information, see Manage organization schedules.
-Materializations
-View details about your organizations materialized datasets. For more information, see Materialization.
-Warehouse Views
-View details your organization's warehouse views. For more information, see Review warehouse view details.
-APIs and Embed Secrets
-Create and view details about your organization's API tokens and embed secrets. For more information, see Get started with Sigma's API.
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
+Administer Sigma
+Suggest Edits
+If you are a Sigma admin, you can configure and customize your Sigma organization in the Administration portal.
+To access the Administration portal:
+Go to Home and select the user icon with your initials.
+Select Administration.
+Requirements
+Users assigned the Admin account type can access and edit all configurations in the Administration portal.
+Other users might have access to specific sections of the Administration portal, depending on the permissions enabled on their assigned account type:
+Permissions in the Usage dashboard section grant access to usage dashboards in the Usage page.
+Manage all branding settings grants access to manage all branding settings, including setting up a custom SMTP server.
+Manage all workbook themes and fonts grants access to specific branding functionality, such as setting up workbook themes.
+Manage plugins grants access to manage plugins.
+Common administration tasks
+Onboard users and configure role-based access management and authentication methods:
+Manage users and teams: Onboard new users by inviting new users and creating teams. Simplify management by setting up team admins.
+Configure permissions and access: Customize account types and assign them to users. Configure the permissions enabled for each account type, and understand how account type permissions interact with document access and data permissions.
+Set up authentication methods: Set up SAML or OAuth authentication methods, or centralize team and user management by configuring SCIM.
+Set up third-party integrations with Sigma, and manage additional organization settings:
+Integrate Sigma with third-party tools: Set up and manage integrations with OpenAI to use AI features, exports using Slack, and dbt to use dbt jobs, metadata, and Semantic Layer.
+Configure Sigma functionality: Organization admins can exercise fine-grained control over some of the functionality that users can access. Disable or restrict functionality like public embeds, workbook comments, account upgrade requests, CSV uploads, and others.
+Customize your Sigma organization to fit your branding and locale:
+Customize and configure branding: Ensure your charts and workbooks align with your company branding. You can customize fonts and set up workbook themes with standardized color palettes. Customize the Sigma experience by adding a custom homepage and configuring email branding.
+Localize organization settings: Provide users in your Sigma organization with content in their preferred language and locale, including timezone, currency, and date format. Set up a time zone for your account and set up a locale or translation files for your organization.
+Monitor and audit user activity in Sigma:
+Monitor Sigma usage: Understand how users in your organization use different Sigma features by reviewing different usage dashboards, such as scheduled exports, materialization, or document activity.
+Audit activities in Sigma: If audit logging is enabled, review the audit logs for your organization.
+Extend Sigma functionality:
+Develop and test plugins: Enable developers in your organization to register plugins.
+Create custom functions: Abstract complex calculations into custom functions that you can share with your organization.
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

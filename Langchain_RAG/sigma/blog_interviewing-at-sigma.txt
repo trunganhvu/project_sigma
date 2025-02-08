@@ -1,0 +1,401 @@
+Blog home
+Interviewing at Sigma
+Greg Owen
+SOFTWARE ENGINEER
+Interviewing at Sigma
+Photo by Sreenivas on Unsplash
+At Sigma, we make it easier for people to understand large amounts of data without having to write code. To make this happen, our engineers think about a wide variety of questions on a daily basis: How can we improve our visualizations to help our users explain what their data means? How can our graphical interface make complicated queries intuitive? How can we guarantee that we can always translate one of our spreadsheets into correct, performant SQL? How can we minimize the time between when a user changes their spreadsheet and when they get their data back?
+Our interviews are designed to make sure that you’ll be able to help us answer those questions (and to introduce you to some of our engineers). To that end, we don’t ask LeetCode-style questions or brainteasers: we just don’t believe that those types of questions are good at giving us signal about the traits we care about. Instead, our questions try to mimic the kinds of problems we solve every day at work and allow a collaborative discussion between you and our team.
+Here’s what you can expect from our interview process.
+The recruiting team is your point of contact
+Our recruiting team will be in contact with you during each step of the interview process. They will schedule your interviews and ensure that you’re prepared for when you meet with our team members. If you have any questions at any point during the process, you can reach out to the recruiting team, and they will help answer them.
+Hiring manager phone screen
+Your first interview will probably be a phone screen with a hiring manager (in certain situations we might skip this stage). We’ll introduce ourselves as a company and talk a little bit about what we build and why we think it matters. We’ll also try to understand what kind of role you’re looking for and what your requirements and constraints are.
+Technical phone screen
+Your first technical interview will be a phone screen with an engineer. You’ll spend some time coding in an online coding environment (as of 2021–03–29, we use CoderPad). We’re interested in how you reason about your solution, how you communicate your mental model, how you structure your code to make it understandable and extensible, and how you test that your code behaves as expected.
+We care a lot more about these signals than about how far you get in your implementation. Think of the interview like a treadmill: our goal is to keep you running and watch your technique rather than see if you can get to a particular destination. We’d much rather see you finish the first part of the question diligently and with a thorough understanding of your code than race through multiple parts with poorly-tested spaghetti code.
+On-site
+If we like what we see in your technical phone screen, we’ll invite you to an “on-site” panel consisting of 4 interviews (right now these are, of course, also virtual). This panel gives us a chance to dig deeper into how you think about technical challenges and see how you interact with our team.
+We have a few different types of interview questions in the panel:
+Algorithms
+These questions are similar to the types of questions we ask in our technical phone screen but are generally a bit more challenging. They may require you to manage complex state or keep your solution clean through many changes in requirements. As with the technical phone screen, these questions will expect you to write runnable code in a virtual coding environment. The signals we’re looking for here are the same as in the technical phone screen.
+System design
+These questions are at a higher level of abstraction than the algorithms/technical phone screen questions. Depending on the question, we may want you to write up some pseudocode or provide a high-level description of the system you would build. Our goal here is to see how you reason about your system-level design: What are the limitations of your system? Which parts would you change in response to different workloads or operating conditions? How do you maintain correctness in one part of your system when you change other parts?
+As with the technical questions, we’re looking for how you reason about your solution and how you communicate your understanding of your system. This doesn’t mean that you have to narrate your thoughts; we’ll make sure to ask explicit questions to make sure we understand your mental model.
+Product design
+We’ll tackle a product design question — how would you design an interface? How would you structure your code? Can you explain your point of view so that others understand it? How do you handle changing requirements mid-way?
+Behavioral
+We’ll talk about some of your past projects and accomplishments, as well as the challenges you’ve faced in your career. We want to learn about you and understand how you will work with our team members. We will also demo the product if you have not seen a demo yet.
+General tips
+Most of our interviewers will not ask you about your resume or background. We want to be sensitive to your time, and know you’re talking to quite a few people. We’ll introduce ourselves, then dive into the area we want to learn about.
+Take your time and think about the problem. Ask us to clarify anything you aren’t clear about.
+Share with us how you’re approaching the problem. You do not need to explain every thought in your head, but when you pick a direction, please let us know what it is.
+Interviewers are likely to be taking a lot of notes. The goal is to be able to share with other interviewers how the interview progressed. They aren’t chatting with anyone else or ignoring you.
+If you have any other questions about our interview process, our recruiting team will be happy to help out. Please don’t hesitate to ask!
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

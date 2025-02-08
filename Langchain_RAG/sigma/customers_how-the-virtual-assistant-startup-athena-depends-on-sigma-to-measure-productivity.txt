@@ -1,0 +1,133 @@
+How the virtual assistant startup Athena depends on Sigma to measure productivity
+By Peter Dimov
+DIRECTOR OF DATA SCIENCE, ATHENA
+We spoke with Peter Dimov, Director of Data Science at Athena, a company at the forefront of virtual assistant services. Athena specializes in the recruiting and hiring of these assistants, and uses data to maximize productivity for each assistant. Join us as Peter delves into Athena's unique methodology for recruiting virtual assistants and discusses how this strategy depends on reliable data. 
+Life before Sigma 
+A lot of our life before we started using Sigma was maintenance as opposed to actually building. We were using Google Sheets — and it was painful, to say the least. If you're working in any sort of data-intensive environment, Google Sheets just doesn't work, and it took a long time to find what we needed. We would try to put together some Sheets and it would break. We had to jump through a lot of hoops and work outside of what we knew the better practices were for scaling the data team. When you're using the wrong tools, they don't last too long. 
+If you're working in any sort of data-intensive environment, Google Sheets just doesn't work.
+We wanted to find something where we would end up being able to scale and offer data products to our Elite Assistants in a way that worked for us financially. We wanted it to really fit within our stack and the way that we're working through data. A lot of times, especially if you put out a good data product, people aren't too inclined to switch over. As a data team, that's really hard to deal with because you try to tell people, “I understand that this is the most comfortable thing for you right now, but there is a better world.”
+Life with Sigma 
+We get 30,000 applicants per month for people who want to be assistants, and we try to hire the best assistants that we can find. To do that, we run really aggressively. The moment that we ended up getting Sigma, the requirements ended up going through the roof. Now we have the tools to actually do everything that we want to do. The first couple of quarters we had Sigma, the goals were really: let's try to provide as much high-quality reporting to these different departments so they can know what's going on, hold themselves accountable, and can talk based off of numbers.
+No KPI that exists in another department is not measurable unless it goes through Sigma. It has to go through Sigma because once you get to a certain scale, there's a lot of complexity, and without being able to measure stuff, you can't really improve it.
+Onboarding Clients with Sigma
+Before Sigma, we had an issue where we found that we were onboarding clients way too slowly. Our onboarding time is the time between when a client signs with us and the day on which we put them together with their assistant. Before Sigma, it took us too much time to select their assistant and get the EA trained before their first meeting with the client. In Q3 of last year, we ended up taking our onboarding time down one-third of what it was before.
+No KPI that exists in another department is not measurable unless it goes through Sigma.
+How did we do that? We built some really thorough reporting for them with Sigma to understand exactly what the throughput and volume was every step of the way. It's really hard. You're guessing where you want to make changes to your process and where you actually want to speed up, simplify, or maybe add more resources.
+Machine Learning in Sigma
+We have one current example that we're starting to do a lot across the business. We're doing the end part within Sigma, which is actually displaying the results for a lot of the ML models that we're putting together. We found a way to model sentiment in a video call by a frame.
+Through our tooling, you could essentially take our call right now and it would show what my emotions are. I think there's like 30 or 40 different emotions throughout the entire call. We've only scratched the surface of what we can end up doing with this. But in the first portion, we have this tool where we can model sentiment for people across the business. 
+What we want to do is test it in different areas, provide you with an analysis, and see if there's actionable value to doing this on a regular basis. For example, we can use AI to model what emotions potential clients are showing, and what use cases seem to be most interesting to them.
+The actual modeling doesn't happen within Sigma, but Sigma helps us actually deliver that analysis to be able to go to the recruitment team and say, “We should start processing all of the interviews; because we can help you make decisions for which training path to send an EA down based off of what emotions they displayed based off the different topics you were talking about in the interviews.”
+Read more from other customers who are choosing Sigma here, or download a free trial
+‍
+ABOUT
+ATHENA
+Athena specializes in the recruiting and hiring of these assistants, and uses data to maximize productivity for each assistant.
+More about
+Athena
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

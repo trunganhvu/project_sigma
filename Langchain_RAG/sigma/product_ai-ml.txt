@@ -1,0 +1,446 @@
+Drive AI adoption at your business
+FUEL PRODUCTIVITY AND INSIGHTS WITH AI IN SIGMA
+TOP TEAMS CHOOSE SIGMA. SEE FOR YOURSELF.
+Your UI for AI at the enterprise
+Sigma unites your team, your data, and your AI strategy in one governed platform.
+FAST
+Apply AI models to your data in seconds
+Write a simple SQL function in Sigma to call an AI model from your cloud data warehouse and run it on data columns.
+STRUCTURED
+Work in the tool that structures AI for you
+Sigma’s spreadsheet UI calls AI models into columns and returns the output into rows. This familiar format makes it easier and faster to work with AI.
+FLYWHEEL
+Train AI models with business user input
+Anyone—with appropriate permissions—can apply AI models to data, use Input Tables to correct the AI-generated outputs, and then securely write these corrections back to the warehouse, which trains the AI model continuously on live user feedback.
+The most accessible way to get started with AI
+Take advantage of the newest Gen AI functionality like summarization, classification, and open-ended prompting directly in Sigma’s formula bar. As long as your cloud warehouse exposes LLMs through a SQL function, you can call on them directly in Sigma.
+Prompt("Is this a portable electronic?: "
+& [Product Description])
+Warehouse functions
+Application in Sigma
+Prompt
+Run and answer AI prompts, on your own data.
+Classify
+Classify data according to custom classes you define.
+Sentiment
+Detect the positive or negative sentiment of your data.
+Summarize
+Generate a summary of data.
+ExtractAnswer
+Pull key quotes from data that match your prompt.
+Translate
+Translate text to a target language.
+MaskPII
+Mask sensitive data.
+Rephrase
+Reformat or fix grammar in text.
+Compare
+Find the similarity between data values.
+Cloud warehouses are constantly adding access to new LLMs, which you can leverage in Sigma with AI Query. Functionality may vary by warehouse and LLM. See the latest available from Snowflake, Databricks, BigQuery and RedShift.
+Plus, work faster in Sigma with helpful AI features
+BETA
+EXPLAIN VIZ
+FORMULA ASSISTANT
+ML FORECASTING
+ASK SIGMA
+USE AI TO EXPLAIN AN EXISTING VISUALIZATION IN SIGMA.
+Learn more
+Connect people, data & AI
+AI features in Sigma accelerate your data workflows today, while the core data infrastructure allows you to scale and evolve your AI approach in the future.
+Upskill the workforce
+Write complex formulas with ease
+Get new users up to speed quicker
+Reduce tickets to the data team
+Plan for the long-term
+Choose your favorite LLM
+Evolve your AI strategy as needed
+Keep core data infrastructure stable
+Govern usage
+Control access to LLM functions
+Inherit the security of your warehouse
+Leverage your own OpenAI key
+Work with transparent AI
+See the steps AI took
+Validate AI-generated results
+Easily edit AI work
+Unlock the power of your cloud warehouse
+Meet with a Sigma expert today and learn how you can use Sigma to drive AI adoption across the business.
+Request a demo
+Related resources
+BLOG
+How to use Snowflake Cortex Functions with Sigma
+Sigma’s UI acts as a front-end to cloud data platforms like Snowflake and opens up Cortex LLM functions to the average spreadsheet user.
+READ THE BLOG
+BLOG
+Introducing Ask Sigma: AI that Drives Discovery 
+Ask Sigma is the AI partner to your analysis journey. It guides you through every step of your thought process and broadens your understanding of the data.
+READ THE BLOG
+BLOG
+Leveraging Cloud Data Warehouse AI Functions in Sigma
+Use custom functions in Sigma to call upon LLMs offered through Databricks and Snowflake. Plus, learn best practices for integrating data and AI.
+READ THE BLOG
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

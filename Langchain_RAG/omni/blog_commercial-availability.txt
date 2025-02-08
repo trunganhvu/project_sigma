@@ -1,0 +1,7 @@
+Press Release: Omni Announces Commercial Availability
+February 27, 2023
+Colin Zima
+On February 28, 2023 we announced the commercial availability of the Omni business intelligence platform for internal analytics. Founded by executives from Looker and Stitch, Omni is building a world-class BI tool that takes the learnings from the past 20 years in the market and brings together the best aspects of SQL workbook-style querying and visualization with data modeling and governance.
+“With Omni’s commercial availability, there is now an up and coming product to replace a number of players that are reaching the end of their current product lifecycle,” said Frank Bien, former CEO of Looker. “It is great to see the team at Omni pick-up where other BI tools have left off and take on the challenge to create a product that unites the benefits from fully governed and self-service tools.”
+Click here to read the press release
+We can’t wait to show you how it works. Reach out today.

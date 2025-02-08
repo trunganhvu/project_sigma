@@ -1,0 +1,63 @@
+ActiveProspect modernizes its embedded analytics and internal BI with Omni
+How migrating from Domo to Omni boosted query performance, adoption, and business impact
+January 15, 2025
+ActiveProspect previously used Domo for embedded analytics and internal business intelligence. However, Domo’s slow runtimes, outdated UX, and insufficient visibility into product usage hindered the Data team’s ability to make the biggest impact.
+Now, with Omni, ActiveProspect’s Data team isn’t limited by their BI tool anymore. They provide faster, more modern analytics to their customers and internal employees. Since migrating to Omni, they’ve drastically increased self-service analysis — freeing up the Data team for more strategic initiatives.
+Results
+Rebuilt customer-facing dashboards in less than two weeks, improving the UX, branding, and query performance using Omni
+Increased internal BI adoption by 90%, giving everyone the ability to use and trust data for decision-making
+Pain Points
+Slow runtimes. Improving query performance required using Domo’s federated tables, which were difficult to manage and left users waiting on results.
+Minimal visibility into product usage. They didn’t know who was engaging with data and what dashboards were most useful, making it hard for the Data team to prioritize projects. Domo usage relative to their contract was always a mystery until it was time for renewal.
+Lacking product innovation. As Domo leaned into data integration and machine learning, their BI product features have seen minimal improvements in recent years.
+Outdated UX. The Data team received feedback from customers and internal employees that Domo looked and felt outdated.
+Data Stack
+The Challenge
+ActiveProspect is pioneering consent-based marketing with a platform that helps companies analyze, route, and document the expressed consent of online leads in compliance with FCC TCPA and FTC TSR record-keeping requirements. This reduces legal compliance risk, creates a better consumer experience, and brings more trust, visibility, and transparency into the performance marketing supply chain and sales process.
+Chris Snyder, ActiveProspect’s Director of Data Science, faced challenges with their internal BI and customer-facing analytics due to Domo’s outdated UX, slow runtimes, and lack of innovation.
+In particular, Domo’s architecture made it difficult to manage data across their stack: 
+“To speed up Domo’s query performance, we used federated versions of Snowflake tables in Domo. But the virtual table then became separate from the original table. If that table was modified in Snowflake, it wasn’t easy to figure out how that change would impact the dashboards powered by the federated datasets. This wasn’t sustainable for us.”
+Chris Snyder, Director of Data Science
+Domo also lacked many features that Chris expected from a modern data platform today, like user-friendly UX, usage analytics, and a dbt integration. He wasn’t confident those updates would come soon since he hadn’t seen any significant updates to Domo’s BI product in over 2 years. 
+“We weren’t sure what direction Domo was moving in, so we wanted to explore other tools before investing in our analytics any further,” Chris said.
+The Evaluation
+When evaluating potential BI platforms, Chris had a specific set of criteria:
+Integration with dbt: As a dbt user, Chris wanted a tool that could ingest dbt metadata and push logic from the BI layer into dbt.
+Modern look & feel: The Data team received complaints from customers and internal users about Domo feeling like a legacy tool. 
+Performance: Speed was an issue with Domo, but they’d found it too tedious to implement Domo’s “caching” through its Datasets feature.
+Curated datasets: Chris wanted to improve self-service by providing “jumping off points” for analysis. 
+One platform for both embedded analytics and internal BI: They wanted to manage internal and external analytics in the same place to consolidate work and metrics for the Data team.
+Chris evaluated other products, including Tableau, Looker, Sigma, Thoughtspot, PowerBI, and Preset, but none of them fulfilled all of his criteria. Among them, he most seriously considered Tableau, since some members of his team were familiar with it. But he felt that Tableau’s “burden of administration” was too high, and its cost model for embedded analytics didn’t work for them – coming in ~50% more expensive than any other option.
+Chris was pleasantly surprised to learn that Omni checked all his boxes: a bi-directional dbt integration,  optimized query performance (especially for customer-facing analytics), curated datasets (Topics), and a modern UX for both customers and internal users. 
+In addition to being impressed by the product, Chris decided to go with Omni because of the team’s experience building data products. Knowing the Omni team’s background – including how Omni’s founders played significant roles in building Looker and dbt – helped him feel confident with a large migration.
+“The BI pedigree of Omni’s team meant a lot to me. As the owner of our data platform, I don’t want to migrate more than once. So who has the features I want now, and whose vision of the future do I trust? That was Omni for me.”
+Chris Snyder, Director of Data Science
+The Migration
+During the migration process, what stuck out to Chris was how quickly they could recreate their existing content in Omni. In particular, building out and QA’ing their embedded dashboards took less than two weeks. 
+Chris even got feedback from the Engineering team on how straightforward the development experience was:
+“Even the Engineering team commented on how clean it was to embed Omni into the product. In Domo, the process was complex, so no one knew exactly how it worked.”
+Chris Snyder, Director of Data Science
+The Impact
+Embedded analytics
+Improved the end-user experience by optimizing query performance and applying cohesive branding 
+By rebuilding their analytics on Omni’s modern architecture, ActiveProspect boosted query performance and delivered a data product that was cohesive with their brand.
+“Omni’s customization options allowed us to make our embedded analytics match our brand and give our customers a more cohesive experience. We couldn’t do that with Domo.”
+Chris Snyder, Director of Data Science
+Opening up new revenue opportunities
+ActiveProspect’s team often receives customer requests to be able to run ad-hoc analyses on their own, which they couldn’t do using Domo. With Omni’s embedded analytics features, like scheduled data deliveries and Create Mode (self-service reports), they can let customers go deeper into their data and potentially include these offerings as part of premium pricing tiers.
+“Omni’s Create Mode aligns perfectly with one of our upcoming initiatives because it will allow us to offer deeper exploration to our most engaged customers. This premium offering will allow them to answer new questions instantly, without needing to submit additional requests to our team.”
+Chris Snyder, Director of Data Science
+Internal BI
+Driving BI adoption throughout the company
+Previously, less than 10% of the company regularly engaged with data. Now, all departments at ActiveProspect access data in Omni, and with curated Topics, they’re able to self-serve to get the insights they need. 
+Chris also took this as a chance to revamp the company’s analytics, including consolidating KPIs to create a single source of truth using Omni’s data model – helping everyone use and trust the data.
+“Self-service analytics is a journey, not a destination. With Omni, we’ve made significant strides in the right direction and are excited to continue opening up data access to the broader team.”
+Chris Snyder, Director of Data Science
+Making the Data team more strategic through usage analytics
+One of Chris’ big pain points in Domo was that he had no visibility into what content was being used, and who was using it. Through Omni’s usage analytics, he can see how the company is consuming data, which helps him prioritize more strategic, high-impact work instead of reacting to simpler requests – which can now be self-served.
+“The Data team used to create a dashboard, get a ton of pings with more requests, and then refine. It was a slow process, and we couldn’t get anywhere. With Omni, we’ve made self-service possible by curating Topics. And with the in-app usage analytics, I’m able to monitor what content is helpful and what’s not. It’s helped our team be less task-oriented and more strategic.”
+Chris Snyder, Director of Data Science
+Trusting a BI partner for support
+A throughline in Chris’ experience with Omni has been helpful customer support. Managing a large migration of both internal and external analytics has been a huge project, but he’s been able to lean on the Omni team for support along the way.
+“It’s incredibly helpful to have such attentive support. Whenever we have a challenge, we know the support team has our back. It makes it easy for me to go to our CFO and say, ‘This is why we bought Omni.’”
+Chris Snyder, Director of Data Science

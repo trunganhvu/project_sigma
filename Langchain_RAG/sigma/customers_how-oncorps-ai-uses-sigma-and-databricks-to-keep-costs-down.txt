@@ -1,0 +1,132 @@
+Tracking spend down to the SKU: How OnCorps AI uses Sigma and Databricks to keep costs down
+By Brian Cole
+SVP DATA AND MACHINE LEARNING, ONCORPS AI
+Brian Cole is Senior Vice President Data and Machine Learning at OnCorps AI. Dr. Cole, who holds a PhD in Computer Science and leads OnCorps' efforts in algorithm development and data pipeline management, discusses how OnCorps uses Sigma and Databricks to optimize data handling and cost efficiency within financial services.
+How we use data
+I’m the head of OnCorps’ Data Team, which is responsible for algorithm development and production pipelines.  We use AI to extract insights from the large amounts of data accumulated by financial services institutions in order to reduce labor and human errors.
+We use AI to identify anomalies in mutual fund accounting data over time, allowing us to catch costly errors.  The biggest question that fund administrators have is, “What caused this anomaly?” We are using generative AI to reduce the time to answer that question.  Additionally, we are using AI to perform reconciliations on the shareholder reports that fund administrators are required to release. As these are legally binding documents, the question we answer is “Does this financial report match the actual holdings and operating patterns of this fund?”
+Life before Sigma 
+We had used QuickSight, but found the feature set wasn’t complete enough for the complex visualizations we need to build for financial services clients.  We then built customized dashboards and embedded visualizations from scratch using Plotly and Dash.  However, building this out required data extraction services and the total cost of ownership was much higher than we had anticipated, including maintenance and infrastructure management.
+Sigma has the most familiar and intuitive interface of any currently available solution.
+We did trials of Google Looker, Tableau, Quicksight, and PowerBI and they all had drawbacks. We wanted the ability for non-technical individuals to be able to create dashboards and answer questions with data, and Sigma has the most familiar and intuitive interface of any currently available solution.
+Life with Sigma 
+We set up a Sigma dashboard to perform real-time monitoring of our Databricks spend in order to control costs. This allows Databricks administrators to quickly visualize changes in cost in response to optimizations and cost-cutting measures, as well as to receive real-time alerting in response to sudden and unexpected increases in costs.  Sigma visualizations allow us to dissect the total Databricks spend by SKU and by Databricks workspace, which saves us a lot of time getting to the root cause of sudden movements in spend.
+A user can’t tell that a portion of a page is actually a Sigma embed.
+The primary usage of Sigma is for us to create customized dashboards for our users to embed in the applications that they subscribe to.  One example is a dashboard containing over-the-counter derivatives for a major financial institution that performs a lot of these trades. These trades are much more complicated and labor-intensive than exchange-traded derivatives, and as a result, they can take longer to execute.  We provide analysis of time-to-completion for both open and completed trades, which is important for our client’s SLAs.  Additionally, we break that down by counterparty and the steps within the confirmation process, allowing our client to plan fine-grained actions to reduce the time to trade confirmation.
+Sigma Impact 
+We are able to add our own branding to Sigma dashboards and also to embed so seamlessly that the dashboards are perfectly integrated into the page.  A user can’t tell that a portion of a page is actually a Sigma embed.
+Sigma has reduced our total cost of ownership of data visualization by 50%.  Additionally, the go-to-market time for a new dashboard has dropped 75%. Our maintenance burden  has dropped due to reduced infrastructure operations—this means fewer bug tickets, reduced complexity of enhancement requests, and shorter time to resolution.  Finally, Sigma’s UI allows non-technical users to create and maintain visualizations, reducing the burden from the data team and freeing us up to work on algorithm development and data engineering.
+Sigma’s UI allows non-technical users to create and maintain visualizations, reducing the burden from the data team and freeing us up to work on algorithm development and data engineering.
+Our CFO has a focus this year on enhanced analytics. This is a team of Excel wizards that have extremely detailed tasks surrounding payroll, budgeting, and forecasting, and one of their yearly goals is to leverage BI tooling to take the work out of this process. We realized Sigma could be a good fit due to Sigma’s new financial feature suite. This is a work in progress, but my team is in the planning phase with our finance team and I think Sigma could be a great fit. It’s similar to how we use Sigma to forecast and monitor Databricks operations.
+‍
+ABOUT
+ONCORPS AI
+OnCorps uses Sigma and Databricks to optimize data handling and cost efficiency within financial services.
+More about
+OnCorps AI
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

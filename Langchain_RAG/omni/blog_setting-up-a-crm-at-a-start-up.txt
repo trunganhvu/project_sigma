@@ -1,0 +1,46 @@
+Setting up a CRM at a start-up
+How we selected, set up, and started to scale our Salesforce
+June 8, 2023
+Colin Zima
+Like most businesses getting off the ground, we began by tracking our customers, demos, and partners through Excel sheets. This worked for the short term, but we quickly realized we needed a more robust and scalable system to track our customer relationships.
+In this post, I am going to take you through our journey of selecting a CRM, key considerations, and some of the data structures we used to get things off the ground (and capture data for the analyses we wanted to run in Omni, which I'll share more on soon 😉).
+How we selected our CRM (aka why we chose Salesforce)
+We had two problems - we were dropping meetings and losing track of pipeline and we were wasting a lot of time coordinating between different tools and sheets. The result was a time suck that wasn't particularly effective. We wanted to fix these so we could increase efficiency and keep organized as we scale, so we set out to select the CRM that was right for us.
+Integrations
+We were already using Active Campaign for marketing automation and wanted to make sure we had a solid connection between that system and the CRM we selected. It was critical for us to graduate out of spreadsheets so we could build automation and a scalable process for tracking leads while minimizing manual work. We also wanted to make sure that our tool would integrate with the sales development tools, such as Outreach, Salesloft, or Groove, that we knew we’d be adding soon.
+Scalability
+Another consideration was avoiding switching costs and delays to our business later on. Beyond trying to future-proof against needing to switch as we continue to bring on tools to connect and integrate with, we also evaluated CRMs for their scalability in terms of platform functionality, volume constraints, and data richness. Since we knew we’d want to further explore the data from our CRM in Omni, selecting something that would allow us to collect rich data, such as the ability to add custom fields, for current and long-term analyses was especially important. With these, we knew picking a tool that supports the future state was almost as important as picking something for the current state.
+End user ease of use
+When I spoke to friends in GTM about their experiences training sales reps on tools other than Salesforce, there were mixed reviews on whether or not it was worth the effort. Most teams that started with something else seemed to end up bringing in Salesforce eventually, in part because of the widespread familiarity and reduced training effort. Since setting the sales team up to be as efficient and effective as possible from day one was critical and we didn’t want to spend time learning a new CRM, we chose Salesforce so we could focus on introducing Omni to the world.
+Cost
+To help us get started at a relatively low cost, we first began with Salesforce Essentials to provide access for up to 10 users. This allowed us to set all our processes up while we started to think about a broader GTM strategy - including how we’d build out the GTM team and who would need CRM access. Over time, it will become more expensive as we add more users and functionality, but I was pleasantly surprised at the cost-effective option for getting started. To compare, other solutions we evaluated with lower-priced entry points did not offer the same functionality and integrations that were most important to us.
+We went in with open minds and evaluated several options, but ultimately Salesforce was the best fit for our needs.
+Building out our initial data structures & integrations in Salesforce
+When starting with Salesforce, the variety of objects available to use can feel overwhelming. You probably don’t need everything to start. For example, this is how we currently use objects:
+Leads - track anyone who has had a touch point with Omni (e.g. form fill)
+Contacts - anyone we have had an active conversation with (e.g. demo)
+Accounts - track groups of contacts who work at the same organization
+Opportunities - track contacts & their associated accounts after we have an active sales conversation
+Cases - track demo activities
+Campaigns - track lead sourcing
+Since there are limitations on custom objects with the version of Salesforce that we initially selected, we got creative and worked around that by using cases to track our demos.
+There are a number of other considerations that may make sense for you to think about setting up as you implement your CRM - depending on your stage and growth. I won’t dive into the details, but here are a few more items that we implemented to help streamline our processes from the start:
+Lead routing (e.g. Round robin, territories)
+Sales stages
+Required fields
+Custom objects and fields
+Automation
+SSO
+The rules and automation that you put in place early on can go a long way toward building a structure for scalable sales processes as your business grows. By connecting your systems together and decreasing manual CRM work, you free up more time for your GTM team members to focus on their core work. Not to say that you should automate everything, but if you find yourself doing small tasks over and over - there is probably a way to automate and scale it!
+We also integrated Salesforce with other third-party tools to streamline the inbound lead funnel.
+Here’s a bit more detail on the flow above:
+Form fills on our website automatically create leads as they are brought into Active Campaign →
+Active Campaign creates and assigns the correct campaigns to leads →
+Calendly integration creates cases for demos as they are booked →
+Fathom automatically links recordings of calls & notes to the correct opportunities & contacts →
+Salesforce helps us track the relationship over time
+This flow supports our inbound process for leads. We have also integrated the outbound flow with support for our SDR tooling which allows us to quickly import lists and reach out to individuals tracked in our CRM.
+...with more to come as we continue to grow and need to optimize further.
+What’s next?
+So far, we’ve been happy with our decision to choose Salesforce and we’ve since updated to Salesforce Professional to meet our evolving needs. This update allowed us to have API access and do a lot more with the data... something I will cover in my next post so be on the lookout 😁.
+Even with Salesforce experience, the decision and implementation can feel daunting. But don’t worry, there are great resources and consultants out there who can help get you up and running. If you’d like to reach out, I’d be happy to chat through our process and make intros.

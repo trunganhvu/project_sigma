@@ -1,0 +1,145 @@
+Raptive Leverages Sigma to Empower its 4,000+ Publishers with Data Insights at their Fingertips
+About Raptive
+Raptive is on a mission to build a creator-first future by empowering independent publishers and creators to grow their businesses. Raptive manages digital advertising sales and technology and a growing number of services for more than 4,000 creators and independent publishers and sees 195 million monthly US unique visitors. Raptive makes it easy for them to focus on what they do best—produce great content.
+THE CHALLENGE
+Siloed Teams and Limited Data Accessibility across the Organization
+Raptive was using a legacy BI tool with a steep learning curve which required them to hire developers who specialized in the tool's proprietary coding language in order to gain insights. This created several problems for Raptive, such as siloed teams, lack of data accessibility, slow time to insights, and the inability for business users to answer their own questions. These drawbacks made it difficult to have a streamlined data analytics workflow across the business. Even small modifications required changes to the SQL code, making it difficult for business teams to create and update dashboards as needed, without the help of a data engineer or technical user.
+At Raptive, speed and scale are of essence. Our legacy BI tool was not delivering—it took us much longer just  to pull reports.
+—Ami Patel, SVP, Data Intelligence, Raptive
+Raptive began looking for a BI tool that was easy to use, enabled collaboration and easy sharing, did not require extensive SQL knowledge, and integrated well with their Snowflake instance.
+Ami Patel, SVP of Data Intelligence at Raptive, was in charge of replacing the existing tool. as her team was slammed with ad hoc requests from business users. Ideally, the new BI tool they would implement would enable business users to self-serve, i.e. answer their own questions without extensive onboarding and training.
+THE SOLUTION
+Empowering Users Across The Organization with Self-Service Analytics
+Once Ami came across Sigma, she quickly began to see the advantages the tool could bring to Raptive. “Sigma’s spreadsheet-like interface is a game changer for teams. It has opened up self-service capabilities for our business users,” says Ami.
+With Sigma, business users are able to create their own reports, 75% faster! Once they have the data, they know exactly which data sets to use and how to build it in Sigma
+—Ami Patel, SVP, Data Intelligence, Raptive
+With Sigma implemented, users quickly realized they could jump right in and leverage the familiar spreadsheet interface they are used to working with. Business users can now perform their own calculations and run formulas in Sigma to answer their ad hoc questions. All of this can be done without the help of Ami’s team or technical users, giving more time back to data teams. Additionally, Raptive does not need to hire extra developers specializing in a specific BI tool because users can create their own reports and dashboards without having to model data or know SQL.
+THE RESULTS
+Data Democratization and Efficient Data Delivery
+Today, Raptive is able to focus on growing and enabling its 4,000+ publishers with high-quality data. With streamlined analytics, teams can package insights for creators through embedded dashboards 50% faster.
+Increased User Adoption 
+With the Sigma implementation, Raptive saw data analytics adoption across the organization skyrocket to 85%, up from 40% from their previous BI tool. This means majority of the company has moved to self-service analytics 
+Additionally, Raptive can easily track its own KPIs and its creator's KPIs on Sigma, giving them a clear vision of creators’ health. By quickly being able to zoom in to row-level data and zoom out to identify trends, Raptive can make decisions based on accurate live data straight from their cloud data warehouse, leading to better outcomes for their creators. 
+Increased Data Accessibility
+In the past, teams were more siloed due to the SQL language barrier that their previous BI tool required. As Raptive continued to grow, they needed the ability to generate more efficient insights and reduce extra steps within the process. Once Sigma was implemented, different teams could access the data they needed to better perform their day-to-day tasks. 
+Raptive can also enable its creators to generate their own insights through Sigma’s embedded capabilities quickly and easily. These dashboards have live data and do not require data to be on refresh cycles since it sits in their Snowflake data cloud.
+Delivering Data Quickly to Over 4,000 Publishers
+Raptive is in an extremely competitive industry, and being able to deliver critical data to creators in a speedy and efficient manner is supremely important. Creators rely on Raptive to deliver reports and dashboards with specific industry data, trends, and content that they can leverage to make decisions to grow their brands and move their business forward. 
+Centralized Data, Governance, and Security
+With Sigma and Snowflake, Raptive’s employees are able to operate with consistent metrics from one single source. Because users are operating on the same datasets, Raptive is able to keep their data secure by eliminating the need to extract data or move data from one tool to another. Additionally, Raptive can set up role-based permissions within Sigma so that cross-functional teams and individual users only get access to the data they need, reducing the risk of errors when working with sensitive data.
+Now, Raptive can easily supply critical data through embedded analytics in the form of dashboards and iFrames, which creators can drill down into the lowest level of detail or conduct their own analysis to answer questions and generate insights. The embedding makes it easy for Raptive to add data points that publishers may want to see. This flexibility enables wide customization options for different clients. Going forward, Raptive aims to scale its embedded analytics efforts through Sigma to better accommodate creators and internal stakeholders.
+BY THE NUMBERS
+50%
+50% FASTER DASHBOARD BUILDING
+75%
+75% FASTER REPORT CREATION THAT ACCELERATED TIME-TO-INSIGHT
+85%
+85% USER ADOPTION RATE OF SIGMA, UP 40% FROM PREVIOUS BI TOOL
+More about
+Raptive
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

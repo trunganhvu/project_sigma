@@ -1,0 +1,56 @@
+Fundrise breaks down data silos with Omni
+Consolidating Tableau & Looker increases collaboration and reduces high BI costs
+October 16, 2024
+As an investments and technology platform, Fundrise has rivaling BI needs: heavily governed financial data for external reporting, and easily accessible self-service data for growth analytics.
+To fulfill these use cases, Fundrise adopted two separate BI tools: Tableau & Looker. But each tool came with its own challenges. Tableau’s high barrier to entry led to silos across the organization and inconsistent metrics, while Looker grew increasingly expensive, especially to access the rigorous permissions they needed. 
+With Omni, they’ve consolidated their Tableau & Looker use cases into a single BI platform on Snowflake. Omni lets them report on tightly governed data while also moving fast internally, especially using Omni’s Excel formulas – a familiar interface for their spreadsheet-savvy team.
+Results
+100% of BI developers & creators onboarded and engaged
+Consolidated dozens of ad-hoc dashboards into 5 key dashboards used every day
+Pain Points
+Silos of analysis and modeling across teams. Tableau’s high barrier to entry created “islands” of data modeling across Fundrise that hindered collaboration.
+Inconsistent metrics. Since Tableau lacks a shared data model, ad-hoc analyses produced inconsistent results, which made it hard to trust their calculations.
+Increasingly high BI costs. Looker was becoming prohibitively expensive, especially to access the partitioning and permissions management that Fundrise needed.
+BI tools didn’t fit their workflows. Despite having two BI tools, people often resorted to analyzing data in Excel and sending screenshots over Slack.
+The Challenge
+At Fundrise, growth is a shared responsibility between the product and marketing functions. As a result, Luke Ruth, Fundrise’s Chief Product Officer, is one of the biggest consumers of analytics. He describes their data goals as twofold: 
+Self-service data for internal analytics, which needs to be fast to iterate on and accessible throughout the organization
+Governed data for external financial reporting, which must be correct (e.g. filings to the SEC)
+Early in their business, they turned to separate tools to fulfill each use case: Tableau for their internal analytics, and Looker for their governed reporting. However, after using both tools for nearly a decade, they consistently ran into the same issues: 
+With Tableau, they could create complex visualizations, but building simple dashboards required significant effort. This high barrier to entry led to silos across the organization. Tableau-savvy folks often built customized reports that only they knew how to iterate on, while business users grew frustrated with Tableau, opting instead to export data into Excel and run isolated analyses.
+“We ended up with little islands of analysis and modeling that often disagreed with each other. And then we’d have to go on a crazy hunt to figure out why they didn’t line up. It’d take us half a day to figure out,” Luke said.
+With Looker, they could achieve the rigorous reporting they needed, but the partitioning and permissions management they needed was expensive – and it was only getting increasingly costly. “We couldn’t partition users to access the appropriate data without paying for an entirely separate instance. It was only getting more expensive, and it was painfully obvious they weren’t investing in making the product better,” Luke said. 
+“As a function of lacking self-service in Tableau and complexity in Looker, the most common path of analysis – especially for the senior team – is that we would export data into sheets, do analysis, and then send a screenshot to each other. That made it hard to find and share our work, and we couldn’t trace inconsistencies across analyses.”
+Luke Ruth, Chief Product Officer at Fundrise
+“Over the past few years, we've been increasingly dissatisfied with our previous setup, so we started looking into alternatives,” Luke said.
+The Evaluation Process
+To Luke, the most important quality in their next BI product was how seamlessly it fit their existing workflows. 
+“I was adamant about finding a platform that fit how we worked and didn’t require our company to make a dramatic shift in how we think,” Luke said. 
+He and his team decided to trial 4 tools: Omni, Thoughtspot, Looker (evaluated as if they were a net-new customer), and Sigma. 
+With Thoughtspot, the main interaction path was AI-based natural language prompts, which didn’t seem mature enough to serve their company’s data needs. “The AI interface may turn out to be a smart bet, but their execution didn’t seem ready for prime-time yet,” he explained. 
+With Looker, although the tool was more familiar to the team, the cost was still prohibitive. In addition, if they were going to invest in a new tool, they wanted to invest in one that was constantly being improved, but they hadn’t seen significant innovation from Looker in the past few years.
+With Sigma, they felt the product was catered to a specific type of end user. This didn't quite fit with their organizational structure since their users have different preferences for how they interact with data. For Luke, it was important that they felt structurally aligned with their BI partner as they revamped their data.
+Ultimately, Luke and his team decided on Omni. He described what made Omni stand out to him: 
+Excel formulas: “For our team, Excel is the most important mechanism for exploring data. The interactions around columns, equations, and formulas were very intuitive. The architectural decision Omni made to make the spreadsheet interface a core part of the product resonated a ton with us, especially at the senior team level. It was a really compelling interaction path for our team.”
+Pace of innovation: “The pace of change and innovation in Omni was much faster than we saw in other products. We’re betting on Omni, and seeing the continual investment in improving the product makes us confident in the direction of the business.”
+White-glove support: “With Omni, a compelling part of the trial was that the team is just absurdly responsive and helpful. It feels like you're talking to real people, not a robotic support team.”
+The Migration
+Since Fundrise had been a longstanding customer of both Looker and Tableau, their analytics environment had a lot of content. Migrating to Omni was an opportunity to rethink their BI infrastructure and merge the data silos that had formed across the organization. 
+“We didn’t want to just copy & paste. In migrating to Omni, my primary goal was simplifying our analytics: deleting as much as possible that had accumulated over a decade of using a tool,” Luke said. 
+“We’d been operating ‘outside-in’: visualizations and reporting informed our model, instead of the other way around. Ad-hoc and team-specific definitions made their way into the shared data model when they shouldn’t have, which clogged up our data pretty fast.” 
+Omni’s architecture enabled Fundrise to adopt a more effective “inside → out” data structure. They define central, reusable metrics in the shared data model and then let team-specific calculations “sprout” within workbooks. Their first three core dashboards already covered 60% of their use cases, and the remaining content is much faster to spin up as “offshoots” from these foundational dashboards.
+“All of our one-off analyses tie back to the core metrics defined in the shared model: What did this campaign do to Investments? What did this investor interaction do for Growth? Having those core definitions ironed out early makes the migration of all the long-tail definitions much simpler.”
+Luke Ruth, Chief Product Officer at Fundrise
+The Impact
+100% of developers & creators onboarded and engaged
+For the initial rollout of Omni, Fundrise successfully onboarded 50 (100%) of their BI power users (model developers and dashboard creators), who have started creating dashboards & analyses for their teams. They plan to bring on the remaining 100 users as they fully roll off Tableau. 
+Consolidated dozens of dashboards to five
+By leveraging Omni’s modeling layers, Fundrise has been able to consolidate dozens of isolated dashboards into five that are used by their team every day. These serve as “jumping off points” for ad-hoc analyses grounded in shared, consistent metrics instead of untraceable “islands” of isolated logic. 
+A BI platform that melds with and improves their existing workflows
+Luke described how Omni fits right into his workflow with Brandon Jenkins, Fundrise’s COO: 
+“Omni is a great antidote to the siloing we saw in Tableau. Rather than us going back and forth with different Google Sheet links, I can send Brandon a single Omni workbook link and say ‘Check out this tab I just added,’ and we can iterate on it together. 
+While we have individual workbooks for specific purposes, they all come from the same shared model, so it’s easy to trace where our answers are coming from.” 
+Real-time help from a BI partner 
+Given how crucial BI is to their business, Luke and the Fundrise team were keen on working with a company they could partner closely with to achieve their data goals. With Omni, Luke and the Fundrise team have felt supported as they manage a large BI migration.
+“We just love the shared Slack channel for customer support. It feels really encouraging and collaborative, even when the answer is ‘We can’t do that yet, but here’s a workaround.’ We use a lot of platforms, but this level of support is unique to Omni.”
+Luke Ruth, Chief Product Officer at Fundrise

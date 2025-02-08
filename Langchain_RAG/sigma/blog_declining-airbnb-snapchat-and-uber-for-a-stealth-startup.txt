@@ -1,0 +1,417 @@
+Blog home
+Declining Airbnb, Snapchat, and Uber for a Stealth Startup
+Kenneth Truong
+SOFTWARE ENGINEER
+Declining Airbnb, Snapchat, and Uber for a Stealth Startup
+On April 18, 2016, an email from a recruiter caught my eye. A stealth mode startup was looking to hire their first frontend engineer. The timing was perfect; I was just about to begin my job hunt. After working at bigger companies like Amazon, Qualcomm, and Informatica, I realized I wanted to make a more significant impact. Thus, I decided to give this startup called Sigma a shot.
+The only thing I could find on the startup was this “photoshopped” (so he says…) picture of the co-founder 🤣
+The On-site Interview
+Excited for a change, I stepped on a plane from sunny San Diego and set off to San Francisco. When I arrived at their office, Suite 420, I was greeted by the recruiter. The lighting in the office was dim, perfect for coding. I was brought into the interview room where I individually met with the whole company; a total of 4 people including Rob and Jason, the co-founders. It was my first onsite interview in over a year, so I didn’t exactly kill it. I left wondering if I would receive an offer or not.
+But I didn’t have time to worry. I had an interview the next day with Uber, one of my top choices. The interviews were just as challenging, leaving me completely exhausted. As I was leaving the building, I turned on my phone to request an Uber. I noticed an unread email. It was from Sigma. Did I fail? It said to give the recruiter a call as soon as possible. I nervously dialed his number.
+What? I received the offer? Sigma actually wanted me!
+Soon after, the other offers came in. I was ecstatic! However, I had trouble deciding. I wasn’t sold on Sigma yet. My friends and family told me that such an early stage startup had a high chance of failure (They hadn’t even launched a product yet!) and that I shouldn’t take so much risk when I had these other amazing offers. While I was having these doubts, the recruiter set me up to speak with Mike Speiser, a managing partner at Sutter Hill Ventures (the VC firm that funds Sigma and incubated Snowflake). I looked him up on Google. Shit. Mike actually wanted to talk to me?
+He had an amazing background with a proven history of successful exits. I was impressed that he was willing to take time off his calendar to even speak with me.
+Mike spoke about how smart and amazing the co-founders are and about all the successful companies he’s started. Mike then hyped me up on the company’s mission and how this startup was a game changer.
+I was sold right then and there. Mike has this charm that can get you excited on just about anything. I promptly called the recruiter and accepted the offer.
+This was a rare opportunity to be the first frontend engineer at an early stage startup. At this point, all my other startup offers were for well over 100–1000+ people. The few small ones just did not have the same credentials as Rob, Jason, and Mike. I went all in. I called the other startups to decline their offers.
+What could they do to change my mind? Nothing. They tried to increase their offers. But I was committed. I was going to make a BIG impact.
+My First Day
+When I started on June 13, 2016, there were 7 people in the office including me and a newly hired backend engineer who had worked at Facebook. I was nervous. Working so closely with these amazing people gave me imposter syndrome. But I put in the hours and contributed as much as I could. We spent the next few months building out features until we decided to try to get our first user.
+How our original office looked. (We outgrew this office and now have an even better office!)
+Launching Sigma
+Even though the product was still a work-in-progress, September 1, 2016 would be our first product launch. I stayed up all night polishing up the landing page of the website. I was that excited to try to get our first user! I took a quick nap on the office couch around 6 AM.
+Later that morning, the moment of truth finally arrived. We deployed sigmacomputing.com.
+Lo and behold… NO NEW USERS.
+Well shit… I wasn’t sure what I expected… We didn’t have a marketing or sales team, but surely we could have gotten at least one user, right?
+This was a definite stumbling block, but I didn’t let it get to me. We continued building, hoping some users would eventually find us. A few weeks passed, then months. The only users we had were our close friends who tried out the product, but no one could see value in it yet. Sutter Hill was trying to help fill an executive sales position without luck. I think the majority of us were starting to feel demoralized because I sure was. I was beginning to burn out.
+I started to wonder if I had made the wrong choice. Should I have taken the safe route and joined the startups that were already on track to IPO? I could have been eating free food! (Sigma now offer free meals.)
+Thankfully Carol, a close friend and designer at Sigma, pushed me to stick it out for at least another year. She reminded me how Sutter Hill always make sure that the startups does well one way or another. Since I had already put in almost a year, I should at least see it all through.
+The Turning Point
+One weekend, during one of my demos to friends, a business analyst mentioned how Sigma could be helpful for her previous company. What? Really?! Perhaps this was it! Maybe this company could become our first user! I asked her if she could introduce us. Unfortunately, they were busy with a deadline, so we had to schedule a meeting a few months later.
+But no matter! This sparked a HUGE fire in me. Someone had actually said that our product might be useful! I was excited that this could be the start that we desperately needed.
+And so the next day, I told everyone at Sigma about how we could potentially be saving this company thousands per month from time saved for just one use case. I then continued on a really long ramble about how we needed to make use of our friends and network, especially the startups within the Sutter Hill portfolio like Snowflake and Pure Storage. Maybe others would find it useful. I had gone on for so long that Carol had to save the day by saying “ok! we get it!” just so everyone could go to lunch 😅
+Soon after, Rob and Jason scheduled a meeting with Snowflake for next month, but we weren’t sure how to pitch Sigma to Snowflake. We were building a spreadsheet interface with our own query language. And on top of that, you had to store your data with us. In hindsight, we were trying to do too much. It was already a challenge to convince users to move their data into Sigma, so it would have been an even harder pitch to Snowflake, a cloud storage and compute product.
+The Pivot
+Luckily, Jason came up with this brilliant idea of building our spreadsheet interface on top of Snowflake (we now also support BigQuery, Redshift, and Postgres). He pitched an updated interface that was different from all the current products out there. This interface made it much easier to do analysis without writing a single line of code or SQL. We quickly shifted gears, scrapped everything we had built, and pivoted to make a new MVP (Minimal Viable Product). We spent a month working long nights and weekends getting this MVP out, but we were excited to make a good impression.
+On April 11, 2017, Jason and Rob went to Snowflake to demo the new product. The rest of us decided to take it easy and wait for the news.
+At 3:50 PM, Rob sent a message
+Jason and I can give you the full summary when we’re back tomorrow, but the demo went well. And Snowflake is going to be our first alpha customer! We’re hoping to have them using Sigma in ~2 weeks (on Snowflake) so we’re going to be busy 🙂
+Fuck Yes! I could see long nights ahead of us. But it didn’t matter. This was what I was here for. We were about to get our first real user!
+We knew we were onto something. The market was moving to the cloud and Snowflake was rapidly growing. Soon after we raised our Series B and moved into the next phase of the company. It was time to scale.
+HODL 🚀
+This was the turning point for Sigma. Things were starting to take shape. We hired a sales team. We started to see deals closed. First it was names I haven’t heard of before like Volta and Zumper. Then as we added more features, we started to see recognizable names. Philz Coffee. Blue Bottle Coffee. Clover. Farmer’s Insurance. AutoDesk. US FOODS. (And more!)
+Shit. Was this real? Did we make something that people wanted? HELL YEAH!
+As the years passed, I have grown more confident in Sigma. Though we had a slow start, based on our current trajectory, we’ll have unicorn status in a year or two. We’ve doubled in size every year since I’ve joined. At the time of this writing, we have grown to 135 people and now have an amazing marketing and sales team!
+If there was ever a time to join, I would say now is the perfect time because we’re starting to experience the most growth we’ve ever seen and will continue to have 200% - 300% YoY growth, which is amazing for a SaaS company. When does anyone ever get the chance to join an early stage startup that will become a multi-billion dollar company?
+P.S. We’re hiring for all roles, so come join this rocket ship! 🚀🚀🚀
+Our office is opening up so you’ll get to meet flat-Rob. (Our office manager ordered this a few years ago. It’s our office mascot.)
+I had a lot of fun throughout the years. Pranks on Rob’s birthday. (His wife sent me a picture of what he was wearing when he wasn’t looking. I went shopping that morning and added corn starch to my hair 🙃)
+During the pandemic, the company pranked Rob on his birthday (We photoshopped a picture of him as our background) Rob can’t get away from us!
+‍
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

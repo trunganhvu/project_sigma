@@ -1,16 +1,16 @@
 API docsQueries
 On this page
 Query APIs
-THESE APIS ARE IN BETA
-Query APIs are in beta and may have future breaking changes.
+HEADS UP!
+The query APIs are in beta and may have future breaking changes.
 The query APIs allow you to interact with workbook queries in Omni.
 Run a query
 Runs the query specified in the request body. Successful requests will return the data as a base64 encoded Apache Arrow table, allowing you to extract query results from Omni and use them elsewhere. For example, piping data to Google Sheets or leveraging data in a Python notebook.
 POST /api/unstable/query/run
-curl --location 'https://myorg.omniapp.co/api/unstable/query/run' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer API_TOKEN' \
---data '{
+curl -L -X'https://myorg.omniapp.co/api/unstable/query/run' \
+--H 'Content-Type: application/json' \
+--H 'Authorization: Bearer <TOKEN>' \
+--d '{
   "query": {
     "limit": 10,
     "sorts": [
@@ -47,21 +47,18 @@ curl --location 'https://myorg.omniapp.co/api/unstable/query/run' \
    "userId": "4c34905f-39bb-444b-9f8c-ffaf69b30100"  // Optional: Run query as specific user
 }'
 Parameters
-Name Type Required Description
-query Object ✓ A JSON object representing the query to be run.
-userId String (UUID) Optional UUID to run the query as a specific user. If not provided, uses the user associated with the API token. The userId must belong to a user in your organization.
-DID YOU KNOW?
+Parameter Type Required Default Description
+query object Yes ✓ n/a
+A JSON object representing the query to be run.
 You can retrieve a query's JSON object right from an Omni workbook:
 Open a workbook in Omni.
 Toggle open the Inspector panel. For Mac use Option + 9; for Windows, use Alt + 9.
 Locate the Query structure section.
 Copy the query JSON.
-Returns
-Successful responses will contain the following:
-An object with a jobs_submitted property
-An object containing details about the job, such as job_id, status, and the provided query
-The job details object will also contain a result property, which contains the query results as a base64 encoded Apache Arrow table. At this point, you can use something like Omni Python SDK to decode and validate the results.
-Example response body
+userId stringct No X n/a
+Optional UUID to run the query as a specific user. If not provided, uses the user associated with the API token. The userId must belong to a user in your organization.
+Response
+200 OK
 
 
 
@@ -210,9 +207,8 @@ Example response body
 
 
 
-ENCOUNTERING TIMEOUTS?
-If a request takes too long, the response will include a remaining_job_ids property. When this occurs, poll the GET /api/unstable/query/wait endpoint until the timeout property is false:
-curl https://myorg.omniapp.co/api/unstable/query/wait?job_ids=[remaining_job_ids]
+
+429 Too Many Requests
 Previous
 Models
 Next

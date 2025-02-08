@@ -1,0 +1,24 @@
+Happy second birthday, Omni!
+Our first year of customer love
+March 15, 2024
+Colin Zima
+When you are building a company it's easy to lose yourself in the day-to-day: the next feature, the next deal, the next hire. As Omni turns two, it's been gratifying to reflect on the last 24 months.
+We've been blessed to have every advantage building Omni.
+We have 37 people I trust enormously with deep experience in our exact problems. It’s why we've been able to build so quickly. And the best part is we aren’t afraid to talk about it. Look at this video library of the last nine months, 207 engineering development demos!!!!
+We have investors we have partnered with for a decade who have supported us like teammates and given us space when we needed to execute on our own.
+We have partners across the data space that have helped refine our messaging and product, and given us the opportunity to help tackle data problems together.
+And we have a growing group of global customers across North America, EMEA, and APAC 🤯 who believe in Omni’s vision and help us make the product better every day.
+When we started Omni, the goal was simple: be everything for the data consumption layer. Robust governance and modeling; fast, direct SQL; beautiful visualization; flexible spreadsheeting. We've had to adjust along the way, but the vision has been exactly what we pitched on day one.
+The first year was about making ourselves believe it. Taking the grain of an idea and bridging the world between raw SQL and modeled BI. We didn’t always nail it, but we listened and iterated and found a balance that laid the foundation.
+Year two was about customers agreeing that we could deliver on it. We focused on building great basics — fast, beautiful, simple visualizations and dashboards where power users can always poke through and do more — from markdown KPIs to custom visualization, to Excel formulas, to SQL, to CSS controls [soon].
+As we started thinking about the next phase, we received two opportunities to work with experts we trust immensely. Tomasz Tunguz offered to double down on his previous Omni investment. We’ve trusted Tomasz for years and knew the future of Omni would be better with his continued guidance, so we’ve accepted $20M in new capital from Theory Ventures.
+Additionally, we are adding Lambert Billet, former Chief Revenue Officer at Looker, to our board. This builds on a decade of collaboration. Lambert’s expertise will be instrumental as we scale.
+Their support will help us continue to do what we set out to do two years ago.
+We’ve already built a BI tool that can actually bridge centralized and decentralized data analysis for every type of user — SQL, modeling, visual discovery, spreadsheeting, and embedded reporting.
+So far, the result has been just over 100x growth in usage, and a growing list of customers that live in Omni (70 hours from our top user in February!).
+The most gratifying part is that it’s paired with happy customers who trust Omni to help run their business (and share their story!), like Ascend, Digital Trends, Eads Bridge Holdings, Middleware, Rose Rocket, Sifflet, and The Rounds.
+And what I really love is that we don’t just get product feedback. We’ve focused on building an incredible customer experience — from getting started to ongoing support.
+Below are just a few recent comments we’ve received on LinkedIn and Slack from actual customers ❤️.
+Receiving this proactive feedback from early customers just makes my day every time. I never want to stop pushing every aspect of the product and customer experience to make sure we continue to earn these notes. Thank you to our early adopters, we couldn’t do this without you.
+I'm proud of where we've come in just two years, and I wake up excited every morning to keep at it. We've already built a BI tool that I love using and can bridge centralized and decentralized data analysis for every type of user. But, we've got a lot more to do 😅. There will be hard days and ups and downs, and I'm grateful for the opportunity to keep at it. Can't wait to see what year three brings ❤️.
+P.S. — If you want to catch my chat with Tomasz Tunguz on the future of BI, you can sign up for our Office Hours here.

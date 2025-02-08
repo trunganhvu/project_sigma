@@ -1,0 +1,209 @@
+Blog home
+New Sigma Features Bring More Trust & Flexibility to Your Data Environment
+Mallory Busch
+DIRECTOR OF PRODUCT MARKETING
+New Sigma Features Bring More Trust & Flexibility to Your Data Environment
+SEPTEMBER 17, 2024
+Today, we’re unveiling new Sigma features that bring more trust and flexibility to data work at your business. We’re also helping teams move faster to get their answers, and expanding the ways you connect your data to Sigma. These updates include:
+New data models
+With metrics, relationships, and version tagging
+dbt Semantic Layer integration
+Glean integration
+AI helpers
+Explain Viz
+Formula Assistant
+Overlay containers in the Sigma UI
+OAuth with write access for both Databricks and Snowflake
+Azure SQL Database connector
+More security and administrative controls
+Expanded functionality for developers
+Our partner Hakkoda is also launching a Snowflake Native App that you can use to evaluate a migration to Sigma within minutes.
+Read on to learn about the new features that we’ve introduced today. Or watch the Fall 2024 Product Launch video to hear from our product experts as they describe and demonstrate this new functionality.
+Data Models
+The foundation of any analysis is trust. Businesses need a trustworthy data environment where any user can find and analyze the data they need.  At the same time, data teams need the assurance that any analysis done in this environment, especially on key business KPIs, is accurate. 
+The ideal state offers the best of both worlds: self-service and ad hoc analysis for business teams, but within a set of guardrails controlled by the data and IT teams.
+And we’re helping you achieve this vision with our latest feature, data models. 
+Data models are new foundational objects in Sigma that contain all the primitives you need to build a robust, fully governed semantic model, including reusable tables, relationships, metrics, role-based permissions, version tagging on data models, and more. 
+And, we’re delivering these capabilities in a way that leverages Sigma’s unique strengths of speed, ease-of-use, and flexibility. Data models in Sigma are:
+1. GUI-based
+All your semantic data modeling and the creation of key metrics can be done in an intuitive, no-code UI. This makes data modeling easy and accessible, not only to centralized data teams, but also to departmental analysts and other savvy business analysts. 
+2. Flexible
+Some use cases require heavy governance and repeatability (for example, executive and revenue reports). Other use cases are one-off and don’t require much governance at all. With Sigma, you can use, or not use, our semantic modeling features as much as you please.
+3. Integrated with the broader data ecosystem
+We’re developing integrations with enterprise data catalogs and code-based semantic layers like the dbt Semantic Layer. This way, you can keep metric definitions in Sigma, or push them down to other semantic layers or catalogs and consume them in Sigma—whatever makes the most sense for your use case and your preferred toolset. 
+Get started
+Many of these semantic modeling features are ready to use today, and some will be available in October. Reach out to a Sigma representative to learn more about using these new capabilities at your organization.
+New AI Features
+Data modeling isn’t the only place our team is prioritizing trust. It’s also a critical part of how we think through AI in Sigma. As we bring new AI functionality to Sigma, we’re committed to doing it in a way that allows you to double-check and validate the AI’s work, so that your team can generate more trust when you work with AI. 
+Here’s what’s new with AI in Sigma:
+Explain Viz
+First, we’ve added a feature called “Explain Viz”—and it’s as simple as it sounds. Simply ask Sigma to explain a chart, and the AI will generate a straightforward summary. Details can include key insights, observations, and other context to enhance your understanding of the data at hand. It’s a great way to get new workbook consumers up-to-speed.
+‍
+Formula Assistant
+We’ve also added an AI Formula Assistant to help you get your work done faster. Sigma already comes equipped with 200+ functions to analyze data. But with so many options, it’s not always clear which formula is the best to use. And if you’re a less technical user, it may feel overwhelming to try and write a more complex formula on your own. 
+With the new Formula Assistant, you can simply describe the type of work you want to do, and the AI will generate a formula for you. It can also iterate or provide an explanation based on your input. And if the formula contains an error, the AI will also propose a change that you can apply.
+Glean Integration
+AI isn’t the only way we’re helping you work faster in Sigma. We’ve also built an integration with Glean, which allows users to query other data sources (like Slack, Confluence, or Google Docs), using a Sigma cell or multiple cells as a starting point.
+It’s a great way to connect the structured data within Sigma to all the unstructured data you use in your workflow. You’ll work faster, and get to answers sooner.
+Sigma BI Analyst by Hakkōda
+And if you’re not a Sigma customer yet, we’re making it even easier for you to evaluate a switch.
+With our partner Hakkoda, a modern data consulting firm, we’ve developed a free Snowflake Native App that helps you assess your existing BI sprawl and explore strategies to migrate to Sigma. The Sigma BI Analyst by Hakkoda is now in private preview and will become available on the Snowflake Marketplace, which means it runs entirely within your own Snowflake account — ensuring that your data never leaves your environment.
+You can configure your Tableau, Looker, or Power BI accounts with the Snowflake Native app, and then set up a Sigma free trial account to connect this data to Sigma and explore deeper. You can even enter how much you’re paying for licenses in your existing BI tool, and view projected savings if you were to switch to Sigma. 
+The Sigma workbook also uses Snowflake Cortex AI to propose syntax changes to formulas, cutting down on the time it would normally take to migrate between BI tools.
+Overlay Containers
+To add more customization to how you build out the workbook experience, we’re also bringing overlay containers to Sigma.
+Overlay containers are a type of container that you can set to appear over a dashboard or report. The first type we’re launching is a modal, which is anchored to the center screen.
+You can use these overlay containers to convey the right information to the right person at the right time, such as:
+A guide on how to understand a report when viewing it for the first time
+Advanced dashboard controls for more experienced users
+More detailed analysis after clicking on a cell in a table
+These overlay containers are fully customizable with all of the layout and formatting options of basic containers. Anywhere that you set a navigation event with Sigma Actions, you can choose to call an overlay instead.
+Embedded analytics updates for developers
+We’ve also added new capabilities to help you work faster and build a better customer experience with embedded analytics. These updates include:
+Inbound and outbound JavaScript events
+With advanced alerting that helps developers gain more visibility into errors
+20 new API recipes
+Additional support for coding in Python, Ruby, Go, and JavaScript
+In addition, we’ve also introduced JWT-based embedding and embedded link sharing.
+JWT-based Embedding
+With this new JWT (JSON Web Tokens)-based embedding, developers no longer need to create separate embedded analytics URLs. They can copy and paste the URL directly from Sigma, sign it, and they’re good to go. There’s no need to create separate users, as permissions are automatically applied. This means you can embed anything—like workbooks, pages, individual elements or all of Sigma—in just a few clicks.
+Embedded Link Sharing
+And with embedded link sharing, users can simply copy and paste URLs from your embedded application and share them across any platform, like Slack, Teams, Confluence, or email. When the receiver clicks the link, they’ll be taken directly to your customer’s embedded application. This not only enhances collaboration, but also drives more traffic back to your product.
+Learn more with: Mastering Embedded Analytics: Your Ultimate Guide.
+Security, Administration, and Data Connections
+In keeping with our theme of trust and flexibility, we’re adding more ways for you to connect your data to Sigma while ensuring security across the data environment.
+OAuth with Write Access
+We’re excited to share that Sigma now supports OAuth with write access for both Snowflake and Databricks. 
+This makes Sigma the first and only data analytics platform to support OAuth with write access to either Snowflake or Databricks. It’s an engineering feat that is a testament to our team’s commitment to pushing the boundaries of traditional BI, and providing enterprise customers with exactly the functionality they need.
+Azure SQL Database
+On that note, Sigma will soon be supporting Azure SQL Database as a data source connection. If you’re an Azure customer who’s been eyeing Sigma for a while, now’s the time to explore.
+CSV to Input Table
+We’ve also got a new way for you to upload data. You’ve always been able to upload CSVs to Sigma, but we’re now letting you upload these files directly into Input Tables, Sigma’s write-back feature. This means that you can immediately modify the data after you upload from a CSV, and, as always, write it back to the warehouse to use alongside your other cloud data.
+Security
+We know that enterprise-grade security is non-negotiable, and that’s why we’re introducing additional options for secure data access, including: 
+Key-pair authentication for Snowflake customers
+Customizable session lengths
+Customer-managed keys
+Support for 16 locales
+And finally, for our global customers, we’ve introduced support for 16 different locales and languages. Now, the same workbook can be viewed in different languages across different geographies, all without creating multiple copies or additional maintenance overhead.
+Upcoming: SQL Editor
+At this launch, we also previewed the new experience of writing SQL in Sigma. 
+Soon, a SQL user will be able to perform their analysis in Sigma the same way they would in a notebook: an element, like a cell, can be used for each of the incremental steps and transformations in analysis, chained together.  They’ll be able to use SQL to reference any data available in Sigma—even analysis made through our spreadsheet UI.
+We believe everyone should be able to work with data, and that means using whichever skillset you prefer: spreadsheet functions, SQL, Python, or AI. As we build out more functionality in Sigma, we’re committed to meeting your users where they are, and helping the whole business work quickly to build data products—regardless of the data languages they speak. 
+See it for yourself: ad-hoc analysis with governed guardrails
+Sigma’s latest updates—from enhanced data modeling and seamless AI features to secure connections with Snowflake and Databricks—ensure that your teams can work faster while maintaining full confidence in your data.
+After all, trust starts with data. If you can’t trust your data, you can’t trust the decisions behind it. That’s why we’re committed to building the features that combine self-service data exploration with the governance controls that enterprises need. 
+But don’t just take our word for it. Whether you’re ready to elevate your data strategy, explore innovative tools, or simply want to see what Sigma can do for you, now is the time to get started.
+Try Sigma today with a free trial, request a personalized demo, or join us at one of our upcoming events to see how we’re transforming the world of BI for the modern enterprise.
+THE ULTIMATE KPI PLAYBOOK
+Updates
+Data Modeling
+AI/ML
+Security
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

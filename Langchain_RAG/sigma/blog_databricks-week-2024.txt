@@ -1,0 +1,396 @@
+Blog home
+Databricks Week 2024 at Sigma: A Perfect Match for Data-Driven Success
+Kaitlin Pike
+VP OF CORPORATE MARKETING
+Databricks Week 2024 at Sigma: A Perfect Match for Data-Driven Success
+Welcome to Databricks Week 2024! This week-long celebration will showcase the powerful combination of Databricks' advanced data engineering and machine learning capabilities with Sigma's intuitive analytics platform. Together, Databricks and Sigma can transform your data operations and drive significant business growth. 
+Join us this week as we explore our pairing’s potential through a series of insightful sessions and case studies.
+Unleashing the Power of Sigma and Databricks
+Sigma stands out as one of the most powerful tools making data and AI accessible for non-technical teams. Of course, with Databricks and Sigma, you can do so much more. Imagine creating next-generation data apps that operate on live data within your Databricks Data Intelligence Platform, all without the data ever leaving Databricks. This integration empowers business units to enhance their data processing, analytics, and business intelligence capabilities like never before.
+By combining these platforms, businesses can unlock the full potential of their data, driving smarter decisions and fostering innovation. The integration allows for real-time analytics on live data, ensuring that insights are always up-to-date and actionable. This collaboration enhances efficiency, reduces costs, and ultimately accelerates business growth.
+Ahead this week
+We have an exciting lineup of events planned for Databricks Week 2024. Here’s a glimpse of what you can look forward to:
+Monday: Databricks & Sigma 101: Experience the Power of What's Possible 
+Join Mitch Ertle, Sigma Senior Partner Solutions Architect and Larry Clark, Sigma Senior Solution Engineer, for an in-depth overview of how Databricks and Sigma work together and the benefits they can drive for your organization.
+‍
+Tuesday: Dynamic Pricing Made Easy with Sigma and Databricks
+Aimpoint Digital, the Databricks Digital Native Partner of the Year, will present their show and tell demonstrating how to leverage Databricks’ model-serving endpoints within Sigma to deliver actionable pricing insights. Don’t miss their solution to maximizing the value of this powerful combination.
+‍
+Wednesday: LLMs on Databricks: Step-by-Step Guidance from Sigma's Leading Architects
+Sigma Senior Partner Solution Architect Mitch Ertle will teach you how to leverage Databricks' powerful AI tools within Sigma’s intuitive spreadsheet UI, including Large Language Models (LLMs), ML models, and other advanced AI assets. This integration automates workflows and tasks such as unstructured text/data analysis, sentiment analysis, cohort analysis, and more.
+‍
+Thursday: Building Healthcare Data Products with Kythera Labs
+Kythera Labs enhances healthcare data handling with Sigma, boosting visualization, decision-making, and security. Discover their seamless integration with Databricks and how Sigma outperforms Power BI and Tableau in satisfaction and efficiency.
+‍
+Embrace the Future with Sigma and Databricks
+Sigma and Databricks can transform the way your business approaches data-driven decision-making. By leveraging the strengths of both platforms, companies can achieve unprecedented levels of efficiency, accuracy, and innovation in their data operations. Whether you're looking to enhance your data processing capabilities, improve analytics, or unlock the potential of machine learning, this integration offers a comprehensive solution.
+We encourage you to explore the full event schedule to gain a deeper understanding of the integration benefits. Don’t miss this opportunity to learn from industry experts and discover how Sigma and Databricks can drive your business forward.
+Ready to transform your data operations with Sigma and Databricks? Check out the full event schedule and detailed posts on the integration benefits. Visit our free trial page and start your journey towards data-driven success today!
+THE ULTIMATE KPI PLAYBOOK
+Inside Sigma
+Databricks
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

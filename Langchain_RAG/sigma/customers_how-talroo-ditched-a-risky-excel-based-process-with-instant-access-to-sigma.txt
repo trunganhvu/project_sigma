@@ -1,0 +1,138 @@
+How Talroo ditched a risky Excel-based process with instant access to Sigma
+By Barry Klein
+VP OF SUCCESS AND ENABLEMENT, TALROO
+By R.J. Laabs
+BUSINESS INTELLIGENCE ANALYST, TALROO
+We spoke with Barry Klein, VP of Success and Enablement, and R.J. Laabs, Business Intelligence Analyst at Talroo. Talroo is a leading talent attraction platform that connects employers with qualified job seekers. With a mission to revolutionize the way talent and opportunity meet, Talroo streamlines the hiring process and facilitates meaningful connections between employers and candidates. By leveraging a vast network of job sites and digital channels, Talroo helps companies reach their recruitment goals efficiently and effectively, ensuring that both employers and job seekers find the perfect match.
+Life before Sigma 
+Before Sigma, we still had access to all of this wonderful data, but the hard part was how we communicated that between teams. The only way to truly cross-communicate in our departments was with Excel. Everything that we had to do was a two-step process where we had to go in, get the data that we wanted, go into Excel, and manipulate it. If it wasn't already manipulated from the get-go, we would share it and have different Excel documents running all over. That’s why it was great to have Sigma come in with such great Excel table formatting.
+We had people writing SQL code directly into production databases. That's a scary scenario, and things can go wrong. No one wants to be responsible for databases grinding to a halt or running queries at the wrong time, and prior to Sigma, anyone was more than capable of doing that.
+We had people writing SQL code directly into production databases. That's a scary scenario, and things can go wrong. 
+When we were looking at the setup processes for a lot of these different business intelligence platforms, a lot of them were toting, “You'll have a full 15-person engineering team on our side, helping you get set up and we just need to meet with your product managers on your end.” With Sigma, as soon as you sign, you get access. Sigma allowed us to hit the ground running. There was no two or three-week onboarding period – or needing to meet with multiple people to get all of these different moving pieces together. 
+It was truly just great to have only one engineer step in for two hours a week and say, “We're going to set up these pipelines. We're going to set up these connectors. Now you have unfettered access to your data.”
+Life with Sigma 
+The original goal with Sigma was to be able to have a one-stop shop for all our customer-facing or customer service data. Did we achieve the original goal? Yes. But what we also came to learn is that we were only scratching the surface of what was possible with Sigma. The real value has continued to reveal itself as we keep getting deeper and deeper into the customer-facing kind of reporting that we can control ourselves without having to be a burden to engineering. 
+We're able to use Sigma for anything and everything.
+With Sigma, we've been able to solve an immeasurable number of business problems. Essentially, we're able to use Sigma for anything and everything. For us, Sigma is like having a staff data engineer or software developer on call. Any user can leverage the platform, keeping our teams and projects agile.
+Proposal Generator in Sigma
+With Sigma, as soon as you sign, you get access.
+Recently, we were able to make a proposal generator for our sales team. You can pull your customer from our Salesforce data, input what the recommended budget would be for their ad space, add if we're going to give them a discount, and any other potential fees. We’re able to present that in front of our sales team, giving them the freedom to manipulate everything in their deal. We don't have to go and buy a third-party proposal generator to make it look professional. We can do that within Sigma.
+Operational Efficiency with Sigma
+Sigma is also a great proving ground for concepts that we would then later send to engineering. We can build almost software-like applications with our own data that engineering or our product managers can look at and say, “that's super easy to replicate.” We just didn't know anyone needed that, and now they can make a potentially even more efficient version. 
+We can build software-like applications with our own data.
+One case in point is our tally system. Every month when we go to bill a customer, there could be something that went wrong where we need to credit them back for clicks, such as if a campaign went live when it wasn't supposed to. To make sure that the customer knows we're not trying to pull a scam or anything, we let them know, “We shouldn't have spent those dollars. We're going to credit it back to you.“
+Historically, we would just put these into the system and we would know in a given month, we had to give back $10,000 to customers because of these budgets or these tallies. By changing that process with our team itself within Sigma, we were tracking it and able to look back and say, on any given month we gave away X dollars and budget matches. We had X  dollars in human error – and then break everything down.  
+After we ran it for a couple of months, our product manager decided this is something that the team uses, so let's go ahead and build it in. Because we had that foundation, we kind of had something for them to aim at. Engineering was able to make a much more efficient and automated practice of it, and now it's actually embedded right into our product. 
+‍Read more from other customers who are choosing Sigma here, or download a free trial here.
+‍
+ABOUT
+TALROO
+Talroo is a leading talent attraction platform that connects employers with qualified job seekers.
+More about
+Talroo
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

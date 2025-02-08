@@ -1,0 +1,407 @@
+Blog home
+Building Efficient Internal Tools Using Sigma
+Madison Chamberlain
+SOFTWARE ENGINEER
+Building Efficient Internal Tools Using Sigma
+SEPTEMBER 24, 2024
+At Sigma, we always look for ways to streamline workflows and improve efficiency. Recently, we embarked on a project to identify workflow inefficiencies across various teams and create internal tools to address them. Our goal was to determine if we could leverage Sigma, a tool everyone at Sigma is (obviously) familiar with, as the front end for these internal tools.
+Identifying the problem
+One of the first teams we met with was the GTM team, specifically the BDR team. We quickly realized that one of their biggest inefficiencies was the sheer number of tools they had to use to gather information for generating cold emails or taking notes to prepare for calls. The dozens of tools the BDRs were using often contained overlapping data, and each BDR used a different tool stack, making it impossible to eliminate any of the tools to cut costs or save process time.
+Our goal was to increase efficiency by reducing the number of tools a BDR needed to use to do basic research on a prospect. We aimed to create a Sigma workbook, the “Customer Match Generator” that, given a prospect account name, could provide a BDR with essential information about that account, including what they do, their competitors, industry, employee makeup, recent funding, notes from other BDRs/AEs, and whether they would be a good fit for Sigma. Additionally, we wanted a tool to find the customer most similar to the prospect and pull information about that customer’s story to become a Sigma customer.
+Centralizing data with Sigma
+The first part of the problem, centralizing data about the prospect, was very straightforward to solve with Sigma. Since our account list doesn’t change often and day-old data is acceptable, we decided to create a massive base table that joins data from all relevant sources, and then we materialized this table nightly. This approach ensures that queries against the table are fast and since it wouldn’t require waiting for various joins to complete.
+Fortunately, most of our data was structured to allow us to use the Salesforce account GUID as the key to join on. For cases where there was no account GUID, we used the following formula to generate a column for joining data from different sources:
+Lower(Trim(Replace([Column Associated With Account Name], " ", "")))
+Once we had the base table with all the data about prospect accounts, we identified questions we would always want to Google when researching a prospect. These questions helped us determine if a customer is a good fit for Sigma. Examples could include questions like, “Is this company in the tech industry?” and “Does this company sell a data product?” We added the answers to these questions to our base table, which we are materializing nightly, using the Snowflake Cortex function, which leverages various LLMs to answer predefined questions on a per-row basis.
+To present this information in a digestible format, we created a child element from the original base table with a list control that requires exactly one account name to be selected. This control filters the table to just one row, making calculations lightning-fast. We used dynamic text elements with formulas like Max([Name Of Column I Care About]) to display the desired results. For example, the formula in a dynamic text element might look like this:
+Industry of Account: Max([Account Industry])
+Finding the most similar customer
+The next challenge was finding a customer whose profile resembles the prospect. Initially, this problem seemed suited for KNN (K-Nearest Neighbors). However, using sklearn's KNN functionality posed challenges: 
+All data needed to be numerical.
+There was no way to weigh certain columns more than others.
+The Snowflake dataframe object wasn’t ideal for passing into sklearn's KNN.
+First, we researched what factors were most important for determining customer similarity; we found high-level industry, specific industry, competitor used, use case, and warehouse to be most important to select a good match, in that order. We also included other information, including but not limited to employee makeup, recent funding, public status, and Fortune 500 status.
+We generated a similarity score for each customer account by normalizing the data and assigning weights to each column. We used different methods to normalize data based on column type. For simple string columns like industry, for each customer, we assigned a 1 if a customer’s industry matched the selected customer and a 0 if it didn't didn’t. For list columns, we used one-hot encoding to create columns for each list value and generated a similarity score based on the number of matching values between the selected prospect and a customer. An example of this would be if I had a column, "colors," which could contain the values "red," "blue," and "yellow." I pulled these into three columns using the formula  
+Contains(Text([color]),“red”) 
+to generate the “red” column. Then, from there, I added a formula
+If(Contains(Text([color]), “red”) and Contains(Max([Table Filtered To Just Show Selected Prospect/Text([color])), “red”), 1, 0)  
+to convert each list option into a normalized value.  Finally, I was able to normalize numeric columns that aren’t on the 0-1 scale with the following formula:
+If(IsNull([Column]), 0, Abs([Columng] - Rollup(Max([Column]))) / Rollup(Max([Column])))
+and then I could determine how close the value of each customer is to a particular prospect with this:
+Abs(Abs([(enum) Product Platform Employee Growth Pct] - [Just Selected/(enum) Product Platform Employee Growth Pct]) - Rollup(Max(Abs([(Normalized Column] - [Just Selected Prospect Table/Normalized Column])))) / Rollup(Max(Abs([Normalized Column] - [Just Selected Prospect Table/Normalized Column])))
+We then assigned weights to each normalized column based on its importance to the BDRs. To get the best fit(s), we could either apply a filter to keep only the row with the maximum score or use a rank function control to show the top N matches, depending on what we wanted to do with the output. 
+Overriding data for accuracy
+We also needed functionality to override data about the prospect, as data from Salesforce and other sources could be outdated or missing. For example, if we knew a company was interested in using Sigma for internal analytics, we preferred a customer match with a similar use case. We added a list control where the BDR could select a use case from a drop-down. If a selection was made, we used it to generate the match; otherwise, we used the original data source. The following formula helped us achieve this:
+If(IsNotNull([Control]), [Control], [Original Column])
+This override didn't alter the base table or underlying data source, but it was sufficient to update the match and Cortex requests, which use this column to generate a response. We also added a text control to search for keywords within the account description generated by Cortex, assigning points based on the presence of these keywords.
+Generating example emails
+As a bonus, we generated example emails using various features about the selected prospect and our decidedly most similar customer. We used email templates for each possible Sigma use case and prompted the Cortex function with the BDR’s role and information about the prospect, prospect use case, and the most similar customer to generate a rough email.
+Streamline your workflows and boost efficiency with Sigma
+This workbook has helped us consolidate data from various sources and automate repetitive research that would otherwise need to be done on every prospect account. Sigma's intuitive UI allows anyone to build a workbook like this without knowing SQL. The Cortex, materialization, and control functionality we get from using Sigma on Snowflake ensures up-to-date data and fast query results. Using Sigma, we’ve significantly improved the efficiency of our BDR team, allowing them to focus more on engaging with prospects and less on gathering data.
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

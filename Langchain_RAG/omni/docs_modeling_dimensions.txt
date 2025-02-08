@@ -428,6 +428,6 @@ JSON parsing
 Note that fields recognized as JSON (both true JSON and stringified JSON) can be parsed in the UI. Simply click on JSON results, and recognized nested structures will be offered as instant fields. For now, this is limited to modeled fields, rather than raw SQL. To select more than one field, use shift+click or command+click (see below).
 Note that often when parsing JSON the typing may not be as expected (for example timestamps may be created as strings). Be sure to cast the field to the proper type for post-processing.
 Previous
-Query Views
+Query views
 Next
 Measures

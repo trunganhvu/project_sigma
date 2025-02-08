@@ -1,0 +1,405 @@
+Blog home
+What is The Purpose of Business Data Analysis?
+Çağatay Demiralp
+CHIEF RESEARCH SCIENTIST
+What is The Purpose of Business Data Analysis?
+Four interactive functionalities that we propose to augment business users beyond exploratory analysis in decision making: Driver Importance Analysis, Sensitivity Analysis, Goal Inversion (Seeking) Analysis, and Constrained Analysis.
+At Sigma Computing we strive to help business users make data-driven decisions. A basic yet overarching question related to this goal is what do our users essentially try to achieve with data analysis? In other words, what should an enterprise data analysis system be optimizing for? Answering this question is critical for operationalizing data analysis for our users.
+The current view on interactive visual data analysis, particularly in the research world, has been primarily shaped by John Tukey’s emphasis on exploratory data analysis (EDA). It is about time for a new take on this and particularly business data analysis can benefit from a fresh perspective.
+Tukey, a prodigious figure with wide-ranging contributions to statistics and beyond, considered data analysis in two stages: exploratory analysis, which he likened to the detective work of collecting evidence in an investigation, and confirmatory analysis (e.g., statistical hypothesis testing), analogous to the trial step of the investigation, where the validity and the strength of collected evidence need to be proved for a judge or jury. Tukey highlighted the importance of exploratory analysis and the use of graphics (visualizations) to that end, which had been ignored by the statistical community of his time. It wouldn’t be far-fetched to think that his ideas around the importance of exploratory analysis were shaped by his practical experience, particularly during WWII. The developments in the last two decades, including the wider adoption of interactive visualization in data analysis and the success of commercial as well as open-source EDA tools, demonstrated the value of Tukey’s perspective on data analysis. Paradoxically, this success also caused a tunnel vision that frequently turned exploratory analysis into the end itself. Furthermore, the landscape of how widely data analysis is used, who can access and perform data analysis, and how data is stored, processed, and managed have dramatically changed since Tukey.
+Consider these user questions: how can I best use my $100K marketing budget? Where should I form new partnerships to maximize revenue growth? What should I do to reach next quarter’s sales goal? What drives the increase in revenue? These questions are, at best, difficult and time-consuming to answer through traditional interactive exploratory analysis or data science tools by business users, who typically have no background in coding, statistical analysis, or algorithmic modeling. They also hint at what we consider to be the purpose of business data analysis.
+Purpose of Business Data Analysis
+The fundamental goal of business data analysis is to improve business decisions by understanding the relationship between two sets of variables–input variables which are hypothesized to be potential drivers and output variables (often a single variable) that are business key performance indicators (KPIs) hypothesized to be dependent on the driver variables.
+Challenges
+While interactive exploratory data analysis is useful, it is not sufficient for effectively carrying out the fundamental task above. There are four basic challenges.
+Constraints of Human Cognition Limitations of human working memory and cognitive overload due to time pressures and data complexity limit the user’s ability to effectively run what-if scenarios, without getting help for rigorously following effective methods to generate, manage, and evaluate hypotheses. Confirmation bias, our tendency to fit the evidence to existing expectations and schemas of thought, makes it hard to explore insights in an unbiased and rigorous manner. Thus, people typically fail to focus on the most relevant evidence while sufficiently attending to hypotheses’ disconfirmation.
+Limitations of Interactive Exploratory Analysis Interactive direct manipulation as a querying and data transformation paradigm doesn’t scale well for learning relations (functions) between drivers and KPIs, often requiring a large number of transformations and consideration of combinations (e.g., slicing & dicing) along with domain expertise.
+Data Scale and Complexity Increased data sizes and complexities exacerbate the two problems above, easily turning the fundamental task of business data analysis into a daunting process if not impossible. Note that data in enterprise databases are constantly updated and appended, which is something cloud computing made easier and cheaper. Yesterday’s feasible choices or decisions informed by data can easily be suboptimal or infeasible today due to updates or the availability of new data. So, large complex dynamic data put additional pressure on human cognition and working memory, causing effective analysis to be overwhelmingly difficult regardless of expertise.
+Dead Data Even if a domain expert business user can build a mental model between potential drivers and her KPIs, there is no easy way for her to probe into, reason about, and run scenarios over to stress-test and utilize this mental model for decision making. Mental models built out of exploratory analyses don’t lend themselves to simulation or scenario modeling based on hypothetical data, which is necessary for what-if analysis.
+Elements of Business Data Analysis
+Let’s try to deconstruct the fundamental purpose of business data analysis introduced above. What does improving decisions mean? Based on our conversations with business users and our experience in developing data analysis systems, we make the following observations.
+Improve Decisions The goal of data analysis is to improve decisions based on data. An improved decision — an effective operationalization of insights — manifests itself differently in different domains and use-cases. It can be increased sales, reduced cost, increased customer retention rate, reduced churn rate, reduced customer acquisition cost, and so on. Business users mean, well, business.
+Understand Data-KPI Relationship Improving decisions requires users to understand, manually (mentally) or otherwise, the relationship (functions) between drivers in their data and KPIs on which their business objectives are based. How do we operationalize this understanding? Machine learning is at its best when it comes to learning functions between data sets. We also believe the ability to dynamically experiment with data, real or synthesized, is key for understanding these relationships — it is a form of interactive, accessible scenario modeling. Note that there is rarely a single best context-free decision for improving a KPI goal; instead, there are often multiple feasible decisions with various costs and trade-offs bound to decision paths. Part of the operationalization should be enabling rapid discovery as well as management and tracking of these choices, making them first-class citizens of data analysis.
+Use Data and Domain Expertise Decision-making is an interplay between data and domain knowledge, including common sense. Neither data nor domain knowledge (expertise), which business users possess, is sufficient for improved outcomes. In business, it is also critical to align the human point of view, including examples and stories, with what the data says. To that end, hands-on experimentation is important in engendering trust in analytic solutions. Discovering outliers, the cases that disagree with an analytic solution should be part of experimentation, enabling a dialectic understanding.
+Value of BI Systems The value of an enterprise data analysis or business intelligence (BI) system is its added value in effectively enabling improved decision-making using data and domain knowledge.
+Desiderata for BI Systems
+Based on the observations above and earlier work, we propose that enterprise data analysis systems integrate four interactive functionalities to augment business users beyond exploratory analysis in decision making.
+Driver Importance Analysis Enables users to implicitly learn functions (models) allowing them to understand the relationships between drivers (input) and KPIs (output), along with the artifacts of these learned relationships such as the relative importance of various drivers and their interactions in predicting the KPI outcomes.
+Sensitivity Analysis Enables users to dynamically evaluate learned relationships for hypothetical input values and observe the changes in output values. It also helps users build their intuition about how their business works in a hands-on manner. To this end, systems should help users to experiment with the drivers by interactively perturbing (increasing or decreasing) their values and observing the effects on the KPI values.
+Goal Inversion (Seeking) Analysis Enables users to interactively set goals such as specific target values or optimization goals (maximization and minimization) for the KPIs and observe multiple scenarios on how the driver values need to change to achieve the desired goals. For example, systems should provide recommendations for changes needed in driver values to achieve user-specified KPI goals.
+Constrained Analysis Allows users to interactively set constraints or conditions over how the learned functions (models) are evaluated and inverted, enabling users to incorporate their domain knowledge and common sense to regulate these functions. This also enables users to quickly generate and evaluate multiple scenarios under various conditions. For instance, systems should allow users to set constraints (e.g., boundary or inequality) on one or more drivers and run goal inversion to obtain optimal driver values satisfying user constraints.
+SystemD operationalizes four functionalities we deem necessary for augmenting decision-making in data analysis systems.
+We operationalize the desiderata above through an interactive visual data analysis prototype called SystemD, implemented as part of a research internship project at Sigma by our interns Sneha and Madelon. Check out our demo video and paper on SystemD.
+Exploratory Analysis and Visualization Are Not Enough
+To conclude, in many ways, there is no mystery about business data analysis or what business users want to achieve with data analysis. A close reading of Tukey’s writings suggests that his emphasis on EDA and graphical representations was a reaction to (or an antithesis of) dry, purely confirmatory approaches to data analysis of his time. It is however time to bring the pendulum of interactive visual data analysis currently skewed towards exploratory analysis to a synthesis reflecting the needs of large swaths of users. This is important because the purpose of enterprise data analysis on the ground is neither pretty pictures nor exploratory insights but improved decisions.
+To help business users achieve their KPI goals using signals from data, we need to change the way that we think about the design and architecture of BI systems. We should enable our business users to perform data science without requiring them to be data scientists, which is a formidable challenge. To start with, BI systems should be optimized for improved decision making (i.e., achieving KPI goals), which requires enabling users to learn and understand the relationships between data and KPIs, going beyond affordances for exploratory analysis and visualizations. This suggests not only model-driven analysis but also hands-on experimentation using underlying models and incorporation of domain expertise into these models. To support and leverage such a workflow, BI systems should manage and track the artifacts of decision-making, treating them as first-class citizens of data analysis and management.
+Here, we propose four interactive functionalities that we deem necessary for BI systems targeting business users to augment better data-driven decision-making: driver importance analysis, sensitivity analysis, goal inversion (seeking) analysis, and constrained analysis. SystemD is a first step in operationalizing these ideas within a complete workflow and putting them in front of our users, enabling us to observe and iterate over the vision introduced above. We look forward to the road ahead to further enable business users to get the most out of data analysis.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

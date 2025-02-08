@@ -1,8 +1,106 @@
-Export as email burst (Beta)
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
+Export as email burst
 Suggest Edits
-🚩
-This documentation describes a public beta feature and is under construction. This documentation should not be considered part of our published documentation until this notice, and the corresponding Beta flag on the feature in the Sigma service, are removed. As with any beta feature, the feature discussed below is subject to quick, iterative changes. The latest experience in the Sigma service might differ from the contents of this document.
-Beta features are subject to the Beta features disclaimer.
 You can send a custom-filtered report to a dynamic list of recipients as a scheduled email burst. For example, you might send individual sales representatives their individual quarterly performance numbers for all categories of product that they sell. Because each sales rep is only responsible for one region, customize the report to provide relevant region-specific data, and filter the elements on the page with a page control for the store region.
 In this example, the sales rep assigned to the West Store Region would receive this report as an email attachment in her email inbox:
 Limitations
@@ -21,7 +119,6 @@ If your organization restricts email traffic sent from specific IP addresses, ad
 Schedule an email burst
 From the workbook menu (), select Schedule export....
 If this is the first schedule for the workbook, click Add Schedule, otherwise click + New schedule.
-(Optional) You can define conditions for when Sigma sends the export. To turn on conditions, click the Condition toggle. Conditions are evaluated separately for each split by control value. For more information, see Schedule exports using conditions.
 Select Export as email burst.
 For Split by..., select a control to use as the split-by value.
 Choose recipients for the email burst. You can include both dynamic and standard recipients:
@@ -43,10 +140,20 @@ For Weekly, select which days of the week to send an email, and choose between O
 For Monthly, select which day of the month to send an email, and the time of day.
 For Custom, specify a schedule using cron syntax. See Set up a custom delivery schedule.
 If you select Multiple times, specify the frequency. For example, every 2 hours on the :15 of the hour between 9 AM and 6 PM.
-(Optional) Adjust the default schedule time zone using the dropdown menu.
 📘
 If you don't have the option to set a specific frequency, export frequency might be restricted for your organization. For more details, see Restrict export recipients and frequency.
+(Optional) Adjust the default schedule time zone using the dropdown menu.
+(Optional) Choose how often to send the export: Always or only If a condition is met. See Schedule a conditional export or alert.
+(Optional) If you choose to send an export only If a condition is met, you can turn on the switch to stop notifying after a set number of occurrences per day, week, or in total. (This feature is in beta and subject to the Beta features notice).
+📘
+Conditions are evaluated separately for each split by control value, but the number of occurrences is evaluated for the condition overall. For example, if you send an email burst to a dynamic list of recipients once per day if a table has data in it, the email burst is sent once per day to whichever recipients have data in that table. If, later that day, the table has data in it for other recipients, no email burst is sent.
 (Optional) By default, Sigma includes a link to the workbook in the email body. If you don't want to include a link, deselect the checkbox for Include workbook link.
 (Optional) Depending on the attachment formats that you select, you can configure more options like combining attachments, sending attachments in a zip file, and more. See Configure additional options for exports.
 (Optional) Select the checkbox for Customize control values to filter the exported data according to the value of one or more workbook controls. See Configure additional options for exports.
 Click Create.
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

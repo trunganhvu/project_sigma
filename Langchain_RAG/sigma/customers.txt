@@ -1,0 +1,252 @@
+Customer Stories
+Sigma customers explore their cloud data to make decisions faster than their competition. Read their stories.
+SEARCH / FILTER
+SORT BY
+BLACKSTONE
+Blackstone Leverages Sigma & Snowflake to Perform Data Analytics at Cloud Scale
+DOORDASH
+DoorDash Logs a 30% Increase in Queries while Keeping the Snowflake Cost Constant with Sigma
+MOFFITT CANCER CENTER
+Moffitt Cancer Center takes One More Step towards its Mission of Improving Cancer Care with Data Democratization through Sigma
+WINE.COM
+How Wine.com Improved Its Data Analytics with Sigma
+FCS
+Transforming Cancer Care with Advanced Data Analytics at Florida Cancer Specialists & Research Institute
+TEEPUBLIC
+How TeePublic Empowered Teams with Self-Service, Scalable Analytics
+CLAY
+How Clay Turned Data Confusion into Clear Insights with Sigma
+KIPI.AI
+How Kipi.ai Transformed Their BI Strategy with Sigma
+PODIUM
+Podium’s Data Transformation: How Sigma Simplified Analytics for Enhanced Decision-Making
+RIGHTREV
+How RightRev Transformed Revenue Recognition with Sigma: A Journey to Data-Driven Excellence
+DATABANK
+Empowering DataBank with Self-Service Analytics to Drive Business Growth
+SIMPLETIRE
+How SimpleTire Transformed Its Data Culture and Analytics with Sigma
+DATA.WORLD
+data.world’s Journey to Data-Driven Success: Enhancing Analytics and Collaboration with Sigma
+KYTHERA LABS
+Building healthcare data products with Kythera Labs
+NG.CASH
+Here’s Why Fraud Prevention Is Really Just a Data Problem
+UNITEDMASTERS
+UnitedMasters: Revolutionizing Independent Music with Sigma
+MINDBODY
+How Mindbody Built White-Labeled Embedded Analytics at Scale
+VIRTUOUS
+Why Nonprofit Organizations Need to Ditch Outdated Data Tools to be Successful
+SARDINE AI
+How this AI startup uses Sigma to prevent fraud
+POWERTOFLY
+An equitable recruiting platform puts data in the hands of business users
+TOMO
+Home-buying platform Tomo uses Sigma to analyze customer behavior and share, export, and visualize data on the fly.
+HASHICORP
+Less is more: How HashiCorp removed 80% of its dashboards to drive adoption through Sigma
+ATHENA
+How the virtual assistant startup Athena depends on Sigma to measure productivity
+DRUVA
+Why Druva left Looker — then tripled internal adoption using Sigma
+TALROO
+How Talroo ditched a risky Excel-based process with instant access to Sigma
+VALIMAIL
+How Sigma Solved Valimail’s “Months-Long” Engineering Need in Two Days
+SEEK DATA
+A vision for data apps: Seek Data explains why we “can’t afford to operate in a world of slow performance”
+LEAP METRICS
+Improving patient outcomes in underserved communities: Why Leap Metrics calls Sigma “life saving.”
+ONCORPS AI
+Tracking spend down to the SKU: How OnCorps AI uses Sigma and Databricks to keep costs down
+TEESNAP
+Why golf course management platform Teesnap left Tableau for good
+ASTRONOMER
+Astronomer Data and AI exec explains how switching to Sigma “fundamentally changed how we sold”
+HYPERFINITY
+HyperFinity Unlocks New Revenue Streams and Helps Retailers Increase Sales by 20% with Predictive Analytics
+GREENLAND CAPITAL MANAGEMENT
+Greenland Capital Management Leverages Sigma & Databricks to Achieve Efficiency Gains
+WORKATO
+Workato Turns to Sigma’s Input Tables to Drive its Business Forward
+CLOVER
+How Clover Improved Time to Data Insights by 90% with Sigma
+COWEN
+Cowen Creates a Communal Environment for Self-service Analytics and Eliminates Ad-hoc Requests with Sigma
+INSURANCE LEADER
+Winning with Sigma: Insurance Leader Logs 90% in Cost Savings
+INSPIRATION
+Inspiration Mobility Democratizes Data Access & Improves Performance with Sigma
+FALCONX
+FalconX Accelerates Business Insights with Sigma
+Amuse Uses Sigma to Transform E-commerce Analytics
+JAMLOOP
+JamLoop Cuts Costs by 67% & Drives Customer Acquisition with Sigma
+POINT
+Point Accelerates Sales Pipeline by Adding Sigma to its Core Productivity Toolkit
+CUSTOMER.IO
+Customer.io Accelerates Data Analytics & Boosts Employee Engagement with Sigma
+WHATNOT
+Whatnot Leverages Sigma to Drive Revenue, Volume, and Efficiency
+BLACK RIFLE COFFEE
+Black Rifle Coffee Revolutionizes Retail and Improves Efficiency with Sigma
+ALICE + OLIVIA
+Alice + Olivia Chooses Sigma for Data Analysis
+OXFORD
+Oxford Industries Turns to Sigma for Better Data Accessibility and Driving Business Value
+STRATEGUS
+Strategus Takes Full Control of its Data & Delivers Winning Ad Campaigns with Sigma
+RAPTIVE
+Raptive Leverages Sigma to Empower its 4,000+ Publishers with Data Insights at their Fingertips
+EMERGE
+Emerge Lands $130M in Series B & Cuts Snowflake Compute Costs by 32% with Sigma
+WURL
+Streaming Innovator Wurl Upgrades to Sigma to Enhance Efficiency & Optimize Analytics
+ASTRONOMER
+From Idea To Dashboard In a Day: How Astronomer Improves Efficiency with Sigma
+TROVATRIP
+TrovaTrip Builds a Modern Data Stack & Delivers Insights 95% Faster with Sigma
+GREENWICH.HR
+Greenwich.HR Leverages Sigma to Enter a Prohibitive Market, Projects >$1M in New Revenue
+SLOPE SOFTWARE
+Slope Software Leverages Sigma to Land its Biggest Deal and Achieve Record Revenue Growth
+SALES IMPACT ACADEMY
+Sales Impact Academy Cuts Dashboard Creation Time by Over 50% with Sigma
+AMUSE
+Amuse Cuts Cost Per Delivery by 30% and Enables Self-serve Analytics with Sigma
+TEACHABLE
+Teachable Slashes Ad-hoc Requests 70% and Increases Analytics Adoption 5X with Sigma
+Application Performance Monitoring Leader Increases NRR with Sigma
+F500 Manufacturer Accelerates Product Development with Sigma
+Local TV Broadcasting Leader in the U.S. Optimizes Revenue with Sigma
+F1000 Logistics Real Estate Leader Turns to Sigma to Ensure Compliance
+Leading HealthTech Provider Relies on Sigma to Optimize Claim Acceptance
+International CPG Brand Leverages Sigma to Drive Growth
+METRIKUS
+Metrikus Increases Operational Efficiencies by 25% with Sigma
+F500 Wholesaler Depends on Sigma to Meet SLAs
+AGERO
+Agero Navigates Business Transformation and Accelerates Product Development
+MIGO
+Migo’s Marketing Team Achieves Transformational Customer Retention and Recovery
+YESWARE
+Yesware Uses Sigma to Slash Customer Acquisition Costs In Half
+FICTIV
+How Sigma Helps Fictiv Strengthen its Digital Manufacturing Ecosystem with Real-time Insights
+PAYLOAD
+Payload Unlocks a New Revenue Stream in Record Time with Sigma
+VOLTA
+Volta Charging Harnesses Data to Power Electric Vehicles
+OLIVELA
+Olivela Weaves Social Good From Its Luxury Fashion Data
+ZUMPER
+Zumper Streamlines Its BI Process With Sigma
+VERONICA BEARD
+Veronica Beard Slashes Acquisition Costs and Boosts Return on Ad Spend with Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

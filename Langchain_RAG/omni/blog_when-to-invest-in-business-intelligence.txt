@@ -1,0 +1,24 @@
+The right time to invest in Business Intelligence.
+February 8, 2023
+Jamie Davidson
+Wondering when the right time to invest in business intelligence is? Here is a quick overview, including; a scenario, signals that tell you the time is now, and a basic suggestion for the tech stack.
+Here is a classic scenario.
+‘An operations employee at a 75 person fintech company has realized that the tracking and reporting of metrics could be better at their company. There are many key performance indicators (KPI) they would like to track – right now it is the wild west and most departments do not trust each other's numbers. They want to track a wide variety of metrics across the different teams: finance, sales, marketing, hiring, and support.’
+Here are a few signals that it is time to put a business intelligence tool in place.
+The organization has a large amount of data (often siloed) that is not being effectively analyzed or used.
+Decision-making across teams (marketing, sales, product, support) is based on intuition or gut feelings rather than data.
+Teams have data that only they have access to, causing reporting conflicts.
+The organization plans to expand into new markets and needs to better understand customer behavior and preferences.
+The organization needs to improve customer service, retention, and support by providing better insights into customer needs and preferences
+The organization wants to improve its operations and processes by identifying inefficiencies and areas for improvement.
+How to get started.
+A lot of the data world now is moving towards heavy tooling and orchestration, lots of management and overhead, and generally less flexible processes under the guise of modularity and best of breed. The key is understanding you want to get there but moving in that direction in a way where each decision/tool creates more value and you don’t strongly box out future anticipated choices.
+First you need data and a database.
+This is usually an internal transactional database. You don’t need Snowflake or BigQuery yet, Postgres is fine. You will eventually want a cloud columnar database like BigQuery, AWS Redshift, Clickhouse, or Snowflake, but you don’t need that to create business value at this early stage. Just a note, it’s likely worth spinning up a replica if you’re using your actual application database. Managed database services like RDS make this easy.
+Next you need a shared place to talk to and present that data.
+Obviously, Omni is great at that, but this step is more about the process than the tool – reliable, semi-governed places where everyone can rely on finding data and answers. Here you can invest in something more future proof like Omni, start with a SQL runner, or something else. The more important piece is creating the destination for where metrics come from.
+From there it’s layering and marginal addition.
+Fivetran or Stitch or the many extraction tools to pull API data from tools and centralize. A cloud data warehouse for speed and breadth, and a tool like Omni for deeper, future proof analytics and presentation. You’ll also likely layer in transformation and ETL/ELT pipelines like Airflow, Prefect, dbt to prepare data down stack; monitoring tools for data processes are a growing space; complement for BI like data science or more verticalized tools for data products.
+Finally you need action.
+Data alone isn’t valuable if it’s not being used. Integrate the data into the workflow for specific teams and operations. Have operations managers report on KPIs weekly. Setting goals based on metrics will encourage deeper understanding of the drivers of the busi ness. Bringing the data to the user will drive usage simply by removing friction.
+Let us know if you’d like to give Omni a try! We look forward to your feedback.

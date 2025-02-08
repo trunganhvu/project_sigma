@@ -1,0 +1,144 @@
+JamLoop Cuts Costs by 67% & Drives Customer Acquisition with Sigma
+About JamLoop
+Founded in 2018, the Connected TV demand side platform, JamLoop, helps advertising agencies and their clients reach targeted audiences consuming streaming TV shows, movies, and live sports. JamLoop’s proprietary tech platform helps brands connect to more than 130M U.S. households and provide unmatched campaign insights and performance data. With clients like BMW, Slim Chickens, and Floor Coverings International, JamLoop has been growing rapidly since its inception.
+THE CHALLENGE 
+Increasing Costs & Scale Limitations
+Adtech veteran and JamLoop CEO Leif Welch started the company because he realized the shift to streaming content was leaving a major segment of the market out of the loop. The mid-market agencies in the US that run campaigns for regional advertisers traditionally focused on television. But the viewers who were once glued to local TV had already shifted to streaming, and Leif figured there had to be a better way to help agencies and their advertisers reach them.
+The solution: JamLoop, a proprietary platform that delivers sophisticated, targeted streaming TV ads to viewers watching shows, movies, or sports on their favorite apps, and makes it easier for agencies and their clients to track the impact of their campaigns in granular detail. 
+We’d been using Domo for two and a half years, but it wasn’t working as well as we grew, and the price was too high. We looked at Tableau, but they had a bunch of capabilities we didn’t need, and it didn’t seem as purpose-built for the cloud.
+—Leif Welch CEO, JamLoop
+The technology proved to be extremely successful, but as the company grew, Leif and his team realized they needed to rethink their data warehousing and analytics stack. Initially, JamLoop was relying on mySQL and Domo. As the company’s dataset expanded, eventually surpassing 3.5 billion rows, they began evaluating alternatives. The first move was to re-architect the platform on Snowflake, as speed and scale were becoming increasingly important. Then JamLoop had to decide whether to continue with its incumbent analytics solution, Domo, switch to Tableau, or explore an alternative. That’s when they discovered Sigma.
+THE SOLUTION
+Speed, Scale, & Customization
+The fact that Sigma is native to Snowflake was immediately appealing to Leif and his team. JamLoop also needed a platform that scaled cost effectively and provided some level of customization. The company wanted its agency clients to be able to present the platform to their customers as if it were their own technology, and this was difficult in Domo. Finally, since their platform was cloud-centric, they felt that Tableau would not be an ideal match. The Sigma platform, on the other hand, met all of JamLoop’s requirements. 
+Sigma was the only solution that brought together speed, scale, flexibility, and customization at the right price.
+—Leif Welch, CEO, JamLoop  
+Leif knew the technology’s spreadsheet interface would be a hit with JamLoop’s clients and their customers, who aren’t necessarily SQL-savvy. The price was right, as Sigma worked out to one-third the cost of Domo. And since deployment, the technology performs better than its predecessor. The dashboards load faster. The company’s billion-row dataset updates every two hours instead of once every day or two. Thanks to Sigma, JamLoop can provide its clients and their customers with real-time, granular campaign metrics, furthering differentiating its platform from the competition. 
+THE RESULTS 
+Better Price, Enhanced Performance, & Superior Capabilities  
+Sigma gives JamLoop a cost-effective platform that better serves both its internal users and the clients and customers that depend on its technology.
+67% Cost Savings vs. Domo
+Sigma’s pricing model is easy to budget and allows our margins to increase as we scale the business.
+—Leif Welch, CEO, JamLoop  
+Leif estimates that Sigma costs his company one-third of what he would have paid with Domo. The Sigma pricing model scales more efficiently and makes it easier for JamLoop to provide its clients with logins. This was especially important because those clients want to be able to access the platform at any point, but many of them do so infrequently, so JamLoop didn’t want to incur a cost for each new user login. 
+9X Acceleration of Data Refresh Rate
+JamLoop’s primary dataset in Snowflake consists of more than 3.5B rows. New data is constantly flowing in from various sources, and since JamLoop’s technology stands out in part because of its real-time results, the faster this dataset updates, the better. Previously, data updated in its reporting tool every 12 to 18 hours. With Sigma, data updates every 2 hours.
+Granular Reporting for Customers
+Traditionally, agencies would only share campaign results with their clients once a month or so, but today’s companies expect real-time feedback. With Sigma, JamLoop can present its clients with customized dashboards that allow them to share real-time, granular campaign metrics and results. 
+120% Increase in New Customers
+The shift to Snowflake and Sigma has even changed the way JamLoop’s sales representatives approach new business opportunities. In the past, they might have used a screenshot to demonstrate the technology’s reporting capabilities out of fear that a live demo would fail. Yet Sigma has proven to be so reliable and loads so quickly that his sales team now runs live demos of Sigma-powered dashboards at the outset of their pitch. This change has been a major factor in JamLoop’s 120% growth in new customers.
+BY THE NUMBERS
+9X
+9X ACCELERATION IN DATA REFRESH RATE
+67%
+67% COST REDUCTION RELATIVE TO DOMO
+120%
+120% GROWTH IN NEW CUSTOMERS
+More about
+JamLoop
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

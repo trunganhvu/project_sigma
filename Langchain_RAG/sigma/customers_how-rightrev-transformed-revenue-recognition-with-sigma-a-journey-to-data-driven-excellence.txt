@@ -1,0 +1,134 @@
+How RightRev Transformed Revenue Recognition with Sigma: A Journey to Data-Driven Excellence
+By Jagan Reddy
+CEO, RIGHTREV
+We spoke with Jagan Reddy, CEO of RightRev, a company at the forefront of automated revenue recognition solutions. Despite their expertise in streamlining accounting processes, RightRev faced challenges keeping users engaged with their analytics tools, often losing them to external spreadsheets. Seeking a solution that could integrate seamlessly and enhance user experience, they turned to Sigma. The result was a transformative shift in how RightRev delivers data-driven insights, empowering users with intuitive, embedded analytics that keep them within the platform and streamline their workflow.
+Life Before Sigma
+Before discovering Sigma, our embedded data analysis tool was inefficient and limited. At RightRev, we automate revenue recognition for finance teams, primarily serving accountants who often prefer spreadsheets for reporting. Despite efforts to keep users in our platform, many returned to Excel due to its familiarity and ease of use.
+We had tried embedding analytics tools before, but none met our needs. They struggled with integration, authentication, and providing a seamless user experience. After attempting two different tools, both failed to deliver. Report creation for our customers was slow and cumbersome, leading users back to spreadsheets, causing inefficiencies, data errors, and difficulties in maintaining a single source of truth.
+Choosing a BI Solution
+Choosing Sigma was not an immediate decision; it was the result of extensive evaluation and past experiences. Given my background—this being my second startup—I knew we needed a tool that could truly integrate with our revenue accounting platform and support our users’ preferences for Excel-like functionalities without sacrificing the embedded experience.
+We had tried two other analytics solutions before Sigma, both of which failed to meet our needs. These were competitive tools in the market, and I had even served on their customer advocacy teams, but they couldn't deliver what we needed. One key issue was authentication. Our customers might open our application in multiple browser tabs, and the tools we tried couldn't differentiate between sessions, leading to security and usability issues. Sigma, on the other hand, handled these situations seamlessly, recognizing different sessions and maintaining security integrity.
+Another significant factor was how easily Sigma facilitated the migration of reports and dashboards across different environments—development, testing, and production. No other tool made it as simple as Sigma, where a few clicks could migrate everything within seconds. This ease of use and flexibility in managing data migrations was a game-changer for us.
+Life With Sigma
+Sigma understands embedding better than any tool we’ve used before. 
+Since adopting Sigma, the transformation has been remarkable. Our users are now creating and managing their reports directly within our tool, eliminating the need to export data to spreadsheets. Sigma’s Excel-like functionalities are a big hit among our finance and accounting users. They can perform pivot tables and custom reports with ease, which has kept them engaged with the platform instead of reverting to external tools.
+Embedding Sigma within our platform has also been a huge success. It offers comprehensive control options, allowing us to tailor the embedded analytics experience to our users’ needs. The intuitive URL-based control system ensures that we can provide a seamless and secure analytics experience directly within our application, with no compromise on user experience or security.
+What took us a year to achieve with our previous tool was accomplished in just two weeks with Sigma.
+Moreover, the speed of implementation was incredible. This rapid deployment enabled us to provide our customers with valuable insights faster, significantly enhancing our value proposition.
+What’s Next with Sigma
+Looking forward, we have ambitious plans to leverage Sigma even more extensively. We are exploring the use of input tables, which will allow our users to input forecasts and compare them with actuals directly within the platform. This capability will be particularly useful for revenue teams who need to manage and track their forecasts without relying on separate tools or processes.
+We also plan to expand our use of Sigma’s collaborative features as our team grows. Although we are currently a small team with individual reporting needs, we anticipate that as we scale, the ability to work collaboratively in shared workbooks will become increasingly valuable.
+Security and data governance remain top priorities for us. Sigma’s robust data security features, such as security attributes, ensure that our customers only see their data and not anyone else’s, maintaining the integrity and confidentiality of our multi-tenant SaaS environment. As we continue to refine our data security strategies, Sigma will play a crucial role in helping us uphold these standards.
+Overall, Sigma has not only solved our immediate analytics challenges but has also opened up new possibilities for how we can engage with and support our users. We are excited to continue our journey with Sigma and to explore even more ways to enhance our analytics capabilities for our customers.
+‍
+ABOUT
+RIGHTREV
+RightRev automates revenue recognition to eliminate errors and reduce audit risks. Spend less time running reports and more time analyzing revenue.
+More about
+RightRev
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

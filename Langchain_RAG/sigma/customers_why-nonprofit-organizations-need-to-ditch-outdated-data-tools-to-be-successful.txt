@@ -1,0 +1,389 @@
+Why Nonprofit Organizations Need to Ditch Outdated Data Tools to be Successful
+By Jeff Jacobs
+DIRECTOR OF DATA OPERATIONS, VIRTUOUS
+We spoke with Jeff Jacobs, Director of Data Operations at Virtuous. Virtuous is a nonprofit CRM, marketing, online giving, and volunteer management platform. Dedicated to empowering nonprofits with essential growth tools, Virtuous facilitates strategic insights and operational efficiencies crucial for organizational success.
+Life Before Sigma
+Data is paramount to growth in the nonprofit sector, just like it is for any business that's trying to grow and retain customers or identify areas where its business is struggling. At Virtuous, we’ve got about 1,500 nonprofit customers on our platforms. 
+We were looking for a new data platform because our customers were really craving deeper insights and better reporting tools. We had some baked-in reporting that just didn't go deep enough and answer everyone's questions. Before we brought Sigma on, we looked at everything from Looker to Mode to Metabase, as well as Power BI – all things we had used in the past. All of them fell short in one way or another.
+With Power BI, when we evaluated it, the ease of use just wasn't there for us. 
+With Power BI, when we evaluated it, the ease of use just wasn't there for us. I didn't feel comfortable that we'd be able to hand that off to our internal teams and they would be successful. It really felt like a situation where we would be centralizing all of our reporting and analytics, rather than democratizing that and getting it out to the rest of the team for their own data discovery. 
+Life with Sigma
+What really sold us on Sigma was its ease of use. We knew we could get Sigma into anybody's hands in the organization, and if they were even a little familiar with Excel, they'd be able to work really well within it. Sigma allows people to make discoveries on their own, as well as do their own analysis. It's also freed up our analytics team to work on higher-priority projects. With Sigma and Snowflake combined, we can give our customers a proper data reporting warehouse. 
+We use Sigma across our finance team, our revenue operations, data team, as well as our engineering and product teams. We might have multiple people on the data operations team working on models, and then collaborating within Sigma to make additions to a workbook.
+With your embedded platform, we can now distribute analytics out to all of our nonprofit customers as well. That means they have the same ease of use and flexibility that we enjoy internally.
+Security at Virtuous is paramount for us. We have a strict policy against sharing customer data with anyone outside of the organization. With Sigma, we've been able to work with your solutions engineers to implement the right security measures, such as column-access and row-access policies, to ensure that you only see the data that you have the right to see. 
+Impact on Nonprofits
+When we first launched Sigma, the response from our customers was overwhelming. They really were clamoring to see a demo and see what it was capable of as well as what it could do for their organization.
+Traditionally, nonprofits have been handcuffed to outdated technology that hasn't met their needs. For example, they might be using finance software for fundraising purposes. They need data insights that allow them to grow and ultimately build better relationships with their donors.
+Nonprofits just have such huge needs around data, data visibility, what's working, as well as what's not. Sigma is finally allowing Virtuous to give our customers the insights that they really need. 
+Read more stories from Sigma’s customers here. 
+ABOUT
+VIRTUOUS
+Virtuous gives you the nonprofit CRM, fundraising, volunteer, and marketing tools you need to create more responsive donor experiences and grow giving.
+More about
+Virtuous
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

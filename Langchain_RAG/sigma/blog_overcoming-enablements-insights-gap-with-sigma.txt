@@ -1,0 +1,400 @@
+Blog home
+Overcoming Enablement’s Insights Gap With Sigma
+Jonas Taylor
+SR MANAGER, SALES ENABLEMENT
+Overcoming Enablement’s Insights Gap With Sigma
+As an Enablement leader, you've likely faced two main challenges:
+Gaining a seat at the decision-making table.
+Adopting a data-backed approach to programming.
+To secure a seat at the table, you need a data-backed strategy, but there's a catch-22. Most Enablement professionals lack the necessary analytics infrastructure and technical expertise to extract these insights independently.
+The Infrastructure Gap
+The solution seems simple: a dedicated RevOps or Data Analyst to handle enablement reporting needs. However, competing priorities and limited resources make this a luxury most growth-stage companies can't afford.
+Most Enablers lack access to live data from all their sources in one place. Merging this data often requires time-consuming, manual data extracts and VLOOKUPs. Enablement programs span multiple workflows, with essential behavioral data scattered across isolated tools. More data sources mean more data pipelines, and without a centralized Cloud Data Warehouse, data often ends up in ungoverned states like Excel or Google Sheets.
+The Skills Gap
+While most Enablers are proficient with spreadsheets and Salesforce reports, deeper data analysis often requires SQL or another programming language. This is where many of us hit a wall. We either revert to familiar spreadsheets or turn to the data team for support. The problem? Every new data question demands the data team's intervention, which isn't scalable for either side.
+Bridging the Insights Gap with Sigma
+So, how does Sigma bridge the gap for Enablement professionals? Here are three ways Sigma empowers us to gain insights without code:
+#1: Joining Live Data from Multiple Sources with Ease
+Sigma transforms hours of static VLOOKUPs into minutes of self-serve JOINs on live data. Previously, data from various tools like CRM, Sales Engagement platforms, Gong, Chorus, CMS, LMS, and financial plans lived in separate silos. Merging this data required multiple manual extracts and laborious VLOOKUPs, a process repeated for every new analysis.
+Here’s the kicker: I had to do this for every new analysis, which translated to days of work over the course of a quarter.
+Whether it was analyzing asset performance and utilization within a sales play, Gong adoption of new value messaging, or conducting an AE ramp analysis, I always had to rebuild it because the data was not live.
+With Sigma, I can access live data from the Cloud Data Warehouse and use a LOOKUP function similar to those in spreadsheets. Sigma writes efficient SQL queries and sends them back to the CDW to join the data correctly. Now, I build the master table once and spend more time analyzing instead of constantly rebuilding.
+#2: Data Enrichment via Write-Back Functionality
+We use Sigma’s write-back functionality to track internal promotions and attrition in our Ramp Tracker. When performing a ramp analysis for AEs, datasets from other departments often lack crucial fields.
+In this scenario, I had already built the ramp tracker and was looking at Quota Participation YoY by Onboarding Cohort and noticed massive discrepancies that were probably attributed to reps exiting the business during their ramp period, so this was naturally pulling down the averages for some cohorts.
+I needed a quick and easy way to add columns to my data on the fly (without changing source data) that I could reference in calculations or filters to ensure my visualizations were telling the real story.
+#3: Understanding the Context Behind Live Data
+Traditional BI tools often leave me at a dead end because I don't have all the live data I need. This means either waiting for the data team to add more columns or lacking access to the source data behind visualizations. Context is crucial. Knowing the Time to First Deal for a new hire is helpful, but I also need the opportunity name, details about the deal size, product types, and whether it was inbound or outbound.
+There’s so much context that gets lost in summaries. Typically, these summaries lead to more and more questions so we can understand performance trends across new hire cohorts. Historically, every new question led to a new metric or value that I needed, but I didn’t know I needed it until I began my data exploration journey.
+Sigma ensures I have the source data at my fingertips, allowing me to explore performance trends and answer new questions as they arise without needing to submit tickets or learn a new language.
+Think Like a Data-Savvy CRO with Sigma
+To secure a seat at the table, Enablement leaders must think like data-savvy CROs, understanding core SaaS revenue metrics and the inputs influencing them. Sigma empowers Enablement and RevOps teams to self-serve their data exploration and analysis needs. Whether joining live data from multiple sources, enriching data without altering the source, or understanding the context behind live data, Sigma turns every Enabler into a data analyst without needing code or prior BI experience.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

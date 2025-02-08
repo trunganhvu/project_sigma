@@ -1,0 +1,21 @@
+Delightful content creation and user administration
+Highlights from new features we built this month
+August 30, 2023
+Arielle Strong
+Earlier this month, we passed 10,000 Github pull requests - meaning we’re closing over 150 issues per week! So, I can honestly say we are improving Omni’s business intelligence platform each day. 🤯
+Before we close out August, I want to take a minute to highlight a few of the recent product updates I’m personally excited to release and use. Most of these focus on creating an even better user experience - for consumers, admins, and everyone in between.
+Intuitive, powerful visualization and dashboard curation
+Our goal is for everyone to be able to use Omni - no matter their background. In August, we took a big step forward toward that goal by making visualization creation more intuitive with a new drag-and-drop visualization editor. Now, anyone can fine-tune visualizations for their dashboard or deck – and we think it’s a delight to use if we do say so ourselves!
+Speaking of creating the perfect viz, we’ve just released a new KPI visualization, which allows you to combine numbers, charts, change arrows, progress bars, and text to clearly communicate exactly what’s happening with your most important metrics.
+We’ve also been thinking about ways to make dashboards a much more dynamic and informative experience for everyone...
+Thanks to inspo from our users, we’ve expanded our work around templating visualizations. Now, you can reference query elements inside of markdown tiles, query elements (such as axis titles), and even insert dashboard filters into text tiles. This is great for proactively communicating which filters are already applied and highlighting key findings from the underlying query (such as totals).
+And don’t forget that you can also include elements of web pages directly into Omni dashboards by embedding iframes. From maps and weather to videos and surveys, adding outside web elements allows you to deliver helpful context alongside your data and build a more engaging user experience.
+Finally (for viz and dashboard updates 😀), we’ve also enhanced the filter mapping to make it easier for users to select which filters are applied on each dashboard tile. Although this isn’t just limited to dates, this can be especially useful when mapping a filter to different date fields across multiple tiles.
+Expanding administrative controls
+These next updates are specifically for our administrators, to make it easier for you to add and manage users across your organization.
+First, we’ve added a new connection permission called 'Viewer,' which limits users to only viewing dashboards built on predefined Topics. *Note: If you’re new to Omni, a Topic is a declaration of desired base tables and any associated tables that can be joined for analysis to create a curated self-serve query experience.
+These expanded permissions help you confidently scale the right level of access across all your users.
+Lastly, we strive to stay in lockstep with changes in the database layer and to find ways to decrease repetitive maintenance work for our users. Building upon our refresh schema functionality, we’ve now added aliases parameters to views and fields. So when a table or field name changes in the database, your content can be preserved.
+...And that’s not all!
+We’ve continued to focus on the core model and exploration experience with updates to calculations in pivots, adding joins to Topics (without having to go to the IDE), and more so be sure to check out our Changelog for additional details.
+Finally, if you want a preview into what (and how) we’re building, check out our weekly internal demos for a transparent view into our journey... and just how many 🔥 emojis we use.

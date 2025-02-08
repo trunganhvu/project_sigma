@@ -1,3 +1,104 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Format and customize a table
 Suggest Edits
 You can efficiently and effectively design and format the display of your tabular data in Sigma. Sigma provides preset display styles for out-of-the-box aesthetics and readability, or you can customize style components independently for more personalized table designs.
@@ -52,10 +153,11 @@ The Cell tab contains settings and tools that let you format data cells. You can
 📘
 For pivot tables, cell styles apply to both value and total cells by default. To apply different styles to pivot table total cells, see Format pivot table totals.
 Format column location in a table
-To manage visibility and interactions with the columns in a table, you can format the location of columns in a table.
+To manage visibility and interactions with the columns in a table, you can format the location of columns in a table or pivot table.
 Right-click a column, or select the caret () to customize a column:
 Choose Freeze up to column to freeze the position of that column and all columns to the left of the selected column. When scrolling to the right, the frozen columns remain visible. To remove a column from the frozen position, choose Unfreeze columns.
 Choose Hide column to hide the column when the table is viewed. You can reference hidden columns in formulas. Child elements created from a table with hidden columns do not include the hidden columns, but the columns can be added.
+Pivot tables support freezing values columns, including totals columns, but not pivot row columns or columns set as pivot columns.
 Hide and show table components
 To manage whether various table components are shown in a table, you can format the table components:
 Open a workbook in Explore or Edit mode.
@@ -103,3 +205,9 @@ Choose between Single color, Color scale, and Data bars options for the formatti
 For Formatting rule, define the conditional formatting rule. Choose a prebuilt rule, or define a custom formula.
 As you create the rule and define the formatting, the formatting is applied to the relevant columns and cells.
 (Optional) Add more conditional formatting rules by clicking + Add rule.
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

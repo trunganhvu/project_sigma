@@ -1,0 +1,38 @@
+Using alerts for operational workflows in Omni
+How teams can stay informed and act on their data
+July 31, 2024
+Corey Ruderman
+I’ve built alerts for a data product before, but we didn’t want to rinse and repeat when building alerts for Omni. Our goal was to make it easier for anyone to stay informed and kickstart workflows with data, and we were excited to find ways that unique features like Omni Calculations and AI could help them achieve that.
+And so, I’m excited to share ways that folks can create rule-based alerts in Omni to send the data they need wherever they’re working, whenever they’d like.
+Alerts in Omni can be customized to trigger based on specific conditions, at certain frequencies, and to any destination (email, Slack, webhook, etc). For example, you can get alerts when…
+Results have changed: Sales teams can get alerts when there’s a change in the quarterly sales leaderboard. | Ex. query: Rep and Amount Closed, filtered for Close Date = current quarter
+Results have not changed: Product teams can get notified if a GitHub issue has remained open for an extended time. | Ex. query filter: Issue Created Date > 1 month ago
+Results are present: Business development teams can be alerted when an opportunity is missing critical information in Salesforce. | Ex. query filters: Opportunity First Meeting Date is not null & Follow-up Notes is null
+Results are missing: Data teams can be notified if data stops flowing into key dashboards. | Ex. query filters: Created Date = yesterday
+With these simple conditions, you can create operational workflows that help you and your team take action based on your data. Read on to learn how one of our customers, Ascend, uses alerts – and how the Philadelphia Eagles, my dream customer, could use alerts, too! 
+Customer spotlight: Using alerts at Ascend
+We knew V1 of alerting had to be great because customers rely on it to initiate critical workflows related to financials and customer experience. Shyam Sivakumar, head of data at Ascend, has been one of the customers who’s helped us think about the best way to build alerts.
+“After migrating from Looker, it was important to me that our new BI platform offer rule-based alerting if certain thresholds or metrics were met, so we could quickly kick off downstream workflows. Our entire business is built on moving money around, so being on top of that is mission-critical for our customers.”
+Shyam Sivakumar, Head of Data at Ascend
+Some of the early ways they’re using alerts at Ascend are for:
+Operations: Previously, Ascend ran custom Python scripts to initiate an invoice send when a data condition was met. Now, they can save time usually spent on coding and data pipeline maintenance with Omni alerts.
+Sales: When insurance policies have an upcoming cancellation date, they need to be closely monitored. With Omni, they can set data thresholds to begin requesting cash and documents from the vendor at the right time for each impending cancellation. This helps ensure Ascend’s customers have a great experience by getting their money and documents back by the cancellation date instead of needing to follow up and chase it down.
+Company-wide updates: To keep everyone at Ascend informed on company progress, they monitor quarterly KPIs in Omni and set up Slack alerts so the entire company can see exactly when key milestones are achieved – and celebrate together in real-time!
+“It’s been great to work with such a responsive Product and Engineering team. When I ask, Omni gets it done, and that’s pretty unique.”
+Shyam Sivakumar, Head of Data at Ascend
+Dream use case: Helping the Philadelphia Eagles fly with data 🦅 
+First off, the Philadelphia Eagles are not Omni customers — yet. But an engineer can dream 😅
+However, these are a few ways I think we could help my favorite team get more from their data with alerts:
+Merchandising team tracking jersey inventory: If, hypothetically, the Eagles signed the best running back in football, there's a chance his jersey sells out. With alerts, the merchandising team can stay on top of real-time changes to inventory by setting an alert to notify them if inventory drops below a certain number.
+They can even send the alert to their jersey-ordering software via a Zapier webhook. That way, whenever jerseys are running low, the Omni alert would automatically kick off the procurement process to order more jerseys.
+Marketing team monitoring ticket sales: If there’s a big spike (or drop) in ticket sales, the Eagles marketing team needs to take action (e.g. re-posting a viral social media post, sending out promo codes via email). The team could set up alerts to receive notifications when sales for an upcoming game increase or decrease beyond a certain threshold in a single day.
+How to create an alert in Omni
+Getting started with alerts is easy! Here’s how:
+Create your trigger query: Use Omni's workbook features like AI, Calculations, and filters to set up the data you want to monitor.
+Define your alert: Configure the alert to deliver your desired content, such as a dashboard or query, based on a rule.
+Set the frequency: Determine how often you'd like to check the result of the trigger query and receive alerts. You can specify a cron string or set a frequency, such as daily, weekly, or monthly.
+Choose the delivery method: Select where you want to receive the alert – via email, Slack, or webhook.
+You can find more details in our documentation. 
+Operationalize your data with Omni alerts
+We’re continuing to expand upon alerts to make it even easier to kickstart notifications and workflows with Omni, so we’d love to hear from you if you have any thoughts. For customers, this is already live in the product. And if you’re not already using Omni, our team can help you get started.
+P.S. If you work for the Philadelphia Eagles and ever need to fill seats or talk about data, you know where to find me 👀.

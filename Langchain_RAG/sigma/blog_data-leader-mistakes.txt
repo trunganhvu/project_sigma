@@ -1,0 +1,398 @@
+Blog home
+Flirting With Failure: The Mistakes That Sabotage Data Leaders
+Serena Huang
+AUTHOR, KEYNOTE SPEAKER, PH.D.
+Flirting With Failure: The Mistakes That Sabotage Data Leaders
+Being a data leader isn’t easy. I’ve seen it firsthand—not just from my own experiences, but from watching others navigate this space. And to be honest, a lot of us make the same mistakes. We get so caught up in the technical details and the love of data itself that we forget what really matters: how our work drives business outcomes and supports the people on our teams.
+But here’s the thing—being a great data leader isn’t about knowing every tool or model. It’s about stepping back, asking the hard questions, and finding the courage to do things differently. The opportunity is huge if you’re willing to take it. So let’s dive into the biggest mistakes I’ve seen data leaders make—and how we can fix them, starting today.
+Mistake #1: Talking Too Much About Data
+This might sound counterintuitive, but hear me out. A lot of data leaders talk too much about data. We get into these roles because we’re very technical, and we love data. But when we’re in a room with business leaders, they don’t appreciate data in the same way we do. By talking too much about data, we sometimes get misunderstood as more technical than business-focused.
+Instead, it’s critical to focus on the business problems you’re solving. For example, instead of saying, “We’re addressing gaps in data quality,” say, “Improving data quality will reduce churn by 15%.” That shift—from focusing on the data to focusing on the outcome—makes all the difference. Great data leaders can bring insights to the table that lead to action. That’s how you influence decision-making.
+It’s also worth noting that the audience you’re speaking to matters. Tailoring your message to the context—whether it’s a team of engineers, business leaders, or executives—ensures your insights land effectively. I often remind data leaders: your technical expertise got you to the table, but your ability to communicate outcomes will keep you there.
+Mistake #2: Failing to Show Financial Impact
+A lot of people talk about business impact, but CEOs and CFOs care about something more specific: financial impact. If you’re not connecting your work to the top line or bottom line, you’re going to struggle to get support for resources or investment.
+For example, let’s say your team builds a predictive model. Instead of stopping at, “This model improves forecasting accuracy,” take it further: “This model improves forecasting accuracy, which will reduce inventory costs by $1.2 million annually.” That’s the kind of connection you need to make.
+If you’re not connecting your work to the top line or bottom line, you’re going to struggle to get support for resources or investment.
+It’s also important to train your team to think in terms of financial outcomes. Teach them to frame insights in ways that resonate with the C-suite. When your work demonstrates a clear ROI, it’s much easier to secure buy-in.
+Additionally, financial impact isn’t just about cost savings. It’s about demonstrating growth opportunities as well. For instance, showing how analytics can uncover new customer segments or optimize pricing strategies speaks directly to business priorities. I’ve seen organizations transform by shifting from focusing solely on efficiencies to highlighting how data drives innovation and revenue growth.
+Mistake #3: Overlooking Human Skills
+Technical expertise is important, but it’s not enough. As data leaders, we need to focus on building relationships and trust. Communication, empathy, and influence—these are the skills that separate great leaders from the rest.
+I’ve seen how investing in these skills can transform a team. Build your team’s business acumen. Help them understand how to present insights to non-technical audiences. And create an environment where people feel supported and valued. A thriving team is the foundation of any successful data strategy.
+Leadership is also about adaptability. In a rapidly evolving field like data, the ability to navigate change, inspire confidence, and foster collaboration is invaluable. Encourage your team to embrace continuous learning—not just in technical skills but in communication and interpersonal growth.
+How to Fix These Mistakes
+Reframe Your Messaging: Always tie your data story to a business narrative. Focus on outcomes, not inputs. Lead with how your work impacts the business. Don’t just present numbers; tell the story behind them.
+Speak the Language of the C-Suite: Think in terms of financial metrics like revenue and profit. Connect your insights to what matters most to executives. Use real-world examples to illustrate the tangible benefits of your work.
+Prioritize People Skills: Invest in leadership development for yourself and your team. Build your emotional intelligence and storytelling abilities. Strong cross-functional relationships are key. Remember, data leadership is about building bridges between technical and business worlds.
+Measure Success by Action: Data is only as good as the decisions it drives. Make it a goal to ensure your insights lead to measurable actions. Regularly revisit whether your team’s work is moving the needle for the organization.
+Encourage Transparency and Feedback: Foster an environment where your team feels comfortable sharing challenges and successes. Transparency builds trust and ensures alignment across teams and departments.
+Invest in Scalable Solutions: Look for tools and technologies that make data insights more accessible and actionable. Simplify workflows so that decision-makers can quickly extract value from analytics without needing to decode complex dashboards.
+Honestly, data leadership is messy. It’s a mix of figuring out how to align people, processes, and tech—and you’re not always going to get it right the first time. That’s okay. What matters is being willing to step back, learn from mistakes, and keep moving forward. None of us have it all figured out, but by focusing on outcomes, prioritizing the human side of leadership, and staying adaptable, we can all do better. And if you’re not sure where to start, just ask yourself: what’s one thing I can do today to make my team’s work more impactful? Start there, and let the rest follow.
+About Serena Huang
+Serena Huang, Ph.D., is a data leader and speaker focused on aligning analytics with business outcomes. She shares insights on data strategy and leadership at Data with Serena. Serena is also the author of The Inclusion Equation, which explores the intersection of data, diversity, and leadership.
+THE ULTIMATE KPI PLAYBOOK
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

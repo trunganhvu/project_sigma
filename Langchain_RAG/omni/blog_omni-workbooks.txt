@@ -1,0 +1,29 @@
+Introducing the next version of Omni workbooks
+To help you navigate and collaborate through the winding journey of data
+March 30, 2023
+Arielle Strong
+Data work isn’t linear. You start out with a question and (hopefully) a rough idea of how to get the answer. As you dive into the question, you’ll iterate on it, ask new questions, change the question altogether, circle back to the SQL query you wrote or workbook you created days ago, and sometimes loop in other people to help or clarify assumptions. And finally, when you get the answer, you may want to save it somewhere that is trusted - this is the answer we should all use.
+...And sometimes not; sometimes the answer supports a just-in-time decision and can be thrown away.
+We believe that both of these workflows (and lots in between) are important and valid.
+The pillars of data collaboration
+When designing the Omni business intelligence platform, we wanted our analysis and content creation workflow to reflect and complement that twisty-turny journey - not hamper it. We had three pillars in mind:
+Encourage curiosity
+Make sharing and collaboration easy
+Support the lifecycle of content *Accepting that sometimes an analysis will live for a long time as a trusted piece of content, and sometimes it just needs to serve a one-time case and not pollute the system
+Our first iteration of workbooks took a URL approach, giving us instant shareability and the ability for users to riff on an analysis quickly. Changing anything in the workbook generated a new URL, and previous versions were always available via the back button. Sharing was easy, but collaborating on content could be tricky because there was never ‘one’ saved version of the workbook to return to.
+Inspiration from the collaboration ecosystem
+We looked at other collaboration products for inspiration. Google Docs and Figma have a document-based approach: you open a new doc, others join in, and you’re always working on the same version together.
+We liked the idea of letting users work together on a piece of content vs. being siloed in their own worlds like legacy desktop-based analytics products. We also liked that Google Docs and Figma give a historical view to show who changed what.
+However, the challenge with this model is that you’re always updating the latest version. With data work, you don’t always want to update the original content - often you want to branch off of it and ask a new question or tweak it and then decide later if it’s worth saving.
+3 things to know about Omni workbooks
+#1) Seamlessly flip between answering one-off questions and creating trusted content
+When you just need a one-off answer: choose a data set, ask a question, and close it out. This workflow won’t create clutter in the content system, and history is always available from the Activity page.
+When you’re ready to create a trusted answer: name and save your workbook! Now it lives in the content system, so you and others can easily find it again (and iterate on it for years to come).
+#2) Preserve all changes with historical tracking and versioning
+Once you save a workbook, it operates like a document. It tracks your changes, allowing prior versions to be revisited or restored - even that SQL query you wrote and then abandoned a few weeks ago.
+There are two modes for interacting with a workbook: editing and viewing. Edit mode auto-saves all changes, and view mode lets you share the workbook without fear of someone changing it. And if you (or someone else) make an edit you no longer want, it’s easy to restore to the previous version.
+#3) Confidently explore - without fear of breaking anything
+Sometimes you want to riff on a query or visualization without impacting the original workbook. If you exit edit mode, you can freely interact with and change the workbook as a new exploration.
+You can also share that exploration through the URL, save it, or just exit to go back to the original…all without fear of breaking someone else’s content.
+These new improvements to Omni workbooks make it even easier for you to answer questions, ask new questions, and circle back to the trusted answers - as often and easily as you need.
+And if you’re curious to test this for yourself, we’d love to have you explore Omni 🚀.

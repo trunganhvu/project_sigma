@@ -1,0 +1,76 @@
+Unified Analysis Across Replicated Schemas
+Our First Real Omni Use Case
+March 14, 2023
+Colin Zima
+Overview
+One amusing challenge of building a data company is you don’t have enough good data problems early to exercise your platform. Of course you can always put demo data into the tool - ecommerce data, or the New York taxi data, or some other public data set - but it’s never the same as actually needing to do real work with data.
+At twelve months young, we had that same problem at Omni, until last week. As we open up Omni to the world, we’ve begun to need real usage data to triage support and invest in training. Thankfully we have a tool for that!
+The data
+Right now we’re deploying each customer into a single-tenant cloud environment (over time this will become multi-tenant for trials and smaller customers). This simple deployment strategy, however, makes global analytics somewhat challenging. To run simple database queries across the customer base requires bringing all of these data sets together.
+Because we’re built in Amazon, exposing RDS to Redshift via Spectrum is somewhat straightforward. After a bit of back and forth, we had a few instances’ metadata available for analysis without needing ETL. Unfortunately, interactively querying tens of separate tables isn’t a particularly pleasant user experience. We knew we needed these tables in a more consumable format.
+Our first dashboard
+Enter Arielle, our PM leader (and most curious user for the purpose of usage data). She was able to manually chain some unpleasant but effective SQL together,unioning the 3 categories of tables we needed to start counting queries and users (who hasn’t written a union query in Excel a few times). Omni lets us build queries in one tab and requery that data in another, which gave us our first self service data set:
+Avert your eyes
+Painful-looking SQL aside, we now had a few big tables that we could join together and query interactively (ie SQL date parsing, filters, pivots, etc). Working with a smaller pool of design partners, the pace of adding new users was such that we could reasonably keep up with adding each manually, and this formed the basis of our first usage dashboard and carried us for a couple months.
+A selection of our users
+As the pace of onboarding new users increased, the workflow to paste repeated SQL and duplicate across multiple unioned tables became impractical, and we started falling behind, meaning our team was often missing data from newer users. Additionally, it wasn’t uncommon to experience 30s+ query times, since all of these unions happened at query time on first load - ultimately less impactful since the Omni cache sped up any follow up queries, but an annoyance nonetheless. We knew we had to lift the workflow into a more scalable process now that the whole company was using the dashboard to make decisions every day.
+Lifting to dbt
+The goal of the Omni platform is to let users build quickly and deliver value, but also provide the best workflow to make it scalable. So this was an opportunity to prove that experience. Rather than try to fight the ecosystem, we wanted to lean into common workflows for our customers, and dbt was the natural choice for routine data transformation.
+We found a very nice article on the exact problem to get us started, though unfortunately we needed to jump straight to the “extra credit” section at the bottom. We wanted to build universal views that would collect together a quickly growing customer list and a number of common tables, which meant loading these tables programmatically across lots of schemas – not exactly dbt’s cup of tea.
+Sidebar dbt and models
+I was admittedly rusty on using dbt, but didn’t quite realize the trade-offs between model building and just having a thing that writes arbitrary SQL. Turns out that dbt generally expects the model-per-file experience, with a single query per model. And for good reason, it helps manage dependencies clearly and reliably for a “normal” analytical workflow. Unfortunately, we wanted a classic software engineering double for loop (tables and schemas), where each table was completely independent but structurally identical (ie union queries tables into one query view, then union permissions tables into one permissions table, etc). Dividing each into a model just wasn’t going to fly.
+Thankfully, our CTO Chris knows some things about dbt, and pointed us towards on-run-start:, which allows for arbitrary SQL running in front of a model build. This lets us run our sequence of CREATE TABLE AS SELECT statements and call it a day. One more pro-tip, if you don’t have any models, your on-run-start: will not run! We added a SELECT 1 to solve that and build a dummy model.
+Back to our dbt build
+We now have figured out that we can pile a bunch of SQL loops with CREATE TABLE AS SELECT into on-run-start:, so from there it was just on to structuring the macro successfully. We originally kept customers as a list, but even reworked that into a variable (we have another loop to open up the postgres tables into Redshift Spectrum that we’ll leave out of this example).
+Here are the goods:
+macros:
+ - name: unioner
+   description: unions tables
+
+{% macro unioner() %}
+  SET enable_case_sensitive_identifier TO TRUE;
+  -- see https://docs.aws.amazon.com/redshift/latest/dg/federated_query_example.html#federated_query_example_postgres-mixed
+  {% set schemas =  var("customer_instance_schemas") %}
+  -- bad tables:  'queries' (json field produces 'Value of VARCHAR type is too long.' error)
+  {% set tables =  ['bookmarks', 'connections', 'dashboard_layout_views', 'dashboard_layouts', 'invitation_requests', 'invitations', 'memberships', 'models', 'organizations', 'qp_collection_memberships', 'query_history', 'query_presentations', 'query_presentation_collections', 'sessions', 'users', 'vis_config' ] %}
+
+  {% for table in tables %}
+    DROP TABLE IF EXISTS dbt_czima."{{ table }}";
+    CREATE TABLE dbt_czima."{{ table }}" as
+
+    {% for schema in schemas %}
+      SELECT
+        *,
+        '{{ schema }}' as tenant
+      FROM "{{ schema }}"."{{ table }}"
+      {% if not loop.last -%} UNION ALL {%- endif %}
+    {% endfor %};
+  {% endfor %}
+{% endmacro %}
+The approach is quite simple, looping over all of our customers for each table name:
+Name our macro
+Set the schema list
+Set the table list
+Drop the table if it exists
+CREATE TABLE AS SELECT statement
+SELECT * and name the group of rows after the schema
+Add a UNION ALL, except for the last loop
+And the project file is even simpler:
+Run the model (our only model file is a ‘Select 1’
+Include the customer names as a variable (this will eventually turn into a call, but I need to figure out setting vars dynamically)
+Our on-run-start with the union
+models:
+ omni:
+   # Config indicated by + and applies to all files under models/example/
+   +materialized: table
+
+vars:
+ customer_instance_schemas: [# list of comma delimited names]
+
+on-run-start:
+- "{{ unioner() }}"
+Final product
+The outcome is a set of tables we can now query across our entire customer base, refreshing on a 1 hour window:
+Bar charts rule the day
+Of course there was some technical legwork to rebuild our data pipeline, but for vanilla columns or tables, the goal is to make this hardening process of business logic completely seamless to the user - build once, consume, and govern however you like later.
+If making single tenant analytics more scalable is something you’re looking for help with, reach out and we’ll help you get started in Omni.

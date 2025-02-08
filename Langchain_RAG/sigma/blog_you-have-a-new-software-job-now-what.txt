@@ -1,0 +1,419 @@
+Blog home
+You Have A New Software Job — Now What?
+James Johnson
+SOFTWARE ENGINEER
+You Have A New Software Job — Now What?
+I felt terrible. A brand new job, and the project I was working on kept running into problems. I had assumed it would take a week at most, and here it was dragging on for a month with no end in sight. How was anyone going to see me as anything but a failure? With twenty years of software development experience under my belt, I was supposed to be an expert. Surely an expert would have finished the project by now?
+If you’ve ever had a job in software development, there’s a good chance you’ve felt something similar at some point in your career. And if you haven’t yet, you probably will. I recently started at Sigma Computing after six years at another company, so this became an opportunity to learn and reflect on what it’s like to transition to a new job.
+Here are some of the things I’ve learned about that in my career.
+No one expects you to be a rock star your first day
+In fact, no one expects you to be a rock star at all. But even against the lower bar of expert-at-some-things-and-competent-at-others, people recognize that it takes time to get to that point. Your first week will likely be filled with filling out forms, setting up your dev environment, learning about the product you’re working with, lots of onboarding meetings — who has time to write any code?
+If you’ve had software jobs in the past, think about the times that a new coworker has started. Did you expect them to know everything right away? Of course not! But we’re always our own harshest critics, and sometimes it’s hard to give ourselves the same leeway we would give others.
+You have a lot to learn
+Ironically, the more experience you have, the harder it is to accept this lesson. If you’ve been building web software for ten years, then with all of that knowledge you’ve learned over the years, you should be able to pick up a ticket and speed through it, no problem, right?
+Well…not quite.
+You know a lot about software development, for sure. But really, what you’ve learned is how to make software at your previous companies. But every codebase is different and every company has its own processes, whether formal or informal. For instance, consider the release processes for two different companies:
+Wacky Widgets, LLC
+Make pull request
+Wait for two approvals
+Send to QA
+Merge to develop
+Make release ticket
+Send release candidate to QA
+Release to Staging
+Release to Production
+DOT.COM.COM
+Make pull request
+Wait for an approval
+Merge to release
+Wait for integration tests to pass
+Release to production
+Now, one of these isn’t necessarily better than the other — organizations might have a variety of reasons for having the processes they do. The point is that they’re different. If you’ve learned to make software at one company, it’s going to take you some time to adjust to doing things a different way.
+Don’t be afraid to ask questions
+So you’ve accepted that you won’t learn everything right away, and your new co-workers will give you some time to learn it. How do you fill in those knowledge gaps? That’s easy. Ask, ask, ask.
+I’ve lost count of the number of times I’ve run into a problem, but hesitated to ask anyone about it out of fear of looking incompetent. They can’t find out that I don’t know, I think. They’ll realize I’ve been faking it this whole time. And now I’ve added imposter syndrome to my list of problems.
+Seriously though, if you think you have I’m Pasta Syndrome, call a doctor
+But think about it from your coworkers’ perspective. If someone asks you a question about how something works, does it make you think they’re a fool? Does it make you regret hiring them? No, probably not. You probably just answer their question and move on without thinking about it.
+And if that’s not enough to convince you, imagine it from the business perspective. Would you rather an employee spend a few minutes asking a question with a potentially easy answer, or would you rather they spend a few days trying to work out the answer for themself?
+Keep an open mind
+As I said earlier, your new company will be different from your previous ones in many ways. They may be different in ways that you didn’t even realize companies could be different. So when you come across one of these differences, it can be tempting to dismiss the new way as “wrong” and try to advocate for a change to what you’re familiar with.
+But don’t rush to judgement. If something seems wrong to you, it may be because you don’t understand the full context. That release process that seems onerous and convoluted? It may be because the company has extensive regulatory requirements that have to be accounted for. That antiquated library in use? It may be because that was all that was available at the time, and it hasn’t yet been worth putting resources towards updating it.
+Of course, there will be cases where you’ve identified ways the software can be improved — and that’s great! Your perspective is one of the reasons they’ve hired you. But before you go about pushing for wholesale changes, try to understand why things are the way they are and what problems they solve. Whatever alternative you propose will have to account for the same problems.
+Get to know your new co-workers
+Admittedly, this tip was a lot less relevant before 2020. When you’re working in an office with people, it’s hard not to get to know them over time. But now that so many of us are working from home, it’s a lot easier to lose contact.
+This is how we do it now
+I started at Sigma a month after everyone started working from home. I have a lot of experience working remotely, and I’m an introvert, so I thought I would be an old pro at it.
+What I didn’t account for was all the little ways being in an office helps you assimilate into the culture. A quick chat in the break room. Greeting your teammates when you arrive in the morning. Idle chit-chat about what you did over the weekend. Nothing’s technically stopping you from doing that over Slack or Zoom, and yet…it’s just a little harder.
+When you only ever talk about work with your co-workers, it can be easy to lose sight of the fact that they’re people, and to instead see them as a collection of JIRA tasks and Github comments. And that makes it harder to see things from their perspective, which is an essential skill in a workplace.
+At Sigma, we use Donut to randomly match people for half hour “coffee” chats. Our frontend team has a weekly hangout session where we talk about things other than work, and there’s a company-wide happy hour as well. If those things don’t exist at your new company, why not start them? You don’t necessarily have to be friends with your co-workers, but a little social interaction can go a long way.
+So how did it turn out for me? Well, the project I thought would never end is wrapping up now, and it’s delivering value to our customers. Most importantly, I learned a lot about an aspect of development I wasn’t very familiar with. So the next time I’m faced with a similar task, it should be a whole lot easier. And my co-workers at Sigma have supported me the whole way.
+Starting a new job is scary. But it’s also an opportunity to meet new people, learn new things, and grow your career. If you’re overwhelmed at first, just look around the office (or Zoom screen) and remember: everyone you work with once went through the very same thing.
+Thanks to Massimo
+‍
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

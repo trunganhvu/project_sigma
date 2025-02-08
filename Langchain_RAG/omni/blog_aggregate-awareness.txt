@@ -1,0 +1,28 @@
+Introducing Omni aggregate awareness
+Making query optimization even easier
+May 24, 2024
+Steven Talbot
+Data teams today are constantly making trade-offs between speed and freshness:
+Early BI tools focused on transforming data into cubes (aggregates) and reporting on these smaller, cleaner data sets — optimizing for speed.
+Modern data warehouses popularized operating in-database on the biggest, freshest data possible.
+The reality is that users need both worlds: efficient cubes for common questions and fresh, row-level data for detailed analyses.
+Today, we’re excited to bring together these two workflows in Omni with aggregate awareness. Using aggregate awareness, you can leverage preexisting, clean data (perhaps transformed by a tool, like dbt) to optimize your queries dynamically and help them run between 10x and 100x faster.
+How to use aggregate awareness in Omni
+Even though it’s very powerful in practice, it’s simple in concept:
+Build an aggregate or rollup table
+Omni pulls in that table from your database
+Add some metadata to the view, helping Omni match the aggregate table to the underlying views
+At query runtime, Omni will dynamically swap in the aggregated table for the underlying table if it contains all the necessary fields to execute the query
+Since the aggregated table is smaller than the underlying table, queries running against it will be faster and more efficient
+In the above demo 👆, my teammate Conner shows aggregate awareness through a few simple steps:
+Build an aggregate table: Use Omni to write to dbt to generate an “order_items_agg” table in the database based on the “order_items” table. This aggregate table has (1) order_id, (2) user_id, (3) total_sale_price, and (4) order_items_count.
+Omni pulls that view in: Omni will see this table in the information schema and automatically generate a view for it.
+Add metadata to the query: To enable Omni’s aggregate intelligence, add metadata with the definition for the equivalent query in Omni to the view. This tells Omni the relational algebra equivalent to the table, which it can match to other Omni queries.
+Omni chooses the optimal table to query: Then, when running queries against the order_itemsview, Omni will use order_items_agginstead of the underlying “order_items” view if it has enough information to complete the query, leading to faster, more efficient query execution. For example:
+If simply calculating the total sale price per user, Omni will rewrite the query to pull from the order_items_agg table instead of the order_items table.
+If the query contains other columns not in order_items_agg, then the query will still hit the underlying order_items table.
+Aggregate awareness is a natural extension of our existing capabilities, leveraging the deep SQL intelligence we built into Omni from day one. Since launch, our requeryable cache dynamically optimizes queries using cached results of previous query runs, which we load into DuckDB. This optimization reuses computational resources and reduces round-trips to your database for actions such as re-filtering and re-aggregation of a query.
+Since our vision has always been to go further, aggregate awareness now lets you use the same logic to optimize queries that use aggregate tables or materialized views in your database with aggregate awareness.
+Getting started with aggregate awareness
+If you’re using Omni today, you don’t need to have rollup tables lying around to use the feature! You can use Omni to generate the SQL for some new rollup tables, and then use our dbt integration to materialize those SQL queries in your database using dbt. Then, you can pull those materialized tables into Omni, add some metadata to the Omni view, and bam 💥 – you’ve got faster, dynamically optimized queries using aggregate awareness.
+This is just the next step in our ongoing work to build and test new ways to make it easier and faster to do what you need with data. If you’d like to learn more about what we’ve built, we’d love to show you.

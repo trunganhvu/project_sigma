@@ -1,3 +1,104 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Create actions that manage control values
 Suggest Edits
 Workbooks support actions that set or clear values of specific control elements, enabling interacting users to quickly filter and unfilter data for different focused views.
@@ -13,7 +114,7 @@ If you’re granted Can explore workbook permission, you can configure actions b
 Set a control value
 Create an action that sets the value of a specific control element in the current workbook.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Set control value.
@@ -25,7 +126,7 @@ Values from a column: Passes values from the specified column in the trigger ele
 Only available when the trigger element is a table, pivot table, input table, or visualization.
 Custom formula: Passes a value based on the defined formula.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -34,7 +135,7 @@ Consider allowing keyboard navigation to trigger actions only when it facilitate
 Clear one or more control values
 Create an action that clears the values of one or more control elements in the current workbook.
 Open a workbook in Explore or Edit mode.
-Select the element you want to trigger the action, then click Actions in the side navigation.
+Select the trigger element (the element users must interact with to initiate the action), then click Actions in the side navigation.
 In the Actions panel, click Add action in an existing sequence, or click Add action sequence to create a new one.
 In the Action modal, configure the required fields to define the response:
 Action Select Clear control.
@@ -42,7 +143,7 @@ Apply to Select the scope for the action. You can clear controls at these levels
 Control, Container, or Page If you selected Specific control, Container, or Page in the Apply to field, specify the target from the dropdown list.
 Reset to published value [optional] Check this box to reset the control values to the last published values. On a tagged version of a workbook, this setting resets to the tagged version's values.
 If the trigger element is a table, pivot table, or input table, configure additional settings that determine when and how user interaction triggers the action sequence:
-To trigger the action sequence only when a user selects a cell in a specific column, click the When selecting cells in column field and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
+To trigger the action sequence only when a user selects a cell in a specific column, click the dropdown following the On select heading and select the column. To trigger the action sequence when a user selects a cell in any column, select Any column.
 [optional] To control whether keyboard navigation within the element can trigger action sequences on the element, click More in the Actions panel, then select Allow keyboard to trigger actions. When the option displays a checkmark, keyboard navigation and pointer events (e.g., mouse clicks) can trigger the action sequences. When the option doesn't display a checkmark (default), only pointer events can trigger them.
 💡
 Keyboard navigation as a trigger interaction can disrupt the user experience. For example, if the element's action sequences include actions that open links or other workbooks, a user can be unintentionally navigated away from their current task. This can be particularly disruptive if the action sequence can be triggered by selecting a cell in any column.
@@ -51,3 +152,9 @@ Consider allowing keyboard navigation to trigger actions only when it facilitate
 RELATED RESOURCES
 Intro to actions
 View and manage existing actions
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

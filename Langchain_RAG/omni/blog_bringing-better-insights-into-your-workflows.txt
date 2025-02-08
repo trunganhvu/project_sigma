@@ -1,0 +1,34 @@
+Bringing better insights into your workflows
+How to embed Omni into Salesforce (and all the apps you use)
+September 29, 2023
+Arielle Strong
+Everyone can benefit from using data in their job, but that doesn’t mean that everyone should have to use a BI tool. Often, data is most effective when integrated directly into familiar workflows. We started to make this easier by first sending data right to email. Now, we’re releasing dashboard iframes so you can embed governed insights from Omni directly into the places your team already works (like Confluence, Hubspot, Notion, and Salesforce).
+To show how you can bring trusted Omni insights into your workflows, we’ll explore an example that’s already popular amongst customers and our team - embedding dashboards in Salesforce.
+Creating a better understanding of your prospects and customers
+As many sales leaders already know, it’s challenging enough to get everyone to ‘just keep the CRM updated’. Sales teams don’t need another tool, but they do need better insights to understand: who’s been using the product a bunch lately? Who's running into issues and pinging support?
+Since the CRM is already (reluctantly) the primary place sales folks must regularly use - why not just put the insights right there?
+Operationalizing data in Salesforce
+Let’s get started with a real example of how this can help your team:
+Data Activation platform, Census, moves product usage data via Census and embeds interactive product dashboards via Omni into Salesforce objects. This helps their teams quickly understand how customers use Census product features - within their workflow.
+"Our business is all about helping people activate their data. This extends to our internal analytics strategy: data should be where you need it when you need it. By using Census and Omni to operationalize product usage data in Salesforce, our account teams can get a more complete understanding of customer health without changing their workflow. This supports more proactive account management and creates a high touch tailored customer experience."
+Julie Beynon, Head of Data
+Now, let’s take a look at a few more examples:
+Understanding pipeline to close more deals
+Internally, we use a similar Omni dashboard in Salesforce to view closed business alongside pipeline forecast and active deals. This helps us gain a more accurate view of how deals are progressing so we can take proactive actions to close business.
+Building stronger account relationships to increase satisfaction
+For a more complete view of each customer, we unify relevant data (including product usage trends) in the Account view. Viewing this alongside our sales and support interactions within their Salesforce workflow, helps our team take a more holistic approach to each account so we can deliver more value and increase customer satisfaction.
+Providing better, faster customer support
+Whether you’re using Salesforce or something like Zendesk to track customer support interactions, support teams are more likely to solve the core problem when they understand the bigger customer needs. With Omni, you can track support notes, ticket history, favorite items or product usage, and much more to embed it back into whichever system your support team uses. This allows them to quickly (and completely!) resolve issues.
+Keep in mind that for any use case, the best way to get started is to work with your end-users to identify what matters most to them. Then, you can deliver the right info where they need it.
+How to embed Omni dashboards in Salesforce
+Without further ado, here’s how you too can embed dashboards to give your sales team better insights:
+Build an Omni dashboard with the data you want to display in Salesforce
+Optionally, add a dashboard filter to parameterize the dashboard (such as Opportunity Name, Account, or Contact)
+With just a click of a button, copy the iframe embed code from Omni
+Inside the Salesforce developer console, create a new Visualforce page
+Add the iframe embed code to the Visualforce page
+Place the Visualforce page on the desired Salesforce object
+For more detailed instructions (with code examples and configuration options), check out our documentation.
+More product update goodness
+In addition to working on the Omni embed functionality (with much more to come there 😉), this month we’ve also expanded our administrative permission controls with new user attributes and access filters (row-level perms), deepened our existing dbt integration, and much more.
+Be sure to check out our Changelog for the latest updates and follow along with our weekly demos for a preview of what our engineering team is building.

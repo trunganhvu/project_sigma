@@ -4,7 +4,7 @@
 2. Tạo môi trường env
 > py -m venv .venv
 3. Active venv (mục đích sử dụng thư viên riêng biệt).
-> \venv\Scripts\activate 
+> .\venv\Scripts\activate 
 4. Install các thư viên
 > cd Langchain_RAG
 
@@ -36,3 +36,12 @@ https://docs.omni.co/docs
 
 https://help.sigmacomputing.com/docs/get-around-in-sigma
 
+# TODO
+1. Crawl omni
+> https://omni.co/blog
+> https://docs.omni.co/guides
+> https://omni.co/compare
+> https://omni.co/changelog
+> https://community.omni.co/
+
+2. Crawl sigma

@@ -1,0 +1,410 @@
+Blog home
+From Compliance To Competitive Advantage: How Modern Data Strategies Are Evolving Globally
+Bruno Calver
+EMEA SENIOR SOLUTION ENGINEER
+From Compliance To Competitive Advantage: How Modern Data Strategies Are Evolving Globally
+NOVEMBER 21, 2024
+Data’s value is surging, and so is the demand for compliance in a heavily regulated world. But a forward-thinking data strategy shouldn’t just meet regulatory requirements; it should turn them into a competitive advantage. Many companies have taken steps in this direction but are missing a critical piece that unlocks their data’s full potential. This blog uncovers that piece and explores how to evolve your data strategy to stay ahead of the curve.
+The evolving regulatory landscape
+The European Union is taking bold steps in data regulation, including the recently introduced European Data Act. As described by the European Commission, “The Data Act is a comprehensive initiative to address the challenges and unleash the opportunities presented by data in the European Union, emphasising fair access and user rights, while ensuring the protection of personal data.” The Data Act requires businesses to share non-personal data from their products and services while protecting trade secrets, reshaping data monetization in the EU. To adapt, companies must establish secure data-sharing frameworks, ensure interoperability, safeguard trade secrets under transparency obligations, and update contracts to meet fair access and use requirements.
+AI regulation is also on the horizon, with the forthcoming European Union AI Act. According to the European Commission, "The AI Act is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally." The AI Act will impose strict rules on deploying AI, prioritising transparency, safety, and accountability across industries. To adapt, businesses must classify AI systems by risk, ensure compliance through audits and documentation, and embed ethical safeguards into development workflows.
+These new regulations build on existing laws, such as the General Data Protection Regulation (GDPR), setting a precedent for other regions. Even if your operations are outside the EU, it’s only a matter of time before similar legislation affects your organisation. The message is clear: companies must adopt a modern data strategy that keeps pace with evolving regulations while maximising data’s business value.
+The modern data stack
+To comply with new regulations and harness the power of data, organisations need a modern data strategy built on the modern data stack. The essential components of a modern data stack include:
+Efficient data ingestion and integration: Tools like Fivetran and Stitch Data effortlessly gather data from diverse sources, funnelling it into a centralised repository for consistent and dependable data flow.
+Robust data storage: Cloud-based data warehouses such as Snowflake, Databricks, Google BigQuery, and Amazon Redshift provide secure, scalable storage solutions, forming a robust foundation for advanced analytics.
+Streamlined data transformation: Platforms like dbt (data build tool) automate data transformation processes, ensuring data readiness for analysis, maintaining consistency, and reducing manual workload.
+Advanced data analysis and visualisation: BI platforms such as Sigma, Looker, and Tableau offer powerful tools for analysing and visualising data, enabling users to extract actionable insights effectively.
+Effective data orchestration: Tools like Apache Airflow and Prefect manage data flow across different stages of the stack, ensuring smooth operations and timely processing.
+Comprehensive data Governance and Security: Solutions like Collibra and Alation uphold data compliance, quality, and security, safeguarding the integrity and confidentiality of your valuable data assets.
+The cloud data warehouse or lakehouse forms the backbone of the modern data stack, providing a centralised control plane for efficient data governance and regulatory compliance. The rapid growth of companies like Snowflake and Databricks, along with ELT solutions such as dbt and Fivetran, highlights the industry’s focus on centralising and preparing data. However, even as organisations implement these technologies, many still struggle to fully unlock the value of their data for business teams.
+The hidden barrier to data value realisation
+As companies mature in their modern data stack implementations, a new challenge arises: unlocking business value from the data. The limitations of traditional Business Intelligence (BI) tools like Tableau, Power BI, and Qlik become apparent. These tools, designed for an era before the cloud, often require data extraction to their own platforms for analysis, leading to several issues:
+Increased risk: Extracting data disrupts central governance, limits audit capabilities, and creates more opportunities for data breaches.
+Higher costs: Data duplication and reprocessing lead to increased storage costs and require additional data transformation efforts.
+Slower response times: Extending the data supply chain beyond the CDW or Lakehouse results in slower reactions to changing business needs.
+Limited analysis: Conventional BI platforms often struggle with large, complex datasets, necessitating data summarization and reducing the depth of insights.
+Many pioneering organisations are at risk of failing at this final hurdle if they sleepwalk into using traditional BI tools after having invested so heavily in the modern data stack. If nothing else, is it worth asking yourself, “What has changed for the business user after the big investment in a modern data platform?”
+Unlocking the full potential with cloud-native analytics
+The path forward is clear, and over 1,000 organisations have already discovered the solution: cloud-native analytics tools that work seamlessly with the modern data stack. Sigma leads this movement, providing a cloud-native platform that leverages the power of the CDW or lakehouse without requiring data movement.
+By keeping data within its original environment, Sigma ensures:
+Stronger governance: Data remains in a centralised, auditable location, reducing the risk of breaches and compliance violations.
+Cost efficiency: No need for redundant data processing or separate data storage.
+Faster insights: With real-time access to all data, organisations can quickly respond to business changes.
+Deeper analysis: Sigma’s platform can handle massive datasets, unlocking insights at a granular level.
+With Sigma, businesses are equipped to extract the maximum value from their data, setting their teams up for success in an era where data regulations continue to evolve.
+A new era for data strategies
+As regulations tighten and data becomes increasingly valuable, organisations must reimagine their data strategies. Embracing cloud-native analytics tools like Sigma is the key to navigating the evolving regulatory landscape while fully realising the potential of the modern data stack. Don’t let outdated BI tools hold you back. It’s time to evolve your data strategy to meet the demands of today and prepare for the challenges of tomorrow.
+‍
+READ MORE FROM BRUNO CALVER
+The Myth Of Self-Service Analytics: How To Actually Get More Value
+Beyond Spreadsheets: Unlocking Secure, Scalable Data Value with Sigma
+THE ULTIMATE KPI PLAYBOOK
+Security
+Data Analytics
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

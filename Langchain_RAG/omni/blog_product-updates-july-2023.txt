@@ -1,0 +1,35 @@
+Deeper modeling, fluid explorations & richer dashboards
+Highlights from new features we built this month
+July 28, 2023
+Colin Zima
+Each day, we’re adding new things to make Omni do more and feel even better. We’re so busy building and working with customers, and I want to be better about capturing and sharing the new things I’m most excited about. So here’s my attempt to capture some of the Omni goodness - from model updates with default drill fields to data delivery with scheduled dashboards - from this month. ✨
+Data modeling
+First off, let’s start with updates to the data model...
+Drilling is one of the most important concepts in BI; you start with one view of a data set and quickly move to understand the underlying components. With Omni, we want to make drilling seamless so you can quickly get to the next level (and the next level(s) after that). This is already controllable at the field level and you can use custom drilling on a dashboard to do this at the report level. Now, we’ve also added default drill fields to give you global controls for easily going deeper on every question.
+default_drill_fields:
+    [
+        id,
+        user_id,
+        users.full_name,
+        inventory_items.product_name,
+        sale_price,
+        margin,
+        "order_items.created_at[date]",
+        status
+    ]
+We’ve also added the ability to link, so you can add external links to the drill menu (or link to other content inside Omni, such as another dashboard). One of our favorite ways to use this feature internally is to link back to Salesforce from our opportunity analyses in Omni - allowing us to dive into the details when we have questions and want to explore further!
+Ever felt the urge to organize the field picker? Now you can make a Topic easier to navigate (and aesthetically pleasing) with a bunch of new model parameters:
+Group_label - nest a group of fields
+View_label - display a field under a different view than its default parent view
+Display_order - rearrange fields or views in a different order
+Easier explorations
+Often we want to compare components of a group to the group itself - purchases by region, opportunities by stage, traffic by channel, and so on. Filtered measures make this easy, but they can be tricky to build if you need complex case statement logic (or even don't want to look up syntax). Now, you don’t need to do either because we’ve made it easy to create filtered measures from pivot tables (shown below) and reference totals for custom calculations.
+Fancier visualizations
+We know that sometimes the hardest part isn’t the analysis; it’s communicating the findings in a way that is clear and engaging to drive action. To help, we’re making visualizations more functional and fancier (even if not entirely for function).
+One thing we’ve had a lot of fun with internally is creating markdown tiles - making it possible to create visualizations with a combo of text, markdown elements, and query variables. We’ve enjoyed playing around with these in Omni, and now you can too!
+Here are a few of our favorite examples:
+We’ve made some other viz updates to help you easily communicate results to stakeholders, such as totals to stacked bar charts, conditional formatting, and a palette picker so you can easily pick just the right color for your visualization.
+Delivering data
+Emails, PDFs, oh my! And in case you missed it - dashboards can now be scheduled so you can keep up with your most important metrics from anywhere.
+We also released new admin and management controls to make it easy to manage all your scheduled content from one central spot, and you can even navigate usage by sender or recipient (to help you curate a seamless experience for folks who aren’t in Omni yet! 😀).
+This quick recap doesn’t capture everything, so if you’d like to keep exploring the details of these features (and much, much more), check out our Omni docs. And if you’re not using Omni yet but you’re interested in taking it for a test drive, we’d love to help you explore Omni 🚀

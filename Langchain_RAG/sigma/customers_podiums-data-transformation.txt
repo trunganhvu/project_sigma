@@ -1,0 +1,131 @@
+Podium’s Data Transformation: How Sigma Simplified Analytics for Enhanced Decision-Making
+By Collin Austad
+SENIOR MANAGER, ANALYTICS ENGINEERING, PODIUM
+We had the opportunity to speak with Collin Austad, Manager of Analytics Engineering at Podium. Collin and his team play a pivotal role in transforming raw data into valuable business insights by building data models on Snowflake and orchestrating data pipelines through Data Build Tool (dbt). He shared how adopting Sigma has revolutionized their data operations, breaking down silos and enabling both technical and non-technical teams to access and leverage data seamlessly for faster, more informed decision-making.
+Life Before Sigma
+We needed a more efficient way to provide our stakeholders with the insights they needed, without the bottlenecks and delays inherent in our existing setup.
+Before adopting Sigma, we faced significant challenges with our data analysis. At Podium, our mission is to help businesses connect more effectively with their customers, which requires being data-informed in all our decisions. However, the process was far from seamless. We had a complex data landscape with multiple sync schedules across various platforms, each with its own set of permissions. This fragmented approach made it difficult to ensure that our teams had timely and consistent access to the data they needed to make informed decisions.
+We were using Tableau as our BI tool, but the experience was cumbersome and limiting. To access data, we had to curate a model on Snowflake and set up separate sync schedules to get that data into Tableau. This not only delayed the process but also restricted us from achieving the level of self-service analytics we desired. 
+Choosing A BI Solution
+When we started looking for a new BI solution, we were determined to find a tool that would simplify data access and improve efficiency. While evaluating Sigma, we considered several competitors, including Tableau, which we were already using. However, we found that Tableau's architecture was too rigid for our needs. We could have tweaked our implementation, but it still wouldn’t have addressed the core issue: the need for a more user-friendly, self-service analytics platform.
+During our evaluation process, we involved stakeholders across the company, including analysts and product managers. We conducted a proof of concept with Sigma, allowing various teams to engage with the platform and test its capabilities. The feedback was overwhelmingly positive. Teams were able to access the data they needed when they needed it and could draw the insights they were looking for without the delays we experienced with Tableau. This streamlined experience was the driving factor in our decision to choose Sigma.
+Life With Sigma
+Sigma has significantly reduced the time it takes to get data into the hands of our teams, enabling them to make data-driven decisions faster and more efficiently. 
+One of the biggest advantages is the seamless integration with Snowflake. Now, once data is available in Snowflake, it’s instantly accessible in Sigma. This has eliminated the need for separate sync schedules and manual data curation processes.
+We use Sigma for both internal and embedded analytics. Internally, Sigma has empowered our analysts and developers to create proof of concept dashboards quickly. This means that instead of waiting for data to sync and iterate slowly, our teams can directly connect to Snowflake, create content, and refine it based on stakeholder feedback in real time. This agility has allowed us to better understand what matters to the business and how to present it effectively.
+For embedded analytics, we offer a white-glove, custom reporting solution that provides advanced analytics directly to our customers. They can modify the reports to meet their specific needs, adding tremendous value to our service offering. Additionally, Sigma’s input tables have been a valuable tool for managing dynamic data, such as sales targets, where manual intervention is often required. This functionality, combined with Sigma’s robust data governance features, has streamlined our operations and improved data accuracy.
+What’s Next With Sigma
+Looking ahead, we’re excited about the potential of Sigma to further enhance our data strategy. We’re particularly interested in exploring its capabilities around large language models (LLMs) and conversational analytics. Our goal is to make it even easier for our business stakeholders to access the insights they need. By leveraging these advanced features, we hope to continue improving our self-service analytics capabilities, making data even more accessible and actionable for everyone at Podium.
+We’re also considering integrating Sigma more deeply with our machine-learning workflows. Currently, we use Snowflake Cortex functions for forecasting and anomaly detection, and we’re exploring ways to streamline this process by leveraging Sigma’s capabilities. We plan to use Sigma not just for reporting but as a central hub where our data models, forecasts, and business intelligence can all come together seamlessly.
+Overall, Sigma has been a valuable partner in our data journey. The support team is responsive, and we’ve been able to resolve any issues quickly, which has made the transition smooth. We’re excited to continue this partnership and explore new ways to leverage Sigma to drive business value and innovation at Podium.
+ABOUT
+PODIUM
+Podium is a customer messaging platform that enables companies with a local presence to conveniently connect with their customers at critical touchpoints to help them strengthen their business.
+More about
+Podium
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

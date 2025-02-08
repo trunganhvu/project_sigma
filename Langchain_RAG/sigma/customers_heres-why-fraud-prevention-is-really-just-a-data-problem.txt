@@ -1,0 +1,134 @@
+Here’s Why Fraud Prevention Is Really Just a Data Problem
+By Iago Chavarry
+HEAD OF DATA & PARTNER, NG.CASH
+Our mission is to revolutionize the Brazilian financial system for Gen Z. Making Generation Z the most financially-savvy generation, and with that, transforming the reality of over 160 million young people in Brazil and Latin America who, until 2021 (the year NG.CASH was founded), did not have access to their own digital payment methods or practical financial education.
+An example of NG.CASH’s fraud tracking dashboard in Sigma
+Before Sigma 
+Before adopting Sigma, we used AWS's native BI solution, which presented several challenges. We lacked essential functionalities like automated reports in Slack, and there was a high barrier for self-service initiatives.
+Before Sigma, we felt like we were always one step behind the fraudsters, trying to catch up. But now, we're leading the way. 
+We saw that Sigma lets us scale our operations teams, and create comprehensive tools for understanding client behavior through our data. Sigma also enables a more direct approach, especially for analysts without core SQL programming knowledge in Redshift. Additionally, Sigma allows us to correlate fraud alert databases with case handling more easily, making our operations more efficient and proactive.
+Life With Sigma
+Sigma completely flipped the script for us. Before Sigma, we felt like we were always one step behind the fraudsters, trying to catch up. But now, we're leading the way. It's like Sigma handed us a map to navigate a landscape we thought we knew, but actually didn't. Thanks to Sigma, we've become quicker, sharper, and way more strategic. This change has done more than just boost our stats - it has revolutionized our whole approach to fraud prevention. We're not just fighting fraud, we're setting new standards in how it’s done.
+By leveraging Sigma, our team has significantly transformed our anti-fraud operations, leading to impressive business outcomes:
+We've gained deep insights into fraudsters' behaviors, which allowed us to enhance our anti-fraud engine's rules effectively. This initiative dramatically reduced our %Fraud Users rate by 89.0% and %Fraud Transaction Volume (TTV) rate by 66.3% over the last six matured months. These improvements are not just numbers; they represent a strategic shift in preempting fraudulent activities, making our system more robust and our customer experience safer.
+Our infraction rate has plummeted by 67.2% in just the last three months. We've turned Sigma into our powerhouse against fraud. 
+Our enhanced strategies have empowered NG.CASH to implement assertive precautionary blocks on suspect users. This proactive approach boosted our Infraction Reports Total Recovery Rate from 1% to an astounding 25%. 
+To put this in context, while a 1% recovery rate is common in the banking industry, we've redefined success, recovering a quarter of all infractions’ involved amounts. This leap signifies our commitment to not only identifying but also rectifying fraud-related losses, setting new benchmarks for the industry.
+By leveraging our data using Sigma, our team has significantly transformed our anti-fraud operations, leading to impressive business outcomes.
+Additionally, our infraction rate has plummeted by 67.2% in just the last three months. This decline is a testament to the effectiveness of our strategies and the proactive nature of our team in combating fraud, showcasing our capability to not only respond to but anticipate and neutralize threats effectively.
+Sigma Impact 
+We've turned Sigma into our powerhouse against fraud. It's not just about using the tool; we've reinvented its role, making it the core of our anti-fraud strategy. This goes beyond excelling at our jobs—it's about changing the game. 
+It's not just about using the tool; we've reinvented its role, making it the core of our anti-fraud strategy. 
+We've demonstrated the incredible results that come from merging creativity with technology. Our team isn't just doing its job; we're setting new benchmarks and redefining what's possible in fraud prevention. That's why we're the perfect fit for this award.
+‍Read more stories from Sigma’s customers here.
+ABOUT
+NG.CASH
+NG.CASH is the leading solution for Teen Banking in Brazil and LATAM.
+More about
+NG.CASH
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

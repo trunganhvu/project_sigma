@@ -1,0 +1,514 @@
+Popular Features
+Input Tables
+Sigma allows you to create, edit, and reference data from external sources like spreadsheets, databases, etc. But the data itself is stored in the cloud data warehouse, not locally. This ensures that everyone is always working with the latest, most up-to-date information.
+Live Edit
+Allows teams to collaborate on workbook drafts in real-time, with all editors sharing one live draft and seeing each other's changes before publishing.
+Lookups
+Lookups return all rows from the current data along with matching rows from the joined data, without adding any new rows. If multiple matches are found, Sigma displays a * to indicate more than one match. Lookups function similarly to VLOOKUP in Excel.
+Conditional Alerts
+Schedule exports as conditional alerts, only sending when data availability or values in elements meet defined conditions.
+Pivot Tables
+Pivot tables allow summarizing and analyzing data by plotting columns into row, column, and value fields. Required fields are pivot rows (1+ columns), pivot columns (1+ columns), and values (1+ columns). Optional fields include filters, column formatting, conditional formatting, calculated columns, collapsing/expanding groups, swapping rows/columns, and structuring value hierarchy. Pivot tables can be maximized to view underlying data.
+Version Tagging
+Tag published versions of workbooks for version control. Switch between tagged versions. Annotate changes. Revert to previous versions.
+Drill Anywhere
+Perform ad-hoc drill downs into data details by right-clicking visualizations and selecting columns to analyze further.
+Explore Mode
+Isolated environment to customize published workbooks, perform ad hoc analysis without affecting saved versions. Requires permissions.
+Intelligent Query Engine
+Leverage data warehouse query caching to retrieve results without recomputing. Set cache duration (TTL) to balance performance and freshness. Cached at data warehouse level.
+Live Chat
+Award-winning live chat support within Sigma for users to get assistance. Response times average 23 seconds
+Workbook Versions
+View history of workbook versions, with ability to switch between published, draft and tagged versions.
+Secure Embedding
+Securely integrates Sigma content into other applications without Sigma authentication. Inherits host app's security to control access. Requires generating client credentials, creating embed user team, sharing workbook, and implementing embed API on host side.
+All Features
+Prep
+Data
+Model
+Transformation
+Analysis
+Customization
+Collaboration
+Explore
+Export
+Calculation
+Query
+Embedding
+Development
+Admin
+Prep
+Data Permissions
+After creating a connection, you can selectively share access with others in your organization.
+Data Source Connection
+Enables Sigma to communicate with your data warehouse by providing connection details like address, credentials, configuration options etc.
+IP Allowlisting
+If the data warehouse has IP restrictions, you need to allowlist Sigma's IP addresses which are listed on the connection page.
+Query Timeouts
+Default query timeout is 120 seconds but you can set custom timeouts per connection.
+Write Access
+Option to enable write access on the connection, required for materialization, CSV uploads, input tables etc.
+Data
+AWS PrivateLink
+Allows securely connecting Sigma to data warehouses hosted on AWS using AWS PrivateLink. PrivateLink creates a private connection between Sigma and the customer's AWS VPC without traffic going over the public internet. Supports Snowflake, Redshift, MySQL, Postgres data warehouses and custom proxy servers on AWS.
+Azure Private Link
+Enables secure connectivity between Sigma and data warehouses hosted on Azure using Azure Private Link. Private Link establishes a private endpoint in the customer's Azure virtual network to access the data warehouse over private IP addresses, keeping traffic within the Microsoft network. Supports Snowflake, Databricks, and PostgreSQL on Azure.
+CSV Upload
+Allows uploading CSV files up to 200MB in size to analyze data not present in the connected data warehouse. Uploaded CSV data is temporarily stored in the data warehouse for analysis within the Sigma workbook.
+Connect to AlloyDB
+Explains how to connect Sigma to an AlloyDB database, covering requirements, connection setup process, configuring write access, and locating AlloyDB cluster credentials.
+Connect to BigQuery
+Guides you through connecting Sigma to a BigQuery data warehouse, including creating a BigQuery service account, granting permissions, and enabling write access.
+Connect to Databricks
+Provides instructions for connecting Sigma to a Databricks data warehouse, including requirements, configuration steps in Databricks and Sigma, and setting up write access.
+Connect to MySQL
+Provides steps for connecting Sigma to a MySQL database, detailing requirements, connection credentials, features like timeouts and friendly names, and configuring write access.
+Connect to PostgreSQL
+Outlines the process of connecting Sigma to a PostgreSQL database, covering prerequisites, connection setup, configuring SSH tunneling if needed, and enabling write access.
+Connect to Redshift
+Explains how to connect Sigma to an Amazon Redshift data warehouse, including requirements, connection details, advanced settings, and setting up write access permissions.
+Connect to Snowflake
+Sigma supports connecting to Snowflake data warehouses, enabling data analysis and visualization.
+Connect to Starburst Galaxy
+Sigma supports connecting to Starburst Galaxy, a SaaS distribution of Trino. This allows you to connect Sigma to Snowflake, Databricks, BigQuery, or PostgreSQL data warehouses through Starburst Galaxy, providing seamless access to your data for analysis and visualization.
+Export Warehouse
+Sigma can run exports on a separate warehouse, isolating export workloads for better performance and cost optimization.
+Input Tables
+Sigma allows you to create, edit, and reference data from external sources like spreadsheets, databases, etc. But the data itself is stored in the cloud data warehouse, not locally. This ensures that everyone is always working with the latest, most up-to-date information.
+Joins in Datasets
+When creating joins between data warehouse tables or datasets, you can add formulas to the join input columns to modify the data and ensure proper joining. This allows using scalar formulas, type conversions, conditional statements etc. on the join keys.
+Joins in Workbooks
+Joins in Sigma workbooks allow combining data from multiple sources like tables, datasets, or other workbook elements based on matching columns. You can select the join type, join keys, preview output, and include additional data sources in the join.
+Linked Input tables
+This is a specialized type of Input Table where the data comes from an external source that is continuously updated (like a spreadsheet or database). The key benefit is that any changes made to the original source data are automatically reflected in the Sigma instance, keeping everything synchronized.
+Lookups
+Lookups return all rows from the current data along with matching rows from the joined data, without adding any new rows. If multiple matches are found, Sigma displays a * to indicate more than one match. Lookups function similarly to VLOOKUP in Excel.
+User Attributes from Snowflake
+User attributes can be configured on a Snowflake connection to manage row-level security and data access control.
+Model
+Containers
+Containers allow you to organize and visually group elements on your workbook pages. This feature simplifies layout management and enables styling multiple elements together. By adding containers, you can easily control the presentation and arrangement of elements on the canvas, making it more efficient to manage complex workbooks.
+Data Models
+A data model is a type of Sigma document that provides a framework for creating and managing a collection of reusable elements like tables and input tables. It consists of an overview page for previewing elements and a workbook page for creating/transforming elements. Data models offer centralized permissions, efficient data handling, and flexible reusability across the organization.
+Hierarchies
+Hierarchies allow grouping columns categorically and defining the order of data granularity within tables, pivot tables, and visualizations in Sigma workbooks. Common examples include product hierarchies, location hierarchies, time hierarchies, and taxonomies. Hierarchies can be created, managed, reordered, and applied to pivot tables for better organization and analysis of hierarchical data.
+Transformation
+Custom Date Formats
+Sigma enables defining custom datetime formats to control how date data displays in workbooks using format strings with specifiers like %Y for year, %m for month, %d for day etc. This provides flexibility in displaying dates in desired formats.
+JSON/Structured Data
+Generate and access structured objects in workbooks, preserving data types for easy access and manipulation.
+Analysis
+Add Columns Through Lookup
+Action to connect related columns between two data elements by joining on common values (join keys). Injects data from one element into another, enabling creation of new columns based on lookup relationships across elements within the same workbook and connection.
+Area Charts
+Similar to line charts but use filled areas to visualize value magnitudes over time intervals. Configure axes, colors, stacking.
+Bar Charts
+Typically used to compare values across categories or groups. Configure x/y axes, stacking, colors by category/scale, conditional formatting, tooltips, gaps between bars. Supports vertical, horizontal, stacked, clustered variations.
+Boolean Filter
+Filters true/false/null values. Provides a list of boolean values to select from.
+Box Plots
+Summarize and display distribution of a dataset based on quartiles using boxes and whiskers. Configure axes, outlier display, colors.
+Combo Charts
+Combine multiple chart types like bars, lines, areas and scatter plots in a single visualization. Useful for comparing data with different value scales or showing one main value with comparison values. Configure plot shapes, axes, formatting for each chart type.
+Conditional Formatting
+Conditional formatting in Sigma tables enables applying formatting rules like color scales, data bars, icons etc. based on cell values meeting certain conditions specified through formulas or other criteria. This helps visualize and highlight important data points within tables.
+Date Range Filter
+Includes only date values within the specified minimum and maximum range (inclusive). Supports fixed and relative date inputs.
+Donut Charts
+Similar to pie charts but with a blank center, allowing room for additional metrics. Configure colors, legends, labels, hole size.
+Drill Down Controls
+Allow users to explore data hierarchically by drilling down into categories defined by selected columns. Useful for progressively revealing more detailed information.
+Exclude Filter
+Excludes the selected values from the data, keeping all other values. Accepts list of selectable values for text, numbers, dates (max 200 values shown).
+Explain Visualization with AI
+Uses AI to instantly generate a description and explanation for any chart or visualization. It analyzes the chart image and underlying data to provide key insights, observations, data distribution summaries, and context to enhance understanding. The explanation is generated in real-time and can be copied for sharing. 
+Users can also provide feedback to improve future responses. 
+Requires OpenAI integration and specific model configuration.
+Gauge Charts
+Display a single value's status or performance within a range using a dial or horizontal bar. Configure ranges, colors, labels.
+Geography Maps
+Plot geographic data on world/country/state maps using latitude/longitude or geographic codes. Configure colors, tooltips, drill-down levels.
+Grouping
+Any column in a Sigma table can be used to define a grouping by dragging and dropping it into the "Groupings" section. This allows analyzing rows based on shared values within that column, which becomes the "grouping key". Rows are then bundled into groups based on unique values in the key column.
+Hidden Controls
+Create controls that are not visible on the workbook canvas but still function to filter or modify data behind the scenes based on predefined values.
+Hyperlinks in Columns
+Hyperlinks can be added to any column in tables or pivot tables from the column menu under "Transform > Set link". Links can be created using a custom formula with Sigma's Concat function, or by mapping an existing URL column. Hyperlinks allow clicking values to open corresponding web pages or resources. Images from links can also be rendered in table cells.
+Include Filter
+Displays only the selected values in the data, excluding all other values. Accepts list of selectable values for text, numbers, dates (max 200 values shown).
+KPI Charts
+Visualize key performance indicators with formatted values, sparklines, color coding, and icons based on set thresholds. Useful for dashboards and scorecards.
+Line Charts
+Used to assess how values change over time. Configure x/y axes, line styles, colors by category. Supports single/multi-line, step lines, dual axes variations.
+Modify/Refresh Elements
+Create actions that update element groupings, properties like axis scales, show/hide columns, and refresh data in the current workbook when triggered. Enables tailoring visualizations and ensuring latest data.
+Period-over-Period Analysis
+Guided workflow to evaluate performance over time by generating dynamic period comparisons without complex formulas. Configure current period, comparison period, metrics, aggregations, and comparison types (difference, % difference, value). Visualize results to identify trends and anomalies.
+Pie Charts
+Visualize composition of a whole, displaying categories as proportional slices of a circular chart. Configure colors, legends, labels.
+Pivot Tables
+Pivot tables allow summarizing and analyzing data by plotting columns into row, column, and value fields. Required fields are pivot rows (1+ columns), pivot columns (1+ columns), and values (1+ columns). Optional fields include filters, column formatting, conditional formatting, calculated columns, collapsing/expanding groups, swapping rows/columns, and structuring value hierarchy. Pivot tables can be maximized to view underlying data.
+Range Filter
+Includes only numeric values within the specified minimum and maximum range (inclusive). Provides min/max input boxes.
+Report Parameters
+Create flexible, parameterized reports by defining parameter controls that users can interact with to modify the report output dynamically.
+Sankey Diagrams
+Visualize flow/transfer between nodes in a process or system. Configure node colors, spacing, orientation. Useful for supply chain, energy flow analysis.
+Scatter Plots
+Analyze relationships and distributions between two quantitative variables using x/y coordinate points. Configure axes, tooltips, trendlines, color scales.
+Segmented Controls
+Linear strip of segments acting like radio buttons to filter data by selecting one value and excluding others. Provide a compact way to make selections from long lists of values.
+Sort Filter Values
+Allows sorting include/exclude filters by descending count (default), ascending count, descending alpha-numeric, or ascending alpha-numeric order. Helps organize filter values for better readability.
+Subtotals
+Sigma allows creating row subtotals for grouped data by selecting the "Show totals" option from the grouping key column menu. This calculates aggregates like sum, count etc. at each group level, providing summarized values for analysis.
+Synced Controls
+Create synchronized copies of filter or parameter controls across workbook pages to maintain context and enable value pre-selection before data loads.
+Text Match Filter
+Searches for full or partial text matches based on formulas like contains, starts with, ends with, like/not like. Includes case sensitivity option.
+Time Series Forecasts
+Use historical time series data to predict future values and trends in Sigma workbooks without needing SQL.
+Top N Filter
+Filter to show the top or bottom N rows from a data element based on a selected column's values. Allows focusing on most/least significant data points.
+Trellis Charts
+Trellis charts (also known as small multiples or panel charts) allow comparing and analyzing multiple subsets of data within a single visualization. Subsets are represented by smaller charts arranged in rows and columns based on specific dimensions. This grid-like structure facilitates identifying patterns, trends, and relationships across large, complex datasets. Rows and columns represent different dimensions, with individual panels visualizing data at the intersection of those dimension values.
+URL Parameters
+Control values can be passed through the URL, allowing users to bookmark desired filter/parameter states or share specific views with others.
+Workbook Parameters
+Define global parameters at the workbook level that can be referenced and used across multiple elements within the workbook.
+Customization
+Chart Legend
+Format legend appearance - position, font styles, background, layout, filter interaction mode.
+Chart Tooltips
+Customize tooltip content for chart marks by adding/removing fields, formatting values, showing images.
+Column-Level Security
+Provides granular control to restrict or grant access to column data based on user attributes and team assignments. Allows securing sensitive information and enabling controlled data sharing across teams/clients.
+Conditional Actions (Beta)
+Define optional conditions for any action to control when it should be triggered. Conditions can be set using custom formulas or based on the values of selected controls.
+Cross-Element Filters
+Configure filters that apply across multiple elements in a workbook, creating dynamic relationships between them. Supports easier cross-filtering and linked analysis.
+Custom Sort
+Define custom sort rules for columns beyond default alphabetic/numeric ordering.
+Customize Element Background and Styles (Beta)
+Set background colors, borders, padding, and corner shapes for data elements, tables, and text. Apply styles individually or through themes to improve accessibility and align with branding.
+Data Labels
+Display data values, percentages, custom text as labels on chart marks for emphasis.
+Download/Export Data
+Set up actions to download data from elements as files (CSV, Excel, etc.) or export visualizations as images (PNG, SVG, etc.) when triggered. Facilitates data extraction and sharing.
+Element Background
+Customize background color for individual elements like visualizations, tables, text to improve accessibility and branding.
+Element Title
+Edit titles, create dynamic titles with formulas/controls, customize formatting like font, color, alignment, add descriptions.
+Manage Control Values
+Configure actions to set or clear values of specific control elements in the current workbook, allowing users to quickly filter and unfilter data for different views when triggered.
+Navigate to Destinations
+Create actions that navigate users to external URLs, other Sigma workbooks, or different locations within the current workbook when triggered. Configure destination URLs, open behavior, and pass control values.
+Pivot Table Totals
+Separately format value cells vs total cells in pivot tables with custom font, color, background for totals.
+Reference Marks
+Add horizontal/vertical reference lines, bands, ranges to charts to highlight key thresholds/targets.
+Table Styles
+Preset table styles or customize cell spacing, grid lines, banding, header/cell formatting for consistent table appearance.
+Trendlines
+Add and customize trendlines like linear, exponential, moving average to charts for trend visualization.
+User Attributes
+Custom attributes that can be created and assigned values to teams/users. Used for customizing user experiences, row-level security in datasets via formulas, and passing embed parameters.
+Workbook Localization
+Enables translating custom text strings in workbooks to different languages/locales. Supports downloading translation files, providing translations, and uploading for preview. Inherits organization-level translations.
+Collaboration
+Annotate Images
+Add comments directly on element images, drawings, or screenshots within workbooks for visual context and feedback.
+Live Chat
+Award-winning live chat support within Sigma for users to get assistance. Response times average 23 seconds
+Live Edit
+Allows teams to collaborate on workbook drafts in real-time, with all editors sharing one live draft and seeing each other's changes before publishing.
+Live Edit
+Allows teams to collaborate on workbook drafts in real-time, with all editors sharing one live draft and seeing each other's changes before publishing.
+Share Folders
+Categorize and share documents using folders with permission grants (View, Contribute, Manage) for teams/users. Permissions apply to all docs in folder.
+Share Workbooks
+Grant View, Explore, or Edit permissions on workbooks to individuals, teams, or entire organization. Control who can modify and share workbooks.
+Workbook Badges
+Add badges to published workbooks to indicate their status (e.g. Draft, Review, Published) for better visibility and organization.
+Workbook Comments
+Add comments referencing specific content, tagging users for notification. Facilitate discussion and feedback on workbooks.
+Explore
+Ad Hoc Explorations
+Unsaved, temporary workbooks ideal for in-the-moment analysis without persisting work. Explorations listed for 30 days under Recents.
+Bookmark Explored State
+Save explored state as bookmark to revisit later. Can update bookmark and maintain live data connection.
+Bookmarks
+Save workbook state as bookmark to revisit later. Share bookmarks, set as default view.
+Data Lineage
+View data flow and transformations applied to get to current element state from original sources.
+Drill Into Data
+Perform ad-hoc drill downs into data details by right-clicking visualizations and selecting columns to analyze further.
+Explore Mode
+Isolated environment to customize published workbooks, perform ad hoc analysis without affecting saved versions. Requires permissions.
+Highlight Chart Values
+Customize highlighting of specific data points/ranges on charts using colors, labels, callouts.
+Merge Explored to Draft
+Apply explored customizations to draft version, then publish to make changes live. Requires permissions.
+Save Explored Workbook
+Save explored state as a new workbook. Becomes published version without original data connection.
+Share Explored State
+Generate shareable URL linking to explored state of workbook for others to view/continue exploring. Requires permissions.
+View Column Details
+View column profiles with metadata like top values, nulls, distinct values for data understanding.
+View Underlying Data
+Access full dataset behind visualizations as a table to inspect raw values and details.
+Workbook Versions
+View history of workbook versions, with ability to switch between published, draft and tagged versions.
+Export
+Cloud Storage Exports
+Export element data to cloud storage destinations like AWS S3, GCP, Azure Blob for archiving or downstream processing.
+Compressed Exports
+Option to export data in compressed gzip CSV format to reduce file size for cloud storage.
+Conditional Alerts
+Schedule exports as conditional alerts, only sending when data availability or values in elements meet defined conditions.
+Data Availability Conditions
+Check if data exists or doesn't exist in a target element before exporting.
+Email Exports
+Send workbooks, pages, elements as email attachments in CSV, Excel, PDF, PNG formats to recipients.
+Export Conditions
+Set conditions to only export when data is available or meets specific criteria in target elements.
+Export Scheduling
+Schedule recurring exports at custom frequencies (daily, weekly, monthly, cron) to automate report delivery to destinations.
+Recipient Permissions
+Option to limit exports to only data the recipients have access permissions for.
+Slack Exports
+Send workbook pages or element exports as files to Slack channels or DMs.
+Slack Notifications
+Get notifications in Slack channels when scheduled exports complete successfully or fail.
+Value-based Conditions
+Define conditions comparing element values (any/all, columns, operators) to control when exports are sent.
+Version/Bookmark Exports
+Export specific versions or bookmarked states of workbooks rather than just the latest.
+Webhook Exports
+Send element data exports to custom webhook URLs for integration with other apps/services.
+Webhook Notifications
+Get notifications at webhook URLs when scheduled exports complete successfully or fail.
+Workbook Exports
+Export entire workbooks, pages, or elements to various destinations like downloads, email, Slack, cloud storage. Supported formats include CSV, Excel, PDF, PNG, JSON.
+Calculation
+AI Formula Assistant
+The formula assistant helps you generate formulas by evaluating your description of calculations, data references, manipulations, and other context, then suggesting a formula to achieve the desired output.
+Array Functions
+Functions that operate on and return array data structures, enabling manipulation and analysis of collections of values.
+Date Functions
+Functions for analyzing, converting, and manipulating date and time values. Examples include converting timezones, adding/diffing dates, formatting, parsing, truncating, extracting components like year/month/day/hour, checking date ranges, getting last day of month, making date objects from components, and retrieving current date/time.
+Financial Functions
+Built-in functions for performing calculations related to investments, loans, interest rates, periodic payments, present/future values, growth rates, and other financial analysis scenarios. Examples include CAGR, FV, IPmt, NPV, Pmt, PV, XNPV for computing compound annual growth rate, future value, interest/principal portions of payments, net present value, periodic payment amounts, and more.
+Geographic Functions
+Functions for working with geography data types to analyze locations, routes, and geospatial data. Examples include calculating area, centroid, distance between points, converting to/from GeoJSON/WKT formats, testing intersections/containment, constructing lines/points from coordinates, and extracting latitude/longitude components. Available for Snowflake and BigQuery connections.
+Lookup
+Finds matching data inside a workbook data element, either in the same table or an external table. Allows joining tables on common keys and referencing columns from the joined table in formulas. All elements must be on the same data connection.
+Metrics
+Custom aggregate calculations defined at the data source level that can be reused across workbook elements sharing that data source. Promote consistent metric logic and enable standard calculations. Metrics differ from calculated columns which produce static values - metrics are dynamic, reusable aggregations across any grouping level. Support stacking metrics within formulas. Limited to a single data source with no inheritance across datasets.
+Passthrough Functions
+Functions that allow calling and executing data platform/warehouse functions directly, passing through the function name and arguments without interpretation by Sigma. Enable using custom functions not natively supported. Available for aggregate (Agg*) and non-aggregate (Call*) versions returning different data types like numbers, text, dates, geographies, etc. Useful for advanced use cases like string tokenization.
+Rollup
+Aggregates and looks up data in a second workbook data element. Enables joining and aggregating values from one table into another based on common keys, similar to Lookup but with aggregation applied. Useful for creating rollup summaries across hierarchical levels.
+Text Functions
+Functions for manipulating, evaluating, and performing operations on string data. Examples include concatenating, finding substrings, pattern matching, case conversion, trimming, padding, splitting, replacing text, reversing, repeating, extracting with regular expressions, calculating hashes like MD5, and more. Enable standardizing inputs, building logical conditions based on strings, and transforming text data.
+User Functions
+Functions that return information about the current state or context within Sigma. Examples include the current timezone, details about the signed-in user (email, name, team membership), and user-defined attribute values. Provide a way to incorporate dynamic, user-specific data into calculations and visualizations.
+Window Functions
+Perform calculations across rows in a dataset, enabling analysis like running totals, rankings, moving averages, and more. Key functions: RowNumber, Rank, DenseRank, NTile for row numbering/ranking; CumulativeSum, MovingAvg for running totals/averages; Lead, Lag for row comparison. Depend on row ordering within partitions.
+Query
+Custom SQL
+Write custom SQL queries directly against data warehouse connections. Create new workbooks/elements from SQL. Reference workbook controls and existing elements. Shortcuts for formatting, find/replace.
+Materialization
+Pre-compute and persist results of queries/transformations as datasets to accelerate repeated access. Tradeoff storage vs compute costs. Configure refresh cadence.
+Query ID Cache
+Leverage data warehouse query caching to retrieve results without recomputing. Set cache duration (TTL) to balance performance and freshness. Cached at data warehouse level.
+View Query History
+Access history of recent queries run against a connection, including status, runtime, SQL text. Investigate query details, errors. Option to view browser calculations leveraging client-side cache.
+Warehouse Views
+Publish workbook elements as views inside the data warehouse for direct querying. Represents published state, promoting changes requires re-publishing. Enables referencing in custom SQL.
+Embedding
+Column-Level Security
+Provides granular control over column data access based on user attributes and team assignments. Allows securing sensitive information while enabling controlled data sharing across teams/clients.
+Dynamic Role Switching
+Enables switching between different user roles/permissions within an embedded Sigma instance based on the authenticated user in the host application. Requires implementing logic in the embed API.
+Public Embedding
+Allows sharing publicly accessible Sigma content like workbooks, pages or elements. Generate a public URL to directly link or embed using an iframe. Public embeds reflect real-time data and published changes but limit export options.
+Row-Level Security in Embeds
+Restricts data access based on user identity or attributes in embeds. Leverages CurrentUserEmail, CurrentUserInTeam functions and custom user attributes. Implement via dataset filters or custom SQL using CurrentUserAttributeText.
+SDK for React
+The Embed SDK for React provides a higher-level, developer-friendly interface that simplifies embedding Sigma into React applications. The SDK source code is available on GitHub, where developers can clone the repository and follow the code comments.
+Secure Embedding
+Securely integrates Sigma content into other applications without Sigma authentication. Inherits host app's security to control access. Requires generating client credentials, creating embed user team, sharing workbook, and implementing embed API on host side.
+Development
+Custom Plugins
+Allows building third-party applications that add functionality to Sigma workbooks using the Plugin API. Plugins communicate data/events with workbooks and render in iframes. Options for using existing plugins, exploring examples, developing new plugins, and registering plugins with organizations. Plugin development resources like API docs and sample code provided.
+REST API
+Provides programmatic access to Sigma resources like connections, datasets, teams, workbooks via HTTP requests. Enables creating custom applications/integrations. Returns JSON responses. API reference documentation with code samples. API recipes (sample code) for common use cases. Supports using tools like Postman.
+Admin
+2FA Email Authentication
+Enable two-factor authentication via email for password-authenticated users. Does not apply to SSO/OAuth users where 2FA is managed by IdP.
+Audit Logging
+Track user activity like logins, workbook changes, data access across the organization. Configure logging destinations like cloud storage. Filter and search logs.
+Authentication Methods
+Configure authentication methods like Password, SAML, OAuth, or combinations allowing password/SSO options. Enable guest access, 2FA, customize session lengths. Initiate password resets for users.
+Create and Manage Teams
+Create user groups and manage team details like name, description, access level (public/private). Assign team admins. Grant teams permissions to folders/documents. Delete teams individually or in bulk.
+Custom Account Types
+Define and map custom user account types/roles to user attributes in the identity provider for SAML/OAuth integrations.
+Custom Data Permissions
+Control access to data sources, datasets, tables at row/column/value levels based on user attributes. Configure data filters and masked values.
+Custom Email Branding
+Customize the branding of emails sent from Sigma, including logo, colors, footer. Configure for scheduled emails, alerts, invites.
+Custom Folder/Document Permissions
+Manage permissions separately at folder and document levels. Options like View, Explore, Contribute, Edit, Manage. Permission inheritance and overrides. Request access workflows.
+Custom Fonts
+Upload custom font files to use in workbook text elements and visualizations. Supports TTF, OTF, WOFF, WOFF2 formats. Manage fonts at org or workbook level.
+Custom Homepage
+Admins can designate a workbook as the custom homepage for an organization or team. The first page becomes the landing page, displaying KPIs, visuals, text, links. Customizable for different teams. Requires sharing permissions.
+Custom Session Timeouts
+Configure custom session timeout durations for Okta SAML integration, controlling how long before users are prompted to re-authenticate.
+Custom Welcome Emails
+Customize content and branding of welcome emails sent to new Sigma users, including logo, colors, instructions.
+Custom Workbook Themes
+Define and apply custom themes controlling colors, typography, spacing across workbooks. Theme inheritance, overrides. Centralized theme management.
+Guest User Accounts
+Create temporary guest user accounts with limited access for external collaborators. Configure permissions, expiration, data access.
+Impersonate Users
+Admins can impersonate regular users to view Sigma as that user for troubleshooting, auditing permissions. Option to masquerade or view audit logs.
+Language Translation
+Centrally manage translation files to serve users in preferred languages. Translate common terms across workbooks at org level. Workbook translations take precedence. Support downloading/uploading translation files.
+OAuth Write Access
+Configure OAuth integration to allow write access to objects like databases, schemas, tables in addition to querying.
+OAuth with Databricks (Beta)
+Enable Sigma to authenticate users through Databricks as the identity provider (IdP) using OAuth. User can authenticate via Databricks—supporting OAuth login flows.
+OAuth with Snowflake
+Configure OAuth authentication with Snowflake data warehouse for direct querying. Set up OAuth security integration, token exchange, access scopes.
+Okta SCIM Integration
+Specific steps for setting up SCIM integration with Okta identity provider for automated user/team provisioning in Sigma.
+OpenAI/Azure OpenAI Integration
+Connect OpenAI or Azure OpenAI accounts to leverage AI/ML models like GPT-3 within Sigma workbooks and workflows. Configure API keys and usage quotas.
+Recover Deleted Documents
+Restore accidentally deleted workbooks, datasets and folders from a recycle bin within a configurable retention window. Recover individual or bulk documents.
+Reusable Custom Functions
+Create and manage reusable custom SQL functions within Sigma. Functions can reference datasets, other functions. Organize into function groups. Version control and audit logs.
+SAML SSO
+Set up SAML single sign-on (SSO) integration with identity providers like Okta, OneLogin, Google. Configure SAML metadata, assertion mapping, user attributes. Supports SP and IdP-initiated flows.
+SCIM Provisioning
+Automate user provisioning and team management via SCIM (System for Cross-domain Identity Management). Configure SCIM integration.
+Slack Integration
+Send and schedule Sigma notifications to any Slack channel. Configure channel access and permissions. Authorize Slack app integration. Post visualizations, alerts to Slack.
+Usage Dashboards
+Access dashboards showing usage metrics like queries, data scanned, user activity across organization. Filter by teams, individuals, date ranges. Identify heavy workloads.
+Version Tagging
+Tag published versions of workbooks for version control. Switch between tagged versions. Annotate changes. Revert to previous versions.
+Workspaces
+Categorize and share folders/documents through workspaces. Grant permissions to teams/users. Workspace inheritance. Default org-level workspace. Create associated team workspaces.
+dbt Integration
+Integrate dbt projects and models with Sigma. Configure dbt Cloud connections. Sync dbt models as Sigma datasets. Schedule dbt job runs from Sigma. View dbt run history.
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

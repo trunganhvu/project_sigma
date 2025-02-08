@@ -1,0 +1,33 @@
+Introducing Omni Calculations
+Bringing together the familiarity of spreadsheets with the governance of BI
+January 17, 2024
+Colin Zima
+When you ask anyone whether they use data for their job, 99% of folks think about spreadsheets. Excel and Google Sheets have become ubiquitous for data work inside companies (and sometimes even for household chores!). Almost 2 billion people use one of them!
+I get it, I love Excel too. This is why exporting data from BI tools is so prevalent, people want that same spreadsheet familiarity. “Just give me the data so I can touch it”. Unfortunately, this usually results in using a strange hybrid of SQL and formulas - hurting consistency while still not providing the flexibility and familiarity people want.
+The problems with today’s business intelligence and spreadsheet tools are that:
+business users are experts in spreadsheets, not SQL so you split usage between tools creating data silos and misalignment (hello, BI adoption hovering at ~25% for over a decade)
+self-service reporting can’t scale because the business and metrics are changing faster than your data team can handle
+spreadsheets are constantly inaccurate due to stale extracts, outdated definitions, and zero governance
+In this world, everyone has data, but no one has the same answer.
+We started Omni to build a data exploration product that everyone can actually use and trust, and sometimes that just means we need to listen to the things people already love and not mess them up.
+Enter Omni’s Calculations. Our different approach here is not to try and compete with Excel or Sheets - you have Excel and Sheets for that. Instead, we made the BI experience feel as much like a spreadsheet as possible. The result? Your muscle memory from the spreadsheet translates directly into Omni, including:
+blank columns with inline formulas
+point and click construction
+highlighted references
+$ row locking
+familiar A1-style references
+exact syntax match
+keyboard navigation for formula building
+manual data entry
+dates that add and subtract (coming soon!)
+Before releasing Calculations, we spent hundreds of hours sweating the detailing and using it to make it look and feel as close to a spreadsheet as reasonable. Our customers have been testing it too - in addition to doing custom functions (78 characters currently holds the customer record, mine was 758!), our most popular Calculations so far are pure math, IF, SUM, FIND, and DATE.
+"Everyone knows how to use spreadsheets and our Finance team loves Excel, so Calculations help me improve self-service because the experience is common knowledge. This just makes exploring so much more accessible for more people and saves me a lot of time. A few years ago, we looked at some products offering similar spreadsheet functions, but I love that Omni goes beyond that to provide Calculations on top of a complete, great product."
+Brandon Clark, Senior Director of Product and Engineering @ Digital Trends Media Group
+Now, your spreadsheet power users don’t have to worry about outdated data extracts, wasting hours munging data, or reconciling metrics across exports and departments:
+your finance team can build critical business metrics on live data - think calculating ARR or cash burn
+your operations team can evaluate efficiency across the business, such as time to first response on a support case or inventory levels based on the most recent customer interactions and orders
+your marketing team can build a live view of pipeline health to understand your conversion funnel on your mutually agreed-upon definition for MQL, SQL, SQO
+Beyond just working to open up exploration for more users, the added magic is that every single one of these formulas can also be lifted into the data model - fast iteration and reusability. This means your spreadsheet power users across the business can more easily use their expertise to explore and contribute to the model - helping others benefit from their knowledge and freeing up data team time.
+For all of their differences, it’s a good thing Excel and Sheets have converged on a common language. Of Excel’s 510 functions and Sheets 501, 452 overlap exactly (Excel’s BAHTTEXT probably wins the most obscure of the bunch)!
+By following their lead, and not building custom formulas from scratch, we’ve already seen the knock-on effects of leaning into the universal language of spreadsheets. Beyond the obvious of more people just getting how to use it, we also get to lean on the full web for support in the app because the internet is pretty good at debugging Excel. And as you might expect, that means computers (ChatGPT) are pretty good at writing it too, but we’ll share more on that soon 😉
+Calculations are now available in our core product. If you’d like to test them for yourself, we’d love to show you what we’ve built!

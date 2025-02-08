@@ -1,0 +1,408 @@
+HyperFinity Unlocks New Revenue Streams and Helps Retailers Increase Sales by 20% with Predictive Analytics
+HyperFinity is a decision intelligence platform that enables retailers to capitalize on data and AI to make smarter commercial decisions.
+THE CHALLENGE
+Build or Buy a Bespoke Embedded Analytics Platform
+Research shows that using AI to make pricing decisions can yield a 5% uplift in profit margins, and using data to deliver personalized customer experiences can drive a 30 to 50% increase in revenue. But despite these compelling statistics, only about 5% of retailers are benefiting from the promise of data and AI. 
+Why? According to Peter Denby, Co-Founder and Chief Commercial Officer, “That's typically because it's very difficult to recruit and scale expensive data science teams, and a lot of the tools in the market are kind of inflexible SaaS products that don't really deliver the flexibility that retailers need.” 
+With his partner Damon Bryan, Co-Founder and Chief Technology Officer, the pair set out to develop a completely bespoke BI and analytics platform, making data accessible to technical and non-technical users alike. Their ideal solution would help retailers leverage insights to make better commercial decisions, while also enabling HyperFinity to scale in a predictable way.
+“We wanted to develop a platform that was performant and scalable with a serverless approach to how we were doing things," Denby added. "It needed to be cost-effective and efficient to run.”
+With a team experienced in building complex solutions, they evaluated whether they could build this product in-house from the ground up, or partner with a leading provider. 
+THE SOLUTION
+Predictive Analytics at Cloud Scale
+Recognizing that building your own embedded analytics solution can create challenges in speed, scalability, and cost-effectiveness, and often takes up valuable resources that could otherwise focus on the long-term vision of the company, they decided to buy instead of build. This led HyperFinity to look for a strategic partner that could help them embed BI & analytics within their platform while maintaining a similar look and feel to their own decision intelligence product.
+With Snowflake in place as their cloud data warehouse, they needed to make a decision about the visualization layer to deliver customizable BI and analytics. The team had lots of experience using different business intelligence and visualization platforms, but ultimately landed on Sigma as their platform of choice. “We found Sigma to be extremely easy to use. It's familiar because of the Excel-like interface and it's deeply embedded with Snowflake. The combination made it a great choice to deliver solutions to our clients,” Denby said.
+We’re reducing our BI deployment times by around 70%.
+‍—Damon Bryan, ‍Co-Founder and Chief Technology Officer, HyperFinity
+Combining the power of Sigma’s Input Tables and Snowpark, HyperFinity now provides predictive analytics to their customers in a quicker and more efficient way than traditional BI tools. 
+“Traditionally, data science and model building is quite a slow process, and consuming the insight and modeling outputs is quite difficult, but when you bring it in as part of BI, it's much more compelling and enables you to act upon that quickly,” Bryan said.
+HyperFinity has enabled its end users to reconfigure models and change parameters to understand how that might impact commercial outcomes. Retailers often need to predict the impact a pricing change will have across sales – while also including the potential impact it may have on their other related products. With Sigma and Snowpark, they are able to make smarter commercial decisions, impacting their bottom line. 
+THE RESULTS
+Revenue, Rapid Development & Better Performance
+Unlock a New Revenue Stream
+By making analytics a core offering of their platform, HyperFinity is able to monetize an entirely new portion of their product. They anticipate 30% year-over-year revenue growth, and this new revenue stream is a major contributing factor. “Our product is completely modular, and before Sigma, we weren't selling measurement as a module within our platform. But Sigma has allowed us to do that as a completely new revenue stream,” Bryan said. 
+HyperFinity can now measure the performance of what their team builds, the models they create, and the impact of their work. This process allows them to experiment and iterate quickly, to put an even more compelling product on the market and give them that crucial competitive edge.
+Faster Time to Deployment
+HyperFinity has drastically reduced its time to deployment from months to days, which as a result, has reduced costs and allowed it to allocate developer time in other areas of its business – like product innovation and executing on its long-term vision. Not only are their teams more productive, they are able to build compelling insights for their customers at a much faster rate. “We're bringing down the workloads within our business and reducing our BI deployment times by around 70%, which means that we can allocate our technical resources across full deployments more effectively,” Bryan added.
+Boost Customer Sales
+“When we talk about creating value, for us, it's all about how we create value for our retail and CPG customers,” said Bryan. HyperFinity set out to deliver a platform that enables retailers to use data and AI to better understand their customer’s behaviors. And with the help of Sigma and Snowflake, retailers on their platform experienced a 20% increase in sales across their loyalty base.
+Retailers are now able to run pricing optimizations as well, leading to an increase in profit margins of up to 5%, and a reduction in cost by up to 10%. “Ultimately they deliver much better customer experiences that lead to more value for their end consumers, but also grow more profitable businesses,” Bryan said. “And for us, that's what it's all about. That's a perfect combination.”
+We are Sigma.
+Sigma is a cloud analytics platform that uses a familiar spreadsheet interface to give business users instant access to explore and get insights from their cloud data warehouse. It requires no code or special training to explore billions of rows, augment with new data, or perform “what if” analysis on all data in real time. Download a free trial or request a demo here.
+‍
+BY THE NUMBERS
+30%
+PROJECTS 30% YOY REVENUE GROWTH
+70%
+DECREASED BI DEPLOYMENT TIMES BY 70%
+20%
+20% INCREASE IN SALES ACROSS THEIR CUSTOMERS’ LOYALTY BASE
+ABOUT
+HYPERFINITY
+Founded in 2019 and based out of Leeds, UK, Hyperfinity's no-code user interface gives business and technical users the ability to visualize their data, create insights, and then use those insights to optimize their decision making. These decisions around product offerings, pricing, and personalized communications are some of the most important a retailer makes, and with the help of HyperFinity’s platform, they can get those decisions right by delivering great customer experiences and driving profitability.
+More about
+Hyperfinity
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

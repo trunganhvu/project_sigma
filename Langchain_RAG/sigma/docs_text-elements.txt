@@ -1,3 +1,104 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Text elements
 Suggest Edits
 Requirements
@@ -17,20 +118,22 @@ Select the text you want to format.
 Use the toolbar at the top of the page to select your format option(s).
 Add Dynamic Text Based on Your Data
 When editing a workbook, you can inject dynamic text into text elements. Dynamic text is text generated based on a formula. This is helpful if you want to display element headers or inline text that automatically updates based on your data.
-Before you start: This action is only available in Edit mode. To begin editing, click Edit in the top right corner of the page; see Workbook lifecycle.
-Select your text element, and position your cursor where you would like to add dynamic text.
-Hit = on your keyboard,
-or
-Click the function () button, located in the workbook's toolbar.
-
-A formula bar will pop up over your text element.
-Type a formula, just as you would in the formula bar of any data element. Start typing the name of the object/table with your desired field, and Sigma will provide suggestions for you to choose from.
+Open a workbook in Edit mode.
+Select the text element to which you want to add dynamic text.
+Place your cursor where you want to insert the dynamic text, then enter = or select Formula in the workbook toolbar.
+A formula bar displays over the text element.
+In the formula bar, enter a formula that generates the dynamic value you want to include in the text. As you begin typing a function or the name of an existing element, you can choose from the autofill suggestions.
+💡
+To include metric output in dynamic text, create a calculation column that references the metric, then reference that table and column in the dynamic text formula.
 Hit Enter on your keyboard.
 [optional] To apply formatting:
 Select your new dynamic text.
 Choose a format option from the toolbar.
 RELATED RESOURCES
 Intro to UI Elements
-Did this page help you?
-Yes
-No
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

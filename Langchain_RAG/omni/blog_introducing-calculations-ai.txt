@@ -1,0 +1,56 @@
+Introducing Calculations AI
+A simple but delightful application of AI for BI
+February 16, 2024
+Richard Czechowski
+Let’s face it, most AI use cases haven’t lived up to the hype. They tend to target more flash than substance. Usually, they fall short. Even the useful ones can struggle with reliability, throwing wacky, incorrect answers that slow you down rather than speed you up.
+It’s not because AI is bad. The excitement has just overshadowed today’s best opportunities: the ones that smooth the administrative burdens that come with everyday tasks.
+Our team has spent years building data products dedicated to reliable and consistent answers, and it matters to us that we keep that train moving — even as we test the latest tech. We can’t compromise just to add a cool new AI feature. It has to be both useful and reliable. I believe the key is developing targeted experiences, which provide the focus AI needs to ensure maximum reliability.
+Spoiler alert: We didn’t set out to create a magic button that will perfectly answer all of your questions with no need for guardrails. I’d be wary of anything claiming to!
+Instead, we focused on specific use cases we could make easier and faster. Some of them, we threw out. Some are still being tested. And today, I’m excited to announce Calculations AI — Omni’s reliably useful, new AI-powered feature!
+Calculations AI uses a large language model (LLM) to inject spreadsheet-style formulas directly into your Omni table to help you do what you’re trying to do — without having to Google around for it. Calculations AI provides a helpful nudge, without the irrelevant rabbit holes.
+While AI has a long way to go before it can operate outside the bounds of a tightly defined role, there are plenty of ways it can make our day-to-day easier. Sometimes, the simple elimination of administrative burden can feel just like magic, and our customers who have helped us test it agree!
+"Wow, AI did something useful for me 🙂"
+Travis Mitchell, Sr Principal Product Operations Manager @ Aviatrix
+Here’s how we got there and how to use it 👇
+Testing the hype
+The AI train has been running full steam in the tech world over the last few years, and one of its biggest stations is data.
+On the one hand, I love the spirit of innovation around it. Everyone is trying to test the limits of what it can do. On the other hand, those limits have been popping up in several obvious, and sometimes hilarious, ways. We’ve seen AI car sales bots at Chevrolet that recommend Teslas and lawyers submitting legal briefs with hallucinated legal precedents.
+Overall, it's easy to feel like the hype outweighs the delivery.
+There’s a reason we call it narrow AI. The most practical and impactful use cases are small and help sand away the tedious, rough edges of our lives.
+My initial experiences testing AI
+My first regular interactions with AI were with Github Copilot, VS Code’s interface into OpenAI, allowing it to suggest and autocomplete code. Initially, I had it write some tests — which it could rarely do with sufficient accuracy, or write docstrings for code I’d written. The thing that really stood out to me is that it would either write banal and mostly useless doc strings (Thanks Copilot… now what is a “pivotoffset” and a “handler” in this context?)...
+...or, it would write TODO: FIX THIS.
+The latter of which caused me to stop and think... Does my code not run? Is there a problem? The answer was typically, no. AI wasn’t really comprehending my code so much as looking at it and giving me the most common thing people write near code like that. I’m not sure what that says about the code I write. But I do know that, for me, the hype train came off the tracks.
+Interacting with Copilot, ChatGPT, and Midjourney has taught me that for the foreseeable future: AI has a long way to go before it can effectively operate outside the bounds of a tightly defined role. Today, this means embracing AI for simple or commonplace tasks. And, I think these tedious, everyday tasks are really where AI becomes exciting.
+If you think of the data set upon which an LLM is trained as the world’s worst spaghetti code, just a giant mash of instructions and directives, then the only things AI will be good at are where the instructions within the mess are self-contained and clear.
+For example, Excel. There are tons of docs and blogs on Excel, Google Sheets, and every other spreadsheet-like environment. I realized that in this case, familiarity breeds CONTENT.
+Developing Omni-potent formulas
+The general trend in the industry is to try to create ONE BOT TO RULE THEM ALL, like some new version of Clippy that helps you navigate an entire product. They try to do everything, but end up doing nothing well and in some cases create more work.
+So we started examining our product for constrained AI use cases. We tried SQL debugging, but it only ever worked well for ‘simple’ cases where it would already be obvious to a SQL-savvy human what was wrong. These weren’t worthless, but we hope to deliver real power and time savings, not just implement AI for the sake of the trend. We also tried some modeling tools, which are showing promise, but need more iteration.
+Our approach has been to experiment with targeted uses of AI that are focused on doing one thing well in a repeatable manner. I believe, developing these targeted experiences can make data delightful without making it unreliable.
+In December, I got to talking to a teammate about what we could do with our spreadsheet Calculations and AI. In a lot of ways, we realized it’s a perfect application for AI. We’ve chosen to use the interface and functions that have become industry standard so there’s less friction for people who aren’t SQL gurus.
+The syntax is simple and it has been the lingua franca of spreadsheets for almost as long as the internet has existed. I came away from that conversation excited because this flavor of administrative drudgery is exactly what AI is good at.
+Next, we set out to make our LLM reliable.
+How does Calculations AI work?
+We already had a constrained data set (Excel formula syntax), but we needed to restrain it even more. Here’s how we did it:
+Explain to Calculations AI what kind of bot it is. Tell it it’s a formula writing bot and get it to return structured data using the new function interface for ChatGPT.
+Tell it what functions are supported. Currently, we support close to 100 functions out of Excel’s 400+, so we need to tell it which ones are okay to use.
+Supply a map of column labels (A, B) to fields (users.id, users.count), so it can determine how to map natural language field references to Excel’s A1:A5 cell syntax.
+We did all of this with data security and customer needs in mind.
+For example, we only supply the field names, not a user’s whole model or query. This serves three purposes:
+Data security: We don’t want to tell the world any more about a user’s data than we have to.
+Cost: ChatGPT charges on a per-token basis, so each logical unit it has to consume drives up cost.
+KISS: For the additional cost, the returns can be minimal or even make the AI worse. When it comes to AI, practical can be exciting so we don’t want to over-complicate these prompts.
+A simple prototype came together quickly and between our holiday party to New Year’s Eve, we had a great integration for generating spreadsheet formulas from natural language and suggesting formulas based on your columns. And you know what?
+It was exciting!
+For my initial test, I needed terser labels for a chart with states on it, so I asked Calculations AI to rewrite the state names to two-letter abbreviations. On the first attempt, it wrote something to the effect of =LEFT(A1, 2) which gives you the first 2 letters of each state. This was neat, but it didn’t work for Alabama and Alaska since they’d be the same.
+Then, I asked it more specifically to use an IFS and to use the standard abbreviations for states. This wrote a HUGE IFS statement that I would really hate to have to write by hand IFS(A1=”Alabama”, “AL”, A1=”Alaska”, “AK”, ...). Suddenly I’ve saved a load of time and using Omni’s model, I can make that work even easier to repeat. I can then save that field as a view, push it down into the model and 💥 — I’ve got a modeled SQL field representing all the states by their 2 letter abbreviation.
+The workflow felt really magical ⚡
+We also used Calculations AI to write some more complicated formulas that did domain extraction, data cleanup, and more. Some of these Calculations, while not beyond my comprehension, would have taken me a lot of documentation scanning to complete.
+How to use Calculations AI in Omni
+If you’ve come this far, you probably just want to learn how to use Calculations AI, and here it is:
+Open an Omni Workbook
+Go to the Calculations bar and select ✨
+Either use natural language to type in what you want AI to do, or click ‘suggestions’ to help you get started
+That’s it!
+If you’re not already using Omni, but want to test our delightfully practical Calculations AI (plus all the other fun stuff we’ve built), we'd love to help you!

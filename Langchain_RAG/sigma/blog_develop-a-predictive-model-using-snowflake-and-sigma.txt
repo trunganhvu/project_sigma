@@ -1,0 +1,402 @@
+Blog home
+Develop a Predictive Model using Snowflake and Sigma
+Fran Britschgi
+SOLUTION ARCHITECT, AI & DATA SCIENCE
+Develop a Predictive Model using Snowflake and Sigma
+
+Last year, Sigma shared the potential of predictive ML models explaining how to connect the frayed ends of the ML development pipeline to the line-of-business teams that could stand to benefit from those models, greatly increasing cross-team collaboration and workflows. 
+Now, leveraging Snowflake's new machine learning capabilities and Sigma's user-friendly interface, entire organizations can analyze and interpret live data together in real-time, democratizing data science and bridging the gap between the business and the data. The integration makes it easier than ever for ML to be part of business user’s every day work, so organizations can harness the full potential of their data.
+Why use Sigma for ML?
+Sigma empowers countless customers to think differently about model ops, embedding their ML endpoints directly into their business intelligence workspace for a unified experience, rather than in custom-made, brittle, and single-use siloed data applications. Processes like automated forecasting, generative AI text summarization, and governed classification models can all be deployed by non-technical users in Sigma, while keeping data where it belongs–in the warehouse.
+Streamlined data analysis
+Data producers—like data scientists and engineers—tend to work in Python and SQL. But the individuals who need to put data to work and make critical business decisions are often more comfortable working in spreadsheets. In Sigma, data producers and consumers can work together, in a platform that supports their data analysis method of choice, enhancing productivity and accelerating collaborative insight generation.
+Accessible model creation and deployment
+Traditional processes of building and applying predictive models are complex and often only practical for a technical audience familiar with coding languages. This process is simplified in Sigma so data producers can now do all of their work in a platform that's not just available, but easily accessible to the broader business to analyze and take action. 
+Empowered decision making
+With this data at their fingertips, organizations can take predictions and turn them into actionable insights to make informed decisions that drive efficiency, innovation, and competitive advantage.
+Ways to Use Sigma for ML
+Now, with additional ML capabilities built in Sigma, organizations can expand their applications of predictive modeling to drive efficiency and optimization, deliver personalized recommendations, and enhance decision making.
+Supply chain teams in the retail space can predict future demand to optimize stock levels, reduce waste, and maximize profits, providing a better, more efficient way to forecast sales.
+E-commerce companies can perform customer behavior analysis to anticipate customer needs by clustering them with ML methods, improving satisfaction and brand loyalty.
+Operations teams in service industries can identify drivers of peak periods, allocating resources more efficiently to improve customer service and reduce costs.
+How to use Sigma for ML
+Step 1: Data preparation and exploration in Sigma
+The initial exploration phase begins with data manipulation and visualization performed in Sigma directly on top of Snowflake without needing to write complex SQL queries or Python code. It enables analysts to format data, aggregate it on different levels (i.e. daily or monthly), and visually explore patterns, and then write back the finalized dataset directly to Snowflake in a secure, governed environment.
+Step 2: Model development in Snowflake using Snowpark
+The next phase leverages Snowflake's powerful compute capabilities and the Snowpark library to execute data transformations, feature engineering, and model training. In this step, Snowflake handles heavy data processing tasks and trains models directly on its platform using a few simple lines of code—all utilizing the data prepared and explored in Sigma.
+Step 3: Use the model in Sigma
+This final step showcases the integration between Snowflake and Sigma, where Snowflake's machine learning models are directly called from Sigma workbooks. Utilizing Sigma's custom functions and the ability to call Snowflake model functions results in a seamless workflow from model development to application, all within a business context.
+Where is Sigma headed?
+Sigma’s commitment to enhancing the integration between Snowflake and Sigma is rooted in the transformative power of accessible predictive analytics. Sigma is continuously exploring ways to refine and expand capabilities, ensuring businesses have the advanced tools they need to thrive in a data-centric world.
+Ready to explore the potential of predictive analytics for your business? The comprehensive quickstart guide provides a step-by-step walkthrough of developing a predictive model using Snowflake and Sigma.
+Summary
+The deepened integration between Snowflake and Sigma heralds a new era in predictive modeling, one where the power of data science becomes a part of everyday business decisions. By simplifying the process and making it accessible to a wider audience, Sigma is not just predicting the future with ML, but helping to shape it.
+Dive deeper into the world of predictive analytics with the tutorial and discover how to harness the full potential of your data with Snowflake and Sigma.
+‍
+THE ULTIMATE KPI PLAYBOOK
+AI/ML
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

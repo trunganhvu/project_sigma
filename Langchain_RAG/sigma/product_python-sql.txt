@@ -1,0 +1,419 @@
+SQL, Python, Spreadsheet, AI—
+Use the language you know best
+WORKBOOKS ARE THE NEW NOTEBOOKS
+Join the Python Editor Waitlist
+WHETHER SPREADSHEETS OR PYTHON: TEAMS OF ALL SIZES EXPLORE, ANALYZE, AND DECIDE WITH DATA IN SIGMA
+Business teams and data teams have never worked this close together
+UNIFIED PLATFORM
+Amplify your analysis with collective intelligence
+For too long teams of different skills have worked with data using their own technology, creating data silos. Now teams can build together in one platform—using their preferred skill set.
+MULTIMODAL
+Collaborate in the language you need, when you need it
+Switch between Python, SQL, and spreadsheets in our interactive workbooks. Every team member contributes live—using the medium of their choice—to build a complete narrative together.
+ENTERPRISE TRUST
+Secure in your data warehouse, always
+Anything you do in Sigma utilizes data processing within your cloud data platform—securely maintaining strict data integrity and confidentiality with every computation and analysis.
+Teams of every skill have never worked this close together
+Python & SQL elements
+Construct Python or SQL elements as foundational blocks, enabling others to effortlessly build tables, visualizations, and more.
+Cross-element variables
+Defined values can be easily referenced across SQL and Python components for cohesive, complex analyses.
+Autocomplete
+Code faster with smart suggestions to get you to data actions even faster.
+Live Edit
+Experience collaborative editing in real time, with every keystroke visible for immediate alignment.
+Code runs in the cloud
+All code is securely executed within your cloud data platform, maintaining data integrity and control.
+Top Python libraries
+All the Python libraries you love at your fingertips, ensuring limitless possibilities for data analysis.
+GET EARLY ACCESS
+TO PYTHON IN SIGMA
+Sign up now to gain early access to our exclusive Python components and elevate your analytics game.
+Join the Python Editor Waitlist
+“Intuitive tool, excellent support model, great people to work with.”
+Sigma has been such a breeze to implement, serving as a data visualization tool, analytics tool, and an embedded BI tool.”
+
+CASSIE F. VERIFIED G2 REVIEWER
+Top teams choose Sigma.
+See for yourself. Sigma is a G2 crowd favorite,
+backed by countless reviews.
+SEE SIGMA ON G2
+READ THE REVIEWS
+Related resources
+BLOG
+Introducing Python in Sigma Snowflake Native App Now Available on Snowflake Marketplace
+With Python in Sigma Snowflake Native App, Python users can produce dynamic applications using a notebook-style experience for their entire business to access, engage with, and iterate on natively within Snowflake.
+READ THE BLOG
+BLOG
+Python in Sigma: Data Science for Your Business
+Data serves as the cornerstone of success for businesses—yet many organizations struggle to maximize the value of their data. Why? Because data science operates in code, while business teams operate in spreadsheets. This creates siloed insights. And the end result is that data science insights fail to reach the people who need them most.
+READ THE BLOG
+VIDEO
+Product Launch: Python & SQL in Sigma
+With SQL and Python in Sigma workbooks, we’re bridging the gap between data science and the business—all within the same product, and even the same workbook.
+WATCH ANNOUNCEMENT
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

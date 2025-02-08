@@ -1,0 +1,203 @@
+Self-service for every role and skill set
+NO MATTER HOW YOU USE DATA, SIGMA HAS THE TOOLS FOR YOU
+SCALABILITY FOR EVERY BUSINESS
+Everyone can get their job done the way they want to, without hurdles.
+ANALYSTS
+Use a faster, easier, and more powerful BI platform
+Sigma is a better way to work with data.
+ITERATE & COLLABORATE
+Work in Python, SQL, spreadsheet functions or AI
+Build, edit, and work live together
+Process billions of records in seconds
+Build quickly with drag and drop elements into a grid layout
+DRIVE BUSINESS OUTCOMES
+Use Input Tables to clean and enrich data
+Instantly action your data changes via alerts
+Use out-of-the-box charts in all the formats—plus KPIs, Sankey diagrams, and waterfall charts
+GO FURTHER WITH DATA
+Define org-wide metrics at the data source level
+Use Input Tables to run scenarios and predict outcomes
+Make changes with colleagues in real-time
+Leverage prebuilt, plug-and-play dashboards
+Write data back to the cloud data platform
+UNDERSTAND SIGMA’S REFERENCE ARCHITECTURE
+VIEWERS
+Drive your own analysis
+Explore and interact with data—without ever writing code.
+LEARN WITH EASE
+Work in an intuitive spreadsheet interface
+Upskill with QuickStart guides and comprehensive help docs
+Get chat support in from an award-winning human support team with an average response time of 23 seconds
+RUN CUSTOM, AD HOC ANALYSIS
+Use Explore Mode to run new analyses without editing the master report
+Drill down into data
+Drag and drop charts to easily build dashboards
+Use any of Sigma’s 200+ functions—or write a custom function
+WORK FASTER, TOGETHER
+View team dashboards with a free license
+Leverage SQL and Python work from other teams without writing any code
+Live edit with colleagues in the same workbook
+Easily comment on dashboards and share reports
+EXPLORE SIGMA IN A LIVE DEMO
+Say goodbye to the dashboard dilemma
+Downloading data because you can’t wait on another team to update the dashboard? You’re not alone. Luckily, Sigma breaks this cycle.
+ADMINS & IT
+Roll out Sigma with peace of mind
+Build a stronger data culture with the assurance that data remains protected.
+ESTABLISH A SOURCE OF TRUTH
+Tag workbooks as “deprecated,” “warning” or “endorsed”
+Unify teams of multiple skillsets around a central platform for data analysis
+Provide free viewer access to dashboards
+Put an end to data extracts
+Create a Semantic layer in Sigma—or use  partner technologies
+ADD GUARDRAILS
+Manage data permissions for individuals users and groups
+Apply row-level permissions
+View reports on who is using Sigma and how
+See reports on query runs and cloud performance
+Permit self-service where you want it, and enforce data models where you need it
+ENSURE SECURITY
+Configure RBAC, SSO, and OAuth
+Authorize who can connect AI with Sigma
+Rest assured data never leaves the cloud
+View detailed audit logs
+Meet compliance with Sigma: SOC 1, 2, 3; HIPAA; GDPR; CCPA; ISO 27001; & more
+TRUST CENTER
+LEADERSHIP
+Get more value out of your data
+Make your data work for you.
+UNLOCK REVENUE STREAMS & SAVE COSTS
+Launch new product SKUs and build a better customer experience with highly performant and customizable embedded analytics
+Replace outdated SaaS tools with custom-built data applications
+Cut down on ad hoc requests for engineering support
+OPTIMIZE CLOUD INVESTMENTS
+Leverage all the features of data and AI platforms directly in Sigma
+Save on query costs with Sigma’s intelligent Alpha Query Engine
+Use prebuilt templates to understand your org’s cloud warehouse consumption
+BUILD A STRONGER DATA CULTURE
+Understand team performance and allocate resources based on platform usage
+Upskill data consumers across the org
+Accelerate AI adoption with Sigma’s AI infrastructure
+Analyze live data in the format you’re used to
+READ A CASE STUDY
+Related resources
+PARTNERS
+Partner Integrations
+Sigma Integrates with the leading platforms in the Modern Data Stack to provide a seamless experience for your data teams and business users.
+EXPLORE INTEGRATIONS
+PLATFORM
+Security
+Access our Trust Center for the latest security reports, including ISO certifications and SOC 2.
+VISIT TRUST CENTER
+QUICKSTART GUIDE
+Intelligent query engine
+Sigma reduces warehouse load to efficiently deliver a faster user experience, with low compute cost.
+READ THE QUICKSTART
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

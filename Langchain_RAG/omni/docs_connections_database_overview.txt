@@ -1,4 +1,4 @@
-Connect to DataDatabase setupOverview
+Connect to DataConnect databasesOverview
 Setting up database connections
 The steps to connect a database to Omni will differ depending on the type of database. Generally, you'll need to:
 Create an Omni database user
@@ -18,19 +18,19 @@ Connect to BigQuery.
 📄️ ClickHouse
 Connecting to ClickHouse
 📄️ Databricks
-Connecting to Databricks
+Generate a personal access token (PAT)
 📄️ Microsoft SQL Server
 Connect to your Microsoft SQL Server.
 📄️ MotherDuck
 Connect to MotherDuck.
 📄️ MySQL
-Connecting to MySQL
+Create MySQL User
 📄️ Postgres
-Connecting to Postgres
+Create Postgres User
 📄️ Redshift
-Connecting to Redshift
+Create an Omni Redshift user
 📄️ Snowflake
-Connecting to Snowflake
+Create Snowflake User
 Previous
 Overview
 Next

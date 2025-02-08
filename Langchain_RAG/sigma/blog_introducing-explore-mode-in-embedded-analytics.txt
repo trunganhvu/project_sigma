@@ -1,0 +1,391 @@
+Blog home
+Introducing Explore Mode in Embedded Analytics
+Zalak Trivedi
+PRODUCT MANAGER
+Introducing Explore Mode in Embedded Analytics
+MAY 22, 2024
+Embedded analytics connects the power of Sigma dashboards and charts into a product or application, so that an organization’s customers can access and analyze the data that’s most important to them. Many companies leverage embedded analytics platforms to accelerate their time to market, drive user engagement, and monetize their data while avoiding having to build anything from scratch, which often results in higher development costs, slower time to market, and a poor overall customer experience.
+Fundamentally, Sigma is a proponent of providing enterprises with low-risk, self-service analytics capabilities and these enhancements take that experience and environment a step further providing new ways for customers to analyze, interact, and access their data.
+With Explore Mode, Sigma is enhancing the embedded user experience by providing more ways for users to engage with the data and charts provided to them, and lets organizations deliver an even more valuable and customized end user experience. 
+What is Explore Mode?
+Explore Mode empowers individual users to interact with data without altering or copying the original workbook. Legacy business intelligence platforms require users to duplicate countless copies of a dashboard to perform ad hoc analyses, creating confusion among users and introducing risk for an organization. In Sigma, it’s easy for users to dynamically interact with their data, refine visualizations, and derive insights directly within the dashboard interface. 
+Users can add new elements, change groupings on existing elements, or update a pivot table to perform their own tailored analysis and to make better, more data-informed decisions.
+Because users aren’t changing the dashboard itself, but instead just doing an exploration on top of the dashboard, they can explore worry-free and organizations can rest assured that the underlying data is safe and secure.
+Many organizations leverage embedded analytics as a vehicle to monetize their data and unlock new revenue streams. Explore Mode takes this one step further and allows for additional license options in a product or application, creating even more flexible paths to monetization. Customers are no longer limited to a basic “viewer” license of the data—they can now deeply explore the data themselves, and organizations can charge a premium for this access.
+Understanding the Different User Capabilities
+The Explore Mode functionality is broken down into two user permissions–Basic Explore and Full Explore. These permissions should be leveraged to curate the right feature experience for your customers.
+Basic Explore enables users to view and interact with explorations and published workbooks and offers lightweight customization. Users with Basic Explore have the added ability to drill into data, filter columns, and enter input table data. Basic Explore is recommended for users who need to access prepared data and insights and need some drill-down capabilities in published workbooks but don’t need to modify the workbooks themselves.
+Full Explore enables the entire scope of interactions and customizations in Explore Mode. Users are granted all of the capabilities in Basic Explore plus the ability to modify workbook elements to create custom views of published workbooks. Full Explore might be granted to power users who model, transform, and analyze data.
+For a comprehensive comparison of the granular user capabilities, review the user permission breakdown. To get started setting up permissions for your customers, navigate to the administration portal and follow these steps. 
+Conclusion
+With Explore Mode, Sigma is bringing a level of customization to embedded analytics that no other business intelligence tool provides. Embedded users can access data in a way that increases self-service capabilities without exposing an organization’s data to any risks.
+With these enhancements, companies have the tools to build out the best possible data experience for their customers without the need for engineering support. Sigma not only provides the tools to analyze data—Sigma gives organizations a single platform to build data applications, unlock new revenue streams, and bring their users closer to the data so they can make smarter, more informed decisions to drive their business forward.
+‍Explore Sigma's Embedded Analytics in real-time and get started on your embedding journey today!
+THE ULTIMATE KPI PLAYBOOK
+Embedded Analytics
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

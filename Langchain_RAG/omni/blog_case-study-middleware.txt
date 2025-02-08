@@ -1,0 +1,44 @@
+Middleware case study
+Saving engineering resources and optimizing the customer experience
+March 1, 2024
+Middleware’s cloud observability platform helps companies deliver exceptional, error-free experiences to customers. In addition to making high-capacity observability software available at a low cost, one of Middleware’s core commitments is to empower engineers to accelerate resolution times, planning cycles, and release frequency.
+The commitment to saving time for engineers extends beyond customers. When co-founder Zach Michel set out to make data more accessible to his go-to-market (GTM) team, he wanted to find a solution that would eliminate — not create — work for Middleware’s developers.
+The team had spent considerable time repurposing Middleware’s product into a (pretty awesome) dashboarding tool they called Back Office. “Back Office was great, but anytime we needed a feature, developers had to build and maintain it, and that took time and focus away from our customer-facing product,” recalls Zach.
+Zach made it his mission to find a BI tool that would fit Middleware’s tight early startup budget, serve the use cases of Middleware’s customer-facing teams, and be implemented and managed by himself.
+By choosing Omni, Middleware was able to:
+Migrate completely in three days: A single user moved over all reports and built a data model in Omni.
+Conserve engineering resources: Developer resources spent on analytics decreased from 30% of one engineer’s time to 0%.
+Increase ease of exploring unstructured data: The ability to expand and parse JSON data helps engineers understand product behavior.
+Key elements of Middleware’s data stack
+The Challenge: BI on a budget
+Zach’s list of criteria for Middleware’s new BI tool was short and straightforward. He was looking for a platform that had:
+An affordable price for an early startup
+Essential features included in a single platform vs. buying multiple tools
+The ability to be set up and maintained without developers
+The functionality to support Middleware’s core use cases (e.g. customer success)
+Few BI tools fit the bill. “Established BI platforms use a pricing model that makes them too expensive and out of reach for early startups. But I didn’t want to use an open source tool because we’d need developers to set those up, and I was trying to reduce the BI burden on our developers — not add to it.”
+Zach heard about Omni and was curious to learn more. “The visualization layer really stood out to me. From my experience helping people implement BI tools, I saw a lot of visualization layers that looked nice but were actually shallow. Omni’s visualizations are super clean, easy to customize and configure, and can handle a huge amount of data.”
+"We needed a tool that would meet our needs today and that we believed would grow to meet our needs tomorrow."
+Zach Michel, Co-founder
+Not everyone on the team was so fast to get on board. “Previously, we had been on the free tier of most tools, so I knew the team would need to test Omni for themselves to see if it really offered meaningful improvement compared to what we were previously using. Otherwise, they were not going to be on board with switching.”
+One of the biggest selling points for the team was how easy Omni made it to work with JSON. “We have infinitely-tiered JSON and that creates a lot of complexity. With Omni, developers can expand long JSON elements to get a better view without needing to have data expertise or support. This makes the raw data more useful to more people without needing my help to start exploring. Plus, Omni gives me, the sole data modeler, a really simple tool to use to extract JSON myself. The ease of working with JSON really differentiated and sealed the deal for our developers and for me.”
+"We wanted a tool that had all the features we needed in a single platform and would make everyone's life easier. After testing it, choosing Omni was an easy decision."
+Zach Michel, Co-founder
+Migration: Data modeling made easy
+Zach took it upon himself to migrate Middleware from their previous BI solution, Back Office, to Omni. “It was surprisingly easy. I just connected our data sources to Omni, and then iterated on the default model that Omni gave me.”
+Setting up Middleware’s data model in Omni felt very different from Zach’s experience with traditional BI. “Typically, you’d have to build the model from scratch. The whole time, you’re digging through docs to find answers to your questions, and it’s very hard because you don’t know what you’re looking for,” says Zach.
+“With Omni, I didn’t have to go through the typical process: changing the model, checking the front-end, discovering it’s not right, and then trying to figure out why. Instead, Omni allows you to see the difference between the current model and the production model, and then only push the changes you want to make. That cuts out a ton of the back and forth that can make modeling so painful.”
+Despite the significant amount of content in their previous BI solution and Zach running the entire migration himself, it only took three days until it was ready for the team to start using.
+“From the start, Omni felt clean and easy to configure. It was easy to figure everything out and model all of our data in the app, without much need for support,” shares Zach.
+Results: Saving developer time and increasing data access
+Switching to Omni has freed up considerable time and headspace for the Engineering team to focus on product development. “One of our engineers used to spend a third of his time developing Back Office, and that’s now dropped to zero.”
+Even better, the Engineering team doesn’t have to worry about how iterations to the product or new features will translate into analytics — they just get to make decisions based entirely on what’s best from a customer experience standpoint.
+“Our engineers use Clickhouse, so everything they develop goes into JSON. Because Omni gives me a way to easily extract that JSON, we get to skip the discussion of what attributes they need. I just have a new feature’s event flow exported into Postgres, and then I can take it from there.”
+"One of the risks of introducing a BI tool is that some people don't end up using it. In our case, some engineers prefer to write in SQL, and they can do that with Omni. Then, I can promote what we want to keep back into the model. That way, everyone can work how they want to, without sacrificing governance."
+Zach Michel, Co-founder
+Aside from engineers, the biggest users of Omni are Middleware’s Field team, who own the end-to-end customer journey. “Their goal is to onboard new users, and Omni has made it easier for them to look up specific accounts and drill in to see which ones have logged in and gotten started, and which might need more support.”
+Zach is also working on connecting usage data to understand how accounts behave over time: which features are popular, where there’s drop off in the product, and retention of different user cohorts, among other things. “Tying our customer and product data together is really valuable for our Product team.”
+Getting everyone at Middleware the data they need is not just Zach’s job — it’s Omni’s too. “I just love the support. Every time I’ve asked a question in Slack, it’s been answered in minutes at most. We have a Slack-based support team at Middleware, and I think it’s a superpower for customers.”
+Zach also appreciates the transparency — especially watching Omni’s weekly Engineering demo videos to see the new features being built, or viewing the Changelog notes to see what’s available for testing in the product.
+"We were looking for a tool that would grow with us. Omni has a bunch of features we love already, and it’s great how quickly the team is developing new ones."
+Zach Michel, Co-founder

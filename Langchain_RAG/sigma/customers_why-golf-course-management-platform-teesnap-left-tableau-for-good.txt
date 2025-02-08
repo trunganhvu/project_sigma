@@ -1,0 +1,389 @@
+Why golf course management platform Teesnap left Tableau for good
+By Jim Wood
+VICE PRESIDENT OF PRODUCT & TECHNOLOGY, TEESNAP LLC
+Jim Wood is the VP of Product & Technology at Teesnap. Teesnap offers a comprehensive digital platform primarily designed for golf course managers, streamlining operations through an integrated suite of software solutions. Teesnap enables golf course operators to enhance their efficiency, improve customer engagement, and leverage data-driven insights for better decision-making. While the platform is aimed at golf course managers, its benefits extend to the consumers by providing a seamless golfing experience through efficient booking and payment processes.
+Life before Sigma 
+One huge challenge was related to the lengthy time it took to refresh our data, which prevented users of the system from being able to make timely decisions. Other limitations we encountered were the performance issues experienced with Tableau that were truly unacceptable, and caused users to have to wait many times for minutes before the report would even render.
+After transitioning to the Sigma platform coupled with Snowflake, we observed an immediate performance enhancement, exceeding 90% on our most complex report.
+The performance issues experienced with Tableau were simply unacceptable.
+The decision to integrate Sigma into our platform was based on its strong alignment with our key objectives: driving innovation, achieving market leadership, and enhancing customer satisfaction. Sigma's potential to significantly boost performance, its cost-effectiveness, and the promise of a solid return on investment were critical factors that underscored its suitability for our company, my role as VP of Product & Technology, and the golf industry.
+Life with Sigma 
+Since incorporating Sigma into our workflow, the transformation in how my team and I interact with each other has been significant. Sigma has provided us with a collaborative platform that greatly enhances our ability to explore, analyze, and visualize data. This has facilitated a more cohesive and efficient working environment. 
+We can now share insights quickly and base our decisions on solid data. The platform's user-friendly nature, coupled with its seamless integration with Snowflake, has streamlined our processes and boosted our team's productivity by enabling features like automated user creation, no downtime, and a one-click deployment process. The accessibility and speed at which we can now access data are impressive.
+Sigma has not only improved our operational efficiency but also opened up new avenues for leveraging AI capabilities that we are just beginning to explore.
+Sigma opens up new avenues for AI 
+A standout example of Sigma's impact is its role in enhancing our data accessibility and processing speed. Our customers now have access to an extensive history of data, well beyond the three years we could offer in the past. This wealth of information is crucial for informed decision-making in areas such as marketing and promotions. Sigma has not only improved our operational efficiency but also opened up new avenues for leveraging AI capabilities that we are just beginning to explore. This level of analysis and insight was previously out of reach and marks a significant milestone in our journey towards fully realizing Sigma's potential.
+The ease of use and easy deployment of embedded reports within our SaaS platform was a huge win. No longer having to maintain servers and updates for our Tableau environment helped our team to focus on more important tasks. Our infrastructure and engineering team has been able to run much more efficiently without long nights dealing with updates and deployments within Tableau.
+How Sigma affects pricing and profitability 
+Sigma's integration within our platform has significantly improved our ability to produce real-time data analysis, which I am confident will open doors for innovation within our platform. We are currently exploring methodologies to harness this data, aiming to improve our customers' profitability via dynamic pricing models and to boost user engagement. This strategic direction not only aligns with our core objectives but also positions us at the forefront of leveraging data-driven insights for real business results.
+Why are more people leaving Tableau for Sigma? Watch the on-demand webinar >>
+ABOUT
+TEESNAP
+Streamline Your Golf Course Management with Our All-in-One, Easy-to-Use Platform.
+More about
+Teesnap
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -1,0 +1,17 @@
+Omni achieves SOC 2 Type II Compliance
+...and how we’ve been building secure cloud analytics since day one
+May 3, 2023
+Chris Merrick
+We are proud to announce that Omni has completed our first SOC 2 Type II audit. The audit report contains no exceptions and is available now upon request. It contains a detailed description of the practices and processes we use to maintain the safety and security of our people, systems, and data, and those of our customers.
+Keeping our customers and their data secure has been part of every decision we’ve made since we started building our business intelligence platform. And, this certification is just one element of our ongoing commitment to providing customers with trusted answers to their most business-critical questions.
+What is SOC 2 and why does it matter?
+A SOC 2 Type II audit assesses the continuous design and implementation of processes and practices an organization uses to stay secure. The end result is an audit report that can be used by other organizations to assess the risk of, for example, sharing data with the organization. The report can also be used by one organization to determine whether another organization meets its compliance standards. In fact, SOC 2 has a built-in network effect: one of the controls in the framework is to assess the compliance of vendors and partners, which is often addressed by looking at their SOC 2 report!
+Like all SOC 2 Type II reports, ours dives into the results of rigorous audits on our:
+practices to ensure security
+service commitments and system requirements
+risk management responsibilities and framework
+Security from the start
+We started our first SOC 2 audit in the middle of last year, within six months of founding Omni. For many organizations, completing the first security audit is a large project as they work to define and implement new practices and processes. But, for us, all of these practices and processes were already business as usual. Our team has built secure cloud analytics products before, and we knew from the beginning that security and compliance are paramount for our customers.
+Omni’s ongoing commitment to security
+We understand that ensuring security and earning customer trust requires constant vigilance. We can now support workloads that require compliance with SOC 2 and HIPAA standards. We’ll continue to keep our SOC 2 audits up-to-date and expand our compliance over time, starting with other SOC 2 Trust Principles and eventually to other audit and compliance standards like ISO 27001.
+If you’d like to learn more about our security practices and certifications, feel free to reach out to me directly. I’d love to hear from you. And if you’d like to explore Omni, we’d love to help you get the best of business intelligence.

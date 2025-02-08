@@ -1,0 +1,139 @@
+Blog home
+How to use Snowflake Cortex Functions with Sigma
+Zack Norton
+TECHNICAL PRODUCT MARKETING MANAGER
+How to use Snowflake Cortex Functions with Sigma
+
+Snowflake announced access to large language models (LLMs) including Mistral, Llamas 2, and  Snowflake Arctic at the start of May 2024. These functions–which can be called by either SQL or Python–became instantly accessible via Sigma, Snowflake's AI Data Cloud Product Business Intelligence Partner of the Year.
+
+Sigma’s user interface acts as a front end to cloud data platforms like Snowflake and opens up Cortex functions to the average spreadsheet user. Sigma supports all existing Snowflake Cortex functions such as COMPLETE, EMBED_TEXT, EXTRACT_ANSWER, SENTIMENT, & TRANSLATE. Sigma integrates with existing functionality to make Snowflake Cortex more accessible than ever.
+Why Sigma Makes it Easy
+Without any SQL or Python expertise business users can call LLMs to complete prompts, enrich and summarize data, or even translate entire columns of data.
+Sigma Custom Functions can be wrapped around LLM prompts and put in place for business users to add data as easily as new spreadsheet calculations. Analysts, Data Engineers, Product & Business Leaders can…
+Call SENTIMENT and return a number value for a customer review.
+Ask an LLM anything with COMPLETE to query Mistral, Llamas 2, Snowflake Arctic and others.
+
+SUMMARIZE a block of text. (For when they don’t want to wrap text in a Sigma table)
+Use EXTRACT_ANSWER to pluck out the answer from an overly verbose LLM response. (Pairs nicely with COMPLETE.)
+Sigma makes LLM functionality approachable all while keeping your data completely secure within Snowflake. No extracts and no ungoverned 3rd party AI services. Which is why we are already using Snowflake Cortex internally at Sigma.
+Sigma’s Internal Use Cases with Snowflake Cortex
+With Snowflake Cortex the AI revolution is just beginning. Our Sigma data team immediately saw value in adding Snowflake Cortex to our sales and support processes. Here’s how Sigma is deploying Cortex functions across our entire company:
+Sentiment enrichment of Gong calls
+Predictive account scoring for propensity to buy– Here’s where we can prompt an LLM to scrape the web for content indicators an account will buy.
+Sample Prompt:
+‍
+Complete, Mistral, ”Your goal is to analyze different companies across the globe and understand what they do, such that you can enable employees to have a better understanding of who they are selling to.”
+Salesforce opportunity “Why we win” analysis 
+Support chat summarization
+Sigma allows transparency into Snowflake Cortex costs as well. We can help track and control spend across departments, service accounts, and down to individual users. 
+Sigma and Snowflake are working together to bring the latest generation of LLMs to business users with Snowflake’s AI Data Cloud, helping customers further unlock the value of their data.
+‍Interested in learning more about Sigma and Snowflake Cortex use cases? Learn more here.
+THE ULTIMATE KPI PLAYBOOK
+AI/ML
+Product
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

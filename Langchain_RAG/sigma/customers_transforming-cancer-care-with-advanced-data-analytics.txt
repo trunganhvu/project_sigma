@@ -1,0 +1,397 @@
+Transforming Cancer Care with Advanced Data Analytics at Florida Cancer Specialists & Research Institute
+We spoke with Franklin German, Senior Director of Enterprise Analytics, and Nick Landoff, Business Analyst, at Florida Cancer Specialists  & Research Institute (FCS), a community oncology practice and research facility. With 270 providers across more than 100 locations, FCS conducts research and sees more than three million patients every year.
+Data in cancer care 
+Franklin: Accurate data is everything in the cancer care field. Cancer is a very scary disease, and sometimes, the patient and the family need help navigating everything. Because we have so many doctors and over 100 locations, the amount of data that we produce is massive.
+In the cancer care field, accurate data is everything.
+We believe that cancer needs to be personalized. We do a lot of research trying to match the best treatment based on patient molecular profiling. Every patient is different, with a different family history and different physical parameters. So we target the therapy that’s most appropriate to that particular person's history. 
+Life before Sigma
+Franklin: Prior to Sigma, we had a traditional business intelligence tool, Power BI, but it wasn’t able to scale. Having so many doctors and locations, the data that we produce is massive. In some cases, we wanted aggregate data, but our providers wanted to drill down to the most granular piece of information. Coming from legacy BI, the exchange of information in our organization before Sigma was pretty much only Excel-based. 
+Nick: In terms of the scale of our data, there are hundreds of thousands of activities happening every single day. We need to make sure that we're capturing all of that data, and that we’re able to show it on both the micro and  macro scale.
+For drug procurement, many of our users relied on manual processes when buying new drugs from manufacturers. They manually analyzed data in Excel by exporting reports from our EMR (electronic medical record) to determine the number of incoming orders, and then used another Excel spreadsheet from our inventory application to check inventory levels. This process involved an additional two hours of manual data crunching.
+Life with Sigma
+Franklin: Sigma has been a game-changer for us. We're dealing with patient information, known as PHI (protected health information). For us, Sigma is the perfect match because it integrates so well with Snowflake. The fact that the data never leaves Snowflake – that was the biggest selling point for us. 
+Nick: We work a lot with pharmacy and procurement data, and Sigma empowers different business users to access the data they need. 
+Nick: We’ve replicated workflows that were not optimized before. We reconciled a report of monthly drug expenditure and pulled that into Sigma so you could easily go down to the clinic level, the patient level, and the drug level. We're then trying to take that a step further and assess the company's health by tracking all of those activities and tying them back to cost. That means tracking medication dispenses, patient charges, and insurance company collections. That’s how we’re able to identify our profitability. 
+Nick: Data is especially important when you're dealing with medications that may be high-risk drugs. Dispensing an incorrect medication to a patient can have very serious side effects. Any deviations in data can impact patient safety and the results of our care. Sigma allows us to look at those 190,000 dispenses in a month, look at the specific patient level, and see how many dispenses of a particular drug a patient received. Our process of medication inventory used to take two hours - it’s now reduced to about two minutes.
+Our process of medication inventory used to take two hours — it’s now reduced to about two minutes.
+Franklin: Accounting and auditing departments – they love Excel. With Sigma, we gave them something they're very familiar with. So the learning curve with Sigma was very small, and our team was able to utilize it from day one. The best thing is that the data never leaves the data warehouse. Our team can make transformations on the fly, display the data, and create pivot tables, all while maintaining the security that has been mandated and regulated by the data warehouse.
+Sigma Impact 
+Franklin: We have billions of rows of data, producing more than 100 million rows of data transactions each month. With Sigma, this data is available in a format that allows users to choose their level of aggregation, rather than being tied to static reports. This flexibility has been a major benefit for us. 
+People can choose the level of aggregation that they want rather than being tied to a canned report — that has been a game-changer for us . We have very strict security parameters and Sigma just leverages all of that.
+We have very strict security parameters and Sigma just leverages all of that.
+From the clinical perspective, we want to treat our patients well and find the best treatment that can provide the best outcome. From the business perspective, we want to provide our business operations with the means to measure how healthy our organization is, look at revenue, and consider possibilities for running operations better. 
+We've also been investing in research. We’ve started a holistic model of care, looking at the patient from many different views — from the payer's view, from the clinician's view, from the family view. All this data is collected and consolidated in the data warehouse, so we can see whether the patient has any gaps in care. 
+Our goal eventually is to run almost entirely out of Sigma. 
+For example, every day we email doctors a list of patients that might be at risk, or who have been admitted to a facility. All of this enables timely follow-ups and improved patient outcomes. Our goal eventually is to run entirely out of Sigma. 
+Read more health care stories from Sigma’s customers. 
+‍
+ABOUT
+FCS
+Florida's leader in cancer care, at the forefront of innovative clinical research and cutting-edge technologies.
+More about
+FCS
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

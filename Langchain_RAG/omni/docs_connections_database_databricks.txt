@@ -1,7 +1,6 @@
-Connect to DataDatabase setupDatabricks
+Connect to DataConnect databasesDatabricks
 On this page
 Databricks
-Connecting to Databricks
 Generate a personal access token (PAT)
 Omni uses personal access tokens to authenticate to Databricks. Follow the instructions in databricks to generate an Access Token for a service principal.
 Retrieve the HTTP Path and Host Name
@@ -13,6 +12,10 @@ HTTPPath <YOUR_HTTP_PATH> (from previous step)
 Default Catalog: <YOUR_CATALOG>
 User: leave blank
 Password: <YOUR_PAT> (from previous step)
+What's next?
+Now that Databricks is set up, you can:
+Configure user permissions, schema refreshes, environments and timezone settings
+Learn how Omni generates the model associated with the connection
 Previous
 ClickHouse
 Next

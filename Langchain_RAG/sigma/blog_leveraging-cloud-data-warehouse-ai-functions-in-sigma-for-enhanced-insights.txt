@@ -1,0 +1,407 @@
+Blog home
+Boosting Productivity: Leveraging Cloud Data Warehouse AI Functions in Sigma for Enhanced Insights
+Yifeng Wu
+SOFTWARE ENGINEER
+Madison Chamberlain
+SOFTWARE ENGINEER
+Catherine Chu
+TECHNICAL SUPPORT ENGINEER
+Jake Hannan
+HEAD OF DATA
+Boosting Productivity: Leveraging Cloud Data Warehouse AI Functions in Sigma for Enhanced Insights
+Cloud data warehouses like Snowflake and Databricks recently announced support for large language models (LLMs). But why do LLMs matter? LLMs enhance data processing and analysis by enabling more natural language interactions, automating complex tasks, and providing deeper insights through advanced language understanding.
+In Sigma, organizations can harness the full potential of LLMs to enhance data analysis, visualization, and interaction, making it more intuitive and insightful for users.
+Calling an LLM function in Sigma is straightforward
+Snowflake Cortex LLM
+Snowflake Cortex is a fully-managed service that enables access to industry-leading LLMs such as Mistral AI and Llama to securely bring generative AI to governed data. Teams can focus on building AI applications, while Snowflake handles model optimization and GPU infrastructure to deliver cost-effective performance. Snowflake Cortex features are provided as SQL functions such as complete(), translate(), summarize(), sentiment(), and many more. 
+AI Functions on Databricks
+Databricks offers built-in AI SQL functions, which invoke a state-of-the-art generative AI model from Databricks Foundation Model APIs to perform tasks like sentiment analysis, classification, and translation using ai_analyze_sentiment(), ai_classify(), and ai_translate(). Databricks also provides a built-in SQL function ai_query(), which allows custom models hosted by a model serving endpoint or external models, such as OpenAI and Anthropic. 
+Integration of AI Functions using Sigma's Custom Functions
+Utilizing cloud warehouses’ AI functions within Sigma is straightforward and impactful, as it integrates into Sigma's custom functions. For example, a user can create a reusable custom function with just a few clicks and employ it with syntax like complete("mistral-large", [prompt column]), opening pathways to valuable insights.
+Utilize Databricks ai_summarize() function
+Utilizing AI functions in Sigma feels like second nature, as its usage mirrors that of any other standard function. No added complexity, just pure efficiency and ease.
+Best Practices for Using AI Functions
+Data Preparation
+Before feeding data into LLM functions, it's crucial to clean the data by removing irrelevant tokens, such as HTMLcharacters, and trimming the data as needed. For example, a user might leverage Substring() to trim the data within the limit or RegexpReplace() to replace characters. This process ensures inputs comply with the model token limit while maintaining data cleanliness and relevance, laying a solid foundation for analysis.
+Applying Filters to Limit Rows and Preview Data
+To expedite query runtime and minimize costs, filters can be applied to preview a limited number of rows of data. This enables users to make fine-tune prompts and gain insights into the results more efficiently. Note that the order of execution can vary depending on the filter setup and the data warehouse used. In some cases, LLM calculations may need to process the entire dataset.
+Workbook Materialization
+Following the result preview, the next step is to set up workbook materializations to precompute and persist LLM results as base tables for later use, ensuring accessibility and readiness for subsequent analyses. A user can then build pivot tables and groupings without needing to compute those LLM columns again.
+Incremental Materialization Using dbt Models
+In conjunction with materialization, incremental models can be built within dbt, which ensures that only new or modified data is processed, optimizing efficiency and cost throughout the analysis pipeline. For more information on how to use AI inside of a dbt project, navigate to this documentation in the dbt Developer Hub. 
+Use Input Tables to Persist LLM Results
+Creating an empty input table and then copying and pasting the LLM results into it ensures that the results are stored, eliminating the need for recomputation.
+Cost Monitoring
+As with any new and existing feature, cost is always top of mind for teams. Snowflake offers daily spend associated with AI services out of the box in their organization usage Metering Daily History view. With this readily available, creating a workbook in Sigma is only a few clicks away.
+For Databricks please see View Lakehouse Monitoring expenses | Databricks on AWS for details. Please note that using data warehouse AI functions may be subject to resource limitations and throttling during periods of high utilization. Refer to your data warehouse documentation for more details.
+Conclusion
+In today's data-driven world, the integration of cloud data warehouses’ built-in AI function with Sigma’s custom functions provides a promising pathway toward achieving full scalability, enhanced security, and easy-to-use LLMs. Your entire organization can easily harness the power of AI to navigate complexities, innovate with agility, and drive continuous growth in the ever-evolving landscape of data analytics.
+‍Interested in seeing this in action? Reach out to our team to get a custom demo of Sigma. And keep up to date with what’s new by following Sigma on LinkedIn or joining our team at a live event.
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+AI/ML
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

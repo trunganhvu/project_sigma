@@ -1,0 +1,391 @@
+data.world’s Journey to Data-Driven Success: Enhancing Analytics and Collaboration with Sigma
+By Jon Loyens
+CHIEF PRODUCT OFFICER, DATA.WORLD
+We spoke with Jon Loyens, Chief Strategy and Data Officer at data.world, a cloud-native enterprise data catalog and governance platform. As a co-founder, Jon has been instrumental in building a data-driven culture at data.world from day one. Despite their strong foundation, as the company grew, they faced challenges ensuring all departments could easily access and interpret the vast amounts of product telemetry and operational data they produced. Sigma has played a crucial role in overcoming these challenges, enabling self-service analytics across the organization and enhancing their ability to leverage data effectively.
+Life Before Sigma
+As a company deeply rooted in data, we produce vast amounts of product telemetry, customer success metrics, and operational data. And while you’d think that a data company like ours would be seamlessly data-driven from the get-go, the reality was a bit more complex.
+When we started data.world, we built a culture of being data-driven from day one. Most of us came from consumer application backgrounds, where data decisions based on telemetry and product insights were the norm. We did a great job applying that mindset early on. But as we grew, expanding beyond our core technical team, we hit a wall. Different departments—customer success, marketing, finance—needed easy access to data and analytics, but getting it was a challenge.
+Our problem wasn’t a lack of data; it was the accessibility of it. We had strong BI tools in place, but they didn’t deliver the self-service experience we needed. Users had to rely heavily on our data engineering and analytics teams to pull reports or make adjustments. Want a different slice of the data? Put in a ticket. Need customer-specific metrics? More waiting. It was frustrating for everyone involved, and we knew this wasn’t scalable.
+Choosing a BI Solution
+We realized we needed a true self-service BI platform—something that could bridge the gap between technical and non-technical teams and allow everyone to get the insights they needed without constantly pinging the data team.
+We evaluated all the major BI players—Power BI, Tableau, Looker—but kept running into the same issues. While these tools were excellent at producing static dashboards, they fell short when it came to collaborative, real-time exploration. Users couldn’t just dive in and start slicing and dicing the data. The flexibility wasn’t there. That’s when we started looking at Sigma.
+Sigma stood out to us for a few reasons. First, the Google Docs-like collaboration model was a game-changer. It allowed our analysts and end-users to work together in real-time, making the learning process smoother. A key moment for us during the evaluation was involving different personas from across the company—RevOps, customer success, finance—and seeing how far they could get with Sigma on their own, without needing an analyst to hold their hand. Their engagement and satisfaction were off the charts.
+Sigma’s flexibility in doing drill-downs and exploratory analysis in a collaborative way sealed the deal. Traditional tools just couldn’t compete when it came to empowering users to explore data iteratively and independently.
+Life with Sigma
+Since adopting Sigma, our data-driven culture has only strengthened. Teams across the company—from customer success to finance—are now able to jump in and explore data on their own terms. We’ve gone from having a ticket-driven process where every dashboard request had to be routed through the data team, to enabling users to dive into existing reports, tweak them, or even create new views entirely on their own. The dependency on our data team has shifted dramatically, freeing them up to focus on more meaningful work like data modeling and building reusable assets.
+The biggest impact has been on collaboration. Now, analysts can sit down with a business user, work through a problem in real-time, and that person can take what they’ve learned and run with it next time. Sigma allows for that real-time collaboration, and we’ve seen that kind of adoption happen naturally across the company. People feel empowered, and the work of the data team has evolved to focus on high-value tasks.
+Our data science and analytics teams are thrilled. Instead of constantly being bogged down with small tweaks or dashboard updates, they’re doing what they love—data modeling, building reusable models, and publishing data products into our data catalog. Sigma’s tight integration with Snowflake, our data warehouse, has been key in driving this transformation. It’s been a win for both the end-users and the data team.
+What’s Next with Sigma
+Looking forward, we have big plans for Sigma. We haven’t yet tapped into the full potential of writing data back to the warehouse, but that’s something we’re excited about exploring—particularly for use cases in finance and customer success. For us, it’s not just about pulling insights from the data; it’s about empowering teams to tweak, modify, and build their own dimensions or metrics that they need to work with.
+As we continue to grow, Sigma will remain a core part of our data strategy. Our goal is for every team at data.world to be fully data-driven, and Sigma is helping make that happen. The combination of our own platform to discover assets and Sigma to interact with them is now a known, trusted workflow across the company. It’s exciting to think about how much more we can do as we continue to build on that foundation.
+‍
+ABOUT
+DATA.WORLD
+data.world is widely recognized as the leading enterprise data catalog and governance platform powering the strategic data initiatives for some of the world’s most recognizable brands.
+More about
+data.world
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

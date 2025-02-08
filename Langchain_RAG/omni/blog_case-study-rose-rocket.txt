@@ -1,0 +1,47 @@
+Rose Rocket case study
+Why Rose Rocket calls Omni “the future of BI”
+February 15, 2024
+Rose Rocket spent eight years building modern trucking and logistics software for the freight industry. For the first seven of those years, Rose Rocket focused on building a best-in-class transportation management system (TMS).
+After working with thousands of customers, they realized that the best way to support these teams wasn’t just by building a better transportation management system (TMS), but by reimagining the software entirely.
+Today, Rose Rocket has accomplished just that, creating the first platform made up of plug-and-play software components that allows trucking and freight companies to design a workflow tailored to the needs of their business.
+The level of customization made possible by Rose Rocket’s platform is a huge differentiator for its customers — and creates a unique data challenge. Everything — from datasets to dashboards — needs to be as flexible as possible so that end users can easily explore data and build reports.
+Luckily, the Insights team at Rose Rocket was up to the challenge. “Our team is small, so we’re always trying to find better ways to help people self-serve,” says Jade Khiev, Insights Engineering Lead at Rose Rocket. “Our goal is to make data so accessible and easy to explore that we work ourselves out of a job.”
+As a part of this ongoing effort, Rose Rocket recently migrated to Omni, which has helped:
+Reduce costs: Migrating from Looker to Omni cut Rose Rocket’s BI spend in half, without the team sacrificing any features or functionality.
+Increase self-service: Non-technical users can explore unstructured data directly in Omni with minimal support from the Insights team.
+Save time: The Insights team has received about 80% fewer questions per week — time they’ve redirected to improving Rose Rocket’s customer experience.
+Key elements of Rose Rocket’s data stack
+The challenge: Deliver customization at big rig scale
+Customization is central to Rose Rocket’s product offering and data strategy, and supporting such a complex model requires a flexible data stack.
+Most of the elements of Rose Rocket’s data stack, including Fivetran, Postgres, Snowflake, and dbt, aligned well with their data strategy — especially Snowflake, which has enabled the team to move away from highly structured relational database modeling towards an unstructured data model that offers more flexibility and richer customization to end users.
+However, the newfound flexibility also came with a cost: the fields that used to be defined as columns now live in generic JSON blobs, leading to a reduced semantic understanding of the data model. As a result, querying unstructured data in Rose Rocket’s previous BI tool, Looker, required more advanced knowledge of JSON parsing functions and complex JOINs in SQL.
+"I liked a lot of things about Looker, but it created extra work for our team and didn't provide the flexibility we needed to scale self-service data exploration. With Looker, I knew our data team would always be a bottleneck. We just weren't getting the value to justify the cost."
+Jade Khiev, Insights Engineering Lead
+Jade and the Insights team set out to find a new BI tool that would make it possible for people in every function to easily build custom queries and update the data model on their own. As Jade explains, “Our Product team ships new features every week, and it’s just not scalable for my team to implement tracking for every change. If we could find a solution that made it easier for product managers to work with the raw data independently, we could distribute that workload and run our product-led growth initiatives much more efficiently.”
+The evaluation: Putting speed and flexibility to the test
+In the market for a new BI tool, Jade decided to revisit Omni, a product she had first seen before it went to market. “We were really impressed with how far the product had come so quickly,” says Jade. “I let the Omni team know we wanted to try it as quickly as possible. They immediately got the team started and led us through a few onboarding sessions, and we knew it would be doable on our fast timeline.”
+"To me, Omni feels like the future of BI."
+Jade Khiev, Insights Engineering Lead
+In addition to providing more flexibility, reducing manual data work, and lowering their BI spend, the team at Rose Rocket was looking for a product that would grow with them. “As a startup evaluating partners, it’s important to ensure you’re aligned on future direction. With Omni, the team's urgency was clear from the first meeting. I could tell that they were not only focused on building a high-quality product but also on making customers successful. The team is super responsive on Slack and the support we get is super hands-on — Omni will even help us build things.”
+"We love what Omni is building, and it's clear the team cares. We knew we wanted to be a part of it."
+Jade Khiev, Insights Engineering Lead
+The implementation: Saving time and making it easier to explore data
+Previously, the Insights team needed to do a lot of manual work before most people felt comfortable working with data in Looker, including:
+Building the tables in dbt
+Creating the tables in Snowflake
+Exposing the tables in Looker
+Modeling them in LookML
+Building the dashboards in Looker
+“People only felt comfortable exploring in Looker once the dashboards were already built, and often, they’d come right back needing help adding a field or calculation. It just wasn’t straightforward,” adds Jade.
+Since implementing Omni, the Insights Team has seen an 80% reduction in weekly questions and requests related to BI, which has given them the confidence to hand off most internal reporting to the Business Operations team. Now, with more time, the Insights team can focus on the needs of customers and identify opportunities to improve their platform.
+"It's very intuitive. We've received feedback that Omni just feels so much easier than Looker from so many of our co-workers."
+Jade Khiev, Insights Engineering Lead
+Easier access to data has been especially critical for the Product team as they build out their platform offering and test PLG initiatives. “Data is critical to PLG,” adds Jade, “Of course, you also have to talk to customers, but data is what makes it scalable.”
+Much of Rose Rocket’s product data is now in very few long tables with JSON blobs containing information. “Before, product managers didn’t have a way to find the important information they needed because most of it lives in JSON,” explains Jade. “Now that we have Omni, they can easily create fields from JSON without needing to understand the structure. It’s so easy to just add it.” One of Rose Rocket’s product managers recently created a new object and was able to parse JSON to define the query themselves — getting the answers they needed faster and entirely on their own.
+This wasn’t an isolated incident. The impact of Omni has been felt across the team, with everyone finding it easier to explore data and answer their own questions.
+"With Omni, we've seen a shift. We show people how to add a Calculation, column, or do things in the product and we don't have to repeat ourselves as much. People get it much easier. The questions we do get have gotten better."
+Jade Khiev, Insights Engineering Lead
+The road ahead
+Since migrating to Omni, Rose Rocket has been able to save considerable resources and enable every team to quickly and easily derive insights from their data. The switch has slashed their BI spend in half, and given the Insights team time to focus on creating value for customers — providing trucking and freight companies yet another reason to choose Rose Rocket over the rest.
+"Migrating to Omni allowed my team to hand off most of the day-to-day internal analytics needs so we can focus on our platform and building new value for our customers."
+Jade Khiev, Insights Engineering Lead

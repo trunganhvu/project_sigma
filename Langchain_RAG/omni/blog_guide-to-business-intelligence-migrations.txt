@@ -1,0 +1,68 @@
+A seven-step guide to business intelligence migrations
+Lessons learned helping 100+ teams switch BI tools
+November 10, 2023
+Anika Swenson
+For the first ten years of my adult life, I moved about once a year. During this time, I developed a (weird) love of moving — especially the opportunity to go through all of the things I’d accumulated and decide which ones would serve me in my next chapter. I’m hardly a minimalist, but I found that even this small reset always ended up making my new home a much more organized and pleasant place to live.
+Like the homes we live in, our data environments can become really cluttered, really fast. Former employees leave unmaintained reports behind. Different teams have different definitions of the same metric. Important data and analyses live in random spreadsheets only a few people know exist. And suddenly, your BI tool has 100s of reports and dashboards, even though your team only uses 10.
+This kind of chaos can make implementing a new BI tool feel both necessary and overwhelming. Even when you know a new tool would be better suited to your business (not to mention cheaper, faster, and easier to use), it’s still common to feel uncertain about how and where to start. Like any operational or workflow change, migrations take time and resources. But proper preparation, starting with some good ol’ spring cleaning, will make both the process and end result much, much better.
+Below is the general framework I’ve adapted and used to help more than 100 teams — from tiny startups to large enterprises — evaluate and implement new BI tools.
+Step 1: Identify your goals
+Any migration should address a specific, high-priority problem for your organization, and the benefits of solving that problem should outweigh its costs. Put simply, successful migrations start with strong motivations. Figuring out your “why” — whether it’s a goal you want to achieve or a set of pain points you want to solve — ensures everyone will actually benefit from a migration. This also helps you make better decisions and conserve resources throughout the process. Here are common goals I’ve heard from teams evaluating Omni:
+Improve performance: The current solution is underutilized because it’s too slow, unreliable, complicated, or lacks helpful support.
+New capabilities: The current solution doesn’t address all the team's needs and they want to find a BI tool that will support additional data sets, use cases, or infrastructure.
+Reduce costs: The current solution is expensive (either because the BI tool is pricey itself or requires an expensive tech stack to support it), or the data team has to fulfill too many manual requests, leading to missed opportunities and a premature need for more headcount.
+Step 2: Appoint a migration lead
+Once you've identified the goals of your migration, decide who will be in charge of overseeing the process from start to finish. Like any project, migrations go better when there’s a clear leader who has the responsibility to think through all aspects of the problem and process, get the right people involved, and be accountable for the outcome.
+While migration leads are often on the data team, they don’t have to be. The folks I’ve seen be most successful in this role:
+Understand the data stack
+Have relationships with stakeholders across functions
+Have helped buy or implement software before
+Step 3: Define your requirements
+Look back at the goal(s) you defined in step one and determine where your current solution falls short. This might include common requests that can’t be fulfilled, missing integrations, or issues with reliability, speed, and service that prevent people from using data in their everyday decision-making.
+Here are some of the questions I ask teams going through this process:
+What teams will this BI tool serve?
+What data will your teams need access to?
+How do your users typically like to interact with data?
+What types of questions are not easily answered by your users today?
+What are the most important reports and dashboards to migrate? How would you improve them if you could?
+What capabilities or features do you need now or think you’ll need in the future? For example, will you need customer-facing analytics?
+What, if any, changes will you need to make to the rest of your data stack?
+What is your budget for this tool?
+What is your migration timeline? To leave yourself ample time to migrate, make sure to read over any existing contracts to find out how and when to cancel.
+Who will help execute this migration? How does their availability line up with your timelines?
+Your answers to the questions above will help you set clear criteria for your future BI tool and fine-tune your goals for the migration, which will help streamline conversations with vendors and methodically narrow down your options.
+This doesn’t need to be overly formal, but these are some categories to consider when thinking about requirements:
+Features Can the tool accomplish everything you need it to?
+Integrations How does data get into the tool? Where can you leverage that data?
+Usability Is the tool intuitive and enjoyable to use? What feedback do you get from users — both technical and non-technical?
+Performance / Scale Is the tool fast enough to provide a good experience for your users today? How about future use cases?
+Product Roadmap Is this tool investing and releasing new features aligned with your business goals? Do you want the ability to influence the roadmap or be the first to test new features?
+Support What sort of support will be provided during and after your migration? Will you have dedicated contacts?
+Customer Experience Can you speak with current customers to hear about their experience?
+Price Does the price align with your budget? Are there additional costs you need to take into account?
+Timeline How long will migration take, and how does this align with your needs?
+Step 4: Evaluate vendors
+It’s time to see what’s out there. At this stage, you should have a comprehensive list of requirements that will allow you to efficiently assess whether a given BI tool will meet your team's needs. If you have a strict timeline and budget, make sure to share them with vendors early on, so you can immediately rule out anyone who can’t meet those criteria.
+During this process, it’s also important to ask vendors what will happen after you buy, including learning more about their typical migration process and timeline and any additional resources, tools, or support they can provide to make you more successful. For example, at Omni, we have a simple migrator that speeds up the move from other model-based BI tools, and we provide 1:1 support and training through the migration process to help people move over as quickly as possible.
+Step 5: Make a plan
+Next, take inventory of all the content in your current BI tool and identify what you want to keep.
+Most teams I work with discover that they only have a handful of reports and dashboards that get the bulk of the usage. After that, there may be a long tail of content viewed by a few people, a lot of which has issues and needs to be rebuilt. The rest is usually content that’s duplicated or outdated, or even just no longer functional (a perfect example of how migrations create a great opportunity for spring cleaning).
+How you make this assessment will depend on whether your current tool or tools have any usage analytics.
+If your current tool has tracking on the relative popularity of different pieces of content, use that to see the most viewed reports and dashboards, which teams use them the most, and how often.
+If your current tool doesn’t have this kind of tracking, I suggest either sending out a survey to your team to find out what they use most often, inviting people to an analytics Slack or Teams channel to discuss what matters to them, or both.
+In addition to content in a current BI tool, a lot of teams have data and reports that only exist in other SaaS products or spreadsheets but still get used regularly. As part of this step, decide whether you’d like to continue using these where they sit or if they should be moved over to your new BI tool.
+Step 6: Initiate the migration
+You’ve made it to “moving day!” Fortunately, bringing data into your BI tool has gotten much easier in recent years. ETL is no longer painfully manual thanks to data pipeline tools like Fivetran and Stitch that have hundreds of plug-and-play connectors, or even full-stack services like Mozart Data. The more time-intensive work is modeling data, building out content for teams, and the change management required to move teams over from one tool to the other.
+A) Build your data model and initial content
+I’ve written a lot about data modeling (and my love of it) here and here, so if you want my detailed perspective on how this part should go, check out those resources. To avoid making an already long piece longer, I’ll just say this: whether you do your data modeling in the database layer, in your BI tool, or in some hybrid of the two (my preferred approach!), determining where your business logic lives and what changes will be required for your migration should be the first step of actually moving over.
+If you’ve already done a lot of reusable modeling of your business logic into a semantic layer (whether in dbt or a BI tool), replicating this will be relatively quick. If you haven’t invested in data modeling yet, I recommend using your migration as an opportunity to do that. While getting set up may take a little more thought, it will make your data team more efficient, free up time for them to work on more meaningful projects, and unlock self-service for less technical folks. To help teams get started fast and build for long-term success, we architected Omni to make iterative modeling as you create content and analyze data over time, so there’s not so much up-front effort required.
+Once you have the foundation of your data model, revisit your prioritized list from step three to decide the highest priority tables, metrics, reports, and dashboards to move over to support the individuals or teams who will start using the new tool first.
+B) Bring over your early adopters
+I often recommend a stepwise transition rather than trying to bring the entire company onto the new tool all at once. Identify the people who have a strong motivation to move over because the tool will solve an important problem for them or give them access to data they didn’t have before. These folks can become champions of the new tool, bring along others, and just generally build momentum for the migration. Since they’ll get an immediate benefit from the new solution, they’ll also likely be more accepting of the fact that you haven’t brought everything over from the previous solution, or of any issues you’re still trying to solve.
+Step 7: “Move out” of your previous tool
+Once you have your content and teams moved over to your new BI tool, you’re just about ready to return the proverbial “keys”! Before you turn off the lights:
+Check who’s still logging into the old platform, and ask them what additional support they need to get set up on the new tool. This might involve more training, building out additional content, or addressing any lingering concerns.
+Download any models, SQL queries, or copies of content that didn’t make the cut in the migration. That way, if someone comes back asking about an old report, you’ll still have a backup. If you can’t save things easily from your previous tool, don’t worry — by going through this process, you’ve hopefully chosen a tool that makes it faster and less painful to rebuild anything you missed!
+Final thoughts
+Whether you’re just exploring the possibility of adopting a new BI tool, searching for the right one, or in the thick of migration, I hope some of the advice I shared here makes things a little easier. As I’ve probably made clear by now, I’ve thought a lot about and spent a lot of time working on migrations. While the process I shared in this article may not always work perfectly or universally apply to every team, I think one rule always does: for happy, successful migrations, always start with a bit of spring cleaning.
+If you’d like help mapping out what a migration to Omni would look like for your team, reach out! I’d love to chat.

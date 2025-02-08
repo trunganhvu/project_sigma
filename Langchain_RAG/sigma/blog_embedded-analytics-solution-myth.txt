@@ -1,0 +1,416 @@
+Blog home
+Embedded Analytics Myths Busted: What Companies Get Wrong (& How You Can Get It Right)
+Zalak Trivedi
+PRODUCT MANAGER
+Embedded Analytics Myths Busted: What Companies Get Wrong (& How You Can Get It Right)
+Many companies believe they can build their own analytics solution from scratch, thinking it will be easy and straightforward. But the reality is far more complex. From maintaining dashboards to meeting ever-evolving user demands, building an in-house solution can overwhelm product and engineering teams, pulling them away from core innovation. 
+In this conversation with Sigma’s Head of Embedded Analytics, Zalak Trivedi, we explore common misconceptions about embedded analytics and what makes Sigma’s platform a category leader. 
+This interview is a must-read for anyone interested in harnessing the power of embedded analytics: You’ll gain practical takeaways that can help you make smarter decisions, improve efficiency, and deliver more value to your company.
+‍
+What’s the biggest myth about embedded analytics?
+One of the biggest misconceptions is that companies think building their own analytics solution is a quick, one-time effort. They assume they can create a dashboard or a few reports and be done. In reality, building analytics in your product requires constant iteration to keep up with evolving business needs and customer feedback.
+Companies often assume they can build these solutions themselves. Whether it’s a startup or a large enterprise, we’ve seen teams spend endless time and resources building dashboards. But once live, customers inevitably ask for changes—tweaking KPIs, adding visualizations, or customizing metrics. This overloads customer success, product, and engineering teams, distracting them from what they do best.
+Building, maintaining, and scaling in-house analytics is much harder than you would think. What seems like a simple add-on quickly drains resources and pulls focus from your core product. That’s where Sigma’s embedded analytics shines. With Sigma, you’re embedding a best-in-class solution, freeing your teams from managing analytics and letting them focus on what really matters. Sigma handles the heavy lifting—adding new charts, updating features, and ensuring security—while giving users the flexibility they need. The myth that in-house analytics is easier or cheaper? It rarely holds up when it’s time to scale or meet customer demands.
+
+Why do businesses misjudge the level of technical complexity involved in embedding analytics?
+Embedded analytics comes in different flavors. Some tools in the market let you customize every pixel, but that level of technical complexity often becomes a burden. If your developers are stuck maintaining pixel-perfect dashboards, the benefit of embedded analytics fades. With Sigma, it’s a much simpler, iFrame-based solution where complexity is opt-in. You can have a dashboard live in your product within weeks, and as your users’ needs grow, you can add more features and functionality over time.
+The key is choosing a tool that lets you build complexity gradually, rather than doing all the work upfront. Sigma allows you to deliver better solutions faster, with the flexibility to scale and adapt based on your users’ needs—without overburdening your development team.
+
+But isn’t embedded analytics just about embedding charts and dashboards?
+‍
+It might start with charts and dashboards, but embedded analytics is so much more. It’s about delivering insights to your customers that seamlessly integrate with their workflows and empower them to do more with data. It’s not just showing KPIs; it’s about embedding context-driven data and enabling interactivity within your product.
+With Sigma, users can take action directly from their dashboards—whether it’s launching workflows, creating forms, or even bringing in their own data. This transforms the user experience from passive viewing to active  engagement, making embedded analytics a critical part of how users interact with your product.
+‍
+If you prioritize speed with embedded analytics, doesn’t that mean you have to compromise on security? 
+That’s a huge misconception. People think you have to choose between moving fast and staying secure. With Sigma, you don’t. We’ve built security and governance into the core of our platform, so you can move quickly without cutting corners. Once you’ve got your security protocols set, you can focus on delivering insights fast, without worrying about risks.
+We actually announced several new security features as part of our most recent product launch, including: 
+Key-Pair Authentication: Users can now connect to Snowflake using key-pair authentication for enhanced security. This method uses a private key and a public certificate instead of passwords, reducing the risk of credential theft.
+Customizable Session Lengths: Administrators can set session timeouts to control how long your Sigma session stays active, providing more control over security.
+Customer-Managed Keys: Organizations can manage their own encryption keys for data protection, ensuring they have full control over their data’s security.
+This is central to how we do product development. We prioritize innovative features but make sure the security of your data is always in your hands. 
+‍
+What about scaling embedded analytics solutions—what do people overlook? 
+‍
+One key factor people often overlook is performance. As your embedded analytics solution scales and more data is exposed, it’s crucial to ensure your data models are optimized. In Sigma, or any tool in the modern data stack, you want to make sure you're materializing data correctly. For example, if users don’t need real-time access, you can avoid live queries and provide near-instant results. This ensures that even when your data grows into billions of rows, performance remains consistent.
+Another aspect often missed is user empowerment and self-service capabilities—which give users the flexibility to create their own workbooks and dashboards without needing constant oversight. As long as your governance and security policies are correctly set, you can reduce the strain on your product or customer success teams, letting users get the insights they need independently.
+Lastly, as you add more data sources, consider how they interact. If you allow customers to upload their own data through input tables or CSVs, make sure they have the right security privileges to prevent data from being shared across different customers. Balancing performance, user autonomy, and security is critical when scaling embedded analytics.
+‍
+Let’s talk customization: How important is it really? 
+Organizations often view customization through two lenses: tailoring the dashboard with different charts, KPIs, and workflows, and perfecting the look and feel. The first type of customization—adjusting metrics and permissions for user flexibility—is relatively inexpensive and straightforward.
+Companies tend to make mistakes when they chase a "pixel-perfect" dashboard. The goal of embedded analytics is to reduce the time and resources spent on maintaining and building solutions. If the end user can’t distinguish between the embedded analytics and your product, you’ve already succeeded in implementing the right design. Spending too much time on tiny design details often adds little value to the user, who cares more about insights than flawless design.
+At Sigma, we make it easy with iFrame-based deployment, allowing fast setup and extensive manual controls to match your product’s look. While full code access is an option in the future, most of the customization you need can already be done through Sigma’s element and workbook controls. The key is to balance seamless integration and focusing on what truly matters—delivering value to your users.
+‍
+What’s the biggest mistake when it comes to monetizing data via embedded analytics? 
+Simply embedding analytics isn't enough—you need to consider how to package and deliver that data to generate value.
+For example, can you introduce premium dashboards as part of advanced service tiers or offer custom insights as an add-on service? Creating new license types can also give customers more flexibility based on their specific data needs.
+Lastly, monetizing data isn't just about direct sales—it’s also about improving your product. A better product, powered by embedded analytics, increases customer stickiness, leading to higher retention and incremental revenue over time. When you give users the tools to derive more value from their data, you're not only creating a new revenue stream but also deepening customer engagement. That’s the real power of embedded analytics.
+‍
+Discover Embedded Analytics at Sigma
+THE ULTIMATE KPI PLAYBOOK
+Insights
+Embedded Analytics
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

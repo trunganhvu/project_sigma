@@ -1,0 +1,14 @@
+AI can’t solve the hard parts of BI
+You need humans to lay the groundwork
+August 29, 2024
+Colin Zima
+AI practitioners are flooding to natural language BI with the simple promise of democratizing data. Everyone knows data informs better decisions; and better decisions create better business outcomes; so more users using AI to be effective with data = better business. 
+The problem is that democratizing data isn’t the core challenge of BI. 
+The core challenge is getting the data foundation right. And AI can’t magically do that for us.
+The salt mines of data work – data engineering, data transformation, and data modeling – require human knowledge about how a business works. This foundation has to be set up before we can plop these new, shiny APIs on top. If we can’t even count customers accurately, how can we expect bots to forecast high-value customers?
+Our vision is to accelerate people in the hard parts of BI, then enable them to use any interface – including AI – to access their data. When data teams can work with their data effectively, they can build the foundation for reliable, debuggable natural language interfaces.
+For example, with AI querying in Omni, business users can ask questions of their data directly, leveraging the foundation built by data teams.
+Any queries created with AI are just like any other Omni query: you can share them with your team, place them on a dashboard, and embed them into your application. Your customers can even use AI querying in your embedded workbooks. 
+All AI queries flow from the same data model as everything else in the system – so when queries don’t quite return what you expect, you have the SQL query and existing business logic to adjust and adapt. Users should be able to mix & match languages and features however they want, and AI is another tool to help users get the answers they’re looking for. 
+That’s why we continue to believe that a great BI tool needs to do more than just great data modeling, or spreadsheeting, or SQL, or AI. It needs to do everything together, supporting data teams up and down the stack, in order for all types of users to be productive. 
+Can’t wait to continue sharing more use cases about how customers are using data to be successful, where the “how” – AI, spreadsheets, SQL, etc. – fades into the background because it all “just works”. And if you’d like to try out AI querying in Omni yourself, we’d love to show you.

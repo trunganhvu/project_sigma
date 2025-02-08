@@ -1,0 +1,409 @@
+Blog home
+4 Ways to Use Embedded Analytics Applications (+ Examples)
+Devon Tackels
+CONTENT MARKETING MANAGER, SIGMA
+4 Ways to Use Embedded Analytics Applications (+ Examples)
+Today, data drives everything from workout plans to strategic business decisions. As a result, analytics dashboards and visualizations are starting to appear everywhere: in consumer apps, in business software, and in online newspapers and other websites online. People want and need quick access to data that will help guide their choices and provide them with the insights they need. Embedded analytics is becoming an integral part of our lives.
+For organizations that are seeking a community-driven approach to analytics, involving team members across business units as well as partners and customers, embedded analytics offers a host of opportunities. While there are unlimited use cases for embedded analytics applications, in this post, we’re examining the four primary categories and real-life examples of each.
+How embedded analytics platforms support a community-driven data approach
+Before we dive into the four categories and how to get the most out of them, let’s first look at how embedded analytics makes collaboration easier, faster, and more likely to happen.
+Encourages both technical and non-technical users to contribute
+While all embedded analytics applications aren’t created equal, the best platforms allow both technical and non-technical users to participate in the analytics process. To avoid bottlenecks that severely limit your speed to insight, non-technical users should be able to go beyond high-level dashboard views to ask follow-up questions of the data on the fly. Analytics platforms that have functionality like parameters, filters, and dynamically populated dashboard controls allow users to query data without writing SQL — encouraging both technical and non-technical users with important perspectives to participate.
+Ease of access translates into more people using data more frequently
+When you embed analytics dashboards in locations where people are already working, such as the software applications and websites they use daily, you make engaging in analytics more convenient. Users don’t need to stop what they’re working on, open a new application, log in, and proceed to get the insights they need. This ease of access makes people much more likely to put data to use in their projects and decision-making. According to a survey by Dresner Advisory Services, embedded analytics tools have an average 59% adoption rate compared to the 27% average adoption rate of traditional BI tools.
+Greater productivity means faster speed to insights
+The convenience and efficiency that embedded analytics provides results in a more productive team. People are saving time in each instance that they use the embedded analytics platform, and they’re able to access the insights themselves without relying on the data team to build ad-hoc dashboards or reports. Greater productivity means team members can generate insights quickly and ask questions on the fly when they need answers.
+Security ensures people can participate without governance problems
+In the past, collaboration meant sharing Excel spreadsheets and other non-secure files back and forth between users. These practices introduce unnecessary risk to organizations.
+With embedded analytics, you can share dashboards with all the security features you need to ensure compliance and adherence to governance guidelines, both internally and externally. Permissions and parameters can be set so that the right people see the right information and have the right capabilities to work with the data.
+Embedded analytics in public web pages
+One of the most popular ways to use embedded analytics today is in public web pages such as news sites. Media organizations and other publishers make their audiences aware of information that’s continually changing. Automatically-refreshing visualizations keep readers informed of important developments on a variety of current issues, such as the COVID-19 pandemic. Up-to-date infection rates, death counts, test-positive percentages, and more are now available on a variety of news sites and public health sites for people to stay informed. Using a simple HTML embed code that’s customizable to show exactly what you want to show, you can share visualizations, dashboards, and reports that automatically update as data changes.
+SEE FOR YOURSELF
+See how you can embed analytics dashboards into your most used applications with Sigma.
+Schedule a demo     
+This chart from the New York Times shows the current case count and the number of deaths across the U.S. Viewers can drill down into the data by state, view hot spots, and look at maps and other visualizations.
+Embedded analytics in internal web portals
+Similar to how visualizations work in public web pages, dashboards can be embedded into organizations’ internal web portals. Besides limiting users to those inside your organization, embedding dashboards into internal web portals allows you to group related data reports and visualizations together. This makes it easier to interpret the data and/or dive in deeper while looking at context. Internal pages can also be used to host key dashboards that people use frequently.
+A great example of embedding a dashboard into an internal web portal is this map that Volta Charging has included in Notion, its internal wiki. The map shows locations of charging stations and usage activity.
+Embedded analytics in third-party applications
+Embedding analytics capabilities into third-party applications is where you begin to see significant gains in productivity. Team members don’t need to waste time moving between two separate systems. They can log in, access, and engage with the dashboard and visualizations directly within their CRM, ERP, or other applications that they use on a daily basis. Not all embedded analytics platforms are capable of a full integration, so you’ll want to look for one that is.     
+Sales and marketing teams especially benefit from embedded analytics. This example shows a Sigma dashboard embedded into Salesforce, allowing users to see and make use of data without exiting the SaaS app.
+Embedded analytics for customer products
+Turning your organization’s proprietary data into a customer product is a way to dramatically increase its value. Embedded analytics makes it easy to transform your data, reports, and visualizations into a product that you can use to generate additional revenue or to provide as a value-add for existing products or services. These data products can help make your company more competitive, or allow you to introduce new revenue streams.
+Sigma customer Payload creates data-rich embedded dashboards for its customers. Chris Lambert, CTO of Payload, says, “With Sigma’s application embedding capability, we were able to create data-rich and interactive dashboards that show our customers all of the key metrics they need for daily decision-making and embed them directly into our proprietary products without any interruption to the service we provide to our customers.”
+LEARN MORE
+See how Payload reduced time to data insight from 4-6 days to 4-6 hours with Sigma’s embedded analytics solution.
+Put your data to use
+Organizations of all kinds are integrating analytics into web pages, portals, applications, and products, allowing them to get more out of their data. The convenience that embedded analytics provides means more people are using the insights and getting involved in producing them. And because embedded analytics serves as fuel for collaboration, companies that have implemented embedded analytics are generating more accurate insights. Embedding capabilities help organizations level up their analytics programs in many ways.
+Learn more about what to look for in an embedded analytics platform and how to implement embedded analytics effectively — read our Guide for Embedded Analytics.
+Ready to get started?
+Explore Sigma’s embedded analytics solution.
+Let's Sigma together! Schedule a demo today.
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Embedded Analytics
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

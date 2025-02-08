@@ -1,0 +1,392 @@
+Blog home
+Let them ship code: Upgrading Node without freezing deploys
+Mogab Elleithy
+SOFTWARE ENGINEER
+Let them ship code: Upgrading Node without freezing deploys
+“How do you test and release large changes safely without sacrificing development velocity?”
+Ask anyone who has maintained a large codebase for a long time, and there’s a concept they would dread: upgrading major language versions. For Node.js, upgrading can become a problem through an application’s dependencies when they don’t play nicely with the new version. That mismatch can manifest through obvious errors (like failing to compile) or more subtle bugginess. This could be because the package is no longer maintained, or it could be a known bug. For example, we commiserate with the suffering of jest#issues#11956, and this pushed us to solve for heap OOM errors by sharding our tests.
+Of course, all those tests exist for a reason: to ensure logical correctness. At Sigma Computing, another way we ensure logical correctness is with aggressive self-hosting. We record, browse, and visualize all our own request logs within our staging environment of Sigma, and this is the first place our engineers go when debugging user problems to analyze what went wrong.
+All that means we’re the first to notice when something is amiss with the latest deployment. And we’d much rather be the ones to find these hiccups first. As a rule, you can’t rely on automated or even manual tests to cover all edge cases. Thus, we decided we want to let the Node 16 “release candidate” harden in staging for at least a couple weeks.
+However, in reality, most commits don’t spend very long exclusively in staging. We deploy all of our services from staging to production one or more times every day, and every commit gets on board that train. This raises the question of what to do with large features? These may be the kind that span many commits and definitely shouldn’t be released in an unfinished state. Oftentimes the best solution is to use a feature flag such that a request will only enter the new code path under controlled conditions. Then we can “turn on” the new code in staging and test it independently of releasing other features to production
+This was not an option when we needed to upgrade our Node.js runtime to version 16. Our backend services run in Docker, and Node services have that version baked in at build time. You can’t just change this on the fly with a conditional statement. So since we wanted to manually test the upgrade in staging, we had to build Node 16 versions of our backend services and deploy them to staging. But we needed to let this change harden for longer than a day — 2 weeks at minimum.
+Parallel Deployments
+The naive solution would be to freeze deployments from staging to production. We’d probably be fine coasting for a week, right? “Wrong!” says Murphy’s law. And the engineering team at Sigma never wants to put itself in a position where we can’t deploy a fix or a feature to users. Even a “soft freeze,” where we’d revert the commit that ultimately flips the switch to Node 16 before pushing an urgent fix, would be unacceptable. This raises the better question: “how do you test and release large changes safely without sacrificing development velocity?”
+We will consider the primary service that the client frontend talks to, which we call Crossover and is written in Node. The management of a user request, including SQL generation, tracking queries against a user’s CDW, and hydrating Sigma documents with fresh data, is all handled by Crossover. Let’s take a minute to examine Sigma’s usual deployment workflow for Node services:
+Figure 1: Sigma’s general deployment workflow
+After every merge with Crossover’s main branch, GCP’s Cloud Build is triggered to build a new set of Docker images against our given version of Node. Following a continuous deployment strategy, this fresh image is immediately deployed to our multi-tenant staging environments. Using a custom Slack integration (we call it deploybot), engineers push this latest build to production. deploybot lets anyone see every deployment, what commits rolled into it, and when that deployment was shipped to users.
+The solution we arrived at for hardening the upgrade was to add a new trigger to GCP’s Cloud Build in parallel to the existing trigger:
+Figure 2: Sigma’s special deployment workflow
+Now, for every commit merged to Crossover’s main branch, we build 2 Docker images: one against Node 12 and one against Node 16. This was as simple as adding a new build trigger to GCP, letting it watch for every event against the main branch in Crossover, and giving it a Dockerfile that targets Node 16 in its spec.
+This allowed us to split the automatic and manual steps of our deployment workflow. Now v16 was continuously deployed to staging and v12 was manually deployed to production. This created a small blind spot that we’d miss in staging if a change would be correct in Node 16 but buggy in Node 12, but this was deemed an acceptable risk at our scale. Best of all, during this time both staging and production got every bell, whistle, and bug fix like business as usual.
+Critically, this won us the time to use Node 16 in staging for as long as we needed to be confident in the new version. After a couple of weeks without incident in staging, we promoted the Node 16 build path to be deployed to production and retired the supplemental build trigger.
+Beyond that, this scheme of maintaining parallel builds to be deployed to different environments provides a solution to test large features without hurting release velocity. This can save a team from deployment freezes when a feature is too complex to be hidden behind a feature flag. This scheme could even be augmented with canary releases if your self-hosted environment supports multiple instances of your services. So when it comes to your engineers: let them ship code.
+neither ship a freeze nor freeze a ship (image credit: https://commons.wikimedia.org/wiki/File:Otso_escorting_Mirva.jpg)
+‍
+Let's Sigma together! Schedule a demo today.
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

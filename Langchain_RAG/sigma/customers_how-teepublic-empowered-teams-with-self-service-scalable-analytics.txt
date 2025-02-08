@@ -1,0 +1,140 @@
+How TeePublic Empowered Teams with Self-Service, Scalable Analytics
+By David Xu
+DIRECTOR OF ANALYTICS, TEEPUBLIC
+We spoke with David Xu, Director of Analytics at TeePublic, about how his team transformed data workflows. By embracing self-service analytics with Sigma, they empowered teams, reduced reliance on engineering, and made data more accessible company-wide.
+Life Before Sigma
+Every tweak meant weeks or months of complex work.
+TeePublic is a marketplace where third party digital artists are able to sell products bearing their designs. TeePublic connects these artists with third party fulfillers who handle the printing and logistics, ensuring their products reach their customers. But behind the scenes, keeping our data operations running smoothly wasn’t always easy.
+We’re a lean team—fewer than 10 data professionals supporting a company of over 100. Our data spanned operations, marketing, product, and artist support, and many ‘small’ analytics tasks snowballed  into major projects, due to data complexities and legacy code maintenance.
+Adding a new product line meant engineering needed to update data pipelines before analysts could write SQL. Operations constantly needed dashboards to monitor fulfillment center performance and track cost trends. Every tweak or update required weeks or months of complex work. We were always playing catch-up.
+Choosing a BI Solution
+I came across Sigma at a data event in New York in early 2022. It wasn’t what I expected—it looked more like a spreadsheet than a BI tool. At first, I wasn’t sure what to make of it, but that design was what made it stand out. It felt approachable for non-technical users while still offering the flexibility analysts need.
+We wanted a tool that could empower non-technical users to explore data without sacrificing the power analysts needed for more complex modeling. During testing, Sigma stood out for its ability to let both groups work seamlessly in the same environment.
+Sigma eliminated the back-and-forth and put data directly in stakeholders’ hands.
+The more I learned, the more I saw its potential. Sigma eliminated the back-and-forth and put data directly in stakeholders’ hands. It was a big shift for us.
+
+I remember sitting through a demo and realizing that Sigma’s spreadsheet-like interface wasn’t just user-friendly—it was transformative. For the first time, I could see our operations team answering their own questions without relying on analysts for every minor tweak.
+Cost was another factor. We’re a lean company, and Sigma gave us the flexibility we needed without breaking the bank. It wasn’t long before we made the switch.
+Life With Sigma
+Sigma has transformed how we work. Analysts can iterate on new data models directly in Sigma as published dataset, testing and refining without waiting for engineering. Once a model is stable, we hand it off to engineering for integration.
+For stakeholders, the impact has been even bigger. Operations no longer waits on us to analyze a new product line launch or check re-print rate using a novel method. They can access reusable datasets, filter the data, and build what they need themselves.
+Troubleshooting issues has become so much faster. 
+Before Sigma, tracing problems through dashboards and queries was painstaking. Troubleshooting issues has become so much faster now. With Sigma’s lineage view, we pinpoint issues in minutes instead of hours.
+We recently added a new product line—custom hats. In the past, setting up the data infrastructure for something like that would have taken weeks. With Sigma, we updated the dataset, and the operations team analyzed the new product’s performance right away.
+What's Next With Sigma
+Sigma has empowered our teams to ask better questions and move faster.
+My goal is to make analytics at TeePublic fully self-service. I want our analysts to focus on big-picture projects, not routine requests. Sigma is helping us shift to a model where teams can explore data on their own and get the answers they need.
+
+We’re working on standardizing datasets for cross-functional projects, like monitoring finance performance by artists and designs. With Sigma, we’ll be able to share real-time insights between product, marketing, and operations teams, enabling faster decision-making across the board.
+Sigma has empowered our teams to ask better questions and move faster. It’s not just a tool—it’s how we scale analytics without scaling complexity.
+ABOUT
+TEEPUBLIC
+TeePublic operates as an online platform, curating unique, print-on-demand apparel and merchandise designed by independent artists. Serving a global customer base, it hosts a diverse range of creative works.
+More about
+TeePublic
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

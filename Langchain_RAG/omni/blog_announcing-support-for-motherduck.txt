@@ -1,0 +1,29 @@
+Announcing a Ducking awesome integration
+Omni support for MotherDuck
+June 23, 2023
+Jamie Davidson
+We don't think you should have to compromise when it comes to your data. This is why we empower data analysts with the speed of SQL and the governance of a data model...so you can fuel your organization's operations with faster, trusted insights. This is also why we know we can't compromise either - we need to work with the latest and greatest - and today I'm (ducking) thrilled to announce our support for MotherDuck 🎉
+From years of experience, we know that helping people use data better doesn’t just start at the BI layer. We need to think about the whole data stack and build robust connections to make data accessible and understandable - to everyone. To do this, we first launched Omni with support for leading cloud data warehouses like Snowflake, Redshift, and BigQuery, as well as databases like MySQL and Postgres.
+And just as MPP databases shifted the way data was used and accessed, we need to constantly look forward to the latest and greatest in database evolution - helping customers leverage new technologies.
+This journey keeps us exploring exciting new paths to support and partner with emerging technologies shaping the future of our industry, enter: MotherDuck.
+We’ve admired DuckDB from the start. Its state-of-the-art columnar-vectorized query execution engine and seamless integration with Apache Arrow have driven impressive performance as our re-queryable cache.
+MotherDuck takes DuckDB's speed and ease of use a step further by facilitating a multi-player, hosted cloud experience. Their innovative hybrid execution model enables customers to scale effortlessly from their laptop to the cloud, fostering a seamless blend of flexibility and collaboration that pushes the boundaries of modern data analytics.
+We’re excited to combine the flexibility of MotherDuck’s seamless managed cloud data warehouse with Omni’s new BI experience. Make your data truly ubiquitous.
+Connecting MotherDuck and Omni
+First, you’ll want to create a service token to connect to your MotherDuck database.
+To fetch your service token:
+Go to the MotherDuck UI
+In the top right click on the gear icon ⚙️
+Copy the “Service Token” to your clipboard
+Adding the MotherDuck database to Omni
+Next up, you need to add the database credentials to the Omni application.
+In the Omni BI platform:
+Navigate to the settings page
+Select "Connections" and click the "Add Connection" button
+Select MotherDuck
+Then, you enter the settings for MotherDuck, including your database name and service token. If you’d like you can specify specific schemas that will be used in analysis.
+And that’s it, you’re live 🎉 Omni can now automatically generate a model! Follow the Model Generation steps here.
+Now that you’ve connected MotherDuck and Omni, let’s take a look at an eCommerce example analysis workflow. If you watch the video below with sound on, I’ll talk you through the steps. Either way, you can see, it’s fast to get started…Once you select the first fields, you’re ready to start exploring and building analyses - no upfront modeling required.
+You can immediately use the speed of MotherDuck and the ease of DuckDB’s innovative SQL. Omni automatically builds into a reusable model that can speed up even the most SQL-savvy analyst and empower all of your team.
+Congrats to our friends at MotherDuck on your launch; we’re thrilled to support you from the start. Together, we’ve got so much good stuff to come!
+P.S. - If you’re tired of compromising with your BI tool, we’d love to help you explore Omni for the best of business intelligence 🚀

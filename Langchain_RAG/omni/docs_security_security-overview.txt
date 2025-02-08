@@ -5,7 +5,8 @@ Product security
 Omni is designed to ensure data is only accessible to those who are permitted to access it. Our technical architecture keeps organizations and data sets isolated, and the foundation of our product is a data model with robust governance capabilities that can limit the data sets, fields, and records accessible on a per-user basis.
 Some of the product and technical design principles we follow include:
 Customer data is always encrypted at rest and in transit over public networks, and customer credentials are additionally encrypted at the application level and can only be decrypted by the application components that require them.
-User authentication is handled by a third-party identity provider and can be configured to supply additional context about the user that can be checked in authorization logic to, for example, limit the user's access to data sets or apply filters.
+User authentication through your organization's identity provider like Google, Okta, or any SAML-compatible identity provider, allows you to control security requirements like MFA.
+Users can be assigned attributes that are checked in authorization logic to, for example, limit the user's access to data sets or apply filters.
 Authentication and authorization checks are applied immediately upon the receipt of every request to Omni, and, if passed, set an authorization context on subsequent code execution that ensures the request is sandboxed to the appropriate user and organization.
 Access to a customer's Omni instance by Omni personnel for support is visible to and controllable by the customer.
 Product architecture
@@ -30,6 +31,6 @@ Access to customer data via the Omni application by Omni personnel for support c
 Use of third party subprocessors on customer data is minimized and, when necessary, subject to thorough review.
 Customer Data is only stored in Omni systems temporarily, and can be permanently deleted upon request.
 Previous
-git for version control
+Settings
 Next
 Subprocessors

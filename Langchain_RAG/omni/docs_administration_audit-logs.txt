@@ -15,6 +15,8 @@ Query execution events
 Occurs when a user runs a query, which may be sent back to the warehouse
 Dashboard download events
 Occurs when a user downloads a full dashboard
+User invite events
+Occurs when a new user is invited to the organization
 Previous
 User Attributes
 Next

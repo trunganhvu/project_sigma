@@ -1,0 +1,407 @@
+Streaming Innovator Wurl Upgrades to Sigma to Enhance Efficiency & Optimize Analytics
+About Wurl
+As the world leader in streaming services, Wurl provides content creators with the technology to stream shows across the globe. Wurl’s software and services allow content providers to reach more than 300 million viewers across 50+ countries while maximizing their ability to monetize that streaming content and optimize viewership through data analytics.
+THE CHALLENGE 
+Cost, Complexity, & Features
+Sigma seemed to have a lot more potential in terms of capabilities and ease of use. It was a much more polished experience out of the box, and I’ve been impressed with the additional features that keep coming out regularly.
+—Adam Danisovszky, Data Science Visualization Engineer, Wurl
+Wurl helps companies stream their content on the appropriate platforms around the world while capturing critical data related to how that content is consumed. For example, Wurl can capture how a provider’s shows are performing in different markets, on different platforms, or relative to other shows or channels in the same genre. The data gathered can be used to optimize both programming and advertising. Some of the streaming platforms Wurl works with are ad-supported, and the company offers targeted advertising services to customers based on viewer data collected across its vast network. Additionally, Wurl collects data that is analyzed and presented internally through dashboards. 
+In short, data analytics is a major part of the company’s operations, and Wurl had grown frustrated with the cost and limitations of standard BI tools. Data Science Visualization Engineer Adam Danisovszky was brought on board to be the resident expert on the current BI tool, but in his very first meeting he learned his mandate had changed. Wurl wanted him to find a replacement for the solution instead, and one of the executives suggested he explore Sigma.\
+‍
+THE SOLUTION
+Sigma Implementation and Optimization
+Wurl transitioned from its previous BI tool to Sigma in only a few months. The company stores both its customer and internal data in a Snowflake data warehouse, and Sigma’s seamless, straightforward connectivity with Snowflake was a welcome benefit.
+The switch to Sigma was well-received by Wurl’s customers. The demand for external dashboards is growing, including specific data visualizations sent out to large customers multiple times during the day. Wurl cites faster builds, QA, and release cycles for customer-facing dashboards as major Sigma advantages. Overall, Adam estimates that developing fresh dashboards from scratch into finished, polished products is twice as fast in Sigma, relative to Wurl’s previous solution.
+Internally, user engagement has spiked because creating visualizations is so much simpler. Adam and his team observed a 3X increase in creators engaged in the platform – finance team members are now power users – and a 2X boost in explorers and viewers. 
+‍
+THE RESULTS
+Efficiency, Simplicity, & New Business Opportunities 
+Wurl's analysts, founders, and customers now depend on Sigma to conserve resources and uncover data-driven insights.
+Easy, Cost-effective Visualizations
+The ease of dashboard creation and layout, the drag-and-drop autoresizing, the ability to set filters and have them applied to everything on the dashboard—these have all been a hit at Wurl. Transitioning from to Sigma in order to provide daily visualizations to Wurl’s largest customers was an easy process as well. 
+I’d say 95 to 99 percent of what we want to create, we’re able to do it relatively quickly and easily within Sigma, and get it looking good, polished, and professional so we can share it with our customers.
+—Adam Danisovszky, Data Science Visualization Engineer, Wurl
+The company’s previous BI tool was charging a monthly fee for external viewer access, and as Wurl’s external customer base grew, this was quickly becoming unsustainable. Sigma eliminates that impediment to scale and the associated headaches of either limiting the number of allowable users or charging those customers for access. 
+Democratized Analytics
+Usage is growing steadily now that users don’t need to go into Snowflake for everything or need to learn how to use SQL. Today, Wurl’s end users can go into Sigma, click a few filters, and immediately see the results in the form of a table, a line graph, or a scatter plot, all without enlisting the help of the engineering team. This has translated into 2X to 3X more people across the organization exploring data through Sigma.
+Time Savings & Simplicity
+Work that had required about 1.5 FTEs with Wurl’s previous BI solution now only requires less than 1 FTE with Sigma, translating into significant time and resource savings. Sigma also simplifies the process around creating workbooks and dashboards for Wurl’s customers, then making these available externally for the customer to apply filters or adjust the workbook in accordance with their specific needs.
+New Business Opportunities
+Recently, Wurl was acquired by AppLovin, the leading growth platform for developers. The ease with which Sigma allows Wurl to access, analyze, and generate visualizations on its expanding datasets could further improve its targeted advertising capabilities and increase revenue. Additionally, Sigma gives Wurl’s Data Science team the option to offer tools that dig deeper into customer data. This enhanced level of access and analytics could be extended to customers for an additional cost, opening up a profitable new line of business.
+Embedded Analytics
+The polished capabilities and features have made the work for front-end developers a lot more fun. Sigma just works. We haven’t had any problems, and with more and more customization options, we’re able to tell better data stories.
+—Adam Danisovszky, Data Science Visualization Engineer, Wurl
+Wurl makes data available to its customers through its internally managed data pool. Being able to embed workbooks and visualizations in these data pools was a critical requirement—and one that its previous solution didn’t satisfy. Sigma has made the process seamless. Next, Wurl plans to implement embedded dashboards, which was not possible with its previous service, to further engage with and serve its customers.
+Additionally, Adam highlights Sigma’s ability to assign role-based permissions and security policies, the developer-friendly design tools that make it easier for him to maintain Wurl’s branding preferences, and the familiarity of Sigma’s spreadsheet interface. This last benefit has proven to be a hit with his finance team. Given that multiple key executives and the broader data team rely on Sigma on a regular basis, Adam expects the platform will be a key partner in his company’s success in the years to come.
+BY THE NUMBERS
+2x
+2X FASTER DASHBOARD CREATION AND DISSEMINATION
+67%
+67% REDUCTION IN FTE ADMINISTRATIVE MANAGEMENT
+2-3x
+2-3X GROWTH IN USER ENGAGEMENT AND ADOPTION
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -4,7 +4,7 @@ Sending Omni webhook deliveries to Google Apps Script
 In this guide, you'll learn how to use Google Apps Script to catch a webhook from Omni and export data to Google Sheets. Each time the script runs, it will create a new tab in the destination sheet and use the current timestamp as part of the tab's title.
 Permissions Overview
 The destination Google Sheet is private.
-The Apps Script is deployed as a webhook url which has permissions execute as=me and who has access=anyone
+The Apps Script is deployed as a webhook url which has permissions execute as=me and who has access=anyone. Some Google Workspaces may not allow permission for who has access=anyone, which can result in seeing a 401: Unauthorized Access error.
 The Apps Script runs as the script creator (to take action and edit the destination sheet) but can be executed by anyone with the url. This configuration is how Omni can execute the script without authenticating itself to your Google account.
 WARNING
 The webhook url should only be used for Omni webhook deliveries to the destination sheet, If the url is used outside of this Omni integration, data could be written to the destination sheet by other sources.

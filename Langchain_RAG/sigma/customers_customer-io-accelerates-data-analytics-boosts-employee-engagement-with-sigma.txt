@@ -1,0 +1,143 @@
+Customer.io Accelerates Data Analytics & Boosts Employee Engagement with Sigma
+About Customer.io 
+Founded in 2012, Customer.io offers a customer engagement platform that enables marketers to craft and send out data-driven messaging through channels like email, push, in-app, and SMS. A proven leader in the space, Customer.io provides marketing automation to more than 4,800 companies and sends 8 billion messages per year.
+THE CHALLENGE 
+Limited by Mode’s Cost & Functionality 
+We were constrained by our previous BI solution to 30-40 licenses because of cost as we didn’t want to pay for seats for intermittent or occasional users at the same rate as active users. This limited our ability to give broad access to company data or understand who was using what reports.
+—Will Clayton, Head of Data Analytics, Customer.io
+A few years ago, the data team at Customer.io decided they were underwhelmed with their analytics stack. The company was storing data in AWS Redshift, curating it using dbt, and relying on Mode as their primary BI tool. While this approach worked well for data and business analysts who could write their own SQL queries, anyone unfamiliar with the language was severely limited in terms of what they could do with the company’s data. On top of that, Mode proved to be pretty expensive, with occasional view-only users costing as much as heavy users.
+Will Clayton, Head of Data Analytics at Customer.io, says the company wanted to find a way to enhance the end-user experience, broaden the availability of data analytics within the company, and generally improve the self-service capabilities of their BI tool. The first step in the process was switching to Snowflake. The company began using select tools and custom ETL processes to move data from production systems and other sources into Snowflake. This data was then cleansed and organized using dbt. Once they had built out a process for moving data into Snowflake, the crucial next step was choosing the right business intelligence and analytics platform.  
+THE SOLUTION
+Superior Technology, Seamless Transition
+We wanted a tool that everybody could use and understand. Sigma makes it easier for product managers and other business stakeholders to explore and navigate data.
+—Will Clayton, Head of Data Analytics, Customer.io
+Based on the advice of peers who have seen these challenges before, Customer.io started to consider other alternatives and the team soon narrowed their choices to Sigma and Looker. Will enlisted two of his top data analysts to test both platforms extensively, and other non-technical users within the company helped vet the alternatives as well. 
+When digging into Looker, user feedback noted that their interface felt dated, updates to visualizations required re-pulling the data before you could see the impact of your edits, and the data organization and cleansing capabilities of LookML were redundant given dbt. Finally, Will suspected the company would probably need to dedicate an FTE just to maintain LookML. 
+On the other hand, the Sigma test generated very different feedback. The spreadsheet-based interface was a welcome change for business users who didn’t know SQL. Will and his team quickly concluded that the platform was modern, responsive, and remarkably easy to use. Customer.io soon formalized the decision to implement Sigma, and while a few core dashboards needed to be moved from Mode to Sigma, the transition to the new platform was relatively seamless.  
+THE RESULTS 
+Speed, Flexibility, & Insight  
+Sigma has empowered the data analytics teams and business users across the company with a faster, more flexible, and uniquely powerful platform.
+Increased User Engagement
+The spreadsheet-based interface for managing and exploring data has driven increased user engagement. Previously, only a handful of analysts were engaging with the company’s BI tool, but Will estimates that half the company is now using Sigma on a monthly basis. About 20 people are creating dashboards and doing more advanced exploration, which represents a major increase over the ten or fewer people who were doing similar work in Mode. 
+Fast, Low-Friction Technology
+Customer.io highlights the flexibility of the Sigma platform and appreciates that it behaves more like a modern web interface than its competitors. Will notes how easy it is to click and drag elements around, making changes without needing to hit your database again to update your visualizations. He’s certain this substantially lowers his Snowflake costs, as Sigma isn’t pinging his database every five seconds as his users edit reports. Overall,  it provides a “low-friction, highly interactive experience,” and that was exactly what he was looking for. 
+Collaborative Tools & New Features 
+As a company, Customer.io believes in open communication and collaboration, so they appreciate Sigma’s new Live Edit feature, which makes it easy for teams to work on the same analytics workbook no matter where they are  located. Customer.io is also beginning to experiment more with Input Tables, and Will calls out the ease of integrating dbt jobs with Sigma as another great feature. 
+Uncovering Business & Customer Insights
+The company has a monthly report that tracks revenue changes by the customer. Previously, customer success teams had to address why these numbers spiked or declined on a question-by-question basis. Now, they can use Input Tables to proactively enter commentary that explains the change or churn, providing the business with critical information faster and allowing the customer success team to operate more efficiently.
+The impact of Sigma extends beyond user engagement, faster workflows, and even customer success. Looking ahead, Customer.io plans to streamline and focus the data accessible to Sigma to solidify the platform’s position as a key component of its analytics stack. 
+BY THE NUMBERS
+>50%
+>50% LIFT IN ADOPTION & USAGE FROM MODE TO SIGMA
+50%
+50% OF THE COMPANY USES SIGMA ON A MONTHLY BASIS
+>100
+>100 SIGMA USERS EMPOWERED TO UNDERSTAND BUSINESS PERFORMANCE ACROSS KEY FUNCTIONAL AREAS
+More about
+Customer.io
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

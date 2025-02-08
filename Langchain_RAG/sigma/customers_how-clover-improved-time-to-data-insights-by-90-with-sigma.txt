@@ -1,0 +1,408 @@
+How Clover Improved Time to Data Insights by 90% with Sigma
+About Clover
+Clover builds a global open-architecture point of sale solution aimed at small and medium-sized business owners. Its products are changing the consumer/merchant experience for the better, opening avenues for seamless customer-merchant interactions. There are five versions of Clover hardware, including the Clover Station, Clover Station Pro, Clover Mini, Clover Go, and Clover Flex. With Clover, Fiserv is aiming to create the largest open architecture operating system for commerce-enabling solutions and applications for business owners.
+‍
+Challenge
+An Ad Hoc Report Queue Kept Business Teams from Timely Data Insights
+Clover relies on data to inform business strategy, improve its product, and deliver a great customer experience. As a data-driven organization, Clover has built an entire team to manage a data infrastructure that simplifies data collection and analysis.
+Clover’s Data Reporting and Analytics (DRA) team manages a wide range of data responsibilities daily. These range from building data infrastructures and systems to helping business teams gain insights about its products, operations, and customers through data analysis. The group provides domain experts across the organization with dashboards, reports, and data extracts for further analysis regularly.
+As a self-described “Snowflake shop,” Clover’s centralized repository of data houses information from dozens of sources that its business teams rely on each day. This list includes MySQL, Salesforce, Google Analytics, Heap, and Greenhouse. Despite this central source of data truth, it lacked a way to make the information accessible to those without the SQL background to explore and analyze it. For business teams to glean insights from Snowflake, they had to submit ad hoc requests to the DRA team for answers.
+Ad hoc requests were piling up. It became clear that we needed to minimize the amount of ad hoc reporting and provide business users with a better way to explore and analyze the data themselves.
+Alex Mora
+Data Engineer at Clover
+In 2018, it became clear that ad hoc analysis and reporting took up more of the DRA team’s workload than it could handle promptly and competed with other priorities. It took 2-3 hours to complete a request, which wasn’t sustainable. It was exciting that so many of its business teams — including Product, Hardware, Operations, and Marketing — were asking questions and seeking data to make informed decisions. But the massive ad hoc reporting queue kept the DRA team tied down. This meant it couldn’t work on other projects, and business teams were waiting longer for those insights. The analytics bottleneck was delaying data-driven decisions.
+The DRA team knew it needed to find a more scalable solution to reduce the ad hoc reporting queue. It wanted data engineers to work on high-value projects to simplify data collection, ingestion, and analysis — without holding back business teams from insights.
+‍
+The Solution
+A Self-Service Data Exploration and Analysis Tool That Excel Users Love
+The DRA team sought to deploy a self-service analytics tool that would open up its Snowflake Data Cloud so that business users could quickly explore, analyze, and visualize data.
+We’re able to cover all our business user needs and use cases with Sigma. This keeps the ad hoc requests to a minimum so both sides of the business can be more productive.
+Alex Mora
+Data Engineer at Clover
+Clover business teams generally used Excel for analysis in the past. So the DRA team knew they needed to deploy a familiar analytics tool that wouldn’t require business users to learn a whole new skill set. “We looked for a solution that was intuitive and closely resembled Excel. We didn’t want our business users to feel like a fish out of water,” said Alex Mora, one of Clover’s data engineers responsible for the rollout. That’s when Alex and the DRA team landed on Sigma.
+Sigma connected directly to Clover’s centralized Snowflake database and helped business teams quickly explore and analyze billions of rows of data in a spreadsheet-like interface without using SQL. But when data engineers wanted to use SQL for more advanced tasks in Sigma, they weren’t held back. “Sigma is the best of both worlds,” says Alex. Sigma’s quick conversions from worksheet to visualizations and dashboards — without the DRA team’s intervention — was an added benefit as well. With Sigma, Clover gets the right data into business team hands and reduces the need for them to submit frequent ad hoc requests, or lean on DRA to make small changes and updates to older reports.
+When comparing analytics solutions, another aspect that stood out to Alex and his team was Sigma’s pricing structure. The ability to designate data admin, analyst, and consumer users helped Clover keep costs within budget while extending data access to everyone based on their needs.
+‍
+The Results
+Self-Service Adoption Keeps Business Teams in the Know Without Weighing Down the Data Team
+Alex and the DRA team have seen success with the Sigma deployment. Not only has Sigma drastically reduced the number of ad hoc requests on a weekly basis, but advanced requests that business users cannot complete themselves only take an average of 15 minutes to complete — representing a 90% decrease in time to data insight.
+The deployment has also helped spur greater data awareness and literacy within Clover’s business teams. Because Sigma feels like a spreadsheet — and supports the familiar Excel formulas that get converted to SQL under the hood — domain experts across the organization didn’t hesitate to dive in, some only taking days to complete onboarding.
+Today, more than 75 people across 7 teams at Clover use Sigma for data analysis. Clover’s self-service approach has slashed the DRA team’s workload and made it easier to focus on strategic tasks that help facilitate more powerful analytics.
+With Sigma, business teams could immediately access and analyze all our data centralized in Snowflake. Entire workflows were simplified overnight. We no longer had to query 215 databases. Sigma was right there for them, and they latched onto it immediately.
+Alex Mora
+Data Engineer at Clover
+Sigma has played a key role in the company’s adoption of Snowflake as well. “Coupled with Snowflake’s compute speed, the power of the cloud really shines through with Sigma,” says Alex. As more people use Sigma to dig into their data, the DRA team has seen a rise in data literacy across the organization. “It’s been enjoyable to witness the excitement that employees get from Sigma over time. Everyone is excited to try new things and improve their data literacy.”
+Faster insights and broader data literacy is a large component of what the DRA team works toward every day. Sigma helps the team achieve its goals in ways it didn’t expect. As Alex and his team continue to roll Sigma out to more users, they’re excited to double down on data training to ensure everyone at Clover has a solid background in analytics. Perhaps what’s most exciting is that all teams in the company can now answer their questions with data on time using Sigma.
+‍
+BY THE NUMBERS
+Data Literacy
+FASTER INSIGHTS FOR ALL TEAMS USING SIGMA AT CLOVER
+90%
+DECREASE IN TIME TO DATA INSIGHTS WITH SIGMA
+75 Users
+REDUCED AD HOC REPORTING QUEUES FOR 75 USERS ACROSS 7 DEPARTMENTS
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

@@ -1,0 +1,24 @@
+Omni Recognized as “One to Watch” in Snowflake’s Modern Marketing Data Stack Report
+Omni enables joint customers to build leading solutions on Snowflake’s AI Data Cloud to equip marketers with self-service analytics and deliver powerful data products to customers & partners in the marketing ecosystem.
+October 22, 2024
+SAN FRANCISCO, OCTOBER 22, 2024 — Omni today announced that it has been recognized as a Business Intelligence “one to watch” in the Modern Marketing Data Stack 2025: How Leading Marketers Are Thriving In a World Redefined By AI, Privacy and Data Gravity executed and launched by Snowflake, the AI Data Cloud company. 
+The third annual edition of Snowflake’s Modern Marketing Data Stack report identifies the technologies, tools, and platforms used by Snowflake customers to show how marketers and advertisers can leverage the Snowflake AI Data Cloud with accompanying partner solutions to serve existing customers and convert valuable prospects. Snowflake analyzed usage patterns from a pool of approximately 9,800 customers as of April 2024, and identified 10 technology categories that organizations consider when building their marketing data stacks to capitalize on AI. The extensive report highlights three core factors throughout the industry that mark a significant departure from the martech ecosystem highlighted in the inaugural report in 2022, creating a new normal where AI, data gravity, and privacy are intertwined.
+The report offers details on how this paradigm shift is giving rise to new trends in the marketing landscape, from truly data-empowered marketers to innovative measurement techniques for marketing effectiveness. The categories include:
+Marketing and Advertising Tools & Platforms 
+Analytics & Data Capture 
+Enrichment & Hygiene 
+Identity & Onboarding 
+Customer Data Platforms 
+Marketing & Customer Engagement 
+Programmatic Solutions
+Measurement & Optimization 
+Data Tools & Platforms 
+Integration & Modeling 
+Consent Management 
+Business Intelligence 
+The report explores each of these categories that comprise the Modern Marketing Data Stack, highlighting AI Data Cloud Product Partners and their solutions as “leaders” or “ones to watch” within each category. The report also details how current Snowflake customers leverage a number of these partner technologies to enable data-driven marketing strategies and informed business decisions. Snowflake’s report provides a concrete overview of the partner technology providers and data providers marketers choose to create their data stacks. 
+“Omni’s momentum in the Snowflake ecosystem and customer success among data-savvy marketers qualified them as one to watch in Business Intelligence,” said Denise Persson, Chief Marketing Officer at Snowflake. “We look forward to observing their continued momentum in empowering our joint customers to mobilize data and capitalize on the AI opportunity to make data-informed marketing decisions and deliver better marketing data products to customers and partners.”
+“We’re proud to be recognized as a company to watch in Snowflake’s 2025 Modern Marketing Data Stack report,” said Jonathan Griffiths, Omni’s VP of Marketing. “We ourselves have architected a marketing data stack in the Snowflake AI Data Cloud that allows us to track and iterate on key metrics, make quick, effective marketing decisions and meet our growth goals. Snowflake’s AI Data Cloud provides a fast, performant cloud data platform where we store data and power analytics across all of our use cases with near-zero operational overhead. We look forward to continuing our collaboration with Snowflake to serve marketing teams with the analytics experiences they deserve.”
+Click here to read The Modern Marketing Data Stack 2025: How Leading Marketers Are Thriving In a World Redefined By AI, Privacy and Data Gravity. 
+About Omni
+Founded in 2022, Omni is a business intelligence platform that blends flexible, ad-hoc data exploration with governed enterprise analytics. Omni’s intuitive analytics tools – SQL, Excel functions, point/click, and AI – empower technical developers and business users to get answers fast and contribute to a built-in semantic layer that drives consistent metrics across the organization. For more information, visit omni.co.

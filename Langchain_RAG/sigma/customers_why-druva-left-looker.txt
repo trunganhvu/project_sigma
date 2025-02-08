@@ -1,0 +1,403 @@
+Why Druva left Looker — then tripled internal adoption using Sigma
+By Dharmesh Patel
+VP OF ANALYTICS AND BUSINESS OPERATIONS, DRUVA
+By Tom Coyle
+DIRECTOR OF BUSINESS ANALYTICS, DRUVA
+We spoke with Dharmesh Patel, Vice President of Analytics and Business Operations at Druva, and Tom Coyle, Director of Business Analytics. Druva is a leading cloud data protection and management company, offering innovative solutions for data backup, disaster recovery, and archiving. With a focus on simplicity, scalability, and security, Druva provides organizations with the tools they need to safeguard their critical data assets in an increasingly complex digital landscape.
+Dharmesh brings a wealth of experience to Druva, having worked in various roles across late-stage startups such as Uber, Cafe Press, and Presence Learning, as well as large brands like Adobe and Schwab. Tom plays a pivotal role in leveraging data-driven insights to optimize business processes and drive growth. 
+Life before Sigma
+‍Tom: Being a company that protects a bunch of data, we generate a lot of data around these customers. We were finding that it was really hard for Looker to process all that data and serve it up in one place. There's nothing worse than trying to get an answer to a question and not having the data to answer that. We did have some challenges with Looker performance.
+There’s nothing worse than trying to get an answer to a question and not having the data to answer it.
+Dharmesh: Before Sigma, our primary use cases for Looker were, sort of static “what happened” reporting. But what was missing was the downstream — product and customer success, as well as our product usage telemetry. The whole connection, in terms of customer 360, was just missing. 
+From an end-user perspective, and business stakeholder perspective, Looker is a little bit intimidating. It's not the easiest to pick up in terms of the datasets on some of the filters you want to create for reports.  With performance - in terms of query times, dashboards and report upload times, there was slow performance, unplanned outages, and it would crash randomly here and there. 
+It really turned off a lot of our business users and drove a little bit of lower engagement that we wanted in terms of our daily active users.‍
+‍Leaving Looker
+Dharmesh: Some of the problems the older BI tool Looker had were definitely on the back end: The data quality, the lack of connection from our product sets to build a holistic customer 360, were all definitely pain points. We didn't have the full view of our business.
+Sigma just works. The data is there, and people know where to go to get the information that they need. 
+Tom: We were able to get off Looker in what I would call record time – like under a quarter – and migrate all of our key reports. It was really important to us that we deliver that same experience that teams had in Looker, but then try to improve that in Sigma. Whether that meant faster query times, more filters to work with, or more insights generated.
+We're now able to generate predictions about what customers are going to do, not just what happened.
+When we had Looker, it was mainly just go-to-market, sales, and marketing. We then tested out Sigma, rolling out to customer success and product teams. They loved it: both the flexibility, engaging with the deeper product sets and customer 360 views. Then we slowly implemented the rest of the teams: sales, marketing and finance. Now, just about every dataset is in Sigma and Snowflake.
+Life with Sigma
+Tom: I was a little bit of a skeptic first, honestly. But after playing around with Sigma and seeing everything  it could do and the pace of feature development, such as input tables and live editing, I saw there were a lot of things that we could incorporate that Looker couldn't do. And it integrated really nicely with Snowflake and dbt. 
+Sigma just works. The data is there, and people know where to go to get the information that they need. By going to Sigma, we were able to get better performance by having that integration with Snowflake, and then access all that data from our product and put it into a customer story about what exactly was happening.   
+Dharmesh: Input tables is a Sigma feature that allows for scenario modeling, forecasting, and changing data on the fly. So those are also some things that other tools didn't have. 
+The future of data products really is trying to bring data into workflows.
+Sigma Impact 
+Tom: Sigma enabled us to build a more cohesive customer story and picture. We're able to generate predictions about what customers are going to do, not just what happened within these accounts.
+Sigma also enabled us to move faster because we could decouple the analytics engineering work that we were doing in Snowflake and dbt, with the visualization layer of what we were bringing to the business. 
+Tom: Before we started deploying Sigma, Looker had about 100-150 weekly active users within Druva. Today we probably have well over 300 or 400 weekly active users interacting with Sigma data products in different systems.
+Beforehand, we were really struggling with our financial close. It was taking us up to two weeks to close out the books each month, which was leading the finance team to do less analysis on where we needed resources. With Sigma, we were able to automate a lot of our ARR and NRR reporting like renewals, and cut down that close time to three or four business days.
+Dharmesh: The investment we made in Sigma, both in terms of the tool implementation, but more importantly, the data sets modeling, it's been tremendous. We get compliments from our CEO and CFO all the time that they really believe we're a data-driven company.
+Tom: Plus, a lot of the things that we suggest or that we ask for, we'll see in the product a month or two later, which has been pretty awesome to see. The future of data products really is trying to bring data into workflows, in my opinion.
+‍Read more about Sigma’s impact, or join download a free trial here.
+‍
+ABOUT
+DRUVA
+Druva is a leading cloud data protection and management company, offering innovative solutions for data backup, disaster recovery, and archiving.
+More about
+Druva
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

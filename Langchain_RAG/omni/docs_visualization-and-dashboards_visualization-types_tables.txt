@@ -33,6 +33,7 @@ Word wrap: choose if text wraps or truncates if it is too long for the cell
 Hide: particularly important for unhiding if you hide the column directly in the table.
 Conditional Formatting
 Numeric values can be colored based upon the distribution of values using conditional formatting. To activate conditional formatting, simply select the desired series. By default Omni will select three palettes and gradient in between the min and max values. This can be adjusted to a color pair, or more colors as desired.
+Note background color can be set to transparent by removing text from the Hex code.
 Additional options are available to treat nulls as 0 or exclude them from the color palette:
 Display Decoration (Images, Links, Table Bars)
 Customize how the field is displayed by choosing between the value in the database, an image, or a link.
@@ -44,8 +45,12 @@ Displaying Links
 Often times, it's valuable to make the links dyanmic per row using a formulaic URL construction. The recommended pattern is building the URL with a calculation, hiding the calculation, and mapping the URL parameter to this hidden field. Below is an example building a Google search URL for each brand:
 Options Panel “Style” Tab
 In the style tab, you can adjust the look and feel of your table by making descriptions available, adding row numbers, banding rows, and adjusting the text and background color of the various elements.
-When adjusting the color, you can use the three dot menu to reset the colors to the default, copy the hex codes for each of the elements to make them reusable, or paste in the colors from other
-For example, the color copy functionality for the image above creates:
+Banding will set the rows to alternate between the base background table value color (white) and the base banding background color (grey).
+Table Colors
+Tables offer configuration for both backgrounds and text. Each pair is availanble for headers, table values, banding (if applicable), hover, and the totals row:
+When choosing colors - the top box will set the color, and the slide below controls the transparency level of the color chosen:
+Copying Table Color Palettes
+When adjusting the color, you can use the three dot menu to reset the colors to the default, copy the hex codes for each of the elements to make them reusable, or paste in the colors from other table. For example, the color copy functionality for the image above creates:
 {"header":{"fontColor":"#fefefe","backgroundColor":"#FF5788"},"banding":{"backgroundColor":"#ffeff3ff"}}
 Making it reusable for analysts who may be creating a lot of content.
 Previous

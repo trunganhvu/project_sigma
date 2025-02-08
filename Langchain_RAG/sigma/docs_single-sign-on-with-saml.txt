@@ -1,78 +1,203 @@
-Single sign-on with SAML
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
+Set up single sign-on with SAML
 Suggest Edits
-Requirements
-Admin privileges in Sigma; see Account types.
+Sigma supports single sign-on (SSO) with SAML. SAML SSO can provide a more streamlined and secure sign in experience for users, by allowing users to sign in with one set of credentials - minimizing the opportunity for credential theft.
+This document covers the following: an introduction to SAML, how to configure SAML SSO for your Sigma organization, and the behavior of a user’s account type and/or teams when configuring SAML.
+System and user requirements
+You must be assigned the Admin account type to configure SAML SSO for your organization.
 An identity provider (IdP).
 Understanding SSO and SAML
 What is SAML?
-SAML, Security Assertion Markup Language, is a widely used security protocol. It provides secure authentication and authorization between a service provider (SP) and an identity provider (IdP).
-A service provider is the web application that you would like to gain access to. In this case, it’s Sigma.
-An identity provider is a software service that performs authentication related services (OAuth, account status verification, account attribute declaration). Examples of IdPs include Okta, OneLogin, and Google SSO.
+Security Assertion Markup Language (SAML) is a widely used security protocol. It provides secure authentication and authorization between a service provider (SP) and an identity provider (IdP).
+A service provider is the web application that you would like to gain access to, such as Sigma.
+An identity provider is a software service that performs authentication related services (SAML, account status verification, account attribute declaration). Examples of IdPs include Okta and Azure Entra ID.
 Service Provider (SP) and Identity Provider (IdP) Authentication
-By default, Sigma supports SP-only authentication via the the Sigma login page. In order to additionally use IdP-initiated authentication from the IdP's console you must provide your IdP with a RelayState / StartURL.
-Configure SSO for your Sigma Organization
-Follow the steps below to connect SSO for your Sigma organization. This is a multi-stage process that involves SAML configuration in both the IdP and Sigma.
-[Step 1] Configure your Identity Provider
-Confirm your Sigma Cloud Service Provider
-Sigma organizations can be hosted on AWS, Azure, and GCP. Your IdP configuration will differ based on what cloud provider yours is hosted on. Before you get started, please confirm your organization's cloud provider in your Administration Portal's Account page, under the Site heading. See Technical Specifications for more information. 
-Note: All GCP configurations must be custom. Do not use the Google app to configure.
-Select and Configure your IdP
-If your company uses Okta, you have an option to use a  pre-configured application to set up SSO access to Sigma. Please visit your IdP to understand how to use this application. Instructions can be found by searching for "Sigma Computing" in your IdP’s marketplace.
-If your company uses a different IdP, follow that IdP's instructions for setting up a SAML application and verify that the following fields are set. You can enter those fields manually, or import them using the Sigma metadata file:
-SAML Metadata
+By default, Sigma supports SP-initiated authentication via the Sigma login page. In order to additionally use IdP-initiated authentication from the IdP's console you must provide your IdP with a RelayState.
+📘
+If your organization is currently using email/password authentication, all members of your organization will retain access to their assets after transitioning to SAML SSO authentication, as long as their email addresses remain the same.
+Configure SAML SSO for your Sigma Organization
+Follow the steps below to configure SAML SSO for your Sigma organization. This is a multi-stage process that involves SAML configuration in both the IdP and Sigma:
+Configure your identity provider
+Confirm your cloud service provider
+Configure your IdP
+Configure SAML SSO in Sigma
+Step 1: Configure your identity provider
+Confirm your cloud service provider
+Sigma organizations can be hosted on Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). Your IdP configuration will differ based on your cloud provider.
+Before configuring SAML SSO, please confirm your organization's cloud provider:
+Go to Administration > Account > General Settings. Your cloud provider is listed in the Site section.
+Configure your IdP
+Configure your IdP using an existing application
+If your company uses Okta and your cloud platform is AWS (US West regions only)/GCP, you have the option to use a pre-configured application to set up SSO access to Sigma. See Okta’s Sigma on AWS or Sigma on GCP integrations.
+📘
+Note: If using the GCP gallery SAML app, the following changes must be made:
+For Entity ID, add a “/2” after “saml2”. Your Entity ID should be https://api.sigmacomputing.com/api/v2/saml2/2/metadata.xml, not https://api.sigmacomputing.com/api/v2/saml2/metadata.xml.
+For ACS URL: If your organization is hosted on AWS, add in aws- before api. For example, https://aws-api.sigmacomputing.com/api/v2/saml/assert.
+Configure your IdP manually
+If your company uses a different IdP, follow the documentation provided by that IdP on how to set up a SAML application. You can configure the required fields manually, or by importing them using the following Sigma metadata file:
 https://{{prefix}}.sigmacomputing.com/api/v2/saml2/2/metadata.xml
-The {{prefix}} must be replaced with the cloud prefix specific to your cloud, listed in the table below.
+The{{prefix}} must be replaced with the cloud prefix specific to your cloud provider, listed in the table below.
+Deployment Prefix
+GCP api
+AWS-US (West) aws-api
+AWS-US (East) api.us-a.aws
+AWS-CA api.ca.aws
+AWS-EU api.eu.aws
+AWS-UK api.uk.aws
+AWS-AU api.au.aws
+Azure-US api.us.azure
+Azure-EU api.eu.azure
+If you are manually entering the remaining configurations, use the information below:
 Field Value
-Cloud Prefix AWS United States West: aws-api
-AWS United States East: api.us-a.aws
-AWS Canada: api.ca.aws
-AWS Europe: api.eu.aws
-AWS United Kingdom: api.uk.aws
-AWS Australia and APAC: api.au.aws
-Azure United States: api.us.azure
-Azure Europe: api.eu.azure
-GCP United States: api
 Audience URI https://{{prefix}}.sigmacomputing.com/api/v2/saml2/2/metadata.xml
-Assertion consumer service URL / Consumer URL / Login URL / Single sign on URL https://{{prefix}}.sigmacomputing.com/api/v2/saml2/assert
+Assertion consumer service, Consumer, Login or SSO URL https://{{prefix}}.sigmacomputing.com/api/v2/saml2/assert
 NameID format email ("urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress")
 Attributes “fullName” or “firstName”, “lastName”
 
-To uniquely identify your SAML attributes and avoid overlap with other app configurations, use the Sigma namespace prefix (https://schema.sigmacomputing.com/2025/01/claims) for the “userRole” and “userGroups” attributes. For example, the “userRole” attribute name would look like https://schema.sigmacomputing.com/2025/01/claims/userRole.
+To uniquely identify your SAML attributes and avoid overlap with other app configurations, use the Sigma namespace prefix (https://schema.sigmacomputing.com/2025/01/claims) for the “userRole” and “userGroups” attributes. For example, the “userRole” attribute name would look like “https://schema.sigmacomputing.com/2025/01/claims/userRole".
 
 "userRole"
+
 The userRole attribute can be set to lite, essential, pro, or admin (default account types). It also supports viewer and creator (former default account types).
 
-If userRole isn't set in your IdP , lite is applied to new users by default. This can be helpful if a non-Sigma user in your organization signs up to view a shared dashboard. You can change this role in Sigma. See account types.
+If userRole isn't set in your IdP , lite is applied to new users by default. This can be helpful if a non-Sigma user in your organization signs up to view a shared dashboard. You can change this role in Sigma. See the License and account type overview.
 
 This attribute is case-sensitive. When configuring default account types (Admin, Lite, Essential, Pro), the value indicated should be lower case (e.g. essential). Other account type configurations are also case-sensitive, and the value set in your IdP must match the value in Sigma exactly, or errors may occur when trying to provision users.
 
 If userRole isn't set in your IdP, existing users will keep their current account type.
 
 "userGroups"
-Team assignments for a SAML user are automatically synced upon logging into Sigma, provided the Sigma team name matches the name in your IdP. Changes to teams created in your IdP that do not match a Sigma team will be ignored.
+
+Team assignments for a SAML user are automatically synced upon logging into Sigma, provided the Sigma team name matches the name in your IdP.
+
+Changes to teams created in your IdP that do not match a Sigma team will be ignored. For example, if a user belongs to team “A” in your IdP but there is no team “A” in Sigma, they will not be added.
+
+Additionally, users will be removed from any current Sigma teams that do not show up in the userGroups list. For example, a user belongs to teams “X”, “Y” and “Z” in Sigma. If they log in with a SAML request that says their userGroups are “X” and “Y”, they will be removed from team “Z” in Sigma.
 
 See Behavior of "userRole" and "userGroups" attributes.
-RelayState / Start URL https://app.sigmacomputing.com/<YOUR-ORG>/finish-login
-Validator GCP: ^https://api.sigmacomputing.com/api/v2/saml2/assert$
-AWS: ^https://aws-api.sigmacomputing.com/api/v2/saml2/assert$
-[Step 2] Configure SAML in Sigma
-Open your Admin Portal by selecting Administration in the user menu at the top right of your screen.
-Select the Authentication page from the left hand panel.
-Click the Edit button under Authentication Method and Options.
-Select SAML from the Authentication Method dropdown menu.
-Enter your Identity Provider login / Single Sign On URL, also referred to as a SAML 2.0 Endpoint (HTTP).
-This information is found in your IdP portal.
-Enter your the X.509 Certificate for your IdP. You can get this from your IdP.
-In the Export Authentication field, click Edit to allow exports to approved domains.
-Click Save.
-Update your SAML certificate
-Before your SAML certificate expires, you need to update it in the Administration portal to avoid losing access to your Sigma organization.
-Open the Administration portal by selecting Administration in the user menu at the top right of your screen.
-Select the Authentication page from the left hand panel.
-Click Edit under Authentication Method and Options.
+RelayState https://app.sigmacomputing.com/<YOUR-ORG>/finish-login
+
+Note that if you rename your Sigma organization, you will need to update your RelayState URL. Your organization's name can be accessed and edited from Administration > Account > General Settings > Site.
+Validator For Azure/GCP/AWS: <prefix>.sigmacomputing.com/api/v2/saml2/assert
+Step 2: Configure SAML SSO in Sigma
+To configure SAML SSO in Sigma:
+Go to Administration > Authentication.
+Select Edit in Authentication Method and Options.
+Select SAML or SAML or password from the Authentication Method dropdown menu.
+❗️
+We recommend that you select SAML or password first, and test that SAML SSO works as expected, before switching your authentication method to SAML only. This is to ensure you are able to sign in again in case of any SAML misconfigurations.
+Enter your Identity Provider Login URL. This can be found in your IdP and may be listed as your SAML 2.0 Endpoint (HTTP).
+Enter your Identity Provider X.509 Certificate. This can be found in your IdP.
+(Optional) In the Export Authentication field, click Edit to allow exports to approved domains.
+Select Save.
+Update your SAML certificate in Sigma
+To avoid losing access to your Sigma organization, ensure your SAML certificate is updated before it expires. You can view your SAML certificate’s expiration date in your IdP. Sigma will send you email notifications as this expiration date approaches.
+To update your certificate in Sigma:
+Go to Administration > Authentication.
+Select Edit in Authentication Method and Options.
 In the Identity Provider X.509 Certificate field, enter the new certificate from your IdP.
-Click Save.
-If your SAML certificate already expired and you are unable to log into your Sigma organization, contact Sigma Support. See Submit a support request.
+Select Save.
+If your SAML certificate has already expired and you are unable to sign in to your Sigma organization, contact Sigma Support. See Submit a support request.
 Behavior of "userRole" and "userGroups" attributes
 🚧
 If you make account type or team membership assignments in your IdP, do not change these assignments in Sigma. Configurations set in your IdP take precedence over any configurations in Sigma. For example, if you change a user's role in Sigma, this role will not be written back to your IdP. The next time you log into Sigma, the user’s role will be reset to their IdP declared role.
@@ -80,9 +205,9 @@ The expected behavior of the "userRole" and "userGroups" attributes depends on h
 Scenario Behavior
 No userRole is set in IdP, and no account type is set in Sigma. The account type in Sigma defaults to lite.
 No userGroups set in IdP, but team assignments are set in Sigma. The team assignments in Sigma are preserved.
-The userGroups in IdP and team assignments in Sigma do not match. Team membership is recognized by name matching. Team assignments in your IdP that do not have a corresponding team in Sigma will be ignored.
+The userGroups in IdP and team assignments in Sigma do not match. Group membership is recognized by name matching. Group assignments in your IdP that do not have a corresponding team in Sigma will be ignored, and users will be removed from any prior existing groups not included in the assertion.
 
-For example, a user is assigned to "Team A" and "Team B" in your IdP. However, only "Team A" has been created in in Sigma. The user will only be assigned membership to "Team A" in Sigma.
+For example, teams “A”, “B” and “C” exist in Sigma, and a user is assigned to team “B” and “C”. The userGroups assignment in your IdP for this user is set to “B”, “C” and “D”. The following will occur in Sigma: the user will be removed from team “A”, remain in team “B”, added to team “C”, and the “D” assignment will be ignored.
 RELATED RESOURCES
 Manage Authentication
 Manage Users and Teams with SCIM
@@ -92,3 +217,9 @@ Configure [Azure and] Sigma Computing for automatic user provisioning (Azure doc
 Custom Session Timeouts for Okta
 OAuth with Snowflake
 Single Sign-On with Sigma and Okta (QuickStarts)
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

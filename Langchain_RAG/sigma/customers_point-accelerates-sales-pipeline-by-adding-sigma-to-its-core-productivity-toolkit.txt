@@ -1,0 +1,144 @@
+Point Accelerates Sales Pipeline by Adding Sigma to its Core Productivity Toolkit
+About Point
+Point is one of the leading home equity platforms making homeownership more valuable and accessible. Point’s flagship product, the Home Equity Investment (HEI), empowers homeowners to unlock their equity in order to eliminate debt, get through periods of financial hardship, and diversify their wealth—without adding to their monthly expenses. Point has worked with more than 10,000 homeowners, unlocking more than a billion dollars in home equity. Point’s HEI enables investors to access a previously untapped asset class—owner-occupied residential real estate. Founded in 2015 by Eddie Lim, Eoin Matthews, and Alex Rampell, Point is backed by top investors, including Westcap, Andreessen Horowitz, Ribbit Capital, Greylock Partners, Bloomberg Beta, Redwood Trust, Alpaca VC, and Prudential. The company is headquartered in Palo Alto, CA.
+THE CHALLENGE 
+Limited by Functionality & Scale of a Legacy BI Platform
+Point’s full stack home equity platform matches homeowners with institutional investors. Traditionally, a homeowner with a strong equity stake in their property would have to take out a home equity loan or open a line of credit to turn a portion of that equity into cash. Point gives them the opportunity to sell a stake in their home to institutional investors in exchange for cash, without the need for regular payments or interest.
+To facilitate these transactions, Point needs to manage a tremendous amount of financial, market, and transactional data. When Analytics Manager Joshua Moore joined Point in late 2021, the company was using Snowflake as its primary data warehouse, but other elements of its infrastructure needed updating. He implemented dbt, Airflow, a CI/CD pipeline, and Fivetran, which is now used to migrate data from a continuously updating postgres database into Snowflake every two hours. 
+Next, he turned to arguably the biggest challenge: The company’s Business Intelligence (BI) platform. Point had been relying on a legacy BI solution for several years, but few people were actually using it. 
+Talking of their BI platform, Joshua and his team didn’t like its BI and reporting layers, or the fact that it pushed users to ingest, transform, and visualize data all through its platform. Data governance and logic sprawl were also challenges with the tool trying to do everything for every user. Ultimately, Joshua and his colleagues decided they needed to find a superior alternative.
+THE SOLUTION
+An Essential Productivity Tool with Cloud Scale
+The team had extensive experience with Tableau and Looker, but switching to the latter was not ideal. Joshua had prior experience with Looker, and found there was too much friction in the development process with LookML. In fact, Tableau appeared to be the leading candidate until he found out about Sigma.
+Sigma is now part of our essential workflow stack or the core productivity toolkit. When a new employee comes on board, they get access to Slack, Google Workspace, and Sigma.
+—Joshua Moore, Analytics Manager, Point
+The Sigma platform impressed the team immediately, but Point’s users were more familiar with Tableau, so there was a temptation to go that route. Quickly, though, Joshua decided that the benefits of Sigma outweighed the potential risk of a longer ramp. As a final check, he and a colleague asked an unbiased expert on both Tableau and Sigma for her opinion. “We said, okay, imagine you’re starting a brand new data team and you’re choosing a BI tool. What would you go with?” Joshua recalls. “She said, ‘I’d go with Sigma, hands down.’”
+That cemented their decision, and the Point team soon turned to its next goal: getting as many people as possible within the company using Sigma. Joshua developed a simple internal training program to accelerate adoption, rolled out the tool to the entire organization, and watched it quickly become a core part of Point’s productivity suite. At Point, analytics isn’t reserved for a select few stewards of data. Thanks to Sigma’s simple spreadsheet interface, and the Point team’s decision to make the platform an essential part of its productivity toolkit, analyzing and exploring data is as easy as messaging a colleague or creating a new slide deck. 
+THE RESULTS 
+Efficiency, Adoption, & Governance  
+Sigma is driving productivity by empowering more users with the business intelligence and data analytics capabilities they need to accelerate Point’s sales pipeline.
+7X Increase in Adoption & Usage
+Only about 10% of the company was regularly engaged with Domo, but when Point switched over to Sigma, that figure increased by 7X. Currently, the company is seeing a 90% retention rate for sales users, and Joshua says the tool has lit a fire under the sales team by allowing them to see what they can do with more advanced reporting. But it’s not just the sales team. Sigma is giving multiple groups across the company more insight into Point’s deal pipeline.   
+Driving the Production Funnel
+Point tracks every step in a homeowner’s journey through to a closed or lost deal. With Sigma, team members at every level of the organization can explore and generate reports on each stage of this production funnel. They can track SLAs for how long homeowners are supposed to remain in a particular stage, and monitor prospects and sales, conversion rates, time to funding or deal completion, and other key metrics and trends. Ultimately, Sigma is making it easier for the team to reach its growth goals on a weekly basis. 
+Embedded Analytics Capabilities Delivered in 5 Minutes
+In the short term, Joshua and his team have instituted a simple way for sales and business users to access Sigma reports by adding a tab within Salesforce. The tab takes users to a Sigma landing page with all the reports they need embedded right there—and it took just five minutes to build. Moving forward, the team is considering embedding the Sigma workbooks directly in a user’s workflow. 
+Strong Data Governance
+Joshua found dataset governance to be difficult in Domo. Some users created their own datasets and credentials without his knowledge, and tracing the lineage of a visualization back to its dataset was unnecessarily challenging. Sigma has simplified governance, eliminated logic sprawl, and made the lineage of a visualization easy to track.
+As Joshua looks ahead, he expects that different business units and users will find more ways to use Sigma to unlock insights into the production funnel. Thanks to Sigma’s self-service functionality, he and his team can focus on managing Point’s datasets in Snowflake, controlling the overall company dashboard, and prioritizing more strategic work that helps accelerate Point’s already rapid growth.  
+‍
+BY THE NUMBERS
+7X
+7X INCREASE IN USAGE & ADOPTION
+90%
+90% RETENTION OF SALES USERS
+5 Minutes
+5 MINUTES TO BUILD A CRITICAL SALES REPORTING TOOL
+More about
+Point
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

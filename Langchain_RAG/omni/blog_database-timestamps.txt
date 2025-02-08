@@ -1,0 +1,145 @@
+Timestamps are hard
+Tips, tricks, and gotchas for dealing with time zones in different databases
+October 31, 2023
+Jack Sweeney
+Most people care about daylight saving time once or twice a year. Recently, I had the pleasure of thinking about it for a third time with a stronger-than-usual frustration. It turns out, daylight saving time happens on different days depending on which country you may be in around the world and there are a large number of countries that don’t observe at all – a fact that was news to me! When you combine the non-uniform observation of daylight saving with the concept of multiple points of access to a database across different time zones, it is easy for anyone’s head to start spinning. It turns out, dealing with timestamps is hard.
+In this blog, I’ll share my process for working through a particular timestamp issue with TIMESTAMP_TZ in Snowflake. I’ll also share my key learnings and recommendations from the rabbit hole of research this challenge sparked - in hopes my pain can save you from experiencing the same!
+Before I deep-dive into the details, I’ll preview the highlights if you’re in a rush.
+First, a good rule of thumb is to: retain time zone information where you can with timestamp data types that allow for it.
+Second, here are the timestamp data types I recommend across five common databases:
+Now, I’ll dive into the challenge that sparked this!
+Time files: Investigating Snowflake timestamp nuances
+I stared at my screen in disbelief, wondering if my eyes had failed me or if I had an errant typo somewhere causing a discrepancy:
+Why were these two dates, seemingly equivalent, able to be joined for some dates but not for others?
+Enter Snowflake’s TIMESTAMP_TZ data type 👋
+The challenge with daylight saving and TIMESTAMP_TZ
+When I checked the data types, I found the difference: the join could not find a match starting on March 26th, which is the day that daylight saving time begins in GMT. Upon further inspection of my types, I found the issue. I was trying to join a TIMESTAMP_TZ to a TIMESTAMP_NTZ type that began to misbehave when daylight saving time kicked in.
+While trying to join on raw timestamps, my TIMESTAMP_TZ type now displayed 2020-03-26 00:07:00 +0100 versus 2020-03-25 00:07:00 +0000 a day before. The difference was the +0100 time zone shift incurred by daylight saving. On top of that, my SQL editor was hiding time zone data on timestamps as well due to a setting - further obscuring the issue.
+As a result, TIMESTAMP_NTZ and TIMESTAMP_TZ were now off by an hour. Because of the difference, the two fields were no longer joining. Naturally, this kicked off a whole rabbit hole of questions since I had never seen this TIMESTAMP_TZ data type before.
+As I scrolled down the docs page for time data types, a litany of questions ran through my head:
+What is the point of this data type?
+Why should it be used instead of TIMESTAMP_NTZ?
+What is this dangerous-looking yellow box that is effectively a disclaimer for TIMESTAMP_TZ doing tucked away below the definitions in Snowflake’s docs?
+There’s a TIMESTAMP_LTZ too, what does that do?
+Problem-solving with TIMESTAMP_TZ
+In this case, I did what I like to do with any complicated concept – wrote out some examples to see how they would all behave. I made a table in Snowflake with the three timestamp data types: TIMESTAMP_NTZ, TIMESTAMP_LTZ, and TIMESTAMP_TZ, and inserted timestamps at different time zones by altering my session time zone. This allowed me to play with the data and get a sense of how these types varied and behaved.
+To do so, I began by building a table:
+--Create Timestamp Table
+CREATE OR REPLACE TABLE TIMESTAMP_TEST (ID NUMBER(38,0), TS_NTZ TIMESTAMP_NTZ(9), TS_LTZ TIMESTAMP_LTZ(9),TS_TZ TIMESTAMP_TZ(9), COMMENT VARCHAR(16777216))
+From there, I set our session time zone and began inserting values into our table. In this example, I insert timestamps across a variety of time zones and offsets first in America/New_York and later update our time zone and insert more timestamps in a UTC session time zone.
+--Setting Session Time zone to America/New_York
+ALTER SESSION SET TIMEZONE = 'America/New_York';
+
+--Insert a few timestamps into table
+INSERT INTO TIMESTAMP_TEST VALUES
+(1, '2020-01-01 00:00:00', '2020-01-01 00:00:00', '2020-01-01 00:00:00', 
+'inserting 2020-01-01 00:00:00 in America/New_York'), 
+(2, '2020-01-01 00:00:00 +0000', '2020-01-01 00:00:00 +0000', '2020-01-01 00:00:00 +0000', 
+'inserting 2020-01-01 00:00:00+00 in America/New_York'),
+(3, '2020-01-01 00:00:00 -0500', '2020-01-01 00:00:00 -0500', '2020-01-01 00:00:00 -0500', 
+'inserting 2020-01-01 00:00:00-05 in America/New_York');
+
+--Setting Session Time zone to UTC
+ALTER SESSION SET TIMEZONE = 'UTC'
+
+--Insert a few timestamps into table
+INSERT INTO TIMESTAMP_TEST VALUES
+(4, '2020-01-01 00:00:00', '2020-01-01 00:00:00', '2020-01-01 00:00:00', 
+'inserting 2020-01-01 00:00:00 in UTC'),
+(5, '2020-01-01 00:00:00 +0200', '2020-01-01 00:00:00 +0200', '2020-01-01 00:00:00+0200', 
+'inserting 2020-01-01 00:00:00+02 in UTC');
+Next, I move our time zone back to America/New_York to view the table and see the comparisons between how the data is stored across the different timestamp types.
+--Set Session Time zone to America/New_York and view timestamps in the table
+ALTER SESSION SET TIMEZONE = 'America/New_York';
+SELECT * FROM TIMESTAMP_TEST;
+Here I see TIMESTAMP_LTZ will shed all time zone-related data, as advertised. This makes it starkly clear the naivety of this type, operating the same across various time zones and session times focused solely on the non-time zone aspects of the timestamp.
+For TIMESTAMP_LTZ, each timestamp is converted to our session time zone, the America/New York time zone (-0500), as expected. This includes converting times such as the second row, from the UTC time initially provided to the session time zone upon display.
+Lastly, TIMESTAMP_TZ stores the timestamps exactly as supplied, retaining their time zone offsets (NOT their time zones) as well.
+Resulting SELECT * statement:
+ID TS_NTZ TS_LTZ TS_TZ Comment
+1 2020-01-01 00:00:00.000 2020-01-01 00:00:00.000 -0500 2020-01-01 00:00:00.000 -0500 Inserting 2020-01-01 00:00:00.000 in America/New_York
+2 2020-01-01 00:00:00.000 2019-12-31 19:00:00.000 -0500 2020-01-01 00:00:00.000 +0000 Inserting 2020-01-01 00:00:00.000 +00 in America/New_York
+3 2020-01-01 00:00:00.000 2020-01-01 00:00:00.000 -0500 2020-01-01 00:00:00.000 -0500 Inserting 2020-01-01 00:00:00.000 -05 in America/New_York
+4 2020-01-01 00:00:00.000 2019-12-31 19:00:00.000 -0500 2020-01-01 00:00:00.000 +0000 Inserting 2020-01-01 00:00:00.000 in UTC
+5 2020-01-01 00:00:00.000 2019-12-31 17:00:00.000 -0500 2020-01-01 00:00:00.000 +0200 Inserting 2020-01-01 00:00:00.000 +02 in UTC
+To drive the point home even further, I converted our session time zone to UTC and observed the table once more to view the changes made.
+--Set Session Time zone to UTC and view timestamps in the table
+ALTER SESSION SET TIMEZONE = 'UTC';
+SELECT * FROM TIMESTAMP_TEST;
+Once again, TIMESTAMP_NTZ has no change, which is expected as it is agnostic to time zones. TIMESTAMP_LTZ now is displayed in UTC (+0000), making necessary adjustments from the storage of initial time to display in local time. Lastly, TIMESTAMP_TZ remains exactly the same as when it was viewed in America/New_York, given how it stores time with the UTC offset at storage and displays the same when called.
+ID TS_NTZ TS_LTZ TS_TZ Comment
+1 2020-01-01 00:00:00.000 2020-01-01 05:00:00.000 +0000 2020-01-01 00:00:00.000 -0500 Inserting 2020-01-01 00:00:00.000 in America/New_York
+2 2020-01-01 00:00:00.000 2020-01-01 00:00:00.000 +0000 2020-01-01 00:00:00.000 +0000 Inserting 2020-01-01 00:00:00.000 +00 in America/New_York
+3 2020-01-01 00:00:00.000 2020-01-01 05:00:00.000 +0000 2020-01-01 00:00:00.000 -0500 Inserting 2020-01-01 00:00:00.000 -05 in America/New_York
+4 2020-01-01 00:00:00.000 2020-01-01 00:00:00.000 +0000 2020-01-01 00:00:00.000 +0000 Inserting 2020-01-01 00:00:00.000 in UTC
+5 2020-01-01 00:00:00.000 2019-12-31 22:00:00.000 +0000 2020-01-01 00:00:00.000 +0200 Inserting 2020-01-01 00:00:00.000 +02 in UTC
+After looking at these data types side by side, it became apparent why in my initial situation the TIMESTAMP_NTZ and TIMESTAMP_TZ types were no longer matching. After daylight saving time, the TIMESTAMP_TZ now had a +0100 instead of +0000 and did not align with TIMESTAMP_NTZ! Of course, a TIMESTAMP_TZ that was now in +0100 instead of +0000 would not align with a TIMESTAMP_NTZ!
+Thus, I decided to retain time zone data going forward in order to properly handle these scenarios in the future. For the old TIMESTAMP_NTZ fields, I used the Convert_Timezone function to convert to a TIMESTAMP_TZ type and restore time zone information to the historical data. From there, I converted TIMESTAMP_TZ to TIMESTAMP_LTZ.
+I opted to use TIMESTAMP_LTZ rather than TIMESTAMP_TZ as it better handles daylight saving time automatically by storing in UTC and displaying in local time, rather than just the offset like TIMESTAMP_TZ. As a result, I needed to cast our TIMESTAMP_TZ field to TIMESTAMP_LTZ. Prior to doing so, I quickly verified on my test data that this would have the intended effect by running the code below, and voilà - I had a solution!
+--Convert TIMESTAMP_TZ to TIMESTAMP_LTZ with casting
+SELECT TS_LTZ, TS_TZ, TS_TZ::timestamp_ltz ts_tz_cast_ltz FROM TIMESTAMP_TEST;
+TS_LTZ TS_TZ TS_TZ_CAST_LTZ
+2020-01-01 05:00:00.000 +0000 2020-01-01 00:00:00.000 -0500 2020-01-01 05:00:00.000 +0000
+2020-01-01 00:00:00.000 +0000 2020-01-01 00:00:00.000 +0000 2020-01-01 00:00:00.000 +0000
+2020-01-01 05:00:00.000 +0000 2020-01-01 00:00:00.000 -0500 2020-01-01 05:00:00.000 +0000
+2020-01-01 00:00:00.000 +0000 2020-01-01 00:00:00.000 +0000 2020-01-01 00:00:00.000 +0000
+2019-12-31 22:00:00.000 +0000 2020-01-01 00:00:00.000 +0200 2019-12-31 22:00:00.000 +0000
+If I could turn back time: Things I wish I knew about timestamp options in different databases
+The experience above was a catalyst for me deep-diving into different timestamps in hopes of saving myself from going through this process over and over again (e.g. an analyst’s own Groundhog Day nightmare). So, what data type should you use? As with any good question, the high-level answer is an entirely unsatisfying “it depends,” so let’s dive in.
+Specifically, I’ll talk about the differences in timestamp and datetime options in five different databases: Snowflake, Google Cloud BigQuery, AWS Redshift, Postgres, and MySQL.
+General advice
+Retain time zone information where you can with timestamp data types that allow for it.
+1) Timestamps in Snowflake
+Snowflake’s dialect has three different Timestamp data types: TIMESTAMP_NTZ, TIMESTAMP_LTZ, and TIMESTAMP_TZ.
+TIMESTAMP_NTZ stands for Timestamp No timezone, and it’s the default. This data type stores wall clock time ignoring time zones, and executions using this data type do not take time zones into account.
+Warning: This data type should be used sparingly, as inserting data from multiple time zones can lead to a loss of differentiation on when these actions actually occurred relative to one another. Original time zone metadata can also be harder to re-add retroactively. This can be an option for use cases where users are unconcerned with ever having time zone metadata now or in the future.
+TIMESTAMP_LTZ stands for Timestamp Local timezone. This data type stores timestamps in UTC time along with the time zone information for the session allowing for execution in the local time zone.
+The benefit of this data type is that it retains time zone metadata while storing precision in UTC and displaying it in a user’s local session timezone. Additionally, TIMESTAMP_LTZ properly handles daylight saving time and helps to avoid issues like the one that sparked this blog post 🤯. This is a great data type option for when you want to include time zone metadata and avoid the pitfalls of TIMESTAMP_TZ and daylight saving time.
+TIMESTAMP_TZ stands for Timestamp timezone. This data type stores timestamps in UTC with an offset of the given time zone. Executions using TIMESTAMP_TZ are calculated in UTC using the offset.
+The benefit of this data type is that it explicitly lays out timestamp time zone information, making it hard to run into non-daylight saving time-related issues. However, the offset is NOT self-aware when it comes to things like daylight saving time as the Snowflake docs call out. This means that a timestamp captured in US Central Time may have an offset that is different by an hour depending on which time of year it is created.
+Thus, it can be useful to use this type when there are multiple accounts performing database write operations across different time zones, so long as users have proper daylight saving handling.
+Snowflake recommendation
+TIMESTAMP_LTZ is our recommendation for timestamp data types in Snowflake.
+Note: In order to take advantage of TIMESTAMP_LTZ to see data in the user's time zone, you must set your session time zone appropriately using the time zone setting in Snowflake.
+2) Timestamps in Google Cloud BigQuery
+BigQuery offers just one data type for timestamps: TIMESTAMP.
+TIMESTAMP is independent of time zones and daylight saving time. BigQuery stores this timestamp in UTC and displays it upon retrieval based on your session time zone. So while the type may store itself in UTC, it can be type displayed with a session time zone.
+An alternative to the timestamp in BigQuery is DATETIME.
+DATETIME has a broader range of date storage options, but can’t store time zone data. This makes DATETIME comparable (though not equivalent) in its timezone-free structure to a wall clock timestamp such as TIMESTAMP_NTZ in Snowflake.
+BigQuery recommendation
+Use TIMESTAMP in most cases over DATETIME due to the ability to retain time zone data in BigQuery.
+Note: When detailing time zone information, it is best to use time zone names rather than a numerical offset, as queries on a `TIMESTAMP` type that has stored data with a numerical offset may give different answers depending on the time of year due to daylight saving. This is similar behavior to `TIMESTAMP_TZ` in Snowflake.
+3) Timestamps in AWS Redshift
+Redshift has two data types for timestamps: TIMESTAMP and TIMESTAMPTZ.
+TIMESTAMP is similar to Snowflake’s TIMESTAMP_NTZ.
+TIMESTAMP stores a wall clock time with a default assumption of existing in the database’s default time zone. TIMESTAMP is Redshift's default data type.
+TIMESTAMPTZ is similar to Snowflake’s TIMESTAMP_LTZ.
+TIMESTAMPTZ is stored in UTC. Upon retrieval, it is displayed in the session time zone, which a user can configure to their local time. This circumvents the issues with daylight saving time as the storage and retrieval operations are properly run and converted at UTC at the time of execution.
+Redshift recommendation:
+TIMESTAMPTZ is our recommended data type for timestamps within Redshift due to the ability to retain time zone data.
+4) Timestamps in Postgres
+Postgres offers two flavors of timestamps: Timestamp without time zone and Timestamp with time zone.
+Timestamp without time zone is similar to Snowflake’s TIMESTAMP_NTZ.
+Timestamp without time zone stores without a time zone using session wall clock time. When converting a timestamp without time zone to a timestamp with time zone, it uses the local time zone unless otherwise specified in the conversion.
+Timestamp with time zone is similar to Snowflake’s TIMESTAMP_LTZ.
+Timestamp with time zone takes the local time and converts it to UTC and stores that time in UTC. Upon retrieval, it is converted back out to local time. This circumvents the issues with daylight saving time as the storage and retrieval operations are properly run and converted at UTC at time of execution.
+Postgres recommendation
+Similarly to BigQuery and Redshift, Timestamp with time zone is our recommended data type for timestamps within Postgres due to the ability to retain time zone data.
+5) Timestamps in MySQL
+MySQL offers a single type of timestamp, TIMESTAMP.
+Timestamp converts to UTC for storage. Upon retrieval, the timestamp is displayed in the user’s local session time. This behavior mirrors Postgres’ TIMESTAMP with timezone or Snowflake’s TIMESTAMP_LTZ without displaying the offset in that it properly captures the relevant time zone and daylight saving information at both time of storage and retrieval.
+Similar to BigQuery, an alternative to timestamp in MySQL is DATETIME.
+DATETIME has a broader range of allowed dates for storage. However, it cannot be indexed like timestamps nor can it store time zone data.
+MySQL recommendation
+TIMESTAMP is our recommendation in MySQL for most cases over DATETIME due to retaining time zone data.
+So, what should you do?
+The optimal solution here is to get the data type correct on storage - involving directly changing timestamp or datetime types in the database. This ensures good data hygiene in the database itself, as well as all downstream use cases. I recommend choosing a data type retaining time zone metadata as opposed to wall clock time. In cases with multiple choices, such as Snowflake, select an option that allows for storage in UTC and display in local time.
+To recap from the top of the post, but now with much more context…
+Options for changing timestamp data types outside the database
+In the event that you’re unable to alter the database directly, but still want to make a switch somewhere, such as the BI layer (such as changing TIMESTAMP_TZ in Snowflake to TIMESTAMP_LTZ), here are some options:
+One option is to simply recast the field in the BI tool itself. While this doesn’t fix the database type itself or add original time zone data to a wall clock time type like TIMESTAMP_NTZ in Snowflake, it can help circumvent the specific issue in Snowflake that sparked this blog. In a larger BI deployment, it may be useful to create a new field casted to the new data type as well rather than altering the original in the event that existing content has already been built upon that field.
+Another alternative is converting timestamps into UTC (or whatever default your database may be set to) to allow for a standardized view of your data across different time zones. However, this should be done with more caution, as it can be more sweeping and impact timestamps across several time zones simultaneously and harder to roll back. It should also be noted, this is effectively doing the manual work that the recommended data types will already do for a user behind the scenes.
+Additional tips for working with time zones
+Aside from Snowflake (which uses the Pacific time zone), UTC is the default database time zone across the other databases mentioned. This makes it an excellent choice for standardizing and orienting around when it comes to interacting with the nuances of timestamps, time zones, and daylight saving time. However, in theory, you could adjust that default to a central operating time for your database and convert to that time zone instead.
+Unless you’re in a case where time zones truly don’t matter or you’re reporting locally out of only one time zone, using timestamps that display in your session time while storing in UTC is recommended. This will allow time zone data to be retained, removing a need for it to be added retroactively if trying to switch from a Timestamp or date time without timezone data, while also avoiding some of the traps around daylight saving time that types such as Snowflake’s TIMESTAMP_TZ can cause.
+In summary, timestamps are still hard, but I hope these tips help you avoid frustrating situations - or at least work your way through them faster the next time!

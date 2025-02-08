@@ -1,7 +1,108 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Implement inbound and outbound events in embeds
 Suggest Edits
-Inbound and outbound events enable seamless interactions in embedded solutions by facilitating communications between the embedded content and the host application. For example, when a user clicks an object in the host application, a JavaScript inbound event can enable the embedded Sigma content to display different information.
-This document introduces inbound and outbound events and provides examples demonstrating how to use them in Sigma embeds. For a tutorial that walks you through sending and receiving events from a parent application and Sigma, see QuickStart: Embedding 07: Events.
+The inbound and outbound events in Sigma's JavaScript embed API enable seamless interactions in embedded solutions by facilitating communications between the embedded content and the host application. For example, when a user clicks an object in the host application, a JavaScript inbound event can enable the embedded Sigma content to display different information.
+This document introduces inbound and outbound events that make up the JavaScript embed API and provides examples demonstrating how to use them in Sigma embeds. For a tutorial that walks you through sending and receiving events from a parent application and Sigma, see QuickStart: Embedding 07: Events.
 📘
 Inbound events were previously called "actions". Sigma renamed "actions" to "inbound events" to differentiate between this feature and the workbook actions feature.
 Because you can use a variety of methods to implement events, and you may have unique integration requirements, this document doesn't provide step-by-step guidance on implementing events in embeds. Instead, it highlights examples that can provide helpful context that you can leverage as you develop your own approach.
@@ -443,3 +544,9 @@ Event properties:
 workbook.variables Contains the controls and their values updated within the workbook. The format follows the structure { 'Variable Name': 'value' }, with URL-encoded values.
 RELATED RESOURCES
 QuickStart: Embedding 07: Events
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

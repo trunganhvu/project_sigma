@@ -1,0 +1,453 @@
+Blog home
+Implementing a Crash-Resistant Socket.io Service Without Sticky Routing
+Madison Chamberlain
+SOFTWARE ENGINEER
+Implementing a Crash-Resistant Socket.io Service Without Sticky Routing
+How to efficiently preserve state when building a Socket.io non-sticky, multi server, service which is resistant to server crashes.
+Socket.io Multi-Server Overview
+As developers, we all have a tendency to either ignore or accept inbuilt latency when using a popular and well developed platform — I know I for one, am guilty of this. A developer may not even consider how long it will take for in-built operations to execute unless there is an escalated regression or breakage. A recent example of undesired latency I discovered was in Socket.io, a trusted service that uses a Redis adapter to build a multi-server system.
+The typical way to preserve state in a Socket.io multi-server implementation is to send everyone who would be in the same room to the same server instance, known as sticky routing. There are some challenges associated with sticky routing including (but not limited to) managing unbalanced loads, rerouting users if their intended server is down, and preserving state if a given server goes down. While there are some work-arounds to these issues, we wanted to avoid sticky routing altogether to ensure the highest possible success rate of our service.
+Preserving State using FetchSockets
+The first solution we considered to preserve state without using sticky routing is to use the data attribute on the socket.io server. One can attach any data to this attribute, then call fetchSockets to view the data associated with other connected clients, no matter which server they are connected to. This proves to be a simple, clean solution to share information between socket.io servers.
+Here at Sigma Computing, we store information associated with a user in MySql; this information can be accessed with a unique ID, generated for that specific user. Since we are using the WebSocket for things like presence badges which require user data, we need each user to have access to all of the other userIDs associated with all other users in a given Socket.io room.
+In the code below, we use the method detailed above to attach user IDs to the Socket.io data attribute in order to preserve state in a multi-server Redis implementation.
+/* server side when a client joins the room */// attach userID to the socket’s data attribute
+socket.data.userId = userIdFromClient;// join the desired room
+await socket.join(roomId);// get sockets for all associated clients in the room
+const attachedClients = await io.in(roomId).fetchSockets();// retrieve the userIDs of the other sockets in the room
+const userIdsInRoom = attachedClients.map((socket) => socket.data.userId);
+However, one issue with this approach is that fetchSockets is actually a fairly expensive operation. On every call, fetchSockets asks all of the other connected replicas to serialize their socket lists and send them over a Redis Pub/Sub channel, making fetchSockets an O(n²) operation. For us, this is a less than ideal runtime, because we call this function on all events the WebSocket emits, with thousands of users connected at a time.
+Preserving State with Redis
+Another solution for this problem is to store information in Redis separately so that session information can be accessed efficiently. To expand on the example above, we would be separately storing a map of room ID to user IDs with standard Redis get and set operations. This would reduce operations such as getting all users in a room to O(1) as opposed to O(n²), even when running multiple server instances, so long as we add and remove users when we join and leave a room. However, in the case of a server crash, we are not able to remove the associated entries from Redis, and although Redis implements a TTL for an entire set, it does not implement a per member TTL. This will cause duplicate entries in Redis upon server reconnection.
+We can solve this problem by using ZSET, which allows you to sort the members in a Redis set by an associated number. To maintain freshness, one can store the mapping of roomID to userID in a ZSET, where the “score” that the user is ranked by is the timestamp of the client’s last ping to the server. This timestamp is to be updated on a regular heartbeat. Then, if any of the members have a timestamp out of the heartbeat limit, we remove them from the Redis store.
+To implement this solution, we need to add ranked Redis members to the ZSET and then remove stale users from the set. To continue with our example, we set the key to the room ID, the member to the user ID, and the rank to current time.
+/* Establish a heartbeat: */
+const HEARTBEAT_FREQUENCY_MS: number = 1000 * 60; // one minute
+const timeout: NodeJS.Timeout = setInterval(
+ async () => await heartbeat(userId),
+                   HEARTBEAT_FREQUENCY_MS,
+);/* Update the Redis store on heartbeats */
+async function heartbeat(userId: string): Promise<void> {
+ const rooms: Set<string> = socket.rooms;
+ await Promise.all(
+   Array.from(rooms).map(async (roomId) => {
+     await redisClient.zadd(roomId, Date.now(), userId),
+     await cleanupRoom(sctx.redis, roomId, null),
+   }),
+ );
+}
+Here we call ZADD, and another function to clean up stale users. It should be noted that when using ZADD like this, Redis will either add a new key-member pair if the room does not already contain the user, or it will update the timestamp if it does already exist. This runs in O(log n), where n is the number of users in the room.
+Now to get into the cleanupRoom portion.
+/* remove outdated entries from Redis store */const HEARTBEAT_TIMEOUT_MS: number = 1000 * 5; // 5 secondsexport async function cleanupRoom(
+redisClient: RedisClient,
+roomId: string,
+): Promise<void> {
+ // any time prior to this value is “stale”
+ const timeoutCutoff: number =
+ Date.now() — (HEARTBEAT_FREQUENCY_MS + HEARTBEAT_TIMEOUT_MS);  const mostExpiredMember = await redisClient.zrange(roomId, 0, 0);  const mostExpiredTimestamp = await redisClient.zscore(
+   roomId,
+   mostExpiredMember[0],
+ );  // if any timestamps occurred prior to our cutoff,
+ // remove those userIds from the map
+ if (mostExpiredTimestamp <= timeoutCutoff) {
+   const outdatedUsers: string[] = await redisClient.zrangebyscore(
+     roomId,
+     +mostExpiredTimestamp,
+     timeCutoff,
+   );    await Promise.all(
+     outdatedUsers.map(async (outdatedUser) => {
+       await redisClient.zrem(roomId, [outdatedUser]);
+     }),
+   );
+ }
+}
+There is a lot going on here, so let’s take a closer look.
+Calling ZRANGE from 0 to 0 will give us the member with the lowest score.
+ZSCORE, when called on a single member, will give us that member’s timestamp.
+Using ZRANGEBYSCORE with the most expired timestamp as the minimum value, and a time cutoff as the maximum will give us all expired users.
+ZREM will remove a user from the set.
+Runtime Payoff
+The runtimes of these functions should also be noted. Determining whether users are stale will run in O(log n) where nis the number of members in the set. To get and remove all stale users only if there are stale members (a server crash has occurred) is a bit more computationally expensive with a time complexity of O(m+log n). n is the number of users in the set, and mis the number of users who were stale. This portion of the code will rarely be executed, making the amortized runtime O(log n).
+And of course, when a user joins or leaves a room, we still need to remember to add or remove them from the set with ZREM and ZADD. These operations run in constant time.
+/* on leaving the room: */
+await redisClient.zrem(roomId, [userId]);/* on joining the room */
+await redisClient.zadd(roomId, now, userId);
+The results of using Redis rather than fetchSockets are as follows:
+Previously, anytime we wanted to see who was in a room, the operation would take O(n²) which is pretty bad, especially if you have a use case like we had, where we needed to check room contents on all socket events.
+With this method, the runtime is decreased to an average of O(log n), or a worst case runtime of O(m+log n) on a server crash. Also noteworthy, is that the operations are running much more infrequently, and much more regularly. In this example we are certain that they are only occurring once per minute regardless of what else the socket is doing. Depending on how ok you are with stale data, this operation could be run as infrequently as every few minutes or hours, reducing the runtime to an even more negligible amount.
+Check out the graph showing the P50 runtime differences between the two methods:
+** Import your data to Sigma if you want an equally beautiful and informative graph from your load testing data 😏
+Correcting for Potential Memory Leaks
+Although this method is efficient and straightforward, there can be memory leaks associated with using a heartbeat method.
+One must ensure that clearInterval(timeout) is called when the socket disconnects. Without calling clearInterval, the memory associated with the timer will never be cleared, and thus, will build up over time.
+Because we continually loop over a function which takes in a variable on the heartbeat, the garbage collector believes that any data needed by the heartbeat should stick around. This means, any variables used by the heartbeat are never collected and cleared. To solve the problem, simply set any variable used in the heartbeat to null when the socket disconnects.
+Hopefully this helps your multi-server WebSocket service to run faster, while also being resistant to server crashes, free from sticky routing, and free of OOMs. Happy coding!
+Thanks to James Johnson
+Let’s Sigma together! Schedule a demo today.
+THE ULTIMATE KPI PLAYBOOK
+Engineering
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

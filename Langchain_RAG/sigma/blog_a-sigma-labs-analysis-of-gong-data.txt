@@ -1,0 +1,418 @@
+Blog home
+When does talking about a dog increase your sales win rate?
+Kaitlin Pike
+VP OF CORPORATE MARKETING
+Ayonika Bose
+ANALYTICS ENGINEER
+When does talking about a dog increase your sales win rate?
+
+A Sigma Labs analysis of Gong data
+One question every salesperson struggles with is what kind of—and how much—small talk will get a prospect engaged and more open to trusting them.
+Asking about a prospect’s pets or chatting about your own seems like a safe small talk topic. But does that lead to greater sales success? Our new Sigma Labs editorial team dug into our own sales team’s Gong recordings to analyze—using Sigma of course—how talking about furry friends impacts results. 
+In this blog post, we’ll explore our findings* including what the most and least helpful animals are in a sales cycle. The data time period represented is from February 28, 2024 to March 26, 2024.
+*Ahem. Look, you and I both know correlation isn’t causation, but standard disclaimer anyway: remember that your mileage may vary, etc. Want to do your own analysis to see what animals are working for your Sales team? Jump to the How to analyze your Gong data in Sigma section.
+How often do Sigma sales calls feature animals? And then what happens?
+We checked to see how often any animal was brought up on a call, and whether it was the Salesperson or prospect who brought it up.
+We observed that animals were mentioned ~6% of the time, with the Salesperson talking about animals slightly more frequently than Prospects did. 
+Check out our workbook to switch between what the Salesperson did versus the prospect, and what the calls to won rate was for times when an animal was brought up vs. when one wasn’t mentioned.
+Which animals were talked about the most? And in general or about a pet?
+We also wanted to see what the most popular animals to talk about were, and whether it was just general chit chat or about a pet.
+No surprise: Man’s Best Friend was the most popular animal to talk about: conversations mentioning dogs represented 41.79% of total calls. 
+Actual surprise: While cows represented a modest 1.11% of calls, they exhibited the highest sentiment score at 31.82% which means whenever cows were mentioned, the calls seemed more joyful and happier. And bunnies, with only 0.59% of calls, displayed a commendable 19.05% conversion rate on closed won opportunities.
+Select between “Sales” or “Prospect” to see whether it was the Salesperson’s pet or the prospect’s pet.
+Which animal got Sigma Sales reps the most closed won deals?
+Thisss wass a ssssurprissse to ussss. 
+Despite the relatively lower frequency of mentions, discussions involving snakes yielded the highest conversion rate of closed won opportunities at 30.43%. This highlights the effectiveness and efficiency in turning leads into successful deals when the topic of snakes arises during sales conversations. Ahem, again, your mileage may vary.
+How to analyze your Gong data in Sigma
+Interested in doing this or a similar analysis? You'll need to follow these steps:
+Step 1: Get your Gong data into Sigma
+Utilize integrations provided by partners such as Snowflake or Fivetran to pull your Gong call transcript data into Sigma. This data should include the entire conversation recorded during each Gong call.
+Step 2: Preprocess the data
+Once the data is in Sigma, preprocess it to ensure it's clean and structured properly for analysis. This may involve cleaning up any inconsistencies, removing irrelevant information, or joining the data to your CRM like we did to understand how the conversation motivated sales deals. 
+Step 3: Identify key keywords
+Using a simple IF statement in Sigma should be enough to identify key terms relevant to your analysis. In the example provided, common animal names like dogs, cats, bunnies, cows, snakes, hens, etc., were extracted from the conversation transcripts.
+Step 4: Sentiment analysis
+The exact next step depends on which of our partners you’re using. If you’re utilizing Snowflake, you would, for example, use Snowflake's AI functions integrated into Sigma to perform sentiment analysis on the transcript data. This involves determining whether each sentence in the conversation is positive or negative on a scale from -1 to 1 using the Segment Function. 
+Databricks has a similar function known as ai_analyze_sentiment where values 'positive', 'negative', 'neutral', or 'mixed' are returned based on the sentence inputed. 
+This step helps in understanding the overall tone of the conversation. For example, was the tone of the conversation negative while talking about snakes? 
+Step 5: Thematic analysis 
+Beyond sentiment analysis, delve deeper into the content of the conversations by categorizing them thematically. For example, if animals are mentioned, categorize them based on whether they are discussed as pets, food, wildlife, etc. This can provide additional insights into the topics discussed during the calls.
+Further analysis 
+With the data organized and analyzed, you can explore various questions and hypotheses. For instance:
+Were animals mentioned more in conversations with certain clients or during specific types of meetings?
+Are there any correlations between the sentiment of the conversation and certain topics, such as animals or specific products/services?
+How do sentiments vary across different industries or regions?
+By following these steps, you can leverage your Gong call data to gain valuable insights into customer conversations, sentiment trends, and thematic patterns, ultimately helping to inform business strategies and decisions.
+We recommend experimenting with different techniques and approaches to uncover deeper insights. You never know, you might find something game changing for your Sales team!
+Like our research? Share on social, please.
+If you liked reading this as much as we liked doing the research for it, please take a moment and share the knowledge on your social channels. 
+And stay tuned for future Sigma Labs posts.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Data Analytics
+Insights
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

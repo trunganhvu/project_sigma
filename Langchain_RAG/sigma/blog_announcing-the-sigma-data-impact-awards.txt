@@ -1,0 +1,397 @@
+Blog home
+Announcing the Sigma Data Impact Awards
+Kaitlin Pike
+VP OF CORPORATE MARKETING
+Kristi Oloffson
+SENIOR PRODUCT MARKETING MANAGER, CONTENT
+Announcing the Sigma Data Impact Awards
+MARCH 26, 2024
+
+Awards season may be over in Hollywood, but in the data space, we’re just getting started. Today we’re announcing nominations are open for Sigma’s first annual Data Impact Awards.  All Sigma customers are eligible; we are ready to hear your stories about the unexpected and impactful things you’ve built in Sigma. Whether it's a groundbreaking project or a game-changing initiative, we want to know about the unexpected ways you’ve pioneered with Sigma at your company. 
+Starting today, all Sigma customers can nominate themselves—or a peer—for The Sigma Data Impact Awards. We’re on the lookout for data leaders who use data to take their ideas, their teams, and their customers further than before. The Sigma Data Impact Awards honor these innovators who inspire others to get away from traditional patterns into thinking about next-generation solutions. 
+Nominations open, today, March 26, and will close on May 17, 2024. Here are this year’s categories.
+This Year’s Categories
+Sigma Customers can apply in any or all of this year’s categories:
+Data Innovator of the Year Award
+This award honors data-driven leaders who have changed the game at their organizations and for their customers. They constantly look to the future to see what could be possible with data, and they have the drive to make that vision a reality.
+Data Culture Award ‍
+Building with data is harder—changing culture is even harder. This award highlights those who revolutionized their teams, departments, or even their entire company from data silos to a collaborative environment where everyone has access to high-quality data and insights.
+Workbook Designer Award
+This award is for the heroes who get their teams to the “aha” moment faster. They’re Sigma wizards who can take pieces of data and magic them into compelling and actionable stories in a clearly designed workbook.
+Enterprise Impact Award
+This award celebrates those who deal with data not just at scale, but at orders of magnitude more than most. They think and act big to drive change across constantly growing and changing organizations.
+Our Customers and the Future of Data 
+Our customers don’t just inspire us—they truly teach us new ways to bring forth the future of data. Sigma’s platform started as a business intelligence platform. And while it continues to serve that purpose, we see BI as the starting point, not an end point. 
+Today, the world’s largest enterprises and most innovative startups deploy Sigma to ensure everyone works on live data every hour of every day—not just by finding insights, but through forecasting the future and automating their workflows.
+Sure, we’ve got traditional use cases: cohort analysis, financial modeling, inventory and supply chain optimization, asset optimization, and embedded analytics. But we also want you to tell us your wild use cases: Show us dashboards that don’t look anything like a dashboard. Tell us about a workflow that was relying spreadsheets for every step, and has since ripped them out for good. Show us how your team is now able to pivot on the fly and make decisions in real time. Give us examples for how you can build forecasts, perform reconciliations, and even build applications and workflows. 
+Our customers are helping to define the future of Sigma, along with what this platform can do and will become. While we may fit into the “business intelligence” category, our customers show us why we are well beyond that already. 
+We’re excited to hear the stories you share with us. Awards winners will be announced in early June. Real prizes are on the line, along with highly coveted bragging rights! 
+‍Read more about our customers or sign up for a free trial here.
+‍
+THE ULTIMATE KPI PLAYBOOK
+Inside Sigma
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

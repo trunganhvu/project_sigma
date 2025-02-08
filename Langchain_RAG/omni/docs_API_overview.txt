@@ -7,13 +7,28 @@ The API base URL is the same as the URL you use to login to Omni. For example, i
 Only HTTPS calls are accepted.
 Authentication
 Authenticate your calls to the API by providing an API key in your requests. Every request made to the API must have an Authentication header with the API key as a Bearer token:
-curl 'https://myorg.omniapp.co/api/scim/v2/users' \
+curl -X GET 'https://myorg.omniapp.co/api/scim/v2/users' \
 --H 'Content-Type: application/json' \
---H 'Authorization: Bearer [YOUR_API_KEY]]'
+--H 'Authorization: Bearer <YOUR_API_KEY>'
 To create an API key, navigate to Settings > API Keys. API keys are only displayed once when created.
+NOTE
+You must be an admin to see the API keys page.
 Note: If you find you don't have access to API keys, reach out to Omni support.
 API key expiration
 API keys do not expire, but they may be revoked by the user at any time. In the event that your API key is lost or compromised, delete the API key in your Omni instance and create a new one.
+Stability
+Some APIs contain /unstable in their endpoints, marking them as in development. The APIs may be used, but note that future updates may introduce breaking changes.
+Entity Resource URL Version/Status
+Models /v0/model v0
+Queries /api/unstable/query/run Unstable
+Folders /api/unstable/folders Unstable
+Documents /api/unstable/documents Unstable
+Content migration /api/unstable/documents Unstable
+Users /scim/v2/users SCIM 2.0 (Stable)
+Groups /scim/v2/groups SCIM 2.0 (Stable)
+Rate limiting
+The Omni API uses rate limiting to prevent instability as a result of large numbers of simultaneous requests. If you send more than 60 requests in a minute, you may encounter 429 Too Many Requests errors.
+If you hit the limit, we recommend implementing a retry mechanism that uses exponential backoff to reduce request volume when needed.
 Previous
 Frequently Asked Questions
 Next

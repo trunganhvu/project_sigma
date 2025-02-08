@@ -1,0 +1,154 @@
+Strategus Takes Full Control of its Data & Delivers Winning Ad Campaigns with Sigma
+About Strategus
+A leading online advertising and marketing firm, Strategus provides a full suite of managed services, including attribution, targeting, optimization, reporting, and analysis. They target specific audiences through CTV or connected television-first advertising to serve them relevant ads through their streaming apps to deliver efficiency and performance through cross-device targeting.
+THE CHALLENGE
+Limited by the Scale & Sophistication of Datorama 
+With Datorama, not only did we have less control, but we were also paying a lot more for less control. Further, we couldn’t empower our line of business to do their analytics.Mark Sussman
+Director of Data and Analytics, Strategus
+Data-driven at its core, Strategus wanted to get a handle and a clear line of sight into the billions of impressions it was serving. It wanted to empower its business leaders with self-service analytics, drive internal efficiency, and build a robust tech stack. 
+While the company had a relatively modern tech stack—comprising of Snowflake as their cloud data warehouse, Fivetran for data transformation, dbt Labs for data modeling, Castor for data documentation, and Census for reverse ETL—Datorama, their data management and visualization tool from Salesforce, wasn’t complete enough for their needs. It came with row-level limitations and restrictions around data ingestion, which was not optimal.
+THE SOLUTION
+Singular Universal Dashboard, Input Tables, & A Modern Data Stack 
+The limitations posed by Datorama and the pursuit of a genuinely modern construct for building a thriving business led Strategus to Sigma, the industry’s leading analytics platform trusted by 500+ data driven brands.
+Sigma’s Input Tables have been the turning point for Strategus, giving our users the power to incorporate their data directly into their analyses.
+Mark Sussman
+Director of Data and Analytics, Strategus
+“Earlier, a specific dashboard was built for every campaign, and with hundreds of campaigns being built monthly, just building campaign dashboards required 1-2 FTEs,” says Mark. “Now, we have one universal dashboard where campaigns automatically start, get added to our tech stack, and serve our clients. Sigma gives us the much-needed autonomy and control over our tech stack,” says Mark.
+Plus, the most recent feature from Sigma—Input Tables—has opened up a new world of possibilities for Mark and his team. Input Tables give Strategus the power to directly add data to Snowflake, their cloud data warehouse, and take control of their data and analyses. As a result, they don’t need to write code or use additional technical resources. Instead, Input Tables create Sigma-managed tables directly from typed user inputs, referenced drop downs, or large copy and pasted CSV or spreadsheet-style data.
+THE RESULTS
+Leading with Deep Analytics to Meet & Beat SLAs 
+The online advertising firm is well on its way to building a truly modern data stack with Castor, Census, dbt Labs, Fivetran, Snowflake—and Sigma being “the glue” between Salesforce, their internal source of truth, and The Trade Desk, their operational originator. Strategus has a clear line of sight with Sigma into ad performance, the percentage of campaigns served across different publishers, and its entire portfolio. 
+Input Tables Replace Google Sheets 
+Input Tables have a considerable impact on Strategus in terms of overall productivity. “Input Tables have been able to replace Google Sheets to gather input from our team and directly put it into action,” shares Mark. 
+In addition to replacing Google Sheets, Input Tables have allowed Strategus to implement a proper naming convention across their campaigns. While this may seem simple on the surface, four lines of campaign tactics in Salesforce expand into hundreds of ad groups, all of which need to follow specific naming for display purposes to clients and for linking goals for Strategus.
+“Now our ad ops managers can go in and change a name in the Input Table, and automatically synchronize to The Trade Desk & Salesforce via Census and update the name there,” shares Mark. “What would have taken 20-30 seconds through the The Trade Desk API is down to one second with Sigma, resulting in huge time savings!”
+This new feature has allowed Mark and the team to create “real-time crosswalks” for their data across different platforms like Salesforce & The Trade Desk allowing them to go from zero to accurate analysis at speed and scale. Again, optimization is the key, with hundreds of ad campaigns running at any given time.  The team will soon start drawing up ‘what-if’ scenarios and predictive models to explore the different permutations and combinations of ad spend, budget, CPMs, and performance across diverse channels, geographies, and publishers. 
+Embedded Analytics: A Key Differentiator 
+Strategus customers can embed and leverage dashboards right in their workflow. “Our customer dashboards differentiate us in the marketplace, and embedded analytics are integral to our business,” says Mark. “With Sigma, we’re able to provide our customers granular data around their campaign performance.”
+The company utilizes and drills down on maps to ascertain which geographic areas, zip codes, and states are performing best for a campaign. This helps them drive more business conversations, and their customers can make informed decisions in real time. Mark tells us that embedded analytics has been a great retention tool for them, and they plan to leverage it further for revenue-generating purposes soon.  
+Security & Governance
+Given the sensitive nature of PII data that Strategus needs to deal with daily, they take security very seriously and have completed their SOC 2 compliance certification.
+Both the data coming out of ad campaigns and that going into the campaigns for targeting purposes is incredibly sensitive. “As we endeavor to build this new modern tech stack, it is imperative that everything is compliant and that we feel very comfortable with the row-level security for application embedding,” shares Mark. “Sigma has been a precious part of the equation.”
+Before Sigma, the team didn't have that same scrutiny over who would have access to campaign performance data. Plus, the fact that data doesn't need to leave Snowflake for analyses anymore helps with GDPR compliance. 
+Cost, Resource, & Time Savings
+The 100M row “inventory performance” dashboard, powered by Sigma, gives a unified view into ads, performance, budget, and allocation, and has been critical for the Strategus team to meet 100% of their SLAs.
+Also, the move from Datorama to Strategus has reduced the platform costs by a third, saved them 1-2 FTEs, and increased the bandwidth of their resources by 20% so they can focus on pacing, performance, and analysis of their campaigns. 
+Business Outcomes 
+The Strategus team has an incredible line of sight into their business through Sigma’s intuitive spreadsheet-like interface. As a result, monitoring the pacing and performance of the campaigns is no longer a challenge. The company can now track against its metrics, deliver the impressions they need to, benchmark across its KPIs, and as a result, meet and beat its SLAs.
+“Before Sigma, we didn’t have consistent processes for data analysis—we had people maintaining spreadsheets and pulling data themselves from The Trade Desk and Salesforce," Mark tells us. “With Sigma, our managers have access to a unified view of all the relevant data, and therefore, they’re more empowered to deliver on our promises to our clients.”
+With data and intelligence at their fingertips, the team at Strategus has become more effective. To summarize, with Sigma, Strategus can log colossal efficiency and productivity gains by moving to a universal dashboard to make its ad campaigns tighter and move its business forward.
+BY THE NUMBERS
+3X
+3X REDUCTION IN PLATFORM COSTS
+100%
+SLAS MET THROUGH 100M ROW DATASET
+400+
+ACTIVE ADVERTISING CAMPAIGNS AT ANY GIVEN TIME
+More about
+Strategus
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

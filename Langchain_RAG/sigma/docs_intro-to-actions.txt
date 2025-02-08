@@ -1,3 +1,104 @@
+Home
+Community
+QuickStarts
+Status
+Documentation
+API Recipes
+API Reference
+What's New
+Search
+START
+About Sigma
+Start using Sigma
+CONNECT
+Connect to data sources
+Manage connections
+ADD DATA
+CSV uploads
+Input tables
+MODEL
+Get started with data modeling (Beta)
+Data models (Beta)
+Model data from database tables
+Datasets
+Add and manage data
+Join data
+Transform data
+ANALYZE
+Workbook basics
+Build a workbook
+Data elements
+Tables
+Query
+MANAGE WORKBOOKS
+Manage a workbook
+Workbook templates
+Workbook lifecycle
+Workbook performance
+Workbook security
+Manage SQL queries
+CHART
+Intro to charts
+Build a chart
+Customize a chart
+FILTER
+Filter data
+Intro to control elements
+Work with controls
+DESIGN
+Design layout
+UI elements
+Workbook formatting
+ADD LOGIC
+Intro to actions
+Create workbook actions
+Configure workbook actions
+INTERACT
+Interact with workbooks
+Interact with charts
+Collaborate in workbooks
+Search for files in your organization
+SHARE
+Share a workbook
+Share a folder
+Share templates
+Send or schedule workbook exports
+Export data
+Manage scheduled exports
+About exporting data
+CALCULATE
+Operators overview
+Use AI with formulas (Beta)
+Perform AI queries
+Functions
+Metrics
+Custom functions
+EMBED
+Intro to embedded analytics
+Public embedding
+Secure embedding
+Advanced data security in embeds
+Additional embedding configurations
+Embed SDK for React
+DEVELOP
+Sigma API
+Plugin development
+ADMIN
+Administer Sigma
+Users and teams
+Permissions
+Authentication
+Third-party integrations
+Organization settings
+Customize
+Localize
+Manage assets
+Audit and usage
+Develop
+SUPPORT
+Sigma support
+Sigma product releases
+Supported regions, data platforms, and features
 Intro to actions
 Suggest Edits
 Actions are user-defined interactivity that you can configure within and across workbook elements. By automating responses to specific user interactions, you can create efficient workbook workflows that produce quick and relevant data insights.
@@ -13,19 +114,25 @@ Action conditions
 You can define an optional condition for any action sequence. The condition can be a custom formula or, if you are configuring an action for a control, the condition can be the value of the control.
 For more information, see Make an action conditional.
 Action triggers
-Most element types can be configured as action triggers. The following table describes the user interaction that can trigger an effect for each element type.
-Element type Interaction
-Table, pivot table, or input table User selects a cell in a specific column. This trigger can use action variables to reference values the user selected within a table.
-Visualization User selects a data point or category on the chart. This trigger can use action variables to reference values the user selected within a visualization.
+Action triggers can be configured on most element types. The following table describes the supported trigger types.
+Element type Trigger type (user interaction)
+Table, pivot table, or input table On select: user selects a cell in a specific column.
+Visualization On select: user selects a data point or category on the chart
 UI element
-(button or image only) User clicks the element.
-Control element User changes the control value.
+(button or image only) On click: user clicks the element.
+Control element On change: user changes the control value.
+Modal
+On click - primary: user clicks the primary button.
+On click - secondary: user clicks the secondary button.
+On close: user closes the modal.
 Action effects
-The following table lists the types of actions you can configure on a trigger element and describes the corresponding effect.
+The following table lists the actions you can configure on a trigger element and describes the corresponding effect.
 Type Action Effect
 Navigation Open URL Navigates to an external link or destination within Sigma.
 Open Sigma doc Navigates to a different Sigma workbook.
 Navigate in this workbook Shifts the focus to the top of a specific page or an individual element in the current workbook.
+Open modal Opens a modal in the current workbook.
+Close modal Closes an open modal.
 Control value management Set control value Sets the value of a specific control element in the current workbook.
 Clear control Clears the values of a specific control element in the current workbook.
 Element modification Modify element Modifies an element's columns, groupings, properties, or axis scale.
@@ -50,3 +157,9 @@ Create actions that download and export data
 View and manage existing actions
 Make an action conditional
 Use variables in actions
+Resources
+Sigma home
+Blog
+Learn
+Product FAQs
+© 2025 Sigma Computing

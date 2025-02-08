@@ -1,0 +1,22 @@
+Introducing Omni ‘98
+Who needs the modern data stack when classic never goes out of style
+April 2, 2024
+Richard Czechowski
+San Francisco, Ca., April 1, 2024 — Omni Analytics is announcing that customer anticipation is high for the upcoming release of the Omni ‘98 analytics platform. Omni ‘98 will be available simultaneously to all customers and is especially recommended for customers switching from legacy, desktop BI tools who want something that looks more familiar. In addition, a recent made-up survey revealed that 95 percent of those surveyed plan to upgrade from the latest version of Omni back to the style that existed before its inception.
+“Omni ‘98 is catching fire among the data community,” said Tamara John, marketing director at Omni. “The beauty of Omni ‘98 is that it runs applications exactly as fast as regular Omni, while unlocking a whole new range of outdated UI features and capabilities for consumers.”
+Excitement is building
+As the launch of Omni ‘98 approached, consumer anticipation grew exponentially – mostly because one to any power is still one.
+In closed-door tests, prospects highlighted Omni’s less sleek new look as a major reason they plan to purchase. “I wasn’t even alive in 1998,” said recent Data Science Bootcamp graduate Bobby Tables, “but somehow this speaks to me.”
+“On this Ballmery day in SF, we're beyond excited to welcome analysts migrating from legacy desktop BI tools into a modern tool with a familiar environment. Omni leaves no analyst behind!” exclaims Jamie Davidson, co-founder & president at Omni. "Legacy-styled dashboards are going to be fundamental. They're not there yet, but we're certainly on a course to do that, and it will be just like the mobile phone.”
+Omni ‘98 works the same, but is somehow better
+Better design
+They say “Good design is obvious. Great design is transparent.” So we’ve tried to remove background colors and use transparency wherever we could so the background colors could bleed through. At Omni, we believe in transparency. This is why we post our progress demos every Friday.
+"A lot of times, people don't know what they want until you show it to them. In this case, we realized what people actually wanted was what they had decades ago,” shares Sarah Waterson, former Microsoft intern.
+Unchanged performance and reliability
+With Omni ‘98, we have focused on rolling back the look and feel, without compromising on features you already know and love. Modeling on the front-end? Still there, just slightly harder to read with a black and white DOS theme on the IDE. Dashboards? Looking great with individual “windows” for each tile.
+A new range of productivity and entertainment capabilities
+Can a new theme make you more productive? Maybe? We don’t really know, but we’re going to find out.
+How to access Omni ‘98
+If you already have the modern Omni, simply change the theme under your account settings. The Omni you know and love is fully functional, just with a new-old look! You can view dashboards, explore, and schedule emails — we even built in a sleek-outdated error screen.
+If you don’t have Omni, we’d be happy to help you get started.
+Editorial note: Yes, this feature actually exists, so check it out if you enjoy flashbacks or the comforting style of legacy tools. Enjoy our April Fools spoof story dreamed up by our delightfully creative Engineering team, because why not 🤷

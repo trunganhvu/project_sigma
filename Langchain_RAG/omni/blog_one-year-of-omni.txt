@@ -1,0 +1,15 @@
+Reflecting on One Year of Omni
+Giving every user freedom.
+February 28, 2023
+Colin Zima
+This month Omni turned one. I’m incredibly proud of what we’ve built in such a short time. In addition to celebrating our work over the last 12 months, we are happy to announce that Omni is now commercially available – no more private beta, and more people can use Omni to solve data challenges.
+It’s almost become a joke; I’ll see someone I pitched Omni to 12 months ago (before we had any code) and give them the new pitch. “That’s exactly what you said last time.” Of course, we have transitioned from sketches and ideas to working software with real users, but the simplicity of our vision is almost identical to our original post:
+"Give every user the freedom to move quickly, answer their own questions, and give data teams the tools to integrate those insights into a dependable, governed platform."
+It’s a simple but obvious value proposition.
+End users get freedom, flexibility, and self-service: no more waiting on the data team to ask questions.
+Data teams get control and power: instantly integrate one-off workbooks, get full visibility into usage, and the tools to integrate business user insights into a core data model, using software engineering workflow.
+For data teams, we built a modeling layer with all the power of LookML–in-database pivoting, totaling and subtotaling, dimension fill, effortless schema updates (no more dbt-related model surgery)–and took it a few steps further: dynamic SQL parsing, simple query chaining, promotion to dbt. For data consumers, we built a lightning-fast UI (even with 50,000 row result sets), beautiful, fast visualizations (that even work with SQL), and simple front-end querying and calculations. But what’s most magical is these layers seamlessly connect together, unifying the world of isolated workbooks and one-off SQL queries with that of governed, modeled BI.
+The validation has been in real users living in the product every day. We’re deeply grateful for the friends and new faces that have shaped the day-to-day improvement of the product. Selfishly, it has felt great to relive the customer obsession I saw in the early days at Looker, where our customers are true design partners.
+When you have a team that has thought about these problems for the last decade and gets to rebuild it all from scratch, you get magic. I can’t wait to see what the next 12 months look like. (also, look at the speed on that dashboard load!! 👇)
+The future
+Now that we are commercially available, the stakes increase, and our ability to improve speeds up as more people use the product and share feedback. We are beyond excited for what is happening in the next 12 months. Request a demo to get a personal walk-through of Omni, and we will get you started using Omni on your own data. Then you can see for yourself what we have been talking about.

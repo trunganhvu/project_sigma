@@ -1,6 +1,8 @@
 API docsFolders
 On this page
 Folder APIs
+HEADS UP!
+The folder APIs are in beta and may have future breaking changes.
 The folder APIs allow you to manage and organize content hierarchically within your Omni organization.
 Folder object
 Represents a folder in Omni.
@@ -30,7 +32,7 @@ Path filtering
 Filters & sorting
 Pagination with cursor
 GET /api/unstable/folders
-curl 'https://myorg.omniapp.co/api/unstable/folders' \
+curl -X GET 'https://myorg.omniapp.co/api/unstable/folders' \
 --H 'Authorization: Bearer <TOKEN>' \
 --H 'Content-Type: application/json'
 
@@ -60,6 +62,7 @@ cursor string No X null Cursor for pagination positioning
 pageSize number No X 20 Number of items per page (minimum: 1)
 sortField string No X name
 Field to sort by:
+favorites - Sort by number of favorites
 name - Sort by folder name
 path - Sort by folder path
 sortDirection string No X desc Sort direction (asc or desc)
@@ -106,6 +109,7 @@ Response
 
 
 
+429 Too Many Requests
 Previous
 Queries
 Next

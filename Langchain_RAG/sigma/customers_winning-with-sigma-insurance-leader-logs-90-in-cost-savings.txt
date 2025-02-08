@@ -1,0 +1,149 @@
+Winning with Sigma: Insurance Leader Logs 90% in Cost Savings
+About the Company
+This leading US-based insurance company specializes in life insurance and annuities, and provides high-quality service and policy solutions to its existing customer base. 
+THE CHALLENGE
+Replacing Legacy Data Stack & Moving to Cloud
+The Insurance leader wanted to build a modern, cloud-native, low-infrastructure company that could operate efficiently and conduct business faster. Being able to efficiently ingest, onboard, and deliver data was more critical than ever. 
+The process of getting off a legacy data stack was estimated to take around three years. This led their team of data scientists to manage the on-premise SQL server configurations and use a SAP reporting platform for their analytics. In addition, they were using a combination of Notepad, Microsoft Access, and Microsoft Excel, along with custom-made Java applications and databases for support. These were extremely manual, expensive, and time-consuming tools to use. 
+The insurance leader did not have the luxury of time and needed to migrate fast to a modern data stack to grow its business. They decided to shift to a hybrid cloud Azure VMS environment. However, the data team still needed to write SQL code inside of a virtual machine and operate that way. On top of the new hybrid cloud environment, the company also began using Power BI along with most of their previous tools, which did not help. “We realized that there was a lot of strain and challenge with operating in this legacy environment and needed a better tool,” says their Head of Data Engineering.
+The head was brought on to find a solution and replace the complex legacy data stack. The first priority was moving completely from an on-premise environment to a cloud environment and eliminating the need to move data back and forth between multiple tools in the form of thousands of spreadsheets. Furthermore, the team wanted a single source of truth where data could sit ready for analysis. They looked at several tools and data warehouses before focusing on Snowflake and Sigma to reach their cloud-native potential.
+THE SOLUTION
+Implementing a Self-Service Analytics Tool 
+The fact that I didn't have to try to onboard somebody to Power BI or Tableau—which always feels like a steep learning curve—put Sigma at the top.
+—Head of Data Engineering, US Insurance Leader
+The data team needed a self-service tool that business users could easily use on their own. While searching, they evaluated Sigma, Tableau, and the already-in-use Power BI. After doing a POC (proof of concept) on each tool, the team decided Sigma was going to be the best solution for their data stack. One primary reason is Sigma’s compatibility with Snowflake, making it incredibly easy to get up and going quickly and at scale to conduct their analytics.
+Once Sigma was implemented, the data team slowly began rolling it out to the rest of the business. The company’s business users were using Power BI at first, but as more ad hoc requests began coming in, they began using only Sigma and Snowflake to simplify their workflow and get insights faster. As more and more data gets added to their Snowflake instance, they will add more Sigma users, eventually phasing out Power BI and moving their data in Snowflake.
+We really appreciate the flexibility that Sigma offers our business users, enabling them to start using the platform with the data they already have, giving them the ability to move data back into Snowflake.
+—Head of Data Engineering, US Insurance Leader
+Sigma was incredibly easy to use as most business users were familiar with using a spreadsheet. With a spreadsheet-like interface and no SQL requirements, business users had self-service analytics at their fingertips and could perform their own calculations, joins, pivots, and build powerful dashboards with visualizations—all without the help of the data team or technical users. 
+THE RESULTS
+Automating Outdated Workflows, Building Efficiency, & Accelerating Time-to-Value by 75%
+By leveraging Sigma in day-to-day operations, the company is able to streamline and automate workflows. This has led to a 90% reduction in costs associated with generating insurance claims’ reports which were originally estimated to cost the business close to $60,000 per month.
+Optimizing and Automating Business Studies Reports
+Before Sigma, the users manually created reports for studies. The data they needed lived in Workday and took teams 3-4 weeks to build and as a result, the users became frustrated. They decided to move to Excel to manually break the report into 25 different sections and combine them back together, which wasn’t the best given the limitations.
+Finally, the team was able to reduce the complexity and the time it took to build the reports by leveraging Sigma, Snowflake, and the Workday connectors. Now business users can repeat this process in Sigma anytime they need to build the reports without having prior knowledge of SQL or asking the data team for help. Ultimately, this led to 75% faster time-to-value. 
+Easily Managing & Processing 250 Year-End Files From Regulatory Bodies
+With Sigma, we've nailed a repeatable dashboard that we can apply every quarter or every year and this has led to incredible efficiency gains.
+—Head of Data Engineering, US Insurance Leader
+Prior to implementing Sigma, multiple business users at the company were manually processing year-end files through Excel spreadsheets. However, this was an error-prone process because multiple people were working on these spreadsheets. This process could take 2-3 days just to communicate. On top of this, they had to manually update any new data in these spreadsheets.
+The primary business user on the vendor side in charge of this project began using Sigma to process these files. As a result, the user is now able to quickly answer business questions without having to jump into Excel or long email chains, build weekly executive summaries for leadership, and filter and drill down data, as needed. This entire process went from taking one week with Excel to less than a few minutes in Sigma, and the data is always fresh.
+Security & Governance Improvements
+With their data in Snowflake, the company has a single source of truth. Prior to moving to a modern data stack, teams were extracting data from their on-premise warehouse into Excel and other tools for analysis. This was not the best from a security and governance standpoint and rendered the data outdated as soon as it was downloaded.
+With Sigma, the team is able to leverage the live data within Snowflake for real-time analysis. Sigma’s role-based permissions allow only select users to see the data they need, leading to fewer errors and fewer security incidents. The company uses Sigma’s lineage features to conduct its audits and track its data from start to finish. 
+Cutting Costs and Streamlining Claims’ Reporting with ‘Input Tables’
+Prior to Sigma, the company was relying on custom Java applications that required Java experts to code, manage, and create the reports for insurance claims. The accuracy of these reports is critical, and any errors could have significant cost implications. The costs of hiring Java programmers and the manual effort and time it took to create these reports cost close to $60,000 per month. 
+The Engineering Head believes that Sigma Input Tables are a perfect solution to create these reports. The vendors needed the ability to look at a set of records and apply custom fields and comments on these files. Now they’ve created an automation program that loads the data into Snowflake, where the transformation logic and data cleaning takes place to remove unnecessary records. The rest of the data is visible in Sigma, where a business user can easily build the reports using Input Tables, leading to a 90% reduction in cost compared to the previous process.
+The reports no longer need to be refreshed and saved on a schedule, and the data stays fresh. By simplifying the reporting process, this leading insurance provider can now focus on improving other aspects of the business and deliver higher-quality service to their clients.
+BY THE NUMBERS
+75%
+75% FASTER REPORT BUILDING AND DATA VALIDATION WITH SIGMA
+Weeks to Minutes
+WEEKS TO MINUTES: BUILT TIME FOR YEAR-END PROCESSING DASHBOARD DOWN
+90%
+90% COST REDUCTION FOR INSURANCE CLAIMS REPORTING
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

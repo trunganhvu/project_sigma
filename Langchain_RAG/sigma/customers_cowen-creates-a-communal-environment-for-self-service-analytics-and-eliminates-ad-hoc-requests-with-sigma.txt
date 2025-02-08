@@ -1,0 +1,147 @@
+Cowen Creates a Communal Environment for Self-service Analytics and Eliminates Ad-hoc Requests with Sigma
+About Cowen
+Cowen Inc. is a diversified financial services firm that operates through two business segments: a broker dealer and an investment management division. The company’s broker dealer division offers investment banking services, equity and credit research, sales and trading, prime brokerage, global clearing, and commission management services. Cowen’s investment management segment offers actively managed alternative investment products.
+‍
+The Challenge
+Legacy BI Tools Prevented Easy Historical Data Analysis and Drowned IT in Ad-Hoc Requests
+With as many as 11 million trades running through their pipes every day, Cowen Inc. must continuously process and analyze enormous volumes of data. And as a publicly traded financial institution, Cowen must be able to both store and retrieve data about each individual transaction to meet regulatory requirements and remain in compliance.
+To improve the organization’s ability to maintain and access historical data, Cowen migrated to a sophisticated trade processing and record-keeping system. While this system removed the time-frame limitations imposed by their previous tool and opened up all of their data for analysis, it introduced significant hurdles for business users because it required SQL expertise to access.
+As a result, each and every data request had to go through their IT department, which then provided the data in the form of Excel worksheets. But Excel’s scale limitations prevented the data from being delivered in a single, comprehensive spreadsheet. The only solution was to break it up into multiple Excel worksheets, which slowed down the analysis process, made it difficult to get a holistic view of the data, increased the possibility of copy/paste or formula errors, and made responding to regulatory requests extremely labor intensive.
+“We were basically left with three choices,” recalls Ross Levin, Managing Director, Global Clearing, Settlement & Securities Finance at Cowen Inc. “We could continue to force the business users to submit requests to IT any time they need to access data. We could spend the time and resources necessary to build and maintain a portal for business teams to access the trade processing record system. Or, we could find a solution that allowed our business teams to self-serve.”
+‍
+The Solution
+Empowering Business Teams Across the Org To Analyze Datasets of Billions of Rows Without Lift from IT
+It quickly became clear to Cowen that they needed to find a cloud data exploration tool that could:
+Connect directly to their cloud data platform so they could keep their data centralized and easy to govern;
+Eliminate the need for risky data extracts;
+Be easily accessible to non-technical business users.
+Sigma checked all the boxes for us. It connected directly into Snowflake and had a spreadsheet interface similar to Excel that our business teams felt comfortable with.
+Ross Levin
+Managing Director, Global Clearing, Settlement & Securities Finance at Cowen Inc.
+After an exhaustive investigation of several potential solutions, the team discovered Sigma. 
+Everyone at Cowen, regardless of technical skills, was finally able to access live data in the Snowflake Data Cloud. Using Sigma’s powerful spreadsheet, teams across the organization have the power to analyze billions of rows of governed data within a single worksheet. This has significantly accelerated the process for the business teams to perform job functions and allows self-managed reporting capabilities for several business areas, including Operations, Finance, and Compliance.
+Ira Lupkin, Managing Director at Cowen who is one of Cowen’s Finance team leaders had this to say about Sigma, “For me it was the speed of returning queries that made a big difference for us, as well as the ability to do things on our own without IT.”
+‍
+The Results
+Business Units Across the Globe Are Able to Self-serve, Virtually Eliminating Ad-hoc Requests
+Today, Sigma functions as a common language platform where business teams, analysts, and the data team can collaborate on data validation, data exploration, and analysis of massive data sets to rapidly find rich insights. Technical teams are able to use Sigma to curate datasets for business teams where sources are linked and calculations are clearly defined and business teams are able to explore the data freely within these endorsed paths.
+The finance team has reported 6X faster report creation.  
+“We’re already seeing some early wins,” reports Lupkin. “Reports that used to take me an hour or more weekly I can put together in under ten minutes.”
+In addition to speed, Sigma is empowering teams across Cowen to more easily analyze historical data and take a holistic approach to their analytics. Levin explains: ""Before Sigma, in order to analyze or even just look at data beyond our former tool’s 90 day limitation, someone needed to either know SQL or go through IT to do it for them. With the introduction of Sigma, that barrier is gone. Anyone can look at the data at any point of time.” Cowen’s IT team has not seen a single ad-hoc request in the last 90 days.
+The speed and ease of access Sigma provides is helping ease the burden of meeting strict regulatory requirements as well. Investment firms are expected to provide timely data in response to regulatory requests, which introduces complex operational overhead. Sigma’s ability to manage Cowen’s 5 billion+ row worksheets and drill down into row level data while remaining performant has eased this burden significantly.
+“We store trading data indefinitely,” says Levin. “If we receive a regulatory inquiry or an inquiry from auditors, anyone can now go into Sigma, easily retrieve those records for any given date, and provide them with confidence, knowing the data is accurate.”
+Monty Touzalin, MD Compliance / Reg Ops at Cowen, elaborated on this powerful way Sigma is adding value at Cowen. “I can now easily access anything auditors ask us for,” explains Touzalin. “I even built a model where I can filter and segment the data any way I need to. It’s making my life much easier!”
+Levin summarizes the impact Sigma has had on Cowen this way: “Technological barriers have been removed from the picture, and that was the goal of this project. Implementing Snowflake and putting Sigma on top of it has given us the single source of truth we’ve always needed. All of our data is centralized in one place, which helps everyone perform their roles better.""
+BY THE NUMBERS
+90+
+ZERO AD HOC REPORTING REQUESTS IN THE LAST 90+ DAYS
+6x
+FASTER FINANCE REPORT CREATION
+5b
+5 BILLION ROW DATASETS ANALYZED WITHOUT EXTRACTS
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookie Preferences

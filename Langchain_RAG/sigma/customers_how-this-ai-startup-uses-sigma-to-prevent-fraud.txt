@@ -1,0 +1,394 @@
+How this AI startup uses Sigma to prevent fraud
+By Mike Ward
+SENIOR RISK DATA ANALYST, SARDINE AI
+We spoke with Mike Ward, Senior Risk Data Analyst at Sardine. Founded in 2020, Sardine leads the charge against fraud by harnessing the power of artificial intelligence. Specializing in real-time risk assessment, Sardine utilizes cutting-edge machine learning to analyze vast datasets, providing clients with actionable insights to combat fraudulent activities across various digital interactions. 
+Life Before Sigma
+Sardine was developed in 2020 to help fight fraud. Fraud is a huge and growing problem across every individual and company, and it’s basically a data problem. Many losses could be avoided with the right data, but finding the right data when you need it, when you're already dealing with lots of different siloed data providers and applications, can be really difficult.
+Fraud is basically a data problem. Many losses could be avoided with the right data. 
+When fraudsters attack your system, you don't have time to sift through dashboards. You need all your tools working together in one place. So we capture all the most relevant signals, use the highest-performing data providers, and apply cutting-edge machine learning to make it easy to understand the risk behind every login, sign-up, and transaction. 
+Life With Sigma
+I think everybody's view of security is paramount. Sigma gives us a competitive edge when providing our customers, analysts, and operators with critical information to fight fraud in a  quick, efficient, and easy-to-use format. Being able to utilize embedded dashboards and expose information to our customers through our own app, and not have to send them to some separate cloud website to view their analytics, has been critical. It's easy to have that secured right into our own dashboards.
+We went through a little cost-savings drill and through Sigma, I was able to save us $120,000 a year.
+Sigma is so easy to use, we don't even need a lot of support from our data analytics team. If you know how to use spreadsheets, charts, and so forth, we can expand that throughout our entire company. People don't have to come to the data analytics team and ask for information. They can go in and get it, and it helps us identify cost savings opportunities.
+Over the last month, we went through a little cost-savings drill, and through Sigma, I was able to do some analysis and save us $120,000 a year in costs. The support team was great in helping me to really dive down into the costs of our queries and seeing what queries were supporting which portions of our dashboards. I wouldn't have been able to identify those cost savings without them. 
+Sigma is so easy to use, we don't even need a lot of support from our data analytics team.
+And that was just my piece. Other people were doing additional analyses and were able to save even more money. With Sigma, we were able to cut costs and get a competitive edge because it's so easy to use. We're able to focus our development efforts elsewhere with our resources.  
+Keeping Sardine Competitive with AI-Driven Innovations 
+With fraud prevention, AI is core to our business.  For every transaction that we process, we generate thousands of features, including device intelligence, behavior, biometrics, identity signals, historical aggregations, and network graphs. All this information is there for every transaction. In order to really pull that all together, you need AI to help you try to call out the very small percentage of fraud that comes across all these transactions.
+When fraudsters attack your system, you don't have time to sift through dashboards. 
+We build machine learning models to evaluate all these signals and then provide a real-time risk score back to our customers. Through Sigma, customers can really dig in and see the top features across our transactions that are identifying fraud for us, so that we can tune our models better.
+What’s Next with Sigma
+As a global company, you're dealing with regulations across multiple countries. Even if you just look at data privacy standards now, Sigma has helped us because we're able to segregate our US vs. our EU data and not have to create duplicative dashboards so we can easily swap between them. Based on our embedded dashboards where our user is logging in, they're able to see the data related to their region, and, with generative AI, we're going to have the same situation with the regulations being different between countries and being able to support that.
+We’re looking forward to using the Python feature in Sigma.  As software developers, we go into ChatGPT or another platform and say,  “Give me some code to do this particular function.” Being able to do that within Sigma and say, “Build me a chart that shows me this,” rather than doing all the configuration myself? It's speedy as it is, but it'll make us move even faster.
+‍Read more about Python in Sigma, or download a free trial.
+‍
+ABOUT
+SARDINE AI
+Specializing in real-time risk assessment, Sardine utilizes cutting-edge machine learning to analyze vast datasets, providing clients with actionable insights to combat fraudulent activities across various digital interactions.
+More about
+Sardine AI
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies

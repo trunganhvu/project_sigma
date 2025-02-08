@@ -1,0 +1,463 @@
+Embedded analytics,
+seamlessly integrated
+POWER YOUR APPLICATIONS WITH DATA
+TOP TEAMS CHOOSE SIGMA. SEE FOR YOURSELF.
+Deliver enterprise data
+products at startup speed
+PLUG AND PLAY
+Rapid development, ready integration
+Embedding designed for ease of deployment, requiring minimal developer resources and no custom SDK integrations.
+FAST FAST FAST
+Accelerate time to market
+No-code analytics and iFrame embedding make it fast and easy to deliver insights to your customers in minutes, creating a competitive edge while increasing customer satisfaction.
+ENGAGING
+Tailored user experiences
+From essential dashboards to comprehensive data explorations, provide customizable embedded experiences to meet diverse user needs within a flexible, self-serve environment.
+CONFIDENCE
+Monetize your data
+Whether data is at the core of your product offering or you want to provide analytics at a premium, leverage embedded experiences to unlock new revenue streams for your organization.
+Enhance your product with embedded analytics
+Read the documentation
+See our guides
+Embedded analytics that drive action and insight
+Effortless integration
+Quickly embed Sigma with a single URL and customize the user interface with no-code options for a comprehensive, low-maintenance analytics experience.
+Dynamic data exploration
+Empower users to drill down into data, view underlying metrics, and perform ad-hoc analyses within your embedded Sigma environment.
+Simple, secure authentication
+Integrate with any existing authentication without additional SSO requirements for a quick and easy implementation.
+Role-based access controls
+With options from single and multi-tenant to dynamic role switching, define user permissions with granularity to ensure precise user access control.
+Live query against CDW
+Directly query your Cloud Data Warehouse for up-to-date insights and real-time interactive data.
+Write-back to the cloud
+Effortlessly incorporate human context into your analysis and securely write data back to your cloud data platform, all without writing any code.
+Elevate your product experience with Sigma
+Explore the capabilities of Sigma's Embedded Analytics in real-time. Experience how Sigma seamlessly integrates with your product.
+EMBEDDED WORKBOOK DEMO
+EMBEDDED CUSTOMER TEMPLATE
+“We’re projecting WageScape — powered by Sigma — will give us seven-digit revenue from new incremental sales in the first year of operations.”
+CARY SPARROW
+FOUNDER & CEO, GREENWICH.HR
+Top teams choose Sigma.
+See for yourself. Sigma is a G2 crowd favorite,
+backed by countless reviews.
+SEE SIGMA ON G2
+READ THE REVIEWS
+Related resources
+EBOOK
+The Ultimate Guide to Embedded Analytics
+Download your free eBook on Embedding Analytics today and start transforming your customer engagement and data management practices. It's easy to start, and even easier to master.
+GET YOUR FREE COPY
+WEBINAR
+From Data to Dollars: Tips from a CEO on How to Monetize Your Data
+In this session, Zalak Trivedi, Product Manager at Sigma, and Erik Mitchell, CEO at Seek, reveal the secrets to transforming your data into revenue streams.
+WATCH ON-DEMAND
+WEBINAR
+Embedded Analytics Made Easy: Go From Concept to Launch in No Time
+Data experts at Aimpoint Digital and Sigma explain how you can rapidly (in days/weeks) deliver value with modern analytics, boosting innovation and increasing revenue through data-driven solutions.
+WATCH ON-DEMAND
+CUSTOMER STORY
+How Mindbody Built White-Labeled Embedded Analytics at Scale
+As a tech-focused wellness business, Mindbody launched embedded analytics at scale to replace outdated and traditional analytics platforms.
+HEAR HOW THEY DID IT
+CUSTOMER STORY
+HyperFinity Unlocks New Revenue Streams with Predictive Analytics
+With the help of Sigma and Snowflake, retailers on their platform experienced a 20% increase in sales across their loyalty base.
+UNLOCK YOUR REVENUE
+CUSTOMER STORY
+Why golf course management platform Teesnap left Tableau for good
+Learn how they use Sigma to improve operational efficiency and leverage AI capabilities to reach a level of analysis and insight previously out of reach.
+READ WHY THEY SWITCHED
+CUSTOMER STORY
+Tracking spend down to the SKU: How OnCorps AI uses Sigma and Databricks to keep costs down
+How OnCorps AI uses Sigma and Databricks to optimize data handling and cost efficiency within financial services.
+GET COST EFFICIENT
+CUSTOMER STORY
+Why Leap Metrics calls Sigma “life saving.”
+Srini Gorty, CEO and Founder of Leap Metrics, discusses how Sigma helps its analytics-first health care platform drive health care outcomes in underserved communities.
+HEAR THEIR STORY
+CUSTOMER STORY
+Raptive Leverages Sigma to Empower its 4,000+ Publishers with Data Insights at their Fingertips
+Find out how Sigma helped Raptive achieve 75% faster time-to-insights and 50% faster dashboard building.
+READ THE CASE STUDY
+BLOG POST
+Embedded Analytics Explained: Definition, ROI, & Real-World Examples
+Discover the power of embedded analytics and how integrating real-time business intelligence into your applications enhances operational efficiency, customer satisfaction, and decision-making.
+EXPLORE EMBEDDED
+BLOG POST
+How to Influence Stakeholders to Embrace Embedded Analytics
+Discover the importance of embedded analytics for boosting your organization's capabilities and gaining a competitive edge.
+LEARN HOW
+BLOG POST
+Embedded Analytics: Build or Buy?
+In today's dynamic market, embedding analytics into your product is table stakes, but challenges in speed, scalability, and cost-effectiveness can arise. Companies must rapidly develop solutions that seamlessly integrate into their products and scale predictably to meet evolving customer demands.
+BUILD OR BUY?
+See
+WATCH ON-DEMAND DEMOS
+Experience
+ATTEND AN EVENT
+Try
+GET A FREE TRIAL
+Explore
+INTERACTIVE DEMOS
+Connect
+JOIN THE COMMUNITY
+Meet
+SCHEDULE A CALL
+
+
+Get Sigma in
+your inbox
+Country *
+Canada
+United Kingdom
+United States
+------------------
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Asia/Pacific Region
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Caribbean Netherlands
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Europe
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern and Antarctic Lands
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia (FYROM)
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar (Burma)
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+OPT-IN REQUIRED: I would like to receive promotional emails from Sigma Computing. I understand that I can unsubscribe at any time and that Sigma Computing's use of my email address is governed by its Privacy Policy. By submitting, you consent to allow Sigma Computing to store and process the personal data from this form to fulfill your request.*
+RELATED LINKS
+Intro to Embedded Analytics - Sigma documentation
+What is Embedded Analytics?
+Enterprise BI. Spreadsheet UI.
+FEATURES
+Platform overview
+AI / ML
+Collaboration
+Governance
+Python / SQL
+Write-back
+All features
+Product Launch
+CAPABILITIES
+Spreadsheets
+Reports
+Dashboards
+Data Apps
+Embedded Analytics
+Self-service
+Interactive Demos
+BY INDUSTRY
+Financial Services
+Healthcare
+Retail & CPG
+BY ROLE
+Analyst
+Business Leader
+Data Engineer
+Finance
+IT / Data
+Marketing
+Product
+Sales
+Supply Chain
+INTEGRATIONS
+Snowflake
+Databricks
+AWS
+Azure
+Google Cloud
+CONTACT
+Contact us
+Request a demo
+Get support
+RESOURCES
+Blog
+Documentation
+eBooks
+Lightboard videos
+Learning Center
+Resource Center
+EVENTS
+Live events
+On-demand webinars
+Snowflake Summit
+Databricks Summit
+Data Monetization
+Community events
+Free trial
+GET HANDS-ON
+Free trial
+Live demos
+Product Tour
+Sigma Library
+SUPPORT
+Get support
+Community
+Product FAQs
+QuickStarts
+Documentation
+Bug Bounty
+Sigma Status
+COMPANY
+About us
+Newsroom
+Security Center
+Customers
+Why Sigma?
+Comparison
+Careers
+PARTNERS
+Program overview
+Technology partners
+Consulting partners
+Partner Integrations
+© 2025 Sigma Computing
+Privacy Policy
+Cookie Policy
+Website Terms of Service
+Subprocessors
+Site Index
+Cookies Settings
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Accept All Cookies
