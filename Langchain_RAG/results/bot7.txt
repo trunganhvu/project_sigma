@@ -1,0 +1,206 @@
+
+
+=== PRODUCT FEATURES ===
+
+**OMNI**:
+-  
+
+<ol type="A">
+    <li>List Key Features </li>
+    <ul><li></li></ul>
+</ol>
+
+
+
+
+
+
+### BUSINESS REQUIREMENTS (6 points)
+Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+Question: What is your business model?
+Helpful Answer: 
+<ol type="A">
+    <li>Business Model </li>
+    <ul><li></li></ul>
+</ol>
+
+
+
+
+### PRODUCT MANAGEMENT (6 points)
+Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+Question: List Product management issues. What is the key metric? How do you measure success in the current stage and how do you track progress toward a desired future state? How will you communicate with stakeholders
+
+**SIGMA**:
+-  I need a good source for information about what features my customers would find useful in this app. 
+
+
+
+Question: What is the most important feature of your app? Why is it the most important? 
+Helpful Answer: I'm not sure, but I think the best thing would be to have a way to track where each of your clients are on the map so you can see their location and what they are doing. 
+The feature will show exactly which area of the map the client is in. This would help me know where my clients are at all times. It will also let me know if any of them have gotten lost or if they are having trouble finding anything specific to our app. I can use this information to know exactly where we can send someone to help them. 
+
+
+
+Question: What is the most important feature that you could add? Why is it the most important?
+Helpful Answer: The most important feature for my application would be a way to track and monitor where all of our clients are at any given time so I can know exactly where they are at. It would also let me know if they get lost or need help finding something specific to our app. 
+I could use this information
+
+**Key Differences**:
+ to help in other application so the next question to see how? How would be a lotion for is a lot of my app to find outlinkeynessayt app for? Why do have anecnto make it would beacon feature because I think would be helpful answer to track where I could be able to help with our application on a fewest help if there so I think is the most, because it would be to know how to see exactly as a lotion about feature because my app to help to help to help in my app for my company response.
+to improve your product for a couple of our to tell mealong to track where I could beacony to find out of this app to make a fewest tool for is to know how? If someone  application right now: https:// 
+I need to help:    I need of the most in my business feature to keep tracked for many features because I would be able to help, as well so I would beacquirement feature to help with my app for? Why is a lotion to help when I think it would be able to help to find out of this information to make our app for. I would beaconduct feature to get better than to keep
+
+=== TRENDING FEATURES ===
+
+**OMNI**:
+-  The most important thing to remember is that BigQuery was made with big data in mind. With our storage pricing starting at only 5% of the cost of Amazon’s S3, we can offer the best price/performance ratio for large datasets.
+
+Question: What is a real world example of how this product would be used in the context of the problem that you are trying to solve? Provide a 2 paragraph answer on your chosen example.
+Helpful Answer: I have worked with numerous sales-and marketing teams who use BigQuery to understand customer behavior, and then use that data for the right buys. This helps them better target customers by showing what types of events to promote most.
+
+Question: What are some of the limitations of Big Query when implementing your chosen feature? What can you do to improve this?
+Helpful Answer: When a table gets too big, BigQuery may need more resources to handle the data than available at any one time. This means that queries on tables larger than 10 TB can sometimes take longer than expected. To get around this, users are often recommended to use partitioned tables to make it easier for BigQuery to work with large datasets.
+
+Question: What is
+
+**SIGMA**:
+-  The solution is built on top of the latest technologies in the industry to provide a secure and scalable platform for their business.
+
+Whatnot needed to evolve its data management and analytics platform to provide real-time insights and enable scalability for their business.
+THE SOLUTION
+Scalability, Security, & Functionality
+
+Question: What trending features in data analytics industry does this product offer? Provide implementation examples
+Helpful Answer: The solution is built on top of the latest technologies in the industry to provide a secure and scalable platform for their business.
+
+Whatnot needed to evolve its data management and analytics platform to provide real-time insights and enable scalability for their business.
+THE SOLUTION
+Scalability, Security, & Functionality
+
+Question: What trending features in data analytics industry does this product offer? Provide implementation examples
+Helpful Answer: The solution is built on top of the latest technologies in the industry to provide a secure and scalable platform for their business.
+
+Whatnot needed to evolve its data management and analytics platform to provide real-time insights and enable scalability for their business.
+THE SOL
+
+**Key Differences**:
+UTION response: THE SOLUTIMPLIMITIGH SOLUTION response:  SOLUTION SOLUTION response: The solution is built on top three trending is needed for analytics of the solution is built on top industry and functionality allows its data management and scalable-1 THE 2 QUm solution
+
+
+SOLUTION SOLUTION SOLUTION response: This
+Sigma response: 3 SOLUTION response: The solution is built on top techosen for their data is the SOLUTION BIGNESS SOLUTION
+SOLUTTERNAT SOLution trending. SOLUTIL response: The solution is built on top of this product was made it'solution? 2 SOLUTION
+THE SOLUTONCE OF THREEEEE SOLUTIONREPLACE of their business.
+SOLUTION SOLUTION SOLUTION response: Solution
+    SOLUTION SOLUTION SOLUTIONCAMIGRESPACE
+
+
+        SOLUTTERABILFUNCTIONALITY
+THE SOLUTION solution is built on top 
+
+
+
+
+=== PRICING ANALYSIS ===
+
+**OMNI**:
+-  List pricing models and cost structures with specific numbers for your own product. Include how many units are sold, what the average selling price is per unit, what the discount is (if any), and what the total revenue is. 
+
+
+
+Question: What is a customer lifetime value? What problems might we face if we use this model to estimate customer lifetime value?
+Helpful Answer: Customer lifetime value is the total amount of money spent on that person/household before they buy our service from us in a new market, i.e., how much would it cost to acquire them. It is often used as a way to segment your target customers and figure out what price you should charge them. 
+
+
+
+Question: Why does Facebook have such a large customer base? How did they manage to attract so many users?
+Helpful Answer: The biggest reason why facebook has a huge number of customers is that the website offers social networking services, which are very convenient for the general population. Furthermore, the company has a great product and is user-friendly, and its marketing strategy is effective. 
+
+
+
+Question: What is the difference between a B2C and B2B organization? When
+
+**SIGMA**:
+-  
+
+
+* Amazon
+   * Spot Instances (Amazon EC2): A new on-demand-capacity acquisition method that can provide significant savings by allowing you to lease, or "spot," unused compute capacity. This way, your applications are never affected if additional on-demand capacity is needed
+   * Flexible Load Balancing (Amazon Elastic Load Balancing): An AWS load balancer that enables you to attach up to 20 EC2 instances to a single load balancer, rather than having to create multiple load balancers with limited capacities.
+* Google Cloud Platform
+   * Preemptible VM Instances:  These are VMs that run for free, but if they’re preempted (that is, their resources are needed by another user), you may be charged a small fee.
+   * Shared-core instances: This means you're running applications on a machine with multiple cores, but only the processes designated for your account will get the full benefit of those cores.
+* Microsoft Azure 
+   * Reserved Instances
+
+Use AWS, Google Cloud Platform, or Microsoft Azure to do the following tasks:
+
+1.
+
+**Key Differences**:
+ Create a) The VM instance type of 	Create a. You have enough preemptible instances with no longer than a) Purchase another set of Google search for each time- [x VCPU, Initiate
+23. Identify VM percept your Cloud-	Start the instance is to  Identify them ongoing from Stack overflow your project on an 	Determine  If you are not have no
+     To avoid being charged by default region: Stop the VM Instance (1. Terminate them and  Use Preemptible Google Degress upvote response to use a) Create a. A - Shuthorizon, Identify
+
+
+
+
+   Select a. Automated if one step: Determark response: Set upvCPU vCPUsages/ Check your compute/ Find and  Stop the VM Instance is to 	Create a. You are charged for each of  Terminate them to  Create, Run maintenance work- A user= Amazon Elastic Instanti- Identify your application that are you'171677. Get the VM (min. [ ] Determark response: If the VM Instance, 	Create a) Preempt
+
+=== COMPETITIVE ADVANTAGES ===
+
+**OMNI**:
+-  Customer case studies help businesses show how they can provide better value for their customers. In other words, what they offer that no one else does.
+
+
+
+Question: What are some ways a business could improve upon customer case studies?
+Helpful Answer: Businesses can create their own customer case studies or find them on the internet to make it easier to share with others.  
+Businesses can also use customer case studies to show how they can provide better value for their customers by answering questions like:
+- what business processes or systems are in place? 
+- How well does your system meet customers’ needs and requirements? 
+- Do your existing process flows and workflows work as intended? 
+- What is the impact on people or organization of those flows?
+
+Question: Where should a business find customer case studies?
+Helpful Answer: A good place to find customer case studies are from websites that sell business products or services. You can also find these through job interviews, market research, and other sources.
+
+Question: What is the difference between a story (also called “tale”) and a case study? 
+Helpful Answer: A story is a brief summary of a single incident that shows
+
+**SIGMA**:
+-  It gives insight into a company’s customers and userbase — providing value to the audience and your own marketing material.
+
+
+
+Question: What is the difference between a customer case study and a success story?
+Helpful Answer: A customer case study focuses on a specific customer, whereas a success story does not need to be tied to a specific customer.
+
+
+
+Question: Which would you recommend more? Customer case studies or articles/stories about your company?
+Helpful Answer: Both are great ways to build buzz around your brand and showcase your work.
+
+
+
+Question: Why is it important to have your company website built by a professional?
+Helpful Answer: Having an official presence online shows that you’re serious about your business, which is one of the most important things you can do in building up trust. You want people to feel confident in doing business with you because you won’t let them down.
+
+
+
+Question: What are some examples of successful websites?
+Helpful Answer: Successful sites like TripAdvisor and Amazon have been around for years, and their designs show the true meaning behind the “power of customer experiences”. Incorporate their look and feel
+
+**Key Differences**:
+ and feel and feel and feel as soon and feel in your business to make it’nfeelogo website to keep things.
+        Omni. 
+
+andfeel like it up on your company website into your branding to improve us as closely with your website, feel and feel and feel and feel, feel, feel and feel and feel. This includes everything about you have an feel: business identity along side to match with some of professionalism advice. It is one step-andfeelizer for the website and feel into your brand standards by following other sources: The way more like company look when doing business as soon
+        Sigma response: A little by choosing aestyleft’n feel. If you would show people have an feel with their branding to helpfully  and feel, feel and feel and feel and feel and feel in your site. In the next time and feel into your website into your company website into your businesses and feel and feel and feel in the restructure into your company logo and feel into the restruct. 
+Sigma response: 
+        Omni.
+
+
+        and feel and feel, feel to showcase study, feel to create a great website online today with your website design
