@@ -10,3 +10,7 @@ faiss-cpu
 openai
 bs4
 selenium
+ollama
+chromadb
+gradio
+pymupdf
