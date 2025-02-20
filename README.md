@@ -2,7 +2,7 @@
 1. Python
 > Python 3.13.1
 2. Tạo môi trường env
-> py -m venv .venv
+> py -m venv venv
 3. Active venv (mục đích sử dụng thư viên riêng biệt).
 > .\venv\Scripts\activate 
 4. Install các thư viên
@@ -18,30 +18,27 @@
 
 > https://huggingface.co/caliex/all-MiniLM-L6-v2-f16.gguf/blob/main/all-MiniLM-L6-v2-f16.gguf
 
+6. Tải ollama (NEW)
+
+Window: https://ollama.com/download/windows
+
+MacOS: https://ollama.com/download/mac
+
+7. Pull Deepseek
+ollama run deepseek-r1:1.5b
+ollama run deepseek-r1:7b
+
 # Chạy 
 > Folder Langchain_RAG/get_insight/
 ```cmd
 # Đặt câu hỏi về sigma
-python .\get_insight\sigma_bot.py 
-
-# Đặt câu hỏi về omni
-python .\get_insight\omni_bot.py
-
-# Đặt câu hỏi compare về sigma và omni
-python .\get_insight\bot.py
+python .\get_insight\bot11.py 
 ```
+
+# Đặt prompt trên browser
+url: http://127.0.0.1:7860
 
 # URL
 https://docs.omni.co/docs
 
 https://help.sigmacomputing.com/docs/get-around-in-sigma
-
-# TODO
-1. Crawl omni
-> https://omni.co/blog
-> https://docs.omni.co/guides
-> https://omni.co/compare
-> https://omni.co/changelog
-> https://community.omni.co/
-
-2. Crawl sigma
