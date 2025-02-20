@@ -6,7 +6,8 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import OllamaEmbeddings
 
 embedding_model = OllamaEmbeddings(model="deepseek-r1:1.5b")
-vector_db_path = "vector_dbs/sigma_doc_db_deepseek"
+# vector_db_path = "vector_dbs/sigma_doc_db_deepseek"
+vector_db_path = "vector_dbs/omni_doc_db_deepseek"
 
 if os.path.exists(vector_db_path):
     db = FAISS.load_local(
